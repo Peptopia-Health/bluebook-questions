@@ -1,0 +1,546 @@
+{
+  "section": "musc",
+  "title": "Musculoskeletal",
+  "questionCount": 49,
+  "questions": [
+    {
+      "q": "How many finger widths should be between the axilla and the crutch pad?",
+      "options": [
+        "2-3 fingers",
+        "5 fingers",
+        "None (touching)",
+        "1 finger"
+      ],
+      "correct": 0,
+      "rationale": "This gap prevents pressure on the axillary nerve, which can cause paralysis."
+    },
+    {
+      "q": "What is the correct elbow flexion for crutch walking?",
+      "options": [
+        "45 degrees",
+        "30 degrees",
+        "15 degrees",
+        "90 degrees"
+      ],
+      "correct": 1,
+      "rationale": "30 degrees allows for optimal leverage and weight bearing on the hands."
+    },
+    {
+      "q": "Describe the 2-point crutch gait.",
+      "options": [
+        "Move one crutch then same foot",
+        "Move crutch then opposite foot",
+        "Move crutch and opposite foot together",
+        "Move both crutches then both feet"
+      ],
+      "correct": 2,
+      "rationale": "In 2-point gait, the right crutch and left foot move simultaneously, simulating normal walking arm swing."
+    },
+    {
+      "q": "Which gait is used for a broken leg (non-weight bearing)?",
+      "options": [
+        "Swing-to",
+        "2-point gait",
+        "4-point gait",
+        "3-point gait"
+      ],
+      "correct": 3,
+      "rationale": "3-point gait takes all weight on the crutches and the \"good\" leg, protecting the broken one."
+    },
+    {
+      "q": "Which gait provides the most stability but is slowest?",
+      "options": [
+        "4-point gait",
+        "2-point gait",
+        "3-point gait",
+        "Swing-through"
+      ],
+      "correct": 0,
+      "rationale": "4-point gait always has 3 points of contact on the ground at any time, providing max stability."
+    },
+    {
+      "q": "Which gait is typically used by paraplegics with braces?",
+      "options": [
+        "4-point",
+        "Swing-through",
+        "2-point",
+        "3-point"
+      ],
+      "correct": 1,
+      "rationale": "They plant crutches and swing the paralyzed legs forward using momentum."
+    },
+    {
+      "q": "When going UP stairs with crutches, which moves first?",
+      "options": [
+        "Both legs",
+        "The bad leg",
+        "The good leg",
+        "The crutches"
+      ],
+      "correct": 2,
+      "rationale": "The good leg powers the lift up the step. \"Up with the Good\"."
+    },
+    {
+      "q": "On which side should a patient hold a cane?",
+      "options": [
+        "Right side",
+        "Weak (Affected) side",
+        "Dominant side",
+        "Strong (Unaffected) side"
+      ],
+      "correct": 3,
+      "rationale": "Holding it on the strong side widens the base of support and reduces load on the weak hip."
+    },
+    {
+      "q": "What is the correct sequence for walking with a cane?",
+      "options": [
+        "Cane + Weak leg, then Strong leg",
+        "Cane, then Strong leg, then Weak leg",
+        "Strong leg, then Cane, then Weak leg",
+        "All together"
+      ],
+      "correct": 0,
+      "rationale": "The cane supports the weak leg as they move forward together."
+    },
+    {
+      "q": "What is the correct technique for a standard walker?",
+      "options": [
+        "Walk then move walker",
+        "Pick up, set down, walk to it",
+        "Slide it along floor",
+        "Rock it side to side"
+      ],
+      "correct": 1,
+      "rationale": "Standard walkers have no wheels; they must be lifted to ensure stability before stepping."
+    },
+    {
+      "q": "Where should a patient tie belongings on a walker?",
+      "options": [
+        "Do not tie anything",
+        "On the front",
+        "On the sides",
+        "On the back"
+      ],
+      "correct": 2,
+      "rationale": "Tying heavy items to the front bar shifts the center of gravity and causes the walker to tip forward."
+    },
+    {
+      "q": "How should a patient stand up from a chair to use a walker?",
+      "options": [
+        "Have nurse pull them",
+        "Pull on the walker handles",
+        "Rock forward without hands",
+        "Push off the chair armrests"
+      ],
+      "correct": 3,
+      "rationale": "Pulling on the walker can pull it over on top of the patient. Push off the sturdy chair."
+    },
+    {
+      "q": "Why handle a wet cast with palms only?",
+      "options": [
+        "To prevent indentations/pressure points",
+        "To keep hands clean",
+        "To dry it faster",
+        "To warm it"
+      ],
+      "correct": 0,
+      "rationale": "Fingertips cause indentations in wet plaster which dry into pressure points causing ulcers."
+    },
+    {
+      "q": "What does a specific \"hot spot\" on a dry cast indicate?",
+      "options": [
+        "Bone healing",
+        "Infection underneath",
+        "Normal drying",
+        "Itching"
+      ],
+      "correct": 1,
+      "rationale": "A localized hot spot indicates inflammation/infection of the tissue beneath the cast."
+    },
+    {
+      "q": "A foul odor coming from a cast suggests?",
+      "options": [
+        "Poor hygiene",
+        "Sweat",
+        "Infection",
+        "Old plaster"
+      ],
+      "correct": 2,
+      "rationale": "Foul, necrotic smells indicate anaerobic infection or skin breakdown."
+    },
+    {
+      "q": "What is \"petaling\" a cast?",
+      "options": [
+        "Painting it",
+        "Cutting a window",
+        "Splitting it",
+        "Padding the rough edges with tape"
+      ],
+      "correct": 3,
+      "rationale": "Petaling involves overlapping tape strips on the edge to prevent the rough plaster from cutting the skin."
+    },
+    {
+      "q": "What is the earliest sign of compartment syndrome?",
+      "options": [
+        "Pain unrelieved by analgesics",
+        "Pulselessness",
+        "Paralysis",
+        "Pallor"
+      ],
+      "correct": 0,
+      "rationale": "Pain that persists despite medication is the hallmark early warning. Pulselessness is a late sign."
+    },
+    {
+      "q": "Where should traction weights be positioned?",
+      "options": [
+        "On the bed frame",
+        "Hanging freely",
+        "On the floor",
+        "In the patient's lap"
+      ],
+      "correct": 1,
+      "rationale": "If weights touch the floor, the traction force is lost. They must hang free to provide tension."
+    },
+    {
+      "q": "What is the purpose of Buck's traction?",
+      "options": [
+        "Permanent fixation",
+        "Reduce the bone",
+        "Reduce muscle spasm",
+        "Pin the bone"
+      ],
+      "correct": 2,
+      "rationale": "Buck's is temporary skin traction used pre-op to stop painful muscle spasms in hip fractures."
+    },
+    {
+      "q": "What is a major risk with skeletal traction?",
+      "options": [
+        "Joint stiffness",
+        "Skin breakdown",
+        "Muscle atrophy",
+        "Infection (Osteomyelitis)"
+      ],
+      "correct": 3,
+      "rationale": "The pins penetrate the bone, creating a direct pathway for bacteria to cause bone infection."
+    },
+    {
+      "q": "What technique is used for skeletal pin care?",
+      "options": [
+        "Sterile technique",
+        "Clean technique",
+        "Soap and water",
+        "Alcohol only"
+      ],
+      "correct": 0,
+      "rationale": "Because the pins enter the bone, sterile technique is required to prevent osteomyelitis."
+    },
+    {
+      "q": "Can the nurse release skeletal traction weights?",
+      "options": [
+        "Yes, for bedpan",
+        "No, never",
+        "Yes, for bathing",
+        "Yes, to reposition"
+      ],
+      "correct": 1,
+      "rationale": "Releasing skeletal traction can cause the bone fragments to shift, causing damage. Never release it."
+    },
+    {
+      "q": "What position must be avoided after hip replacement?",
+      "options": [
+        "Lying flat",
+        "Abduction",
+        "Crossing legs/Adduction",
+        "Extension"
+      ],
+      "correct": 2,
+      "rationale": "Adduction (crossing legs) can pop the prosthetic head out of the socket (dislocation)."
+    },
+    {
+      "q": "Why should a BKA patient lie prone?",
+      "options": [
+        "Comfort",
+        "Prevent pneumonia",
+        "Improve drainage",
+        "Prevent hip flexion contractures"
+      ],
+      "correct": 3,
+      "rationale": "Sitting creates hip flexion; lying prone stretches the hip flexor to prevent permanent contracture."
+    },
+    {
+      "q": "How should the nurse treat phantom limb pain?",
+      "options": [
+        "Administer pain medication",
+        "Tell them it isn't real",
+        "Refer to psych",
+        "Ignore it"
+      ],
+      "correct": 0,
+      "rationale": "Phantom pain is neuropathic and real to the patient; it requires analgesic treatment."
+    },
+    {
+      "q": "Is Rheumatoid Arthritis symmetric or asymmetric?",
+      "options": [
+        "Unilateral",
+        "Symmetric",
+        "Asymmetric",
+        "Localized"
+      ],
+      "correct": 1,
+      "rationale": "RA is systemic and autoimmune, so it attacks joints bilaterally (both hands, both knees)."
+    },
+    {
+      "q": "What exacerbates OA pain?",
+      "options": [
+        "Warmth",
+        "Rest",
+        "Activity",
+        "Sleep"
+      ],
+      "correct": 2,
+      "rationale": "OA is mechanical wear; using the joint (activity) causes pain, rest relieves it."
+    },
+    {
+      "q": "Which food should be avoided in Gout?",
+      "options": [
+        "Citrus",
+        "Green vegetables",
+        "Dairy",
+        "Organ meats/Sardines"
+      ],
+      "correct": 3,
+      "rationale": "Organ meats and sardines are high in purines, which break down into uric acid."
+    },
+    {
+      "q": "What is the classic sign of Fat Embolism?",
+      "options": [
+        "Petechiae on chest",
+        "Hives",
+        "Leg swelling",
+        "Hemoptysis"
+      ],
+      "correct": 0,
+      "rationale": "Fat globules block capillaries in the skin, causing a petechial rash on the chest/axilla."
+    },
+    {
+      "q": "How long must a scoliosis brace be worn?",
+      "options": [
+        "Only at night",
+        "23 hours a day",
+        "12 hours a day",
+        "Only at school"
+      ],
+      "correct": 1,
+      "rationale": "Braces are only effective if worn continuously, usually removed only for showering (1 hr)."
+    },
+    {
+      "q": "What is Kyphosis?",
+      "options": [
+        "Cervical curvature",
+        "Lumbar curvature (Swayback)",
+        "Thoracic curvature (Humpback)",
+        "Lateral curvature"
+      ],
+      "correct": 2,
+      "rationale": "Kyphosis is the exaggerated forward rounding of the upper back."
+    },
+    {
+      "q": "What is Lordosis?",
+      "options": [
+        "Neck curvature",
+        "Thoracic curvature",
+        "Lateral curvature",
+        "Lumbar curvature (Swayback)"
+      ],
+      "correct": 3,
+      "rationale": "Lordosis is the inward curve of the lumbar spine, often seen in pregnancy or obesity."
+    },
+    {
+      "q": "Memory trick for stairs with crutches?",
+      "options": [
+        "Up with Good, Down with Bad",
+        "Up with Bad, Down with Good",
+        "Lead with Crutches",
+        "Lead with Bad"
+      ],
+      "correct": 0,
+      "rationale": "The \"Good\" leg powers you up against gravity; gravity helps the \"Bad\" leg go down."
+    },
+    {
+      "q": "How high should a cane handle be?",
+      "options": [
+        "Level with hip bone",
+        "Level with greater trochanter",
+        "Level with waist",
+        "Level with wrist"
+      ],
+      "correct": 1,
+      "rationale": "The greater trochanter level allows for the necessary 30-degree elbow flexion."
+    },
+    {
+      "q": "Why are tennis balls sometimes put on walkers?",
+      "options": [
+        "For decoration",
+        "To stop it",
+        "To help slide (controversial)",
+        "For grip"
+      ],
+      "correct": 2,
+      "rationale": "They help the walker slide, but can be a safety hazard if the walker slides away."
+    },
+    {
+      "q": "What device is used post-Total Knee Replacement?",
+      "options": [
+        "Bucks Traction",
+        "Abduction Pillow",
+        "Halo Traction",
+        "CPM Machine"
+      ],
+      "correct": 3,
+      "rationale": "CPM machines keep the knee moving to prevent scar tissue adhesion and stiffness."
+    },
+    {
+      "q": "What is the treatment duration for Osteomyelitis?",
+      "options": [
+        "4-6 weeks IV antibiotics",
+        "1 week oral antibiotics",
+        "3 days IV",
+        "Surgery only"
+      ],
+      "correct": 0,
+      "rationale": "Bone is poorly vascularized, so long-term IV therapy is needed to penetrate and kill bacteria."
+    },
+    {
+      "q": "How do you turn a laminectomy patient?",
+      "options": [
+        "Sit up then turn",
+        "Log roll",
+        "Twist at waist",
+        "Pull shoulders"
+      ],
+      "correct": 1,
+      "rationale": "Log rolling maintains spinal alignment and prevents twisting which could damage the surgical site."
+    },
+    {
+      "q": "What is the priority assessment for Cervical Laminectomy?",
+      "options": [
+        "Digestion",
+        "Bowel/Bladder",
+        "Breathing/Arm function",
+        "Leg function"
+      ],
+      "correct": 2,
+      "rationale": "Cervical nerves control the diaphragm and arms; impairment causes respiratory arrest."
+    },
+    {
+      "q": "What is the priority assessment for Lumbar Laminectomy?",
+      "options": [
+        "Arm strength",
+        "Breathing",
+        "Cough",
+        "Bladder retention/Legs"
+      ],
+      "correct": 3,
+      "rationale": "Lumbar nerves control the bladder and legs; retention is a common complication."
+    },
+    {
+      "q": "What is the priority assessment for Thoracic Laminectomy?",
+      "options": [
+        "Cough/Bowel sounds",
+        "Urine output",
+        "Arm sensation",
+        "Pupil response"
+      ],
+      "correct": 0,
+      "rationale": "Thoracic nerves innervate the abdominal muscles (cough) and gut."
+    },
+    {
+      "q": "What activity is restricted after laminectomy?",
+      "options": [
+        "Lying flat",
+        "Sitting/Dangling legs",
+        "Walking",
+        "Log rolling"
+      ],
+      "correct": 1,
+      "rationale": "Sitting puts maximal stress on the spine. Patients should lie or walk, not sit."
+    },
+    {
+      "q": "What type of fracture in a child suggests abuse?",
+      "options": [
+        "Simple fracture",
+        "Greenstick fracture",
+        "Spiral fracture",
+        "Compound fracture"
+      ],
+      "correct": 2,
+      "rationale": "Spiral fractures result from twisting force, which is rare in accidental falls."
+    },
+    {
+      "q": "Who typically gets Greenstick fractures?",
+      "options": [
+        "Infants",
+        "Elderly",
+        "Athletes",
+        "Children"
+      ],
+      "correct": 3,
+      "rationale": "Children's bones are softer and tend to bend/splinter rather than snap cleanly."
+    },
+    {
+      "q": "What is the priority for an open fracture?",
+      "options": [
+        "Cover with sterile dressing",
+        "Push bone back in",
+        "Apply heat",
+        "Cast immediately"
+      ],
+      "correct": 0,
+      "rationale": "Infection (Osteomyelitis) is the major risk; cover to protect until surgery."
+    },
+    {
+      "q": "What safety item is needed for Halo Traction?",
+      "options": [
+        "Scissors",
+        "Screwdriver/Wrench",
+        "Wire cutters",
+        "Pliers"
+      ],
+      "correct": 1,
+      "rationale": "In case of CPR, the vest might need to be released quickly."
+    },
+    {
+      "q": "What test checks for Carpal Tunnel?",
+      "options": [
+        "Romberg",
+        "Homan's Sign",
+        "Phalen's Maneuver",
+        "Babinski"
+      ],
+      "correct": 2,
+      "rationale": "Phalen's (flexing wrists back to back) reproduces the numbness/tingling."
+    },
+    {
+      "q": "What is a sign of Paget's disease?",
+      "options": [
+        "Brittle teeth",
+        "Shrinking height",
+        "Small hands",
+        "Enlarged skull/Bowed legs"
+      ],
+      "correct": 3,
+      "rationale": "Abnormal bone remodeling leads to thick, soft, deformed bones (hat size increases)."
+    },
+    {
+      "q": "What area is affected by Ankylosing Spondylitis?",
+      "options": [
+        "Spine/Sacroiliac",
+        "Knees",
+        "Hands",
+        "Feet"
+      ],
+      "correct": 0,
+      "rationale": "Inflammation fuses the vertebrae, causing a rigid, \"bamboo\" spine."
+    }
+  ]
+}

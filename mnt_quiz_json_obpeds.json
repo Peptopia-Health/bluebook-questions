@@ -1,0 +1,337 @@
+{
+  "section": "obpeds",
+  "title": "OB & Pediatrics",
+  "questionCount": 30,
+  "questions": [
+    {
+      "q": "What is the hallmark sign of Placenta Previa?",
+      "options": [
+        "Painful dark bleeding",
+        "Painless bright red bleeding",
+        "Rigid abdomen",
+        "Back pain"
+      ],
+      "correct": 1,
+      "rationale": "Previa puts the placenta over the cervix; as the cervix stretches, it bleeds painlessly."
+    },
+    {
+      "q": "What distinguishes Abruptio Placenta from Previa?",
+      "options": [
+        "Amount of blood",
+        "Fetal heart rate",
+        "Pain and abdominal rigidity",
+        "Gestational age"
+      ],
+      "correct": 2,
+      "rationale": "Abruption is the premature separation of the placenta, causing concealed hemorrhage and intense pain/rigidity."
+    },
+    {
+      "q": "What causes Variable Decelerations?",
+      "options": [
+        "Placental Insufficiency",
+        "Head Compression",
+        "Oxygenation",
+        "Cord Compression"
+      ],
+      "correct": 3,
+      "rationale": "Remember VEAL CHOP: V (Variable) = C (Cord Compression)."
+    },
+    {
+      "q": "What position helps a child having a \"Tet Spell\"?",
+      "options": [
+        "Knee-Chest (Squatting)",
+        "Supine",
+        "Prone",
+        "Walking"
+      ],
+      "correct": 0,
+      "rationale": "Squatting increases systemic vascular resistance, forcing blood back into the lungs for oxygenation."
+    },
+    {
+      "q": "What is Chadwick's sign?",
+      "options": [
+        "Softening of uterus",
+        "Blue tint to cervix",
+        "Rebound tenderness",
+        "Fetal movement"
+      ],
+      "correct": 1,
+      "rationale": "Chadwick's sign is the bluish discoloration of the cervix due to increased blood flow."
+    },
+    {
+      "q": "If LMP is June 10, when is the due date?",
+      "options": [
+        "April 17",
+        "February 10",
+        "March 17",
+        "March 10"
+      ],
+      "correct": 2,
+      "rationale": "June - 3 months = March. 10 + 7 days = 17."
+    },
+    {
+      "q": "What are the three classic signs of Preeclampsia?",
+      "options": [
+        "Fever, Rash, Pain",
+        "Hypotension, Low protein, Dehydration",
+        "Bleeding, Cramping, Nausea",
+        "Hypertension, Proteinuria, Edema"
+      ],
+      "correct": 3,
+      "rationale": "The triad of high BP, protein in urine, and swelling defines preeclampsia."
+    },
+    {
+      "q": "What is the antidote for Magnesium Sulfate toxicity?",
+      "options": [
+        "Calcium Gluconate",
+        "Narcan",
+        "Vitamin K",
+        "Protamine Sulfate"
+      ],
+      "correct": 0,
+      "rationale": "Calcium Gluconate reverses the respiratory depression and cardiac effects of Magnesium toxicity."
+    },
+    {
+      "q": "What color is Lochia Rubra?",
+      "options": [
+        "Pink",
+        "Red",
+        "White",
+        "Brown"
+      ],
+      "correct": 1,
+      "rationale": "Rubra is the initial red bleeding (1-3 days)."
+    },
+    {
+      "q": "When is APGAR scoring performed?",
+      "options": [
+        "1 and 10 minutes",
+        "Birth and Discharge",
+        "1 and 5 minutes",
+        "Every hour"
+      ],
+      "correct": 2,
+      "rationale": "Standard protocol is assessment at 1 minute and 5 minutes of life."
+    },
+    {
+      "q": "What position is contraindicated after cleft lip repair?",
+      "options": [
+        "Side-lying",
+        "Supine",
+        "Upright",
+        "Prone (on abdomen)"
+      ],
+      "correct": 3,
+      "rationale": "Lying prone can rub the suture line on the sheets, ruining the repair."
+    },
+    {
+      "q": "What is the developmental task for infancy?",
+      "options": [
+        "Trust vs Mistrust",
+        "Autonomy vs Shame",
+        "Initiative vs Guilt",
+        "Industry vs Inferiority"
+      ],
+      "correct": 0,
+      "rationale": "Infants learn to trust caregivers to meet basic needs."
+    },
+    {
+      "q": "What is the initial diet order for hyperemesis gravidarum?",
+      "options": [
+        "Clear liquids",
+        "NPO",
+        "Full liquids",
+        "BRAT diet"
+      ],
+      "correct": 1,
+      "rationale": "Initial treatment requires bowel rest (NPO) and IV hydration to correct electrolyte imbalances."
+    },
+    {
+      "q": "What is the most common sign of fallopian ectopic pregnancy?",
+      "options": [
+        "Painless bleeding",
+        "Fever",
+        "Unilateral pelvic pain",
+        "Homan's sign"
+      ],
+      "correct": 2,
+      "rationale": "Pain is localized to the side of the affected tube before rupture."
+    },
+    {
+      "q": "What is the #1 cause of infant illness when mother has diabetes?",
+      "options": [
+        "Jaundice",
+        "Hyperglycemia",
+        "Sepsis",
+        "Hypoglycemia"
+      ],
+      "correct": 3,
+      "rationale": "The baby's pancreas is hyperactive from mom's high sugar; after birth, sugar supply stops but insulin continues, causing hypoglycemia."
+    },
+    {
+      "q": "What color does amniotic fluid turn Nitrazine paper?",
+      "options": [
+        "Blue (Alkaline)",
+        "Red (Acidic)",
+        "Green (Neutral)",
+        "Yellow"
+      ],
+      "correct": 0,
+      "rationale": "Amniotic fluid is alkaline (pH 7.0-7.5), turning the yellow paper blue."
+    },
+    {
+      "q": "What position is contraindicated after cleft lip repair?",
+      "options": [
+        "Supine",
+        "Prone (on abdomen)",
+        "Side-lying",
+        "Upright"
+      ],
+      "correct": 1,
+      "rationale": "Prone position can cause the infant to rub the face/suture line on the sheets, damaging the repair."
+    },
+    {
+      "q": "Why is cleft palate repair delayed until 4-5 years?",
+      "options": [
+        "To allow speech development",
+        "To prevent infection",
+        "To allow tooth development",
+        "Weight gain"
+      ],
+      "correct": 2,
+      "rationale": "Early surgery can interfere with skeletal growth of the midface and tooth eruption."
+    },
+    {
+      "q": "What is the developmental task for infancy?",
+      "options": [
+        "Initiative vs Guilt",
+        "Autonomy vs Shame",
+        "Industry vs Inferiority",
+        "Trust vs Mistrust"
+      ],
+      "correct": 3,
+      "rationale": "Consistently meeting needs establishes trust."
+    },
+    {
+      "q": "Which age group is most likely to say \"No\"?",
+      "options": [
+        "Toddler",
+        "Infant",
+        "Preschooler",
+        "School Age"
+      ],
+      "correct": 0,
+      "rationale": "Toddlers assert independence (Autonomy) by saying no (Negativism)."
+    },
+    {
+      "q": "The preschooler fears separation and ___ when hospitalized?",
+      "options": [
+        "Loss of control",
+        "Mutilation",
+        "Darkness",
+        "Strangers"
+      ],
+      "correct": 1,
+      "rationale": "Preschoolers have vivid imaginations and fear bodily harm/mutilation."
+    },
+    {
+      "q": "What is the developmental task for school age?",
+      "options": [
+        "Identity vs Role Confusion",
+        "Intimacy vs Isolation",
+        "Industry vs Inferiority",
+        "Trust vs Mistrust"
+      ],
+      "correct": 2,
+      "rationale": "School age children focus on competence, skills, and \"making things\" (Industry)."
+    },
+    {
+      "q": "Who is most important to the hospitalized adolescent?",
+      "options": [
+        "Teachers",
+        "Parents",
+        "Siblings",
+        "Peers"
+      ],
+      "correct": 3,
+      "rationale": "Peer group acceptance is critical for identity formation."
+    },
+    {
+      "q": "Should a mother with mastitis stop breastfeeding?",
+      "options": [
+        "No, keep feeding",
+        "Yes, stop immediately",
+        "Only pump and dump",
+        "Switch to formula"
+      ],
+      "correct": 0,
+      "rationale": "Emptying the breast prevents stasis and abscess formation. The infection is in the tissue, not the milk."
+    },
+    {
+      "q": "How long before surgery must oral contraceptives be stopped?",
+      "options": [
+        "24 hours",
+        "One week",
+        "One month",
+        "Do not stop"
+      ],
+      "correct": 1,
+      "rationale": "Estrogen increases clotting factors; combined with surgical immobility, the risk for DVT/PE is high."
+    },
+    {
+      "q": "What is a common sign of ovarian cyst rupture?",
+      "options": [
+        "Painless bleeding",
+        "Fever",
+        "Abdominal distention/rigidity",
+        "Hives"
+      ],
+      "correct": 2,
+      "rationale": "Rupture releases fluid/blood into the peritoneum, causing irritation and rigidity."
+    },
+    {
+      "q": "How many days after ovulation does menstruation begin?",
+      "options": [
+        "21 days",
+        "7 days",
+        "28 days",
+        "14 days"
+      ],
+      "correct": 3,
+      "rationale": "The luteal phase is consistently 14 days; if no pregnancy occurs, the corpus luteum degenerates and menses begins."
+    },
+    {
+      "q": "What is the activity order for a client with a cesium implant?",
+      "options": [
+        "Absolute bed rest",
+        "Ad lib",
+        "Bathroom privileges",
+        "Wheelchair"
+      ],
+      "correct": 0,
+      "rationale": "Movement can dislodge the implant. Absolute bed rest is required."
+    },
+    {
+      "q": "The cause of RDS in infants is a lack of?",
+      "options": [
+        "Oxygen",
+        "Surfactant",
+        "Blood",
+        "Glucose"
+      ],
+      "correct": 1,
+      "rationale": "Surfactant reduces surface tension in alveoli; without it, they collapse."
+    },
+    {
+      "q": "The toddler fears ___ most when hospitalized?",
+      "options": [
+        "Pain",
+        "Darkness",
+        "Separation from parents",
+        "Loss of control"
+      ],
+      "correct": 2,
+      "rationale": "Separation anxiety is peak in toddlerhood."
+    }
+  ]
+}

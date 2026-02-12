@@ -1,0 +1,326 @@
+{
+  "section": "endo",
+  "title": "Endocrine & Metabolic",
+  "questionCount": 29,
+  "questions": [
+    {
+      "q": "Which electrolyte imbalance is seen in Cushing's?",
+      "options": [
+        "Hyponatremia",
+        "Hyponatremia/Hyperkalemia",
+        "Hypercalcemia",
+        "Hypernatremia/Hypokalemia"
+      ],
+      "correct": 3,
+      "rationale": "Excess aldosterone retains Sodium (Hypernatremia) and excretes Potassium (Hypokalemia)."
+    },
+    {
+      "q": "What is the priority in Addisonian Crisis?",
+      "options": [
+        "Prevent Shock (Fluids/Steroids)",
+        "Prevent Seizure",
+        "Prevent Stroke",
+        "Lower BP"
+      ],
+      "correct": 0,
+      "rationale": "Lack of cortisol leads to vascular collapse and severe hypotension (Shock)."
+    },
+    {
+      "q": "Which diabetes type involves ketosis?",
+      "options": [
+        "Gestational",
+        "Type 1",
+        "Insipidus",
+        "Type 2"
+      ],
+      "correct": 1,
+      "rationale": "Type 1 diabetics produce no insulin, forcing the body to burn fat, producing ketones."
+    },
+    {
+      "q": "What is the rule for mixing insulin?",
+      "options": [
+        "Draw both together",
+        "Draw Cloudy before Clear",
+        "Draw Clear (Regular) before Cloudy (NPH)",
+        "Never mix"
+      ],
+      "correct": 2,
+      "rationale": "You want to prevent contaminating the rapid clear insulin with the slow cloudy insulin. \"Clear before Cloudy\" (RN - Regular then NPH)."
+    },
+    {
+      "q": "What is a hallmark sign of Graves' Disease?",
+      "options": [
+        "Weight gain",
+        "Bradycardia",
+        "Cold intolerance",
+        "Exophthalmos (Bulging eyes)"
+      ],
+      "correct": 3,
+      "rationale": "Accumulation of fluid behind the eyes causes them to bulge."
+    },
+    {
+      "q": "What are signs of Thyroid Storm?",
+      "options": [
+        "High Fever, Tachycardia",
+        "Low Temp, Bradycardia",
+        "Constipation",
+        "Somnolence"
+      ],
+      "correct": 0,
+      "rationale": "A massive surge of thyroid hormone sends metabolism into overdrive."
+    },
+    {
+      "q": "What is a sign of Hypothyroidism?",
+      "options": [
+        "Tachycardia",
+        "Cold Intolerance",
+        "Diarrhea",
+        "Weight loss"
+      ],
+      "correct": 1,
+      "rationale": "Slowed metabolism leads to decreased heat production."
+    },
+    {
+      "q": "What hormone is lacking in Diabetes Insipidus?",
+      "options": [
+        "Glucagon",
+        "Insulin",
+        "ADH (Anti-diuretic Hormone)",
+        "Thyroid"
+      ],
+      "correct": 2,
+      "rationale": "Without ADH, the kidneys cannot reabsorb water, leading to massive urine output."
+    },
+    {
+      "q": "What electrolyte imbalance is seen in SIADH?",
+      "options": [
+        "Hypernatremia",
+        "Hypocalcemia",
+        "Hyperkalemia",
+        "Hyponatremia"
+      ],
+      "correct": 3,
+      "rationale": "Excess water retention dilutes the blood sodium levels."
+    },
+    {
+      "q": "High growth hormone in an adult is called?",
+      "options": [
+        "Acromegaly",
+        "Gigantism",
+        "Dwarfism",
+        "Cretinism"
+      ],
+      "correct": 0,
+      "rationale": "Gigantism is in children; Acromegaly is in adults (bones thicken, don't lengthen)."
+    },
+    {
+      "q": "What is the primary treatment for Addison's Disease?",
+      "options": [
+        "Diuretics",
+        "Steroid replacement",
+        "Insulin",
+        "Thyroid replacement"
+      ],
+      "correct": 1,
+      "rationale": "The adrenal cortex is failing; you must replace the missing steroids (cortisol/aldosterone)."
+    },
+    {
+      "q": "What is the danger of sedating a patient with Myxedema?",
+      "options": [
+        "Seizures",
+        "Thyroid Storm",
+        "Myxedema Coma/Resp Arrest",
+        "Hypertension"
+      ],
+      "correct": 2,
+      "rationale": "Their metabolism is already critically low; sedatives can stop breathing entirely."
+    },
+    {
+      "q": "When should Synthroid be taken?",
+      "options": [
+        "With dinner",
+        "With lunch",
+        "At bedtime",
+        "Morning, empty stomach"
+      ],
+      "correct": 3,
+      "rationale": "Absorption is best on an empty stomach; morning dosing prevents insomnia."
+    },
+    {
+      "q": "What do you give an unconscious hypoglycemic patient?",
+      "options": [
+        "Glucagon IM or D50 IV",
+        "Orange Juice",
+        "Insulin",
+        "Water"
+      ],
+      "correct": 0,
+      "rationale": "Unconscious patients cannot swallow (aspiration risk). Glucagon releases liver glycogen."
+    },
+    {
+      "q": "Which condition presents with Kussmaul respirations?",
+      "options": [
+        "Insulin Shock",
+        "Diabetic Ketoacidosis (DKA)",
+        "HHNK",
+        "Hypoglycemia"
+      ],
+      "correct": 1,
+      "rationale": "Kussmaul respirations are a compensatory mechanism to blow off acid (CO2) in DKA."
+    },
+    {
+      "q": "What is the #1 treatment priority in DKA?",
+      "options": [
+        "Bicarbonate",
+        "Insulin",
+        "IV Fluids",
+        "Potassium"
+      ],
+      "correct": 2,
+      "rationale": "Severe dehydration is the immediate threat to life. Rehydrate first."
+    },
+    {
+      "q": "Which is the only insulin that can be given IV?",
+      "options": [
+        "NPH",
+        "Humalog",
+        "Lantus",
+        "Regular"
+      ],
+      "correct": 3,
+      "rationale": "Regular insulin is the only formulation stable enough for IV administration."
+    },
+    {
+      "q": "When does NPH insulin peak?",
+      "options": [
+        "8-10 hours",
+        "2 hours",
+        "No peak",
+        "24 hours"
+      ],
+      "correct": 0,
+      "rationale": "NPH has a longer onset and peak than Regular; watch for hypoglycemia in mid-afternoon."
+    },
+    {
+      "q": "When should Humalog (Lispro) be given?",
+      "options": [
+        "Daily",
+        "WITH meals",
+        "At bedtime",
+        "30 mins before meals"
+      ],
+      "correct": 1,
+      "rationale": "It acts so fast that food must be present or hypoglycemia will occur."
+    },
+    {
+      "q": "Which insulin has NO peak?",
+      "options": [
+        "NPH",
+        "Regular",
+        "Lantus (Glargine)",
+        "Humalog"
+      ],
+      "correct": 2,
+      "rationale": "Lantus provides a steady baseline insulin level without a dangerous peak time."
+    },
+    {
+      "q": "What does the HbA1c test measure?",
+      "options": [
+        "Current blood sugar",
+        "Insulin level",
+        "Ketones",
+        "Glucose control over 3 months"
+      ],
+      "correct": 3,
+      "rationale": "RBCs live 120 days; HbA1c measures how much sugar stuck to them over their lifespan."
+    },
+    {
+      "q": "Should steroids be stopped abruptly?",
+      "options": [
+        "No, taper slowly",
+        "Yes, immediately",
+        "Only if sick",
+        "If side effects occur"
+      ],
+      "correct": 0,
+      "rationale": "Abrupt withdrawal causes Addisonian Crisis because the adrenals have fallen asleep."
+    },
+    {
+      "q": "What is a common side effect of long-term steroid use?",
+      "options": [
+        "Hypotension",
+        "Osteoporosis/Hyperglycemia",
+        "Weight loss",
+        "Hypoglycemia"
+      ],
+      "correct": 1,
+      "rationale": "Steroids catabolize bone and increase blood sugar."
+    },
+    {
+      "q": "What sign is associated with Hypoparathyroidism?",
+      "options": [
+        "Kidney stones",
+        "Bone pain",
+        "Positive Chvostek's/Trousseau's",
+        "Polyuria"
+      ],
+      "correct": 2,
+      "rationale": "Lack of PTH causes hypocalcemia, leading to neuromuscular excitability."
+    },
+    {
+      "q": "What is a major complication of Hyperparathyroidism?",
+      "options": [
+        "Seizures",
+        "Diarrhea",
+        "Tetany",
+        "Kidney Stones/Bone Fractures"
+      ],
+      "correct": 3,
+      "rationale": "PTH pulls calcium out of bones (fractures) and puts it into blood/kidneys (stones)."
+    },
+    {
+      "q": "How should a diabetic cut their toenails?",
+      "options": [
+        "Straight across",
+        "Curved",
+        "Very short",
+        "File only"
+      ],
+      "correct": 0,
+      "rationale": "Straight across prevents ingrown nails. Many sources recommend filing only to avoid injury."
+    },
+    {
+      "q": "Should a diabetic take insulin when sick and not eating?",
+      "options": [
+        "Take pill instead",
+        "Yes, take insulin",
+        "Only half dose",
+        "No, skip dose"
+      ],
+      "correct": 1,
+      "rationale": "Illness raises blood sugar (stress response). Insulin is needed to prevent DKA."
+    },
+    {
+      "q": "What is a major complication of thyroidectomy?",
+      "options": [
+        "Hyperkalemia",
+        "Hypercalcemia",
+        "Hypocalcemia (Tetany)",
+        "Hyponatremia"
+      ],
+      "correct": 2,
+      "rationale": "Accidental removal or damage of parathyroid glands leads to low calcium."
+    },
+    {
+      "q": "What is the primary treatment for Type 2 Diabetes?",
+      "options": [
+        "Insulin only",
+        "Bed rest",
+        "Surgery",
+        "Diet and Exercise"
+      ],
+      "correct": 3,
+      "rationale": "Type 2 is often managed by lifestyle changes first, then orals."
+    }
+  ]
+}

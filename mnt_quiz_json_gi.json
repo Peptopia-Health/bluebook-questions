@@ -1,0 +1,337 @@
+{
+  "section": "gi",
+  "title": "GI & Nutrition",
+  "questionCount": 30,
+  "questions": [
+    {
+      "q": "Where is the pain located in Appendicitis?",
+      "options": [
+        "Epigastric",
+        "LLQ",
+        "RUQ",
+        "RLQ"
+      ],
+      "correct": 3,
+      "rationale": "The appendix is located in the Right Lower Quadrant (McBurney's Point)."
+    },
+    {
+      "q": "Why is the Pancreatitis patient kept NPO?",
+      "options": [
+        "To stop enzyme production",
+        "To prevent vomiting",
+        "To rest the bowel",
+        "To prevent aspiration"
+      ],
+      "correct": 0,
+      "rationale": "Eating stimulates the pancreas to secrete enzymes, which digests the pancreas itself. NPO stops this process."
+    },
+    {
+      "q": "What is the most dangerous electrolyte imbalance in renal failure?",
+      "options": [
+        "Hyponatremia",
+        "Hyperkalemia",
+        "Hypercalcemia",
+        "Hypomagnesemia"
+      ],
+      "correct": 1,
+      "rationale": "Hyperkalemia (High Potassium) can cause fatal cardiac arrhythmias."
+    },
+    {
+      "q": "What drug is used to lower ammonia levels in cirrhosis?",
+      "options": [
+        "Lisinopril",
+        "Lasix",
+        "Lactulose",
+        "Lithium"
+      ],
+      "correct": 2,
+      "rationale": "Lactulose traps ammonia in the gut and expels it via stool, treating hepatic encephalopathy."
+    },
+    {
+      "q": "Which food group is lowest in fiber?",
+      "options": [
+        "Whole Grains",
+        "Fruits",
+        "Vegetables",
+        "Dairy/Meats"
+      ],
+      "correct": 3,
+      "rationale": "Animal products (meat, milk, eggs) contain no dietary fiber."
+    },
+    {
+      "q": "How many calories are in 1 gram of fat?",
+      "options": [
+        "9",
+        "4",
+        "7",
+        "12"
+      ],
+      "correct": 0,
+      "rationale": "Fats are the most calorie-dense nutrient at 9 kcal/gram."
+    },
+    {
+      "q": "Which food produces Acid Ash?",
+      "options": [
+        "Milk",
+        "Cranberries/Meat",
+        "Vegetables",
+        "Fruits"
+      ],
+      "correct": 1,
+      "rationale": "Acid ash diets acidify urine to prevent certain stones and infections."
+    },
+    {
+      "q": "Which grain is allowed on a Gluten-Free diet?",
+      "options": [
+        "Rye",
+        "Wheat",
+        "Rice",
+        "Barley"
+      ],
+      "correct": 2,
+      "rationale": "Rice and Corn are gluten-free. Remember \"BROW\" to avoid."
+    },
+    {
+      "q": "What organism commonly causes Acute Glomerulonephritis?",
+      "options": [
+        "Pseudomonas",
+        "E. Coli",
+        "Staph Aureus",
+        "Group A Beta Strep"
+      ],
+      "correct": 3,
+      "rationale": "It is an immune complex reaction that occurs weeks after a Strep throat infection."
+    },
+    {
+      "q": "Which colostomy can be irrigated?",
+      "options": [
+        "Descending/Sigmoid",
+        "Ascending",
+        "Transverse",
+        "Ileostomy"
+      ],
+      "correct": 0,
+      "rationale": "Only colostomies with formed stool (lower colon) can be trained via irrigation."
+    },
+    {
+      "q": "How is Hepatitis A transmitted?",
+      "options": [
+        "Blood",
+        "Fecal-Oral route",
+        "Sexual contact",
+        "Airborne"
+      ],
+      "correct": 1,
+      "rationale": "Hep A is viral, transmitted via contaminated food/water (Fecal-Oral)."
+    },
+    {
+      "q": "What assessment finding is classic for Pyloric Stenosis?",
+      "options": [
+        "Bound abdomen",
+        "Sausage-shaped mass",
+        "Olive-shaped abdominal mass",
+        "Distended veins"
+      ],
+      "correct": 2,
+      "rationale": "The thickened pyloric muscle feels like an olive in the epigastrum."
+    },
+    {
+      "q": "What is the classic sign of intussusception?",
+      "options": [
+        "Clay colored stool",
+        "Ribbon stool",
+        "Steatorrhea",
+        "Currant jelly stool"
+      ],
+      "correct": 3,
+      "rationale": "Stool mixed with blood and mucus looks like currant jelly."
+    },
+    {
+      "q": "What type of stool is seen in Hirschsprung's Disease?",
+      "options": [
+        "Ribbon-like",
+        "Currant jelly",
+        "Tarry",
+        "Frothy"
+      ],
+      "correct": 0,
+      "rationale": "Stool is forced through the narrowed segment, appearing ribbon-like."
+    },
+    {
+      "q": "What is the best position for a client with Hiatal Hernia?",
+      "options": [
+        "Low Fowlers",
+        "High Fowlers",
+        "Supine",
+        "Prone"
+      ],
+      "correct": 1,
+      "rationale": "Gravity helps keep the stomach contents down. Sit up after meals."
+    },
+    {
+      "q": "What diet prevents Dumping Syndrome?",
+      "options": [
+        "High Fluid/High Fiber",
+        "High Carb/Low Fat",
+        "Low Carb/High Protein/Low Fluid",
+        "Clear Liquids"
+      ],
+      "correct": 2,
+      "rationale": "Carbs and fluids speed up emptying. Protein and fat slow it down."
+    },
+    {
+      "q": "What is the priority assessment for a client with ascites?",
+      "options": [
+        "Skin turgor",
+        "Urine output",
+        "LOC",
+        "Abdominal Girth/Respiratory Status"
+      ],
+      "correct": 3,
+      "rationale": "Ascites puts pressure on the diaphragm, impairing breathing."
+    },
+    {
+      "q": "What is a major complication of esophageal varices?",
+      "options": [
+        "Hemorrhage",
+        "Infection",
+        "Obstruction",
+        "Stricture"
+      ],
+      "correct": 0,
+      "rationale": "These veins are fragile and can burst, causing life-threatening bleeding."
+    },
+    {
+      "q": "Why must scissors be kept at the bedside with a Blakemore tube?",
+      "options": [
+        "To cut the tape",
+        "To cut the tube if airway is blocked",
+        "To trim the tube",
+        "For dressing changes"
+      ],
+      "correct": 1,
+      "rationale": "If the balloon moves up and blocks the airway, you must cut the tube to deflate it instantly."
+    },
+    {
+      "q": "What type of diet is recommended for Ulcerative Colitis?",
+      "options": [
+        "High Fat",
+        "High Fiber",
+        "Low Residue (Low Fiber)",
+        "Low Protein"
+      ],
+      "correct": 2,
+      "rationale": "Low residue reduces bowel volume and irritation."
+    },
+    {
+      "q": "Which disease is characterized by \"skip lesions\"?",
+      "options": [
+        "IBS",
+        "Ulcerative Colitis",
+        "Diverticulitis",
+        "Crohn's Disease"
+      ],
+      "correct": 3,
+      "rationale": "Crohn's affects patchy areas of the GI tract, unlike UC which is continuous."
+    },
+    {
+      "q": "What food should be avoided in Diverticulitis?",
+      "options": [
+        "Seeds, nuts, popcorn",
+        "Dairy",
+        "Meat",
+        "Rice"
+      ],
+      "correct": 0,
+      "rationale": "Small seeds can get trapped in the diverticula and cause inflammation."
+    },
+    {
+      "q": "Where does gallbladder pain typically radiate?",
+      "options": [
+        "Left arm",
+        "Right shoulder/scapula",
+        "Lower back",
+        "Groin"
+      ],
+      "correct": 1,
+      "rationale": "Referred pain to the right shoulder is a classic sign of cholecystitis."
+    },
+    {
+      "q": "What is a cardinal sign of Peritonitis?",
+      "options": [
+        "Hyperactive bowel sounds",
+        "Soft abdomen",
+        "Rigid, board-like abdomen",
+        "Hunger"
+      ],
+      "correct": 2,
+      "rationale": "The abdomen becomes rigid due to muscle guarding against the severe inflammation."
+    },
+    {
+      "q": "What EKG change is associated with Hypokalemia?",
+      "options": [
+        "Wide QRS",
+        "Peaked T waves",
+        "ST elevation",
+        "U waves"
+      ],
+      "correct": 3,
+      "rationale": "U waves are a specific sign of low potassium."
+    },
+    {
+      "q": "What is the first EKG sign of Hyperkalemia?",
+      "options": [
+        "Peaked T waves",
+        "Inverted T waves",
+        "U waves",
+        "ST depression"
+      ],
+      "correct": 0,
+      "rationale": "Tall, peaked T waves indicate dangerous levels of potassium."
+    },
+    {
+      "q": "What is a primary symptom of Hyponatremia?",
+      "options": [
+        "Thirst",
+        "Confusion/Seizures",
+        "Dry skin",
+        "Constipation"
+      ],
+      "correct": 1,
+      "rationale": "Sodium regulates fluid balance; low sodium causes brain swelling (cerebral edema)."
+    },
+    {
+      "q": "What is a common sign of Hypernatremia?",
+      "options": [
+        "Edema",
+        "Confusion",
+        "Thirst, dry tongue",
+        "Diarrhea"
+      ],
+      "correct": 2,
+      "rationale": "High sodium draws water out of cells, causing dehydration signs."
+    },
+    {
+      "q": "What signs indicate Hypocalcemia?",
+      "options": [
+        "Constipation",
+        "Bone pain",
+        "Kidney stones",
+        "Tetany, Chvostek's, Trousseau's"
+      ],
+      "correct": 3,
+      "rationale": "Low calcium causes neuromuscular irritability and spasms."
+    },
+    {
+      "q": "What is a symptom of Hypercalcemia?",
+      "options": [
+        "Muscle weakness/Sedation",
+        "Tetany",
+        "Spasms",
+        "Hyperreflexia"
+      ],
+      "correct": 0,
+      "rationale": "High calcium acts as a sedative on the muscles and nerves."
+    }
+  ]
+}

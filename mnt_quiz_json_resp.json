@@ -1,0 +1,326 @@
+{
+  "section": "resp",
+  "title": "Respiratory System",
+  "questionCount": 29,
+  "questions": [
+    {
+      "q": "What is the maximum O2 flow for a COPD patient?",
+      "options": [
+        "10 Liters/min",
+        "6 Liters/min",
+        "2 Liters/min",
+        "None"
+      ],
+      "correct": 2,
+      "rationale": "COPD patients breathe based on hypoxic drive; high O2 levels can knock out their drive to breathe."
+    },
+    {
+      "q": "What is a priority nursing intervention for Pneumonia?",
+      "options": [
+        "Restrict fluids",
+        "Lay flat",
+        "Bed rest only",
+        "Increase fluids to 3L/day"
+      ],
+      "correct": 3,
+      "rationale": "Hydration thins the mucus, making it easier to expectorate and clear the airway."
+    },
+    {
+      "q": "Which isolation precaution is used for TB?",
+      "options": [
+        "Airborne",
+        "Droplet",
+        "Contact",
+        "Standard"
+      ],
+      "correct": 0,
+      "rationale": "TB is transmitted via small airborne particles, requiring a negative pressure room and N95 respirators."
+    },
+    {
+      "q": "What should you NEVER do for a child with Epiglottitis?",
+      "options": [
+        "Monitor vitals",
+        "Examine the throat with a tongue blade",
+        "Keep them calm",
+        "Give Oxygen"
+      ],
+      "correct": 1,
+      "rationale": "Stimulating the gag reflex can cause complete laryngospasm and airway obstruction."
+    },
+    {
+      "q": "What does continuous bubbling in the water seal chamber indicate?",
+      "options": [
+        "Suction is too high",
+        "Normal functioning",
+        "Air Leak",
+        "Tube is blocked"
+      ],
+      "correct": 2,
+      "rationale": "The water seal should only bubble intermittently (tidaling); continuous bubbling means air is leaking into the system."
+    },
+    {
+      "q": "What would the ABG of a client with COPD show?",
+      "options": [
+        "Hypoxemia, Hypocapnia, Resp Alkalosis",
+        "Metabolic Acidosis",
+        "Normal",
+        "Hypoxemia, Hypercapnia, Resp Acidosis"
+      ],
+      "correct": 3,
+      "rationale": "COPD causes air trapping, leading to CO2 retention (Hypercapnia/Acidosis) and poor oxygenation (Hypoxemia)."
+    },
+    {
+      "q": "What does the chest of a client with COPD look like?",
+      "options": [
+        "Barrel chest",
+        "Pigeon chest",
+        "Funnel chest",
+        "Flat chest"
+      ],
+      "correct": 0,
+      "rationale": "Chronic air trapping expands the chest wall, creating a barrel shape."
+    },
+    {
+      "q": "In emphysema, the alveoli are:",
+      "options": [
+        "Normal",
+        "Over-enlarged and under-ventilated",
+        "Fluid filled",
+        "Collapsed"
+      ],
+      "correct": 1,
+      "rationale": "The alveolar walls are destroyed, creating large air sacs that trap air and cannot exchange gas effectively."
+    },
+    {
+      "q": "To control SOB, what technique should be taught?",
+      "options": [
+        "Coughing",
+        "Deep breathing",
+        "Pursed lip breathing",
+        "Pant blowing"
+      ],
+      "correct": 2,
+      "rationale": "Pursed lip breathing creates back pressure to keep airways open longer during exhalation."
+    },
+    {
+      "q": "What fluid order should the emphysema client have?",
+      "options": [
+        "Restrict fluids",
+        "NPO",
+        "1 liter per day",
+        "3 liters per day"
+      ],
+      "correct": 3,
+      "rationale": "Fluids help liquefy secretions, making them easier to clear."
+    },
+    {
+      "q": "Which blood gas disorder is most common in pneumonia?",
+      "options": [
+        "Respiratory alkalosis",
+        "Respiratory acidosis",
+        "Metabolic alkalosis",
+        "Metabolic acidosis"
+      ],
+      "correct": 0,
+      "rationale": "Early pneumonia causes hyperventilation due to hypoxia and pain, blowing off CO2 (Alkalosis)."
+    },
+    {
+      "q": "Where do the emboli that cause pulmonary embolus usually come from?",
+      "options": [
+        "The brain",
+        "The legs",
+        "The arms",
+        "The heart"
+      ],
+      "correct": 1,
+      "rationale": "Deep vein thromboses (DVT) in the legs break off and travel to the lungs."
+    },
+    {
+      "q": "What is the first sign of pulmonary embolus?",
+      "options": [
+        "Hemoptysis",
+        "Chest pain",
+        "Dyspnea",
+        "Fever"
+      ],
+      "correct": 2,
+      "rationale": "Sudden shortness of breath is the hallmark early sign of PE."
+    },
+    {
+      "q": "When pulmonary edema is severe what does the sputum look like?",
+      "options": [
+        "Green and thick",
+        "Yellow",
+        "Clear",
+        "Bloody and frothy"
+      ],
+      "correct": 3,
+      "rationale": "Fluid pushing into alveoli mixes with air to create froth; capillary rupture adds blood (pink)."
+    },
+    {
+      "q": "What drug is used in pulmonary edema to reduce fluid in the lungs?",
+      "options": [
+        "A diuretic (Lasix)",
+        "Antibiotic",
+        "Beta blocker",
+        "Calcium channel blocker"
+      ],
+      "correct": 0,
+      "rationale": "Lasix is a potent diuretic that rapidly removes fluid from the lungs."
+    },
+    {
+      "q": "The Mantoux test is considered positive if the induration is greater than:",
+      "options": [
+        "20 mm",
+        "10 mm",
+        "15 mm",
+        "5 mm"
+      ],
+      "correct": 1,
+      "rationale": "For general population, >10mm is positive. (>5mm for HIV/Immunocompromised)."
+    },
+    {
+      "q": "What colors will Rifampin turn urine, sweat, and tears?",
+      "options": [
+        "Brown or black",
+        "Blue or green",
+        "Red or orange",
+        "Yellow"
+      ],
+      "correct": 2,
+      "rationale": "Rifampin causes harmless red-orange discoloration of body fluids."
+    },
+    {
+      "q": "How many consecutive sputum cultures need to be negative for the client to be non-contagious?",
+      "options": [
+        "1",
+        "5",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "rationale": "Three consecutive negative smears are the gold standard for clearance."
+    },
+    {
+      "q": "The cause of RDS is a lack of:",
+      "options": [
+        "Surfactant",
+        "Oxygen",
+        "Blood",
+        "Antibodies"
+      ],
+      "correct": 0,
+      "rationale": "Surfactant keeps alveoli open; without it, they collapse (atelectasis)."
+    },
+    {
+      "q": "High flow rates of O2 delivered in RDS can cause:",
+      "options": [
+        "Liver failure",
+        "Retrolental fibroplasia",
+        "Hearing loss",
+        "Brain damage"
+      ],
+      "correct": 1,
+      "rationale": "Excess oxygen causes abnormal blood vessel growth in the retina, leading to blindness."
+    },
+    {
+      "q": "If a child is suspected of having epiglottitis, should you put a tongue depressor in their mouth?",
+      "options": [
+        "Only if doctor present",
+        "Yes, to see",
+        "No, never",
+        "Yes, quickly"
+      ],
+      "correct": 2,
+      "rationale": "It triggers laryngospasm."
+    },
+    {
+      "q": "In which two systems/organs are the most problems in CF?",
+      "options": [
+        "Heart & Liver",
+        "Brain & Spine",
+        "Kidney & Bladder",
+        "Lungs & Pancreas"
+      ],
+      "correct": 3,
+      "rationale": "Thick mucus clogs the airways (Lungs) and digestive ducts (Pancreas)."
+    },
+    {
+      "q": "What is the classic test for CF?",
+      "options": [
+        "Sweat test",
+        "Blood test",
+        "Urine test",
+        "X-ray"
+      ],
+      "correct": 0,
+      "rationale": "CF patients excrete excessive salt in their sweat."
+    },
+    {
+      "q": "When should the child with CF take his pancreatic enzymes?",
+      "options": [
+        "Once daily",
+        "With meals",
+        "Empty stomach",
+        "Before bed"
+      ],
+      "correct": 1,
+      "rationale": "Enzymes must be present when food enters the GI tract to aid digestion."
+    },
+    {
+      "q": "When will the client with asthma experience the cough?",
+      "options": [
+        "After eating",
+        "In morning",
+        "At night",
+        "While walking"
+      ],
+      "correct": 2,
+      "rationale": "Nocturnal coughing is a common asthma symptom due to circadian drops in cortisol/epinephrine."
+    },
+    {
+      "q": "Which should you give first-the steroid or bronchodilator?",
+      "options": [
+        "Steroid",
+        "Doesn't matter",
+        "Together",
+        "Bronchodilator"
+      ],
+      "correct": 3,
+      "rationale": "Bronchodilators open the airway so the steroid can reach the lungs."
+    },
+    {
+      "q": "For how long should suction be applied during any one entry?",
+      "options": [
+        "10 seconds",
+        "30 seconds",
+        "1 minute",
+        "5 seconds"
+      ],
+      "correct": 0,
+      "rationale": "Prolonged suctioning causes hypoxia and vagal stimulation (bradycardia)."
+    },
+    {
+      "q": "What must the nurse always have at the bedside of a trach patient?",
+      "options": [
+        "Tape",
+        "An obturator",
+        "Hemostats",
+        "Scissors"
+      ],
+      "correct": 1,
+      "rationale": "The obturator is needed to re-insert the tube if it accidentally falls out."
+    },
+    {
+      "q": "What is the cause of stridor?",
+      "options": [
+        "Bronchoconstriction",
+        "Fluid in lungs",
+        "Laryngeal spasm/swelling",
+        "Mucous"
+      ],
+      "correct": 2,
+      "rationale": "Stridor is a high-pitched upper airway sound indicating obstruction/swelling."
+    }
+  ]
+}

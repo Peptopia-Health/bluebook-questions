@@ -1,0 +1,280 @@
+{
+  "section": "neuro",
+  "title": "Neurological System",
+  "questionCount": 25,
+  "questions": [
+    {
+      "q": "Which is a component of Cushing's Triad?",
+      "options": [
+        "Narrow Pulse Pressure",
+        "Tachycardia",
+        "Hypotension",
+        "Bradycardia"
+      ],
+      "correct": 3,
+      "rationale": "Cushing's Triad is the classic late sign of increased ICP: Hypertension, Bradycardia, and Irregular Respirations."
+    },
+    {
+      "q": "What is the priority action during a seizure?",
+      "options": [
+        "Protect from injury",
+        "Insert airway",
+        "Restrain limbs",
+        "Force mouth open"
+      ],
+      "correct": 0,
+      "rationale": "Safety is the priority. Restraining or forcing objects into the mouth causes injury."
+    },
+    {
+      "q": "What is the proper bed position for a CVA patient?",
+      "options": [
+        "Trendelenburg",
+        "HOB 30 degrees",
+        "Flat",
+        "Prone"
+      ],
+      "correct": 1,
+      "rationale": "Elevating the HOB 30 degrees promotes venous drainage and lowers ICP."
+    },
+    {
+      "q": "What is a classic sign of Meningitis?",
+      "options": [
+        "Polyuria",
+        "Flaccid muscles",
+        "Nuchal Rigidity",
+        "Low fever"
+      ],
+      "correct": 2,
+      "rationale": "Nuchal rigidity (stiff neck) is the hallmark sign of meningeal irritation."
+    },
+    {
+      "q": "What is the most common cause of Autonomic Dysreflexia?",
+      "options": [
+        "Hunger",
+        "Pain",
+        "Cold drafts",
+        "Distended Bladder"
+      ],
+      "correct": 3,
+      "rationale": "A full bladder (or bowel impaction) is the noxious stimulus that triggers this life-threatening hypertensive crisis."
+    },
+    {
+      "q": "What is the earliest sign of increased ICP?",
+      "options": [
+        "Change in LOC",
+        "Pupil dilation",
+        "Vomiting",
+        "Headache"
+      ],
+      "correct": 0,
+      "rationale": "Brain cells are very sensitive to pressure; consciousness changes before vitals."
+    },
+    {
+      "q": "What signs of ICP are seen in infants?",
+      "options": [
+        "Hypotension",
+        "Bulging fontanels, high pitched cry",
+        "Headache",
+        "Bradycardia"
+      ],
+      "correct": 1,
+      "rationale": "Infant skulls can expand (bulging fontanel); irritation causes the unique cry."
+    },
+    {
+      "q": "What osmotic diuretic is used to reduce ICP?",
+      "options": [
+        "Spironolactone",
+        "Lasix",
+        "Mannitol",
+        "HCTZ"
+      ],
+      "correct": 2,
+      "rationale": "Mannitol pulls fluid from the brain tissue into the blood to be excreted."
+    },
+    {
+      "q": "Positive Kernig's sign is:",
+      "options": [
+        "Swaying with eyes closed",
+        "Neck flexion causes knee flexion",
+        "Fanning of toes",
+        "Pain in leg when knee is straightened"
+      ],
+      "correct": 3,
+      "rationale": "Kernig's involves leg extension pain; Brudzinski's involves neck flexion."
+    },
+    {
+      "q": "What is the position for a lumbar puncture?",
+      "options": [
+        "Lateral decubitus (fetal)",
+        "Prone",
+        "Supine",
+        "Sitting up"
+      ],
+      "correct": 0,
+      "rationale": "Fetal position opens up the vertebrae for easier needle access."
+    },
+    {
+      "q": "What is a common side effect of Dilantin?",
+      "options": [
+        "Constipation",
+        "Gingival hyperplasia",
+        "Photosensitivity",
+        "Diarrhea"
+      ],
+      "correct": 1,
+      "rationale": "Gum overgrowth is a specific side effect of Phenytoin (Dilantin)."
+    },
+    {
+      "q": "Which aphasia is inability to speak?",
+      "options": [
+        "Conductive",
+        "Receptive",
+        "Expressive",
+        "Global"
+      ],
+      "correct": 2,
+      "rationale": "Expressive (motor) aphasia means they know what they want to say but cannot say it."
+    },
+    {
+      "q": "What causes Autonomic Dysreflexia?",
+      "options": [
+        "Exercise",
+        "Stress",
+        "Cold",
+        "Full bladder or bowel impaction"
+      ],
+      "correct": 3,
+      "rationale": "Noxious stimuli below the level of injury trigger massive sympathetic discharge."
+    },
+    {
+      "q": "Does MG weakness get better or worse with exercise?",
+      "options": [
+        "Worse",
+        "Better"
+      ],
+      "correct": 0,
+      "rationale": "MG is characterized by muscle fatigue; repetitive use depletes acetylcholine."
+    },
+    {
+      "q": "What test confirms Myasthenia Gravis?",
+      "options": [
+        "Tensilon Test",
+        "EEG",
+        "EMG",
+        "MRI"
+      ],
+      "correct": 0,
+      "rationale": "Tensilon prevents Acetylcholine breakdown; temporary strength improvement confirms MG."
+    },
+    {
+      "q": "What part of the nerve is damaged in MS?",
+      "options": [
+        "Dendrite",
+        "Myelin sheath",
+        "Axon",
+        "Soma"
+      ],
+      "correct": 1,
+      "rationale": "MS is an autoimmune destruction of the myelin sheath."
+    },
+    {
+      "q": "What neurotransmitter is low in Parkinson's?",
+      "options": [
+        "GABA",
+        "Serotonin",
+        "Dopamine",
+        "Acetylcholine"
+      ],
+      "correct": 2,
+      "rationale": "Loss of dopamine-producing cells in the substantia nigra causes symptoms."
+    },
+    {
+      "q": "What is the main drug for Parkinson's?",
+      "options": [
+        "Cogentin",
+        "Haldol",
+        "Valium",
+        "Levodopa"
+      ],
+      "correct": 3,
+      "rationale": "Levodopa is a dopamine precursor that crosses the blood-brain barrier."
+    },
+    {
+      "q": "What is the maximum score on the Glasgow Coma Scale?",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct": 0,
+      "rationale": "15 is fully alert; 3 is the lowest score (deep coma)."
+    },
+    {
+      "q": "Which cranial nerve is responsible for facial expression?",
+      "options": [
+        "CN III (Oculomotor)",
+        "CN VII (Facial)",
+        "CN V (Trigeminal)",
+        "CN X (Vagus)"
+      ],
+      "correct": 1,
+      "rationale": "CN VII controls facial muscles (smile/frown); Bell's palsy affects this nerve."
+    },
+    {
+      "q": "What nursing intervention is crucial for Bell's Palsy?",
+      "options": [
+        "Monitor ICP",
+        "Maintain airway",
+        "Protect the eye on affected side",
+        "Prevent aspiration"
+      ],
+      "correct": 2,
+      "rationale": "Inability to close the eye leads to corneal drying and damage."
+    },
+    {
+      "q": "What medication is linked to Reye's Syndrome in children?",
+      "options": [
+        "Antibiotics",
+        "Tylenol",
+        "Ibuprofen",
+        "Aspirin"
+      ],
+      "correct": 3,
+      "rationale": "Aspirin use during a viral illness in children is the primary cause of Reye's Syndrome."
+    },
+    {
+      "q": "What are the hallmark signs of Neuroleptic Malignant Syndrome?",
+      "options": [
+        "High fever and muscle rigidity",
+        "Hypothermia and flaccidity",
+        "Hypertension and tachycardia",
+        "Seizures and coma"
+      ],
+      "correct": 0,
+      "rationale": "NMS presents with dangerously high temperature and severe muscle stiffness."
+    },
+    {
+      "q": "What is a sign of Tardive Dyskinesia?",
+      "options": [
+        "Tremors",
+        "Chewing motion/Tongue protrusion",
+        "Muscle rigidity",
+        "Shuffling gait"
+      ],
+      "correct": 1,
+      "rationale": "TD involves involuntary, repetitive movements like lip smacking or tongue thrusting."
+    },
+    {
+      "q": "What is a classic sign of Huntington's Disease?",
+      "options": [
+        "Paralysis",
+        "Tremors",
+        "Chorea (jerky movements)",
+        "Rigidity"
+      ],
+      "correct": 2,
+      "rationale": "Chorea refers to the rapid, jerky, involuntary movements characteristic of Huntington's."
+    }
+  ]
+}

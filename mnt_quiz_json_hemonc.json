@@ -1,0 +1,238 @@
+{
+  "section": "hemonc",
+  "title": "Hematology & Oncology",
+  "questionCount": 21,
+  "questions": [
+    {
+      "q": "What does the \"C\" in CAUTION stand for?",
+      "options": [
+        "Cancer",
+        "Cough",
+        "Change in bowel/bladder habits",
+        "Chemotherapy"
+      ],
+      "correct": 2,
+      "rationale": "CAUTION is the acronym for cancer warning signs (Change, A sore, Unusual bleeding, Thickening, Indigestion, Obvious change in wart, Nagging cough)."
+    },
+    {
+      "q": "What is the most dangerous side effect of chemotherapy?",
+      "options": [
+        "Nausea",
+        "Alopecia",
+        "Fatigue",
+        "Bone Marrow Suppression"
+      ],
+      "correct": 3,
+      "rationale": "Suppression leads to Neutropenia (Infection risk), Thrombocytopenia (Bleeding), and Anemia."
+    },
+    {
+      "q": "What precaution is needed for a platelet count of 30,000?",
+      "options": [
+        "Bleeding precautions",
+        "Isolation",
+        "Seizure precautions",
+        "Contact precautions"
+      ],
+      "correct": 0,
+      "rationale": "Low platelets (Thrombocytopenia) means the blood cannot clot. Soft toothbrush, no razors, no IM injections."
+    },
+    {
+      "q": "What are the 3 rules of radiation safety?",
+      "options": [
+        "Mask, Gown, Gloves",
+        "Time, Distance, Shielding",
+        "Wash, Rinse, Repeat",
+        "Isolate, Medicator, Sedate"
+      ],
+      "correct": 1,
+      "rationale": "Limit Time, Maximize Distance, Use Shielding (Lead apron)."
+    },
+    {
+      "q": "What if a radiation implant falls out?",
+      "options": [
+        "Pick up with gloved hand",
+        "Kick it under bed",
+        "Pick up with forceps/lead container",
+        "Leave it"
+      ],
+      "correct": 2,
+      "rationale": "Never touch with hands. Use long-handled forceps and place in a lead-lined container."
+    },
+    {
+      "q": "What is the priority for bleeding into a joint (Hemophilia)?",
+      "options": [
+        "Heat",
+        "Active Range of Motion",
+        "Massage",
+        "Immobilize and Elevate"
+      ],
+      "correct": 3,
+      "rationale": "Movement promotes more bleeding. Immobilize to allow clot formation; ice to vasoconstrict."
+    },
+    {
+      "q": "What are the priorities in Sickle Cell Crisis?",
+      "options": [
+        "Hydration and Pain Management",
+        "Antibiotics",
+        "Iron supplements",
+        "Isolation"
+      ],
+      "correct": 0,
+      "rationale": "Hydration un-clumps the blood cells; Pain is severe due to ischemia."
+    },
+    {
+      "q": "What vitamin is not absorbed in Pernicious Anemia?",
+      "options": [
+        "Iron",
+        "Vitamin B12",
+        "Vitamin C",
+        "Folic Acid"
+      ],
+      "correct": 1,
+      "rationale": "Lack of intrinsic factor in the stomach prevents absorption of dietary B12."
+    },
+    {
+      "q": "What is the treatment for Polycythemia Vera?",
+      "options": [
+        "Blood transfusion",
+        "Iron supplements",
+        "Phlebotomy (remove blood)",
+        "Steroids"
+      ],
+      "correct": 2,
+      "rationale": "Removing blood decreases viscosity and prevents clots/stroke."
+    },
+    {
+      "q": "What is the priority for a leukemic patient with neutropenia?",
+      "options": [
+        "High protein diet",
+        "Bleeding precautions",
+        "Pain control",
+        "Infection prevention"
+      ],
+      "correct": 3,
+      "rationale": "Neutropenia means the body cannot fight infection; minor bugs can be fatal."
+    },
+    {
+      "q": "What restriction applies to the arm on the mastectomy side?",
+      "options": [
+        "No BP, IVs, or injections",
+        "No movement",
+        "Keep dependent",
+        "Apply heat"
+      ],
+      "correct": 0,
+      "rationale": "Lymph node removal impairs drainage; constriction can cause Lymphedema."
+    },
+    {
+      "q": "When should Testicular Self Exam (TSE) be performed?",
+      "options": [
+        "Daily",
+        "Monthly, in warm shower",
+        "Yearly",
+        "Before bed"
+      ],
+      "correct": 1,
+      "rationale": "Warm water relaxes the scrotum, making exams easier."
+    },
+    {
+      "q": "What blood test screens for Prostate Cancer?",
+      "options": [
+        "CBC",
+        "BUN",
+        "PSA (Prostate Specific Antigen)",
+        "Creatinine"
+      ],
+      "correct": 2,
+      "rationale": "Elevated PSA indicates prostate irritation or cancer."
+    },
+    {
+      "q": "What is the first action if an IV chemo site looks red/swollen?",
+      "options": [
+        "Call MD",
+        "Slow the rate",
+        "Apply ice",
+        "Stop the infusion"
+      ],
+      "correct": 3,
+      "rationale": "Vesicants destroy tissue. Stopping the input is the absolute first step."
+    },
+    {
+      "q": "What cell type confirms Hodgkin's Lymphoma?",
+      "options": [
+        "Reed-Sternberg cells",
+        "Sickle cells",
+        "Blast cells",
+        "T-cells"
+      ],
+      "correct": 0,
+      "rationale": "The presence of these specific giant cells differentiates Hodgkin's from Non-Hodgkin's."
+    },
+    {
+      "q": "What urinary finding is seen in Multiple Myeloma?",
+      "options": [
+        "Ketones",
+        "Bence-Jones proteins",
+        "Glucose",
+        "Blood"
+      ],
+      "correct": 1,
+      "rationale": "These abnormal proteins clog the kidneys."
+    },
+    {
+      "q": "Can a total laryngectomy patient choke on food?",
+      "options": [
+        "Yes, easily",
+        "Only liquids",
+        "No, the airway is separated",
+        "Only solids"
+      ],
+      "correct": 2,
+      "rationale": "The trachea is disconnected from the esophagus and brought out to a stoma; aspiration is anatomically impossible (unless via fistula)."
+    },
+    {
+      "q": "What is the primary risk factor for Cervical Cancer?",
+      "options": [
+        "Alcohol",
+        "Smoking",
+        "Obesity",
+        "HPV Infection"
+      ],
+      "correct": 3,
+      "rationale": "Human Papillomavirus is the cause of nearly all cervical cancers."
+    },
+    {
+      "q": "How should you wash a radiation site?",
+      "options": [
+        "Water only, pat dry",
+        "Soap and scrubbing",
+        "Alcohol",
+        "Lotion"
+      ],
+      "correct": 0,
+      "rationale": "The skin is fragile and \"burned\"; chemicals and friction cause breakdown."
+    },
+    {
+      "q": "How should liquid iron be administered?",
+      "options": [
+        "With milk",
+        "Through a straw",
+        "In a spoon",
+        "Mixed with antacid"
+      ],
+      "correct": 1,
+      "rationale": "Iron stains teeth; a straw bypasses them. Vitamin C aids absorption."
+    },
+    {
+      "q": "What is a sign of a Hemolytic reaction?",
+      "options": [
+        "Itching",
+        "Cough",
+        "Flank/Back pain",
+        "Swelling"
+      ],
+      "correct": 2,
+      "rationale": "The kidneys clog with destroyed RBCs, causing intense flank pain."
+    }
+  ]
+}

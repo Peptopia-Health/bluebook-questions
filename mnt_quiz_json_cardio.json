@@ -1,0 +1,434 @@
+{
+  "section": "cardio",
+  "title": "Cardiovascular System",
+  "questionCount": 39,
+  "questions": [
+    {
+      "q": "What defines systolic blood pressure?",
+      "options": [
+        "Maximal force on arteries",
+        "Lowest force on arteries",
+        "Average pressure",
+        "Venous pressure"
+      ],
+      "correct": 0,
+      "rationale": "Systole represents the maximal force of blood exerted against the artery walls during contraction."
+    },
+    {
+      "q": "What does a widening pulse pressure indicate?",
+      "options": [
+        "Shock",
+        "Increased Intracranial Pressure",
+        "Hypovolemia",
+        "Heart Failure"
+      ],
+      "correct": 1,
+      "rationale": "A widening pulse pressure (higher systolic, lower diastolic) is a classic sign of Increased ICP (Cushing's Triad)."
+    },
+    {
+      "q": "How do you distinguish Angina from MI?",
+      "options": [
+        "Angina is more painful",
+        "MI has no EKG changes",
+        "Angina is relieved by rest/nitro",
+        "MI is relieved by sleep"
+      ],
+      "correct": 2,
+      "rationale": "The key diagnostic difference clinically is that Angina Pectoris is relieved by Nitroglycerin and rest, whereas MI pain is not."
+    },
+    {
+      "q": "What is the most common side effect of Nitroglycerin?",
+      "options": [
+        "Hypertension",
+        "Bradycardia",
+        "Rash",
+        "Headache"
+      ],
+      "correct": 3,
+      "rationale": "Nitroglycerin causes massive vasodilation, leading to cerebral vasodilation (Headache) and systemic hypotension."
+    },
+    {
+      "q": "What must be assessed before giving Digoxin?",
+      "options": [
+        "Apical Pulse",
+        "Blood Pressure",
+        "Respirations",
+        "LOC"
+      ],
+      "correct": 0,
+      "rationale": "Digoxin slows the heart rate; giving it to a bradycardic patient can cause life-threatening heart block."
+    },
+    {
+      "q": "What is a classic sign of Left-Sided Heart Failure?",
+      "options": [
+        "Distended Neck Veins",
+        "Pulmonary Crackles/Dyspnea",
+        "Pedal Edema",
+        "Ascites"
+      ],
+      "correct": 1,
+      "rationale": "Left-sided failure backs fluid up into the Lungs (Left = Lungs), causing crackles and dyspnea."
+    },
+    {
+      "q": "What are the early signs of hypovolemic shock?",
+      "options": [
+        "Bradycardia and Hypertension",
+        "Warm dry skin",
+        "Tachycardia and Tachypnea",
+        "Increased Urine Output"
+      ],
+      "correct": 2,
+      "rationale": "The body compensates for low volume by increasing Heart Rate and Respiratory Rate to maintain perfusion."
+    },
+    {
+      "q": "If you deflate a cuff TOO SLOWLY, the reading will be:",
+      "options": [
+        "Accurate",
+        "Too Low",
+        "Variable",
+        "Too High"
+      ],
+      "correct": 3,
+      "rationale": "Slow deflation allows venous congestion to build up, falsely increasing the resistance and the reading."
+    },
+    {
+      "q": "Vasoconstriction will _____ blood pressure.",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Not affect",
+        "Fluctuate"
+      ],
+      "correct": 0,
+      "rationale": "Narrowing the vessels increases resistance, which directly increases blood pressure."
+    },
+    {
+      "q": "Vasodilation will _____ blood pressure.",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Stabilize",
+        "Spike"
+      ],
+      "correct": 1,
+      "rationale": "Widening the vessels decreases resistance, which lowers blood pressure."
+    },
+    {
+      "q": "Shock will _____ blood pressure.",
+      "options": [
+        "Increase",
+        "Maintain",
+        "Decrease",
+        "Widen"
+      ],
+      "correct": 2,
+      "rationale": "Loss of volume (hypovolemia) leads to a drop in pressure."
+    },
+    {
+      "q": "Increased intracranial pressure will _____ the pulse pressure.",
+      "options": [
+        "Stabilize",
+        "Decrease or narrow",
+        "Eliminate",
+        "Increase or widen"
+      ],
+      "correct": 3,
+      "rationale": "Cushing's reflex causes systolic BP to rise to overcome ICP, widening the pulse pressure."
+    },
+    {
+      "q": "What causes angina pectoris?",
+      "options": [
+        "Decreased blood supply to myocardium",
+        "Coronary artery rupture",
+        "Heart failure",
+        "Pericarditis"
+      ],
+      "correct": 0,
+      "rationale": "Angina is ischemic pain caused by a mismatch between oxygen supply and demand."
+    },
+    {
+      "q": "How many nitroglycerin tabs can you take before calling the doctor?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correct": 1,
+      "rationale": "Standard protocol is one tab every 5 minutes up to 3 doses. If pain persists, it may be an MI."
+    },
+    {
+      "q": "By what route do you take nitro?",
+      "options": [
+        "Oral",
+        "IM",
+        "Sublingual",
+        "IV"
+      ],
+      "correct": 2,
+      "rationale": "Sublingual administration allows rapid absorption into the bloodstream, bypassing the liver."
+    },
+    {
+      "q": "What is the action of nitro?",
+      "options": [
+        "Increases heart rate",
+        "Constricts coronary arteries",
+        "Decreases contractility",
+        "Dilates coronary arteries"
+      ],
+      "correct": 3,
+      "rationale": "Nitro is a potent vasodilator, improving blood flow to the heart muscle."
+    },
+    {
+      "q": "What precaution must the nurse take when administering topical nitro paste?",
+      "options": [
+        "Wear gloves",
+        "Check apical pulse",
+        "Massage the area",
+        "Apply heat"
+      ],
+      "correct": 0,
+      "rationale": "The medication can be absorbed through the nurse's skin, causing a severe headache."
+    },
+    {
+      "q": "What is the #1 symptom of an MI?",
+      "options": [
+        "Indigestion",
+        "Severe chest pain unrelieved by rest/nitro",
+        "Shortness of breath",
+        "Left arm numbness"
+      ],
+      "correct": 1,
+      "rationale": "Pain that does not go away with rest or nitro is the hallmark sign of infarction vs angina."
+    },
+    {
+      "q": "What words will the client use to describe the pain of an MI?",
+      "options": [
+        "Sharp, stabbing",
+        "Burning, gnawing",
+        "Crushing, heavy, squeezing",
+        "Dull, aching"
+      ],
+      "correct": 2,
+      "rationale": "Ischemic cardiac pain is typically described as pressure or squeezing, not sharp/stabbing."
+    },
+    {
+      "q": "Death due to MI occurs within ___ of symptom onset in 50% of all patients.",
+      "options": [
+        "48 hours",
+        "24 hours",
+        "One week",
+        "One hour"
+      ],
+      "correct": 3,
+      "rationale": "The first hour is the \"Golden Hour\" due to the high risk of fatal arrhythmias like V-Fib."
+    },
+    {
+      "q": "What pain medication is given for the pain of a MI?",
+      "options": [
+        "Morphine",
+        "Tylenol",
+        "Codeine",
+        "Ibuprofen"
+      ],
+      "correct": 0,
+      "rationale": "Morphine reduces pain and anxiety, and also decreases preload (venous return), resting the heart."
+    },
+    {
+      "q": "What is the reason for giving post MI patients ASA?",
+      "options": [
+        "Relieve pain",
+        "Prevent platelets from forming clots",
+        "Reduce fever",
+        "Treat inflammation"
+      ],
+      "correct": 1,
+      "rationale": "Aspirin inhibits platelet clumping, preventing further occlusion of the coronary arteries."
+    },
+    {
+      "q": "The 3 most common complications after MI are...",
+      "options": [
+        "Stroke, infection, renal failure",
+        "PE, DVT, pneumonia",
+        "Cardiogenic shock, arrhythmia, CHF",
+        "Hemorrhage, rupture, aneurysm"
+      ],
+      "correct": 2,
+      "rationale": "Arrhythmias (electrical), CHF (pump failure), and Shock (severe failure) are direct consequences of heart muscle death."
+    },
+    {
+      "q": "What drug is used to treat PVCs after an MI?",
+      "options": [
+        "Atropine",
+        "Digoxin",
+        "Epinephrine",
+        "Lidocaine"
+      ],
+      "correct": 3,
+      "rationale": "Lidocaine suppresses ventricular irritability (PVCs) which can lead to V-Fib."
+    },
+    {
+      "q": "Which cardiac enzyme rises earliest after an MI?",
+      "options": [
+        "Troponin",
+        "CPK",
+        "LDH",
+        "SGOT"
+      ],
+      "correct": 0,
+      "rationale": "Troponin is highly specific to cardiac muscle and rises within 3 hours of injury."
+    },
+    {
+      "q": "Will fluid resuscitation treat cardiogenic shock?",
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "correct": 0,
+      "rationale": "The pump is broken; adding fluid volume overloads it further. You need drugs to strengthen the pump."
+    },
+    {
+      "q": "Will the client with a MI be nauseated? Diaphoretic?",
+      "options": [
+        "No, no",
+        "Yes, yes",
+        "Yes, no",
+        "No, yes"
+      ],
+      "correct": 1,
+      "rationale": "Pain and decreased cardiac output trigger the autonomic nervous system, causing sweating and nausea."
+    },
+    {
+      "q": "What is the permanent EKG change seen post MI?",
+      "options": [
+        "Inverted P waves",
+        "Peaked T waves",
+        "ST wave changes",
+        "Widened QRS"
+      ],
+      "correct": 2,
+      "rationale": "ST elevation indicates acute injury; pathologic Q waves indicate permanent tissue death."
+    },
+    {
+      "q": "When cardiac output fails, name three ways the heart will try to compensate.",
+      "options": [
+        "Rest, Sleep, Eat",
+        "Atrophy, Constriction, Bradycardia",
+        "None of these",
+        "Hypertrophy, Dilation, Tachycardia"
+      ],
+      "correct": 3,
+      "rationale": "The heart beats faster (tachycardia) and grows larger (hypertrophy/dilation) to try to pump more blood."
+    },
+    {
+      "q": "Name the three groups of drugs used to treat CHF?",
+      "options": [
+        "Diuretics, Vasodilators, Digitalis",
+        "Antibiotics, Antivirals, Antifungals",
+        "Steroids, NSAIDs, Narcotic",
+        "Beta blockers, Ca blockers, ARBs"
+      ],
+      "correct": 0,
+      "rationale": "Diuretics remove fluid, Vasodilators open vessels, and Digoxin strengthens the beat."
+    },
+    {
+      "q": "When during the day should TED hose be applied?",
+      "options": [
+        "After breakfast",
+        "Before getting out of bed",
+        "Before bed",
+        "After shower"
+      ],
+      "correct": 1,
+      "rationale": "Apply before legs are dependent (standing) to prevent fluid from pooling."
+    },
+    {
+      "q": "Should you massage the calves of the client with CHF?",
+      "options": [
+        "Yes, daily",
+        "Only if painful",
+        "Never",
+        "Only with lotion"
+      ],
+      "correct": 2,
+      "rationale": "Massaging can dislodge a DVT (deep vein thrombosis), sending it to the lungs (PE)."
+    },
+    {
+      "q": "Name the four most common toxic effects of digitalis.",
+      "options": [
+        "Constipation, Dry mouth, Urinary retention, Blurred vision",
+        "Headache, Dizziness, Fatigue, Rash",
+        "Diarrhea, Cramping, Gas, Bloating",
+        "Anorexia, N&V, Yellow vision, Arrhythmia"
+      ],
+      "correct": 3,
+      "rationale": "Early signs are GI (nausea), late signs are visual (haloes) and cardiac (arrhythmias)."
+    },
+    {
+      "q": "What daily measurement best indicates fluid retention?",
+      "options": [
+        "Daily Weight",
+        "I&O",
+        "Abdominal Girth",
+        "Ankle Edema"
+      ],
+      "correct": 0,
+      "rationale": "Weight gain is the most sensitive and reliable indicator of fluid status."
+    },
+    {
+      "q": "When the client is taking diuretics, what mineral is the CHF client most likely to lose?",
+      "options": [
+        "Sodium",
+        "Potassium",
+        "Calcium",
+        "Magnesium"
+      ],
+      "correct": 1,
+      "rationale": "Loop diuretics like Lasix waste potassium, leading to hypokalemia."
+    },
+    {
+      "q": "The best way to prevent thrombophlebitis is:",
+      "options": [
+        "TED Hose",
+        "Aspirin",
+        "Early ambulation",
+        "Massage"
+      ],
+      "correct": 2,
+      "rationale": "Walking pumps the calf muscles, aiding venous return and preventing stasis."
+    },
+    {
+      "q": "What is the primary cause of Buerger's Disease?",
+      "options": [
+        "Alcohol",
+        "Diabetes",
+        "Obesity",
+        "Smoking"
+      ],
+      "correct": 3,
+      "rationale": "Buerger's disease (Thromboangiitis obliterans) is strongly associated with tobacco use."
+    },
+    {
+      "q": "What triggers a Raynaud's attack?",
+      "options": [
+        "Cold and Stress",
+        "Heat and Humidity",
+        "Exercise",
+        "Eating"
+      ],
+      "correct": 0,
+      "rationale": "Cold causes vasoconstriction, triggering the arterial spasm in fingers/toes."
+    },
+    {
+      "q": "What does a leg with PAD look like?",
+      "options": [
+        "Warm, swollen, red",
+        "Cool, pale, hairless",
+        "Edematous with brown ulcers",
+        "Normal"
+      ],
+      "correct": 1,
+      "rationale": "Lack of arterial blood flow leads to cool skin, pallor, and loss of hair follicles."
+    }
+  ]
+}
