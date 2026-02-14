@@ -1,0 +1,450 @@
+[
+  {
+    "topic": "Acid-Base",
+    "fact": "pH 7.35-7.45. CO2 35-45. HCO3 22-26.",
+    "alert": "As the pH goes, so goes my patient.",
+    "q": "According to Klimek, what happens when pH goes UP (Alkalosis)?",
+    "a": [
+      "Only BP goes down",
+      "Everything goes DOWN (Bradycardia)",
+      "Only potassium goes up",
+      "Everything goes UP (Tachycardia, Seizures)"
+    ],
+    "correct": 3,
+    "rationale": "Alkalosis makes the body irritable: high HR, high reflexes, seizures. (Except Potassium goes DOWN)."
+  },
+  {
+    "topic": "Acid-Base Down",
+    "fact": "Acidosis = Down.",
+    "alert": "Bradycardia, Lethargy, Coma, Respiratory Arrest.",
+    "q": "What are the signs of Acidosis?",
+    "a": [
+      "Lethargy, Bradycardia, Flaccidity",
+      "Seizures, Hyperreflexia",
+      "Hypertension",
+      "Tachycardia"
+    ],
+    "correct": 0,
+    "rationale": "Acidosis depresses the CNS: lethargy, low HR, respiratory arrest. (Potassium goes UP)."
+  },
+  {
+    "topic": "Kussmaul Resp",
+    "fact": "Deep rapid breathing.",
+    "alert": "Occurs in MAC (Metabolic Acidosis).",
+    "q": "Which acid-base imbalance causes Kussmaul respirations?",
+    "a": [
+      "Metabolic Alkalosis",
+      "Metabolic Acidosis",
+      "Respiratory Acidosis",
+      "Respiratory Alkalosis"
+    ],
+    "correct": 1,
+    "rationale": "Remember MAC Kussmaul (Metabolic Acidosis causes Kussmaul to blow off CO2)."
+  },
+  {
+    "topic": "Ventilator Alarms",
+    "fact": "High Press = Obstruction.",
+    "alert": "Low Press = Disconnection.",
+    "q": "What causes a High Pressure ventilator alarm?",
+    "a": [
+      "Cuff leak",
+      "Disconnection",
+      "Obstruction (Kinks, Mucus, Coughing)",
+      "Extubation"
+    ],
+    "correct": 2,
+    "rationale": "High pressure means the machine has to push harder against resistance (kinked tube, secretions)."
+  },
+  {
+    "topic": "Aminoglycosides",
+    "fact": "\"Mean Old Mycins\".",
+    "alert": "Ototoxicity (Ears) & Nephrotoxicity (Kidneys).",
+    "q": "What are the toxic effects of Aminoglycosides (Gentamicin)?",
+    "a": [
+      "Vision loss",
+      "Liver failure",
+      "Bone marrow suppression",
+      "Ototoxicity and Nephrotoxicity"
+    ],
+    "correct": 3,
+    "rationale": "Think mice (mycin) have big ears (Oto) and kidneys are shaped like ears (Nephro)."
+  },
+  {
+    "topic": "Troughs & Peaks",
+    "fact": "TAP levels.",
+    "alert": "Trough: 30 min before dose. Peak: Depends on route.",
+    "q": "When is a trough level drawn?",
+    "a": [
+      "30 minutes before the next dose",
+      "30 minutes after the dose",
+      "1 hour after",
+      "Anytime"
+    ],
+    "correct": 0,
+    "rationale": "Trough is the lowest concentration, always drawn immediately before the next dose is given."
+  },
+  {
+    "topic": "Uppers vs Downers",
+    "fact": "Uppers: Caffeine, Cocaine, PCP/LSD, Meth, Adderall.",
+    "alert": "S/S: High HR, BP, Seizures.",
+    "q": "What are the symptoms of an \"Upper\" overdose?",
+    "a": [
+      "Respiratory depression",
+      "Tachycardia, Hypertension, Seizures",
+      "Bradycardia, Lethargy",
+      "Constipation"
+    ],
+    "correct": 1,
+    "rationale": "Uppers stimulate the CNS; everything goes UP."
+  },
+  {
+    "topic": "Downers",
+    "fact": "Everything else.",
+    "alert": "Overdose = Resp Arrest.",
+    "q": "What is the priority for a \"Downer\" overdose?",
+    "a": [
+      "Hypertension",
+      "Seizures",
+      "Respiratory Depression/Arrest",
+      "Hyperreflexia"
+    ],
+    "correct": 2,
+    "rationale": "Downers depress the CNS; too much can stop breathing."
+  },
+  {
+    "topic": "Withdrawal",
+    "fact": "Opposite of the drug.",
+    "alert": "Upper Withdrawal = Down. Downer Withdrawal = Up.",
+    "q": "What happens during withdrawal from a Downer?",
+    "a": [
+      "Sleepiness",
+      "Everything goes DOWN",
+      "No change",
+      "Everything goes UP (Seizure risk)"
+    ],
+    "correct": 3,
+    "rationale": "The body was suppressed; remove the suppressant and the body rebounds upward (seizures, tachycardia)."
+  },
+  {
+    "topic": "Potassium Rules",
+    "fact": "Never push IV.",
+    "alert": "Max 40 mEq/L. High K+ stops heart.",
+    "q": "How should Potassium never be administered?",
+    "a": [
+      "IV Push",
+      "IV Drip",
+      "Oral",
+      "Liquid"
+    ],
+    "correct": 0,
+    "rationale": "IV Push potassium causes instant cardiac arrest. Always dilute in a bag."
+  },
+  {
+    "topic": "Calcium Channel Blockers",
+    "fact": "Like Valium for heart.",
+    "alert": "Calms heart. Lowers BP.",
+    "q": "What is the effect of Calcium Channel Blockers?",
+    "a": [
+      "Increases contractility",
+      "Lowers BP and HR (Relaxes heart)",
+      "Increases HR",
+      "Causes vasoconstriction"
+    ],
+    "correct": 1,
+    "rationale": "They are negative inotropes, chronotropes, and dromotropes (weaken, slow, and block conduction)."
+  },
+  {
+    "topic": "Beta Blockers",
+    "fact": "End in -lol.",
+    "alert": "Lower HR/BP. Do not give to Asthmatics.",
+    "q": "Why are Beta Blockers contraindicated in Asthma?",
+    "a": [
+      "They lower fever",
+      "They increase HR",
+      "They cause bronchoconstriction",
+      "They cause coughing"
+    ],
+    "correct": 2,
+    "rationale": "Non-selective beta blockers block beta-2 receptors in the lungs, causing constriction."
+  },
+  {
+    "topic": "Blood Thinners",
+    "fact": "Heparin (PTT) vs Coumadin (PT/INR).",
+    "alert": "Bleeding precautions.",
+    "q": "Which lab monitors Coumadin (Warfarin)?",
+    "a": [
+      "WBC",
+      "PTT",
+      "Platelets",
+      "PT/INR"
+    ],
+    "correct": 3,
+    "rationale": "PT/INR is for Coumadin. PTT is for Heparin."
+  },
+  {
+    "topic": "Baclofen",
+    "fact": "Muscle relaxant.",
+    "alert": "S/E: Fatigue, Muscle weakness. Don't drink alcohol.",
+    "q": "What patient teaching is needed for Baclofen (Lioresal)?",
+    "a": [
+      "Causes drowsiness; don't drive/drink alcohol",
+      "Causes insomnia",
+      "Take on empty stomach",
+      "Stop abruptly"
+    ],
+    "correct": 0,
+    "rationale": "It relaxes muscles and sedates the CNS; combining with alcohol enhances sedation."
+  },
+  {
+    "topic": "Dantrolene",
+    "fact": "Muscle relaxant.",
+    "alert": "For Malignant Hyperthermia.",
+    "q": "What drug treats Malignant Hyperthermia?",
+    "a": [
+      "Lidocaine",
+      "Dantrolene",
+      "Atropine",
+      "Digoxin"
+    ],
+    "correct": 1,
+    "rationale": "Dantrolene acts directly on skeletal muscle to stop the rigidity and heat production."
+  },
+  {
+    "topic": "Kayexalate",
+    "fact": "Lowers Potassium.",
+    "alert": "\"K-Exits-Late\". Gives Na, kicks out K.",
+    "q": "How does Kayexalate work?",
+    "a": [
+      "Dilutes blood",
+      "Binds phosphate",
+      "Exchanges Sodium for Potassium in the gut",
+      "Increases urine output"
+    ],
+    "correct": 2,
+    "rationale": "It acts as a resin in the bowel, trading sodium ions for potassium ions, which are pooped out."
+  },
+  {
+    "topic": "Regular Insulin",
+    "fact": "Rapid, Run IV.",
+    "alert": "Clear solution.",
+    "q": "Which insulin can be given IV drip?",
+    "a": [
+      "Humalog",
+      "NPH",
+      "Lantus",
+      "Regular"
+    ],
+    "correct": 3,
+    "rationale": "Regular insulin is the only one safe for IV administration."
+  },
+  {
+    "topic": "Peak Levels",
+    "fact": "IV: 15-30 min after finished.",
+    "alert": "IM: 30-60 min.",
+    "q": "When do you draw a peak level for an IV drug?",
+    "a": [
+      "15-30 minutes after infusion finishes",
+      "During infusion",
+      "1 hour after",
+      "Before next dose"
+    ],
+    "correct": 0,
+    "rationale": "This captures the highest concentration in the blood."
+  },
+  {
+    "topic": "Standard Precautions",
+    "fact": "Handwashing, Gloves.",
+    "alert": "For everyone.",
+    "q": "When are Standard Precautions used?",
+    "a": [
+      "Only for immune compromised",
+      "For all patients",
+      "Only for infections",
+      "During surgery"
+    ],
+    "correct": 1,
+    "rationale": "Standard precautions apply to contact with blood, body fluids, non-intact skin, and mucous membranes for all patients."
+  },
+  {
+    "topic": "Contact Precautions",
+    "fact": "MRS. WEE.",
+    "alert": "Gown + Gloves.",
+    "q": "Which diseases require Contact Precautions?",
+    "a": [
+      "Pneumonia",
+      "Flu, Meningitis",
+      "MRSA, RSV, Staph, Wound infections, Enteric (C-diff)",
+      "Measles, TB"
+    ],
+    "correct": 2,
+    "rationale": "Contact is for anything transmitted by touching skin or surfaces (MRS. WEE mnemonic)."
+  },
+  {
+    "topic": "Droplet Precautions",
+    "fact": "SPIDERMAN.",
+    "alert": "Mask + Goggles.",
+    "q": "Which diseases require Droplet Precautions?",
+    "a": [
+      "Hepatitis A",
+      "TB, Measles",
+      "MRSA, C-diff",
+      "Sepsis, Scarlet Fever, Strep, Pertussis, Pneumonia, Flu, Meningitis"
+    ],
+    "correct": 3,
+    "rationale": "Droplets travel 3 feet; a mask is required. (SPIDERMAN mnemonic)."
+  },
+  {
+    "topic": "Airborne Precautions",
+    "fact": "MTV.",
+    "alert": "N95 Mask + Neg Pressure Room.",
+    "q": "Which diseases require Airborne Precautions?",
+    "a": [
+      "Measles, TB, Varicella (Chickenpox)",
+      "Flu, Strep",
+      "MRSA, RSV",
+      "E. Coli"
+    ],
+    "correct": 0,
+    "rationale": "Tiny particles float in the air. MTV mnemonic: Measles, TB, Varicella."
+  },
+  {
+    "topic": "Donning PPE",
+    "fact": "Gown, Mask, Goggles, Gloves.",
+    "alert": "Up the body, then hands.",
+    "q": "What is the correct order for putting on PPE?",
+    "a": [
+      "Mask, Gown, Gloves",
+      "Gown, Mask, Goggles, Gloves",
+      "Gloves, Gown, Mask",
+      "Goggles, Mask, Gown"
+    ],
+    "correct": 1,
+    "rationale": "Start big (Gown), move up to face (Mask/Goggles), end with hands (Gloves)."
+  },
+  {
+    "topic": "Doffing PPE",
+    "fact": "Alphabetical order.",
+    "alert": "Gloves, Goggles, Gown, Mask.",
+    "q": "What is the correct order for removing PPE?",
+    "a": [
+      "All at once",
+      "Mask, Gown, Gloves",
+      "Gloves, Goggles, Gown, Mask",
+      "Gown, Gloves, Mask"
+    ],
+    "correct": 2,
+    "rationale": "Remove dirtiest first (Gloves), protect face/airway last (Mask)."
+  },
+  {
+    "topic": "Restraints",
+    "fact": "Check q15m, Release q2h.",
+    "alert": "New order q24h. MD check within 1h.",
+    "q": "How often must a restraint order be renewed for an adult?",
+    "a": [
+      "Indefinitely",
+      "Every 4 hours",
+      "Weekly",
+      "Every 24 hours"
+    ],
+    "correct": 3,
+    "rationale": "Restraints are highly regulated; orders expire daily."
+  },
+  {
+    "topic": "Cane Walking",
+    "fact": "COAL: Cane Opposite Affected Leg.",
+    "alert": "Cane goes with bad leg.",
+    "q": "What is the COAL mnemonic for canes?",
+    "a": [
+      "Cane Opposite Affected Leg",
+      "Cane On Affected Leg",
+      "Cane Over All Legs",
+      "Cane On All Legs"
+    ],
+    "correct": 0,
+    "rationale": "You hold the cane on the strong side to support the weak side."
+  },
+  {
+    "topic": "Crutch Gaits",
+    "fact": "Even for Even, Odd for Odd.",
+    "alert": "2-point/4-point = Even weakness. 3-point = Odd (1 leg).",
+    "q": "Use an even-numbered gait (2 or 4) when weakness is...?",
+    "a": [
+      "Severe",
+      "Evenly distributed (bilateral)",
+      "One sided",
+      "None"
+    ],
+    "correct": 1,
+    "rationale": "If both legs are weak (bilateral), use 2-point or 4-point. If one leg is broken (unilateral/odd), use 3-point."
+  },
+  {
+    "topic": "Prioritization",
+    "fact": "Acute > Chronic.",
+    "alert": "Unstable > Stable.",
+    "q": "Who is the priority patient?",
+    "a": [
+      "Ready for discharge",
+      "Chronic/Stable",
+      "Acute/Unstable/Changing",
+      "Post-op 12 hrs ago"
+    ],
+    "correct": 2,
+    "rationale": "The patient with a new, changing, or unstable condition always comes first."
+  },
+  {
+    "topic": "Tie Breaker",
+    "fact": "Vital Organ.",
+    "alert": "Brain > Lungs > Heart > Liver > Kidney > Pancreas.",
+    "q": "In a tie for priority, use the modifying phrase to find the...?",
+    "a": [
+      "Gender",
+      "Pain level",
+      "Age",
+      "Most vital organ affected"
+    ],
+    "correct": 3,
+    "rationale": "If two patients are unstable, prioritize the one with the more vital organ failure (Brain/Lung vs Kidney)."
+  },
+  {
+    "topic": "LPN Tasks",
+    "fact": "Stable patients only.",
+    "alert": "No IVs, No Teaching, No Assessment (Admission).",
+    "q": "Can an LPN perform an admission assessment?",
+    "a": [
+      "No, RN must do admission",
+      "Yes, always",
+      "Only if busy",
+      "Yes, with supervision"
+    ],
+    "correct": 0,
+    "rationale": "Admission/Discharge assessments require advanced judgment and planning; RN only."
+  },
+  {
+    "topic": "UAP Tasks",
+    "fact": "Standard, unchanging procedures.",
+    "alert": "Vitals, ADLs, Hygiene.",
+    "q": "Can a UAP take vitals on a stable patient?",
+    "a": [
+      "Only BP",
+      "Yes",
+      "No",
+      "Only temp"
+    ],
+    "correct": 1,
+    "rationale": "Routine vitals on stable patients are within the UAP scope."
+  },
+  {
+    "topic": "Laminotomy",
+    "fact": "Remove wing of vertebra.",
+    "alert": "Relieves nerve compression.",
+    "q": "What is the difference between Laminectomy and Laminotomy?",
+    "a": [
+      "Ectomy is injection",
+      "They are the same",
+      "Ectomy = Removal; Otomy = Opening/Partial removal",
+      "Otomy is fusion"
+    ],
+    "correct": 2,
+    "rationale": "Ectomy removes the whole lamina; Otomy removes a small part to make space."
+  }
+]

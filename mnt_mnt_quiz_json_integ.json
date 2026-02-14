@@ -1,0 +1,562 @@
+[
+  {
+    "topic": "Burns: Rule of 9s",
+    "fact": "Arm=9, Leg=18, Torso=36.",
+    "alert": "Head=9 (Adult).",
+    "q": "According to Rule of Nines, what % is one arm?",
+    "a": [
+      "1%",
+      "18%",
+      "4.5%",
+      "9%"
+    ],
+    "correct": 3,
+    "rationale": "Each arm is 9% total (4.5 front, 4.5 back)."
+  },
+  {
+    "topic": "Burn Phases",
+    "fact": "Shock (Fluid shift). Diuretic.",
+    "alert": "Parkland Formula: 4mL x kg x %burn.",
+    "q": "What is the priority in the first 24hrs of a major burn?",
+    "a": [
+      "Fluid Resuscitation",
+      "Infection control",
+      "Nutrition",
+      "Range of Motion"
+    ],
+    "correct": 0,
+    "rationale": "Massive fluid shift causes hypovolemic shock. Replacing fluids prevents death."
+  },
+  {
+    "topic": "Shingles",
+    "fact": "Herpes Zoster. Nerve pain.",
+    "alert": "Contagious to those who haven't had Chickenpox.",
+    "q": "What type of rash is Shingles?",
+    "a": [
+      "Petechiae",
+      "Vesicular along a nerve dermatome",
+      "Macular rash on trunk",
+      "Generalized pustules"
+    ],
+    "correct": 1,
+    "rationale": "The virus lies dormant in the nerve root and erupts along that specific nerve path."
+  },
+  {
+    "topic": "Acne",
+    "fact": "Clogged sebaceous glands.",
+    "alert": "Accutane: Teratogenic (Birth defects).",
+    "q": "What is a major side effect of Accutane?",
+    "a": [
+      "Hair growth",
+      "Weight gain",
+      "Birth defects",
+      "Hypertension"
+    ],
+    "correct": 2,
+    "rationale": "Accutane is highly teratogenic; strict birth control is required."
+  },
+  {
+    "topic": "Cataracts",
+    "fact": "Cloudy lens.",
+    "alert": "Post-Op: No bending/coughing.",
+    "q": "What activity is restricted after cataract surgery?",
+    "a": [
+      "Walking",
+      "Watching TV",
+      "Reading",
+      "Bending at waist/Straining"
+    ],
+    "correct": 3,
+    "rationale": "Bending increases intraocular pressure (IOP), risking the surgical site."
+  },
+  {
+    "topic": "Glaucoma",
+    "fact": "High Intraocular Pressure.",
+    "alert": "Tunnel vision. No Atropine.",
+    "q": "Which class of drugs is contraindicated in Glaucoma?",
+    "a": [
+      "Mydriatics (Dilators)",
+      "Miotics (Constrictors)",
+      "Beta Blockers",
+      "Diuretics"
+    ],
+    "correct": 0,
+    "rationale": "Dilating the pupil (Mydriasis) blocks the outflow of aqueous humor, spiking pressure."
+  },
+  {
+    "topic": "Meniere's Disease",
+    "fact": "Inner ear fluid balance.",
+    "alert": "Vertigo, Tinnitus, Hearing Loss.",
+    "q": "What diet helps Meniere's Disease?",
+    "a": [
+      "High Carb",
+      "Low Sodium",
+      "Low Fat",
+      "High Protein"
+    ],
+    "correct": 1,
+    "rationale": "Sodium retains fluid; low sodium reduces endolymph fluid pressure in the ear."
+  },
+  {
+    "topic": "Retinal Detachment",
+    "fact": "Separation of retina.",
+    "alert": "Flashes of light, Curtain falling.",
+    "q": "What does a patient see with Retinal Detachment?",
+    "a": [
+      "Cloudy vision",
+      " halos around lights",
+      "Curtain falling/Flashes of light",
+      "Central vision loss"
+    ],
+    "correct": 2,
+    "rationale": "As the retina peels off, neurons fire (flashes) and vision is blocked (curtain)."
+  },
+  {
+    "topic": "Ear Drops",
+    "fact": "Adult: Up/Back. Child: Down/Back.",
+    "alert": "Administer at room temp.",
+    "q": "How do you pull the pinna for an adult?",
+    "a": [
+      "Down and Back",
+      "Forward",
+      "Straight back",
+      "Up and Back"
+    ],
+    "correct": 3,
+    "rationale": "Adults = UP (grown ups). Children = DOWN (grow down)."
+  },
+  {
+    "topic": "Lice",
+    "fact": "Pediculosis.",
+    "alert": "Treat everyone. Bag linens.",
+    "q": "What is the treatment for lice?",
+    "a": [
+      "Kwell shampoo/Comb nits",
+      "Antibiotics",
+      "Steroid cream",
+      "Bleach"
+    ],
+    "correct": 0,
+    "rationale": "Kwell kills the lice; fine-tooth combing removes the eggs (nits)."
+  },
+  {
+    "topic": "Pressure Ulcers",
+    "fact": "Stage 1: Red (Non-blanchable). Stage 2: Broken.",
+    "alert": "Turn q2h. Keep dry.",
+    "q": "What characterizes a Stage 1 pressure ulcer?",
+    "a": [
+      "Bone visible",
+      "Non-blanchable redness",
+      "Subcutaneous fat visible",
+      "Blister/Broken skin"
+    ],
+    "correct": 1,
+    "rationale": "Intact skin with redness that does not fade when pressed indicates Stage 1."
+  },
+  {
+    "topic": "Impetigo",
+    "fact": "Staph/Strep infection.",
+    "alert": "Honey-colored crusts. Contagious!",
+    "q": "What is the hallmark sign of Impetigo?",
+    "a": [
+      "Butterfly rash",
+      "Silver scales",
+      "Honey-colored crusts",
+      "Target lesion"
+    ],
+    "correct": 2,
+    "rationale": "Bacterial infection leads to weeping sores that dry into golden/honey crusts."
+  },
+  {
+    "topic": "Scabies",
+    "fact": "Mite infestation.",
+    "alert": "Burrows/Lines. Treat whole family.",
+    "q": "What does a Scabies rash look like?",
+    "a": [
+      "Circular rings",
+      "Raised plaques",
+      "Clustered vesicles",
+      "Linear burrows/tracks"
+    ],
+    "correct": 3,
+    "rationale": "Mites burrow under the skin in straight lines to lay eggs."
+  },
+  {
+    "topic": "Ringworm",
+    "fact": "Tinea (Fungal).",
+    "alert": "Circular patch. Wood's Lamp diagnosis.",
+    "q": "What device is used to diagnose fungal infections like Ringworm?",
+    "a": [
+      "Wood's Lamp (UV)",
+      "Doppler",
+      "Otoscope",
+      "Stethoscope"
+    ],
+    "correct": 0,
+    "rationale": "Fungal infections fluoresce (glow) under ultraviolet light."
+  },
+  {
+    "topic": "Psoriasis",
+    "fact": "Autoimmune. Rapid cell turnover.",
+    "alert": "Silvery scales. UV light therapy.",
+    "q": "What do Psoriasis lesions look like?",
+    "a": [
+      "Open sores",
+      "Red patches with silvery scales",
+      "Black moles",
+      "Fluid filled blisters"
+    ],
+    "correct": 1,
+    "rationale": "Buildup of dead skin cells creates the classic silver scaling."
+  },
+  {
+    "topic": "Melanoma",
+    "fact": "Skin cancer.",
+    "alert": "ABCD: Asymmetry, Border, Color, Diameter.",
+    "q": "What is a warning sign of Melanoma?",
+    "a": [
+      "Itching",
+      "Painful rash",
+      "Changes in a mole (ABCD)",
+      "Dry skin"
+    ],
+    "correct": 2,
+    "rationale": "Melanoma often arises from existing moles that change shape, color, or size."
+  },
+  {
+    "topic": "Burns: Electrolytes",
+    "fact": "Cell damage releases K+.",
+    "alert": "Initial Hyperkalemia.",
+    "q": "What electrolyte imbalance occurs immediately after a severe burn?",
+    "a": [
+      "Hypokalemia",
+      "Hypomagnesemia",
+      "Hypercalcemia",
+      "Hyperkalemia"
+    ],
+    "correct": 3,
+    "rationale": "Ruptured cells release intracellular Potassium into the bloodstream."
+  },
+  {
+    "topic": "Burns: Ulcer",
+    "fact": "Curling's Ulcer.",
+    "alert": "Stress ulcer. Give H2 blockers/PPIs.",
+    "q": "What type of ulcer is common in burn patients?",
+    "a": [
+      "Curling's Ulcer",
+      "Cushing's Ulcer",
+      "Venous Ulcer",
+      "Arterial Ulcer"
+    ],
+    "correct": 0,
+    "rationale": "Acute physical stress reduces blood flow to the gut, causing gastric erosion."
+  },
+  {
+    "topic": "Otitis Media",
+    "fact": "Middle ear infection.",
+    "alert": "Prevention: Feed upright. No bottle in bed.",
+    "q": "How can parents prevent Otitis Media?",
+    "a": [
+      "Keep warm",
+      "Feed upright/No bottle propping",
+      "Use antibiotic drops daily",
+      "Clean ears with Q-tips"
+    ],
+    "correct": 1,
+    "rationale": "Lying flat allows formula to pool in the eustachian tube, breeding bacteria."
+  },
+  {
+    "topic": "Myringotomy",
+    "fact": "Ear tubes.",
+    "alert": "Keep ears dry (Earplugs when swimming).",
+    "q": "What is a key instruction for a child with ear tubes?",
+    "a": [
+      "Flush with peroxide",
+      "Remove tubes daily",
+      "Keep water out of ears",
+      "No flying"
+    ],
+    "correct": 2,
+    "rationale": "Water can enter the middle ear through the tube, causing infection."
+  },
+  {
+    "topic": "Strabismus",
+    "fact": "Cross-eye.",
+    "alert": "Patch the GOOD eye.",
+    "q": "How is Strabismus treated?",
+    "a": [
+      "Patch the weak eye",
+      "Glasses only",
+      "Surgery only",
+      "Patch the strong eye"
+    ],
+    "correct": 3,
+    "rationale": "Patching the strong eye forces the weak eye muscles to work and strengthen."
+  },
+  {
+    "topic": "Blindness",
+    "fact": "Sensory deficit.",
+    "alert": "Safety: Clock method for food. Announce entry.",
+    "q": "How should you orient a blind client to their meal?",
+    "a": [
+      "Use the clock method",
+      "Feed them",
+      "Describe colors",
+      "Mix it all together"
+    ],
+    "correct": 0,
+    "rationale": "Describing food locations like a clock face gives the client independence."
+  },
+  {
+    "topic": "Hearing Loss",
+    "fact": "Communication.",
+    "alert": "Face client. Speak clearly. Low pitch.",
+    "q": "What is the best way to speak to a hearing-impaired client?",
+    "a": [
+      "Use only gestures",
+      "Face them/Normal volume/Lower pitch",
+      "Speak in high pitch",
+      "Shout loudly"
+    ],
+    "correct": 1,
+    "rationale": "High frequency hearing is lost first; shouting raises pitch, making it harder to hear."
+  },
+  {
+    "topic": "Eye Drop Admin",
+    "fact": "Conjunctival sac.",
+    "alert": "Press inner canthus (Punctal occlusion).",
+    "q": "Why press the inner canthus after eye drops?",
+    "a": [
+      "Reduce pain",
+      "Keep eye open",
+      "Prevent systemic absorption",
+      "Increase tear flow"
+    ],
+    "correct": 2,
+    "rationale": "It blocks the tear duct so the drug stays in the eye and isn't absorbed into the body."
+  },
+  {
+    "topic": "Burns: Silvadene",
+    "fact": "Topical antibiotic.",
+    "alert": "S/E: Leukopenia (Low WBC).",
+    "q": "What is a side effect of Silver Sulfadiazine (Silvadene)?",
+    "a": [
+      "Hypertension",
+      "Staining",
+      "Tachycardia",
+      "Leukopenia"
+    ],
+    "correct": 3,
+    "rationale": "It can suppress bone marrow; monitor WBC count."
+  },
+  {
+    "topic": "Eczema",
+    "fact": "Atopic Dermatitis.",
+    "alert": "Hydrate skin. Avoid triggers.",
+    "q": "What is the priority for Eczema care?",
+    "a": [
+      "Moisturize/Prevent itching",
+      "Keep dry",
+      "Apply heat",
+      "Use alcohol to clean"
+    ],
+    "correct": 0,
+    "rationale": "Dry skin cracks and itches (pruritus), leading to infection."
+  },
+  {
+    "topic": "Parkland Formula",
+    "fact": "4mL x kg x %TBSA.",
+    "alert": "Give 1/2 in first 8 hours.",
+    "q": "How is the Parkland Formula calculated?",
+    "a": [
+      "Weight x 10",
+      "4mL x kg x %Burn",
+      "100mL/hr",
+      "2mL x kg x %Burn"
+    ],
+    "correct": 1,
+    "rationale": "Standard formula for fluid resuscitation volume in first 24 hours."
+  },
+  {
+    "topic": "Burn Output",
+    "fact": "Kidney perfusion.",
+    "alert": "Goal: 30-50 mL/hr.",
+    "q": "What is the minimum urine output for an adult burn patient?",
+    "a": [
+      "100 mL/hr",
+      "10 mL/hr",
+      "30-50 mL/hr",
+      "500 mL/day"
+    ],
+    "correct": 2,
+    "rationale": "Output proves the kidneys are perfused and shock is being managed."
+  },
+  {
+    "topic": "Hearing Aid Care",
+    "fact": "Maintenance.",
+    "alert": "Whistling = Fit issue. Turn off when not in use.",
+    "q": "What causes a hearing aid to whistle?",
+    "a": [
+      "Low battery",
+      "Ear wax",
+      "Broken wire",
+      "Poor fit/Volume too high"
+    ],
+    "correct": 3,
+    "rationale": "Feedback (whistling) happens when sound leaks out and goes back into the microphone."
+  },
+  {
+    "topic": "Retinoblastoma",
+    "fact": "Eye cancer in kids.",
+    "alert": "White pupil (Cat's eye reflex).",
+    "q": "What is a classic sign of Retinoblastoma?",
+    "a": [
+      "White pupil reflex",
+      "Red eye",
+      "Tearing",
+      "Crossed eyes"
+    ],
+    "correct": 0,
+    "rationale": "Instead of a red reflex, the tumor reflects white light."
+  },
+  {
+    "topic": "Lyme Disease",
+    "fact": "Tick bite.",
+    "alert": "Bullseye Rash.",
+    "q": "What is the classic sign of Lyme Disease?",
+    "a": [
+      "Vesicles",
+      "Bullseye rash (Erythema Migrans)",
+      "Petechiae",
+      "Butterfly rash"
+    ],
+    "correct": 1,
+    "rationale": "A red rash with a central clearing that looks like a target appears at the bite site."
+  },
+  {
+    "topic": "SLE (Lupus)",
+    "fact": "Autoimmune.",
+    "alert": "Butterfly Rash on face. Avoid sun.",
+    "q": "What rash is associated with Systemic Lupus Erythematosus (SLE)?",
+    "a": [
+      "Target lesions",
+      "Bullseye rash",
+      "Butterfly rash across cheeks/nose",
+      "Silver scales"
+    ],
+    "correct": 2,
+    "rationale": "The malar butterfly rash is the hallmark cutaneous sign of Lupus."
+  },
+  {
+    "topic": "Frostbite",
+    "fact": "Tissue freezing.",
+    "alert": "Rewarm rapidly (Warm water). Do NOT rub.",
+    "q": "How should you treat frostbitten fingers?",
+    "a": [
+      "Rub them vigorously",
+      "Massage with lotion",
+      "Apply direct heat",
+      "Rapidly rewarm in warm water"
+    ],
+    "correct": 3,
+    "rationale": "Rubbing causes tissue damage. Rapid rewarming is painful but saves tissue."
+  },
+  {
+    "topic": "Dandruff",
+    "fact": "Seborrheic Dermatitis.",
+    "alert": "Cradle cap in infants.",
+    "q": "What is the medical term for Cradle Cap?",
+    "a": [
+      "Seborrheic Dermatitis",
+      "Atopic Dermatitis",
+      "Contact Dermatitis",
+      "Psoriasis"
+    ],
+    "correct": 0,
+    "rationale": "It is caused by overactive sebaceous glands."
+  },
+  {
+    "topic": "Dehiscence",
+    "fact": "Wound separation.",
+    "alert": "Evisceration: Organs out. Cover with sterile saline gauze.",
+    "q": "What is the priority if a surgical wound eviscerates?",
+    "a": [
+      "Leave open to air",
+      "Cover with sterile saline gauze",
+      "Apply dry dressing",
+      "Push organs back in"
+    ],
+    "correct": 1,
+    "rationale": "Keep the organs moist and sterile to prevent necrosis and infection."
+  },
+  {
+    "topic": "Chemical Eye Burn",
+    "fact": "Acid/Alkali.",
+    "alert": "Irrigate immediately for 20 mins.",
+    "q": "What is the first action for a chemical splash in the eye?",
+    "a": [
+      "Check vision",
+      "Cover with patch",
+      "Irrigate with water immediately",
+      "Wait for doctor"
+    ],
+    "correct": 2,
+    "rationale": "Time is vision. Dilute and remove the chemical instantly."
+  },
+  {
+    "topic": "Penetrating Eye Injury",
+    "fact": "Object in eye.",
+    "alert": "Do NOT remove. Stabilize it. Patch other eye.",
+    "q": "What should you do for an object embedded in the eye?",
+    "a": [
+      "Remove it carefully",
+      "Flush with water",
+      "Apply pressure",
+      "Stabilize object/Patch other eye"
+    ],
+    "correct": 3,
+    "rationale": "Removing it causes more damage. Patching both eyes prevents movement."
+  },
+  {
+    "topic": "Glaucoma Pain",
+    "fact": "Closed Angle = Emergency.",
+    "alert": "Severe pain, halos, nausea.",
+    "q": "Which type of Glaucoma is a medical emergency?",
+    "a": [
+      "Closed Angle (Acute)",
+      "Open Angle (Chronic)",
+      "Congenital",
+      "Secondary"
+    ],
+    "correct": 0,
+    "rationale": "Sudden blockage of aqueous humor outflow causes rapid, painful pressure rise."
+  },
+  {
+    "topic": "Hearing Aid Cleaning",
+    "fact": "No water.",
+    "alert": "Use soft cloth/pick.",
+    "q": "How should a hearing aid be cleaned?",
+    "a": [
+      "Submerge in solution",
+      "Soft cloth/pick (No water)",
+      "Alcohol",
+      "Soap and water"
+    ],
+    "correct": 1,
+    "rationale": "Water damages the electronics."
+  },
+  {
+    "topic": "Ear Irrigation",
+    "fact": "Remove wax.",
+    "alert": "Contraindicated if vegetable/bean (swells).",
+    "q": "When is ear irrigation contraindicated for a foreign body?",
+    "a": [
+      "If it is wax",
+      "If it is a bead",
+      "If the object is vegetable matter (bean/corn)",
+      "If it is a bug"
+    ],
+    "correct": 2,
+    "rationale": "Water makes vegetable matter swell, impacting it tighter."
+  }
+]
