@@ -1,7 +1,7 @@
 {
   "section": "cardio",
   "title": "Cardiovascular System",
-  "questionCount": 39,
+  "questionCount": 100,
   "questions": [
     {
       "q": "What defines systolic blood pressure?",
@@ -429,6 +429,677 @@
       ],
       "correct": 1,
       "rationale": "Lack of arterial blood flow leads to cool skin, pallor, and loss of hair follicles."
+    },
+    {
+      "q": "What is the normal adult heart rate range?",
+      "options": [
+        "40-60 bpm",
+        "60-100 bpm",
+        "80-120 bpm",
+        "100-150 bpm"
+      ],
+      "correct": 1,
+      "rationale": "Normal sinus rhythm for an adult is 60-100 beats per minute. Below 60 is bradycardia, above 100 is tachycardia."
+    },
+    {
+      "q": "Which chamber of the heart pumps blood to the systemic circulation?",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "correct": 3,
+      "rationale": "The left ventricle is the most muscular chamber and pumps oxygenated blood through the aorta to the entire body."
+    },
+    {
+      "q": "What is the first-line drug class for hypertension in a patient with diabetes?",
+      "options": [
+        "Beta blockers",
+        "ACE inhibitors",
+        "Calcium channel blockers",
+        "Alpha blockers"
+      ],
+      "correct": 1,
+      "rationale": "ACE inhibitors (e.g., Lisinopril) are first-line for diabetic hypertension because they also protect the kidneys from diabetic nephropathy."
+    },
+    {
+      "q": "A client on Heparin has an aPTT of 120 seconds. What should the nurse do first?",
+      "options": [
+        "Increase the drip rate",
+        "Continue the current rate",
+        "Stop the infusion and notify the provider",
+        "Administer Vitamin K"
+      ],
+      "correct": 2,
+      "rationale": "Normal aPTT is 25-35 seconds; therapeutic range on Heparin is 1.5-2.5x normal. An aPTT of 120 is dangerously high and indicates bleeding risk."
+    },
+    {
+      "q": "What is the antidote for Heparin overdose?",
+      "options": [
+        "Vitamin K",
+        "Protamine sulfate",
+        "Naloxone",
+        "Flumazenil"
+      ],
+      "correct": 1,
+      "rationale": "Protamine sulfate directly neutralizes Heparin. Vitamin K is the antidote for Warfarin, not Heparin."
+    },
+    {
+      "q": "What lab value must be monitored for a client on Warfarin (Coumadin)?",
+      "options": [
+        "aPTT",
+        "PT/INR",
+        "CBC",
+        "BMP"
+      ],
+      "correct": 1,
+      "rationale": "Warfarin affects the extrinsic pathway, monitored by PT and INR. Therapeutic INR is typically 2-3."
+    },
+    {
+      "q": "What is the antidote for Warfarin overdose?",
+      "options": [
+        "Protamine sulfate",
+        "Vitamin K (Phytonadione)",
+        "Calcium gluconate",
+        "Atropine"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin K reverses the anticoagulant effects of Warfarin by restoring clotting factor production in the liver."
+    },
+    {
+      "q": "Which heart valve separates the left atrium from the left ventricle?",
+      "options": [
+        "Tricuspid",
+        "Pulmonic",
+        "Mitral (Bicuspid)",
+        "Aortic"
+      ],
+      "correct": 2,
+      "rationale": "The mitral valve (bicuspid) is the only valve with two leaflets and separates the left atrium from the left ventricle."
+    },
+    {
+      "q": "What is the primary pacemaker of the heart?",
+      "options": [
+        "AV node",
+        "SA node",
+        "Bundle of His",
+        "Purkinje fibers"
+      ],
+      "correct": 1,
+      "rationale": "The SA (sinoatrial) node fires at 60-100 bpm and is the natural pacemaker that initiates each heartbeat."
+    },
+    {
+      "q": "A client develops sudden severe tearing chest pain radiating to the back. What does the nurse suspect?",
+      "options": [
+        "Myocardial infarction",
+        "Pulmonary embolism",
+        "Aortic dissection",
+        "Pericarditis"
+      ],
+      "correct": 2,
+      "rationale": "A tearing or ripping pain in the chest radiating to the back is the hallmark presentation of aortic dissection, a life-threatening emergency."
+    },
+    {
+      "q": "What position should a client with CHF be placed in to ease breathing?",
+      "options": [
+        "Supine",
+        "Prone",
+        "High Fowler's",
+        "Trendelenburg"
+      ],
+      "correct": 2,
+      "rationale": "High Fowler's (head of bed elevated 60-90 degrees) reduces venous return to the heart and allows the diaphragm to drop, improving lung expansion."
+    },
+    {
+      "q": "What does the S3 heart sound indicate in an adult?",
+      "options": [
+        "Normal finding",
+        "Aortic stenosis",
+        "Heart failure",
+        "Mitral valve prolapse"
+      ],
+      "correct": 2,
+      "rationale": "An S3 (ventricular gallop) in an adult indicates fluid overload and is an early sign of heart failure. It is normal in children and young adults."
+    },
+    {
+      "q": "Which electrolyte imbalance increases the risk of Digoxin toxicity?",
+      "options": [
+        "Hyperkalemia",
+        "Hypokalemia",
+        "Hypernatremia",
+        "Hypocalcemia"
+      ],
+      "correct": 1,
+      "rationale": "Low potassium levels allow Digoxin to bind more readily to cardiac cells, increasing the risk of fatal arrhythmias."
+    },
+    {
+      "q": "What type of shock causes warm, flushed skin and bounding pulses?",
+      "options": [
+        "Hypovolemic",
+        "Cardiogenic",
+        "Septic (distributive)",
+        "Obstructive"
+      ],
+      "correct": 2,
+      "rationale": "Early septic shock causes massive vasodilation resulting in warm, flushed skin and bounding pulses (\"warm shock\" phase)."
+    },
+    {
+      "q": "What is the classic sign of cardiac tamponade?",
+      "options": [
+        "Kussmaul respirations",
+        "Beck's triad",
+        "Trousseau's sign",
+        "Cullen's sign"
+      ],
+      "correct": 1,
+      "rationale": "Beck's triad consists of hypotension, muffled heart sounds, and jugular vein distension (JVD), indicating fluid compressing the heart."
+    },
+    {
+      "q": "What EKG rhythm shows no discernible P waves and an irregularly irregular rhythm?",
+      "options": [
+        "Atrial flutter",
+        "Atrial fibrillation",
+        "Ventricular tachycardia",
+        "Sinus arrhythmia"
+      ],
+      "correct": 1,
+      "rationale": "Atrial fibrillation is characterized by chaotic atrial activity (no organized P waves) and an irregularly irregular ventricular response."
+    },
+    {
+      "q": "What is the greatest risk of atrial fibrillation?",
+      "options": [
+        "Myocardial infarction",
+        "Cardiac arrest",
+        "Stroke from thrombus formation",
+        "Aortic dissection"
+      ],
+      "correct": 2,
+      "rationale": "Blood pools in the quivering atria, forming clots that can embolize to the brain causing a stroke. This is why A-fib patients are anticoagulated."
+    },
+    {
+      "q": "What drug is given to treat symptomatic bradycardia?",
+      "options": [
+        "Adenosine",
+        "Amiodarone",
+        "Atropine",
+        "Digoxin"
+      ],
+      "correct": 2,
+      "rationale": "Atropine blocks the vagus nerve (parasympathetic), allowing the heart rate to increase."
+    },
+    {
+      "q": "What is the normal cardiac output for an adult?",
+      "options": [
+        "1-2 L/min",
+        "4-8 L/min",
+        "10-12 L/min",
+        "15-20 L/min"
+      ],
+      "correct": 1,
+      "rationale": "Normal cardiac output is approximately 4-8 L/min (calculated as Heart Rate x Stroke Volume)."
+    },
+    {
+      "q": "What nursing intervention is highest priority for a client in V-Fib?",
+      "options": [
+        "Administer Atropine",
+        "Start CPR and defibrillate",
+        "Obtain a 12-lead EKG",
+        "Establish IV access"
+      ],
+      "correct": 1,
+      "rationale": "Ventricular fibrillation is a lethal rhythm with no cardiac output. Immediate CPR and defibrillation are the only interventions that save lives."
+    },
+    {
+      "q": "What is pulsus paradoxus?",
+      "options": [
+        "An irregular heart rhythm",
+        "A drop in systolic BP >10 mmHg during inspiration",
+        "A rise in BP during inspiration",
+        "Absence of pulse in lower extremities"
+      ],
+      "correct": 1,
+      "rationale": "Pulsus paradoxus (>10 mmHg systolic drop on inspiration) is seen in cardiac tamponade, severe asthma, and constrictive pericarditis."
+    },
+    {
+      "q": "What is the hallmark sign of Right-Sided Heart Failure?",
+      "options": [
+        "Pulmonary edema",
+        "Frothy pink sputum",
+        "Jugular Vein Distension (JVD)",
+        "Crackles on auscultation"
+      ],
+      "correct": 2,
+      "rationale": "Right-sided failure backs blood into the systemic venous system, causing JVD, hepatomegaly, peripheral edema, and ascites."
+    },
+    {
+      "q": "What teaching should the nurse provide about Warfarin and diet?",
+      "options": [
+        "Increase Vitamin K intake",
+        "Avoid all green vegetables",
+        "Maintain consistent Vitamin K intake",
+        "Take extra Vitamin E supplements"
+      ],
+      "correct": 2,
+      "rationale": "Vitamin K counteracts Warfarin. Patients should not eliminate it but keep intake consistent so the dosage remains effective and predictable."
+    },
+    {
+      "q": "What is the Troponin level used to diagnose?",
+      "options": [
+        "Heart failure",
+        "Myocardial infarction",
+        "Deep vein thrombosis",
+        "Atrial fibrillation"
+      ],
+      "correct": 1,
+      "rationale": "Troponin I and T are proteins released when cardiac muscle cells die. Elevated levels confirm myocardial damage/infarction."
+    },
+    {
+      "q": "What position should a client be in for a central venous pressure (CVP) reading?",
+      "options": [
+        "Standing",
+        "Supine with HOB at 0-45 degrees",
+        "Prone",
+        "Trendelenburg"
+      ],
+      "correct": 1,
+      "rationale": "CVP is measured with the client supine and the transducer leveled at the phlebostatic axis (4th intercostal space, midaxillary line)."
+    },
+    {
+      "q": "A low CVP reading indicates:",
+      "options": [
+        "Fluid overload",
+        "Heart failure",
+        "Hypovolemia",
+        "Cardiac tamponade"
+      ],
+      "correct": 2,
+      "rationale": "Normal CVP is 2-6 mmHg. A low reading suggests decreased blood volume (hypovolemia) requiring fluid replacement."
+    },
+    {
+      "q": "What does an elevated BNP (B-type natriuretic peptide) indicate?",
+      "options": [
+        "Renal failure",
+        "Myocardial infarction",
+        "Heart failure",
+        "Pulmonary embolism"
+      ],
+      "correct": 2,
+      "rationale": "BNP is released by the ventricles in response to increased wall stretch from volume overload. Elevated BNP is a key marker of heart failure."
+    },
+    {
+      "q": "What is the priority nursing action when a client develops chest pain?",
+      "options": [
+        "Administer Morphine",
+        "Obtain a 12-lead EKG",
+        "Notify the provider",
+        "Place on oxygen and assess vital signs"
+      ],
+      "correct": 3,
+      "rationale": "ABCs come first: ensure oxygenation and assess hemodynamic stability. Then obtain an EKG and notify the provider."
+    },
+    {
+      "q": "What does MONA stand for in acute MI management?",
+      "options": [
+        "Monitor, Oxygen, Nitro, ASA",
+        "Morphine, Oxygen, Nitro, ASA",
+        "Morphine, Output, Nitro, Atropine",
+        "Monitor, Output, Naloxone, ASA"
+      ],
+      "correct": 1,
+      "rationale": "MONA is the classic mnemonic for acute MI interventions: Morphine (pain), Oxygen (perfusion), Nitroglycerin (vasodilation), Aspirin (antiplatelet)."
+    },
+    {
+      "q": "After a cardiac catheterization, what should the nurse assess at the insertion site?",
+      "options": [
+        "Temperature only",
+        "Bleeding, hematoma, and distal pulses",
+        "Range of motion",
+        "Skin turgor"
+      ],
+      "correct": 1,
+      "rationale": "Post-cath, the nurse checks for hemorrhage at the puncture site, hematoma formation, and circulation distal to the site (pulses, color, sensation)."
+    },
+    {
+      "q": "After cardiac catheterization via the femoral artery, how long must the client keep the leg straight?",
+      "options": [
+        "1-2 hours",
+        "4-6 hours",
+        "12-24 hours",
+        "No restriction"
+      ],
+      "correct": 1,
+      "rationale": "The affected leg must remain straight for 4-6 hours to prevent bleeding from the femoral artery puncture site."
+    },
+    {
+      "q": "What is the therapeutic INR range for a client on Warfarin for atrial fibrillation?",
+      "options": [
+        "0.5-1.0",
+        "1.0-1.5",
+        "2.0-3.0",
+        "4.0-5.0"
+      ],
+      "correct": 2,
+      "rationale": "The target INR for most conditions including A-fib is 2.0-3.0. Higher ranges (2.5-3.5) are used for mechanical heart valves."
+    },
+    {
+      "q": "What rhythm is characterized by a sawtooth pattern on EKG?",
+      "options": [
+        "Atrial fibrillation",
+        "Atrial flutter",
+        "Ventricular tachycardia",
+        "First-degree heart block"
+      ],
+      "correct": 1,
+      "rationale": "Atrial flutter produces a distinctive sawtooth (F-wave) pattern due to rapid, organized atrial depolarization at 250-350 bpm."
+    },
+    {
+      "q": "What drug is the first-line treatment for SVT (supraventricular tachycardia)?",
+      "options": [
+        "Amiodarone",
+        "Adenosine",
+        "Atropine",
+        "Epinephrine"
+      ],
+      "correct": 1,
+      "rationale": "Adenosine is given as a rapid IV push to briefly block the AV node, interrupting the re-entry circuit causing SVT."
+    },
+    {
+      "q": "How should Adenosine be administered?",
+      "options": [
+        "Slow IV push over 5 minutes",
+        "Rapid IV push followed by a saline flush",
+        "IM injection",
+        "Oral administration"
+      ],
+      "correct": 1,
+      "rationale": "Adenosine has a half-life of <10 seconds and must be given as a rapid IV push (1-2 seconds) followed by an immediate 20 mL saline flush."
+    },
+    {
+      "q": "Which heart block requires an immediate pacemaker?",
+      "options": [
+        "First-degree AV block",
+        "Mobitz Type I (Wenckebach)",
+        "Mobitz Type II",
+        "Sinus bradycardia"
+      ],
+      "correct": 2,
+      "rationale": "Mobitz Type II has a high risk of progressing to complete heart block. Unlike Type I, it occurs below the AV node and requires pacing."
+    },
+    {
+      "q": "What is the characteristic of Third-Degree (Complete) Heart Block on EKG?",
+      "options": [
+        "Progressive PR prolongation",
+        "No relationship between P waves and QRS complexes",
+        "Sawtooth pattern",
+        "Absent P waves"
+      ],
+      "correct": 1,
+      "rationale": "In complete heart block, the atria and ventricles fire independently. P waves and QRS complexes have no association (AV dissociation)."
+    },
+    {
+      "q": "What is the priority intervention for a client in asystole?",
+      "options": [
+        "Defibrillation",
+        "Synchronized cardioversion",
+        "CPR and Epinephrine",
+        "Vagal maneuvers"
+      ],
+      "correct": 2,
+      "rationale": "Asystole (flatline) is NOT a shockable rhythm. Treatment is high-quality CPR and Epinephrine every 3-5 minutes per ACLS protocol."
+    },
+    {
+      "q": "What is the difference between defibrillation and cardioversion?",
+      "options": [
+        "There is no difference",
+        "Defibrillation is synchronized; cardioversion is unsynchronized",
+        "Cardioversion is synchronized; defibrillation is unsynchronized",
+        "Cardioversion uses higher energy"
+      ],
+      "correct": 2,
+      "rationale": "Synchronized cardioversion delivers a shock timed to the R wave to avoid hitting the T wave (vulnerable period). Defibrillation delivers an unsynchronized shock for pulseless V-Tach and V-Fib."
+    },
+    {
+      "q": "What is a normal blood pressure for an adult?",
+      "options": [
+        "100/60 mmHg",
+        "120/80 mmHg",
+        "140/90 mmHg",
+        "160/100 mmHg"
+      ],
+      "correct": 1,
+      "rationale": "Normal adult BP is <120/80 mmHg. Elevated is 120-129/<80. Stage 1 HTN is 130-139/80-89. Stage 2 HTN is \u2265140/\u226590."
+    },
+    {
+      "q": "What are the classic signs of a DVT (deep vein thrombosis)?",
+      "options": [
+        "Cool, pale extremity with absent pulse",
+        "Unilateral leg swelling, warmth, redness, pain",
+        "Bilateral pitting edema",
+        "Intermittent claudication"
+      ],
+      "correct": 1,
+      "rationale": "DVT presents with unilateral swelling, warmth, redness, and calf pain (positive Homans' sign is no longer recommended but may still appear on NCLEX)."
+    },
+    {
+      "q": "What is the most dangerous complication of DVT?",
+      "options": [
+        "Chronic venous insufficiency",
+        "Cellulitis",
+        "Pulmonary embolism",
+        "Peripheral artery disease"
+      ],
+      "correct": 2,
+      "rationale": "A clot can break loose from the deep veins and travel to the lungs, causing a life-threatening pulmonary embolism."
+    },
+    {
+      "q": "What is intermittent claudication?",
+      "options": [
+        "Chest pain on exertion",
+        "Leg pain during walking that resolves with rest",
+        "Swelling of the ankles at night",
+        "Numbness in the fingers"
+      ],
+      "correct": 1,
+      "rationale": "Intermittent claudication is the hallmark symptom of PAD\u2014cramping leg pain caused by insufficient arterial blood flow during exercise that resolves with rest."
+    },
+    {
+      "q": "What is the ankle-brachial index (ABI) used to assess?",
+      "options": [
+        "Venous insufficiency",
+        "Cardiac output",
+        "Peripheral arterial disease",
+        "Deep vein thrombosis"
+      ],
+      "correct": 2,
+      "rationale": "ABI compares ankle systolic pressure to brachial systolic pressure. An ABI <0.9 indicates peripheral arterial disease."
+    },
+    {
+      "q": "What position should a client with PAD place their legs in?",
+      "options": [
+        "Elevated above the heart",
+        "Dependent (below heart level)",
+        "Crossed at the knees",
+        "Any position is fine"
+      ],
+      "correct": 1,
+      "rationale": "Gravity assists arterial blood flow to the legs. Elevating the legs worsens ischemic pain in PAD (unlike venous insufficiency where elevation helps)."
+    },
+    {
+      "q": "What differentiates arterial ulcers from venous ulcers?",
+      "options": [
+        "Arterial ulcers are painless; venous are painful",
+        "Arterial ulcers are deep with pale base; venous are shallow with dark red base",
+        "Venous ulcers are on the toes; arterial are on the ankle",
+        "There is no difference"
+      ],
+      "correct": 1,
+      "rationale": "Arterial ulcers are deep, round, pale, and very painful (usually on toes/feet). Venous ulcers are shallow, irregular, ruddy, with moderate pain (usually on medial ankle)."
+    },
+    {
+      "q": "What class of drugs ends in '-pril'?",
+      "options": [
+        "Beta blockers",
+        "Calcium channel blockers",
+        "ACE inhibitors",
+        "ARBs"
+      ],
+      "correct": 2,
+      "rationale": "ACE inhibitors (e.g., Lisinopril, Enalapril, Captopril) all end in '-pril.' They block conversion of Angiotensin I to Angiotensin II."
+    },
+    {
+      "q": "What is the most common side effect of ACE inhibitors?",
+      "options": [
+        "Hyperkalemia",
+        "Dry persistent cough",
+        "Bradycardia",
+        "Weight gain"
+      ],
+      "correct": 1,
+      "rationale": "ACE inhibitors cause a dry, hacking cough due to accumulation of bradykinin. If intolerable, switch to an ARB ('-sartan')."
+    },
+    {
+      "q": "What life-threatening side effect of ACE inhibitors requires immediate intervention?",
+      "options": [
+        "Hypotension",
+        "Hyperkalemia",
+        "Angioedema",
+        "Cough"
+      ],
+      "correct": 2,
+      "rationale": "Angioedema (swelling of tongue, lips, throat) can cause airway obstruction and is a medical emergency requiring the drug to be stopped immediately."
+    },
+    {
+      "q": "What class of drugs ends in '-olol'?",
+      "options": [
+        "ACE inhibitors",
+        "Beta blockers",
+        "Calcium channel blockers",
+        "Diuretics"
+      ],
+      "correct": 1,
+      "rationale": "Beta blockers (e.g., Metoprolol, Atenolol, Propranolol) end in '-olol.' They decrease heart rate and blood pressure by blocking beta-adrenergic receptors."
+    },
+    {
+      "q": "Why should Beta blockers not be stopped abruptly?",
+      "options": [
+        "It causes hyperkalemia",
+        "It leads to rebound tachycardia and hypertension",
+        "It causes liver damage",
+        "It leads to seizures"
+      ],
+      "correct": 1,
+      "rationale": "Abrupt withdrawal causes rebound sympathetic activation, leading to dangerous tachycardia, hypertension, and potential MI. Always taper gradually."
+    },
+    {
+      "q": "What is the priority nursing assessment for a client on an IV Nitroglycerin drip?",
+      "options": [
+        "Urine output",
+        "Blood pressure",
+        "Respiratory rate",
+        "Bowel sounds"
+      ],
+      "correct": 1,
+      "rationale": "IV Nitroglycerin causes potent vasodilation leading to hypotension. Continuous BP monitoring is essential to prevent dangerously low pressures."
+    },
+    {
+      "q": "What is orthostatic (postural) hypotension?",
+      "options": [
+        "Consistently high BP in both arms",
+        "BP drop \u226520 systolic or \u226510 diastolic within 3 minutes of standing",
+        "High BP only when in a clinic setting",
+        "BP difference between upper and lower extremities"
+      ],
+      "correct": 1,
+      "rationale": "Orthostatic hypotension is a significant drop in BP upon position change (lying to sitting to standing). It increases fall risk, especially with antihypertensives."
+    },
+    {
+      "q": "What teaching should the nurse give to prevent orthostatic hypotension?",
+      "options": [
+        "Stand up quickly to get blood flowing",
+        "Drink less fluid",
+        "Change positions slowly (dangle feet before standing)",
+        "Take all BP meds at bedtime"
+      ],
+      "correct": 2,
+      "rationale": "Changing positions slowly allows the cardiovascular system time to compensate, preventing dizziness, falls, and syncope."
+    },
+    {
+      "q": "What is the classic triad of Cushing's reflex in increased ICP?",
+      "options": [
+        "Tachycardia, hypotension, tachypnea",
+        "Hypertension, bradycardia, irregular respirations",
+        "Fever, tachycardia, hypotension",
+        "Hypotension, tachycardia, diaphoresis"
+      ],
+      "correct": 1,
+      "rationale": "Cushing's triad (widened pulse pressure/hypertension, bradycardia, irregular respirations) is a late, ominous sign of brainstem herniation from increased ICP."
+    },
+    {
+      "q": "What is the difference between stable and unstable angina?",
+      "options": [
+        "Stable angina occurs at rest",
+        "Unstable angina is predictable with exertion",
+        "Unstable angina occurs at rest and is unpredictable",
+        "There is no clinical difference"
+      ],
+      "correct": 2,
+      "rationale": "Stable angina is predictable (occurs with exertion, relieved by rest/nitro). Unstable angina is unpredictable, can occur at rest, and signals impending MI."
+    },
+    {
+      "q": "What diet modification is most important for a client with heart failure?",
+      "options": [
+        "Low protein",
+        "Low sodium",
+        "High potassium",
+        "Low fiber"
+      ],
+      "correct": 1,
+      "rationale": "Sodium causes water retention, worsening fluid overload in heart failure. A 2-gram sodium diet is typically prescribed."
+    },
+    {
+      "q": "What is the expected finding when auscultating over a stenotic valve?",
+      "options": [
+        "Diminished sounds",
+        "A murmur",
+        "Normal S1 and S2",
+        "Pericardial friction rub"
+      ],
+      "correct": 1,
+      "rationale": "A stenotic (narrowed) valve creates turbulent blood flow, producing an audible murmur during auscultation."
+    },
+    {
+      "q": "A client with an acute MI is diaphoretic, hypotensive, and tachycardic. What complication does the nurse suspect?",
+      "options": [
+        "Pericarditis",
+        "Heart failure",
+        "Cardiogenic shock",
+        "Cardiac tamponade"
+      ],
+      "correct": 2,
+      "rationale": "Cardiogenic shock occurs when the damaged myocardium can no longer maintain adequate cardiac output, leading to hypotension, tachycardia, diaphoresis, and altered mental status."
+    },
+    {
+      "q": "What are the signs of pericarditis?",
+      "options": [
+        "Sharp chest pain that worsens with deep breathing and lying flat",
+        "Crushing substernal pressure",
+        "Tearing pain radiating to the back",
+        "Painless dyspnea"
+      ],
+      "correct": 0,
+      "rationale": "Pericarditis causes sharp, pleuritic chest pain that worsens with inspiration and supine position, and improves when leaning forward."
+    },
+    {
+      "q": "What is the hallmark auscultation finding in pericarditis?",
+      "options": [
+        "S3 gallop",
+        "Systolic murmur",
+        "Pericardial friction rub",
+        "Muffled heart sounds"
+      ],
+      "correct": 2,
+      "rationale": "The pericardial friction rub is a scratching, grating sound caused by inflamed pericardial layers rubbing together. It is best heard with the client leaning forward."
     }
   ]
 }
