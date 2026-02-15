@@ -1,450 +1,1107 @@
-[
-  {
-    "topic": "Acid-Base",
-    "fact": "pH 7.35-7.45. CO2 35-45. HCO3 22-26.",
-    "alert": "As the pH goes, so goes my patient.",
-    "q": "According to Klimek, what happens when pH goes UP (Alkalosis)?",
-    "a": [
-      "Only BP goes down",
-      "Everything goes DOWN (Bradycardia)",
-      "Only potassium goes up",
-      "Everything goes UP (Tachycardia, Seizures)"
-    ],
-    "correct": 3,
-    "rationale": "Alkalosis makes the body irritable: high HR, high reflexes, seizures. (Except Potassium goes DOWN)."
-  },
-  {
-    "topic": "Acid-Base Down",
-    "fact": "Acidosis = Down.",
-    "alert": "Bradycardia, Lethargy, Coma, Respiratory Arrest.",
-    "q": "What are the signs of Acidosis?",
-    "a": [
-      "Lethargy, Bradycardia, Flaccidity",
-      "Seizures, Hyperreflexia",
-      "Hypertension",
-      "Tachycardia"
-    ],
-    "correct": 0,
-    "rationale": "Acidosis depresses the CNS: lethargy, low HR, respiratory arrest. (Potassium goes UP)."
-  },
-  {
-    "topic": "Kussmaul Resp",
-    "fact": "Deep rapid breathing.",
-    "alert": "Occurs in MAC (Metabolic Acidosis).",
-    "q": "Which acid-base imbalance causes Kussmaul respirations?",
-    "a": [
-      "Metabolic Alkalosis",
-      "Metabolic Acidosis",
-      "Respiratory Acidosis",
-      "Respiratory Alkalosis"
-    ],
-    "correct": 1,
-    "rationale": "Remember MAC Kussmaul (Metabolic Acidosis causes Kussmaul to blow off CO2)."
-  },
-  {
-    "topic": "Ventilator Alarms",
-    "fact": "High Press = Obstruction.",
-    "alert": "Low Press = Disconnection.",
-    "q": "What causes a High Pressure ventilator alarm?",
-    "a": [
-      "Cuff leak",
-      "Disconnection",
-      "Obstruction (Kinks, Mucus, Coughing)",
-      "Extubation"
-    ],
-    "correct": 2,
-    "rationale": "High pressure means the machine has to push harder against resistance (kinked tube, secretions)."
-  },
-  {
-    "topic": "Aminoglycosides",
-    "fact": "\"Mean Old Mycins\".",
-    "alert": "Ototoxicity (Ears) & Nephrotoxicity (Kidneys).",
-    "q": "What are the toxic effects of Aminoglycosides (Gentamicin)?",
-    "a": [
-      "Vision loss",
-      "Liver failure",
-      "Bone marrow suppression",
-      "Ototoxicity and Nephrotoxicity"
-    ],
-    "correct": 3,
-    "rationale": "Think mice (mycin) have big ears (Oto) and kidneys are shaped like ears (Nephro)."
-  },
-  {
-    "topic": "Troughs & Peaks",
-    "fact": "TAP levels.",
-    "alert": "Trough: 30 min before dose. Peak: Depends on route.",
-    "q": "When is a trough level drawn?",
-    "a": [
-      "30 minutes before the next dose",
-      "30 minutes after the dose",
-      "1 hour after",
-      "Anytime"
-    ],
-    "correct": 0,
-    "rationale": "Trough is the lowest concentration, always drawn immediately before the next dose is given."
-  },
-  {
-    "topic": "Uppers vs Downers",
-    "fact": "Uppers: Caffeine, Cocaine, PCP/LSD, Meth, Adderall.",
-    "alert": "S/S: High HR, BP, Seizures.",
-    "q": "What are the symptoms of an \"Upper\" overdose?",
-    "a": [
-      "Respiratory depression",
-      "Tachycardia, Hypertension, Seizures",
-      "Bradycardia, Lethargy",
-      "Constipation"
-    ],
-    "correct": 1,
-    "rationale": "Uppers stimulate the CNS; everything goes UP."
-  },
-  {
-    "topic": "Downers",
-    "fact": "Everything else.",
-    "alert": "Overdose = Resp Arrest.",
-    "q": "What is the priority for a \"Downer\" overdose?",
-    "a": [
-      "Hypertension",
-      "Seizures",
-      "Respiratory Depression/Arrest",
-      "Hyperreflexia"
-    ],
-    "correct": 2,
-    "rationale": "Downers depress the CNS; too much can stop breathing."
-  },
-  {
-    "topic": "Withdrawal",
-    "fact": "Opposite of the drug.",
-    "alert": "Upper Withdrawal = Down. Downer Withdrawal = Up.",
-    "q": "What happens during withdrawal from a Downer?",
-    "a": [
-      "Sleepiness",
-      "Everything goes DOWN",
-      "No change",
-      "Everything goes UP (Seizure risk)"
-    ],
-    "correct": 3,
-    "rationale": "The body was suppressed; remove the suppressant and the body rebounds upward (seizures, tachycardia)."
-  },
-  {
-    "topic": "Potassium Rules",
-    "fact": "Never push IV.",
-    "alert": "Max 40 mEq/L. High K+ stops heart.",
-    "q": "How should Potassium never be administered?",
-    "a": [
-      "IV Push",
-      "IV Drip",
-      "Oral",
-      "Liquid"
-    ],
-    "correct": 0,
-    "rationale": "IV Push potassium causes instant cardiac arrest. Always dilute in a bag."
-  },
-  {
-    "topic": "Calcium Channel Blockers",
-    "fact": "Like Valium for heart.",
-    "alert": "Calms heart. Lowers BP.",
-    "q": "What is the effect of Calcium Channel Blockers?",
-    "a": [
-      "Increases contractility",
-      "Lowers BP and HR (Relaxes heart)",
-      "Increases HR",
-      "Causes vasoconstriction"
-    ],
-    "correct": 1,
-    "rationale": "They are negative inotropes, chronotropes, and dromotropes (weaken, slow, and block conduction)."
-  },
-  {
-    "topic": "Beta Blockers",
-    "fact": "End in -lol.",
-    "alert": "Lower HR/BP. Do not give to Asthmatics.",
-    "q": "Why are Beta Blockers contraindicated in Asthma?",
-    "a": [
-      "They lower fever",
-      "They increase HR",
-      "They cause bronchoconstriction",
-      "They cause coughing"
-    ],
-    "correct": 2,
-    "rationale": "Non-selective beta blockers block beta-2 receptors in the lungs, causing constriction."
-  },
-  {
-    "topic": "Blood Thinners",
-    "fact": "Heparin (PTT) vs Coumadin (PT/INR).",
-    "alert": "Bleeding precautions.",
-    "q": "Which lab monitors Coumadin (Warfarin)?",
-    "a": [
-      "WBC",
-      "PTT",
-      "Platelets",
-      "PT/INR"
-    ],
-    "correct": 3,
-    "rationale": "PT/INR is for Coumadin. PTT is for Heparin."
-  },
-  {
-    "topic": "Baclofen",
-    "fact": "Muscle relaxant.",
-    "alert": "S/E: Fatigue, Muscle weakness. Don't drink alcohol.",
-    "q": "What patient teaching is needed for Baclofen (Lioresal)?",
-    "a": [
-      "Causes drowsiness; don't drive/drink alcohol",
-      "Causes insomnia",
-      "Take on empty stomach",
-      "Stop abruptly"
-    ],
-    "correct": 0,
-    "rationale": "It relaxes muscles and sedates the CNS; combining with alcohol enhances sedation."
-  },
-  {
-    "topic": "Dantrolene",
-    "fact": "Muscle relaxant.",
-    "alert": "For Malignant Hyperthermia.",
-    "q": "What drug treats Malignant Hyperthermia?",
-    "a": [
-      "Lidocaine",
-      "Dantrolene",
-      "Atropine",
-      "Digoxin"
-    ],
-    "correct": 1,
-    "rationale": "Dantrolene acts directly on skeletal muscle to stop the rigidity and heat production."
-  },
-  {
-    "topic": "Kayexalate",
-    "fact": "Lowers Potassium.",
-    "alert": "\"K-Exits-Late\". Gives Na, kicks out K.",
-    "q": "How does Kayexalate work?",
-    "a": [
-      "Dilutes blood",
-      "Binds phosphate",
-      "Exchanges Sodium for Potassium in the gut",
-      "Increases urine output"
-    ],
-    "correct": 2,
-    "rationale": "It acts as a resin in the bowel, trading sodium ions for potassium ions, which are pooped out."
-  },
-  {
-    "topic": "Regular Insulin",
-    "fact": "Rapid, Run IV.",
-    "alert": "Clear solution.",
-    "q": "Which insulin can be given IV drip?",
-    "a": [
-      "Humalog",
-      "NPH",
-      "Lantus",
-      "Regular"
-    ],
-    "correct": 3,
-    "rationale": "Regular insulin is the only one safe for IV administration."
-  },
-  {
-    "topic": "Peak Levels",
-    "fact": "IV: 15-30 min after finished.",
-    "alert": "IM: 30-60 min.",
-    "q": "When do you draw a peak level for an IV drug?",
-    "a": [
-      "15-30 minutes after infusion finishes",
-      "During infusion",
-      "1 hour after",
-      "Before next dose"
-    ],
-    "correct": 0,
-    "rationale": "This captures the highest concentration in the blood."
-  },
-  {
-    "topic": "Standard Precautions",
-    "fact": "Handwashing, Gloves.",
-    "alert": "For everyone.",
-    "q": "When are Standard Precautions used?",
-    "a": [
-      "Only for immune compromised",
-      "For all patients",
-      "Only for infections",
-      "During surgery"
-    ],
-    "correct": 1,
-    "rationale": "Standard precautions apply to contact with blood, body fluids, non-intact skin, and mucous membranes for all patients."
-  },
-  {
-    "topic": "Contact Precautions",
-    "fact": "MRS. WEE.",
-    "alert": "Gown + Gloves.",
-    "q": "Which diseases require Contact Precautions?",
-    "a": [
-      "Pneumonia",
-      "Flu, Meningitis",
-      "MRSA, RSV, Staph, Wound infections, Enteric (C-diff)",
-      "Measles, TB"
-    ],
-    "correct": 2,
-    "rationale": "Contact is for anything transmitted by touching skin or surfaces (MRS. WEE mnemonic)."
-  },
-  {
-    "topic": "Droplet Precautions",
-    "fact": "SPIDERMAN.",
-    "alert": "Mask + Goggles.",
-    "q": "Which diseases require Droplet Precautions?",
-    "a": [
-      "Hepatitis A",
-      "TB, Measles",
-      "MRSA, C-diff",
-      "Sepsis, Scarlet Fever, Strep, Pertussis, Pneumonia, Flu, Meningitis"
-    ],
-    "correct": 3,
-    "rationale": "Droplets travel 3 feet; a mask is required. (SPIDERMAN mnemonic)."
-  },
-  {
-    "topic": "Airborne Precautions",
-    "fact": "MTV.",
-    "alert": "N95 Mask + Neg Pressure Room.",
-    "q": "Which diseases require Airborne Precautions?",
-    "a": [
-      "Measles, TB, Varicella (Chickenpox)",
-      "Flu, Strep",
-      "MRSA, RSV",
-      "E. Coli"
-    ],
-    "correct": 0,
-    "rationale": "Tiny particles float in the air. MTV mnemonic: Measles, TB, Varicella."
-  },
-  {
-    "topic": "Donning PPE",
-    "fact": "Gown, Mask, Goggles, Gloves.",
-    "alert": "Up the body, then hands.",
-    "q": "What is the correct order for putting on PPE?",
-    "a": [
-      "Mask, Gown, Gloves",
-      "Gown, Mask, Goggles, Gloves",
-      "Gloves, Gown, Mask",
-      "Goggles, Mask, Gown"
-    ],
-    "correct": 1,
-    "rationale": "Start big (Gown), move up to face (Mask/Goggles), end with hands (Gloves)."
-  },
-  {
-    "topic": "Doffing PPE",
-    "fact": "Alphabetical order.",
-    "alert": "Gloves, Goggles, Gown, Mask.",
-    "q": "What is the correct order for removing PPE?",
-    "a": [
-      "All at once",
-      "Mask, Gown, Gloves",
-      "Gloves, Goggles, Gown, Mask",
-      "Gown, Gloves, Mask"
-    ],
-    "correct": 2,
-    "rationale": "Remove dirtiest first (Gloves), protect face/airway last (Mask)."
-  },
-  {
-    "topic": "Restraints",
-    "fact": "Check q15m, Release q2h.",
-    "alert": "New order q24h. MD check within 1h.",
-    "q": "How often must a restraint order be renewed for an adult?",
-    "a": [
-      "Indefinitely",
-      "Every 4 hours",
-      "Weekly",
-      "Every 24 hours"
-    ],
-    "correct": 3,
-    "rationale": "Restraints are highly regulated; orders expire daily."
-  },
-  {
-    "topic": "Cane Walking",
-    "fact": "COAL: Cane Opposite Affected Leg.",
-    "alert": "Cane goes with bad leg.",
-    "q": "What is the COAL mnemonic for canes?",
-    "a": [
-      "Cane Opposite Affected Leg",
-      "Cane On Affected Leg",
-      "Cane Over All Legs",
-      "Cane On All Legs"
-    ],
-    "correct": 0,
-    "rationale": "You hold the cane on the strong side to support the weak side."
-  },
-  {
-    "topic": "Crutch Gaits",
-    "fact": "Even for Even, Odd for Odd.",
-    "alert": "2-point/4-point = Even weakness. 3-point = Odd (1 leg).",
-    "q": "Use an even-numbered gait (2 or 4) when weakness is...?",
-    "a": [
-      "Severe",
-      "Evenly distributed (bilateral)",
-      "One sided",
-      "None"
-    ],
-    "correct": 1,
-    "rationale": "If both legs are weak (bilateral), use 2-point or 4-point. If one leg is broken (unilateral/odd), use 3-point."
-  },
-  {
-    "topic": "Prioritization",
-    "fact": "Acute > Chronic.",
-    "alert": "Unstable > Stable.",
-    "q": "Who is the priority patient?",
-    "a": [
-      "Ready for discharge",
-      "Chronic/Stable",
-      "Acute/Unstable/Changing",
-      "Post-op 12 hrs ago"
-    ],
-    "correct": 2,
-    "rationale": "The patient with a new, changing, or unstable condition always comes first."
-  },
-  {
-    "topic": "Tie Breaker",
-    "fact": "Vital Organ.",
-    "alert": "Brain > Lungs > Heart > Liver > Kidney > Pancreas.",
-    "q": "In a tie for priority, use the modifying phrase to find the...?",
-    "a": [
-      "Gender",
-      "Pain level",
-      "Age",
-      "Most vital organ affected"
-    ],
-    "correct": 3,
-    "rationale": "If two patients are unstable, prioritize the one with the more vital organ failure (Brain/Lung vs Kidney)."
-  },
-  {
-    "topic": "LPN Tasks",
-    "fact": "Stable patients only.",
-    "alert": "No IVs, No Teaching, No Assessment (Admission).",
-    "q": "Can an LPN perform an admission assessment?",
-    "a": [
-      "No, RN must do admission",
-      "Yes, always",
-      "Only if busy",
-      "Yes, with supervision"
-    ],
-    "correct": 0,
-    "rationale": "Admission/Discharge assessments require advanced judgment and planning; RN only."
-  },
-  {
-    "topic": "UAP Tasks",
-    "fact": "Standard, unchanging procedures.",
-    "alert": "Vitals, ADLs, Hygiene.",
-    "q": "Can a UAP take vitals on a stable patient?",
-    "a": [
-      "Only BP",
-      "Yes",
-      "No",
-      "Only temp"
-    ],
-    "correct": 1,
-    "rationale": "Routine vitals on stable patients are within the UAP scope."
-  },
-  {
-    "topic": "Laminotomy",
-    "fact": "Remove wing of vertebra.",
-    "alert": "Relieves nerve compression.",
-    "q": "What is the difference between Laminectomy and Laminotomy?",
-    "a": [
-      "Ectomy is injection",
-      "They are the same",
-      "Ectomy = Removal; Otomy = Opening/Partial removal",
-      "Otomy is fusion"
-    ],
-    "correct": 2,
-    "rationale": "Ectomy removes the whole lamina; Otomy removes a small part to make space."
-  }
-]
+{
+  "section": "pharm",
+  "title": "Pharm & Fundamentals",
+  "questionCount": 100,
+  "questions": [
+    {
+      "q": "According to Klimek, what happens when pH goes UP (Alkalosis)?",
+      "options": [
+        "Only BP goes down",
+        "Everything goes DOWN (Bradycardia)",
+        "Only potassium goes up",
+        "Everything goes UP (Tachycardia, Seizures)"
+      ],
+      "correct": 3,
+      "rationale": "Alkalosis makes the body irritable: high HR, high reflexes, seizures. (Except Potassium goes DOWN)."
+    },
+    {
+      "q": "What are the signs of Acidosis?",
+      "options": [
+        "Lethargy, Bradycardia, Flaccidity",
+        "Seizures, Hyperreflexia",
+        "Hypertension",
+        "Tachycardia"
+      ],
+      "correct": 0,
+      "rationale": "Acidosis depresses the CNS: lethargy, low HR, respiratory arrest. (Potassium goes UP)."
+    },
+    {
+      "q": "Which acid-base imbalance causes Kussmaul respirations?",
+      "options": [
+        "Metabolic Alkalosis",
+        "Metabolic Acidosis",
+        "Respiratory Acidosis",
+        "Respiratory Alkalosis"
+      ],
+      "correct": 1,
+      "rationale": "Remember MAC Kussmaul (Metabolic Acidosis causes Kussmaul to blow off CO2)."
+    },
+    {
+      "q": "What causes a High Pressure ventilator alarm?",
+      "options": [
+        "Cuff leak",
+        "Disconnection",
+        "Obstruction (Kinks, Mucus, Coughing)",
+        "Extubation"
+      ],
+      "correct": 2,
+      "rationale": "High pressure means the machine has to push harder against resistance (kinked tube, secretions)."
+    },
+    {
+      "q": "What are the toxic effects of Aminoglycosides (Gentamicin)?",
+      "options": [
+        "Vision loss",
+        "Liver failure",
+        "Bone marrow suppression",
+        "Ototoxicity and Nephrotoxicity"
+      ],
+      "correct": 3,
+      "rationale": "Think mice (mycin) have big ears (Oto) and kidneys are shaped like ears (Nephro)."
+    },
+    {
+      "q": "When is a trough level drawn?",
+      "options": [
+        "30 minutes before the next dose",
+        "30 minutes after the dose",
+        "1 hour after",
+        "Anytime"
+      ],
+      "correct": 0,
+      "rationale": "Trough is the lowest concentration, always drawn immediately before the next dose is given."
+    },
+    {
+      "q": "What are the symptoms of an \"Upper\" overdose?",
+      "options": [
+        "Respiratory depression",
+        "Tachycardia, Hypertension, Seizures",
+        "Bradycardia, Lethargy",
+        "Constipation"
+      ],
+      "correct": 1,
+      "rationale": "Uppers stimulate the CNS; everything goes UP."
+    },
+    {
+      "q": "What is the priority for a \"Downer\" overdose?",
+      "options": [
+        "Hypertension",
+        "Seizures",
+        "Respiratory Depression/Arrest",
+        "Hyperreflexia"
+      ],
+      "correct": 2,
+      "rationale": "Downers depress the CNS; too much can stop breathing."
+    },
+    {
+      "q": "What happens during withdrawal from a Downer?",
+      "options": [
+        "Sleepiness",
+        "Everything goes DOWN",
+        "No change",
+        "Everything goes UP (Seizure risk)"
+      ],
+      "correct": 3,
+      "rationale": "The body was suppressed; remove the suppressant and the body rebounds upward (seizures, tachycardia)."
+    },
+    {
+      "q": "How should Potassium never be administered?",
+      "options": [
+        "IV Push",
+        "IV Drip",
+        "Oral",
+        "Liquid"
+      ],
+      "correct": 0,
+      "rationale": "IV Push potassium causes instant cardiac arrest. Always dilute in a bag."
+    },
+    {
+      "q": "What is the effect of Calcium Channel Blockers?",
+      "options": [
+        "Increases contractility",
+        "Lowers BP and HR (Relaxes heart)",
+        "Increases HR",
+        "Causes vasoconstriction"
+      ],
+      "correct": 1,
+      "rationale": "They are negative inotropes, chronotropes, and dromotropes (weaken, slow, and block conduction)."
+    },
+    {
+      "q": "Why are Beta Blockers contraindicated in Asthma?",
+      "options": [
+        "They lower fever",
+        "They increase HR",
+        "They cause bronchoconstriction",
+        "They cause coughing"
+      ],
+      "correct": 2,
+      "rationale": "Non-selective beta blockers block beta-2 receptors in the lungs, causing constriction."
+    },
+    {
+      "q": "Which lab monitors Coumadin (Warfarin)?",
+      "options": [
+        "WBC",
+        "PTT",
+        "Platelets",
+        "PT/INR"
+      ],
+      "correct": 3,
+      "rationale": "PT/INR is for Coumadin. PTT is for Heparin."
+    },
+    {
+      "q": "What patient teaching is needed for Baclofen (Lioresal)?",
+      "options": [
+        "Causes drowsiness; don't drive/drink alcohol",
+        "Causes insomnia",
+        "Take on empty stomach",
+        "Stop abruptly"
+      ],
+      "correct": 0,
+      "rationale": "It relaxes muscles and sedates the CNS; combining with alcohol enhances sedation."
+    },
+    {
+      "q": "What drug treats Malignant Hyperthermia?",
+      "options": [
+        "Lidocaine",
+        "Dantrolene",
+        "Atropine",
+        "Digoxin"
+      ],
+      "correct": 1,
+      "rationale": "Dantrolene acts directly on skeletal muscle to stop the rigidity and heat production."
+    },
+    {
+      "q": "How does Kayexalate work?",
+      "options": [
+        "Dilutes blood",
+        "Binds phosphate",
+        "Exchanges Sodium for Potassium in the gut",
+        "Increases urine output"
+      ],
+      "correct": 2,
+      "rationale": "It acts as a resin in the bowel, trading sodium ions for potassium ions, which are pooped out."
+    },
+    {
+      "q": "Which insulin can be given IV drip?",
+      "options": [
+        "Humalog",
+        "NPH",
+        "Lantus",
+        "Regular"
+      ],
+      "correct": 3,
+      "rationale": "Regular insulin is the only one safe for IV administration."
+    },
+    {
+      "q": "When do you draw a peak level for an IV drug?",
+      "options": [
+        "15-30 minutes after infusion finishes",
+        "During infusion",
+        "1 hour after",
+        "Before next dose"
+      ],
+      "correct": 0,
+      "rationale": "This captures the highest concentration in the blood."
+    },
+    {
+      "q": "When are Standard Precautions used?",
+      "options": [
+        "Only for immune compromised",
+        "For all patients",
+        "Only for infections",
+        "During surgery"
+      ],
+      "correct": 1,
+      "rationale": "Standard precautions apply to contact with blood, body fluids, non-intact skin, and mucous membranes for all patients."
+    },
+    {
+      "q": "Which diseases require Contact Precautions?",
+      "options": [
+        "Pneumonia",
+        "Flu, Meningitis",
+        "MRSA, RSV, Staph, Wound infections, Enteric (C-diff)",
+        "Measles, TB"
+      ],
+      "correct": 2,
+      "rationale": "Contact is for anything transmitted by touching skin or surfaces (MRS. WEE mnemonic)."
+    },
+    {
+      "q": "Which diseases require Droplet Precautions?",
+      "options": [
+        "Hepatitis A",
+        "TB, Measles",
+        "MRSA, C-diff",
+        "Sepsis, Scarlet Fever, Strep, Pertussis, Pneumonia, Flu, Meningitis"
+      ],
+      "correct": 3,
+      "rationale": "Droplets travel 3 feet; a mask is required. (SPIDERMAN mnemonic)."
+    },
+    {
+      "q": "Which diseases require Airborne Precautions?",
+      "options": [
+        "Measles, TB, Varicella (Chickenpox)",
+        "Flu, Strep",
+        "MRSA, RSV",
+        "E. Coli"
+      ],
+      "correct": 0,
+      "rationale": "Tiny particles float in the air. MTV mnemonic: Measles, TB, Varicella."
+    },
+    {
+      "q": "What is the correct order for putting on PPE?",
+      "options": [
+        "Mask, Gown, Gloves",
+        "Gown, Mask, Goggles, Gloves",
+        "Gloves, Gown, Mask",
+        "Goggles, Mask, Gown"
+      ],
+      "correct": 1,
+      "rationale": "Start big (Gown), move up to face (Mask/Goggles), end with hands (Gloves)."
+    },
+    {
+      "q": "What is the correct order for removing PPE?",
+      "options": [
+        "All at once",
+        "Mask, Gown, Gloves",
+        "Gloves, Goggles, Gown, Mask",
+        "Gown, Gloves, Mask"
+      ],
+      "correct": 2,
+      "rationale": "Remove dirtiest first (Gloves), protect face/airway last (Mask)."
+    },
+    {
+      "q": "How often must a restraint order be renewed for an adult?",
+      "options": [
+        "Indefinitely",
+        "Every 4 hours",
+        "Weekly",
+        "Every 24 hours"
+      ],
+      "correct": 3,
+      "rationale": "Restraints are highly regulated; orders expire daily."
+    },
+    {
+      "q": "What is the COAL mnemonic for canes?",
+      "options": [
+        "Cane Opposite Affected Leg",
+        "Cane On Affected Leg",
+        "Cane Over All Legs",
+        "Cane On All Legs"
+      ],
+      "correct": 0,
+      "rationale": "You hold the cane on the strong side to support the weak side."
+    },
+    {
+      "q": "Use an even-numbered gait (2 or 4) when weakness is...?",
+      "options": [
+        "Severe",
+        "Evenly distributed (bilateral)",
+        "One sided",
+        "None"
+      ],
+      "correct": 1,
+      "rationale": "If both legs are weak (bilateral), use 2-point or 4-point. If one leg is broken (unilateral/odd), use 3-point."
+    },
+    {
+      "q": "Who is the priority patient?",
+      "options": [
+        "Ready for discharge",
+        "Chronic/Stable",
+        "Acute/Unstable/Changing",
+        "Post-op 12 hrs ago"
+      ],
+      "correct": 2,
+      "rationale": "The patient with a new, changing, or unstable condition always comes first."
+    },
+    {
+      "q": "In a tie for priority, use the modifying phrase to find the...?",
+      "options": [
+        "Gender",
+        "Pain level",
+        "Age",
+        "Most vital organ affected"
+      ],
+      "correct": 3,
+      "rationale": "If two patients are unstable, prioritize the one with the more vital organ failure (Brain/Lung vs Kidney)."
+    },
+    {
+      "q": "Can an LPN perform an admission assessment?",
+      "options": [
+        "No, RN must do admission",
+        "Yes, always",
+        "Only if busy",
+        "Yes, with supervision"
+      ],
+      "correct": 0,
+      "rationale": "Admission/Discharge assessments require advanced judgment and planning; RN only."
+    },
+    {
+      "q": "Can a UAP take vitals on a stable patient?",
+      "options": [
+        "Only BP",
+        "Yes",
+        "No",
+        "Only temp"
+      ],
+      "correct": 1,
+      "rationale": "Routine vitals on stable patients are within the UAP scope."
+    },
+    {
+      "q": "What is the difference between Laminectomy and Laminotomy?",
+      "options": [
+        "Ectomy is injection",
+        "They are the same",
+        "Ectomy = Removal; Otomy = Opening/Partial removal",
+        "Otomy is fusion"
+      ],
+      "correct": 2,
+      "rationale": "Ectomy removes the whole lamina; Otomy removes a small part to make space."
+    },
+    {
+      "q": "What is the antidote for Digoxin toxicity?",
+      "options": [
+        "Vitamin K",
+        "Protamine Sulfate",
+        "Digibind (Digoxin Immune Fab)",
+        "Flumazenil"
+      ],
+      "correct": 2,
+      "rationale": "Digibind binds to digoxin molecules and inactivates them. Signs of toxicity: nausea, visual changes (green/yellow halos), bradycardia."
+    },
+    {
+      "q": "What is the antidote for Coumadin (Warfarin) overdose?",
+      "options": [
+        "Protamine Sulfate",
+        "Vitamin K (Phytonadione)",
+        "Calcium Gluconate",
+        "Naloxone"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin K reverses Warfarin's anticoagulant effect. Keep PT/INR at 1.5-2 times normal."
+    },
+    {
+      "q": "What is the antidote for Heparin overdose?",
+      "options": [
+        "Vitamin K",
+        "Digibind",
+        "Protamine Sulfate",
+        "Flumazenil"
+      ],
+      "correct": 2,
+      "rationale": "Protamine Sulfate neutralizes Heparin. Keep APTT and PTT at 1.5-2.5 times normal."
+    },
+    {
+      "q": "What is the antidote for opiate/narcotic overdose?",
+      "options": [
+        "Flumazenil",
+        "Naloxone (Narcan)",
+        "Atropine",
+        "Epinephrine"
+      ],
+      "correct": 1,
+      "rationale": "Narcan (Naloxone) is the opioid antagonist that reverses respiratory depression from morphine, heroin, and other opioids."
+    },
+    {
+      "q": "What is the antidote for Tylenol (Acetaminophen) overdose?",
+      "options": [
+        "Naloxone",
+        "Mucomyst (Acetylcysteine) - 17 doses + loading dose",
+        "Vitamin K",
+        "Activated charcoal only"
+      ],
+      "correct": 1,
+      "rationale": "Mucomyst (N-acetylcysteine) is given as a loading dose plus 17 additional doses to prevent hepatotoxicity from acetaminophen overdose."
+    },
+    {
+      "q": "What is the antidote for Magnesium Sulfate toxicity?",
+      "options": [
+        "Protamine Sulfate",
+        "Calcium Gluconate",
+        "Vitamin K",
+        "Naloxone"
+      ],
+      "correct": 1,
+      "rationale": "Calcium Gluconate reverses magnesium toxicity. Signs of Mg toxicity: absent DTRs, respirations <12, urine output <30 mL/hr, fetal bradycardia."
+    },
+    {
+      "q": "What is the antidote for cholinergic medication toxicity (Myasthenic Bradycardia)?",
+      "options": [
+        "Epinephrine",
+        "Atropine",
+        "Digibind",
+        "Naloxone"
+      ],
+      "correct": 1,
+      "rationale": "Atropine is an anticholinergic that blocks excess acetylcholine effects (bradycardia, excessive secretions)."
+    },
+    {
+      "q": "What is the antidote for Methotrexate toxicity?",
+      "options": [
+        "Vitamin K",
+        "Leucovorin (Folinic Acid)",
+        "Protamine Sulfate",
+        "Calcium Gluconate"
+      ],
+      "correct": 1,
+      "rationale": "Leucovorin rescue provides folinic acid that normal cells need, counteracting Methotrexate's folate-blocking effects."
+    },
+    {
+      "q": "What is the therapeutic range for Dilantin (Phenytoin)?",
+      "options": [
+        "0.5-1.5 mEq/L",
+        "10-20 mcg/mL",
+        "60-100 mcg/mL",
+        "4-12 mcg/mL"
+      ],
+      "correct": 1,
+      "rationale": "Dilantin therapeutic range is 10-20 mcg/mL. Side effects include gingival hyperplasia."
+    },
+    {
+      "q": "What is the therapeutic range for Lithium?",
+      "options": [
+        "10-20 mcg/mL",
+        "0.5-1.5 mEq/L",
+        "4-12 mcg/mL",
+        "60-100 mcg/mL"
+      ],
+      "correct": 1,
+      "rationale": "Lithium has a very narrow therapeutic range (0.5-1.5 mEq/L). Blood levels above 1.5 indicate toxicity."
+    },
+    {
+      "q": "What is the therapeutic PT/INR range for a patient on Coumadin?",
+      "options": [
+        "PT: 11-12.5 sec; INR: 1.5-2 times normal",
+        "PT: 30-40 sec; INR: 4-5 times normal",
+        "PTT: 60-70 sec",
+        "INR: 0.5-1.0"
+      ],
+      "correct": 0,
+      "rationale": "Normal PT is 11-12.5 sec. Therapeutic INR on Warfarin is 1.5-2 times normal (INR 2-3 for most conditions)."
+    },
+    {
+      "q": "What is the therapeutic APTT/PTT range for a patient on Heparin?",
+      "options": [
+        "PT 11-12.5 sec",
+        "APTT/PTT: 1.5-2.5 times normal (60-70 sec)",
+        "INR 2-3",
+        "PTT: 20-30 sec"
+      ],
+      "correct": 1,
+      "rationale": "Normal APTT is 60-70 sec. Therapeutic on Heparin is 1.5-2.5 times the control value."
+    },
+    {
+      "q": "What heart rate must be checked before giving Digoxin?",
+      "options": [
+        "If HR > 100, hold the medication",
+        "If HR < 60, hold the medication and notify the physician",
+        "If HR < 100, hold the medication",
+        "No need to check HR"
+      ],
+      "correct": 1,
+      "rationale": "Digoxin slows the heart. If apical pulse is below 60 bpm, hold the dose and notify the provider to prevent dangerous bradycardia."
+    },
+    {
+      "q": "What should the nurse teach a patient on Warfarin about diet?",
+      "options": [
+        "Increase Vitamin K intake",
+        "Maintain consistent Vitamin K intake; do not change it",
+        "Avoid all green vegetables",
+        "No dietary restrictions"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin K counteracts Warfarin. Don't eliminate it, but keep intake consistent so the dose remains effective and predictable."
+    },
+    {
+      "q": "What drugs should a patient on Warfarin avoid?",
+      "options": [
+        "Acetaminophen",
+        "Aspirin, NSAIDs, and other blood thinners",
+        "Antacids",
+        "Vitamin C supplements"
+      ],
+      "correct": 1,
+      "rationale": "Aspirin and NSAIDs inhibit platelet function and increase bleeding risk on top of Warfarin's anticoagulation."
+    },
+    {
+      "q": "What is the normal arterial blood pH range?",
+      "options": [
+        "7.25-7.35",
+        "7.35-7.45",
+        "7.45-7.55",
+        "7.10-7.25"
+      ],
+      "correct": 1,
+      "rationale": "Normal pH is 7.35-7.45. Below 7.35 = acidosis. Above 7.45 = alkalosis."
+    },
+    {
+      "q": "What is the normal PaCO2 range?",
+      "options": [
+        "20-30 mmHg",
+        "35-45 mmHg",
+        "50-60 mmHg",
+        "80-100 mmHg"
+      ],
+      "correct": 1,
+      "rationale": "Normal CO2 is 35-45 mmHg. CO2 is the respiratory driver: high CO2 = respiratory acidosis, low CO2 = respiratory alkalosis."
+    },
+    {
+      "q": "What is the normal HCO3 (bicarbonate) range?",
+      "options": [
+        "10-18 mEq/L",
+        "21-28 mEq/L",
+        "30-40 mEq/L",
+        "45-55 mEq/L"
+      ],
+      "correct": 1,
+      "rationale": "Normal HCO3 is 21-28 mEq/L. HCO3 is the metabolic driver: high = metabolic alkalosis, low = metabolic acidosis."
+    },
+    {
+      "q": "A patient has pH 7.30, CO2 55, HCO3 24. What is this?",
+      "options": [
+        "Metabolic Acidosis",
+        "Respiratory Acidosis",
+        "Metabolic Alkalosis",
+        "Respiratory Alkalosis"
+      ],
+      "correct": 1,
+      "rationale": "pH is low (acidosis). CO2 is high (the respiratory driver is causing it). HCO3 is normal (not compensating yet). This is uncompensated respiratory acidosis."
+    },
+    {
+      "q": "A patient has pH 7.50, CO2 28, HCO3 24. What is this?",
+      "options": [
+        "Metabolic Alkalosis",
+        "Respiratory Acidosis",
+        "Respiratory Alkalosis",
+        "Metabolic Acidosis"
+      ],
+      "correct": 2,
+      "rationale": "pH is high (alkalosis). CO2 is low (the patient is hyperventilating, blowing off CO2). HCO3 is normal. This is respiratory alkalosis."
+    },
+    {
+      "q": "What causes a Low Pressure ventilator alarm?",
+      "options": [
+        "Biting on the tube",
+        "Mucus plug",
+        "Disconnection or leak in the circuit",
+        "Bronchospasm"
+      ],
+      "correct": 2,
+      "rationale": "Low pressure means air is escaping: disconnected tubing, cuff leak, or loose connections. Check all connections first."
+    },
+    {
+      "q": "What is the first action when any ventilator alarm sounds?",
+      "options": [
+        "Call respiratory therapy",
+        "Silence the alarm",
+        "Assess the patient first",
+        "Increase the FiO2"
+      ],
+      "correct": 2,
+      "rationale": "Always assess the patient first. If the patient is in distress, disconnect the vent and bag manually (Ambu bag) while troubleshooting."
+    },
+    {
+      "q": "What food must be avoided with grapefruit juice interactions?",
+      "options": [
+        "Antibiotics only",
+        "Calcium Channel Blockers and Statins (Lipitor)",
+        "Aspirin",
+        "Insulin"
+      ],
+      "correct": 1,
+      "rationale": "Grapefruit inhibits CYP3A4 enzyme, increasing blood levels of many drugs including Ca++ channel blockers and statins to toxic levels."
+    },
+    {
+      "q": "When should statins (Lipitor) be taken?",
+      "options": [
+        "In the morning with breakfast",
+        "In the PM only (evening/bedtime)",
+        "With lunch",
+        "Any time of day"
+      ],
+      "correct": 1,
+      "rationale": "Cholesterol synthesis peaks at night, so statins are most effective when taken in the evening. Avoid grapefruit juice."
+    },
+    {
+      "q": "What should a patient do after the first dose of an ACE Inhibitor?",
+      "options": [
+        "Exercise immediately",
+        "Stay in bed for 3 hours due to risk of first-dose hypotension",
+        "Take a second dose if BP doesn't drop",
+        "Eat a high-sodium meal"
+      ],
+      "correct": 1,
+      "rationale": "ACE inhibitors can cause severe first-dose hypotension. Stay in bed for 3 hours and rise slowly."
+    },
+    {
+      "q": "What is the common side effect of ACE Inhibitors (-pril drugs)?",
+      "options": [
+        "Constipation",
+        "Dry, persistent cough",
+        "Weight gain",
+        "Hair loss"
+      ],
+      "correct": 1,
+      "rationale": "ACE inhibitors (Captopril, Lisinopril, Enalapril) cause a dry, hacking cough due to bradykinin accumulation. Switch to ARB if intolerable."
+    },
+    {
+      "q": "What suffix identifies Beta Blockers?",
+      "options": [
+        "-pril",
+        "-olol",
+        "-sartan",
+        "-pine"
+      ],
+      "correct": 1,
+      "rationale": "Beta blockers end in -olol: Propranolol, Metoprolol, Atenolol. They decrease HR and BP."
+    },
+    {
+      "q": "What suffix identifies ACE Inhibitors?",
+      "options": [
+        "-olol",
+        "-pril",
+        "-statin",
+        "-dipine"
+      ],
+      "correct": 1,
+      "rationale": "ACE inhibitors end in -pril: Captopril, Lisinopril, Enalapril. They block angiotensin-converting enzyme to lower BP."
+    },
+    {
+      "q": "What suffix identifies ARBs (Angiotensin Receptor Blockers)?",
+      "options": [
+        "-pril",
+        "-olol",
+        "-sartan",
+        "-mycin"
+      ],
+      "correct": 2,
+      "rationale": "ARBs end in -sartan: Losartan, Valsartan, Irbesartan. They block angiotensin II receptors. Used when ACE inhibitor cough is intolerable."
+    },
+    {
+      "q": "What is the nurse's priority before giving any blood pressure medication?",
+      "options": [
+        "Check blood glucose",
+        "Check blood pressure and heart rate",
+        "Check temperature",
+        "Assess lung sounds"
+      ],
+      "correct": 1,
+      "rationale": "Always check BP and HR before giving antihypertensives. Hold if BP or HR are below set parameters and notify the physician."
+    },
+    {
+      "q": "What should the nurse teach about Nitroglycerin (NTG)?",
+      "options": [
+        "Take with food",
+        "Take up to 3 tablets, 5 min apart; if no relief, call 911",
+        "Take one tablet daily",
+        "Swallow the tablet whole"
+      ],
+      "correct": 1,
+      "rationale": "NTG is placed under the tongue (sublingual). Take 1 tablet, wait 5 min, take 2nd, wait 5 min, take 3rd. If still in pain after 3 tabs, call 911."
+    },
+    {
+      "q": "How should Nitroglycerin tablets be stored?",
+      "options": [
+        "In a plastic bag",
+        "In a dark glass container, away from heat and light",
+        "In the refrigerator",
+        "In any container"
+      ],
+      "correct": 1,
+      "rationale": "NTG degrades with light, heat, and moisture. Store in original dark glass container with cap tightly closed. Replace every 6 months."
+    },
+    {
+      "q": "What is the normal potassium (K+) range?",
+      "options": [
+        "1.5-2.5 mEq/L",
+        "3.5-5.0 mEq/L",
+        "6.0-8.0 mEq/L",
+        "136-145 mEq/L"
+      ],
+      "correct": 1,
+      "rationale": "Normal K+ is 3.5-5.0 mEq/L. Both hypo- and hyperkalemia cause dangerous cardiac dysrhythmias."
+    },
+    {
+      "q": "What EKG changes are seen in Hypokalemia?",
+      "options": [
+        "Tall, peaked T waves",
+        "Prominent U waves, depressed ST segment, flat T waves",
+        "Widened QRS complex",
+        "Prolonged PR interval only"
+      ],
+      "correct": 1,
+      "rationale": "Hypokalemia causes flattened T waves, ST depression, and characteristic U waves (extra wave after T wave)."
+    },
+    {
+      "q": "What EKG changes are seen in Hyperkalemia?",
+      "options": [
+        "Flat T waves and U waves",
+        "Tall, peaked T waves, prolonged PR interval, widened QRS",
+        "Normal EKG",
+        "Short QT interval"
+      ],
+      "correct": 1,
+      "rationale": "Hyperkalemia produces tall, peaked (tented) T waves, widened QRS, and can progress to ventricular fibrillation and cardiac arrest."
+    },
+    {
+      "q": "What is the normal sodium (Na+) range?",
+      "options": [
+        "100-120 mEq/L",
+        "120-130 mEq/L",
+        "136-145 mEq/L",
+        "150-160 mEq/L"
+      ],
+      "correct": 2,
+      "rationale": "Normal Na+ is 136-145 mEq/L. Sodium goes with water: low Na = fluid excess, high Na = dehydration."
+    },
+    {
+      "q": "What is the normal calcium (Ca++) range?",
+      "options": [
+        "3.5-5.0 mg/dL",
+        "9-10.5 mg/dL",
+        "15-20 mg/dL",
+        "1.5-2.5 mg/dL"
+      ],
+      "correct": 1,
+      "rationale": "Normal Ca++ is 9-10.5 mg/dL. Hypocalcemia causes muscle spasms, tetany, and positive Trousseau's/Chvostek's signs."
+    },
+    {
+      "q": "What are the signs of Hypocalcemia?",
+      "options": [
+        "Constipation, lethargy, kidney stones",
+        "Muscle spasms, tetany, Trousseau's sign, Chvostek's sign, prolonged QT",
+        "Polyuria and polydipsia",
+        "Weight gain and edema"
+      ],
+      "correct": 1,
+      "rationale": "Low calcium causes neuromuscular irritability: spasms, tetany, (+) Trousseau's (carpal spasm with BP cuff), (+) Chvostek's (facial twitch with nerve tap)."
+    },
+    {
+      "q": "What does Trousseau's Sign indicate?",
+      "options": [
+        "Hyperkalemia",
+        "Hypocalcemia (carpal spasm when BP cuff inflated)",
+        "Hypernatremia",
+        "Hypomagnesemia only"
+      ],
+      "correct": 1,
+      "rationale": "Trousseau's sign: inflating BP cuff above systolic for 3 minutes causes carpal spasm (hand contraction), indicating hypocalcemia."
+    },
+    {
+      "q": "What does Chvostek's Sign indicate?",
+      "options": [
+        "Hypernatremia",
+        "Hypercalcemia",
+        "Hypocalcemia (facial twitch when tapping facial nerve)",
+        "Hyperkalemia"
+      ],
+      "correct": 2,
+      "rationale": "Chvostek's sign: tapping the facial nerve in front of the ear causes ipsilateral facial muscle twitching, indicating hypocalcemia."
+    },
+    {
+      "q": "Which diuretic is potassium-sparing?",
+      "options": [
+        "Furosemide (Lasix)",
+        "Hydrochlorothiazide (HCTZ)",
+        "Spironolactone (Aldactone)",
+        "Mannitol"
+      ],
+      "correct": 2,
+      "rationale": "Spironolactone (Aldactone) saves potassium by blocking aldosterone. Watch for hyperkalemia. Also includes Triamterene and Amiloride."
+    },
+    {
+      "q": "Which diuretic wastes potassium and requires potassium monitoring?",
+      "options": [
+        "Spironolactone",
+        "Furosemide (Lasix)",
+        "Triamterene",
+        "Amiloride"
+      ],
+      "correct": 1,
+      "rationale": "Loop diuretics (Lasix, Bumex) and Thiazides (HCTZ) waste potassium. Monitor K+ levels and supplement as needed."
+    },
+    {
+      "q": "What teaching is important for patients on loop diuretics (Lasix)?",
+      "options": [
+        "Restrict potassium intake",
+        "Eat potassium-rich foods (bananas, oranges, potatoes) and take in the morning",
+        "Take at bedtime",
+        "Limit fluid intake to 500 mL/day"
+      ],
+      "correct": 1,
+      "rationale": "Loop diuretics cause K+ loss. Eat potassium-rich foods, take in the morning to avoid nocturia, and monitor for signs of hypokalemia."
+    },
+    {
+      "q": "What is the antidote for benzodiazepine overdose?",
+      "options": [
+        "Naloxone (Narcan)",
+        "Flumazenil (Romazicon)",
+        "Atropine",
+        "Protamine Sulfate"
+      ],
+      "correct": 1,
+      "rationale": "Flumazenil (Romazicon) competitively antagonizes benzodiazepines at the GABA receptor, reversing sedation."
+    },
+    {
+      "q": "What are the 5 Rights of Medication Administration?",
+      "options": [
+        "Right patient, drug, dose, route, time",
+        "Right doctor, nurse, pharmacy, patient, dose",
+        "Right drug, patient, room, chart, label",
+        "Right form, color, size, shape, label"
+      ],
+      "correct": 0,
+      "rationale": "The 5 Rights: Right Patient, Right Drug, Right Dose, Right Route, Right Time. Always verify all five before giving any medication."
+    },
+    {
+      "q": "What should the nurse do if a medication error occurs?",
+      "options": [
+        "Hide it to avoid trouble",
+        "Assess the patient, notify the physician, complete an incident report, and document",
+        "Only notify the charge nurse",
+        "Document in the chart and do nothing else"
+      ],
+      "correct": 1,
+      "rationale": "After a med error: assess the patient first, notify the provider, implement orders, complete an incident/occurrence report, and document the patient's response."
+    },
+    {
+      "q": "What class of drugs ends in -mycin or -micin?",
+      "options": [
+        "ACE Inhibitors",
+        "Beta Blockers",
+        "Aminoglycosides (antibiotics)",
+        "Statins"
+      ],
+      "correct": 2,
+      "rationale": "Aminoglycosides: Gentamicin, Tobramycin, Amikacin. Monitor for ototoxicity (hearing loss/tinnitus) and nephrotoxicity (rising BUN/creatinine)."
+    },
+    {
+      "q": "What must be monitored when a patient is on Vancomycin?",
+      "options": [
+        "Blood glucose",
+        "Trough levels, renal function, and watch for Red Man Syndrome",
+        "Liver enzymes only",
+        "Platelet count"
+      ],
+      "correct": 1,
+      "rationale": "Vancomycin is nephrotoxic and ototoxic. Red Man Syndrome (flushing, hypotension) occurs if infused too rapidly. Always infuse over 60+ minutes."
+    },
+    {
+      "q": "What is Red Man Syndrome?",
+      "options": [
+        "An allergic reaction to penicillin",
+        "Flushing, rash, and hypotension from rapid Vancomycin infusion",
+        "A blood transfusion reaction",
+        "A side effect of chemotherapy"
+      ],
+      "correct": 1,
+      "rationale": "Red Man Syndrome is a histamine-mediated reaction from infusing Vancomycin too quickly. Slow the rate and premedicate with antihistamines."
+    },
+    {
+      "q": "What is the priority assessment before giving a first dose of any antibiotic?",
+      "options": [
+        "Blood pressure",
+        "Allergy history (especially penicillin cross-reactivity)",
+        "Weight only",
+        "Urine output"
+      ],
+      "correct": 1,
+      "rationale": "Always check allergies before antibiotics. Penicillin allergy may cross-react with cephalosporins. Watch for anaphylaxis with the first dose."
+    },
+    {
+      "q": "What is Rifampin used for and what should patients be warned about?",
+      "options": [
+        "Treat UTIs; causes constipation",
+        "Treat TB; turns body fluids rust/orange/red",
+        "Treat pneumonia; causes rash",
+        "Treat meningitis; causes hearing loss"
+      ],
+      "correct": 1,
+      "rationale": "Rifampin is a key TB drug that turns urine, tears, sweat, and other body fluids orange/red. It also reduces effectiveness of oral contraceptives."
+    },
+    {
+      "q": "What side effect is associated with Pyridium (Phenazopyridine)?",
+      "options": [
+        "Black stools",
+        "Orange/red/pink urine",
+        "Green urine",
+        "Cloudy urine"
+      ],
+      "correct": 1,
+      "rationale": "Pyridium is a bladder analgesic that turns urine orange/red/pink. It is NOT an antibiotic and only relieves pain. Warn patients about staining."
+    },
+    {
+      "q": "What must be assessed before and after giving an opioid analgesic?",
+      "options": [
+        "Blood glucose and appetite",
+        "Respiratory rate, level of consciousness, and pain level",
+        "Bowel sounds only",
+        "Skin color only"
+      ],
+      "correct": 1,
+      "rationale": "Opioids depress respirations. Hold if RR < 12. Assess LOC (sedation precedes resp depression) and pain before/after for effectiveness."
+    },
+    {
+      "q": "At what respiratory rate should the nurse hold an opioid?",
+      "options": [
+        "Below 20",
+        "Below 16",
+        "Below 12",
+        "Below 8"
+      ],
+      "correct": 2,
+      "rationale": "Hold opioids and notify the physician if RR is below 12 breaths/minute. Naloxone (Narcan) should be readily available."
+    },
+    {
+      "q": "What is the common side effect of opioids that requires a standing order?",
+      "options": [
+        "Diarrhea",
+        "Constipation (administer stool softeners/bowel regimen)",
+        "Hypertension",
+        "Insomnia"
+      ],
+      "correct": 1,
+      "rationale": "Opioids slow GI motility causing constipation. A bowel regimen (stool softeners, laxatives, fluids, fiber) should be started with opioid therapy."
+    },
+    {
+      "q": "What is the Glasgow Coma Scale (GCS) score that indicates coma?",
+      "options": [
+        "Less than 15",
+        "Less than 12",
+        "Less than 8",
+        "Less than 3"
+      ],
+      "correct": 2,
+      "rationale": "GCS < 8 = coma; intubation is often required. GCS ranges from 3 (worst) to 15 (fully alert)."
+    },
+    {
+      "q": "What is the RACE protocol for a fire emergency?",
+      "options": [
+        "Run, Activate, Close, Extinguish",
+        "Rescue patients, Activate alarm, Contain fire (close doors), Extinguish/Evacuate",
+        "Report, Assess, Call 911, Exit",
+        "Remove, Alert, Cover, Escape"
+      ],
+      "correct": 1,
+      "rationale": "RACE: Rescue patients in immediate danger, Activate fire alarm, Contain the fire (close doors/windows), Extinguish if small or Evacuate."
+    },
+    {
+      "q": "What does PASS stand for for fire extinguisher use?",
+      "options": [
+        "Push, Aim, Squeeze, Spray",
+        "Pull pin, Aim at base of fire, Squeeze handle, Sweep side to side",
+        "Prepare, Activate, Spray, Secure",
+        "Point, Aim, Spray, Stop"
+      ],
+      "correct": 1,
+      "rationale": "PASS: Pull the pin, Aim at the base of the fire (not the flames), Squeeze the handle, Sweep side to side."
+    },
+    {
+      "q": "What is the purpose of a trough draw in therapeutic drug monitoring?",
+      "options": [
+        "To check for allergic reactions",
+        "To measure the lowest drug concentration to ensure it stays above minimum effective level",
+        "To determine the maximum dose",
+        "To check liver function"
+      ],
+      "correct": 1,
+      "rationale": "The trough level (drawn just before the next dose) confirms the drug level hasn't dropped below the therapeutic minimum."
+    },
+    {
+      "q": "What are the symptoms of Digoxin toxicity?",
+      "options": [
+        "Tachycardia, hypertension, headache",
+        "Nausea, vomiting, visual disturbances (green-yellow halos), bradycardia",
+        "Polyuria, polydipsia",
+        "Rash and joint pain"
+      ],
+      "correct": 1,
+      "rationale": "Dig toxicity: GI symptoms (nausea, vomiting, anorexia), visual changes (green-yellow halos, blurred vision), and cardiac dysrhythmias (bradycardia). Check K+ (hypokalemia increases toxicity)."
+    },
+    {
+      "q": "What electrolyte imbalance increases the risk of Digoxin toxicity?",
+      "options": [
+        "Hyperkalemia",
+        "Hypokalemia",
+        "Hypernatremia",
+        "Hypercalcemia"
+      ],
+      "correct": 1,
+      "rationale": "Low potassium competes with Digoxin for the same binding sites, increasing cardiac sensitivity to Digoxin."
+    },
+    {
+      "q": "What class of drug should be used cautiously with patients on Warfarin?",
+      "options": [
+        "Antacids",
+        "Antibiotics (many alter Vitamin K production by gut flora, changing INR)",
+        "Calcium supplements",
+        "Multivitamins without Vitamin K"
+      ],
+      "correct": 1,
+      "rationale": "Many antibiotics kill gut bacteria that produce Vitamin K, potentiating Warfarin's effect and increasing bleeding risk. Monitor INR closely."
+    },
+    {
+      "q": "What patient teaching is essential for Phenytoin (Dilantin)?",
+      "options": [
+        "Take on an empty stomach only",
+        "Good oral hygiene (gingival hyperplasia), do not stop abruptly (seizures), avoid alcohol",
+        "Take with grapefruit juice",
+        "Limit water intake"
+      ],
+      "correct": 1,
+      "rationale": "Dilantin causes gingival hyperplasia (gum overgrowth) - meticulous oral care needed. Never stop abruptly (status epilepticus). Alcohol lowers seizure threshold."
+    },
+    {
+      "q": "What happens if you abruptly stop an anticonvulsant?",
+      "options": [
+        "Nothing",
+        "Mild headache",
+        "Status Epilepticus (life-threatening continuous seizures)",
+        "Drowsiness"
+      ],
+      "correct": 2,
+      "rationale": "Abruptly stopping anticonvulsants can trigger rebound seizures including status epilepticus, a medical emergency. Always taper."
+    },
+    {
+      "q": "What is the nurse's role in informed consent?",
+      "options": [
+        "Explain the procedure to the patient",
+        "Witness the patient's signature and ensure they understand",
+        "Obtain consent from family only",
+        "Sign on behalf of the patient"
+      ],
+      "correct": 1,
+      "rationale": "The physician explains the procedure, risks, benefits, and alternatives. The nurse's role is to witness the signature and verify the patient understands."
+    },
+    {
+      "q": "Which task can the nurse NEVER delegate?",
+      "options": [
+        "Vital signs on stable patients",
+        "Ambulating a stable patient",
+        "Assessment, teaching, and evaluation",
+        "Feeding a patient"
+      ],
+      "correct": 2,
+      "rationale": "Assessment, teaching, evaluation, and anything requiring clinical judgment are RN-only activities that cannot be delegated to LPNs or UAPs."
+    },
+    {
+      "q": "What tasks can be delegated to an LPN?",
+      "options": [
+        "Admission assessment and care plan development",
+        "Routine wound care, medication administration, data collection on stable patients",
+        "Blood transfusion initiation",
+        "Patient teaching and discharge planning"
+      ],
+      "correct": 1,
+      "rationale": "LPNs can perform routine skills (wound care, med admin, VS, data collection) on stable patients under RN supervision. They cannot assess, plan, teach, or evaluate."
+    },
+    {
+      "q": "What is the order of priority when using Maslow's Hierarchy of Needs for NCLEX?",
+      "options": [
+        "Self-actualization, then safety",
+        "Physiological needs first, then safety, then love/belonging",
+        "Safety first, then physiological",
+        "Esteem, then safety, then physiological"
+      ],
+      "correct": 1,
+      "rationale": "Maslow's: meet physiological needs first (airway, breathing, circulation, food, water), then safety, then psychosocial needs."
+    }
+  ]
+}

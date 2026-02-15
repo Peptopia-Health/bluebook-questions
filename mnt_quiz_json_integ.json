@@ -1,562 +1,1107 @@
-[
-  {
-    "topic": "Burns: Rule of 9s",
-    "fact": "Arm=9, Leg=18, Torso=36.",
-    "alert": "Head=9 (Adult).",
-    "q": "According to Rule of Nines, what % is one arm?",
-    "a": [
-      "1%",
-      "18%",
-      "4.5%",
-      "9%"
-    ],
-    "correct": 3,
-    "rationale": "Each arm is 9% total (4.5 front, 4.5 back)."
-  },
-  {
-    "topic": "Burn Phases",
-    "fact": "Shock (Fluid shift). Diuretic.",
-    "alert": "Parkland Formula: 4mL x kg x %burn.",
-    "q": "What is the priority in the first 24hrs of a major burn?",
-    "a": [
-      "Fluid Resuscitation",
-      "Infection control",
-      "Nutrition",
-      "Range of Motion"
-    ],
-    "correct": 0,
-    "rationale": "Massive fluid shift causes hypovolemic shock. Replacing fluids prevents death."
-  },
-  {
-    "topic": "Shingles",
-    "fact": "Herpes Zoster. Nerve pain.",
-    "alert": "Contagious to those who haven't had Chickenpox.",
-    "q": "What type of rash is Shingles?",
-    "a": [
-      "Petechiae",
-      "Vesicular along a nerve dermatome",
-      "Macular rash on trunk",
-      "Generalized pustules"
-    ],
-    "correct": 1,
-    "rationale": "The virus lies dormant in the nerve root and erupts along that specific nerve path."
-  },
-  {
-    "topic": "Acne",
-    "fact": "Clogged sebaceous glands.",
-    "alert": "Accutane: Teratogenic (Birth defects).",
-    "q": "What is a major side effect of Accutane?",
-    "a": [
-      "Hair growth",
-      "Weight gain",
-      "Birth defects",
-      "Hypertension"
-    ],
-    "correct": 2,
-    "rationale": "Accutane is highly teratogenic; strict birth control is required."
-  },
-  {
-    "topic": "Cataracts",
-    "fact": "Cloudy lens.",
-    "alert": "Post-Op: No bending/coughing.",
-    "q": "What activity is restricted after cataract surgery?",
-    "a": [
-      "Walking",
-      "Watching TV",
-      "Reading",
-      "Bending at waist/Straining"
-    ],
-    "correct": 3,
-    "rationale": "Bending increases intraocular pressure (IOP), risking the surgical site."
-  },
-  {
-    "topic": "Glaucoma",
-    "fact": "High Intraocular Pressure.",
-    "alert": "Tunnel vision. No Atropine.",
-    "q": "Which class of drugs is contraindicated in Glaucoma?",
-    "a": [
-      "Mydriatics (Dilators)",
-      "Miotics (Constrictors)",
-      "Beta Blockers",
-      "Diuretics"
-    ],
-    "correct": 0,
-    "rationale": "Dilating the pupil (Mydriasis) blocks the outflow of aqueous humor, spiking pressure."
-  },
-  {
-    "topic": "Meniere's Disease",
-    "fact": "Inner ear fluid balance.",
-    "alert": "Vertigo, Tinnitus, Hearing Loss.",
-    "q": "What diet helps Meniere's Disease?",
-    "a": [
-      "High Carb",
-      "Low Sodium",
-      "Low Fat",
-      "High Protein"
-    ],
-    "correct": 1,
-    "rationale": "Sodium retains fluid; low sodium reduces endolymph fluid pressure in the ear."
-  },
-  {
-    "topic": "Retinal Detachment",
-    "fact": "Separation of retina.",
-    "alert": "Flashes of light, Curtain falling.",
-    "q": "What does a patient see with Retinal Detachment?",
-    "a": [
-      "Cloudy vision",
-      " halos around lights",
-      "Curtain falling/Flashes of light",
-      "Central vision loss"
-    ],
-    "correct": 2,
-    "rationale": "As the retina peels off, neurons fire (flashes) and vision is blocked (curtain)."
-  },
-  {
-    "topic": "Ear Drops",
-    "fact": "Adult: Up/Back. Child: Down/Back.",
-    "alert": "Administer at room temp.",
-    "q": "How do you pull the pinna for an adult?",
-    "a": [
-      "Down and Back",
-      "Forward",
-      "Straight back",
-      "Up and Back"
-    ],
-    "correct": 3,
-    "rationale": "Adults = UP (grown ups). Children = DOWN (grow down)."
-  },
-  {
-    "topic": "Lice",
-    "fact": "Pediculosis.",
-    "alert": "Treat everyone. Bag linens.",
-    "q": "What is the treatment for lice?",
-    "a": [
-      "Kwell shampoo/Comb nits",
-      "Antibiotics",
-      "Steroid cream",
-      "Bleach"
-    ],
-    "correct": 0,
-    "rationale": "Kwell kills the lice; fine-tooth combing removes the eggs (nits)."
-  },
-  {
-    "topic": "Pressure Ulcers",
-    "fact": "Stage 1: Red (Non-blanchable). Stage 2: Broken.",
-    "alert": "Turn q2h. Keep dry.",
-    "q": "What characterizes a Stage 1 pressure ulcer?",
-    "a": [
-      "Bone visible",
-      "Non-blanchable redness",
-      "Subcutaneous fat visible",
-      "Blister/Broken skin"
-    ],
-    "correct": 1,
-    "rationale": "Intact skin with redness that does not fade when pressed indicates Stage 1."
-  },
-  {
-    "topic": "Impetigo",
-    "fact": "Staph/Strep infection.",
-    "alert": "Honey-colored crusts. Contagious!",
-    "q": "What is the hallmark sign of Impetigo?",
-    "a": [
-      "Butterfly rash",
-      "Silver scales",
-      "Honey-colored crusts",
-      "Target lesion"
-    ],
-    "correct": 2,
-    "rationale": "Bacterial infection leads to weeping sores that dry into golden/honey crusts."
-  },
-  {
-    "topic": "Scabies",
-    "fact": "Mite infestation.",
-    "alert": "Burrows/Lines. Treat whole family.",
-    "q": "What does a Scabies rash look like?",
-    "a": [
-      "Circular rings",
-      "Raised plaques",
-      "Clustered vesicles",
-      "Linear burrows/tracks"
-    ],
-    "correct": 3,
-    "rationale": "Mites burrow under the skin in straight lines to lay eggs."
-  },
-  {
-    "topic": "Ringworm",
-    "fact": "Tinea (Fungal).",
-    "alert": "Circular patch. Wood's Lamp diagnosis.",
-    "q": "What device is used to diagnose fungal infections like Ringworm?",
-    "a": [
-      "Wood's Lamp (UV)",
-      "Doppler",
-      "Otoscope",
-      "Stethoscope"
-    ],
-    "correct": 0,
-    "rationale": "Fungal infections fluoresce (glow) under ultraviolet light."
-  },
-  {
-    "topic": "Psoriasis",
-    "fact": "Autoimmune. Rapid cell turnover.",
-    "alert": "Silvery scales. UV light therapy.",
-    "q": "What do Psoriasis lesions look like?",
-    "a": [
-      "Open sores",
-      "Red patches with silvery scales",
-      "Black moles",
-      "Fluid filled blisters"
-    ],
-    "correct": 1,
-    "rationale": "Buildup of dead skin cells creates the classic silver scaling."
-  },
-  {
-    "topic": "Melanoma",
-    "fact": "Skin cancer.",
-    "alert": "ABCD: Asymmetry, Border, Color, Diameter.",
-    "q": "What is a warning sign of Melanoma?",
-    "a": [
-      "Itching",
-      "Painful rash",
-      "Changes in a mole (ABCD)",
-      "Dry skin"
-    ],
-    "correct": 2,
-    "rationale": "Melanoma often arises from existing moles that change shape, color, or size."
-  },
-  {
-    "topic": "Burns: Electrolytes",
-    "fact": "Cell damage releases K+.",
-    "alert": "Initial Hyperkalemia.",
-    "q": "What electrolyte imbalance occurs immediately after a severe burn?",
-    "a": [
-      "Hypokalemia",
-      "Hypomagnesemia",
-      "Hypercalcemia",
-      "Hyperkalemia"
-    ],
-    "correct": 3,
-    "rationale": "Ruptured cells release intracellular Potassium into the bloodstream."
-  },
-  {
-    "topic": "Burns: Ulcer",
-    "fact": "Curling's Ulcer.",
-    "alert": "Stress ulcer. Give H2 blockers/PPIs.",
-    "q": "What type of ulcer is common in burn patients?",
-    "a": [
-      "Curling's Ulcer",
-      "Cushing's Ulcer",
-      "Venous Ulcer",
-      "Arterial Ulcer"
-    ],
-    "correct": 0,
-    "rationale": "Acute physical stress reduces blood flow to the gut, causing gastric erosion."
-  },
-  {
-    "topic": "Otitis Media",
-    "fact": "Middle ear infection.",
-    "alert": "Prevention: Feed upright. No bottle in bed.",
-    "q": "How can parents prevent Otitis Media?",
-    "a": [
-      "Keep warm",
-      "Feed upright/No bottle propping",
-      "Use antibiotic drops daily",
-      "Clean ears with Q-tips"
-    ],
-    "correct": 1,
-    "rationale": "Lying flat allows formula to pool in the eustachian tube, breeding bacteria."
-  },
-  {
-    "topic": "Myringotomy",
-    "fact": "Ear tubes.",
-    "alert": "Keep ears dry (Earplugs when swimming).",
-    "q": "What is a key instruction for a child with ear tubes?",
-    "a": [
-      "Flush with peroxide",
-      "Remove tubes daily",
-      "Keep water out of ears",
-      "No flying"
-    ],
-    "correct": 2,
-    "rationale": "Water can enter the middle ear through the tube, causing infection."
-  },
-  {
-    "topic": "Strabismus",
-    "fact": "Cross-eye.",
-    "alert": "Patch the GOOD eye.",
-    "q": "How is Strabismus treated?",
-    "a": [
-      "Patch the weak eye",
-      "Glasses only",
-      "Surgery only",
-      "Patch the strong eye"
-    ],
-    "correct": 3,
-    "rationale": "Patching the strong eye forces the weak eye muscles to work and strengthen."
-  },
-  {
-    "topic": "Blindness",
-    "fact": "Sensory deficit.",
-    "alert": "Safety: Clock method for food. Announce entry.",
-    "q": "How should you orient a blind client to their meal?",
-    "a": [
-      "Use the clock method",
-      "Feed them",
-      "Describe colors",
-      "Mix it all together"
-    ],
-    "correct": 0,
-    "rationale": "Describing food locations like a clock face gives the client independence."
-  },
-  {
-    "topic": "Hearing Loss",
-    "fact": "Communication.",
-    "alert": "Face client. Speak clearly. Low pitch.",
-    "q": "What is the best way to speak to a hearing-impaired client?",
-    "a": [
-      "Use only gestures",
-      "Face them/Normal volume/Lower pitch",
-      "Speak in high pitch",
-      "Shout loudly"
-    ],
-    "correct": 1,
-    "rationale": "High frequency hearing is lost first; shouting raises pitch, making it harder to hear."
-  },
-  {
-    "topic": "Eye Drop Admin",
-    "fact": "Conjunctival sac.",
-    "alert": "Press inner canthus (Punctal occlusion).",
-    "q": "Why press the inner canthus after eye drops?",
-    "a": [
-      "Reduce pain",
-      "Keep eye open",
-      "Prevent systemic absorption",
-      "Increase tear flow"
-    ],
-    "correct": 2,
-    "rationale": "It blocks the tear duct so the drug stays in the eye and isn't absorbed into the body."
-  },
-  {
-    "topic": "Burns: Silvadene",
-    "fact": "Topical antibiotic.",
-    "alert": "S/E: Leukopenia (Low WBC).",
-    "q": "What is a side effect of Silver Sulfadiazine (Silvadene)?",
-    "a": [
-      "Hypertension",
-      "Staining",
-      "Tachycardia",
-      "Leukopenia"
-    ],
-    "correct": 3,
-    "rationale": "It can suppress bone marrow; monitor WBC count."
-  },
-  {
-    "topic": "Eczema",
-    "fact": "Atopic Dermatitis.",
-    "alert": "Hydrate skin. Avoid triggers.",
-    "q": "What is the priority for Eczema care?",
-    "a": [
-      "Moisturize/Prevent itching",
-      "Keep dry",
-      "Apply heat",
-      "Use alcohol to clean"
-    ],
-    "correct": 0,
-    "rationale": "Dry skin cracks and itches (pruritus), leading to infection."
-  },
-  {
-    "topic": "Parkland Formula",
-    "fact": "4mL x kg x %TBSA.",
-    "alert": "Give 1/2 in first 8 hours.",
-    "q": "How is the Parkland Formula calculated?",
-    "a": [
-      "Weight x 10",
-      "4mL x kg x %Burn",
-      "100mL/hr",
-      "2mL x kg x %Burn"
-    ],
-    "correct": 1,
-    "rationale": "Standard formula for fluid resuscitation volume in first 24 hours."
-  },
-  {
-    "topic": "Burn Output",
-    "fact": "Kidney perfusion.",
-    "alert": "Goal: 30-50 mL/hr.",
-    "q": "What is the minimum urine output for an adult burn patient?",
-    "a": [
-      "100 mL/hr",
-      "10 mL/hr",
-      "30-50 mL/hr",
-      "500 mL/day"
-    ],
-    "correct": 2,
-    "rationale": "Output proves the kidneys are perfused and shock is being managed."
-  },
-  {
-    "topic": "Hearing Aid Care",
-    "fact": "Maintenance.",
-    "alert": "Whistling = Fit issue. Turn off when not in use.",
-    "q": "What causes a hearing aid to whistle?",
-    "a": [
-      "Low battery",
-      "Ear wax",
-      "Broken wire",
-      "Poor fit/Volume too high"
-    ],
-    "correct": 3,
-    "rationale": "Feedback (whistling) happens when sound leaks out and goes back into the microphone."
-  },
-  {
-    "topic": "Retinoblastoma",
-    "fact": "Eye cancer in kids.",
-    "alert": "White pupil (Cat's eye reflex).",
-    "q": "What is a classic sign of Retinoblastoma?",
-    "a": [
-      "White pupil reflex",
-      "Red eye",
-      "Tearing",
-      "Crossed eyes"
-    ],
-    "correct": 0,
-    "rationale": "Instead of a red reflex, the tumor reflects white light."
-  },
-  {
-    "topic": "Lyme Disease",
-    "fact": "Tick bite.",
-    "alert": "Bullseye Rash.",
-    "q": "What is the classic sign of Lyme Disease?",
-    "a": [
-      "Vesicles",
-      "Bullseye rash (Erythema Migrans)",
-      "Petechiae",
-      "Butterfly rash"
-    ],
-    "correct": 1,
-    "rationale": "A red rash with a central clearing that looks like a target appears at the bite site."
-  },
-  {
-    "topic": "SLE (Lupus)",
-    "fact": "Autoimmune.",
-    "alert": "Butterfly Rash on face. Avoid sun.",
-    "q": "What rash is associated with Systemic Lupus Erythematosus (SLE)?",
-    "a": [
-      "Target lesions",
-      "Bullseye rash",
-      "Butterfly rash across cheeks/nose",
-      "Silver scales"
-    ],
-    "correct": 2,
-    "rationale": "The malar butterfly rash is the hallmark cutaneous sign of Lupus."
-  },
-  {
-    "topic": "Frostbite",
-    "fact": "Tissue freezing.",
-    "alert": "Rewarm rapidly (Warm water). Do NOT rub.",
-    "q": "How should you treat frostbitten fingers?",
-    "a": [
-      "Rub them vigorously",
-      "Massage with lotion",
-      "Apply direct heat",
-      "Rapidly rewarm in warm water"
-    ],
-    "correct": 3,
-    "rationale": "Rubbing causes tissue damage. Rapid rewarming is painful but saves tissue."
-  },
-  {
-    "topic": "Dandruff",
-    "fact": "Seborrheic Dermatitis.",
-    "alert": "Cradle cap in infants.",
-    "q": "What is the medical term for Cradle Cap?",
-    "a": [
-      "Seborrheic Dermatitis",
-      "Atopic Dermatitis",
-      "Contact Dermatitis",
-      "Psoriasis"
-    ],
-    "correct": 0,
-    "rationale": "It is caused by overactive sebaceous glands."
-  },
-  {
-    "topic": "Dehiscence",
-    "fact": "Wound separation.",
-    "alert": "Evisceration: Organs out. Cover with sterile saline gauze.",
-    "q": "What is the priority if a surgical wound eviscerates?",
-    "a": [
-      "Leave open to air",
-      "Cover with sterile saline gauze",
-      "Apply dry dressing",
-      "Push organs back in"
-    ],
-    "correct": 1,
-    "rationale": "Keep the organs moist and sterile to prevent necrosis and infection."
-  },
-  {
-    "topic": "Chemical Eye Burn",
-    "fact": "Acid/Alkali.",
-    "alert": "Irrigate immediately for 20 mins.",
-    "q": "What is the first action for a chemical splash in the eye?",
-    "a": [
-      "Check vision",
-      "Cover with patch",
-      "Irrigate with water immediately",
-      "Wait for doctor"
-    ],
-    "correct": 2,
-    "rationale": "Time is vision. Dilute and remove the chemical instantly."
-  },
-  {
-    "topic": "Penetrating Eye Injury",
-    "fact": "Object in eye.",
-    "alert": "Do NOT remove. Stabilize it. Patch other eye.",
-    "q": "What should you do for an object embedded in the eye?",
-    "a": [
-      "Remove it carefully",
-      "Flush with water",
-      "Apply pressure",
-      "Stabilize object/Patch other eye"
-    ],
-    "correct": 3,
-    "rationale": "Removing it causes more damage. Patching both eyes prevents movement."
-  },
-  {
-    "topic": "Glaucoma Pain",
-    "fact": "Closed Angle = Emergency.",
-    "alert": "Severe pain, halos, nausea.",
-    "q": "Which type of Glaucoma is a medical emergency?",
-    "a": [
-      "Closed Angle (Acute)",
-      "Open Angle (Chronic)",
-      "Congenital",
-      "Secondary"
-    ],
-    "correct": 0,
-    "rationale": "Sudden blockage of aqueous humor outflow causes rapid, painful pressure rise."
-  },
-  {
-    "topic": "Hearing Aid Cleaning",
-    "fact": "No water.",
-    "alert": "Use soft cloth/pick.",
-    "q": "How should a hearing aid be cleaned?",
-    "a": [
-      "Submerge in solution",
-      "Soft cloth/pick (No water)",
-      "Alcohol",
-      "Soap and water"
-    ],
-    "correct": 1,
-    "rationale": "Water damages the electronics."
-  },
-  {
-    "topic": "Ear Irrigation",
-    "fact": "Remove wax.",
-    "alert": "Contraindicated if vegetable/bean (swells).",
-    "q": "When is ear irrigation contraindicated for a foreign body?",
-    "a": [
-      "If it is wax",
-      "If it is a bead",
-      "If the object is vegetable matter (bean/corn)",
-      "If it is a bug"
-    ],
-    "correct": 2,
-    "rationale": "Water makes vegetable matter swell, impacting it tighter."
-  }
-]
+{
+  "section": "integ",
+  "title": "Integumentary & Sensory",
+  "questionCount": 100,
+  "questions": [
+    {
+      "q": "According to Rule of Nines, what % is one arm?",
+      "options": [
+        "1%",
+        "18%",
+        "4.5%",
+        "9%"
+      ],
+      "correct": 3,
+      "rationale": "Each arm is 9% total (4.5 front, 4.5 back)."
+    },
+    {
+      "q": "What is the priority in the first 24hrs of a major burn?",
+      "options": [
+        "Fluid Resuscitation",
+        "Infection control",
+        "Nutrition",
+        "Range of Motion"
+      ],
+      "correct": 0,
+      "rationale": "Massive fluid shift causes hypovolemic shock. Replacing fluids prevents death."
+    },
+    {
+      "q": "What type of rash is Shingles?",
+      "options": [
+        "Petechiae",
+        "Vesicular along a nerve dermatome",
+        "Macular rash on trunk",
+        "Generalized pustules"
+      ],
+      "correct": 1,
+      "rationale": "The virus lies dormant in the nerve root and erupts along that specific nerve path."
+    },
+    {
+      "q": "What is a major side effect of Accutane?",
+      "options": [
+        "Hair growth",
+        "Weight gain",
+        "Birth defects",
+        "Hypertension"
+      ],
+      "correct": 2,
+      "rationale": "Accutane is highly teratogenic; strict birth control is required."
+    },
+    {
+      "q": "What activity is restricted after cataract surgery?",
+      "options": [
+        "Walking",
+        "Watching TV",
+        "Reading",
+        "Bending at waist/Straining"
+      ],
+      "correct": 3,
+      "rationale": "Bending increases intraocular pressure (IOP), risking the surgical site."
+    },
+    {
+      "q": "Which class of drugs is contraindicated in Glaucoma?",
+      "options": [
+        "Mydriatics (Dilators)",
+        "Miotics (Constrictors)",
+        "Beta Blockers",
+        "Diuretics"
+      ],
+      "correct": 0,
+      "rationale": "Dilating the pupil (Mydriasis) blocks the outflow of aqueous humor, spiking pressure."
+    },
+    {
+      "q": "What diet helps Meniere's Disease?",
+      "options": [
+        "High Carb",
+        "Low Sodium",
+        "Low Fat",
+        "High Protein"
+      ],
+      "correct": 1,
+      "rationale": "Sodium retains fluid; low sodium reduces endolymph fluid pressure in the ear."
+    },
+    {
+      "q": "What does a patient see with Retinal Detachment?",
+      "options": [
+        "Cloudy vision",
+        "Halos around lights",
+        "Curtain falling/Flashes of light",
+        "Central vision loss"
+      ],
+      "correct": 2,
+      "rationale": "As the retina peels off, neurons fire (flashes) and vision is blocked (curtain)."
+    },
+    {
+      "q": "How do you pull the pinna for an adult ear exam?",
+      "options": [
+        "Down and Back",
+        "Forward",
+        "Straight back",
+        "Up and Back"
+      ],
+      "correct": 3,
+      "rationale": "Adults = UP (grown ups). Children = DOWN (grow down)."
+    },
+    {
+      "q": "What is the treatment for lice?",
+      "options": [
+        "Kwell shampoo/Comb nits",
+        "Antibiotics",
+        "Steroid cream",
+        "Bleach"
+      ],
+      "correct": 0,
+      "rationale": "Kwell kills the lice; fine-tooth combing removes the eggs (nits)."
+    },
+    {
+      "q": "What characterizes a Stage 1 pressure ulcer?",
+      "options": [
+        "Bone visible",
+        "Non-blanchable redness",
+        "Subcutaneous fat visible",
+        "Blister/Broken skin"
+      ],
+      "correct": 1,
+      "rationale": "Intact skin with redness that does not fade when pressed indicates Stage 1."
+    },
+    {
+      "q": "What is the hallmark sign of Impetigo?",
+      "options": [
+        "Butterfly rash",
+        "Silver scales",
+        "Honey-colored crusts",
+        "Target lesion"
+      ],
+      "correct": 2,
+      "rationale": "Bacterial infection leads to weeping sores that dry into golden/honey crusts."
+    },
+    {
+      "q": "What does a Scabies rash look like?",
+      "options": [
+        "Circular rings",
+        "Raised plaques",
+        "Clustered vesicles",
+        "Linear burrows/tracks"
+      ],
+      "correct": 3,
+      "rationale": "Mites burrow under the skin in straight lines to lay eggs."
+    },
+    {
+      "q": "What device is used to diagnose fungal infections like Ringworm?",
+      "options": [
+        "Wood's Lamp (UV)",
+        "Doppler",
+        "Otoscope",
+        "Stethoscope"
+      ],
+      "correct": 0,
+      "rationale": "Fungal infections fluoresce (glow) under ultraviolet light."
+    },
+    {
+      "q": "What do Psoriasis lesions look like?",
+      "options": [
+        "Open sores",
+        "Red patches with silvery scales",
+        "Black moles",
+        "Fluid filled blisters"
+      ],
+      "correct": 1,
+      "rationale": "Buildup of dead skin cells creates the classic silver scaling."
+    },
+    {
+      "q": "What is a warning sign of Melanoma?",
+      "options": [
+        "Itching",
+        "Painful rash",
+        "Changes in a mole (ABCDE)",
+        "Dry skin"
+      ],
+      "correct": 2,
+      "rationale": "Melanoma often arises from existing moles that change shape, color, or size. ABCDE: Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolving."
+    },
+    {
+      "q": "What electrolyte imbalance occurs immediately after a severe burn?",
+      "options": [
+        "Hypokalemia",
+        "Hypomagnesemia",
+        "Hypercalcemia",
+        "Hyperkalemia"
+      ],
+      "correct": 3,
+      "rationale": "Ruptured cells release intracellular Potassium into the bloodstream."
+    },
+    {
+      "q": "What type of ulcer is common in burn patients?",
+      "options": [
+        "Curling's Ulcer",
+        "Cushing's Ulcer",
+        "Venous Ulcer",
+        "Arterial Ulcer"
+      ],
+      "correct": 0,
+      "rationale": "Acute physical stress reduces blood flow to the gut, causing gastric erosion."
+    },
+    {
+      "q": "How can parents prevent Otitis Media?",
+      "options": [
+        "Keep warm",
+        "Feed upright/No bottle propping",
+        "Use antibiotic drops daily",
+        "Clean ears with Q-tips"
+      ],
+      "correct": 1,
+      "rationale": "Lying flat allows formula to pool in the eustachian tube, breeding bacteria."
+    },
+    {
+      "q": "What is a key instruction for a child with ear tubes?",
+      "options": [
+        "Flush with peroxide",
+        "Remove tubes daily",
+        "Keep water out of ears",
+        "No flying"
+      ],
+      "correct": 2,
+      "rationale": "Water can enter the middle ear through the tube, causing infection."
+    },
+    {
+      "q": "How is Strabismus treated?",
+      "options": [
+        "Patch the weak eye",
+        "Glasses only",
+        "Surgery only",
+        "Patch the strong eye"
+      ],
+      "correct": 3,
+      "rationale": "Patching the strong eye forces the weak eye muscles to work and strengthen."
+    },
+    {
+      "q": "How should you orient a blind client to their meal?",
+      "options": [
+        "Use the clock method",
+        "Feed them",
+        "Describe colors",
+        "Mix it all together"
+      ],
+      "correct": 0,
+      "rationale": "Describing food locations like a clock face gives the client independence."
+    },
+    {
+      "q": "What is the best way to speak to a hearing-impaired client?",
+      "options": [
+        "Use only gestures",
+        "Face them/Normal volume/Lower pitch",
+        "Speak in high pitch",
+        "Shout loudly"
+      ],
+      "correct": 1,
+      "rationale": "High frequency hearing is lost first; shouting raises pitch, making it harder to hear."
+    },
+    {
+      "q": "Why press the inner canthus after eye drops?",
+      "options": [
+        "Reduce pain",
+        "Keep eye open",
+        "Prevent systemic absorption",
+        "Increase tear flow"
+      ],
+      "correct": 2,
+      "rationale": "It blocks the tear duct so the drug stays in the eye and isn't absorbed into the body."
+    },
+    {
+      "q": "What is a side effect of Silver Sulfadiazine (Silvadene)?",
+      "options": [
+        "Hypertension",
+        "Staining",
+        "Tachycardia",
+        "Leukopenia"
+      ],
+      "correct": 3,
+      "rationale": "It can suppress bone marrow; monitor WBC count."
+    },
+    {
+      "q": "What is the priority for Eczema care?",
+      "options": [
+        "Moisturize/Prevent itching",
+        "Keep dry",
+        "Apply heat",
+        "Use alcohol to clean"
+      ],
+      "correct": 0,
+      "rationale": "Dry skin cracks and itches (pruritus), leading to infection."
+    },
+    {
+      "q": "How is the Parkland Formula calculated?",
+      "options": [
+        "Weight x 10",
+        "4mL x kg x %Burn",
+        "100mL/hr",
+        "2mL x kg x %Burn"
+      ],
+      "correct": 1,
+      "rationale": "Standard formula for fluid resuscitation volume in first 24 hours."
+    },
+    {
+      "q": "What is the minimum urine output for an adult burn patient?",
+      "options": [
+        "100 mL/hr",
+        "10 mL/hr",
+        "30-50 mL/hr",
+        "500 mL/day"
+      ],
+      "correct": 2,
+      "rationale": "Output proves the kidneys are perfused and shock is being managed."
+    },
+    {
+      "q": "What causes a hearing aid to whistle?",
+      "options": [
+        "Low battery",
+        "Ear wax",
+        "Broken wire",
+        "Poor fit/Volume too high"
+      ],
+      "correct": 3,
+      "rationale": "Feedback (whistling) happens when sound leaks out and goes back into the microphone."
+    },
+    {
+      "q": "What is a classic sign of Retinoblastoma?",
+      "options": [
+        "White pupil reflex",
+        "Red eye",
+        "Tearing",
+        "Crossed eyes"
+      ],
+      "correct": 0,
+      "rationale": "Instead of a red reflex, the tumor reflects white light."
+    },
+    {
+      "q": "What is the classic sign of Lyme Disease?",
+      "options": [
+        "Vesicles",
+        "Bullseye rash (Erythema Migrans)",
+        "Petechiae",
+        "Butterfly rash"
+      ],
+      "correct": 1,
+      "rationale": "A red rash with a central clearing that looks like a target appears at the bite site."
+    },
+    {
+      "q": "What rash is associated with Systemic Lupus Erythematosus (SLE)?",
+      "options": [
+        "Target lesions",
+        "Bullseye rash",
+        "Butterfly rash across cheeks/nose",
+        "Silver scales"
+      ],
+      "correct": 2,
+      "rationale": "The malar butterfly rash is the hallmark cutaneous sign of Lupus."
+    },
+    {
+      "q": "How should you treat frostbitten fingers?",
+      "options": [
+        "Rub them vigorously",
+        "Massage with lotion",
+        "Apply direct heat",
+        "Rapidly rewarm in warm water"
+      ],
+      "correct": 3,
+      "rationale": "Rubbing causes tissue damage. Rapid rewarming is painful but saves tissue."
+    },
+    {
+      "q": "What is the medical term for Cradle Cap?",
+      "options": [
+        "Seborrheic Dermatitis",
+        "Atopic Dermatitis",
+        "Contact Dermatitis",
+        "Psoriasis"
+      ],
+      "correct": 0,
+      "rationale": "It is caused by overactive sebaceous glands."
+    },
+    {
+      "q": "What is the priority if a surgical wound eviscerates?",
+      "options": [
+        "Leave open to air",
+        "Cover with sterile saline gauze",
+        "Apply dry dressing",
+        "Push organs back in"
+      ],
+      "correct": 1,
+      "rationale": "Keep the organs moist and sterile to prevent necrosis and infection."
+    },
+    {
+      "q": "What is the first action for a chemical splash in the eye?",
+      "options": [
+        "Check vision",
+        "Cover with patch",
+        "Irrigate with water immediately",
+        "Wait for doctor"
+      ],
+      "correct": 2,
+      "rationale": "Time is vision. Dilute and remove the chemical instantly."
+    },
+    {
+      "q": "What should you do for an object embedded in the eye?",
+      "options": [
+        "Remove it carefully",
+        "Flush with water",
+        "Apply pressure",
+        "Stabilize object/Patch both eyes"
+      ],
+      "correct": 3,
+      "rationale": "Removing it causes more damage. Patching both eyes prevents movement."
+    },
+    {
+      "q": "Which type of Glaucoma is a medical emergency?",
+      "options": [
+        "Closed Angle (Acute)",
+        "Open Angle (Chronic)",
+        "Congenital",
+        "Secondary"
+      ],
+      "correct": 0,
+      "rationale": "Sudden blockage of aqueous humor outflow causes rapid, painful pressure rise."
+    },
+    {
+      "q": "How should a hearing aid be cleaned?",
+      "options": [
+        "Submerge in solution",
+        "Soft cloth/pick (No water)",
+        "Alcohol",
+        "Soap and water"
+      ],
+      "correct": 1,
+      "rationale": "Water damages the electronics."
+    },
+    {
+      "q": "When is ear irrigation contraindicated for a foreign body?",
+      "options": [
+        "If it is wax",
+        "If it is a bead",
+        "If the object is vegetable matter (bean/corn)",
+        "If it is a bug"
+      ],
+      "correct": 2,
+      "rationale": "Water makes vegetable matter swell, impacting it tighter."
+    },
+    {
+      "q": "What is the primary concern with burn patients after the first 24 hours?",
+      "options": [
+        "Fluid overload",
+        "Infection",
+        "Hyperkalemia",
+        "Pain only"
+      ],
+      "correct": 1,
+      "rationale": "After initial fluid resuscitation, infection becomes the primary concern as the protective skin barrier is destroyed."
+    },
+    {
+      "q": "What indicates smoke inhalation burns?",
+      "options": [
+        "Burns on the legs only",
+        "Singed nasal hair and circumoral soot/burns",
+        "Sunburn-like redness",
+        "Intact skin with pain"
+      ],
+      "correct": 1,
+      "rationale": "Singed nasal hair and soot around the mouth/nose indicate airway exposure to heat and smoke, requiring immediate airway assessment."
+    },
+    {
+      "q": "According to Rule of Nines, what percentage is the head and neck?",
+      "options": [
+        "4.5%",
+        "9%",
+        "18%",
+        "1%"
+      ],
+      "correct": 1,
+      "rationale": "Head and neck = 9%, each arm = 9%, each leg = 18%, anterior trunk = 18%, posterior trunk = 18%, perineum = 1%."
+    },
+    {
+      "q": "According to Rule of Nines, what percentage is one leg?",
+      "options": [
+        "9%",
+        "14%",
+        "18%",
+        "36%"
+      ],
+      "correct": 2,
+      "rationale": "Each leg is 18% total (9% front, 9% back). Both legs together = 36%."
+    },
+    {
+      "q": "What type of burn involves the epidermis only (superficial partial thickness)?",
+      "options": [
+        "First degree",
+        "Second degree",
+        "Third degree",
+        "Fourth degree"
+      ],
+      "correct": 0,
+      "rationale": "First degree burns affect only the epidermis (like sunburn): red, painful, no blisters. Heals in 3-5 days."
+    },
+    {
+      "q": "What layers are involved in a second degree (deep partial thickness) burn?",
+      "options": [
+        "Epidermis only",
+        "Epidermis and dermis",
+        "Epidermis, dermis, and subcutaneous tissue",
+        "All layers including bone"
+      ],
+      "correct": 1,
+      "rationale": "Second degree burns involve the epidermis and part of the dermis. They are painful with blisters and weeping."
+    },
+    {
+      "q": "What layers are involved in a third degree (full thickness) burn?",
+      "options": [
+        "Epidermis only",
+        "Epidermis and dermis only",
+        "Epidermis, dermis, and subcutaneous tissue",
+        "Subcutaneous only"
+      ],
+      "correct": 2,
+      "rationale": "Third degree burns destroy all skin layers down to subcutaneous fat. They appear white/leathery and are painless (nerve endings destroyed)."
+    },
+    {
+      "q": "Why are third degree burns painless?",
+      "options": [
+        "The burn is too small",
+        "Nerve endings are destroyed",
+        "Pain medications are given immediately",
+        "The tissue is numb from cold"
+      ],
+      "correct": 1,
+      "rationale": "Full thickness burns destroy nerve endings in the dermis, so the burned area itself is insensate. The surrounding partial-thickness areas are painful."
+    },
+    {
+      "q": "What should be given to burn patients before dressing changes?",
+      "options": [
+        "Antibiotics",
+        "Pain medication (30 min before procedure)",
+        "Antihypertensives",
+        "Nothing"
+      ],
+      "correct": 1,
+      "rationale": "Dressing changes on burns are extremely painful. Administer analgesics 30 minutes prior to allow time for effect."
+    },
+    {
+      "q": "How should a burn wound autograph be positioned?",
+      "options": [
+        "Dependent position to increase blood flow",
+        "Elevated and immobilized for 3-7 days",
+        "Active ROM immediately",
+        "Wrapped tightly"
+      ],
+      "correct": 1,
+      "rationale": "Autograft sites should be elevated and immobilized for 3-7 days to prevent graft disruption and promote vascularization."
+    },
+    {
+      "q": "What characterizes a Stage 2 pressure ulcer?",
+      "options": [
+        "Non-blanchable redness with intact skin",
+        "Partial thickness skin loss - blister or shallow open ulcer",
+        "Full thickness loss exposing subcutaneous fat",
+        "Full thickness with exposed bone/tendon"
+      ],
+      "correct": 1,
+      "rationale": "Stage 2 involves partial thickness loss of the dermis: a shallow crater, blister, or abrasion. The wound bed is pink."
+    },
+    {
+      "q": "What characterizes a Stage 3 pressure ulcer?",
+      "options": [
+        "Intact skin with redness",
+        "Blister only",
+        "Full thickness skin loss extending into subcutaneous tissue",
+        "Exposed bone, tendon, or muscle"
+      ],
+      "correct": 2,
+      "rationale": "Stage 3 involves full thickness loss with visible subcutaneous fat but NO exposed bone, tendon, or muscle."
+    },
+    {
+      "q": "What characterizes a Stage 4 pressure ulcer?",
+      "options": [
+        "Redness only",
+        "Partial thickness skin loss",
+        "Subcutaneous tissue visible",
+        "Full thickness with exposed bone, tendon, or muscle"
+      ],
+      "correct": 3,
+      "rationale": "Stage 4 is the deepest: full thickness tissue destruction with exposed bone, tendon, or muscle. High risk for osteomyelitis."
+    },
+    {
+      "q": "How often should a bedridden patient be repositioned to prevent pressure ulcers?",
+      "options": [
+        "Every 30 minutes",
+        "Every 2 hours",
+        "Every 4 hours",
+        "Every 8 hours"
+      ],
+      "correct": 1,
+      "rationale": "Repositioning every 2 hours relieves pressure on bony prominences and prevents tissue ischemia."
+    },
+    {
+      "q": "What is the most important measure to prevent pressure ulcers?",
+      "options": [
+        "Antibiotic ointment",
+        "Frequent repositioning and skin assessment",
+        "Restricting fluids",
+        "Applying powder to skin"
+      ],
+      "correct": 1,
+      "rationale": "Prevention is key: turn every 2 hours, inspect skin over bony prominences, keep skin clean and dry, use pressure-relieving devices, and maintain adequate nutrition."
+    },
+    {
+      "q": "What is the Braden Scale used for?",
+      "options": [
+        "Measuring burn severity",
+        "Assessing fall risk",
+        "Predicting pressure ulcer risk",
+        "Grading wound infection"
+      ],
+      "correct": 2,
+      "rationale": "The Braden Scale assesses 6 risk factors (sensory perception, moisture, activity, mobility, nutrition, friction/shear). Lower scores = higher risk."
+    },
+    {
+      "q": "What does SLE patients need to avoid?",
+      "options": [
+        "Exercise",
+        "Protein in diet",
+        "Direct sunlight",
+        "Vitamin supplements"
+      ],
+      "correct": 2,
+      "rationale": "UV light triggers lupus flares. Patients must wear sunscreen, protective clothing, and avoid direct sunlight."
+    },
+    {
+      "q": "What is the ABCDE rule for melanoma detection?",
+      "options": [
+        "Airway, Breathing, Circulation, Disability, Exposure",
+        "Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolving",
+        "Assessment, Biopsy, Culture, Drainage, Evaluation",
+        "Appearance, Bleeding, Consistency, Depth, Edema"
+      ],
+      "correct": 1,
+      "rationale": "ABCDE: Asymmetry (uneven halves), Border (irregular/notched), Color (varied shades), Diameter (>6mm/pencil eraser), Evolving (changing over time)."
+    },
+    {
+      "q": "What type of skin cancer is most common?",
+      "options": [
+        "Melanoma",
+        "Squamous Cell Carcinoma",
+        "Basal Cell Carcinoma",
+        "Merkel Cell Carcinoma"
+      ],
+      "correct": 2,
+      "rationale": "Basal cell carcinoma is the most common skin cancer, usually appearing as a pearly, waxy bump or flat lesion on sun-exposed areas. It rarely metastasizes."
+    },
+    {
+      "q": "Which skin cancer is the most lethal?",
+      "options": [
+        "Basal Cell Carcinoma",
+        "Squamous Cell Carcinoma",
+        "Melanoma",
+        "Actinic Keratosis"
+      ],
+      "correct": 2,
+      "rationale": "Melanoma is the most dangerous because it metastasizes early and aggressively. Early detection is critical for survival."
+    },
+    {
+      "q": "What is Contact Dermatitis?",
+      "options": [
+        "A fungal infection",
+        "An inflammatory skin reaction from direct contact with an allergen or irritant",
+        "A bacterial skin infection",
+        "An autoimmune condition"
+      ],
+      "correct": 1,
+      "rationale": "Contact dermatitis is a localized skin reaction (redness, itching, blistering) at the site of contact with a trigger (latex, poison ivy, chemicals)."
+    },
+    {
+      "q": "What is the priority nursing intervention for a patient with a latex allergy?",
+      "options": [
+        "Give antihistamines before any procedure",
+        "Remove all latex products from the environment and use non-latex alternatives",
+        "Apply latex-free tape only",
+        "Monitor vital signs every 15 minutes"
+      ],
+      "correct": 1,
+      "rationale": "Latex allergy can cause anaphylaxis. All latex-containing items (gloves, catheters, tourniquets) must be replaced with non-latex alternatives."
+    },
+    {
+      "q": "What type of wound healing occurs when wound edges are approximated (sutured)?",
+      "options": [
+        "Secondary intention",
+        "Tertiary intention",
+        "Primary intention",
+        "Granulation"
+      ],
+      "correct": 2,
+      "rationale": "Primary intention healing occurs when clean wound edges are brought together (sutures, staples), resulting in minimal scarring."
+    },
+    {
+      "q": "What type of wound healing occurs when a wound is left open to heal from the inside out?",
+      "options": [
+        "Primary intention",
+        "Secondary intention",
+        "Tertiary intention",
+        "Approximation"
+      ],
+      "correct": 1,
+      "rationale": "Secondary intention occurs when a wound cannot be closed (burns, ulcers). It fills with granulation tissue from the bottom up, taking longer and leaving more scarring."
+    },
+    {
+      "q": "What color indicates healthy granulation tissue in a healing wound?",
+      "options": [
+        "Black",
+        "Yellow",
+        "Beefy red/pink",
+        "White"
+      ],
+      "correct": 2,
+      "rationale": "Healthy granulation tissue is moist, beefy red/pink, and indicates good blood supply and healing."
+    },
+    {
+      "q": "What does black tissue in a wound indicate?",
+      "options": [
+        "Healthy granulation",
+        "Eschar (necrotic/dead tissue) requiring debridement",
+        "Normal healing",
+        "Infection"
+      ],
+      "correct": 1,
+      "rationale": "Black tissue (eschar) is dead tissue that must be debrided to allow healing. It blocks wound assessment and harbors bacteria."
+    },
+    {
+      "q": "What does yellow tissue in a wound indicate?",
+      "options": [
+        "Healthy tissue",
+        "Slough (devitalized tissue/possible infection)",
+        "Granulation",
+        "Epithelialization"
+      ],
+      "correct": 1,
+      "rationale": "Yellow slough is devitalized tissue that may indicate infection or delayed healing. It should be removed to promote wound bed preparation."
+    },
+    {
+      "q": "What is wound dehiscence?",
+      "options": [
+        "Infection in the wound",
+        "Partial or total separation of wound layers",
+        "Organs protruding through the wound",
+        "Excessive scarring"
+      ],
+      "correct": 1,
+      "rationale": "Dehiscence is the splitting open of a previously closed surgical wound, often due to infection, poor nutrition, obesity, or excessive strain."
+    },
+    {
+      "q": "What is the difference between dehiscence and evisceration?",
+      "options": [
+        "They are the same thing",
+        "Dehiscence is wound separation; evisceration is organ protrusion through the wound",
+        "Evisceration is wound separation; dehiscence is organ protrusion",
+        "Dehiscence only occurs in burns"
+      ],
+      "correct": 1,
+      "rationale": "Dehiscence = wound layers separate. Evisceration = internal organs (usually bowel) protrude through the open wound. Evisceration is the more serious emergency."
+    },
+    {
+      "q": "What should the nurse do if a patient's wound eviscerates and they are coughing?",
+      "options": [
+        "Have the patient sit up",
+        "Place patient supine with knees bent, cover wound with sterile saline-soaked gauze, call surgeon STAT",
+        "Apply an abdominal binder tightly",
+        "Push the bowel back in gently"
+      ],
+      "correct": 1,
+      "rationale": "Supine with knees bent reduces abdominal tension. Sterile saline gauze keeps organs moist. NEVER attempt to push organs back in. This is a surgical emergency."
+    },
+    {
+      "q": "What type of dressing is used for dry wounds that need moisture?",
+      "options": [
+        "Dry gauze dressing",
+        "Hydrogel dressing",
+        "Transparent film",
+        "Alginate dressing"
+      ],
+      "correct": 1,
+      "rationale": "Hydrogel dressings donate moisture to dry wound beds and promote autolytic debridement."
+    },
+    {
+      "q": "What type of dressing is best for heavily draining wounds?",
+      "options": [
+        "Hydrogel",
+        "Transparent film",
+        "Alginate or foam dressing",
+        "Dry gauze only"
+      ],
+      "correct": 2,
+      "rationale": "Alginate (from seaweed) and foam dressings absorb large amounts of exudate. Hydrogel would add unwanted moisture."
+    },
+    {
+      "q": "What is the purpose of negative pressure wound therapy (wound VAC)?",
+      "options": [
+        "To keep the wound dry",
+        "To apply continuous or intermittent suction to promote granulation and remove excess fluid",
+        "To prevent all infections",
+        "To close the wound surgically"
+      ],
+      "correct": 1,
+      "rationale": "Wound VAC applies negative pressure to increase blood flow, promote granulation tissue formation, and remove excess fluid and bacteria."
+    },
+    {
+      "q": "What symptoms characterize Meniere's Disease?",
+      "options": [
+        "Unilateral hearing loss only",
+        "Tinnitus, vertigo, sensorineural hearing loss, and ear fullness",
+        "Conductive hearing loss and otorrhea",
+        "Sudden bilateral deafness"
+      ],
+      "correct": 1,
+      "rationale": "Meniere's triad: vertigo (spinning), tinnitus (ringing), and progressive sensorineural hearing loss, plus aural fullness."
+    },
+    {
+      "q": "What is the priority nursing intervention during a Meniere's Disease attack?",
+      "options": [
+        "Encourage ambulation",
+        "Dim lights, quiet room, safety measures (side rails up), and bed rest",
+        "Administer antibiotics",
+        "Irrigate the ear"
+      ],
+      "correct": 1,
+      "rationale": "During acute vertigo, reduce stimuli (dark quiet room), ensure safety (fall prevention), and keep the patient on bed rest. Antiemetics may be needed."
+    },
+    {
+      "q": "What medication class is used to treat Open-Angle Glaucoma?",
+      "options": [
+        "Mydriatics",
+        "Miotics (Pilocarpine) and Beta Blockers (Timolol)",
+        "Antibiotics",
+        "Antihistamines"
+      ],
+      "correct": 1,
+      "rationale": "Miotics (pilocarpine) constrict the pupil to open drainage channels. Beta blockers (timolol) reduce aqueous humor production. Both lower IOP."
+    },
+    {
+      "q": "What are the symptoms of Acute (Closed-Angle) Glaucoma?",
+      "options": [
+        "Gradual painless vision loss",
+        "Sudden severe eye pain, headache, nausea, halos around lights, and a red eye",
+        "Floaters and flashes only",
+        "Dry eyes and itching"
+      ],
+      "correct": 1,
+      "rationale": "Acute glaucoma is a medical emergency with sudden IOP spike causing severe pain, nausea/vomiting, halos, and a fixed mid-dilated pupil."
+    },
+    {
+      "q": "What is the priority nursing action for suspected retinal detachment?",
+      "options": [
+        "Encourage reading to assess vision",
+        "Patch both eyes, keep patient still, position detached area down",
+        "Administer eye drops",
+        "Irrigate the eyes"
+      ],
+      "correct": 1,
+      "rationale": "Restrict eye movement by patching both eyes, keep the patient on bed rest, and position the detached area inferiorly to allow the retina to fall back into place. Surgical repair is needed."
+    },
+    {
+      "q": "What hearing loss results from damage to the inner ear or auditory nerve?",
+      "options": [
+        "Conductive hearing loss",
+        "Sensorineural hearing loss",
+        "Mixed hearing loss",
+        "Central hearing loss"
+      ],
+      "correct": 1,
+      "rationale": "Sensorineural hearing loss involves damage to the cochlea or cranial nerve VIII. It is usually permanent and treated with hearing aids or cochlear implants."
+    },
+    {
+      "q": "What test differentiates conductive from sensorineural hearing loss?",
+      "options": [
+        "Visual acuity test",
+        "Rinne and Weber tests (tuning fork)",
+        "Tympanometry only",
+        "CT scan"
+      ],
+      "correct": 1,
+      "rationale": "Weber test: tuning fork on forehead (sound lateralizes to affected ear in conductive, unaffected ear in sensorineural). Rinne test: compares air vs bone conduction."
+    },
+    {
+      "q": "What is the nurse's priority teaching for a patient after stapedectomy?",
+      "options": [
+        "Clean the ear canal daily",
+        "Avoid blowing nose, sneezing with mouth closed, and flying for several weeks",
+        "Resume swimming immediately",
+        "Use cotton swabs to clean the ear"
+      ],
+      "correct": 1,
+      "rationale": "After stapedectomy, avoid actions that increase middle ear pressure: no nose blowing, sneeze with mouth open, avoid flying/straining, and keep water out of the ear."
+    },
+    {
+      "q": "What does the nurse do for a patient with epistaxis (nosebleed)?",
+      "options": [
+        "Tilt head back",
+        "Pack the nose with dry gauze immediately",
+        "Sit upright, lean forward, pinch soft part of nose for 10-15 minutes",
+        "Lay the patient flat"
+      ],
+      "correct": 2,
+      "rationale": "Lean forward (prevents blood swallowing), pinch the soft nose for 10-15 minutes to apply pressure. Never tilt head back (aspiration risk)."
+    },
+    {
+      "q": "What is Cellulitis?",
+      "options": [
+        "A fungal infection of the nails",
+        "A spreading bacterial infection of the skin and subcutaneous tissue",
+        "A viral rash",
+        "An allergic reaction"
+      ],
+      "correct": 1,
+      "rationale": "Cellulitis is a bacterial infection (usually Staph or Strep) causing red, warm, swollen, tender skin that spreads. Treat with antibiotics."
+    },
+    {
+      "q": "What is the priority assessment for a patient with Cellulitis?",
+      "options": [
+        "Pain level only",
+        "Mark the borders of redness and monitor for spread, assess for systemic signs of infection",
+        "Apply heat only",
+        "Check blood glucose"
+      ],
+      "correct": 1,
+      "rationale": "Marking the edges of erythema with a pen allows monitoring for spread. Assess for fever, elevated WBC, and worsening redness indicating treatment failure."
+    },
+    {
+      "q": "What is a Keloid?",
+      "options": [
+        "A flat scar",
+        "An overgrowth of scar tissue that extends beyond the original wound boundaries",
+        "A pressure ulcer",
+        "A type of skin cancer"
+      ],
+      "correct": 1,
+      "rationale": "Keloids are raised, thickened scars that grow beyond the original wound margins. They are more common in darker-skinned individuals."
+    },
+    {
+      "q": "What precaution type is required for Shingles (Herpes Zoster) with disseminated lesions?",
+      "options": [
+        "Standard precautions only",
+        "Airborne AND contact precautions",
+        "Droplet precautions only",
+        "No precautions needed"
+      ],
+      "correct": 1,
+      "rationale": "Disseminated shingles requires airborne + contact precautions because the virus (varicella-zoster) can become airborne. Localized shingles needs contact precautions with the lesions covered."
+    },
+    {
+      "q": "Can shingles be transmitted to others?",
+      "options": [
+        "No, it is not contagious",
+        "Yes, it can cause chickenpox in someone who has never had it or been vaccinated",
+        "Yes, it causes shingles in everyone exposed",
+        "Only through blood contact"
+      ],
+      "correct": 1,
+      "rationale": "Shingles can transmit varicella-zoster virus to non-immune individuals, who then develop chickenpox (not shingles). Direct contact with open lesions is the route."
+    },
+    {
+      "q": "What is the complication of Herpes Zoster involving the eye?",
+      "options": [
+        "Glaucoma",
+        "Herpes Zoster Ophthalmicus - can cause blindness",
+        "Cataracts",
+        "Retinal detachment"
+      ],
+      "correct": 1,
+      "rationale": "When shingles affects the ophthalmic branch of cranial nerve V (trigeminal), it can cause corneal damage and blindness. Urgent ophthalmology referral needed."
+    },
+    {
+      "q": "How are superficial burns (first degree) treated?",
+      "options": [
+        "Skin grafting",
+        "Cool water, aloe, OTC analgesics; no dressing usually needed",
+        "Debridement and silver sulfadiazine",
+        "Immediate hospital admission"
+      ],
+      "correct": 1,
+      "rationale": "First degree burns (sunburn-type) are treated with cool water, moisturizers/aloe, and pain relief. They heal on their own in 3-5 days."
+    },
+    {
+      "q": "What fluid shifts occur in the first 24-48 hours after a major burn?",
+      "options": [
+        "Fluid shifts from interstitial to intravascular space",
+        "Fluid shifts from intravascular to interstitial space (third-spacing), causing edema and hypovolemia",
+        "No fluid shifts occur",
+        "Fluid shifts to the GI tract only"
+      ],
+      "correct": 1,
+      "rationale": "Burn injury causes massive capillary permeability, allowing plasma to leak into tissues (third-spacing), causing edema, hypovolemia, and potential shock."
+    },
+    {
+      "q": "What fluid shift occurs 48-72 hours after a major burn?",
+      "options": [
+        "Continued third-spacing",
+        "Fluid shifts back from interstitial to intravascular space, risk of fluid overload",
+        "Fluid loss stops completely",
+        "Dehydration worsens"
+      ],
+      "correct": 1,
+      "rationale": "At 48-72 hours, capillary integrity returns and fluid re-enters the vascular space. Watch for fluid overload and pulmonary edema during this phase."
+    },
+    {
+      "q": "What is the priority for wound care in a patient with peripheral vascular disease?",
+      "options": [
+        "Apply tight bandages",
+        "Keep legs elevated above the heart at all times",
+        "Protect skin, inspect feet daily, avoid injury, proper footwear",
+        "Soak feet in hot water daily"
+      ],
+      "correct": 2,
+      "rationale": "PVD patients have poor circulation and impaired healing. Daily foot inspection, proper shoes, avoiding injury, and not soaking feet prevent ulcers and complications."
+    },
+    {
+      "q": "What is the difference between an arterial and a venous leg ulcer?",
+      "options": [
+        "They look identical",
+        "Arterial: pale/punched-out, on toes/feet, painful; Venous: irregular, brown skin, on medial ankle, less painful",
+        "Venous ulcers are always on the toes",
+        "Arterial ulcers are painless"
+      ],
+      "correct": 1,
+      "rationale": "Arterial ulcers are painful, deep, pale, on distal extremities. Venous ulcers are shallow, irregular, with brown staining (hemosiderin), typically near the medial malleolus."
+    },
+    {
+      "q": "What is the Rinne test?",
+      "options": [
+        "Tests visual acuity",
+        "Compares air conduction to bone conduction using a tuning fork",
+        "Tests balance",
+        "Measures intraocular pressure"
+      ],
+      "correct": 1,
+      "rationale": "Rinne test: tuning fork on mastoid bone (bone conduction) then held near ear (air conduction). Normal: air conduction > bone conduction. Reversed in conductive loss."
+    },
+    {
+      "q": "What age-related eye condition causes loss of near vision?",
+      "options": [
+        "Myopia",
+        "Hyperopia",
+        "Presbyopia",
+        "Astigmatism"
+      ],
+      "correct": 2,
+      "rationale": "Presbyopia is age-related loss of lens elasticity, making it hard to focus on near objects. Treated with reading glasses. Typically begins after age 40."
+    },
+    {
+      "q": "What is a cataract?",
+      "options": [
+        "Increased intraocular pressure",
+        "Clouding/opacity of the lens that impairs vision",
+        "Detachment of the retina",
+        "Inflammation of the conjunctiva"
+      ],
+      "correct": 1,
+      "rationale": "A cataract is a progressive clouding of the natural lens causing blurred vision, glare sensitivity, and faded colors. Treatment is surgical lens replacement."
+    },
+    {
+      "q": "What post-operative instruction is critical after cataract surgery?",
+      "options": [
+        "Sleep on the operative side",
+        "Wear eye shield, avoid bending/straining/lifting, do not rub eye",
+        "Remove the eye patch immediately",
+        "Resume all normal activities the next day"
+      ],
+      "correct": 1,
+      "rationale": "Protect the eye with a shield (especially at night), avoid anything that increases IOP (bending, straining, lifting, coughing), and never rub or press on the eye."
+    },
+    {
+      "q": "What does Macular Degeneration affect?",
+      "options": [
+        "Peripheral vision only",
+        "Central vision (difficulty reading, recognizing faces)",
+        "Night vision only",
+        "Color perception only"
+      ],
+      "correct": 1,
+      "rationale": "Age-related macular degeneration destroys the macula (center of the retina), causing loss of central/detailed vision while peripheral vision remains."
+    },
+    {
+      "q": "What is the Amsler Grid used for?",
+      "options": [
+        "Testing hearing",
+        "Screening for macular degeneration (detecting central vision distortion)",
+        "Measuring intraocular pressure",
+        "Testing color blindness"
+      ],
+      "correct": 1,
+      "rationale": "The Amsler Grid is a grid of straight lines; wavy, distorted, or missing lines indicate macular degeneration requiring immediate evaluation."
+    },
+    {
+      "q": "What is the priority nursing assessment for a patient with a new skin graft?",
+      "options": [
+        "Pain level only",
+        "Graft color and adherence - watch for hematoma, infection, or graft separation",
+        "Appetite",
+        "Range of motion of the grafted area"
+      ],
+      "correct": 1,
+      "rationale": "Monitor graft viability: pink color indicates perfusion, pale/blue indicates failure. Watch for hematoma or seroma underneath that can lift the graft, and signs of infection."
+    }
+  ]
+}
