@@ -1,7 +1,7 @@
 {
   "section": "psych",
   "title": "Psych & Mental Health",
-  "questionCount": 29,
+  "questionCount": 100,
   "questions": [
     {
       "q": "What is the priority assessment for a depressed client?",
@@ -321,6 +321,787 @@
       ],
       "correct": 1,
       "rationale": "It destroys white blood cells, leaving the patient defenseless against infection."
+    },
+    {
+      "q": "When do most suicides occur in the course of depression treatment?",
+      "options": [
+        "At the deepest point of depression",
+        "After beginning of improvement with increase in energy levels",
+        "Immediately after diagnosis",
+        "During medication changes only"
+      ],
+      "correct": 1,
+      "rationale": "As energy returns before mood fully improves, the client gains the energy to act on suicidal thoughts."
+    },
+    {
+      "q": "Which MAOI medications require a tyramine-restricted diet?",
+      "options": [
+        "Prozac, Zoloft, Paxil",
+        "Nardil, Marplan, Parnate",
+        "Haldol, Thorazine, Prolixin",
+        "Lithium, Depakote, Tegretol"
+      ],
+      "correct": 1,
+      "rationale": "Nardil (phenelzine), Marplan (isocarboxazid), and Parnate (tranylcypromine) are MAOIs that cause hypertensive crisis with tyramine."
+    },
+    {
+      "q": "How long must a patient wait after stopping an SSRI before starting an MAOI?",
+      "options": [
+        "24 hours",
+        "3 days",
+        "1 week",
+        "2 weeks"
+      ],
+      "correct": 3,
+      "rationale": "A 2-week washout period is needed to prevent serotonin syndrome when switching from SSRIs/TCAs to MAOIs."
+    },
+    {
+      "q": "What is the therapeutic range for Lithium?",
+      "options": [
+        "0.1-0.5 mEq/L",
+        "0.5-1.5 mEq/L",
+        "2.0-3.0 mEq/L",
+        "5.0-10.0 mEq/L"
+      ],
+      "correct": 1,
+      "rationale": "Lithium has a narrow therapeutic range (0.5-1.5 mEq/L). Levels above 1.5 indicate toxicity."
+    },
+    {
+      "q": "Besides EPS, what other side effect do phenothiazines cause?",
+      "options": [
+        "Hyperglycemia",
+        "Photosensitivity",
+        "Hair loss",
+        "Hearing loss"
+      ],
+      "correct": 1,
+      "rationale": "Phenothiazines (typical antipsychotics) cause photosensitivity; patients should wear sunscreen and protective clothing."
+    },
+    {
+      "q": "What is the advantage of atypical antipsychotics over typical antipsychotics?",
+      "options": [
+        "They are cheaper",
+        "They work faster",
+        "They treat positive AND negative symptoms with less EPS",
+        "They have no side effects"
+      ],
+      "correct": 2,
+      "rationale": "Atypical antipsychotics (risperidone, olanzapine, clozapine) address both positive and negative symptoms with fewer extrapyramidal effects."
+    },
+    {
+      "q": "What are the two main indications for benzodiazepines?",
+      "options": [
+        "Depression and mania",
+        "Schizophrenia and OCD",
+        "Alcohol withdrawal and Status Epilepticus",
+        "ADHD and insomnia"
+      ],
+      "correct": 2,
+      "rationale": "Benzos (Ativan, Lorazepam) are critical for managing alcohol withdrawal symptoms and stopping status epilepticus."
+    },
+    {
+      "q": "What is the purpose of Antabuse (disulfiram) therapy?",
+      "options": [
+        "Reduces alcohol cravings",
+        "Makes the patient sick when drinking alcohol",
+        "Replaces the effects of alcohol",
+        "Blocks opiate receptors"
+      ],
+      "correct": 1,
+      "rationale": "Antabuse causes severe nausea, vomiting, and flushing when alcohol is consumed, acting as a deterrent."
+    },
+    {
+      "q": "What are the signs of opiate withdrawal?",
+      "options": [
+        "Euphoria, constricted pupils, constipation",
+        "Watery eyes, runny nose, dilated pupils, NVD, cramps",
+        "Seizures, hallucinations, tachycardia",
+        "Depression, fatigue, excessive sleep"
+      ],
+      "correct": 1,
+      "rationale": "Opiate withdrawal presents with flu-like symptoms: lacrimation, rhinorrhea, mydriasis, nausea/vomiting/diarrhea, and muscle cramps."
+    },
+    {
+      "q": "What are the signs of stimulant withdrawal?",
+      "options": [
+        "Tachycardia, hypertension, seizures",
+        "Constricted pupils, constipation",
+        "Depression, fatigue, anxiety, disturbed sleep",
+        "Tremors, diaphoresis, hallucinations"
+      ],
+      "correct": 2,
+      "rationale": "Stimulant (cocaine, amphetamine) withdrawal causes a 'crash' with depression, exhaustion, anxiety, and sleep disturbances."
+    },
+    {
+      "q": "How often should a nurse check on a restrained patient?",
+      "options": [
+        "Every 15 minutes",
+        "Every 30 minutes",
+        "Every hour",
+        "Every 2 hours"
+      ],
+      "correct": 1,
+      "rationale": "Restraints must be checked every 30 minutes for circulation, sensation, skin integrity, and the need for continued restraint."
+    },
+    {
+      "q": "How much space should be between the restraint and the patient's skin?",
+      "options": [
+        "No space - tight is safest",
+        "1 finger width",
+        "2 finger widths",
+        "4 finger widths"
+      ],
+      "correct": 2,
+      "rationale": "Two fingers should fit between the restraint and the skin to prevent impaired circulation while maintaining safety."
+    },
+    {
+      "q": "What is the antidote for benzodiazepine overdose?",
+      "options": [
+        "Naloxone (Narcan)",
+        "Flumazenil (Romazicon)",
+        "Protamine Sulfate",
+        "Vitamin K"
+      ],
+      "correct": 1,
+      "rationale": "Flumazenil (Romazicon) is the specific antagonist that reverses benzodiazepine effects."
+    },
+    {
+      "q": "What pattern does memory loss follow in Alzheimer's/Dementia?",
+      "options": [
+        "Distant memories lost first",
+        "All memories lost simultaneously",
+        "Recent memory lost first, then progresses to remote",
+        "Random memories lost"
+      ],
+      "correct": 2,
+      "rationale": "Memory loss starts with recent events and gradually progresses to remote/long-term memories as the disease advances."
+    },
+    {
+      "q": "What is sundowning in Alzheimer's disease?",
+      "options": [
+        "Sleeping all day",
+        "Increased confusion and agitation in late afternoon/evening",
+        "Improved cognition at night",
+        "Refusing to eat after noon"
+      ],
+      "correct": 1,
+      "rationale": "Sundowning is worsening of confusion, restlessness, and agitation as daylight fades, common in dementia patients."
+    },
+    {
+      "q": "According to Erikson, what is the psychosocial crisis for a newborn (0-1 year)?",
+      "options": [
+        "Autonomy vs. Shame and Doubt",
+        "Initiative vs. Guilt",
+        "Trust vs. Mistrust",
+        "Industry vs. Inferiority"
+      ],
+      "correct": 2,
+      "rationale": "Infants develop trust when caregivers consistently meet their needs; inconsistent care leads to mistrust."
+    },
+    {
+      "q": "According to Erikson, what is the psychosocial crisis for a toddler (1-3 years)?",
+      "options": [
+        "Trust vs. Mistrust",
+        "Autonomy vs. Shame and Doubt",
+        "Initiative vs. Guilt",
+        "Industry vs. Inferiority"
+      ],
+      "correct": 1,
+      "rationale": "Toddlers develop independence and self-control. Fear of intrusive procedures is common at this age."
+    },
+    {
+      "q": "According to Erikson, what stage does a school-age child (6-12 years) face?",
+      "options": [
+        "Initiative vs. Guilt",
+        "Industry vs. Inferiority",
+        "Identity vs. Role Confusion",
+        "Autonomy vs. Shame and Doubt"
+      ],
+      "correct": 1,
+      "rationale": "School-age children develop competence through achievement. Peers become important, and they fear loss of control of their bodies."
+    },
+    {
+      "q": "According to Erikson, what stage does an adolescent (12-19 years) face?",
+      "options": [
+        "Industry vs. Inferiority",
+        "Intimacy vs. Isolation",
+        "Identity vs. Role Confusion",
+        "Generativity vs. Stagnation"
+      ],
+      "correct": 2,
+      "rationale": "Adolescents develop their identity and self-concept. Body image distortion and role confusion are common fears."
+    },
+    {
+      "q": "According to Erikson, what is the crisis for early adulthood (20-35 years)?",
+      "options": [
+        "Identity vs. Role Confusion",
+        "Generativity vs. Stagnation",
+        "Intimacy vs. Isolation",
+        "Integrity vs. Despair"
+      ],
+      "correct": 2,
+      "rationale": "Young adults develop intimate relationships. Failure to do so leads to isolation and loneliness."
+    },
+    {
+      "q": "According to Erikson, what is the crisis for middle adulthood (35-65 years)?",
+      "options": [
+        "Intimacy vs. Isolation",
+        "Generativity vs. Stagnation",
+        "Integrity vs. Despair",
+        "Industry vs. Inferiority"
+      ],
+      "correct": 1,
+      "rationale": "Middle-aged adults focus on contributing to the next generation through work, parenting, or mentoring."
+    },
+    {
+      "q": "According to Piaget, at what stage does a child learn object permanence?",
+      "options": [
+        "Sensorimotor (0-2 years)",
+        "Preoperational (2-7 years)",
+        "Concrete Operational (7-11 years)",
+        "Formal Operational (11+ years)"
+      ],
+      "correct": 0,
+      "rationale": "During the sensorimotor stage, infants learn that objects continue to exist even when out of sight (object permanence)."
+    },
+    {
+      "q": "According to Piaget, at what stage does abstract and logical thinking develop?",
+      "options": [
+        "Sensorimotor",
+        "Preoperational",
+        "Concrete Operational",
+        "Formal Operational (11-adult)"
+      ],
+      "correct": 3,
+      "rationale": "The formal operational stage allows adolescents/adults to think abstractly, reason logically, and solve hypothetical problems."
+    },
+    {
+      "q": "In Kohlberg's moral development, which level involves conforming to rules to please others?",
+      "options": [
+        "Pre-conventional (Level 1)",
+        "Conventional (Level 2)",
+        "Post-conventional (Level 3)",
+        "None of these"
+      ],
+      "correct": 1,
+      "rationale": "Conventional morality (Level 2) involves following rules to gain approval and maintain social order."
+    },
+    {
+      "q": "In Kohlberg's moral development, what characterizes the Pre-conventional level?",
+      "options": [
+        "Conforming to social norms",
+        "Following individual principles of conscience",
+        "Reward vs. Punishment orientation",
+        "Desire for social approval"
+      ],
+      "correct": 2,
+      "rationale": "Pre-conventional morality (Level 1) is driven by avoiding punishment and gaining rewards. Common in young children."
+    },
+    {
+      "q": "What are the signs of early Lithium toxicity?",
+      "options": [
+        "Seizures, coma, cardiac arrest",
+        "Nausea, vomiting, diarrhea, tremors, drowsiness",
+        "Hypertension, tachycardia, diaphoresis",
+        "Muscle rigidity, high fever"
+      ],
+      "correct": 1,
+      "rationale": "Early toxicity (1.5-2.0 mEq/L) presents with GI symptoms, coarse tremors, and drowsiness. Severe toxicity causes seizures and coma."
+    },
+    {
+      "q": "What is Regression as a defense mechanism?",
+      "options": [
+        "Redirecting urges into socially acceptable activities",
+        "Reverting to an earlier developmental stage",
+        "Transferring feelings to a safer target",
+        "Refusing to acknowledge reality"
+      ],
+      "correct": 1,
+      "rationale": "Regression is returning to a previous level of functioning (e.g., a toilet-trained child bedwetting when a new sibling arrives)."
+    },
+    {
+      "q": "What is Rationalization as a defense mechanism?",
+      "options": [
+        "Attributing one's faults to others",
+        "Making logical excuses to justify unacceptable behavior",
+        "Forgetting traumatic events",
+        "Acting opposite to true feelings"
+      ],
+      "correct": 1,
+      "rationale": "Rationalization involves creating logical-sounding reasons for behavior that is actually driven by unconscious motives."
+    },
+    {
+      "q": "What is Sublimation?",
+      "options": [
+        "Refusing to acknowledge a problem",
+        "Redirecting unacceptable impulses into socially acceptable activities",
+        "Attributing one's feelings to another person",
+        "Returning to an earlier stage of development"
+      ],
+      "correct": 1,
+      "rationale": "Sublimation channels unacceptable urges into constructive outlets (e.g., aggressive feelings channeled into sports). It is considered a mature defense mechanism."
+    },
+    {
+      "q": "What is Reaction Formation?",
+      "options": [
+        "Forgetting traumatic memories",
+        "Shifting emotions to a safer target",
+        "Behaving in a way opposite to one's true feelings",
+        "Returning to childlike behavior"
+      ],
+      "correct": 2,
+      "rationale": "In reaction formation, a person acts the opposite of how they feel (e.g., being overly nice to someone they dislike)."
+    },
+    {
+      "q": "What is the difference between Repression and Suppression?",
+      "options": [
+        "They are identical",
+        "Repression is unconscious; Suppression is conscious",
+        "Suppression is unconscious; Repression is conscious",
+        "Both are conscious processes"
+      ],
+      "correct": 1,
+      "rationale": "Repression is the unconscious blocking of painful memories. Suppression is the conscious, intentional pushing aside of unpleasant thoughts."
+    },
+    {
+      "q": "What is the hallmark symptom of PTSD?",
+      "options": [
+        "Grandiose delusions",
+        "Flat affect only",
+        "Flashbacks/Re-experiencing the traumatic event",
+        "Flight of ideas"
+      ],
+      "correct": 2,
+      "rationale": "PTSD is characterized by intrusive re-experiencing (flashbacks, nightmares), avoidance, hyperarousal, and negative mood changes."
+    },
+    {
+      "q": "What personality disorder is characterized by unstable relationships, impulsivity, and fear of abandonment?",
+      "options": [
+        "Antisocial Personality Disorder",
+        "Narcissistic Personality Disorder",
+        "Borderline Personality Disorder",
+        "Schizoid Personality Disorder"
+      ],
+      "correct": 2,
+      "rationale": "Borderline PD features emotional instability, self-harm, splitting (seeing people as all good or all bad), and intense fear of abandonment."
+    },
+    {
+      "q": "What personality disorder is characterized by a lack of conscience and disregard for others' rights?",
+      "options": [
+        "Borderline Personality Disorder",
+        "Antisocial Personality Disorder",
+        "Dependent Personality Disorder",
+        "Histrionic Personality Disorder"
+      ],
+      "correct": 1,
+      "rationale": "Antisocial PD features deceitfulness, impulsivity, aggression, and lack of remorse. Manipulative behavior is common."
+    },
+    {
+      "q": "What is Tardive Dyskinesia?",
+      "options": [
+        "Acute muscle spasm of the neck",
+        "Involuntary repetitive movements of face, tongue, and limbs",
+        "Severe muscle rigidity with fever",
+        "Restless inability to sit still"
+      ],
+      "correct": 1,
+      "rationale": "Tardive dyskinesia is a late, often irreversible side effect of long-term antipsychotic use, causing lip smacking, tongue protrusion, and facial grimacing."
+    },
+    {
+      "q": "What is Neuroleptic Malignant Syndrome (NMS)?",
+      "options": [
+        "A common benign side effect of antipsychotics",
+        "A rare, life-threatening reaction with high fever, muscle rigidity, and altered consciousness",
+        "An allergic rash from medications",
+        "Withdrawal symptoms from antipsychotics"
+      ],
+      "correct": 1,
+      "rationale": "NMS is a medical emergency caused by antipsychotics. Signs include hyperthermia (>104\u00b0F), lead-pipe rigidity, altered LOC, and elevated CPK levels."
+    },
+    {
+      "q": "What are the signs of Serotonin Syndrome?",
+      "options": [
+        "Bradycardia, hypothermia, constipation",
+        "Agitation, hyperthermia, tremors, myoclonus, diarrhea",
+        "Weight gain, sedation, dry mouth",
+        "Flat affect, anhedonia, social withdrawal"
+      ],
+      "correct": 1,
+      "rationale": "Serotonin syndrome is caused by excess serotonin (often from drug interactions) and presents with mental status changes, autonomic instability, and neuromuscular hyperactivity."
+    },
+    {
+      "q": "What is the priority nursing action after ECT (Electroconvulsive Therapy)?",
+      "options": [
+        "Encourage ambulation immediately",
+        "Maintain airway and monitor vital signs",
+        "Administer lithium",
+        "Encourage the patient to recall the procedure"
+      ],
+      "correct": 1,
+      "rationale": "Post-ECT, the patient is unconscious from anesthesia. Airway management and vital sign monitoring are the first priorities."
+    },
+    {
+      "q": "What is the most common side effect of ECT?",
+      "options": [
+        "Permanent brain damage",
+        "Short-term memory loss/confusion",
+        "Paralysis",
+        "Personality change"
+      ],
+      "correct": 1,
+      "rationale": "Temporary confusion and short-term memory loss are common after ECT. Long-term memory is typically unaffected."
+    },
+    {
+      "q": "What characterizes the manic phase of Bipolar Disorder?",
+      "options": [
+        "Psychomotor retardation, anhedonia",
+        "Grandiosity, flight of ideas, decreased need for sleep",
+        "Social withdrawal, flat affect",
+        "Obsessive thoughts, compulsive rituals"
+      ],
+      "correct": 1,
+      "rationale": "Mania presents with euphoria, grandiosity, pressured speech, flight of ideas, hyperactivity, and minimal sleep."
+    },
+    {
+      "q": "What are 'positive' symptoms of Schizophrenia?",
+      "options": [
+        "Flat affect, anhedonia, social withdrawal",
+        "Hallucinations, delusions, disorganized speech",
+        "Memory loss, confusion",
+        "Sadness, crying, guilt"
+      ],
+      "correct": 1,
+      "rationale": "Positive symptoms are excesses added to normal behavior: hallucinations, delusions, bizarre behavior, and thought disorder."
+    },
+    {
+      "q": "What are 'negative' symptoms of Schizophrenia?",
+      "options": [
+        "Hallucinations, delusions",
+        "Agitation, aggression",
+        "Flat affect, anhedonia, avolition, alogia, social withdrawal",
+        "Grandiosity, euphoria"
+      ],
+      "correct": 2,
+      "rationale": "Negative symptoms represent deficits from normal functioning: blunted emotions (flat affect), lack of pleasure (anhedonia), lack of motivation (avolition), and poverty of speech (alogia)."
+    },
+    {
+      "q": "What is 'word salad' in psychiatric terminology?",
+      "options": [
+        "Speaking very rapidly",
+        "A mixture of incoherent, random words with no logical connection",
+        "Repeating the same word over and over",
+        "Inventing new words"
+      ],
+      "correct": 1,
+      "rationale": "Word salad is severely disorganized speech with words strung together randomly, seen in severe schizophrenia."
+    },
+    {
+      "q": "What are 'clang associations'?",
+      "options": [
+        "Loose connections between topics",
+        "Words chosen based on rhyming sounds rather than meaning",
+        "Repeating what another person says",
+        "Creating new words"
+      ],
+      "correct": 1,
+      "rationale": "Clang associations involve choosing words based on sound rather than meaning (e.g., 'I said the bed, red, fed, dead')."
+    },
+    {
+      "q": "What is Echolalia?",
+      "options": [
+        "Involuntary repetition of another person's words",
+        "Inability to speak",
+        "Speaking in rhymes",
+        "Making up new words"
+      ],
+      "correct": 0,
+      "rationale": "Echolalia is the pathological repeating of another person's speech, seen in schizophrenia, autism, and some neurological conditions."
+    },
+    {
+      "q": "What are Neologisms?",
+      "options": [
+        "Repeating others' words",
+        "Speaking rapidly",
+        "Made-up words with personal meaning to the client",
+        "Inability to name objects"
+      ],
+      "correct": 2,
+      "rationale": "Neologisms are new words invented by a psychotic client that have meaning only to them, indicating thought disorder."
+    },
+    {
+      "q": "What is Agoraphobia?",
+      "options": [
+        "Fear of heights",
+        "Fear of open/public spaces or situations from which escape is difficult",
+        "Fear of spiders",
+        "Fear of blood"
+      ],
+      "correct": 1,
+      "rationale": "Agoraphobia is the fear of situations where escape might be difficult, often leading to being homebound. It frequently accompanies panic disorder."
+    },
+    {
+      "q": "What is the priority nursing intervention during a panic attack?",
+      "options": [
+        "Leave the client alone",
+        "Administer an antipsychotic",
+        "Stay with the client and use calm, simple directions",
+        "Encourage deep breathing in a group setting"
+      ],
+      "correct": 2,
+      "rationale": "During panic, the client cannot process complex information. Stay present, remain calm, use short simple statements, and reduce stimuli."
+    },
+    {
+      "q": "How long does it typically take for SSRIs to reach therapeutic effect?",
+      "options": [
+        "1-2 days",
+        "2-4 weeks",
+        "2-3 months",
+        "6 months"
+      ],
+      "correct": 1,
+      "rationale": "SSRIs take 2-4 weeks for full therapeutic effect. Clients must be warned not to stop taking them prematurely."
+    },
+    {
+      "q": "What is a common side effect of SSRI antidepressants?",
+      "options": [
+        "Hypertensive crisis",
+        "Sexual dysfunction and GI disturbance",
+        "Extrapyramidal symptoms",
+        "Agranulocytosis"
+      ],
+      "correct": 1,
+      "rationale": "SSRIs commonly cause sexual dysfunction (decreased libido, anorgasmia), nausea, headache, and insomnia or sedation."
+    },
+    {
+      "q": "What is Akathisia?",
+      "options": [
+        "Involuntary facial movements",
+        "Severe muscle rigidity",
+        "Restless inability to sit still or remain motionless",
+        "Sustained muscle spasm"
+      ],
+      "correct": 2,
+      "rationale": "Akathisia is an EPS characterized by motor restlessness and the inability to sit still, causing pacing and fidgeting."
+    },
+    {
+      "q": "What is the treatment for Acute Dystonia (a type of EPS)?",
+      "options": [
+        "Increase the antipsychotic dose",
+        "Benztropine (Cogentin) or Diphenhydramine (Benadryl)",
+        "Flumazenil",
+        "Naloxone"
+      ],
+      "correct": 1,
+      "rationale": "Acute dystonia (sustained muscle contractions) is treated with anticholinergic agents like Cogentin or antihistamines like Benadryl."
+    },
+    {
+      "q": "Which medication is commonly used for alcohol detoxification?",
+      "options": [
+        "Lithium",
+        "Chlordiazepoxide (Librium) or Lorazepam (Ativan)",
+        "Haldol",
+        "Clozapine"
+      ],
+      "correct": 1,
+      "rationale": "Benzodiazepines (Librium for mild-moderate, Ativan for severe) are the standard for managing alcohol withdrawal safely."
+    },
+    {
+      "q": "What medication is used to reduce alcohol cravings and help maintain sobriety?",
+      "options": [
+        "Antabuse (disulfiram)",
+        "Naltrexone (ReVia)",
+        "Methadone",
+        "Lithium"
+      ],
+      "correct": 1,
+      "rationale": "Naltrexone blocks opioid receptors and reduces the rewarding effects of alcohol. Antabuse deters drinking but doesn't reduce cravings."
+    },
+    {
+      "q": "What is 'splitting' as seen in Borderline Personality Disorder?",
+      "options": [
+        "Having multiple personalities",
+        "Dividing staff by playing them against each other / seeing people as all good or all bad",
+        "Physical separation from reality",
+        "Breaking objects when angry"
+      ],
+      "correct": 1,
+      "rationale": "Splitting is the inability to see gray areas; people are viewed as either idealized (all good) or devalued (all bad), often pitting staff against each other."
+    },
+    {
+      "q": "A patient says 'The CIA is monitoring me through my fillings.' This is an example of what?",
+      "options": [
+        "Hallucination",
+        "Illusion",
+        "Delusion of persecution",
+        "Flight of ideas"
+      ],
+      "correct": 2,
+      "rationale": "A delusion of persecution is a fixed false belief that one is being targeted, followed, or conspired against."
+    },
+    {
+      "q": "What therapeutic communication technique involves restating the patient's message?",
+      "options": [
+        "Reflecting",
+        "Advising",
+        "Judging",
+        "Changing the subject"
+      ],
+      "correct": 0,
+      "rationale": "Reflecting repeats the emotional content back to the patient, showing understanding and encouraging further exploration."
+    },
+    {
+      "q": "Which communication response is NON-therapeutic?",
+      "options": [
+        "Open-ended questions",
+        "Silence",
+        "False reassurance ('Everything will be fine')",
+        "Active listening"
+      ],
+      "correct": 2,
+      "rationale": "False reassurance minimizes the patient's feelings and blocks further communication. It is dishonest and unhelpful."
+    },
+    {
+      "q": "What is the legal basis for involuntary psychiatric commitment?",
+      "options": [
+        "Family request only",
+        "Physician opinion only",
+        "Client is a danger to self or others, or gravely disabled",
+        "Client refuses to take medication"
+      ],
+      "correct": 2,
+      "rationale": "Involuntary commitment requires evidence that the person is an imminent danger to self or others, or is unable to meet basic needs."
+    },
+    {
+      "q": "Can a voluntarily admitted psych patient refuse treatment?",
+      "options": [
+        "No, all psych patients must accept treatment",
+        "Yes, they retain the right to refuse treatment",
+        "Only with a court order",
+        "Only if they have a lawyer"
+      ],
+      "correct": 1,
+      "rationale": "Voluntary patients retain most civil rights, including the right to refuse treatment and request discharge."
+    },
+    {
+      "q": "What does the concept of 'least restrictive environment' mean?",
+      "options": [
+        "All patients should be in locked units",
+        "Use the minimum level of restriction necessary to ensure safety",
+        "Remove all restrictions immediately",
+        "Never use seclusion or restraints"
+      ],
+      "correct": 1,
+      "rationale": "Patients should be treated in the setting that provides the most freedom while still maintaining safety. Restraints and seclusion are the last resort."
+    },
+    {
+      "q": "What is 'loose associations' (derailment)?",
+      "options": [
+        "Speech that shifts between unrelated topics without logical connection",
+        "Repetition of another's words",
+        "Inability to speak at all",
+        "Speaking very rapidly"
+      ],
+      "correct": 0,
+      "rationale": "Loose associations involve jumping from one topic to another with no logical connection between thoughts, common in schizophrenia."
+    },
+    {
+      "q": "What is 'flight of ideas'?",
+      "options": [
+        "Inability to think of words",
+        "Fixed false beliefs",
+        "Rapid, continuous speech that shifts quickly between loosely connected topics",
+        "Repeating the same phrase"
+      ],
+      "correct": 2,
+      "rationale": "Flight of ideas is rapid speech with abrupt topic changes where connections may be discernible but are tenuous; it is characteristic of mania."
+    },
+    {
+      "q": "A schizophrenic client states 'I hear voices telling me I'm worthless.' What is the best nursing response?",
+      "options": [
+        "'There are no voices; you're imagining things.'",
+        "'I understand the voices are real to you. What are they saying?'",
+        "'Just ignore them and they'll go away.'",
+        "'Why do you think you hear voices?'"
+      ],
+      "correct": 1,
+      "rationale": "Acknowledge the client's experience without reinforcing the hallucination. Explore the content to assess for safety threats."
+    },
+    {
+      "q": "What is the primary electrolyte concern with patients on Lithium who become dehydrated?",
+      "options": [
+        "Hyperkalemia",
+        "Hypocalcemia",
+        "Lithium toxicity due to sodium loss",
+        "Hypomagnesemia"
+      ],
+      "correct": 2,
+      "rationale": "Dehydration and low sodium cause the kidneys to reabsorb Lithium instead of excreting it, leading to dangerous toxicity."
+    },
+    {
+      "q": "What should the nurse teach a client on Lithium about fluid intake?",
+      "options": [
+        "Restrict fluids to 1000 mL/day",
+        "Maintain adequate fluid intake (2-3 L/day) and normal sodium intake",
+        "Avoid all sodium in the diet",
+        "Drink only when thirsty"
+      ],
+      "correct": 1,
+      "rationale": "Adequate hydration and consistent sodium intake prevent Lithium from accumulating to toxic levels."
+    },
+    {
+      "q": "What is Conversion Disorder?",
+      "options": [
+        "Converting anger into physical aggression",
+        "Anxiety converted into a physical symptom (e.g., blindness, paralysis) with no medical cause",
+        "Converting one personality into another",
+        "Physical illness caused by bacteria"
+      ],
+      "correct": 1,
+      "rationale": "In conversion disorder, psychological stress manifests as neurological symptoms (blindness, paralysis) that have no organic basis. The patient is not faking."
+    },
+    {
+      "q": "What behavior is often observed in patients with Conversion Disorder that seems paradoxical?",
+      "options": [
+        "Extreme anxiety about their symptoms",
+        "'La belle indifference' - lack of concern about the symptom",
+        "Frequent emergency room visits",
+        "Aggressive outbursts"
+      ],
+      "correct": 1,
+      "rationale": "'La belle indifference' is a surprising lack of distress about what should be a disturbing symptom, commonly seen in conversion disorder."
+    },
+    {
+      "q": "Which electrolyte imbalance makes a client on Digoxin more susceptible to toxicity?",
+      "options": [
+        "Hyperkalemia",
+        "Hypernatremia",
+        "Hypokalemia",
+        "Hypercalcemia"
+      ],
+      "correct": 2,
+      "rationale": "Low potassium increases sensitivity to Digoxin, raising the risk of toxicity. This is particularly relevant for psych clients on lithium who may have electrolyte imbalances."
+    },
+    {
+      "q": "What is the nurse's priority when a client with depression suddenly appears happy and calm?",
+      "options": [
+        "Celebrate the improvement",
+        "Discharge planning",
+        "Assess for suicidal plan - this may indicate the client has decided to attempt suicide",
+        "Reduce observation level"
+      ],
+      "correct": 2,
+      "rationale": "A sudden, unexplained mood improvement in a depressed client may mean they have made the decision to end their life and feel relieved."
+    },
+    {
+      "q": "What type of therapy uses 'token economy' as a technique?",
+      "options": [
+        "Psychoanalysis",
+        "Behavioral therapy",
+        "Gestalt therapy",
+        "Existential therapy"
+      ],
+      "correct": 1,
+      "rationale": "Token economy is a behavioral modification technique where desired behaviors are rewarded with tokens that can be exchanged for privileges."
     }
   ]
 }
