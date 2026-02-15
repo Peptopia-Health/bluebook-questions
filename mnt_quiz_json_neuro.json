@@ -1,7 +1,7 @@
 {
   "section": "neuro",
   "title": "Neurological System",
-  "questionCount": 25,
+  "questionCount": 100,
   "questions": [
     {
       "q": "Which is a component of Cushing's Triad?",
@@ -275,6 +275,831 @@
       ],
       "correct": 2,
       "rationale": "Chorea refers to the rapid, jerky, involuntary movements characteristic of Huntington's."
+    },
+    {
+      "q": "A GCS score less than 8 indicates:",
+      "options": [
+        "Mild brain injury",
+        "Moderate brain injury",
+        "Coma",
+        "Normal neurological status"
+      ],
+      "correct": 2,
+      "rationale": "A GCS below 8 indicates coma and typically requires intubation to protect the airway."
+    },
+    {
+      "q": "What differentiates a Myasthenic Crisis from a Cholinergic Crisis?",
+      "options": [
+        "Myasthenic crisis has pinpoint pupils",
+        "Cholinergic crisis has vital sign changes",
+        "Myasthenic crisis = weakness WITH vital sign changes; Cholinergic = weakness WITHOUT vital sign changes",
+        "There is no clinical difference"
+      ],
+      "correct": 2,
+      "rationale": "In Myasthenic crisis (under-medication), weakness occurs with changes in vitals—give more meds. In Cholinergic crisis (over-medication), weakness occurs without vital changes—reduce meds."
+    },
+    {
+      "q": "In a stroke, the tongue deviates toward which side?",
+      "options": [
+        "Away from the lesion",
+        "Toward the side of the lesion (paralysis)",
+        "It remains midline",
+        "Toward the unaffected side"
+      ],
+      "correct": 1,
+      "rationale": "The tongue points toward the side of the lesion (paralyzed side), while the uvula deviates away from the side of the lesion."
+    },
+    {
+      "q": "What is Decerebrate Posturing and what does it indicate?",
+      "options": [
+        "Flexion of arms, extension of legs; cortical damage",
+        "Extension of arms and legs, head arched back; midbrain/brainstem damage",
+        "Flaccid paralysis on one side; spinal cord injury",
+        "Fetal position; cerebellar damage"
+      ],
+      "correct": 1,
+      "rationale": "Decerebrate posturing (arms extended, internally rotated, head arched back) indicates severe midbrain or brainstem lesion and carries a worse prognosis than decorticate."
+    },
+    {
+      "q": "What is Decorticate Posturing and what does it indicate?",
+      "options": [
+        "Extension of all extremities; brainstem lesion",
+        "Flexion of elbows, wrists, and fingers with straight legs; cortical damage",
+        "Flaccid paralysis; spinal shock",
+        "Opisthotonus; meningitis"
+      ],
+      "correct": 1,
+      "rationale": "Decorticate posturing (flexion of arms/wrists/fingers, extension of legs—'mummy position') indicates a lesion at or above the cortex. Remember: COR = CORD, arms flexed toward the core."
+    },
+    {
+      "q": "What are the two types of CVA (stroke)?",
+      "options": [
+        "Hemorrhagic and Embolic (Ischemic)",
+        "Spastic and Flaccid",
+        "Cortical and Subcortical",
+        "Acute and Chronic"
+      ],
+      "correct": 0,
+      "rationale": "Hemorrhagic strokes are caused by a ruptured blood vessel; Embolic/Ischemic strokes are caused by a blood clot blocking a cerebral artery."
+    },
+    {
+      "q": "What deficits are associated with a Left Hemisphere stroke?",
+      "options": [
+        "Impulsive behavior, poor judgment, denies illness",
+        "Aphasia, agraphia, slow/cautious behavior, anxiety, memory intact",
+        "Loss of depth perception and facial recognition",
+        "Constant smiling and confabulation"
+      ],
+      "correct": 1,
+      "rationale": "The left hemisphere controls language and analytical thinking. Left-sided lesions cause aphasia (can't speak), agraphia (can't write), and cautious/anxious behavior, but memory is generally okay."
+    },
+    {
+      "q": "What deficits are associated with a Right Hemisphere stroke?",
+      "options": [
+        "Aphasia, slow behavior, anxiety",
+        "Memory loss and agraphia",
+        "Impulsive behavior, poor judgment, denies illness, loss of depth perception",
+        "Flaccid paralysis and incontinence"
+      ],
+      "correct": 2,
+      "rationale": "Right hemisphere lesions cause inability to recognize faces, loss of depth perception, impulsive behavior, confabulation, poor judgment, constant smiling, denying illness, and loss of tonal hearing."
+    },
+    {
+      "q": "What is Dysarthria?",
+      "options": [
+        "Inability to write",
+        "Difficulty with verbal enunciation/articulation of speech",
+        "Inability to read",
+        "Difficulty swallowing"
+      ],
+      "correct": 1,
+      "rationale": "Dysarthria is impaired speech articulation (slurred, thick speech) due to motor dysfunction of the muscles used for speaking, not a language processing problem."
+    },
+    {
+      "q": "What is Apraxia?",
+      "options": [
+        "Inability to speak",
+        "Loss of sensation",
+        "Inability to perform purposeful movements despite intact motor function",
+        "Loss of vision"
+      ],
+      "correct": 2,
+      "rationale": "Apraxia is the inability to carry out learned purposeful movements (e.g., using a fork, brushing teeth) even though motor strength and comprehension are intact."
+    },
+    {
+      "q": "What is Dysphagia and why is it a concern in stroke patients?",
+      "options": [
+        "Difficulty speaking; causes social isolation",
+        "Difficulty swallowing; causes aspiration risk",
+        "Difficulty reading; causes learning impairment",
+        "Difficulty writing; causes communication problems"
+      ],
+      "correct": 1,
+      "rationale": "Dysphagia (difficulty swallowing) is a major concern post-stroke because it increases the risk of aspiration pneumonia. A swallow evaluation should be done before giving any food or fluids."
+    },
+    {
+      "q": "What should the nurse watch for after a head injury that may indicate a CSF leak?",
+      "options": [
+        "Blood in the urine",
+        "Clear fluid draining from the nose or ears",
+        "Green-tinged sputum",
+        "Dark, tarry stools"
+      ],
+      "correct": 1,
+      "rationale": "CSF leaking from the nose (rhinorrhea) or ears (otorrhea) after head trauma indicates a basilar skull fracture. This can lead to meningitis. Test fluid with a halo/ring sign on gauze."
+    },
+    {
+      "q": "Why is a CSF leak after head trauma dangerous even if ICP symptoms are absent?",
+      "options": [
+        "It causes dehydration",
+        "The leak can mask usual increased ICP symptoms and lead to meningitis",
+        "It always indicates brain death",
+        "It causes seizures"
+      ],
+      "correct": 1,
+      "rationale": "CSF leakage can lead to meningitis and may mask the usual signs of increased ICP since the pressure is being released through the leak."
+    },
+    {
+      "q": "Which spinal cord levels innervate the diaphragm?",
+      "options": [
+        "T1-T4",
+        "C3-C5",
+        "L1-L3",
+        "C7-T1"
+      ],
+      "correct": 1,
+      "rationale": "C3-C5 innervates the diaphragm via the phrenic nerve. Injuries at or above C3-C5 result in loss of diaphragmatic breathing, requiring mechanical ventilation. Remember: 'C3, 4, 5 keeps the diaphragm alive.'"
+    },
+    {
+      "q": "What is Spinal Shock?",
+      "options": [
+        "Hemorrhage from spinal surgery",
+        "Complete loss of all reflex, motor, sensory, and autonomic activity below the lesion",
+        "High blood pressure from spinal cord injury",
+        "Chronic pain after spinal injury"
+      ],
+      "correct": 1,
+      "rationale": "Spinal shock is the immediate, temporary loss of all neurological function below the level of injury. It is a medical emergency. It takes about 1 week to determine the ultimate prognosis."
+    },
+    {
+      "q": "Permanent paralysis occurs if the spinal cord is compressed for longer than:",
+      "options": [
+        "1-2 hours",
+        "4-6 hours",
+        "12-24 hours",
+        "48-72 hours"
+      ],
+      "correct": 2,
+      "rationale": "If the spinal cord is compressed for 12-24 hours, the resulting paralysis is likely permanent due to irreversible neuronal death."
+    },
+    {
+      "q": "Spinal cord injury above T6 places the client at risk for which vital sign changes?",
+      "options": [
+        "Hypertension and tachycardia",
+        "Hypotension and bradycardia",
+        "Normal vital signs",
+        "Hyperthermia and tachypnea"
+      ],
+      "correct": 1,
+      "rationale": "Injuries above T6 disrupt the sympathetic nervous system outflow, leading to hypotension and bradycardia (neurogenic shock). This is also the level above which autonomic dysreflexia can occur."
+    },
+    {
+      "q": "What is the most common cause of death in spinal cord injury patients?",
+      "options": [
+        "Cardiac arrest",
+        "Pneumonia",
+        "Bladder infection/urinary complications",
+        "Pressure ulcers"
+      ],
+      "correct": 2,
+      "rationale": "Urinary tract infections are a leading cause of death in SCI patients due to bladder dysfunction and catheter use. Keeping urine acidic helps prevent bacterial growth."
+    },
+    {
+      "q": "A headache that is more severe upon wakening suggests:",
+      "options": [
+        "Tension headache",
+        "Migraine",
+        "Brain tumor",
+        "Sinusitis"
+      ],
+      "correct": 2,
+      "rationale": "A headache worse on awakening is a classic sign of a brain tumor. Lying flat during sleep increases ICP, worsening the headache. All brain tumors (benign and malignant) are removed if possible."
+    },
+    {
+      "q": "Vomiting that is NOT associated with nausea suggests:",
+      "options": [
+        "Food poisoning",
+        "Gastroenteritis",
+        "Brain tumor or increased ICP",
+        "Medication side effect"
+      ],
+      "correct": 2,
+      "rationale": "Projectile vomiting without preceding nausea is a classic sign of increased intracranial pressure, often from a brain tumor. This occurs because the vomiting center in the brainstem is directly stimulated."
+    },
+    {
+      "q": "What are the vital sign changes seen with elevated ICP?",
+      "options": [
+        "Decreased BP, increased pulse, decreased temperature",
+        "Increased BP, widened pulse pressure, increased temperature",
+        "Normal vital signs with headache only",
+        "Hypotension, tachycardia, hypothermia"
+      ],
+      "correct": 1,
+      "rationale": "Elevated ICP causes increased blood pressure, widened pulse pressure (Cushing's response), bradycardia, and increased temperature due to hypothalamic compression."
+    },
+    {
+      "q": "What is the classic tremor of Parkinson's disease?",
+      "options": [
+        "Intention tremor",
+        "Pill-rolling tremor at rest",
+        "Action tremor",
+        "Postural tremor"
+      ],
+      "correct": 1,
+      "rationale": "Parkinson's produces a resting pill-rolling tremor (thumb and forefinger rubbing together). Other hallmarks include rigidity, bradykinesia, and a stooped, shuffling gait."
+    },
+    {
+      "q": "What safety concern is the priority for a Parkinson's patient?",
+      "options": [
+        "Aspiration",
+        "Seizures",
+        "Falls",
+        "Skin breakdown"
+      ],
+      "correct": 2,
+      "rationale": "The shuffling gait, rigidity, postural instability, and stooped posture of Parkinson's place patients at high risk for falls. Fall precautions are the priority safety measure."
+    },
+    {
+      "q": "Where does MS weakness typically begin?",
+      "options": [
+        "Lower extremities",
+        "Upper extremities",
+        "Facial muscles",
+        "Trunk muscles"
+      ],
+      "correct": 1,
+      "rationale": "MS weakness characteristically starts in the upper extremities. Bowel and bladder are affected in 90% of patients. Diagnosis is confirmed by IG bands on electrophoresis of CSF."
+    },
+    {
+      "q": "What is the treatment for Multiple Sclerosis?",
+      "options": [
+        "Antibiotics and antivirals",
+        "Surgery to remove plaques",
+        "ACTH, corticosteroids, and immunosuppressants",
+        "Levodopa and Carbidopa"
+      ],
+      "correct": 2,
+      "rationale": "MS treatment includes ACTH, corticosteroids, Cytoxan, and other immunosuppressants to reduce the autoimmune attack on the myelin sheath. Disease-modifying therapies (interferons) help reduce relapse frequency."
+    },
+    {
+      "q": "What are the signs of increased ICP in infants with Hydrocephalus?",
+      "options": [
+        "Sunken fontanels, weak cry, decreased head circumference",
+        "Bulging fontanels, high-pitched cry, increased head circumference, sunset eyes",
+        "Flat fontanels, normal cry, seizures",
+        "Closed fontanels, bulging eyes, vomiting"
+      ],
+      "correct": 1,
+      "rationale": "Infants with hydrocephalus show bulging fontanels, high-pitched cry, rapidly increasing head circumference, sunset eyes (sclera visible above iris), wide suture lines, and lethargy."
+    },
+    {
+      "q": "How is hydrocephalus treated?",
+      "options": [
+        "Osmotic diuretics only",
+        "Ventriculoperitoneal (VP) shunt placement",
+        "Repeated lumbar punctures",
+        "Craniotomy"
+      ],
+      "correct": 1,
+      "rationale": "A VP shunt drains excess CSF from the ventricles to the peritoneal cavity. In infants, treat with a peritoneal shunt—do NOT pump the shunt."
+    },
+    {
+      "q": "What activities increase ICP and should be avoided?",
+      "options": [
+        "Deep breathing and relaxation",
+        "Suctioning, coughing, straining, and turning",
+        "Elevating the HOB",
+        "Administering Mannitol"
+      ],
+      "correct": 1,
+      "rationale": "Suctioning, coughing, straining (Valsalva), and turning can all increase intracranial pressure. Minimize suctioning time and avoid clustering these activities."
+    },
+    {
+      "q": "What medications are used to treat seizures?",
+      "options": [
+        "Antibiotics and steroids",
+        "Phenobarbital, Phenytoin (Dilantin), Valproic Acid (Depakene), Carbamazepine (Tegretol)",
+        "ACE inhibitors and beta blockers",
+        "Levodopa and Carbidopa"
+      ],
+      "correct": 1,
+      "rationale": "Anticonvulsants include Phenobarbital (Luminal), Phenytoin (Dilantin), Fosphenytoin (Cerebyx), Valproic Acid (Depakene), and Carbamazepine (Tegretol). Monitor therapeutic drug levels."
+    },
+    {
+      "q": "What is the therapeutic range for Dilantin (Phenytoin)?",
+      "options": [
+        "0.5-1.5 mEq/L",
+        "5-10 mcg/mL",
+        "10-20 mcg/mL",
+        "20-30 mcg/mL"
+      ],
+      "correct": 2,
+      "rationale": "The therapeutic range for Phenytoin (Dilantin) is 10-20 mcg/mL. Toxicity signs include nystagmus, ataxia, slurred speech, and confusion."
+    },
+    {
+      "q": "What does a lumbar puncture in bacterial meningitis reveal?",
+      "options": [
+        "Decreased WBC, decreased protein, increased glucose",
+        "Increased WBC, increased protein, increased ICP, decreased glucose",
+        "Normal CSF findings",
+        "Bloody CSF only"
+      ],
+      "correct": 1,
+      "rationale": "Bacterial meningitis LP findings: cloudy CSF, elevated WBCs (neutrophils), elevated protein, elevated ICP, and decreased glucose (bacteria consume glucose)."
+    },
+    {
+      "q": "What complication can develop after meningitis due to excessive ADH secretion?",
+      "options": [
+        "Diabetes Insipidus",
+        "SIADH (Syndrome of Inappropriate ADH)",
+        "Addison's Disease",
+        "Cushing's Syndrome"
+      ],
+      "correct": 1,
+      "rationale": "Meningitis can lead to SIADH (too much ADH), causing water retention, fluid overload, and dilutional hyponatremia. Monitor I&O, daily weights, and sodium levels."
+    },
+    {
+      "q": "What is the correct post-operative positioning for a Supratentorial craniotomy?",
+      "options": [
+        "Flat in bed",
+        "HOB 30-45 degrees (Semi-Fowler's)",
+        "Prone",
+        "Trendelenburg"
+      ],
+      "correct": 1,
+      "rationale": "Supratentorial (above the tentorium) surgery: HOB elevated 30-45 degrees to promote venous drainage and reduce ICP."
+    },
+    {
+      "q": "What is the correct post-operative positioning for an Infratentorial craniotomy?",
+      "options": [
+        "HOB 30-45 degrees",
+        "Flat in bed",
+        "High Fowler's",
+        "Reverse Trendelenburg"
+      ],
+      "correct": 1,
+      "rationale": "Infratentorial (below the tentorium/posterior fossa) surgery: keep the client FLAT to prevent pressure on the brainstem and surgical site."
+    },
+    {
+      "q": "After a large brain tumor resection, on which side should the client be positioned?",
+      "options": [
+        "Operative side",
+        "Non-operative side",
+        "Supine only",
+        "Prone"
+      ],
+      "correct": 1,
+      "rationale": "Position on the non-operative side to prevent pressure on the surgical area and allow for drainage. Avoid positioning on the operative side."
+    },
+    {
+      "q": "What characterizes Guillain-Barré Syndrome?",
+      "options": [
+        "Descending paralysis starting in the arms",
+        "Ascending weakness/paralysis progressing from legs upward",
+        "Unilateral facial paralysis",
+        "Intermittent muscle spasms"
+      ],
+      "correct": 1,
+      "rationale": "Guillain-Barré Syndrome is an ascending demyelinating polyneuropathy. Weakness progresses from the legs upward and can lead to respiratory arrest when it reaches the diaphragm."
+    },
+    {
+      "q": "What is the greatest danger in Guillain-Barré Syndrome?",
+      "options": [
+        "Permanent cognitive impairment",
+        "Cardiac arrest",
+        "Respiratory failure",
+        "Renal failure"
+      ],
+      "correct": 2,
+      "rationale": "As the ascending paralysis reaches the respiratory muscles and diaphragm, respiratory failure can occur. Monitor respiratory function (vital capacity) closely and prepare for mechanical ventilation."
+    },
+    {
+      "q": "What is the primary concern with head trauma and seizures?",
+      "options": [
+        "Preventing further seizures with medications",
+        "Maintaining the airway",
+        "Obtaining a CT scan",
+        "Starting IV antibiotics"
+      ],
+      "correct": 1,
+      "rationale": "Maintaining the airway is always the primary concern with head trauma and seizures. ABCs first—turn head to side (if no spinal injury), do not restrain, and protect from injury."
+    },
+    {
+      "q": "How do the vital sign changes of shock differ from those of increased ICP?",
+      "options": [
+        "They are identical",
+        "Shock = increased pulse, decreased BP; ICP = decreased pulse, increased BP",
+        "Shock = decreased pulse; ICP = increased pulse",
+        "There is no difference in vital signs"
+      ],
+      "correct": 1,
+      "rationale": "Shock and increased ICP produce opposite vital sign patterns. Shock: tachycardia with hypotension. Increased ICP: bradycardia with hypertension (Cushing's response). Altered LOC is the most sensitive sign of ICP."
+    },
+    {
+      "q": "What is the Tensilon test result in a Myasthenic Crisis vs. a Cholinergic Crisis?",
+      "options": [
+        "Positive (improved) in both",
+        "Positive (improved) in Myasthenic crisis; Negative (no improvement or worse) in Cholinergic crisis",
+        "Negative in both",
+        "Positive in Cholinergic crisis; Negative in Myasthenic crisis"
+      ],
+      "correct": 1,
+      "rationale": "Tensilon (Edrophonium) is a short-acting anticholinesterase. In Myasthenic crisis (under-medicated), it temporarily improves strength. In Cholinergic crisis (over-medicated), it worsens symptoms or shows no improvement."
+    },
+    {
+      "q": "What is the priority nursing action for Autonomic Dysreflexia?",
+      "options": [
+        "Administer antihypertensives and lay the client flat",
+        "Sit the client upright and identify/remove the noxious stimulus",
+        "Administer pain medication",
+        "Apply cold compresses"
+      ],
+      "correct": 1,
+      "rationale": "Autonomic Dysreflexia is a hypertensive emergency. Sit the client upright to lower BP via orthostatic effect, then check for and remove the trigger—usually a full bladder (straight cath) or fecal impaction."
+    },
+    {
+      "q": "What is Brudzinski's sign?",
+      "options": [
+        "Pain when the knee is extended from a flexed hip",
+        "Involuntary flexion of hips and knees when the neck is flexed",
+        "Fanning of toes when the sole is stroked",
+        "Facial spasm when tapping the facial nerve"
+      ],
+      "correct": 1,
+      "rationale": "Brudzinski's sign: passive neck flexion causes involuntary flexion of the hips and knees. This is a sign of meningeal irritation. Kernig's sign involves pain with leg extension."
+    },
+    {
+      "q": "What is the postictal state?",
+      "options": [
+        "The aura phase before a seizure",
+        "The active seizure phase",
+        "The recovery period after a seizure characterized by confusion and drowsiness",
+        "Status epilepticus"
+      ],
+      "correct": 2,
+      "rationale": "The postictal state follows a seizure. The client may experience confusion, drowsiness, headache, and amnesia about the event. Allow rest and maintain safety."
+    },
+    {
+      "q": "What is Status Epilepticus?",
+      "options": [
+        "A single seizure lasting less than 5 minutes",
+        "Continuous seizure activity lasting >5 minutes or repeated seizures without regaining consciousness",
+        "A seizure followed by a headache",
+        "An absence seizure"
+      ],
+      "correct": 1,
+      "rationale": "Status epilepticus is a medical emergency. Prolonged seizure activity can cause hypoxia, brain damage, and death. First-line treatment is IV benzodiazepines (Lorazepam/Diazepam)."
+    },
+    {
+      "q": "What is the first-line medication for Status Epilepticus?",
+      "options": [
+        "Phenytoin (Dilantin)",
+        "Phenobarbital",
+        "Lorazepam (Ativan) or Diazepam (Valium)",
+        "Carbamazepine (Tegretol)"
+      ],
+      "correct": 2,
+      "rationale": "IV benzodiazepines (Lorazepam or Diazepam) are first-line for status epilepticus because they act rapidly to stop seizure activity. Phenytoin or Fosphenytoin may follow for maintenance."
+    },
+    {
+      "q": "What pupil changes indicate increasing ICP with herniation?",
+      "options": [
+        "Bilateral miosis (constriction)",
+        "Unilateral fixed, dilated pupil on the same side as the lesion",
+        "Bilateral pinpoint pupils",
+        "Rapid pupil alternation"
+      ],
+      "correct": 1,
+      "rationale": "A unilateral fixed, dilated ('blown') pupil on the ipsilateral (same) side as the lesion indicates CN III compression from uncal herniation. This is a neurosurgical emergency."
+    },
+    {
+      "q": "What does opiate overdose do to the pupils?",
+      "options": [
+        "Dilated pupils",
+        "Unequal pupils",
+        "Pinpoint (constricted) pupils",
+        "No change"
+      ],
+      "correct": 2,
+      "rationale": "Opiate/opioid overdose causes pinpoint pupils (miosis), respiratory depression, and decreased LOC. The antidote is Naloxone (Narcan)."
+    },
+    {
+      "q": "What is the antidote for opioid overdose?",
+      "options": [
+        "Flumazenil",
+        "Atropine",
+        "Naloxone (Narcan)",
+        "Protamine sulfate"
+      ],
+      "correct": 2,
+      "rationale": "Naloxone (Narcan) is an opioid antagonist that reverses respiratory depression, sedation, and miosis caused by opioids (heroin, morphine, etc.)."
+    },
+    {
+      "q": "What are the three components assessed in the Glasgow Coma Scale?",
+      "options": [
+        "Airway, Breathing, Circulation",
+        "Eye opening, Verbal response, Motor response",
+        "Pupils, Reflexes, Vital signs",
+        "Orientation, Memory, Judgment"
+      ],
+      "correct": 1,
+      "rationale": "GCS assesses: Eye opening (1-4), Verbal response (1-5), and Motor response (1-6). Maximum score is 15 (fully alert); minimum is 3 (deep coma)."
+    },
+    {
+      "q": "What type of seizure involves loss of consciousness with tonic-clonic activity?",
+      "options": [
+        "Absence (petit mal)",
+        "Generalized tonic-clonic (grand mal)",
+        "Simple partial",
+        "Complex partial"
+      ],
+      "correct": 1,
+      "rationale": "Generalized tonic-clonic (grand mal) seizures involve loss of consciousness, a tonic phase (body stiffening), and a clonic phase (rhythmic jerking), followed by a postictal period."
+    },
+    {
+      "q": "What type of seizure is characterized by brief staring spells in children?",
+      "options": [
+        "Tonic-clonic",
+        "Myoclonic",
+        "Absence (petit mal)",
+        "Atonic"
+      ],
+      "correct": 2,
+      "rationale": "Absence (petit mal) seizures present as brief (5-30 seconds) staring episodes, sometimes with eye blinking. Common in children. Often mistaken for daydreaming."
+    },
+    {
+      "q": "During a seizure, what should the nurse document?",
+      "options": [
+        "Only the duration",
+        "Time of onset, duration, type of movements, body parts involved, LOC, postictal state",
+        "Only whether the patient was injured",
+        "Only medications administered"
+      ],
+      "correct": 1,
+      "rationale": "Complete seizure documentation includes: time of onset, duration, type and progression of movements, body parts involved, incontinence, LOC, aura, postictal behavior, and any injuries."
+    },
+    {
+      "q": "What nursing action should be done AFTER a seizure?",
+      "options": [
+        "Restrain the patient",
+        "Turn to the side, check vitals, maintain airway, allow rest",
+        "Force oral fluids immediately",
+        "Perform a lumbar puncture"
+      ],
+      "correct": 1,
+      "rationale": "After a seizure: turn to side to prevent aspiration, check vital signs, maintain a patent airway, suction if needed, allow rest in the postictal period, and document the event."
+    },
+    {
+      "q": "A stroke affecting the left middle cerebral artery would cause weakness on which side?",
+      "options": [
+        "Left side (ipsilateral)",
+        "Right side (contralateral)",
+        "Both sides equally",
+        "No motor deficits"
+      ],
+      "correct": 1,
+      "rationale": "Motor pathways cross at the medulla (decussation). A left-sided brain lesion causes right-sided weakness/paralysis (contralateral deficits)."
+    },
+    {
+      "q": "What is the window for tPA (tissue plasminogen activator) administration in ischemic stroke?",
+      "options": [
+        "Within 30 minutes",
+        "Within 3-4.5 hours of symptom onset",
+        "Within 12 hours",
+        "Within 24 hours"
+      ],
+      "correct": 1,
+      "rationale": "tPA must be given within 3-4.5 hours of symptom onset for ischemic stroke. It is contraindicated in hemorrhagic stroke. CT scan must first rule out bleeding."
+    },
+    {
+      "q": "Why must a CT scan be done before giving tPA for a stroke?",
+      "options": [
+        "To determine the size of the stroke",
+        "To rule out hemorrhagic stroke, which is a contraindication",
+        "To check for brain tumors",
+        "To verify patient identity"
+      ],
+      "correct": 1,
+      "rationale": "tPA dissolves clots but would worsen bleeding in a hemorrhagic stroke. A non-contrast CT must first confirm the stroke is ischemic (no bleeding) before tPA can be administered."
+    },
+    {
+      "q": "What is the acronym for rapid stroke assessment?",
+      "options": [
+        "ABCDE",
+        "FAST (Face, Arms, Speech, Time)",
+        "MONA",
+        "RACE"
+      ],
+      "correct": 1,
+      "rationale": "FAST: Face drooping, Arm weakness, Speech difficulty, Time to call 911. Early recognition and treatment are critical because 'time is brain.'"
+    },
+    {
+      "q": "What should the nurse assess in a patient with a head injury who has clear fluid draining from the nose?",
+      "options": [
+        "Blow the nose to test for bleeding",
+        "Test the fluid for glucose (CSF contains glucose)",
+        "Pack the nose with gauze",
+        "Suction the drainage"
+      ],
+      "correct": 1,
+      "rationale": "Clear drainage from the nose after head injury may be CSF (rhinorrhea). Test with a halo/ring sign on gauze or test for glucose. CSF contains glucose; nasal mucus does not. Never pack the nose or suction—this could worsen the leak."
+    },
+    {
+      "q": "What is a concussion?",
+      "options": [
+        "A skull fracture with brain laceration",
+        "A mild traumatic brain injury with temporary neurological dysfunction",
+        "Bleeding between the skull and dura",
+        "A blood clot in the brain"
+      ],
+      "correct": 1,
+      "rationale": "A concussion is a mild TBI caused by a blow to the head that temporarily disrupts brain function. Symptoms include headache, confusion, dizziness, and amnesia. Most resolve within days to weeks."
+    },
+    {
+      "q": "What is an epidural hematoma?",
+      "options": [
+        "Bleeding between the skull and dura mater, usually from the middle meningeal artery",
+        "Bleeding between the dura and arachnoid",
+        "Bleeding within the brain parenchyma",
+        "Bleeding in the subarachnoid space"
+      ],
+      "correct": 0,
+      "rationale": "Epidural hematoma is arterial bleeding (middle meningeal artery) between the skull and dura. Classic presentation: brief loss of consciousness, lucid interval, then rapid deterioration. This is a surgical emergency."
+    },
+    {
+      "q": "What is the classic presentation of an epidural hematoma?",
+      "options": [
+        "Gradual onset headache over weeks",
+        "Loss of consciousness, brief lucid interval, then rapid deterioration",
+        "Slowly progressive dementia",
+        "Intermittent seizures without other symptoms"
+      ],
+      "correct": 1,
+      "rationale": "The 'talk and die' pattern: initial LOC from impact, brief lucid interval (patient appears normal), then rapid decline as the arterial bleed expands and herniates the brain. Emergency craniotomy is needed."
+    },
+    {
+      "q": "What is a subdural hematoma?",
+      "options": [
+        "Arterial bleeding above the dura",
+        "Venous bleeding between the dura and arachnoid mater",
+        "Bleeding within the ventricles",
+        "Subarachnoid hemorrhage"
+      ],
+      "correct": 1,
+      "rationale": "Subdural hematoma is venous bleeding between the dura and arachnoid. It develops more slowly than epidural (hours to weeks). Common in elderly and alcoholics due to brain atrophy and fragile bridging veins."
+    },
+    {
+      "q": "What cranial nerve is assessed by checking the gag reflex?",
+      "options": [
+        "CN V (Trigeminal)",
+        "CN VII (Facial)",
+        "CN IX (Glossopharyngeal) and CN X (Vagus)",
+        "CN XII (Hypoglossal)"
+      ],
+      "correct": 2,
+      "rationale": "The gag reflex tests both CN IX (sensory component) and CN X (motor component). An absent gag reflex indicates risk for aspiration."
+    },
+    {
+      "q": "What cranial nerve controls pupil constriction and eye movement?",
+      "options": [
+        "CN II (Optic)",
+        "CN III (Oculomotor)",
+        "CN IV (Trochlear)",
+        "CN VII (Facial)"
+      ],
+      "correct": 1,
+      "rationale": "CN III (Oculomotor) controls pupil constriction (parasympathetic fibers), eyelid elevation, and most eye movements. A 'blown pupil' (fixed/dilated) indicates CN III compression."
+    },
+    {
+      "q": "What is the difference between receptive and expressive aphasia?",
+      "options": [
+        "There is no difference",
+        "Receptive (Wernicke's) = cannot understand language; Expressive (Broca's) = cannot produce language",
+        "Receptive = cannot speak; Expressive = cannot understand",
+        "Both involve inability to write"
+      ],
+      "correct": 1,
+      "rationale": "Receptive/Wernicke's aphasia: fluent but nonsensical speech, cannot comprehend spoken/written words. Expressive/Broca's aphasia: knows what they want to say but cannot form the words. Global aphasia = both."
+    },
+    {
+      "q": "What is the priority for a patient during Autonomic Dysreflexia if the trigger cannot be found?",
+      "options": [
+        "Continue to search for the trigger",
+        "Administer antihypertensive medication",
+        "Lay the patient flat",
+        "Apply warm compresses"
+      ],
+      "correct": 1,
+      "rationale": "If the BP remains dangerously elevated and the noxious stimulus cannot be quickly identified and removed, administer prescribed antihypertensives (e.g., Nitropaste, Hydralazine) to prevent stroke."
+    },
+    {
+      "q": "What is the inheritance pattern of Huntington's Disease?",
+      "options": [
+        "Autosomal recessive",
+        "Autosomal dominant",
+        "X-linked recessive",
+        "X-linked dominant"
+      ],
+      "correct": 1,
+      "rationale": "Huntington's Disease is autosomal dominant, meaning a 50% chance of inheritance if one parent has the disease. Symptoms typically appear in the 30s-40s with chorea, cognitive decline, and psychiatric symptoms."
+    },
+    {
+      "q": "What is the Babinski reflex and when is it abnormal?",
+      "options": [
+        "Toe fanning when sole is stroked; abnormal in adults (indicates upper motor neuron lesion)",
+        "Knee jerk response; always abnormal",
+        "Pupil constriction; abnormal in children",
+        "Gag reflex; abnormal in infants"
+      ],
+      "correct": 0,
+      "rationale": "A positive Babinski sign (great toe dorsiflexion with fanning of other toes when the sole is stroked) is normal in infants up to 18 months. In adults, it indicates an upper motor neuron lesion."
+    },
+    {
+      "q": "What does a positive Romberg test indicate?",
+      "options": [
+        "Meningeal irritation",
+        "Cerebellar dysfunction or vestibular problems (loss of balance with eyes closed)",
+        "Increased ICP",
+        "Peripheral neuropathy only"
+      ],
+      "correct": 1,
+      "rationale": "A positive Romberg test (patient sways or falls when standing with eyes closed and feet together) indicates cerebellar or vestibular dysfunction affecting proprioception and balance."
+    },
+    {
+      "q": "What is the priority assessment after a lumbar puncture?",
+      "options": [
+        "Blood glucose level",
+        "Headache, neurological status, and the puncture site for CSF leak",
+        "Lung sounds",
+        "Bowel sounds"
+      ],
+      "correct": 1,
+      "rationale": "Post-LP: keep the client flat for 4-8 hours to prevent spinal headache (from CSF leak), encourage fluids, monitor the puncture site for drainage, and perform neurological checks."
+    },
+    {
+      "q": "What is trigeminal neuralgia (Tic Douloureux)?",
+      "options": [
+        "Chronic headache disorder",
+        "Sudden, severe, stabbing facial pain along CN V distribution",
+        "Facial paralysis",
+        "Involuntary facial movements"
+      ],
+      "correct": 1,
+      "rationale": "Trigeminal neuralgia causes sudden, excruciating, lightning-bolt facial pain along CN V (Trigeminal nerve). Triggers include chewing, talking, cold air, or touching the face. Treatment includes Carbamazepine (Tegretol)."
+    },
+    {
+      "q": "What medication is commonly used for trigeminal neuralgia?",
+      "options": [
+        "Levodopa",
+        "Carbamazepine (Tegretol)",
+        "Morphine",
+        "Mannitol"
+      ],
+      "correct": 1,
+      "rationale": "Carbamazepine (Tegretol) is the first-line medication for trigeminal neuralgia. It reduces the transmission of nerve impulses. Monitor for bone marrow suppression (CBC)."
+    },
+    {
+      "q": "What is the triad of symptoms in Normal Pressure Hydrocephalus?",
+      "options": [
+        "Headache, vomiting, papilledema",
+        "Dementia, gait disturbance, urinary incontinence",
+        "Fever, nuchal rigidity, altered LOC",
+        "Tremor, rigidity, bradykinesia"
+      ],
+      "correct": 1,
+      "rationale": "Normal Pressure Hydrocephalus (NPH) presents with the classic triad: 'Wet (incontinence), Wacky (dementia), and Wobbly (gait disturbance).' It is one of the treatable causes of dementia via VP shunt placement."
+    },
+    {
+      "q": "What is the most important nursing intervention for a patient with a spinal cord injury in the acute phase?",
+      "options": [
+        "Skin assessment",
+        "Immobilization and respiratory monitoring",
+        "Nutritional support",
+        "Pain management"
+      ],
+      "correct": 1,
+      "rationale": "Spinal immobilization prevents further injury, and respiratory monitoring is critical since cervical injuries (C3-C5) can impair diaphragmatic function. Respiratory status is paramount in SCI."
+    },
+    {
+      "q": "What is the purpose of Halo traction for a cervical spine injury?",
+      "options": [
+        "To reduce ICP",
+        "To immobilize the cervical spine while allowing mobility",
+        "To relieve spinal cord compression",
+        "To deliver medication to the spine"
+      ],
+      "correct": 1,
+      "rationale": "A Halo vest provides rigid cervical immobilization while allowing the patient to be mobile and participate in rehabilitation. Pin sites must be monitored for infection."
     }
   ]
 }
