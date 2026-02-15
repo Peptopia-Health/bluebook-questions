@@ -1,7 +1,7 @@
 {
   "section": "resp",
   "title": "Respiratory System",
-  "questionCount": 29,
+  "questionCount": 100,
   "questions": [
     {
       "q": "What is the maximum O2 flow for a COPD patient?",
@@ -321,6 +321,787 @@
       ],
       "correct": 2,
       "rationale": "Stridor is a high-pitched upper airway sound indicating obstruction/swelling."
+    },
+    {
+      "q": "What is the normal respiratory rate for an adult?",
+      "options": [
+        "8-12 breaths/min",
+        "12-20 breaths/min",
+        "20-30 breaths/min",
+        "30-40 breaths/min"
+      ],
+      "correct": 1,
+      "rationale": "Normal adult respiratory rate is 12-20 breaths per minute. Below 12 is bradypnea; above 20 is tachypnea."
+    },
+    {
+      "q": "What is the normal SpO2 range?",
+      "options": [
+        "80-85%",
+        "85-90%",
+        "90-94%",
+        "95-100%"
+      ],
+      "correct": 3,
+      "rationale": "Normal oxygen saturation is 95-100%. Below 90% indicates hypoxemia and requires intervention."
+    },
+    {
+      "q": "What is the normal PaO2 range on an ABG?",
+      "options": [
+        "35-45 mmHg",
+        "60-70 mmHg",
+        "80-100 mmHg",
+        "100-120 mmHg"
+      ],
+      "correct": 2,
+      "rationale": "Normal PaO2 is 80-100 mmHg. Below 60 mmHg is critical hypoxemia requiring immediate oxygen therapy."
+    },
+    {
+      "q": "What is the normal PaCO2 range on an ABG?",
+      "options": [
+        "22-26 mEq/L",
+        "35-45 mmHg",
+        "55-65 mmHg",
+        "7.35-7.45"
+      ],
+      "correct": 1,
+      "rationale": "Normal PaCO2 is 35-45 mmHg. Below 35 = respiratory alkalosis (hyperventilating). Above 45 = respiratory acidosis (hypoventilating)."
+    },
+    {
+      "q": "What is the normal arterial blood pH range?",
+      "options": [
+        "7.25-7.35",
+        "7.35-7.45",
+        "7.45-7.55",
+        "7.50-7.60"
+      ],
+      "correct": 1,
+      "rationale": "Normal pH is 7.35-7.45. Below 7.35 is acidosis; above 7.45 is alkalosis. Below 6.8 or above 7.8 is incompatible with life."
+    },
+    {
+      "q": "A pH of 7.30, PaCO2 of 55, HCO3 of 24 indicates:",
+      "options": [
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Respiratory acidosis",
+        "Metabolic alkalosis"
+      ],
+      "correct": 2,
+      "rationale": "pH is low (acidosis), CO2 is high (respiratory cause), and HCO3 is normal (no compensation yet). This is uncompensated respiratory acidosis."
+    },
+    {
+      "q": "A pH of 7.50, PaCO2 of 28, HCO3 of 24 indicates:",
+      "options": [
+        "Respiratory alkalosis",
+        "Metabolic alkalosis",
+        "Respiratory acidosis",
+        "Metabolic acidosis"
+      ],
+      "correct": 0,
+      "rationale": "pH is high (alkalosis), CO2 is low (respiratory cause from hyperventilation), HCO3 is normal. This is uncompensated respiratory alkalosis."
+    },
+    {
+      "q": "Which condition is most likely to cause metabolic acidosis?",
+      "options": [
+        "Vomiting",
+        "Diabetic ketoacidosis (DKA)",
+        "Hyperventilation",
+        "Nasogastric suctioning"
+      ],
+      "correct": 1,
+      "rationale": "DKA produces ketone acids that consume bicarbonate, causing metabolic acidosis. Remember MUDPILES: Methanol, Uremia, DKA, Propylene glycol, INH/Iron, Lactic acidosis, Ethylene glycol, Salicylates."
+    },
+    {
+      "q": "Which condition is most likely to cause metabolic alkalosis?",
+      "options": [
+        "Renal failure",
+        "Diarrhea",
+        "DKA",
+        "Prolonged vomiting or NG suctioning"
+      ],
+      "correct": 3,
+      "rationale": "Vomiting and NG suctioning remove hydrochloric acid (HCl) from the stomach, leaving excess bicarbonate in the blood."
+    },
+    {
+      "q": "How does the body compensate for respiratory acidosis?",
+      "options": [
+        "Kidneys retain bicarbonate (HCO3)",
+        "Lungs blow off more CO2",
+        "Kidneys excrete bicarbonate",
+        "Heart rate increases"
+      ],
+      "correct": 0,
+      "rationale": "When the lungs cannot blow off CO2, the kidneys compensate by retaining HCO3 to buffer the acid. This takes 24-48 hours (slow compensation)."
+    },
+    {
+      "q": "How does the body compensate for metabolic acidosis?",
+      "options": [
+        "Kidneys retain HCO3",
+        "Lungs hyperventilate to blow off CO2 (Kussmaul respirations)",
+        "Lungs hypoventilate to retain CO2",
+        "Kidneys excrete HCO3"
+      ],
+      "correct": 1,
+      "rationale": "The lungs compensate quickly by increasing rate and depth of breathing (Kussmaul respirations) to exhale excess CO2 and raise pH."
+    },
+    {
+      "q": "What type of oxygen delivery device provides the most precise FiO2?",
+      "options": [
+        "Nasal cannula",
+        "Simple face mask",
+        "Venturi mask",
+        "Non-rebreather mask"
+      ],
+      "correct": 2,
+      "rationale": "The Venturi mask uses color-coded adapters to deliver exact FiO2 concentrations (24-60%), making it ideal for COPD patients who need precise low-flow oxygen."
+    },
+    {
+      "q": "What FiO2 does a nasal cannula deliver at 2 L/min?",
+      "options": [
+        "21%",
+        "24-28%",
+        "40%",
+        "60%"
+      ],
+      "correct": 1,
+      "rationale": "A nasal cannula delivers approximately 4% additional FiO2 per liter. At 2 L/min: 21% (room air) + 8% = approximately 28%. Range at 1-6 L is 24-44%."
+    },
+    {
+      "q": "What is the maximum flow rate for a nasal cannula?",
+      "options": [
+        "2 L/min",
+        "4 L/min",
+        "6 L/min",
+        "10 L/min"
+      ],
+      "correct": 2,
+      "rationale": "Nasal cannula should not exceed 6 L/min. Higher flows dry and irritate the nasal mucosa without significantly increasing FiO2."
+    },
+    {
+      "q": "What FiO2 does a non-rebreather mask deliver?",
+      "options": [
+        "24-44%",
+        "40-60%",
+        "60-80%",
+        "80-95%"
+      ],
+      "correct": 3,
+      "rationale": "A non-rebreather mask with a reservoir bag at 10-15 L/min delivers the highest FiO2 (80-95%) of any non-invasive device. The bag must remain inflated."
+    },
+    {
+      "q": "What is the priority nursing action if a chest tube becomes disconnected from the drainage system?",
+      "options": [
+        "Clamp the tube immediately",
+        "Place the end of the tube in sterile water",
+        "Notify the provider first",
+        "Reconnect to the same drainage system"
+      ],
+      "correct": 1,
+      "rationale": "Submerging the tube in sterile water creates an emergency water seal to prevent air from entering the pleural space and causing a tension pneumothorax."
+    },
+    {
+      "q": "What does tidaling in the water seal chamber of a chest tube indicate?",
+      "options": [
+        "Air leak",
+        "Normal functioning",
+        "Tube obstruction",
+        "Excessive drainage"
+      ],
+      "correct": 1,
+      "rationale": "Tidaling (water level rising and falling with respirations) indicates the system is patent and functioning normally. Absence of tidaling may indicate obstruction or full lung re-expansion."
+    },
+    {
+      "q": "Should you clamp a chest tube during transport?",
+      "options": [
+        "Yes, always",
+        "Only if there is an air leak",
+        "No, never clamp unless ordered by the provider",
+        "Only for pneumothorax"
+      ],
+      "correct": 2,
+      "rationale": "Clamping a chest tube can cause a life-threatening tension pneumothorax. Keep the drainage system below chest level and never clamp unless specifically ordered."
+    },
+    {
+      "q": "What position is best for a client after a thoracentesis?",
+      "options": [
+        "Prone",
+        "On the unaffected side",
+        "On the affected side",
+        "Supine"
+      ],
+      "correct": 2,
+      "rationale": "Lying on the affected side allows the puncture site to seal and prevents air leakage. Monitor for pneumothorax (absent breath sounds, dyspnea)."
+    },
+    {
+      "q": "What is the hallmark sign of a tension pneumothorax?",
+      "options": [
+        "Bilateral wheezing",
+        "Tracheal deviation toward the affected side",
+        "Tracheal deviation away from the affected side",
+        "Productive cough"
+      ],
+      "correct": 2,
+      "rationale": "In tension pneumothorax, trapped air pushes the mediastinum and trachea AWAY from the affected side. This is a medical emergency requiring immediate needle decompression."
+    },
+    {
+      "q": "What breath sounds are heard with a pneumothorax?",
+      "options": [
+        "Crackles bilaterally",
+        "Wheezing",
+        "Absent or diminished on the affected side",
+        "Rhonchi"
+      ],
+      "correct": 2,
+      "rationale": "Air in the pleural space prevents lung expansion, resulting in absent or diminished breath sounds on the affected side."
+    },
+    {
+      "q": "What is the difference between a simple pneumothorax and a tension pneumothorax?",
+      "options": [
+        "There is no difference",
+        "Tension pneumothorax has a mediastinal shift and hemodynamic compromise",
+        "Simple pneumothorax is always bilateral",
+        "Tension pneumothorax only occurs with trauma"
+      ],
+      "correct": 1,
+      "rationale": "A simple pneumothorax involves air in the pleural space without pressure buildup. Tension pneumothorax involves progressive air accumulation that shifts the mediastinum, compressing the heart and great vessels."
+    },
+    {
+      "q": "What is the classic presentation of asthma?",
+      "options": [
+        "Inspiratory stridor and drooling",
+        "Productive cough with green sputum",
+        "Wheezing, dyspnea, and chest tightness",
+        "Hemoptysis and weight loss"
+      ],
+      "correct": 2,
+      "rationale": "Asthma causes bronchoconstriction, inflammation, and excess mucus production, leading to the triad of wheezing, dyspnea, and chest tightness."
+    },
+    {
+      "q": "What type of medication is Albuterol?",
+      "options": [
+        "Inhaled corticosteroid",
+        "Short-acting beta-2 agonist (SABA) bronchodilator",
+        "Leukotriene modifier",
+        "Mast cell stabilizer"
+      ],
+      "correct": 1,
+      "rationale": "Albuterol is a rescue inhaler (SABA) that rapidly relaxes bronchial smooth muscle. It is used for acute bronchospasm, not maintenance therapy."
+    },
+    {
+      "q": "What common side effects should the nurse teach about Albuterol?",
+      "options": [
+        "Bradycardia and hypotension",
+        "Tachycardia, tremors, and nervousness",
+        "Drowsiness and weight gain",
+        "Oral thrush and hoarseness"
+      ],
+      "correct": 1,
+      "rationale": "Beta-2 agonists stimulate the sympathetic nervous system, causing tachycardia, tremors, and jitteriness."
+    },
+    {
+      "q": "What should the patient do after using an inhaled corticosteroid?",
+      "options": [
+        "Hold breath for 30 seconds",
+        "Take a bronchodilator immediately after",
+        "Rinse the mouth with water and spit",
+        "Lie down for 10 minutes"
+      ],
+      "correct": 2,
+      "rationale": "Rinsing the mouth prevents oral candidiasis (thrush), a common side effect of inhaled corticosteroids like Fluticasone."
+    },
+    {
+      "q": "What type of breath sound indicates fluid or secretions in the airway?",
+      "options": [
+        "Wheezing",
+        "Stridor",
+        "Crackles (rales)",
+        "Pleural friction rub"
+      ],
+      "correct": 2,
+      "rationale": "Crackles are caused by air passing through fluid in the small airways or alveoli. Fine crackles suggest heart failure or pneumonia; coarse crackles suggest thick secretions."
+    },
+    {
+      "q": "Wheezing on auscultation indicates:",
+      "options": [
+        "Fluid in the alveoli",
+        "Airway narrowing or bronchoconstriction",
+        "Pleural inflammation",
+        "Upper airway obstruction"
+      ],
+      "correct": 1,
+      "rationale": "Wheezing is a high-pitched musical sound caused by air forced through narrowed airways due to bronchoconstriction, mucus, or edema."
+    },
+    {
+      "q": "What is the difference between Croup and Epiglottitis?",
+      "options": [
+        "Croup is bacterial; Epiglottitis is viral",
+        "Croup has a barky cough and gradual onset; Epiglottitis has drooling and rapid onset",
+        "They present identically",
+        "Croup requires intubation; Epiglottitis does not"
+      ],
+      "correct": 1,
+      "rationale": "Croup (viral) has a gradual onset with a seal-bark cough and stridor. Epiglottitis (bacterial, H. influenzae) has rapid onset with high fever, drooling, dysphagia, and tripod positioning."
+    },
+    {
+      "q": "What is the preferred position for a child with epiglottitis?",
+      "options": [
+        "Supine",
+        "Prone",
+        "Upright, leaning forward (tripod position)",
+        "Side-lying"
+      ],
+      "correct": 2,
+      "rationale": "The tripod position (sitting upright, leaning forward with chin thrust out) maximizes airway opening. Never force the child to lie down."
+    },
+    {
+      "q": "What is the nurse's priority for a client with a laryngectomy?",
+      "options": [
+        "Pain management",
+        "Airway management and communication",
+        "Nutrition assessment",
+        "Psychosocial support"
+      ],
+      "correct": 1,
+      "rationale": "After laryngectomy, the patient breathes through a permanent stoma. Airway patency is the #1 priority, followed by establishing alternative communication methods."
+    },
+    {
+      "q": "What is the most important teaching for a client with a permanent tracheostomy?",
+      "options": [
+        "Avoid all physical activity",
+        "Cover the stoma when showering and avoid swimming",
+        "Remove the tube daily for cleaning",
+        "Only breathe through the nose"
+      ],
+      "correct": 1,
+      "rationale": "Water entering the stoma goes directly into the lungs. The client must cover the stoma during bathing and never swim."
+    },
+    {
+      "q": "What is atelectasis?",
+      "options": [
+        "Infection of the lung tissue",
+        "Collapse of alveoli or a lung segment",
+        "Fluid in the pleural space",
+        "Air in the pleural space"
+      ],
+      "correct": 1,
+      "rationale": "Atelectasis is the collapse of alveoli, often post-operatively due to shallow breathing, mucus plugs, or lack of surfactant. Prevention includes incentive spirometry and early ambulation."
+    },
+    {
+      "q": "What is the best intervention to prevent post-operative atelectasis?",
+      "options": [
+        "Bed rest",
+        "Oxygen via nasal cannula",
+        "Incentive spirometry and early ambulation",
+        "IV fluids"
+      ],
+      "correct": 2,
+      "rationale": "Incentive spirometry promotes deep breathing and reopens collapsed alveoli. Early ambulation improves ventilation and prevents stasis."
+    },
+    {
+      "q": "How should the nurse instruct the patient to use an incentive spirometer?",
+      "options": [
+        "Exhale forcefully into the device",
+        "Inhale slowly and deeply, hold for 3-5 seconds, then exhale",
+        "Breathe rapidly in and out 10 times",
+        "Use it only when feeling short of breath"
+      ],
+      "correct": 1,
+      "rationale": "Slow deep inhalation followed by a 3-5 second hold maximizes alveolar inflation and prevents atelectasis. Use 10 times per hour while awake."
+    },
+    {
+      "q": "What is a pleural effusion?",
+      "options": [
+        "Air in the pleural space",
+        "Blood in the pleural space",
+        "Excess fluid in the pleural space",
+        "Pus in the pleural space"
+      ],
+      "correct": 2,
+      "rationale": "Pleural effusion is the accumulation of excess fluid between the visceral and parietal pleura. It compresses the lung and impairs gas exchange."
+    },
+    {
+      "q": "What procedure is performed to remove fluid from the pleural space?",
+      "options": [
+        "Bronchoscopy",
+        "Thoracentesis",
+        "Tracheostomy",
+        "Chest tube insertion"
+      ],
+      "correct": 1,
+      "rationale": "Thoracentesis uses a needle to aspirate fluid from the pleural space for both diagnostic and therapeutic purposes."
+    },
+    {
+      "q": "During a thoracentesis, the client should be positioned:",
+      "options": [
+        "Supine with arms at sides",
+        "Sitting upright, leaning forward over a bedside table",
+        "Prone",
+        "Trendelenburg"
+      ],
+      "correct": 1,
+      "rationale": "Sitting upright and leaning forward spreads the intercostal spaces and allows fluid to pool at the base for easier access."
+    },
+    {
+      "q": "What is the most serious complication of a thoracentesis?",
+      "options": [
+        "Infection",
+        "Pneumothorax",
+        "Pain at the site",
+        "Vasovagal syncope"
+      ],
+      "correct": 1,
+      "rationale": "Accidental puncture of the lung during the procedure can cause pneumothorax. Assess for sudden dyspnea and absent breath sounds post-procedure."
+    },
+    {
+      "q": "What is ARDS (Acute Respiratory Distress Syndrome)?",
+      "options": [
+        "A chronic obstructive condition",
+        "A sudden, life-threatening lung failure with refractory hypoxemia",
+        "An allergic reaction to medications",
+        "A type of pneumonia"
+      ],
+      "correct": 1,
+      "rationale": "ARDS is characterized by diffuse alveolar damage, non-cardiogenic pulmonary edema, and severe hypoxemia that does not respond to supplemental oxygen. It often requires mechanical ventilation."
+    },
+    {
+      "q": "What is the hallmark finding of ARDS on chest X-ray?",
+      "options": [
+        "Hyperinflation",
+        "Bilateral white-out (ground glass opacities)",
+        "Unilateral consolidation",
+        "Normal chest X-ray"
+      ],
+      "correct": 1,
+      "rationale": "ARDS shows bilateral diffuse infiltrates ('white-out') on chest X-ray due to widespread alveolar edema and collapse."
+    },
+    {
+      "q": "What is the priority treatment for ARDS?",
+      "options": [
+        "Antibiotics",
+        "Bronchodilators",
+        "Mechanical ventilation with PEEP",
+        "Diuretics"
+      ],
+      "correct": 2,
+      "rationale": "Mechanical ventilation with positive end-expiratory pressure (PEEP) keeps alveoli open at end-expiration, improving oxygenation. Low tidal volume ventilation (lung-protective strategy) reduces further lung injury."
+    },
+    {
+      "q": "What does PEEP stand for and what does it do?",
+      "options": [
+        "Positive End-Expiratory Pressure; keeps alveoli open",
+        "Pulmonary Expiratory Exercise Protocol; improves cough",
+        "Peripheral Extremity Elevation Procedure; reduces edema",
+        "Post-Extubation Evaluation Plan; prevents reintubation"
+      ],
+      "correct": 0,
+      "rationale": "PEEP maintains positive pressure in the airways at end-expiration to prevent alveolar collapse, improve oxygenation, and increase functional residual capacity."
+    },
+    {
+      "q": "What is the biggest risk of mechanical ventilation?",
+      "options": [
+        "Dehydration",
+        "Ventilator-Associated Pneumonia (VAP)",
+        "Hyperglycemia",
+        "Constipation"
+      ],
+      "correct": 1,
+      "rationale": "VAP is a major complication. Prevention includes elevating HOB 30-45 degrees, oral care with chlorhexidine, and sedation vacations with daily spontaneous breathing trials."
+    },
+    {
+      "q": "What nursing interventions prevent Ventilator-Associated Pneumonia (VAP)?",
+      "options": [
+        "Keep HOB flat, limit oral care",
+        "HOB 30-45 degrees, oral care q2h, subglottic suctioning",
+        "Restrict fluids and limit turning",
+        "Administer prophylactic antibiotics"
+      ],
+      "correct": 1,
+      "rationale": "The VAP prevention bundle includes: HOB elevation 30-45\u00b0, regular oral care with chlorhexidine, daily sedation vacations, DVT/peptic ulcer prophylaxis, and early assessment for extubation readiness."
+    },
+    {
+      "q": "What does a high-pressure alarm on a ventilator indicate?",
+      "options": [
+        "Tubing disconnection",
+        "Obstruction, kinking, mucus plug, or biting the tube",
+        "Air leak in the system",
+        "Low tidal volume"
+      ],
+      "correct": 1,
+      "rationale": "High-pressure alarms mean increased resistance to airflow. Check for kinks in tubing, mucus plugs (suction), water in tubing, biting (use bite block), or bronchospasm."
+    },
+    {
+      "q": "What does a low-pressure alarm on a ventilator indicate?",
+      "options": [
+        "Mucus plug",
+        "Patient biting the tube",
+        "Disconnection or leak in the circuit",
+        "Bronchospasm"
+      ],
+      "correct": 2,
+      "rationale": "Low-pressure alarms indicate a loss of pressure in the system, usually from a tubing disconnection, cuff leak, or loose connection. Check all connections immediately."
+    },
+    {
+      "q": "What is the nurse's first action when a ventilator alarm sounds?",
+      "options": [
+        "Silence the alarm",
+        "Call respiratory therapy",
+        "Assess the patient",
+        "Increase the FiO2"
+      ],
+      "correct": 2,
+      "rationale": "Always assess the patient first. If the patient is in distress and the problem cannot be quickly identified, disconnect from the ventilator and manually ventilate with an Ambu bag."
+    },
+    {
+      "q": "What are the signs and symptoms of hypoxia?",
+      "options": [
+        "Bradycardia and hypertension",
+        "Restlessness, tachycardia, confusion, cyanosis",
+        "Bradypnea and flushed skin",
+        "Polyuria and polydipsia"
+      ],
+      "correct": 1,
+      "rationale": "Early signs: restlessness, anxiety, tachycardia, tachypnea. Late signs: confusion, cyanosis (especially central), bradycardia, and eventually cardiac arrest."
+    },
+    {
+      "q": "Cyanosis is a late or early sign of hypoxia?",
+      "options": [
+        "Early",
+        "Late",
+        "Not related to hypoxia",
+        "Only seen in children"
+      ],
+      "correct": 1,
+      "rationale": "Cyanosis (bluish discoloration) is a LATE sign of hypoxia indicating significant desaturation. Restlessness and tachycardia are earlier indicators."
+    },
+    {
+      "q": "What type of isolation is required for RSV (Respiratory Syncytial Virus)?",
+      "options": [
+        "Airborne",
+        "Droplet",
+        "Contact",
+        "Standard only"
+      ],
+      "correct": 2,
+      "rationale": "RSV is transmitted by direct contact with respiratory secretions. Contact precautions (gown, gloves) and hand hygiene are essential."
+    },
+    {
+      "q": "What prophylactic medication is given to high-risk infants for RSV?",
+      "options": [
+        "Amoxicillin",
+        "Palivizumab (Synagis)",
+        "Oseltamivir (Tamiflu)",
+        "Ribavirin"
+      ],
+      "correct": 1,
+      "rationale": "Palivizumab (Synagis) is a monoclonal antibody given monthly during RSV season to prevent severe RSV infection in premature infants and those with chronic lung or heart disease."
+    },
+    {
+      "q": "What position should a post-operative tonsillectomy child be placed in?",
+      "options": [
+        "Supine",
+        "High Fowler's",
+        "Side-lying (lateral)",
+        "Prone with head turned"
+      ],
+      "correct": 2,
+      "rationale": "Side-lying facilitates drainage of secretions and blood from the mouth, preventing aspiration. Never suction the surgical site."
+    },
+    {
+      "q": "What is the first sign of bleeding after a tonsillectomy?",
+      "options": [
+        "Fever",
+        "Frequent swallowing",
+        "Sore throat",
+        "Vomiting"
+      ],
+      "correct": 1,
+      "rationale": "Frequent swallowing indicates blood is trickling down the throat. Check the back of the throat with a flashlight. Other signs: restlessness, tachycardia, vomiting blood."
+    },
+    {
+      "q": "What is obstructive sleep apnea (OSA)?",
+      "options": [
+        "Central nervous system failure to signal breathing",
+        "Repeated episodes of upper airway collapse during sleep",
+        "Chronic hyperventilation during sleep",
+        "Allergic reaction causing nighttime wheezing"
+      ],
+      "correct": 1,
+      "rationale": "OSA occurs when the tongue and soft tissues intermittently obstruct the upper airway during sleep, causing apnea episodes, hypoxia, and fragmented sleep."
+    },
+    {
+      "q": "What is the gold standard treatment for obstructive sleep apnea?",
+      "options": [
+        "Oxygen therapy",
+        "Weight loss alone",
+        "CPAP (Continuous Positive Airway Pressure)",
+        "Sedative medications"
+      ],
+      "correct": 2,
+      "rationale": "CPAP delivers continuous positive pressure via a mask to splint the airway open during sleep. Weight loss, positional therapy, and surgery are adjuncts."
+    },
+    {
+      "q": "What is the primary cause of lung cancer?",
+      "options": [
+        "Air pollution",
+        "Asbestos exposure",
+        "Cigarette smoking",
+        "Genetic predisposition"
+      ],
+      "correct": 2,
+      "rationale": "Cigarette smoking accounts for approximately 85% of all lung cancer cases. Risk increases with pack-years (packs per day x years smoked)."
+    },
+    {
+      "q": "What surgery removes an entire lung?",
+      "options": [
+        "Lobectomy",
+        "Wedge resection",
+        "Pneumonectomy",
+        "Segmentectomy"
+      ],
+      "correct": 2,
+      "rationale": "Pneumonectomy is removal of an entire lung, typically for centrally located tumors. Post-op: position on the OPERATIVE side to allow the remaining lung to fully expand."
+    },
+    {
+      "q": "After a pneumonectomy, which side should the client lie on?",
+      "options": [
+        "Unaffected side",
+        "Operative (affected) side",
+        "Supine only",
+        "Any side is acceptable"
+      ],
+      "correct": 1,
+      "rationale": "Lying on the operative side allows the remaining lung to fully expand. The empty pleural space will gradually fill with serous fluid."
+    },
+    {
+      "q": "After a lobectomy, which side should the client lie on?",
+      "options": [
+        "Operative side",
+        "Unaffected (good lung) side",
+        "Either side",
+        "Prone"
+      ],
+      "correct": 2,
+      "rationale": "After lobectomy (partial lung removal), the patient can lie on either side. The remaining lobe needs to expand, and alternating positions promotes drainage and expansion."
+    },
+    {
+      "q": "What is the purpose of chest physiotherapy (CPT)?",
+      "options": [
+        "Strengthen respiratory muscles",
+        "Loosen and mobilize secretions for expectoration",
+        "Increase FiO2 delivery",
+        "Prevent bronchoconstriction"
+      ],
+      "correct": 1,
+      "rationale": "CPT uses percussion, vibration, and postural drainage to mobilize thick secretions from the airways so they can be coughed up or suctioned."
+    },
+    {
+      "q": "When should chest physiotherapy NOT be performed?",
+      "options": [
+        "Before meals",
+        "Before bedtime",
+        "Immediately after meals",
+        "In the morning"
+      ],
+      "correct": 2,
+      "rationale": "CPT after meals increases the risk of aspiration and vomiting. Perform CPT 30 minutes before meals or 1-2 hours after meals."
+    },
+    {
+      "q": "What is flail chest?",
+      "options": [
+        "A single rib fracture",
+        "Two or more adjacent ribs fractured in two or more places, creating a free-floating segment",
+        "Bruising of the chest wall",
+        "Pneumothorax from blunt trauma"
+      ],
+      "correct": 1,
+      "rationale": "Flail chest creates a segment that moves paradoxically (inward on inspiration, outward on expiration), severely impairing ventilation."
+    },
+    {
+      "q": "What is paradoxical chest movement?",
+      "options": [
+        "Both sides of the chest moving symmetrically",
+        "The injured segment moves inward on inspiration and outward on expiration",
+        "Rapid shallow breathing",
+        "Absent chest movement on one side"
+      ],
+      "correct": 1,
+      "rationale": "In flail chest, the free-floating segment moves opposite to the rest of the chest wall, reducing effective ventilation and causing hypoxia."
+    },
+    {
+      "q": "What does hemoptysis indicate?",
+      "options": [
+        "Bleeding from the GI tract",
+        "Coughing up blood from the respiratory tract",
+        "Blood in the urine",
+        "Nosebleed"
+      ],
+      "correct": 1,
+      "rationale": "Hemoptysis is coughing up blood or blood-tinged sputum from the lungs or bronchial tubes. Causes include TB, lung cancer, PE, and bronchiectasis."
+    },
+    {
+      "q": "What is the priority nursing intervention during suctioning?",
+      "options": [
+        "Suction continuously for 30 seconds",
+        "Apply suction while inserting the catheter",
+        "Hyperoxygenate before and after, limit suction to 10 seconds",
+        "Use the largest catheter available"
+      ],
+      "correct": 2,
+      "rationale": "Pre-oxygenate with 100% O2, insert catheter without suction, apply intermittent suction while withdrawing for no more than 10 seconds to prevent hypoxia and mucosal damage."
+    },
+    {
+      "q": "What size suction catheter should be used for a tracheostomy?",
+      "options": [
+        "Same size as the trach tube",
+        "No more than half the internal diameter of the trach tube",
+        "The largest available",
+        "Smallest available"
+      ],
+      "correct": 1,
+      "rationale": "Using a catheter more than half the diameter of the tube can occlude the airway and cause hypoxia during suctioning."
+    },
+    {
+      "q": "What are the classic symptoms of Tuberculosis (TB)?",
+      "options": [
+        "Sudden high fever and productive cough",
+        "Night sweats, weight loss, productive cough, hemoptysis",
+        "Wheezing and chest tightness",
+        "Pleuritic chest pain and dry cough"
+      ],
+      "correct": 1,
+      "rationale": "TB presents insidiously with night sweats, unexplained weight loss, fatigue, a persistent productive cough lasting >3 weeks, and hemoptysis."
+    },
+    {
+      "q": "What medications are used in the initial phase of TB treatment (RIPE)?",
+      "options": [
+        "Rifampin, INH, Pyrazinamide, Ethambutol",
+        "Rifampin, Ibuprofen, Penicillin, Erythromycin",
+        "Ribavirin, INH, Prednisone, Epinephrine",
+        "Remdesivir, Ivermectin, Paxlovid, Enoxaparin"
+      ],
+      "correct": 0,
+      "rationale": "RIPE therapy (Rifampin, Isoniazid, Pyrazinamide, Ethambutol) is the standard 4-drug regimen for the initial 2-month phase of TB treatment, followed by continuation with Rifampin and INH."
+    },
+    {
+      "q": "What is the most serious side effect of INH (Isoniazid)?",
+      "options": [
+        "Ototoxicity",
+        "Hepatotoxicity",
+        "Nephrotoxicity",
+        "Cardiotoxicity"
+      ],
+      "correct": 1,
+      "rationale": "INH is hepatotoxic. Monitor liver function tests and teach clients to avoid alcohol, report dark urine, jaundice, fatigue, or abdominal pain immediately."
+    },
+    {
+      "q": "What vitamin supplement should be given with INH (Isoniazid)?",
+      "options": [
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin B6 (Pyridoxine)",
+        "Vitamin K"
+      ],
+      "correct": 2,
+      "rationale": "INH depletes Vitamin B6, which can cause peripheral neuropathy (numbness/tingling in hands and feet). Supplementing B6 prevents this complication."
     }
   ]
 }
