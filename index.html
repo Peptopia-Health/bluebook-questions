@@ -1137,13 +1137,60 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         };
 
         // --- Quiz Logic ---
+        var ghQuizCache = {};
+
+        function fetchGitHubQuiz(sectionKey) {
+            if (ghQuizCache[sectionKey]) return Promise.resolve(ghQuizCache[sectionKey]);
+            var url = 'https://peptopia-health.github.io/bluebook-questions/mnt_quiz_json_' + sectionKey + '.json?v=' + Date.now();
+            return fetch(url).then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json().then(function(j) {
+                    var qs = (j.questions || []).map(function(item) {
+                        return { q: item.q, a: item.options || item.a, correct: item.correct, rationale: item.rationale };
+                    });
+                    ghQuizCache[sectionKey] = qs;
+                    return qs;
+                });
+            }).catch(function(err) {
+                console.log('Quiz fetch failed for ' + sectionKey + ': ' + err);
+                return [];
+            });
+        }
+
+        function mergeQuizQuestions(embedded, external) {
+            var seen = {};
+            var merged = [];
+            embedded.forEach(function(item) {
+                var key = item.q.trim().toLowerCase();
+                if (!seen[key]) { seen[key] = true; merged.push(item); }
+            });
+            external.forEach(function(item) {
+                var key = item.q.trim().toLowerCase();
+                if (!seen[key]) { seen[key] = true; merged.push(item); }
+            });
+            return merged;
+        }
+
         window.startQuiz = function() {
             var data = contentData[currentTab];
-            currentQuizData = shuffleArray(data.data.slice());
-            quizIndex = 0;
-            quizScore = 0;
-            showQuestion();
+            var embeddedQs = data.data.slice().map(function(item) {
+                return { q: item.q, a: item.a, correct: item.correct, rationale: item.rationale };
+            });
+            // Show quiz modal with loading state
             document.getElementById('quiz-modal').style.display = 'flex';
+            document.getElementById('quiz-progress').textContent = 'Loading questions...';
+            document.getElementById('q-text').textContent = '';
+            document.getElementById('q-options').innerHTML = '';
+            document.getElementById('feedback-area').style.display = 'none';
+            document.getElementById('next-btn').style.display = 'none';
+
+            fetchGitHubQuiz(data.type).then(function(externalQs) {
+                var allQs = mergeQuizQuestions(embeddedQs, externalQs);
+                currentQuizData = shuffleArray(allQs);
+                quizIndex = 0;
+                quizScore = 0;
+                showQuestion();
+            });
         };
 
         function showQuestion() {
