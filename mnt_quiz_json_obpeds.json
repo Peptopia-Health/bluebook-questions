@@ -1,7 +1,7 @@
 {
   "section": "obpeds",
   "title": "OB & Pediatrics",
-  "questionCount": 30,
+  "questionCount": 100,
   "questions": [
     {
       "q": "What is the hallmark sign of Placenta Previa?",
@@ -37,7 +37,7 @@
       "rationale": "Remember VEAL CHOP: V (Variable) = C (Cord Compression)."
     },
     {
-      "q": "What position helps a child having a \"Tet Spell\"?",
+      "q": "What position helps a child having a 'Tet Spell'?",
       "options": [
         "Knee-Chest (Squatting)",
         "Supine",
@@ -51,15 +51,15 @@
       "q": "What is Chadwick's sign?",
       "options": [
         "Softening of uterus",
-        "Blue tint to cervix",
+        "Blue tint to cervix/vagina",
         "Rebound tenderness",
         "Fetal movement"
       ],
       "correct": 1,
-      "rationale": "Chadwick's sign is the bluish discoloration of the cervix due to increased blood flow."
+      "rationale": "Chadwick's sign is the bluish discoloration of the cervix and vagina due to increased blood flow, visible as early as 4 weeks."
     },
     {
-      "q": "If LMP is June 10, when is the due date?",
+      "q": "If LMP is June 10, when is the due date using Nagele's Rule?",
       "options": [
         "April 17",
         "February 10",
@@ -67,7 +67,7 @@
         "March 10"
       ],
       "correct": 2,
-      "rationale": "June - 3 months = March. 10 + 7 days = 17."
+      "rationale": "Nagele's Rule: Add 7 days to first day of LMP, subtract 3 months, add 12 months. June 10 \u2192 March 17."
     },
     {
       "q": "What are the three classic signs of Preeclampsia?",
@@ -100,7 +100,7 @@
         "Brown"
       ],
       "correct": 1,
-      "rationale": "Rubra is the initial red bleeding (1-3 days)."
+      "rationale": "Rubra is the initial red bleeding (days 1-3 postpartum)."
     },
     {
       "q": "When is APGAR scoring performed?",
@@ -125,7 +125,7 @@
       "rationale": "Lying prone can rub the suture line on the sheets, ruining the repair."
     },
     {
-      "q": "What is the developmental task for infancy?",
+      "q": "What is the developmental task for infancy (Erikson)?",
       "options": [
         "Trust vs Mistrust",
         "Autonomy vs Shame",
@@ -133,7 +133,7 @@
         "Industry vs Inferiority"
       ],
       "correct": 0,
-      "rationale": "Infants learn to trust caregivers to meet basic needs."
+      "rationale": "Infants learn to trust caregivers to meet basic needs consistently."
     },
     {
       "q": "What is the initial diet order for hyperemesis gravidarum?",
@@ -180,17 +180,6 @@
       "rationale": "Amniotic fluid is alkaline (pH 7.0-7.5), turning the yellow paper blue."
     },
     {
-      "q": "What position is contraindicated after cleft lip repair?",
-      "options": [
-        "Supine",
-        "Prone (on abdomen)",
-        "Side-lying",
-        "Upright"
-      ],
-      "correct": 1,
-      "rationale": "Prone position can cause the infant to rub the face/suture line on the sheets, damaging the repair."
-    },
-    {
       "q": "Why is cleft palate repair delayed until 4-5 years?",
       "options": [
         "To allow speech development",
@@ -202,18 +191,7 @@
       "rationale": "Early surgery can interfere with skeletal growth of the midface and tooth eruption."
     },
     {
-      "q": "What is the developmental task for infancy?",
-      "options": [
-        "Initiative vs Guilt",
-        "Autonomy vs Shame",
-        "Industry vs Inferiority",
-        "Trust vs Mistrust"
-      ],
-      "correct": 3,
-      "rationale": "Consistently meeting needs establishes trust."
-    },
-    {
-      "q": "Which age group is most likely to say \"No\"?",
+      "q": "Which age group is most likely to say 'No'?",
       "options": [
         "Toddler",
         "Infant",
@@ -235,7 +213,7 @@
       "rationale": "Preschoolers have vivid imaginations and fear bodily harm/mutilation."
     },
     {
-      "q": "What is the developmental task for school age?",
+      "q": "What is the developmental task for school age (Erikson)?",
       "options": [
         "Identity vs Role Confusion",
         "Intimacy vs Isolation",
@@ -243,7 +221,7 @@
         "Trust vs Mistrust"
       ],
       "correct": 2,
-      "rationale": "School age children focus on competence, skills, and \"making things\" (Industry)."
+      "rationale": "School age children (6-12) focus on competence, skills, and 'making things' (Industry)."
     },
     {
       "q": "Who is most important to the hospitalized adolescent?",
@@ -254,7 +232,7 @@
         "Peers"
       ],
       "correct": 3,
-      "rationale": "Peer group acceptance is critical for identity formation."
+      "rationale": "Peer group acceptance is critical for identity formation (Identity vs Role Confusion)."
     },
     {
       "q": "Should a mother with mastitis stop breastfeeding?",
@@ -331,7 +309,799 @@
         "Loss of control"
       ],
       "correct": 2,
-      "rationale": "Separation anxiety is peak in toddlerhood."
+      "rationale": "Separation anxiety peaks in toddlerhood (1-3 years)."
+    },
+    {
+      "q": "What is Hegar's sign in early pregnancy?",
+      "options": [
+        "Bluish discoloration of cervix",
+        "Softening of the isthmus of the uterus",
+        "Fetal movement felt by mother",
+        "Darkening of the areolae"
+      ],
+      "correct": 1,
+      "rationale": "Hegar's sign is the softening of the isthmus (lower uterine segment) detectable at about 8 weeks gestation."
+    },
+    {
+      "q": "What is Goodell's sign?",
+      "options": [
+        "Bluish cervix",
+        "Softening of the cervix",
+        "Uterine enlargement",
+        "Breast tenderness"
+      ],
+      "correct": 1,
+      "rationale": "Goodell's sign is the softening of the cervix, detectable at about 8 weeks. Chadwick's = bluish cervix, Hegar's = soft isthmus."
+    },
+    {
+      "q": "What is the expected total weight gain during pregnancy?",
+      "options": [
+        "10-15 lbs (5-7 kg)",
+        "15-20 lbs (7-9 kg)",
+        "25-30 lbs (11-14 kg)",
+        "40-50 lbs (18-23 kg)"
+      ],
+      "correct": 2,
+      "rationale": "Normal total pregnancy weight gain is 25-30 lbs (11-14 kg) for a woman of normal BMI."
+    },
+    {
+      "q": "Which dangerous infections during pregnancy are known as TORCH?",
+      "options": [
+        "Tetanus, Osteoporosis, RSV, Chickenpox, Hepatitis",
+        "Toxoplasmosis, Other, Rubella, Cytomegalovirus, HPV/Herpes",
+        "TB, Otitis, Rheumatic Fever, Candida, HIV",
+        "Tonsillitis, Omphalitis, Rotavirus, Croup, Hemophilia"
+      ],
+      "correct": 1,
+      "rationale": "TORCH = Toxoplasmosis, Other (syphilis, varicella, parvovirus), Rubella, Cytomegalovirus, HPV/Herpes. These infections can cause serious fetal harm."
+    },
+    {
+      "q": "What is the normal fetal heart rate (FHR)?",
+      "options": [
+        "80-100 bpm",
+        "100-120 bpm",
+        "120-160 bpm",
+        "160-200 bpm"
+      ],
+      "correct": 2,
+      "rationale": "Normal FHR is 120-160 bpm. Below 110 is bradycardia; above 160 is tachycardia."
+    },
+    {
+      "q": "What does a 2:1 Lecithin-to-Sphingomyelin (L/S) ratio indicate?",
+      "options": [
+        "Fetal kidney maturity",
+        "Fetal lung maturity",
+        "Fetal brain development",
+        "Placental sufficiency"
+      ],
+      "correct": 1,
+      "rationale": "A 2:1 L/S ratio indicates fetal lung maturity and adequate surfactant production."
+    },
+    {
+      "q": "What does elevated AFP in amniotic fluid suggest?",
+      "options": [
+        "Down Syndrome",
+        "Possible neural tube defect",
+        "Gestational diabetes",
+        "Preeclampsia"
+      ],
+      "correct": 1,
+      "rationale": "Elevated alpha-fetoprotein (AFP) in amniotic fluid or maternal serum suggests a possible open neural tube defect (spina bifida, anencephaly)."
+    },
+    {
+      "q": "What does a Non-Stress Test (NST) 'Reactive' result mean?",
+      "options": [
+        "Fetus is in distress",
+        "FHR accelerates with movement (healthy)",
+        "Late decelerations are present",
+        "No fetal movement detected"
+      ],
+      "correct": 1,
+      "rationale": "Reactive NST = healthy. The FHR goes up (accelerates) with fetal movements, indicating good oxygenation."
+    },
+    {
+      "q": "On a Contraction Stress Test (CST), what does a 'Positive' result indicate?",
+      "options": [
+        "Healthy fetus, no intervention needed",
+        "Late decelerations present, indicative of uteroplacental insufficiency",
+        "Adequate variability and no decelerations",
+        "Normal fetal movement pattern"
+      ],
+      "correct": 1,
+      "rationale": "A POSITIVE CST is BAD \u2014 it shows late decelerations with contractions, meaning the placenta cannot adequately oxygenate the fetus during stress. A NEGATIVE CST is good (no late decels)."
+    },
+    {
+      "q": "What causes Late Decelerations?",
+      "options": [
+        "Cord compression",
+        "Head compression",
+        "Utero-placental insufficiency",
+        "Maternal hypotension only"
+      ],
+      "correct": 2,
+      "rationale": "VEAL CHOP: L (Late) = P (Placental insufficiency). Late decels mirror contractions and indicate the placenta cannot keep up with oxygen demand."
+    },
+    {
+      "q": "If variable or late decelerations occur, what is the priority nursing action?",
+      "options": [
+        "Increase Pitocin",
+        "Continue monitoring without intervention",
+        "Change maternal position, stop Pitocin, administer O2, notify physician",
+        "Prepare for immediate C-section"
+      ],
+      "correct": 2,
+      "rationale": "Intrauterine resuscitation: reposition mom (left side-lying), stop oxytocin if infusing, give O2 by mask, increase IV fluids, and notify the physician."
+    },
+    {
+      "q": "What is the definition of Gravida?",
+      "options": [
+        "Number of live births",
+        "Number of pregnancies regardless of outcome",
+        "Number of deliveries after 20 weeks",
+        "Number of viable fetuses"
+      ],
+      "correct": 1,
+      "rationale": "Gravida = total number of pregnancies, regardless of outcome. Para = number of deliveries (not kids) after 20 weeks gestation."
+    },
+    {
+      "q": "What does TPAL stand for in obstetric history?",
+      "options": [
+        "Total births, Pregnancies, Abortions, Living",
+        "Term births, Pre-term births, Abortions, Living children",
+        "Trimester, Parity, Age, Lactation",
+        "Term, Placenta, Amniotic fluid, Labor"
+      ],
+      "correct": 1,
+      "rationale": "TPAL: T = Term births (38+ weeks), P = Pre-term births (20-37 weeks), A = Abortions/miscarriages, L = Living children."
+    },
+    {
+      "q": "What nutritional supplements should be increased during pregnancy?",
+      "options": [
+        "Vitamin C and Zinc only",
+        "Iron, Calcium, Folic Acid, Vitamins A & C",
+        "Sodium and Potassium",
+        "Vitamin B12 only"
+      ],
+      "correct": 1,
+      "rationale": "Pregnancy requires increased iron (to support blood volume), calcium (fetal bones), folic acid (prevent neural tube defects), and vitamins A & C. Calorie intake increases by 300 cal/day."
+    },
+    {
+      "q": "What vitamin deficiency causes neural tube defects?",
+      "options": [
+        "Vitamin D",
+        "Vitamin B12",
+        "Folic Acid",
+        "Vitamin K"
+      ],
+      "correct": 2,
+      "rationale": "Folic acid deficiency is directly linked to neural tube defects (spina bifida, anencephaly). Women should take folic acid before conception and during early pregnancy."
+    },
+    {
+      "q": "What is the normal volume of amniotic fluid?",
+      "options": [
+        "100-300 mL",
+        "300-500 mL",
+        "800-1200 mL",
+        "2000-3000 mL"
+      ],
+      "correct": 2,
+      "rationale": "Normal amniotic fluid is 800-1200 mL. Oligohydramnios (<300 mL) suggests fetal kidney problems. Polyhydramnios (>2000 mL) is associated with GI obstruction or maternal diabetes."
+    },
+    {
+      "q": "Polyhydramnios and macrosomia are associated with which maternal condition?",
+      "options": [
+        "Preeclampsia",
+        "Gestational diabetes",
+        "Placenta previa",
+        "Hyperemesis gravidarum"
+      ],
+      "correct": 1,
+      "rationale": "Maternal diabetes causes fetal hyperglycemia \u2192 large fetus (macrosomia) and increased fetal urination \u2192 polyhydramnios (excess amniotic fluid)."
+    },
+    {
+      "q": "How many vessels does a normal umbilical cord have?",
+      "options": [
+        "1 artery, 1 vein",
+        "2 arteries, 1 vein",
+        "2 arteries, 2 veins",
+        "1 artery, 2 veins"
+      ],
+      "correct": 1,
+      "rationale": "Normal cord: 2 arteries (carry deoxygenated blood from fetus to placenta), 1 vein (carries oxygenated blood from placenta to fetus). Opposite of normal circulation."
+    },
+    {
+      "q": "Which is the best position for uteroplacental perfusion during labor?",
+      "options": [
+        "Supine",
+        "Right side-lying",
+        "Left side-lying",
+        "Prone"
+      ],
+      "correct": 2,
+      "rationale": "Left side-lying position displaces the uterus off the inferior vena cava, optimizing venous return and placental blood flow. Either side works but left is traditional."
+    },
+    {
+      "q": "What are the 4 stages of labor?",
+      "options": [
+        "Dilation, Expulsion, Placental, Recovery",
+        "Contractions, Pushing, Crowning, Placenta",
+        "Effacement, Transition, Delivery, Bonding",
+        "Latent, Active, Transition, Placental"
+      ],
+      "correct": 0,
+      "rationale": "Stage 1 = Dilation (onset of regular contractions to full 10cm dilation), Stage 2 = Expulsion (10cm to delivery), Stage 3 = Placental delivery, Stage 4 = Recovery (1-4 hrs postpartum)."
+    },
+    {
+      "q": "What are signs of placenta separation?",
+      "options": [
+        "Decreased bleeding and relaxed uterus",
+        "Lengthening of cord outside vagina, gush of blood, full feeling in vagina",
+        "Fetal bradycardia and maternal tachycardia",
+        "Cervical dilation to 10 cm"
+      ],
+      "correct": 1,
+      "rationale": "Signs of placental separation include: lengthening of the umbilical cord, sudden gush of blood, and the mother reporting a feeling of fullness. Give oxytocin AFTER placenta is out, not before."
+    },
+    {
+      "q": "What does Schultz Presentation of placenta delivery mean?",
+      "options": [
+        "Maternal side delivers first (rough/red)",
+        "Fetal side delivers first (shiny/smooth)",
+        "Placenta is retained and must be manually removed",
+        "Placenta delivers with the cord wrapped around it"
+      ],
+      "correct": 1,
+      "rationale": "Schultz presentation = shiny side out (fetal side of placenta). Duncan presentation = maternal side (rough/dark red) delivers first."
+    },
+    {
+      "q": "What is the postpartum VS monitoring schedule?",
+      "options": [
+        "Every 4 hours for 24 hours",
+        "Every 15 min \u00d7 1 hr, every 30 min \u00d7 2 hrs, every hr \u00d7 2-6 hrs, then every 4 hrs",
+        "Once per shift",
+        "Every 5 minutes for the first hour only"
+      ],
+      "correct": 1,
+      "rationale": "Postpartum: Q15 min \u00d7 1 hour, Q30 min \u00d7 next 2 hours, Q1 hr \u00d7 next 2-6 hours, then Q4 hours. Frequent monitoring catches hemorrhage early."
+    },
+    {
+      "q": "What does it indicate if lochia has a foul smell?",
+      "options": [
+        "Normal finding",
+        "Dehydration",
+        "Infection",
+        "Retained placental fragment"
+      ],
+      "correct": 2,
+      "rationale": "Foul-smelling lochia indicates infection (endometritis). Normal lochia has a fleshy odor. Also watch for >4-8 pads/day or clots >1 cm."
+    },
+    {
+      "q": "Why should the nurse massage a boggy uterus postpartum?",
+      "options": [
+        "To stimulate milk production",
+        "To encourage uterine involution and prevent hemorrhage",
+        "To relieve pain",
+        "To help the bladder empty"
+      ],
+      "correct": 1,
+      "rationale": "A boggy (soft) uterus indicates uterine atony and risk for hemorrhage. Fundal massage stimulates contraction. Also empty the bladder ASAP \u2014 a full bladder displaces the uterus and causes atony."
+    },
+    {
+      "q": "What are the degrees of perineal tears?",
+      "options": [
+        "1st = epidermis, 2nd = dermis, 3rd = SQ, 4th = muscle",
+        "1st = dermis, 2nd = mm/fascia, 3rd = anal sphincter, 4th = rectum",
+        "1st = mucosa, 2nd = submucosa, 3rd = muscle, 4th = peritoneum",
+        "1st = skin, 2nd = fat, 3rd = nerve, 4th = bone"
+      ],
+      "correct": 1,
+      "rationale": "1st degree = dermis only, 2nd degree = muscles/fascia, 3rd degree = anal sphincter, 4th degree = rectal mucosa. Higher degrees need more repair and recovery."
+    },
+    {
+      "q": "What does APGAR assess and what do the letters stand for?",
+      "options": [
+        "Appearance, Pulse, Grimace, Activity, Respiration",
+        "Alertness, Positioning, Growth, Agility, Reflexes",
+        "Airway, Perfusion, Glucose, Apnea, Resuscitation",
+        "Activity, Pulsation, Grunting, Appearance, Reactivity"
+      ],
+      "correct": 0,
+      "rationale": "APGAR: A = Appearance (color), P = Pulse (HR), G = Grimace (reflex irritability), A = Activity (muscle tone), R = Respiration. Score 7-10 = good, 4-6 = moderate resuscitation, 1-3 = mostly dead."
+    },
+    {
+      "q": "What eye prophylaxis is given to the newborn and why?",
+      "options": [
+        "Gentamicin for chlamydia",
+        "Erythromycin ointment or silver nitrate for gonorrhea prevention",
+        "Tobramycin for E. coli",
+        "No eye prophylaxis is routine"
+      ],
+      "correct": 1,
+      "rationale": "E-mycin (erythromycin) ointment or silver nitrate is instilled in both eyes within 1 hour of birth to prevent ophthalmia neonatorum caused by gonorrhea or chlamydia."
+    },
+    {
+      "q": "Why is Vitamin K given to the newborn?",
+      "options": [
+        "To prevent hypoglycemia",
+        "The newborn gut lacks bacteria to synthesize Vitamin K for clotting",
+        "To boost the immune system",
+        "To prevent jaundice"
+      ],
+      "correct": 1,
+      "rationale": "Newborns lack intestinal flora needed for Vitamin K synthesis. Vitamin K is essential for clotting factor production. Given IM in the vastus lateralis."
+    },
+    {
+      "q": "When suctioning a newborn, which is suctioned FIRST \u2014 mouth or nose?",
+      "options": [
+        "Nose first",
+        "Mouth first",
+        "Both simultaneously",
+        "Neither; allow self-clearing"
+      ],
+      "correct": 1,
+      "rationale": "Suction MOUTH first, then nostrils. Nasal stimulation can trigger a gasp reflex, and if the mouth hasn't been cleared, the infant could aspirate secretions."
+    },
+    {
+      "q": "Which newborn reflex involves spreading arms out when startled?",
+      "options": [
+        "Rooting reflex",
+        "Babinski reflex",
+        "Moro reflex",
+        "Palmar grasp reflex"
+      ],
+      "correct": 2,
+      "rationale": "Moro (startle) reflex: abduction of all extremities when startled. Present at birth, disappears by 4 months. Absence may indicate neurological damage."
+    },
+    {
+      "q": "When does the Rooting reflex disappear?",
+      "options": [
+        "2 months",
+        "4 months",
+        "8 months",
+        "12 months"
+      ],
+      "correct": 1,
+      "rationale": "Rooting reflex (turning head toward stimulus on cheek) is present at birth and disappears by about 3-4 months as voluntary feeding develops."
+    },
+    {
+      "q": "What is the Babinski reflex and when does it disappear?",
+      "options": [
+        "Fanning of toes when sole is stroked; disappears by 18 months",
+        "Grasping when palm is stimulated; disappears by 4 months",
+        "Stepping when held upright; disappears by 6 weeks",
+        "Sucking when lips are touched; disappears by 12 months"
+      ],
+      "correct": 0,
+      "rationale": "Babinski reflex = dorsiflexion of big toe and fanning of other toes when sole is stroked. Normal in infants up to 18 months. After that, it indicates upper motor neuron lesion."
+    },
+    {
+      "q": "Physiologic jaundice in the newborn normally appears when?",
+      "options": [
+        "Within the first 12 hours",
+        "At 2-3 days of life",
+        "At 7-10 days of life",
+        "At 2 weeks of life"
+      ],
+      "correct": 1,
+      "rationale": "Physiologic jaundice appears at 2-3 days and is normal. Jaundice within the first 24 hours is PATHOLOGIC (may indicate Rh/ABO incompatibility) and requires immediate treatment."
+    },
+    {
+      "q": "What is the treatment for neonatal jaundice?",
+      "options": [
+        "Antibiotics",
+        "Phototherapy (bili lights)",
+        "Blood transfusion immediately",
+        "Restrict feeding"
+      ],
+      "correct": 1,
+      "rationale": "Phototherapy decomposes bilirubin via oxidation. Protect the eyes, turn infant every 2 hours, and watch for dehydration. The dangerous bilirubin is the unconjugated (indirect) type."
+    },
+    {
+      "q": "When is RhoGAM (Rho-D Immune Globulin) given?",
+      "options": [
+        "To all pregnant women at 20 weeks",
+        "To Rh-negative mothers who deliver Rh-positive babies (and at 28 weeks)",
+        "To Rh-positive mothers only",
+        "Only if the mother has a positive Coombs test"
+      ],
+      "correct": 1,
+      "rationale": "RhoGAM prevents Rh sensitization in Rh-negative mothers. Given at 28 weeks and within 72 hours postpartum if baby is Rh-positive. NOT given if mom already has a positive Coombs (already sensitized \u2014 too late)."
+    },
+    {
+      "q": "What is the difference between Caput Succedaneum and Cephalhematoma?",
+      "options": [
+        "Caput = blood under periosteum; Cephalhematoma = edema under scalp",
+        "Caput = edema that crosses suture lines; Cephalhematoma = blood that does NOT cross suture lines",
+        "They are the same condition",
+        "Caput is dangerous; Cephalhematoma is benign"
+      ],
+      "correct": 1,
+      "rationale": "Caput succedaneum = edema under the scalp that CROSSES suture lines (resolves quickly). Cephalhematoma = blood collection under periosteum that does NOT cross suture lines (takes weeks to resolve)."
+    },
+    {
+      "q": "Where should a heel stick be performed on a newborn?",
+      "options": [
+        "Center of the heel",
+        "Lateral surface of the heel",
+        "Top of the foot",
+        "Medial surface of the heel"
+      ],
+      "correct": 1,
+      "rationale": "Heel stick is performed on the lateral surface (outer side) of the heel to avoid the plantar artery and calcaneus bone."
+    },
+    {
+      "q": "What signs should the nurse monitor for when administering MgSO4 during labor?",
+      "options": [
+        "Hypertension and tachycardia",
+        "Absent DTRs, respirations < 12, urine output < 30 mL/hr, fetal bradycardia",
+        "Increased fetal movement and maternal anxiety",
+        "Elevated temperature and diaphoresis"
+      ],
+      "correct": 1,
+      "rationale": "MgSO4 toxicity: absent DTRs (first sign), RR < 12, UO < 30 mL/hr, fetal bradycardia. Keep Calcium Gluconate at bedside as antidote. Mg replaces Ca++ in smooth muscle cells causing relaxation."
+    },
+    {
+      "q": "What is the difference between Preeclampsia and Eclampsia?",
+      "options": [
+        "Preeclampsia involves seizures; Eclampsia does not",
+        "Eclampsia = Preeclampsia + seizures and/or coma",
+        "They are the same condition",
+        "Preeclampsia occurs postpartum; Eclampsia occurs antepartum"
+      ],
+      "correct": 1,
+      "rationale": "Preeclampsia = HTN + Edema + Proteinuria. Eclampsia = Preeclampsia + Seizures and Coma. Suspect eclampsia if severe headache or visual disturbances develop."
+    },
+    {
+      "q": "What happens to insulin demands after delivery?",
+      "options": [
+        "They increase significantly",
+        "They drop precipitously",
+        "They remain the same",
+        "Insulin is no longer needed permanently"
+      ],
+      "correct": 1,
+      "rationale": "Insulin demands drop precipitously after delivery because the placental hormones (HPL, progesterone, cortisol) that caused insulin resistance are gone. Monitor closely for hypoglycemia."
+    },
+    {
+      "q": "Why are oral hypoglycemics contraindicated during pregnancy?",
+      "options": [
+        "They cause maternal hyperglycemia",
+        "They are teratogenic \u2014 insulin is the only safe option for DM control in pregnancy",
+        "They cause polyhydramnios",
+        "They are not effective during pregnancy"
+      ],
+      "correct": 1,
+      "rationale": "Oral hypoglycemics are teratogenic and cross the placenta. Insulin is the only medication used to control diabetes during pregnancy because it does NOT cross the placenta."
+    },
+    {
+      "q": "Pitocin (Oxytocin) is used for what purpose during labor?",
+      "options": [
+        "Pain relief",
+        "Inducing or augmenting labor contractions",
+        "Preventing infection",
+        "Reducing blood pressure"
+      ],
+      "correct": 1,
+      "rationale": "Pitocin stimulates uterine contractions. If uterine tetany (sustained contraction) occurs: turn off Pitocin, turn patient on side, give O2. Pitocin can also cause water intoxication via ADH-like effects."
+    },
+    {
+      "q": "What complication should you suspect if a laboring woman has a sharp pain followed by cessation of contractions?",
+      "options": [
+        "Normal transition",
+        "Placenta previa",
+        "Uterine rupture",
+        "Precipitous delivery"
+      ],
+      "correct": 2,
+      "rationale": "A sharp, sudden pain followed by cessation of contractions is the hallmark of uterine rupture \u2014 a life-threatening emergency requiring immediate surgical intervention."
+    },
+    {
+      "q": "What is the leading cause of maternal death?",
+      "options": [
+        "Preeclampsia",
+        "Infection",
+        "Postpartum hemorrhage",
+        "Pulmonary embolism"
+      ],
+      "correct": 2,
+      "rationale": "Postpartum hemorrhage is the leading cause of maternal death. Risk factors: dystocia, prolonged labor, overdistended uterus, abruptio placenta, infection. Treatment: fundal massage, count pads, VS, IV fluids, Oxytocin."
+    },
+    {
+      "q": "DIC (Disseminated Intravascular Coagulation) in pregnancy is associated with what conditions?",
+      "options": [
+        "Gestational diabetes and preeclampsia only",
+        "Fetal demise, abruptio placenta, infection",
+        "Placenta previa and polyhydramnios",
+        "Hyperemesis gravidarum and ectopic pregnancy"
+      ],
+      "correct": 1,
+      "rationale": "DIC = clotting factors are used up by intravascular clotting \u2192 paradoxical hemorrhage and increased bleeding times. Causes in OB: fetal demise, abruptio placenta, infection, amniotic fluid embolism. Treat with Heparin (safe in pregnancy)."
+    },
+    {
+      "q": "Babies born via C-section without labor are more likely to have what respiratory issue?",
+      "options": [
+        "Pneumonia",
+        "Meconium aspiration",
+        "Respiratory difficulty (lack of chest squeeze)",
+        "Bronchiolitis"
+      ],
+      "correct": 2,
+      "rationale": "Vaginal birth squeezes fluid from the lungs during passage through the birth canal. Babies born by C-section without labor miss this 'squeeze,' making them more likely to have initial respiratory difficulty."
+    },
+    {
+      "q": "What should the newborn's position be after feeding?",
+      "options": [
+        "Supine (on back)",
+        "Left side-lying",
+        "Right side-lying",
+        "Prone (on stomach)"
+      ],
+      "correct": 2,
+      "rationale": "Lay the newborn on the RIGHT side after feeding to move stomach contents into the small intestine via gravity and pylorus position, reducing reflux risk."
+    },
+    {
+      "q": "When does the posterior fontanel close?",
+      "options": [
+        "4 weeks",
+        "8 weeks",
+        "6 months",
+        "12-18 months"
+      ],
+      "correct": 1,
+      "rationale": "Posterior fontanel closes by 8 weeks (2 months). Anterior fontanel closes by 12-18 months."
+    },
+    {
+      "q": "At what age does birth weight double and triple?",
+      "options": [
+        "Doubles at 3 months, triples at 6 months",
+        "Doubles at 6 months, triples at 12 months",
+        "Doubles at 9 months, triples at 18 months",
+        "Doubles at 12 months, triples at 24 months"
+      ],
+      "correct": 1,
+      "rationale": "Birth weight doubles by 6 months and triples by 12 months. Birth length increases by 50% at 12 months."
+    },
+    {
+      "q": "At what age does steady head control develop?",
+      "options": [
+        "2 months",
+        "4 months",
+        "6 months",
+        "8 months"
+      ],
+      "correct": 1,
+      "rationale": "Steady head control is achieved at 4 months. This is an important gross motor milestone assessed at well-child visits."
+    },
+    {
+      "q": "At what age does an infant typically begin walking?",
+      "options": [
+        "6-8 months",
+        "8-10 months",
+        "10-12 months",
+        "14-16 months"
+      ],
+      "correct": 2,
+      "rationale": "Most infants walk independently by 10-12 months. Crawling begins around 10 months, and pulling to stand occurs around 9-10 months."
+    },
+    {
+      "q": "When does 'cooing' begin and when does babbling start?",
+      "options": [
+        "Cooing at birth, babbling at 1 month",
+        "Cooing at 2 months, babbling at 3-6 months",
+        "Cooing at 6 months, babbling at 9 months",
+        "Cooing at 4 months, babbling at 8 months"
+      ],
+      "correct": 1,
+      "rationale": "Cooing (vowel sounds) begins at 2 months. Monosyllabic babbling (consonant-vowel: 'ba-ba') at 3-6 months. Links syllables at 6-9 months. 'Mama/Dada' + a few words at 9-12 months."
+    },
+    {
+      "q": "What does Trisomy 21 (Down Syndrome) look like in the newborn?",
+      "options": [
+        "Elongated head and long limbs",
+        "Simian crease on palms, hypotonia, protruding tongue, upward slanted eyes",
+        "Scissoring of legs and spasticity",
+        "Large head circumference and sunset eyes"
+      ],
+      "correct": 1,
+      "rationale": "Down Syndrome features: single palmar crease (Simian crease), hypotonia (floppy baby), protruding tongue, upward outward slant of eyes, flat nasal bridge. Associated with intellectual disability and cardiac defects."
+    },
+    {
+      "q": "What is the classic sign of Cerebral Palsy (CP)?",
+      "options": [
+        "Hypotonia and floppy posture",
+        "Scissoring of legs (legs extended, crossed, feet plantar-flexed)",
+        "Barrel chest and clubbing",
+        "Gower's sign"
+      ],
+      "correct": 1,
+      "rationale": "CP causes spastic paralysis. Scissoring = legs extended, crossed, feet plantar-flexed. CP results from brain damage (hypoxia) and presents with abnormal muscle tone and movement."
+    },
+    {
+      "q": "What test confirms PKU (Phenylketonuria)?",
+      "options": [
+        "Sweat test",
+        "Guthrie test (blood)",
+        "Mantoux test",
+        "Coombs test"
+      ],
+      "correct": 1,
+      "rationale": "PKU is detected via the Guthrie blood test (newborn screening). PKU = inability to metabolize phenylalanine \u2192 intellectual disability if untreated. Avoid aspartame (NutraSweet) \u2014 it contains phenylalanine."
+    },
+    {
+      "q": "Which diseases follow autosomal recessive inheritance?",
+      "options": [
+        "Huntington's, Marfan's, Polydactyly",
+        "CF, PKU, Sickle Cell Anemia, Tay-Sachs, Albinism",
+        "Muscular Dystrophy, Hemophilia A",
+        "Down Syndrome, Turner Syndrome"
+      ],
+      "correct": 1,
+      "rationale": "Autosomal recessive: both parents must carry the gene. CF, PKU, Sickle Cell, Tay-Sachs, Albinism. 25% chance if both parents are carriers (AS \u00d7 AS)."
+    },
+    {
+      "q": "Which diseases follow X-linked recessive inheritance?",
+      "options": [
+        "CF and PKU",
+        "Sickle Cell and Tay-Sachs",
+        "Muscular Dystrophy and Hemophilia A",
+        "Huntington's and Marfan's"
+      ],
+      "correct": 2,
+      "rationale": "X-linked recessive: females are carriers (never have the disease), males have the disease (but can't pass it on). 50% chance sons will have disease, 50% chance daughters will be carriers."
+    },
+    {
+      "q": "What is Gower's sign and what condition does it indicate?",
+      "options": [
+        "Facial droop indicating Bell's Palsy",
+        "Child walks hands up legs to stand; indicates Muscular Dystrophy",
+        "Positive Babinski in a toddler; indicates CP",
+        "Sunken fontanel indicating dehydration"
+      ],
+      "correct": 1,
+      "rationale": "Gower's sign = child uses hands to 'walk up' their own legs to stand due to proximal muscle weakness. Classic sign of Duchenne Muscular Dystrophy (X-linked recessive). Also: waddling gait, lordosis, pseudohypertrophy of calves."
+    },
+    {
+      "q": "What is the treatment for scoliosis and what post-op activity is expected?",
+      "options": [
+        "Milwaukee brace; log rolling after surgery",
+        "Body cast only; bed rest for 6 months",
+        "Physical therapy only; no surgery needed",
+        "Traction; early ambulation"
+      ],
+      "correct": 0,
+      "rationale": "Scoliosis: Milwaukee brace worn 23 hrs/day. If surgery (spinal fusion with Harrington rod): LOG ROLL post-op to maintain spinal alignment."
+    },
+    {
+      "q": "What nursing care is essential for myelomeningocele before surgical repair?",
+      "options": [
+        "Cover with dry sterile gauze and position prone",
+        "Cover with moist sterile water dressing, keep pressure off, position prone or side-lying",
+        "Leave open to air for drying",
+        "Apply antibiotic ointment and wrap tightly"
+      ],
+      "correct": 1,
+      "rationale": "Cover the sac with moist sterile saline dressing to prevent drying and rupture. Position prone or side-lying to avoid pressure on the sac. Monitor for signs of infection and increased ICP."
+    },
+    {
+      "q": "In infants, what are the signs of increased ICP?",
+      "options": [
+        "Sunken fontanels and tachycardia",
+        "Bulging fontanels, high-pitched cry, increased head circumference, sunset eyes",
+        "Flat fontanels and irritability only",
+        "Decreased head circumference and lethargy"
+      ],
+      "correct": 1,
+      "rationale": "Infant IICP signs: bulging fontanels, high-pitched cry, widened sutures, increased head circumference, sunset eyes (sclera visible above iris), lethargy. Treat with peritoneal shunt \u2014 do NOT pump the shunt."
+    },
+    {
+      "q": "What causes hydrocephalus and how is it treated?",
+      "options": [
+        "Excess blood in ventricles; treated with blood thinners",
+        "Accumulation of CSF in ventricles; treated with ventriculoperitoneal (VP) shunt",
+        "Lack of CSF; treated with lumbar puncture",
+        "Infection of meninges; treated with antibiotics"
+      ],
+      "correct": 1,
+      "rationale": "Hydrocephalus = excess CSF accumulation causing increased ICP. Treated with VP shunt to drain CSF from ventricles to peritoneal cavity. Signs of shunt malfunction mirror IICP signs."
+    },
+    {
+      "q": "How does the presentation of IICP in older children differ from infants?",
+      "options": [
+        "Older kids have bulging fontanels too",
+        "Older kids have IICP = widened pulse pressure (increased BP, decreased pulse) + altered LOC",
+        "There is no difference",
+        "Older kids only have headaches"
+      ],
+      "correct": 1,
+      "rationale": "Older children have closed sutures/fontanels, so IICP presents as: widened pulse pressure (Cushing's response), altered LOC (most sensitive sign), headache, projectile vomiting. Shock = opposite (increased pulse, decreased BP)."
+    },
+    {
+      "q": "What are the 3 C's of Tracheoesophageal Fistula (TEF)?",
+      "options": [
+        "Cyanosis, Coughing, Choking",
+        "Clubbing, Cachexia, Constipation",
+        "Crying, Cramping, Coloring",
+        "Convulsions, Coma, Cardiac arrest"
+      ],
+      "correct": 0,
+      "rationale": "TEF presents with the 3 C's: Coughing, Choking, Cyanosis \u2014 especially during first feeding. The esophagus connects abnormally to the trachea."
+    },
+    {
+      "q": "A child with Wilm's Tumor should NOT have what done to their abdomen?",
+      "options": [
+        "Auscultation",
+        "Inspection",
+        "Palpation",
+        "Percussion"
+      ],
+      "correct": 2,
+      "rationale": "NEVER palpate the abdomen of a child with Wilm's Tumor (large kidney tumor). Palpation can cause the tumor to rupture and seed cancer cells. Post a sign: 'Do NOT palpate abdomen.'"
+    },
+    {
+      "q": "What is the hallmark finding in Hirschsprung's Disease?",
+      "options": [
+        "Projectile vomiting",
+        "No meconium within 24 hours of birth or ribbon-like foul stools",
+        "Current jelly stools",
+        "Olive-shaped mass in epigastric area"
+      ],
+      "correct": 1,
+      "rationale": "Hirschsprung's = congenital megacolon due to absence of ganglionic cells in the colon \u2192 no peristalsis. Suspect if no meconium within 24 hours or ribbon-like foul-smelling stools."
+    },
+    {
+      "q": "What are the signs and treatment for iron deficiency anemia in children?",
+      "options": [
+        "Polycythemia; treat with phlebotomy",
+        "Pallor, fatigue, tarry stools with iron; give iron on empty stomach with citrus juice",
+        "Jaundice; treat with phototherapy",
+        "Bruising; treat with Vitamin K"
+      ],
+      "correct": 1,
+      "rationale": "Iron deficiency: give iron on EMPTY stomach with citrus juice (Vitamin C enhances absorption). Use straw/dropper to avoid staining teeth. Tarry (black) stools are normal on iron. Limit milk to < 32 oz/day."
+    },
+    {
+      "q": "What are the signs of a Sickle Cell Crisis?",
+      "options": [
+        "Painless swelling and easy bruising",
+        "Fever, severe abdominal pain, painful edematous hands/feet (hand-foot syndrome), arthralgia",
+        "Petechiae and epistaxis",
+        "Hemoptysis and chest pain only"
+      ],
+      "correct": 1,
+      "rationale": "Sickle Cell Crisis: fever, severe pain (abdomen, joints, extremities), hand-foot syndrome (painful swollen hands/feet). Treatment: rest, hydration, pain management. Avoid high altitude and strenuous activity."
+    },
+    {
+      "q": "After a tonsillectomy, what signs indicate hemorrhage?",
+      "options": [
+        "Sore throat and hoarse voice",
+        "Frequent swallowing, vomiting blood, or clearing throat",
+        "Fever and cough",
+        "Snoring and mouth breathing"
+      ],
+      "correct": 1,
+      "rationale": "Post-tonsillectomy hemorrhage signs: frequent swallowing (blood dripping down throat), vomiting blood, clearing throat. No red liquids, no straws, ice collar, soft foods. Highest hemorrhage risk: first 24 hours and days 5-10 (scabs fall off)."
+    },
+    {
+      "q": "What is the primary emergency medication for respiratory distress in children?",
+      "options": [
+        "Atropine",
+        "Epinephrine (Sus-phrine) and Theophylline (Theo-dur)",
+        "Morphine",
+        "Dexamethasone only"
+      ],
+      "correct": 1,
+      "rationale": "Primary meds for ER respiratory distress in kids: Sus-phrine (Epinephrine HCl) \u2014 potent bronchodilator, and Theophylline (Theo-dur) \u2014 also bronchodilators."
+    },
+    {
+      "q": "RSV (Respiratory Syncytial Virus) requires what type of isolation?",
+      "options": [
+        "Airborne precautions only",
+        "Contact precautions with private room; Mist Tent with O2 and Ribavirin",
+        "Droplet precautions only",
+        "No isolation needed"
+      ],
+      "correct": 1,
+      "rationale": "RSV: isolate with contact precautions, private room is best. Use Mist Tent to provide O2 first, then add Ribavirin. Flood tent with O2 first and wipe down inside of tent periodically so you can see the patient."
     }
   ]
 }

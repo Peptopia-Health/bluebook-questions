@@ -1,326 +1,607 @@
 {
   "section": "endo",
   "title": "Endocrine & Metabolic",
-  "questionCount": 29,
+  "questionCount": 100,
   "questions": [
     {
-      "q": "Which electrolyte imbalance is seen in Cushing's?",
-      "options": [
-        "Hyponatremia",
-        "Hyponatremia/Hyperkalemia",
-        "Hypercalcemia",
-        "Hypernatremia/Hypokalemia"
-      ],
+      "q": "Which electrolyte imbalance is seen in Cushing's Syndrome?",
+      "options": ["Hyponatremia", "Hyponatremia/Hyperkalemia", "Hypercalcemia", "Hypernatremia/Hypokalemia"],
       "correct": 3,
       "rationale": "Excess aldosterone retains Sodium (Hypernatremia) and excretes Potassium (Hypokalemia)."
     },
     {
       "q": "What is the priority in Addisonian Crisis?",
-      "options": [
-        "Prevent Shock (Fluids/Steroids)",
-        "Prevent Seizure",
-        "Prevent Stroke",
-        "Lower BP"
-      ],
+      "options": ["Prevent Shock (Fluids/Steroids)", "Prevent Seizure", "Prevent Stroke", "Lower BP"],
       "correct": 0,
-      "rationale": "Lack of cortisol leads to vascular collapse and severe hypotension (Shock)."
+      "rationale": "Lack of cortisol leads to vascular collapse and severe hypotension (Shock). Admin IV glucose + corticosteroids. No PO corticosteroids on empty stomach."
     },
     {
       "q": "Which diabetes type involves ketosis?",
-      "options": [
-        "Gestational",
-        "Type 1",
-        "Insipidus",
-        "Type 2"
-      ],
+      "options": ["Gestational", "Type 1", "Insipidus", "Type 2"],
       "correct": 1,
       "rationale": "Type 1 diabetics produce no insulin, forcing the body to burn fat, producing ketones."
     },
     {
       "q": "What is the rule for mixing insulin?",
-      "options": [
-        "Draw both together",
-        "Draw Cloudy before Clear",
-        "Draw Clear (Regular) before Cloudy (NPH)",
-        "Never mix"
-      ],
+      "options": ["Draw both together", "Draw Cloudy before Clear", "Draw Clear (Regular) before Cloudy (NPH)", "Never mix"],
       "correct": 2,
-      "rationale": "You want to prevent contaminating the rapid clear insulin with the slow cloudy insulin. \"Clear before Cloudy\" (RN - Regular then NPH)."
+      "rationale": "Draw Regular (clear) insulin into syringe first to prevent contaminating it with NPH (cloudy). 'Clear before Cloudy' (RN - Regular then NPH)."
     },
     {
       "q": "What is a hallmark sign of Graves' Disease?",
-      "options": [
-        "Weight gain",
-        "Bradycardia",
-        "Cold intolerance",
-        "Exophthalmos (Bulging eyes)"
-      ],
+      "options": ["Weight gain", "Bradycardia", "Cold intolerance", "Exophthalmos (Bulging eyes)"],
       "correct": 3,
-      "rationale": "Accumulation of fluid behind the eyes causes them to bulge."
+      "rationale": "Accumulation of fluid behind the eyes causes them to bulge. Graves' is the most common cause of hyperthyroidism."
     },
     {
       "q": "What are signs of Thyroid Storm?",
-      "options": [
-        "High Fever, Tachycardia",
-        "Low Temp, Bradycardia",
-        "Constipation",
-        "Somnolence"
-      ],
+      "options": ["High Fever, Tachycardia", "Low Temp, Bradycardia", "Constipation", "Somnolence"],
       "correct": 0,
-      "rationale": "A massive surge of thyroid hormone sends metabolism into overdrive."
+      "rationale": "A massive surge of thyroid hormone sends metabolism into overdrive causing high fever, tachycardia, delirium, and potential cardiovascular collapse."
     },
     {
       "q": "What is a sign of Hypothyroidism?",
-      "options": [
-        "Tachycardia",
-        "Cold Intolerance",
-        "Diarrhea",
-        "Weight loss"
-      ],
+      "options": ["Tachycardia", "Cold Intolerance", "Diarrhea", "Weight loss"],
       "correct": 1,
-      "rationale": "Slowed metabolism leads to decreased heat production."
+      "rationale": "Slowed metabolism leads to decreased heat production, causing cold intolerance, weight gain, fatigue, constipation, and bradycardia."
     },
     {
       "q": "What hormone is lacking in Diabetes Insipidus?",
-      "options": [
-        "Glucagon",
-        "Insulin",
-        "ADH (Anti-diuretic Hormone)",
-        "Thyroid"
-      ],
+      "options": ["Glucagon", "Insulin", "ADH (Anti-diuretic Hormone)", "Thyroid"],
       "correct": 2,
-      "rationale": "Without ADH, the kidneys cannot reabsorb water, leading to massive urine output."
+      "rationale": "Without ADH, the kidneys cannot reabsorb water, leading to massive urine output (up to 20 L/day), extreme thirst, and dilute urine."
     },
     {
       "q": "What electrolyte imbalance is seen in SIADH?",
-      "options": [
-        "Hypernatremia",
-        "Hypocalcemia",
-        "Hyperkalemia",
-        "Hyponatremia"
-      ],
+      "options": ["Hypernatremia", "Hypocalcemia", "Hyperkalemia", "Dilutional Hyponatremia"],
       "correct": 3,
-      "rationale": "Excess water retention dilutes the blood sodium levels."
+      "rationale": "Excess ADH causes water retention → fluid overload → dilutes blood sodium (dilutional hyponatremia)."
     },
     {
       "q": "High growth hormone in an adult is called?",
-      "options": [
-        "Acromegaly",
-        "Gigantism",
-        "Dwarfism",
-        "Cretinism"
-      ],
+      "options": ["Acromegaly", "Gigantism", "Dwarfism", "Cretinism"],
       "correct": 0,
-      "rationale": "Gigantism is in children; Acromegaly is in adults (bones thicken, don't lengthen)."
+      "rationale": "Gigantism occurs in children (before growth plates close). Acromegaly occurs in adults (bones thicken but don't lengthen — enlarged hands, feet, jaw)."
     },
     {
       "q": "What is the primary treatment for Addison's Disease?",
-      "options": [
-        "Diuretics",
-        "Steroid replacement",
-        "Insulin",
-        "Thyroid replacement"
-      ],
+      "options": ["Diuretics", "Steroid replacement (cortisol/aldosterone)", "Insulin", "Thyroid replacement"],
       "correct": 1,
-      "rationale": "The adrenal cortex is failing; you must replace the missing steroids (cortisol/aldosterone)."
+      "rationale": "The adrenal cortex is failing; you must replace the missing steroids (cortisol and aldosterone). Never stop steroids abruptly."
     },
     {
       "q": "What is the danger of sedating a patient with Myxedema?",
-      "options": [
-        "Seizures",
-        "Thyroid Storm",
-        "Myxedema Coma/Resp Arrest",
-        "Hypertension"
-      ],
+      "options": ["Seizures", "Thyroid Storm", "Myxedema Coma/Respiratory Arrest", "Hypertension"],
       "correct": 2,
-      "rationale": "Their metabolism is already critically low; sedatives can stop breathing entirely."
+      "rationale": "Their metabolism is already critically low; sedatives can further depress respiration and cause myxedema coma or respiratory arrest."
     },
     {
-      "q": "When should Synthroid be taken?",
-      "options": [
-        "With dinner",
-        "With lunch",
-        "At bedtime",
-        "Morning, empty stomach"
-      ],
+      "q": "When should Synthroid (Levothyroxine) be taken?",
+      "options": ["With dinner", "With lunch", "At bedtime", "Morning, empty stomach"],
       "correct": 3,
-      "rationale": "Absorption is best on an empty stomach; morning dosing prevents insomnia."
+      "rationale": "Absorption is best on an empty stomach; morning dosing prevents insomnia from the stimulant effect of thyroid hormone."
     },
     {
       "q": "What do you give an unconscious hypoglycemic patient?",
-      "options": [
-        "Glucagon IM or D50 IV",
-        "Orange Juice",
-        "Insulin",
-        "Water"
-      ],
+      "options": ["Glucagon IM or D50 IV", "Orange Juice", "Insulin", "Water"],
       "correct": 0,
-      "rationale": "Unconscious patients cannot swallow (aspiration risk). Glucagon releases liver glycogen."
+      "rationale": "Unconscious patients cannot swallow (aspiration risk). Glucagon IM releases liver glycogen; D50 IV provides immediate glucose."
     },
     {
       "q": "Which condition presents with Kussmaul respirations?",
-      "options": [
-        "Insulin Shock",
-        "Diabetic Ketoacidosis (DKA)",
-        "HHNK",
-        "Hypoglycemia"
-      ],
+      "options": ["Insulin Shock", "Diabetic Ketoacidosis (DKA)", "HHNK", "Hypoglycemia"],
       "correct": 1,
-      "rationale": "Kussmaul respirations are a compensatory mechanism to blow off acid (CO2) in DKA."
+      "rationale": "Kussmaul respirations (deep, rapid breathing) are a compensatory mechanism to blow off CO2 and reduce acidosis in DKA."
     },
     {
       "q": "What is the #1 treatment priority in DKA?",
-      "options": [
-        "Bicarbonate",
-        "Insulin",
-        "IV Fluids",
-        "Potassium"
-      ],
+      "options": ["Bicarbonate", "Insulin", "IV Fluids (Normal Saline)", "Potassium"],
       "correct": 2,
-      "rationale": "Severe dehydration is the immediate threat to life. Rehydrate first."
+      "rationale": "Severe dehydration is the immediate threat to life. Rehydrate FIRST with NS, then infuse regular insulin IV as Rx'd."
     },
     {
       "q": "Which is the only insulin that can be given IV?",
-      "options": [
-        "NPH",
-        "Humalog",
-        "Lantus",
-        "Regular"
-      ],
+      "options": ["NPH", "Humalog", "Lantus", "Regular"],
       "correct": 3,
-      "rationale": "Regular insulin is the only formulation stable enough for IV administration."
+      "rationale": "Regular insulin is the only formulation stable and safe for IV administration."
     },
     {
-      "q": "When does NPH insulin peak?",
-      "options": [
-        "8-10 hours",
-        "2 hours",
-        "No peak",
-        "24 hours"
-      ],
+      "q": "When does NPH (Intermediate-acting) insulin peak?",
+      "options": ["6-12 hours", "30-60 minutes", "No peak", "24 hours"],
       "correct": 0,
-      "rationale": "NPH has a longer onset and peak than Regular; watch for hypoglycemia in mid-afternoon."
+      "rationale": "NPH: Onset 1-2 hrs, Peak 6-12 hrs, Duration 18-24 hrs. Watch for hypoglycemia mid-afternoon when given in the morning."
     },
     {
       "q": "When should Humalog (Lispro) be given?",
-      "options": [
-        "Daily",
-        "WITH meals",
-        "At bedtime",
-        "30 mins before meals"
-      ],
+      "options": ["Once daily at bedtime", "WITH meals (5-15 min before)", "2 hours before meals", "30 mins before meals"],
       "correct": 1,
-      "rationale": "It acts so fast that food must be present or hypoglycemia will occur."
+      "rationale": "Rapid-acting insulins (Lispro/Humalog, Aspart/Novolog) act so fast (onset 5-15 min) that food must be present or hypoglycemia occurs. Peak: 0.75-1.5 hrs."
     },
     {
       "q": "Which insulin has NO peak?",
-      "options": [
-        "NPH",
-        "Regular",
-        "Lantus (Glargine)",
-        "Humalog"
-      ],
+      "options": ["NPH", "Regular", "Lantus (Glargine)", "Humalog"],
       "correct": 2,
-      "rationale": "Lantus provides a steady baseline insulin level without a dangerous peak time."
+      "rationale": "Lantus (Glargine) provides a steady baseline insulin level without a dangerous peak time. Onset ~1 hr, Duration 14-20 hrs. NEVER mix Lantus with other insulins."
     },
     {
       "q": "What does the HbA1c test measure?",
-      "options": [
-        "Current blood sugar",
-        "Insulin level",
-        "Ketones",
-        "Glucose control over 3 months"
-      ],
+      "options": ["Current blood sugar", "Insulin level", "Ketones", "Glucose control over 3 months (120 days)"],
       "correct": 3,
-      "rationale": "RBCs live 120 days; HbA1c measures how much sugar stuck to them over their lifespan."
+      "rationale": "RBCs live ~120 days; HbA1c measures how much glucose adhered to hemoglobin. Goal: 4-6% ideal, < 7.5% OK."
     },
     {
       "q": "Should steroids be stopped abruptly?",
-      "options": [
-        "No, taper slowly",
-        "Yes, immediately",
-        "Only if sick",
-        "If side effects occur"
-      ],
+      "options": ["No, taper slowly", "Yes, immediately", "Only if side effects occur", "Only if patient is improving"],
       "correct": 0,
-      "rationale": "Abrupt withdrawal causes Addisonian Crisis because the adrenals have fallen asleep."
+      "rationale": "Abrupt withdrawal causes Addisonian Crisis because the adrenals have been suppressed and need time to recover function."
     },
     {
-      "q": "What is a common side effect of long-term steroid use?",
-      "options": [
-        "Hypotension",
-        "Osteoporosis/Hyperglycemia",
-        "Weight loss",
-        "Hypoglycemia"
-      ],
+      "q": "What are common side effects of long-term steroid use?",
+      "options": ["Hypotension and weight loss", "Moon face, hyperglycemia, acne, hirsutism, buffalo hump, osteoporosis, mood swings", "Hypothermia and bradycardia", "Hypoglycemia and muscle hypertrophy"],
       "correct": 1,
-      "rationale": "Steroids catabolize bone and increase blood sugar."
+      "rationale": "Long-term steroids cause Cushing's-like symptoms: moon face, hyperglycemia, acne, hirsutism, buffalo hump, weight gain, spindle shape (thin extremities), osteoporosis, mood swings, adrenal suppression, delayed growth in kids."
     },
     {
       "q": "What sign is associated with Hypoparathyroidism?",
-      "options": [
-        "Kidney stones",
-        "Bone pain",
-        "Positive Chvostek's/Trousseau's",
-        "Polyuria"
-      ],
+      "options": ["Kidney stones", "Bone pain", "Positive Chvostek's/Trousseau's sign", "Polyuria"],
       "correct": 2,
-      "rationale": "Lack of PTH causes hypocalcemia, leading to neuromuscular excitability."
+      "rationale": "Lack of PTH causes hypocalcemia → neuromuscular excitability. Chvostek's = facial twitch when tapping facial nerve. Trousseau's = carpal spasm when BP cuff is inflated."
     },
     {
       "q": "What is a major complication of Hyperparathyroidism?",
-      "options": [
-        "Seizures",
-        "Diarrhea",
-        "Tetany",
-        "Kidney Stones/Bone Fractures"
-      ],
+      "options": ["Seizures", "Diarrhea", "Tetany", "Kidney Stones and Bone Fractures"],
       "correct": 3,
-      "rationale": "PTH pulls calcium out of bones (fractures) and puts it into blood/kidneys (stones)."
+      "rationale": "Excess PTH pulls calcium out of bones (pathological fractures) and puts it into blood/kidneys (kidney stones). Think: 'Bones, Stones, Groans, Moans.'"
     },
     {
       "q": "How should a diabetic cut their toenails?",
-      "options": [
-        "Straight across",
-        "Curved",
-        "Very short",
-        "File only"
-      ],
+      "options": ["Straight across", "Curved", "Very short", "File only"],
       "correct": 0,
-      "rationale": "Straight across prevents ingrown nails. Many sources recommend filing only to avoid injury."
+      "rationale": "Straight across prevents ingrown nails and potential infection. Many sources also recommend filing only to avoid cuts, due to poor healing and neuropathy."
     },
     {
       "q": "Should a diabetic take insulin when sick and not eating?",
-      "options": [
-        "Take pill instead",
-        "Yes, take insulin",
-        "Only half dose",
-        "No, skip dose"
-      ],
+      "options": ["Take oral meds instead", "Yes, take insulin", "Only half dose", "No, skip dose"],
       "correct": 1,
-      "rationale": "Illness raises blood sugar (stress response). Insulin is needed to prevent DKA."
+      "rationale": "Illness raises blood sugar via stress hormones (cortisol, epinephrine). Insulin is still needed to prevent DKA."
     },
     {
       "q": "What is a major complication of thyroidectomy?",
-      "options": [
-        "Hyperkalemia",
-        "Hypercalcemia",
-        "Hypocalcemia (Tetany)",
-        "Hyponatremia"
-      ],
+      "options": ["Hyperkalemia", "Hypercalcemia", "Hypocalcemia (Tetany)", "Hyponatremia"],
       "correct": 2,
-      "rationale": "Accidental removal or damage of parathyroid glands leads to low calcium."
+      "rationale": "Accidental removal or damage of parathyroid glands leads to low calcium → tetany, laryngospasm. Keep calcium gluconate and trach kit at bedside."
     },
     {
       "q": "What is the primary treatment for Type 2 Diabetes?",
-      "options": [
-        "Insulin only",
-        "Bed rest",
-        "Surgery",
-        "Diet and Exercise"
-      ],
+      "options": ["Insulin only", "Bed rest", "Surgery", "Diet and Exercise first"],
       "correct": 3,
-      "rationale": "Type 2 is often managed by lifestyle changes first, then orals."
+      "rationale": "Type 2 is often managed initially by lifestyle changes (diet, exercise, weight loss), then oral hypoglycemics, then insulin if needed."
+    },
+    {
+      "q": "When in doubt, should you treat for hypoglycemia or hyperglycemia first?",
+      "options": ["Hyperglycemia", "Hypoglycemia", "Neither — wait for blood glucose results", "Both simultaneously"],
+      "correct": 1,
+      "rationale": "Hypoglycemia kills faster than hyperglycemia. When in doubt, give glucose first. If the patient improves, it was hypoglycemia. If not, hyperglycemia is unlikely to worsen significantly from a small amount of sugar."
+    },
+    {
+      "q": "What is the first IV fluid used for DKA treatment?",
+      "options": ["D5W", "Normal Saline (NS)", "Lactated Ringer's", "Half Normal Saline"],
+      "correct": 1,
+      "rationale": "First IV for DKA = NS (Normal Saline, 0.9% NaCl) to restore volume, then infuse regular insulin IV as Rx'd. D5W is NOT used initially because the patient is already hyperglycemic."
+    },
+    {
+      "q": "What are the symptoms of hypoglycemia?",
+      "options": ["Polyuria, polydipsia, polyphagia, fruity breath", "Confusion, headache, irritable, nausea, sweating, tremors, hunger, slurred speech", "Weight loss, abdominal pain, Kussmaul respirations", "Dry skin, increased thirst, blurred vision only"],
+      "correct": 1,
+      "rationale": "Hypoglycemia symptoms = brain + sympathetic response: confusion, HA, irritability, nausea, sweating, tremors, hunger, slurring. Remember: 'Cold and clammy, need some candy.'"
+    },
+    {
+      "q": "What are the symptoms of hyperglycemia?",
+      "options": ["Cold, clammy skin and hunger", "Weakness, syncope, polydipsia, polyuria, blurred vision, fruity breath", "Tremors, confusion, tachycardia only", "Bradycardia and constipation"],
+      "correct": 1,
+      "rationale": "Hyperglycemia: weakness, syncope, polydipsia (thirst), polyuria (frequent urination), polyphagia (hunger), blurred vision, fruity breath (ketones). Remember: 'Hot and dry, sugar is high.'"
+    },
+    {
+      "q": "What type of breath does fruity breath indicate?",
+      "options": ["Hepatic encephalopathy", "Diabetic Ketoacidosis (DKA)", "Uremia", "Hypoglycemia"],
+      "correct": 1,
+      "rationale": "Fruity (acetone) breath is a hallmark of DKA. The body is breaking down fat for energy, producing ketones which are exhaled."
+    },
+    {
+      "q": "How long can insulin be kept at room temperature?",
+      "options": ["24 hours", "7 days", "28 days", "90 days"],
+      "correct": 2,
+      "rationale": "Insulin may be kept at room temperature for 28 days. Beyond that, it should be refrigerated or discarded. Room temperature insulin causes less injection site pain."
+    },
+    {
+      "q": "How should insulin injection sites be rotated?",
+      "options": ["Use the same site every time for consistency", "Rotate within ONE region, then move to a new region", "Alternate arms only", "Random sites each time"],
+      "correct": 1,
+      "rationale": "Rotate injection sites within one anatomical region (e.g., abdomen), then move to a new region. This ensures consistent absorption while preventing lipodystrophy."
+    },
+    {
+      "q": "What is the onset, peak, and duration of Regular (Short-acting) insulin?",
+      "options": ["Onset: 5-15 min, Peak: 0.75-1.5 hrs, Duration: 3-4 hrs", "Onset: 30-60 min, Peak: 2-3 hrs, Duration: 4-6 hrs", "Onset: 1-2 hrs, Peak: 6-12 hrs, Duration: 18-24 hrs", "Onset: 1 hr, Peak: none, Duration: 14-20 hrs"],
+      "correct": 1,
+      "rationale": "Regular insulin: Onset 30-60 min, Peak 2-3 hrs, Duration 4-6 hrs. It is the ONLY insulin that can be given IV. Can also be given SQ."
+    },
+    {
+      "q": "What oral hypoglycemics work by stimulating beta cells of the pancreas?",
+      "options": ["ACE inhibitors", "Glyburide, Metformin (Glucophage), Avandia, Actos", "Statins", "Calcium channel blockers"],
+      "correct": 1,
+      "rationale": "Oral hypoglycemics decrease glucose by stimulating insulin production by pancreatic beta cells, increasing insulin sensitivity, and decreasing hepatic glucose production. Acarbose blunts post-meal sugar spikes."
+    },
+    {
+      "q": "What are the 3 P's of diabetes?",
+      "options": ["Pain, Pallor, Pulselessness", "Polyuria, Polydipsia, Polyphagia", "Pruritis, Petechiae, Purpura", "Ptosis, Paralysis, Paresthesia"],
+      "correct": 1,
+      "rationale": "The 3 P's of diabetes: Polyuria (excessive urination), Polydipsia (excessive thirst), Polyphagia (excessive hunger). These occur because glucose cannot enter cells and spills into urine, pulling water with it."
+    },
+    {
+      "q": "What differentiates Diabetic Coma from Insulin Shock initially?",
+      "options": ["There is no clinical difference", "Insulin Shock has slow onset; Diabetic Coma has rapid onset", "Give glucose first — if no help, then give insulin", "Check temperature only"],
+      "correct": 2,
+      "rationale": "When in doubt: give glucose first (orange juice, sugar, D50). If the patient improves → it was insulin shock (hypoglycemia). If no improvement → diabetic coma (hyperglycemia) → give insulin. Treating hypoglycemia first is safer."
+    },
+    {
+      "q": "What equipment should be kept at the bedside after thyroidectomy?",
+      "options": ["Chest tube kit", "Trach kit, O2, suction, and Calcium Gluconate", "Defibrillator only", "NG tube supplies"],
+      "correct": 1,
+      "rationale": "Post-thyroidectomy: keep trach kit (for laryngeal edema/spasm), O2, suction, and Calcium Gluconate (for hypocalcemia from parathyroid damage) at bedside."
+    },
+    {
+      "q": "What should the nurse assess for FIRST after thyroidectomy?",
+      "options": ["Calcium levels", "Hoarseness (recurrent laryngeal nerve damage)", "Neck swelling and respiratory distress", "Incision appearance"],
+      "correct": 2,
+      "rationale": "Priority: AIRWAY. Assess for neck swelling/hematoma compressing the trachea → respiratory distress. Check behind the neck for blood pooling. Then monitor for hoarseness (nerve damage) and hypocalcemia (tetany)."
+    },
+    {
+      "q": "What is the clinical presentation of Cushing's Syndrome?",
+      "options": ["Weight loss, hypotension, bronze skin", "Moon face, buffalo hump, truncal obesity, thin extremities, hyperglycemia, acne, hirsutism, mood swings", "Exophthalmos, tachycardia, weight loss", "Goiter, cold intolerance, constipation"],
+      "correct": 1,
+      "rationale": "Cushing's = excess cortisol: moon face, buffalo hump, truncal obesity (spindle shape), thin extremities, hyperglycemia, acne, hirsutism, mood swings, osteoporosis, immunosuppression."
+    },
+    {
+      "q": "What is the clinical presentation of Addison's Disease?",
+      "options": ["Moon face and weight gain", "Hypotension, hypoglycemia, bronze/dark skin pigmentation, weakness, weight loss", "Hypertension and hyperglycemia", "Exophthalmos and tremors"],
+      "correct": 1,
+      "rationale": "Addison's = adrenal insufficiency (opposite of Cushing's): hypotension, hypoglycemia, hyperkalemia, bronze/dark skin, weakness, weight loss. Crisis = vascular collapse requiring IV fluids + steroids."
+    },
+    {
+      "q": "What are the signs and symptoms of Diabetes Insipidus (DI)?",
+      "options": ["Oliguria, edema, weight gain, hyponatremia", "Massive polyuria (dilute urine), extreme polydipsia, dehydration, hypernatremia", "Normal urine output with proteinuria", "Fruity breath and Kussmaul respirations"],
+      "correct": 1,
+      "rationale": "DI = no ADH → kidneys cannot concentrate urine → massive dilute urine output (up to 20 L/day), severe dehydration, extreme thirst, and hypernatremia. Specific gravity is very low (< 1.005)."
+    },
+    {
+      "q": "How do DI and SIADH compare?",
+      "options": ["Both cause fluid retention", "DI = too much urine/dehydration/high Na+; SIADH = fluid retention/low Na+", "They are the same condition", "DI causes hyponatremia; SIADH causes hypernatremia"],
+      "correct": 1,
+      "rationale": "DI (no ADH) = massive polyuria, dehydration, HYPERnatremia. SIADH (too much ADH) = water retention, fluid overload, dilutional HYPOnatremia. They are opposites."
+    },
+    {
+      "q": "What treatment is used for SIADH?",
+      "options": ["Increase IV fluids", "Fluid restriction and hypertonic saline (3% NaCl) if severe", "ADH replacement", "Diuretics and high-sodium diet only"],
+      "correct": 1,
+      "rationale": "SIADH = too much water retention. Treatment: restrict fluids, monitor I&O, daily weights. Severe hyponatremia may require hypertonic saline (3% NaCl) given slowly to prevent central pontine myelinolysis."
+    },
+    {
+      "q": "What treatment is used for Diabetes Insipidus?",
+      "options": ["Fluid restriction", "ADH replacement (Desmopressin/DDAVP)", "Insulin", "Corticosteroids"],
+      "correct": 1,
+      "rationale": "DI = lack of ADH. Treatment: replace ADH with Desmopressin (DDAVP) via nasal spray or injection. Also replace fluids and monitor I&O, specific gravity, and electrolytes."
+    },
+    {
+      "q": "What is Myxedema Coma?",
+      "options": ["A complication of hyperthyroidism", "A life-threatening severe hypothyroidism with hypothermia, bradycardia, hypoventilation, and altered consciousness", "A complication of DKA", "An endocrine emergency caused by excess cortisol"],
+      "correct": 1,
+      "rationale": "Myxedema coma is the most severe form of hypothyroidism: profound hypothermia, bradycardia, hypoventilation, hypotension, altered mental status. Triggered by infection, cold exposure, or sedatives. Emergency: IV thyroid hormone, warming, supportive care."
+    },
+    {
+      "q": "What are symptoms of hyperthyroidism?",
+      "options": ["Weight gain, constipation, cold intolerance, bradycardia", "Weight loss, diarrhea, heat intolerance, tachycardia, nervousness, tremors", "Edema, fatigue, dry skin, hair loss only", "No symptoms — it is always asymptomatic"],
+      "correct": 1,
+      "rationale": "Hyperthyroidism = metabolism in overdrive: weight loss, diarrhea, heat intolerance, tachycardia, nervousness, tremors, fine hair, exophthalmos (Graves'), increased appetite."
+    },
+    {
+      "q": "What are symptoms of hypothyroidism?",
+      "options": ["Weight loss, diarrhea, heat intolerance", "Weight gain, constipation, cold intolerance, fatigue, bradycardia, dry skin, coarse hair", "Polyuria, polydipsia, weight loss", "Tremors, anxiety, palpitations"],
+      "correct": 1,
+      "rationale": "Hypothyroidism = slowed metabolism: weight gain, constipation, cold intolerance, fatigue, bradycardia, dry skin, coarse/brittle hair, edema (myxedema), depression, menstrual irregularities."
+    },
+    {
+      "q": "What nursing care is important for a patient post-thyroidectomy regarding positioning?",
+      "options": ["Flat in bed with neck hyperextended", "Semi-Fowler's with neck supported and slightly flexed", "Trendelenburg position", "Prone position"],
+      "correct": 1,
+      "rationale": "Post-thyroidectomy: Semi-Fowler's position to reduce swelling, support head/neck with pillows to avoid strain on sutures. Avoid neck hyperextension or flexion."
+    },
+    {
+      "q": "The Dilantin therapeutic range is 10-20. What endocrine effect does Isoniazid (INH) have on Dilantin levels?",
+      "options": ["Decreases Dilantin levels", "Increases Dilantin blood levels", "No effect", "Converts Dilantin to an inactive form"],
+      "correct": 1,
+      "rationale": "Isoniazid (INH), used for TB treatment, inhibits Dilantin (Phenytoin) metabolism → INCREASES Dilantin blood levels → risk of toxicity. Monitor Dilantin levels closely when on INH."
+    },
+    {
+      "q": "What is the normal blood glucose range?",
+      "options": ["40-60 mg/dL", "70-110 mg/dL", "120-180 mg/dL", "200-300 mg/dL"],
+      "correct": 1,
+      "rationale": "Normal fasting blood glucose: 70-110 mg/dL. Below 70 = hypoglycemia. Consistent readings above 126 fasting = diabetes."
+    },
+    {
+      "q": "What is the ideal HbA1c range?",
+      "options": ["1-2%", "4-6% (ideal), < 7.5% acceptable", "8-10%", "12-15%"],
+      "correct": 1,
+      "rationale": "HbA1c: 4-6% is ideal. Less than 7.5% is OK for most diabetics. Each 1% increase correlates with ~30 mg/dL increase in average blood glucose over 120 days."
+    },
+    {
+      "q": "What does Pheochromocytoma cause?",
+      "options": ["Hypotension and bradycardia", "Severe paroxysmal hypertension, headache, diaphoresis, and tachycardia", "Hypothermia and weight gain", "Polyuria and polydipsia"],
+      "correct": 1,
+      "rationale": "Pheochromocytoma is a tumor of the adrenal medulla that secretes excess catecholamines (epinephrine/norepinephrine) → severe HTN episodes, headache, sweating, tachycardia, palpitations."
+    },
+    {
+      "q": "What should the nurse avoid when caring for a patient with Pheochromocytoma?",
+      "options": ["Blood pressure monitoring", "Palpating the abdomen (can trigger catecholamine release)", "Giving IV fluids", "Administering oxygen"],
+      "correct": 1,
+      "rationale": "Do NOT palpate the adrenal tumor — it can release a massive surge of catecholamines causing hypertensive crisis, stroke, or cardiac arrhythmias."
+    },
+    {
+      "q": "What is the potassium-sparing diuretic used with caution in endocrine patients, and why?",
+      "options": ["Furosemide — causes hyperkalemia", "Aldactone (Spironolactone) — watch for hyperkalemia", "Mannitol — causes hyponatremia", "Hydrochlorothiazide — causes hypercalcemia"],
+      "correct": 1,
+      "rationale": "Aldactone (Spironolactone) is a potassium-sparing diuretic. Watch for hyperK+ especially when combined with ACE inhibitors. Used in Cushing's and CHF."
+    },
+    {
+      "q": "What happens to cortisol and ACTH in primary Addison's Disease?",
+      "options": ["Both are elevated", "Cortisol is low, ACTH is high", "Cortisol is high, ACTH is low", "Both are low"],
+      "correct": 1,
+      "rationale": "In PRIMARY Addison's, the adrenals fail → low cortisol. The pituitary tries to compensate by producing MORE ACTH (negative feedback loop broken). ACTH excess causes the characteristic bronze skin pigmentation."
+    },
+    {
+      "q": "What is the Somogyi Effect?",
+      "options": ["Morning hyperglycemia caused by excessive evening insulin → rebound hyperglycemia", "Hyperglycemia that occurs only after meals", "Low blood sugar in the afternoon", "A type of insulin resistance"],
+      "correct": 0,
+      "rationale": "Somogyi Effect: too much insulin at night → nocturnal hypoglycemia → body releases counter-regulatory hormones (glucagon, cortisol, epinephrine) → morning rebound HYPERglycemia. Treatment: DECREASE evening insulin dose."
+    },
+    {
+      "q": "What is the Dawn Phenomenon?",
+      "options": ["Morning hyperglycemia due to normal release of growth hormone and cortisol in early AM", "Afternoon hypoglycemia after lunch", "Nighttime hypoglycemia", "Hyperglycemia after exercise"],
+      "correct": 0,
+      "rationale": "Dawn Phenomenon: normal surge of growth hormone and cortisol between 4-8 AM → morning hyperglycemia. Treatment: INCREASE insulin or adjust timing. (Somogyi = decrease insulin; Dawn = increase insulin.)"
+    },
+    {
+      "q": "How do you differentiate Somogyi Effect from Dawn Phenomenon?",
+      "options": ["They cannot be differentiated", "Check blood glucose at 3 AM: low = Somogyi, normal = Dawn Phenomenon", "Somogyi only occurs in Type 2; Dawn only in Type 1", "Dawn Phenomenon causes afternoon hyperglycemia"],
+      "correct": 1,
+      "rationale": "Check 3 AM blood glucose: If LOW at 3 AM → Somogyi (rebound from hypoglycemia → decrease bedtime insulin). If NORMAL at 3 AM → Dawn Phenomenon (hormonal surge → increase insulin or adjust timing)."
+    },
+    {
+      "q": "What is HHNK (Hyperosmolar Hyperglycemic Nonketotic Syndrome)?",
+      "options": ["A Type 1 emergency with ketosis", "A Type 2 emergency with extreme hyperglycemia (>600 mg/dL) WITHOUT ketosis", "A complication of hypoglycemia", "A thyroid emergency"],
+      "correct": 1,
+      "rationale": "HHNK occurs in Type 2 diabetics: extreme hyperglycemia (600-2000+ mg/dL), severe dehydration, NO ketosis (because they still produce some insulin). Very high mortality rate. Treatment: fluids, insulin, electrolyte correction."
+    },
+    {
+      "q": "Why doesn't HHNK produce ketones like DKA?",
+      "options": ["Because Type 2 patients don't eat enough fat", "Because Type 2 patients still produce SOME insulin, preventing fat breakdown", "Because HHNK only occurs when glucose is below 400", "Because ketones are only produced in children"],
+      "correct": 1,
+      "rationale": "Type 2 patients produce enough insulin to prevent lipolysis (fat breakdown) and ketogenesis, but not enough to handle glucose. DKA occurs in Type 1 where there is ZERO insulin production."
+    },
+    {
+      "q": "What is a primary concern regarding diabetic foot care?",
+      "options": ["Soak feet in hot water daily", "Never go barefoot, inspect feet daily, wear well-fitting shoes, do not use heating pads", "Walk barefoot to toughen the skin", "Use over-the-counter corn removers"],
+      "correct": 1,
+      "rationale": "Diabetics have peripheral neuropathy (can't feel injuries) and poor circulation (slow healing). Never go barefoot, inspect feet daily for cuts/sores, wear proper shoes, cut nails straight across, no heating pads (burn risk)."
+    },
+    {
+      "q": "What exercise guidelines apply to diabetics?",
+      "options": ["Exercise only when blood sugar is above 300", "Exercise regularly; carry a fast-acting sugar; don't inject insulin into exercising limb", "Avoid all exercise", "Exercise only on an empty stomach"],
+      "correct": 1,
+      "rationale": "Exercise lowers blood sugar. Carry fast-acting sugar, don't exercise if BS > 250 with ketones (exercise worsens ketosis), don't inject insulin into limb being exercised (faster absorption → hypoglycemia)."
+    },
+    {
+      "q": "What is primary hyperaldosteronism (Conn's Syndrome)?",
+      "options": ["Excess cortisol from the adrenal cortex", "Excess aldosterone → sodium/water retention, HTN, hypokalemia", "Excess catecholamines from adrenal medulla", "Lack of ADH from the pituitary"],
+      "correct": 1,
+      "rationale": "Conn's Syndrome = excess aldosterone → retains Na+ and water (HTN, edema), excretes K+ (hypokalemia → muscle weakness, arrhythmias). Usually caused by adrenal adenoma."
+    },
+    {
+      "q": "What is the nursing priority for a patient in thyroid storm?",
+      "options": ["Restrict fluids", "Reduce body temperature (cooling blanket), cardiac monitoring, IV fluids, anti-thyroid medications", "Warm the patient and give sedatives", "Administer thyroid hormone replacement"],
+      "correct": 1,
+      "rationale": "Thyroid storm is a life-threatening hyperthyroid emergency: high fever (>104°F), severe tachycardia, delirium. Priority: reduce temperature (cooling measures, NOT aspirin — displaces thyroid hormone from protein), cardiac monitoring, anti-thyroid drugs, beta-blockers, IV fluids."
+    },
+    {
+      "q": "Why should aspirin NOT be given in thyroid storm?",
+      "options": ["It causes fever", "It displaces thyroid hormone from binding proteins, INCREASING free T3/T4", "It causes hypoglycemia", "It is ineffective for fever reduction"],
+      "correct": 1,
+      "rationale": "Aspirin displaces thyroid hormone from protein-binding sites → increases circulating FREE thyroid hormone → worsens the storm. Use acetaminophen and cooling blankets instead."
+    },
+    {
+      "q": "What dietary modifications should a patient with Cushing's follow?",
+      "options": ["High sodium, high calorie", "Low sodium, low calorie, high potassium, high calcium, high protein", "High fat, low protein", "No dietary restrictions needed"],
+      "correct": 1,
+      "rationale": "Cushing's: excess cortisol causes Na+/water retention (restrict Na+), hypokalemia (increase K+), osteoporosis (increase Ca++), muscle wasting (increase protein), and weight gain (limit calories)."
+    },
+    {
+      "q": "What dietary modifications should a patient with Addison's follow?",
+      "options": ["Low sodium, low potassium", "High sodium, low potassium, high carbohydrate", "Fluid restriction and low protein", "High calcium and vitamin D only"],
+      "correct": 1,
+      "rationale": "Addison's = opposite of Cushing's: hyponatremia (increase Na+), hyperkalemia (restrict K+), hypoglycemia (increase carbs for energy). Also needs steroid replacement."
+    },
+    {
+      "q": "Congenital Hypothyroidism (Cretinism) in children leads to what if untreated?",
+      "options": ["Temporary growth delay", "Intellectual disability (mental retardation)", "Only physical growth delay", "No consequences if caught by age 5"],
+      "correct": 1,
+      "rationale": "Untreated congenital hypothyroidism causes irreversible intellectual disability. It is detected by newborn screening (PKU/Guthrie test screens this too). Early Synthroid treatment prevents developmental delay."
+    },
+    {
+      "q": "What should the nurse watch for when giving Potassium IV?",
+      "options": ["Give rapid IV push for fast correction", "NEVER give IV push — always dilute and infuse slowly; monitor cardiac rhythm", "Give with D5W only", "No special precautions needed"],
+      "correct": 1,
+      "rationale": "IV Potassium: NEVER give IV push (can cause fatal cardiac arrest). Always dilute, infuse slowly (usually 10-20 mEq/hr max), use an infusion pump, and monitor cardiac rhythm continuously. May cause burning at IV site."
+    },
+    {
+      "q": "What are ECG changes in hypokalemia?",
+      "options": ["Tall T-waves and wide QRS", "Prominent U waves, depressed ST segment, flat T waves", "ST elevation and peaked T waves", "Normal ECG"],
+      "correct": 1,
+      "rationale": "HypoK+ ECG: prominent U waves, depressed ST segment, flattened T waves. (HyperK+: tall peaked T waves, prolonged PR interval, wide QRS.) Normal K+ = 3.5-5.0 mEq/L."
+    },
+    {
+      "q": "What are ECG changes in hyperkalemia?",
+      "options": ["Prominent U waves and flat T waves", "Tall peaked T-waves, prolonged PR interval, wide QRS", "ST depression only", "Shortened QT interval"],
+      "correct": 1,
+      "rationale": "HyperK+ ECG: tall peaked T waves, prolonged PR interval, wide QRS → can progress to V-fib and cardiac arrest. Treat urgently: IV calcium gluconate (cardiac protection), insulin + glucose, Kayexalate, dialysis."
+    },
+    {
+      "q": "A patient with Cushing's is at increased risk for what?",
+      "options": ["Hypoglycemia and hypotension", "Infection, poor wound healing, and pathological fractures", "Hypotension and dark skin pigmentation", "Weight loss and muscle hypertrophy"],
+      "correct": 1,
+      "rationale": "Excess cortisol suppresses the immune system (infection risk), impairs wound healing, and causes osteoporosis (pathological fractures). Also causes hyperglycemia, HTN, and fluid retention."
+    },
+    {
+      "q": "What medication is given preoperatively before adrenalectomy for Pheochromocytoma?",
+      "options": ["Insulin", "Alpha-adrenergic blockers (Phenoxybenzamine) to control BP", "Thyroid hormone", "Calcium channel blockers only"],
+      "correct": 1,
+      "rationale": "Before surgery: alpha-blockers (Phenoxybenzamine/Phentolamine) for 1-2 weeks to stabilize BP and prevent intraoperative hypertensive crisis. Beta-blockers may be added after alpha blockade is established."
+    },
+    {
+      "q": "What is the Glycosylated Hemoglobin (HbA1c) test and when should it be monitored?",
+      "options": ["Daily blood sugar check", "Measures glucose control over 120 days (3 months); checked every 3-6 months", "A urine test for ketones", "A liver function test"],
+      "correct": 1,
+      "rationale": "HbA1c reflects average blood glucose over 120 days (lifespan of RBCs). Should be checked every 3-6 months. Goal: < 7% for most diabetics. 4-6% is ideal/non-diabetic range."
+    },
+    {
+      "q": "What is the post-thyroidectomy nursing concern related to the voice?",
+      "options": ["Permanent voice loss is expected", "Assess for hoarseness indicating recurrent laryngeal nerve damage", "Voice changes are not related to thyroidectomy", "Voice will be deeper permanently"],
+      "correct": 1,
+      "rationale": "The recurrent laryngeal nerve runs near the thyroid. Damage during surgery → hoarseness or voice changes. Have the patient speak immediately post-op to assess nerve function. If bilateral damage → airway obstruction."
+    },
+    {
+      "q": "What fluid and electrolyte problem occurs with burns that is relevant to endocrine function?",
+      "options": ["Hypokalemia from fluid loss", "Hyperkalemia from cell damage releasing intracellular K+", "Hypercalcemia from bone breakdown", "Hyponatremia from excessive ADH"],
+      "correct": 1,
+      "rationale": "Burns cause massive cell destruction → release of intracellular potassium (K+) into the bloodstream → hyperkalemia. This is dangerous because it can cause cardiac arrhythmias. Monitor ECG and K+ levels closely."
+    },
+    {
+      "q": "What is the action of Acarbose (Precose)?",
+      "options": ["Stimulates insulin production", "Delays carbohydrate digestion and blunts post-meal blood sugar spikes", "Increases insulin sensitivity", "Replaces insulin"],
+      "correct": 1,
+      "rationale": "Acarbose is an alpha-glucosidase inhibitor that delays carbohydrate digestion in the gut, blunting post-prandial (after-meal) glucose spikes. Take with the FIRST bite of each meal."
+    },
+    {
+      "q": "What should the nurse teach about Metformin (Glucophage)?",
+      "options": ["Take on empty stomach", "Take with meals; hold before contrast dye procedures; watch for lactic acidosis", "It replaces insulin completely", "Can be taken with alcohol"],
+      "correct": 1,
+      "rationale": "Metformin: take with meals (reduces GI side effects). HOLD 48 hrs before and after contrast dye procedures (risk of lactic acidosis). Avoid alcohol. Monitor renal function. Does NOT cause hypoglycemia when used alone."
+    },
+    {
+      "q": "Avoid grapefruit juice with which class of medications?",
+      "options": ["ACE inhibitors", "Calcium Channel Blockers", "Beta Blockers", "Diuretics"],
+      "correct": 1,
+      "rationale": "Grapefruit juice inhibits CYP3A4 enzyme → INCREASES blood levels of Calcium Channel Blockers (and statins) → risk of toxicity. Also avoid with Lipitor (statins)."
+    },
+    {
+      "q": "Why should corticosteroids NOT be given on an empty stomach?",
+      "options": ["They cause diarrhea", "They increase gastric acid production → risk of peptic ulcers and GI bleeding", "They cause nausea only", "They lose effectiveness on empty stomach"],
+      "correct": 1,
+      "rationale": "PO corticosteroids increase gastric acid secretion and reduce the protective mucosal barrier → peptic ulcer risk. Always give with food. No PO corticosteroids on an empty stomach."
+    },
+    {
+      "q": "What is the normal serum calcium range?",
+      "options": ["3.5-5.0 mEq/L", "9-10.5 mg/dL", "136-145 mEq/L", "1.5-2.5 mEq/L"],
+      "correct": 1,
+      "rationale": "Normal Ca++ = 9-10.5 mg/dL. Hypocalcemia: muscle spasms, tetany, +Chvostek's, +Trousseau's, prolonged QT. Hypercalcemia: kidney stones, bone pain, lethargy, constipation."
+    },
+    {
+      "q": "Stay in bed for how many hours after the first ACE Inhibitor dose?",
+      "options": ["1 hour", "3 hours", "8 hours", "No bed rest needed"],
+      "correct": 1,
+      "rationale": "ACE inhibitors can cause first-dose hypotension. Stay in bed for 3 hours after the first dose to prevent falls from orthostatic hypotension."
+    },
+    {
+      "q": "What is the trough and peak draw timing for therapeutic drug monitoring?",
+      "options": ["Trough = 30 min after dose; Peak = before dose", "Trough = ~30 min BEFORE scheduled dose; Peak = 30-60 min AFTER dose", "Both are drawn at the same time", "Trough = 2 hours after; Peak = 4 hours after"],
+      "correct": 1,
+      "rationale": "Trough = lowest level, drawn ~30 min before scheduled administration. Peak = highest level, drawn 30-60 min after drug administration. Both are needed to ensure the drug stays in therapeutic range."
+    },
+    {
+      "q": "What are the S/S of hypocalcemia vs hypercalcemia?",
+      "options": ["Hypocalcemia = lethargy; Hypercalcemia = tetany", "Hypocalcemia = muscle spasms, tetany, +Chvostek's/Trousseau's, prolonged QT; Hypercalcemia = muscle weakness, kidney stones, constipation, shortened QT", "Both present identically", "Hypocalcemia causes kidney stones; Hypercalcemia causes tetany"],
+      "correct": 1,
+      "rationale": "HypoCa++ = neuromuscular EXCITABILITY (spasms, tetany, seizures, prolonged QT). HyperCa++ = neuromuscular DEPRESSION (weakness, lethargy, constipation, kidney stones, shortened QT, cardiac arrest)."
+    },
+    {
+      "q": "What is the Lithium therapeutic range?",
+      "options": ["0.01-0.05 mEq/L", "0.5-1.5 mEq/L", "2.0-4.0 mEq/L", "5.0-10.0 mEq/L"],
+      "correct": 1,
+      "rationale": "Lithium therapeutic range = 0.5-1.5 mEq/L. Very narrow therapeutic window. Toxicity signs: diarrhea, vomiting, tremors, drowsiness, ataxia. Monitor sodium and hydration (dehydration increases lithium levels)."
+    },
+    {
+      "q": "What is the normal serum sodium range?",
+      "options": ["96-106 mEq/L", "136-145 mEq/L", "3.5-5.0 mEq/L", "1.5-2.5 mEq/L"],
+      "correct": 1,
+      "rationale": "Normal Na+ = 136-145 mEq/L. Hyponatremia: confusion, seizures, muscle cramps (seen in SIADH). Hypernatremia: thirst, dry mucous membranes, restlessness (seen in DI)."
+    },
+    {
+      "q": "What is the normal serum potassium range?",
+      "options": ["1.5-2.5 mEq/L", "3.5-5.0 mEq/L", "9-10.5 mEq/L", "136-145 mEq/L"],
+      "correct": 1,
+      "rationale": "Normal K+ = 3.5-5.0 mEq/L. Hypokalemia: muscle weakness, arrhythmias, flat T waves, prominent U waves. Hyperkalemia: tall peaked T waves, wide QRS, cardiac arrest. Both are life-threatening."
+    },
+    {
+      "q": "What specific gravity of urine indicates Diabetes Insipidus?",
+      "options": ["1.030 or higher", "1.015-1.025", "Less than 1.005 (very dilute)", "1.010 exactly"],
+      "correct": 2,
+      "rationale": "DI = massive dilute urine. Specific gravity < 1.005 (normal is 1.005-1.030). SIADH = concentrated urine with high specific gravity. Specific gravity reflects the kidneys' ability to concentrate urine."
+    },
+    {
+      "q": "What are the key differences between Type 1 and Type 2 Diabetes?",
+      "options": ["Type 1 = slow onset, overweight; Type 2 = rapid onset, thin", "Type 1 = rapid onset, thin, insulin-dependent, prone to DKA; Type 2 = gradual onset, often overweight, insulin-resistant, prone to HHNK", "They are clinically identical", "Type 1 only occurs in adults; Type 2 only in children"],
+      "correct": 1,
+      "rationale": "Type 1: autoimmune destruction of beta cells, no insulin production, rapid onset, thin/young, DKA risk. Type 2: insulin resistance, gradual onset, often overweight/older, HHNK risk. Type 2 is more common (90% of cases)."
+    },
+    {
+      "q": "What is the purpose of the Glucose Tolerance Test (GTT)?",
+      "options": ["To measure daily insulin levels", "To diagnose diabetes by measuring blood glucose response to a glucose load over 2-3 hours", "To check for ketones in urine", "To monitor HbA1c levels"],
+      "correct": 1,
+      "rationale": "GTT: patient drinks glucose solution, then blood glucose is measured at intervals (fasting, 1hr, 2hr, 3hr). Diagnoses diabetes and gestational diabetes. Fasting glucose >126 mg/dL or 2-hr glucose >200 mg/dL = diabetes."
+    },
+    {
+      "q": "What should the nurse monitor when a patient is receiving thyroid hormone replacement?",
+      "options": ["Blood sugar only", "Heart rate and cardiac rhythm (watch for tachycardia, angina, arrhythmias)", "Liver function tests", "Renal function only"],
+      "correct": 1,
+      "rationale": "Thyroid hormone increases metabolic rate and cardiac workload. Monitor HR, rhythm, BP. Start low and go slow — too much too fast can cause angina, MI, or arrhythmias, especially in elderly patients."
+    },
+    {
+      "q": "What is the Trousseau's sign test?",
+      "options": ["Tap the facial nerve and observe for twitching", "Inflate a BP cuff above systolic for 3 minutes; positive = carpal spasm (hand spasm)", "Check for Babinski reflex", "Palpate for enlarged thyroid"],
+      "correct": 1,
+      "rationale": "Trousseau's sign: inflate BP cuff on upper arm above systolic pressure for 3 min. Positive = carpal spasm (hand flexion/spasm) indicating hypocalcemia. Chvostek's = tap facial nerve → facial twitching."
+    },
+    {
+      "q": "What is the Chvostek's sign test?",
+      "options": ["Inflate BP cuff and observe for hand spasm", "Tap the facial nerve (in front of ear) and observe for facial muscle twitching", "Check pupillary response to light", "Press on the sternum and assess for pain"],
+      "correct": 1,
+      "rationale": "Chvostek's sign: tap the facial nerve just anterior to the ear. Positive = twitching of the facial muscles on that side, indicating hypocalcemia/hypoparathyroidism."
+    },
+    {
+      "q": "What is the Metabolic Syndrome (Syndrome X)?",
+      "options": ["A single disease caused by one gene", "A cluster of conditions: central obesity, hypertension, hyperglycemia, high triglycerides, low HDL — increasing risk for Type 2 DM and CVD", "A complication of Type 1 Diabetes only", "A thyroid disorder"],
+      "correct": 1,
+      "rationale": "Metabolic Syndrome = cluster of risk factors: abdominal obesity (waist >40\" men, >35\" women), HTN, fasting glucose >100, high triglycerides, low HDL cholesterol. Major risk for Type 2 DM and cardiovascular disease."
+    },
+    {
+      "q": "What electrolyte should be monitored closely when starting insulin therapy for DKA?",
+      "options": ["Sodium", "Potassium", "Calcium", "Chloride"],
+      "correct": 1,
+      "rationale": "Insulin drives potassium INTO cells. In DKA, serum K+ may appear normal or high (because acidosis pushes K+ out of cells), but total body K+ is depleted. As insulin corrects the acidosis, K+ drops rapidly → hypokalemia → cardiac arrhythmias. Always replace K+ as levels drop."
+    },
+    {
+      "q": "What should the nurse teach a patient taking Levothyroxine (Synthroid) about interactions?",
+      "options": ["Take with calcium and iron supplements for better absorption", "Separate from calcium, iron, and antacids by at least 4 hours as they decrease absorption", "Take with grapefruit juice to enhance absorption", "No food or drug interactions exist"],
+      "correct": 1,
+      "rationale": "Calcium, iron, antacids, and soy products decrease Levothyroxine absorption. Separate by at least 4 hours. Take Synthroid on an empty stomach in the morning, 30-60 minutes before eating."
     }
   ]
 }
