@@ -852,7 +852,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             var allItems = document.querySelectorAll('.pdf-sidebar-item');
             for (var i = 0; i < allItems.length; i++) allItems[i].classList.remove('active');
             el.classList.add('active');
-            var url = GH_CDN + 'pdfs/' + encodeURIComponent(file).replace(/%20/g, '+');
+            var url = GH_CDN + 'pdfs/' + encodeURIComponent(file);
             pdfCurrentUrl = url;
             document.getElementById('pdf-placeholder').style.display = 'none';
             document.getElementById('pdf-canvas').style.display = 'none';
@@ -904,7 +904,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             if (!pdfCurrentUrl) return;
             var a = document.createElement('a');
             a.href = pdfCurrentUrl;
-            a.download = decodeURIComponent(pdfCurrentUrl.split('/').pop().replace(/\+/g, ' '));
+            a.download = decodeURIComponent(pdfCurrentUrl.split('/').pop());
             a.click();
         };
 
