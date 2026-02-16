@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "name": "Klimek Reviews",
+      "icon": "\uD83D\uDCD8",
+      "items": [
+        { "title": "Cardio Review", "file": "klimek_cardio_review.pdf" },
+        { "title": "Respiratory Review", "file": "klimek_resp_review.pdf" },
+        { "title": "Neuro Review", "file": "klimek_neuro_review.pdf" }
+      ]
+    },
+    {
+      "name": "Crib Notes",
+      "icon": "\uD83D\uDCDD",
+      "items": [
+        { "title": "Cram Sheet", "file": "cram_sheet.pdf" },
+        { "title": "Quick Facts", "file": "quick_facts.pdf" }
+      ]
+    },
+    {
+      "name": "Pharmacology",
+      "icon": "\uD83D\uDC8A",
+      "items": [
+        { "title": "Drug Reversals", "file": "drug_reversals.pdf" },
+        { "title": "Med Dosing", "file": "med_dosing.pdf" },
+        { "title": "Pharm Guide", "file": "pharm_guide.pdf" }
+      ]
+    },
+    {
+      "name": "Lab Values",
+      "icon": "\uD83D\uDD2C",
+      "items": [
+        { "title": "Critical Lab Values", "file": "critical_labs.pdf" },
+        { "title": "Normal Ranges", "file": "normal_ranges.pdf" }
+      ]
+    }
+  ]
+}
