@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<!-- Blue Book v4.0 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 Klimek Guide</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; min-height: 100vh; min-height: 100dvh; background: #b8aad0; }
+        html.dark, html.dark body { background: #0f172a; }
+    </style>
+</head>
+<body>
+<script>
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.classList.add('dark');
+}
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
+    if (event.matches) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+});
+</script>
+
+<!-- Peptopia Klimek Guide Widget -->
+<div id="peptopia-klimek-guide">
+    <style>
+        /* --- Scoped Styles --- */
+        #peptopia-klimek-guide {
+            /* Palette */
+            --slate-50: #f8fafc; --slate-100: #f1f5f9; --slate-200: #e2e8f0;
+            --slate-700: #334155; --slate-800: #1e293b; --slate-900: #0f172a; --white: #ffffff;
+
+            /* Theme Colors */
+            --rose-500: #fb7185;
+            --blue-500: #06b6d4;
+            --purple-500: #8b5cf6;
+            --emerald-500: #10b981;
+            --pink-500: #ec4899;
+            --amber-500: #d97706;
+            --teal-500: #14b8a6;
+            --indigo-500: #6366f1;
+            --red-600: #dc2626;
+            --orange-600: #ea580c;
+            --gray-600: #4b5563;
+
+            /* Backgrounds (Pale versions) */
+            --rose-50: #fff1f2; --blue-50: #ecfeff; --purple-50: #f5f3ff;
+            --emerald-50: #ecfdf5; --pink-50: #fdf2f8; --amber-50: #fffbeb;
+            --teal-50: #f0fdfa; --indigo-50: #eef2ff; --red-50: #fef2f2;
+            --orange-50: #fff7ed; --gray-50: #f9fafb;
+
+            /* Light tint backgrounds for tabs & cards */
+            --rose-100: #ffe4e6; --blue-100: #cffafe; --purple-100: #ede9fe;
+            --emerald-100: #d1fae5; --pink-100: #fce7f3; --amber-100: #fef3c7;
+            --teal-100: #ccfbf1; --indigo-100: #e0e7ff; --red-100: #fee2e2;
+            --orange-100: #ffedd5; --gray-100: #f3f4f6;
+
+            /* Dark text colors (on-palette) */
+            --rose-800: #9f1239; --blue-800: #155e75; --purple-800: #5b21b6;
+            --emerald-800: #065f46; --pink-800: #9d174d; --amber-800: #92400e;
+            --teal-800: #115e59; --indigo-800: #3730a3; --red-800: #991b1b;
+            --orange-800: #9a3412; --gray-800: #1f2937;
+
+            /* Alert Colors */
+            --alert-bg: #fff7ed;
+            --alert-border: #fdba74;
+            --alert-text: #1e293b;
+
+            /* UI Accents */
+            --accent-gold: #f59e0b;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: transparent;
+            color: var(--slate-900);
+            line-height: 1.6;
+            font-size: 16px;
+            max-width: 76rem;
+            margin: 0 auto;
+            padding: 0.75rem;
+            box-sizing: border-box;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        html.dark #peptopia-klimek-guide {
+            --slate-50: #0f172a; --slate-100: #1e293b; --slate-200: #334155;
+            --slate-700: #cbd5e1; --slate-800: #0f172a; --slate-900: #f1f5f9; --white: #1e293b;
+            --rose-50: #1a0a0d; --blue-50: #0a1a1f; --purple-50: #0f0a1f;
+            --emerald-50: #0a1a12; --pink-50: #1a0a14; --amber-50: #1a150a;
+            --teal-50: #0a1a17; --indigo-50: #0a0e1f; --red-50: #1a0a0a;
+            --orange-50: #1a110a; --gray-50: #111827;
+            /* Dark mode light tints (subtle tinted dark) */
+            --rose-100: #2d1015; --blue-100: #0c2530; --purple-100: #1a1035;
+            --emerald-100: #0c2518; --pink-100: #2d101c; --amber-100: #2d2010;
+            --teal-100: #0c2520; --indigo-100: #141835; --red-100: #2d1010;
+            --orange-100: #2d1810; --gray-100: #1f2937;
+            /* Dark mode text (lighter on-palette) */
+            --rose-800: #fda4af; --blue-800: #67e8f9; --purple-800: #c4b5fd;
+            --emerald-800: #6ee7b7; --pink-800: #f9a8d4; --amber-800: #fcd34d;
+            --teal-800: #5eead4; --indigo-800: #a5b4fc; --red-800: #fca5a5;
+            --orange-800: #fdba74; --gray-800: #d1d5db;
+            --alert-bg: #1a150a; --alert-border: #92400e; --alert-text: #f1f5f9;
+            background-color: transparent;
+            color: #f1f5f9;
+        }
+
+        #peptopia-klimek-guide * { box-sizing: border-box; }
+
+        /* Highlight Class for Key Terms */
+        #peptopia-klimek-guide .highlight-term {
+            background-color: #fef08a;
+            color: #000;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.25rem;
+            font-weight: 800;
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+        html.dark #peptopia-klimek-guide .highlight-term {
+            background-color: #fde68a;
+            color: #1e1b4b;
+        }
+
+        /* Navbar — dark neon blue */
+        #peptopia-klimek-guide .navbar {
+            background: linear-gradient(135deg, #0a1628 0%, #0c2461 50%, #0a1628 100%);
+            color: #fff; padding: 0.75rem 1rem;
+            border-radius: 0.5rem; margin-bottom: 0.75rem; display: flex;
+            justify-content: center; align-items: center;
+            box-shadow: 0 4px 16px -2px rgba(10, 22, 40, 0.5), 0 0 20px rgba(30, 100, 255, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+        }
+        html.dark #peptopia-klimek-guide .navbar { background: linear-gradient(135deg, #020617 0%, #0c2461 50%, #020617 100%); border: 1px solid rgba(59, 130, 246, 0.3); }
+        #peptopia-klimek-guide .nav-title { font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem; }
+
+        /* Tabs — horizontal scroll on mobile */
+        #peptopia-klimek-guide .tabs-container {
+            display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 1rem;
+            justify-content: center;
+            overflow-x: auto; -webkit-overflow-scrolling: touch;
+            padding-bottom: 0.35rem;
+            scrollbar-width: thin;
+        }
+        #peptopia-klimek-guide .tabs-container::-webkit-scrollbar { height: 4px; }
+        #peptopia-klimek-guide .tabs-container::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+
+        #peptopia-klimek-guide .tab-btn {
+            padding: 0.5rem 0.65rem; border-radius: 0.5rem; font-weight: 700;
+            border: 2px solid transparent;
+            cursor: pointer; transition: all 0.15s; font-size: 0.8rem;
+            opacity: 0.85;
+            text-align: center;
+            white-space: nowrap; flex-shrink: 0;
+        }
+        #peptopia-klimek-guide .tab-btn:hover { opacity: 1; transform: translateY(-1px); }
+        #peptopia-klimek-guide .tab-btn.active {
+            opacity: 1;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            transform: translateY(1px);
+            font-weight: 800;
+        }
+
+        /* Tab Colors — light bg, dark text */
+        #peptopia-klimek-guide #tab-cardio { background-color: var(--rose-100); color: var(--rose-800); border-color: var(--rose-100); }
+        #peptopia-klimek-guide #tab-resp { background-color: var(--blue-100); color: var(--blue-800); border-color: var(--blue-100); }
+        #peptopia-klimek-guide #tab-neuro { background-color: var(--purple-100); color: var(--purple-800); border-color: var(--purple-100); }
+        #peptopia-klimek-guide #tab-gi { background-color: var(--emerald-100); color: var(--emerald-800); border-color: var(--emerald-100); }
+        #peptopia-klimek-guide #tab-obpeds { background-color: var(--pink-100); color: var(--pink-800); border-color: var(--pink-100); }
+        #peptopia-klimek-guide #tab-endo { background-color: var(--amber-100); color: var(--amber-800); border-color: var(--amber-100); }
+        #peptopia-klimek-guide #tab-musc { background-color: var(--teal-100); color: var(--teal-800); border-color: var(--teal-100); }
+        #peptopia-klimek-guide #tab-psych { background-color: var(--indigo-100); color: var(--indigo-800); border-color: var(--indigo-100); }
+        #peptopia-klimek-guide #tab-hemonc { background-color: var(--red-100); color: var(--red-800); border-color: var(--red-100); }
+        #peptopia-klimek-guide #tab-integ { background-color: var(--orange-100); color: var(--orange-800); border-color: var(--orange-100); }
+        #peptopia-klimek-guide #tab-pharm { background-color: var(--gray-100); color: var(--gray-800); border-color: var(--gray-100); }
+
+        /* --- Section Header Bar --- */
+        #peptopia-klimek-guide .section-header-bar {
+            padding: 0.65rem 1rem; min-height: 44px; color: white;
+            display: flex; justify-content: space-between; align-items: center;
+            border-radius: 0.75rem;
+            font-size: 1.15rem; font-weight: 800;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            gap: 0.5rem;
+        }
+
+        #peptopia-klimek-guide .header-btn {
+            background-color: #312e81;
+            color: white; border: 2px solid rgba(255,255,255,0.5);
+            padding: 0.45rem 1rem; border-radius: 0.5rem;
+            font-size: 0.9rem; font-weight: 700; cursor: pointer;
+            transition: all 0.2s; white-space: nowrap;
+            -webkit-tap-highlight-color: transparent;
+        }
+        #peptopia-klimek-guide .header-btn:hover {
+            background-color: white; color: #312e81; transform: scale(1.02);
+        }
+        #peptopia-klimek-guide .header-btns { display: flex; gap: 0.4rem; flex-shrink: 0; }
+
+        /* --- Study Card Modal --- */
+        #peptopia-klimek-guide .card-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.92); z-index: 1999;
+            align-items: flex-start; justify-content: center;
+            padding: 0; overflow-y: auto; -webkit-overflow-scrolling: touch;
+        }
+        #peptopia-klimek-guide .card-modal {
+            background: var(--white); width: 100%; max-width: 560px;
+            border-radius: 0; min-height: 100vh; min-height: 100dvh;
+            display: flex; flex-direction: column;
+        }
+        @media (min-width: 640px) {
+            #peptopia-klimek-guide .card-overlay { align-items: center; padding: 1.5rem; }
+            #peptopia-klimek-guide .card-modal {
+                border-radius: 1rem; min-height: auto;
+                box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            }
+        }
+        html.dark #peptopia-klimek-guide .card-modal { background: #1e293b; }
+        #peptopia-klimek-guide .card-modal-header {
+            padding: 0.75rem 1rem; color: white; font-weight: 800; font-size: 1rem;
+            display: flex; justify-content: space-between; align-items: center;
+            border-radius: 0 0 0 0;
+        }
+        @media (min-width: 640px) {
+            #peptopia-klimek-guide .card-modal-header { border-radius: 1rem 1rem 0 0; }
+        }
+        #peptopia-klimek-guide .card-modal-header .card-close-btn {
+            background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;
+            padding: 0 0.25rem; line-height: 1;
+        }
+        #peptopia-klimek-guide .card-modal-body { padding: 1.25rem; flex-grow: 1; }
+        #peptopia-klimek-guide .card-modal-body .card-topic {
+            font-size: 1.35rem; font-weight: 800; margin-bottom: 1rem; color: var(--slate-900);
+        }
+        html.dark #peptopia-klimek-guide .card-modal-body .card-topic { color: #f1f5f9; }
+        #peptopia-klimek-guide .card-modal-body .card-section {
+            margin-bottom: 1rem;
+        }
+        #peptopia-klimek-guide .card-modal-body .card-label {
+            font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px;
+            color: #64748b; font-weight: 800; margin-bottom: 0.3rem; display: block;
+        }
+        html.dark #peptopia-klimek-guide .card-modal-body .card-label { color: #94a3b8; }
+        #peptopia-klimek-guide .card-modal-body .card-fact {
+            font-size: 1.05rem; line-height: 1.5; color: var(--slate-900);
+        }
+        html.dark #peptopia-klimek-guide .card-modal-body .card-fact { color: #e2e8f0; }
+        #peptopia-klimek-guide .card-modal-body .card-alert-box {
+            background: #fff1f2; border-left: 5px solid #e11d48;
+            padding: 0.75rem; border-radius: 0.25rem;
+        }
+        html.dark #peptopia-klimek-guide .card-modal-body .card-alert-box { background: #1c1012; border-left-color: #be123c; }
+        #peptopia-klimek-guide .card-modal-body .card-alert-box .card-fact { font-size: 0.95rem; }
+        #peptopia-klimek-guide .card-nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.75rem 1rem; border-top: 1px solid var(--slate-200);
+            gap: 0.5rem;
+        }
+        html.dark #peptopia-klimek-guide .card-nav { border-top-color: #334155; }
+        #peptopia-klimek-guide .card-nav-btn {
+            background: #4f46e5; color: white; border: none;
+            padding: 0.55rem 1.25rem; border-radius: 2rem; font-weight: 700;
+            cursor: pointer; font-size: 0.9rem; transition: background 0.15s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        #peptopia-klimek-guide .card-nav-btn:hover { background: #4338ca; }
+        #peptopia-klimek-guide .card-nav-btn:disabled { opacity: 0.35; cursor: default; }
+        #peptopia-klimek-guide .card-counter {
+            font-size: 0.85rem; font-weight: 700; color: #64748b; white-space: nowrap;
+        }
+        html.dark #peptopia-klimek-guide .card-counter { color: #94a3b8; }
+
+        /* --- Description Box --- */
+        #peptopia-klimek-guide .description-box {
+            padding: 0.75rem 1rem; background: var(--white);
+            border: 2px solid var(--slate-200); border-radius: 0.5rem;
+            border-left: 5px solid var(--slate-700);
+            font-size: 0.95rem; color: var(--slate-900); font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        html.dark #peptopia-klimek-guide .description-box { background: #1e293b; border-color: #475569; border-left-color: #94a3b8; }
+
+        /* --- Main Layout — full width table, no side panel --- */
+        #peptopia-klimek-guide .grid-layout {
+            display: flex; flex-direction: column; gap: 1rem;
+            align-items: stretch;
+        }
+
+        /* --- Data Table --- */
+        #peptopia-klimek-guide .table-container {
+            overflow-x: auto; -webkit-overflow-scrolling: touch;
+            border: 2px solid #334155;
+            border-radius: 0.75rem;
+            background: var(--white);
+            max-height: 500px; overflow-y: auto;
+        }
+        html.dark #peptopia-klimek-guide .table-container { background: #1e293b; border-color: #475569; }
+        #peptopia-klimek-guide table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; }
+        #peptopia-klimek-guide th {
+            padding: 0.6rem 0.65rem;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
+            position: sticky; top: 0; z-index: 5;
+            font-weight: 800; font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        html.dark #peptopia-klimek-guide th { background-color: #334155; color: #f1f5f9; border-bottom-color: #475569; }
+        #peptopia-klimek-guide td { padding: 0.6rem 0.65rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+        html.dark #peptopia-klimek-guide td { border-bottom-color: #334155; color: #e2e8f0; }
+        #peptopia-klimek-guide tr:hover td { cursor: pointer; background-color: #f8fafc; }
+        html.dark #peptopia-klimek-guide tr:hover td { background-color: #1e293b; }
+        #peptopia-klimek-guide tr.selected td { border-left: 4px solid var(--accent-gold); background-color: #fffbeb; }
+        html.dark #peptopia-klimek-guide tr.selected td { background-color: #1c1917; }
+
+        /* Cell Specifics */
+        #peptopia-klimek-guide .topic-cell { font-weight: 800; white-space: nowrap; color: #000; vertical-align: top; }
+        html.dark #peptopia-klimek-guide .topic-cell { color: #f1f5f9; }
+        #peptopia-klimek-guide .topic-cell.cardio { background-color: var(--rose-50); }
+        #peptopia-klimek-guide .topic-cell.resp { background-color: var(--blue-50); }
+        #peptopia-klimek-guide .topic-cell.neuro { background-color: var(--purple-50); }
+        #peptopia-klimek-guide .topic-cell.gi { background-color: var(--emerald-50); }
+        #peptopia-klimek-guide .topic-cell.obpeds { background-color: var(--pink-50); }
+        #peptopia-klimek-guide .topic-cell.endo { background-color: var(--amber-50); }
+        #peptopia-klimek-guide .topic-cell.musc { background-color: var(--teal-50); }
+        #peptopia-klimek-guide .topic-cell.psych { background-color: var(--indigo-50); }
+        #peptopia-klimek-guide .topic-cell.hemonc { background-color: var(--red-50); }
+        #peptopia-klimek-guide .topic-cell.integ { background-color: var(--orange-50); }
+        #peptopia-klimek-guide .topic-cell.pharm { background-color: var(--gray-50); }
+
+        #peptopia-klimek-guide .key-point-cell { color: #334155; font-style: normal; font-weight: 500; }
+        html.dark #peptopia-klimek-guide .key-point-cell { color: #cbd5e1; }
+        #peptopia-klimek-guide .alert-cell { color: #991b1b; background-color: #fef2f2; border-left: 3px solid #f87171; font-weight: 600; }
+        html.dark #peptopia-klimek-guide .alert-cell { background-color: #1c1012; color: #fca5a5; border-left-color: #dc2626; }
+
+        /* Mobile: card-style rows instead of wide table */
+        @media (max-width: 600px) {
+            #peptopia-klimek-guide .table-container { max-height: none; }
+            #peptopia-klimek-guide table, #peptopia-klimek-guide thead, #peptopia-klimek-guide tbody,
+            #peptopia-klimek-guide th, #peptopia-klimek-guide td, #peptopia-klimek-guide tr {
+                display: block; width: 100%;
+            }
+            #peptopia-klimek-guide thead { display: none; }
+            #peptopia-klimek-guide tr {
+                border-bottom: 2px solid #e2e8f0; padding: 0.6rem 0; margin-bottom: 0.35rem;
+            }
+            html.dark #peptopia-klimek-guide tr { border-bottom-color: #334155; }
+            #peptopia-klimek-guide td {
+                padding: 0.3rem 0.65rem; border-bottom: none; position: relative;
+                padding-left: 0.65rem;
+            }
+            #peptopia-klimek-guide .topic-cell {
+                font-size: 0.95rem; padding-bottom: 0.15rem;
+                white-space: normal;
+            }
+            #peptopia-klimek-guide .key-point-cell::before { content: '📌 '; }
+            #peptopia-klimek-guide .alert-cell {
+                border-left: 3px solid #f87171; margin: 0.2rem 0.3rem;
+                border-radius: 0.25rem; padding: 0.4rem 0.6rem;
+                font-size: 0.85rem;
+            }
+            #peptopia-klimek-guide tr.selected td { border-left: none; }
+            #peptopia-klimek-guide tr.selected { border-left: 4px solid var(--accent-gold); background: #fffbeb; border-radius: 0.5rem; }
+            html.dark #peptopia-klimek-guide tr.selected { background: #1c1917; }
+        }
+
+        /* --- QUIZ STYLES --- */
+        #peptopia-klimek-guide .quiz-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.96); z-index: 2000;
+            align-items: flex-start; justify-content: center;
+            padding: 0;
+            overflow-y: auto; -webkit-overflow-scrolling: touch;
+        }
+        #peptopia-klimek-guide .quiz-box {
+            background: #1e1b4b;
+            width: 100%; max-width: 700px; padding: 1.25rem; border-radius: 0;
+            border: none;
+            color: white; display: flex; flex-direction: column;
+            min-height: 100vh; min-height: 100dvh;
+        }
+        @media (min-width: 640px) {
+            #peptopia-klimek-guide .quiz-overlay { align-items: center; padding: 1rem; }
+            #peptopia-klimek-guide .quiz-box {
+                border-radius: 1rem; min-height: auto; max-height: none;
+                border: 1px solid #4338ca;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                padding: 1.75rem;
+            }
+        }
+        #peptopia-klimek-guide .quiz-question-number {
+            background: #4338ca; width: 36px; height: 36px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; margin-right: 0.75rem; flex-shrink: 0; font-size: 0.9rem;
+        }
+        #peptopia-klimek-guide .quiz-header-row { display: flex; align-items: flex-start; margin-bottom: 1.25rem; }
+        #peptopia-klimek-guide .quiz-question-text { font-size: 1.1rem; line-height: 1.5; font-weight: 500; }
+
+        /* Options */
+        #peptopia-klimek-guide .quiz-option {
+            background: #312e81; border: 2px solid #4338ca;
+            padding: 0.85rem; margin-bottom: 0.5rem; border-radius: 0.5rem;
+            cursor: pointer; transition: all 0.15s;
+            display: flex; align-items: center;
+            font-size: 1rem; color: #e0e7ff;
+            width: 100%; text-align: left;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+        #peptopia-klimek-guide .quiz-option:hover { background: #3730a3; border-color: #6366f1; }
+        @media (hover: none) {
+            #peptopia-klimek-guide .quiz-option:hover { background: #312e81; border-color: #4338ca; }
+            #peptopia-klimek-guide .quiz-option:active { background: #3730a3; border-color: #6366f1; }
+        }
+
+        #peptopia-klimek-guide .quiz-option.correct-choice {
+            background: #064e3b; border-color: #10b981; color: white;
+        }
+        #peptopia-klimek-guide .quiz-option.wrong-choice {
+            background: #7f1d1d; border-color: #ef4444; color: white; opacity: 0.8;
+        }
+
+        #peptopia-klimek-guide .quiz-option-letter {
+            background: rgba(255,255,255,0.1); width: 28px; height: 28px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin-right: 0.75rem; font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+        }
+
+        /* Feedback Section — VISIBLE when shown */
+        #peptopia-klimek-guide .feedback-container {
+            margin-top: 1rem; background: #312e81; border-radius: 0.5rem;
+            border: 1px solid #4338ca;
+        }
+        #peptopia-klimek-guide .feedback-container[style*="display: block"],
+        #peptopia-klimek-guide .feedback-container.is-visible {
+            display: block !important;
+        }
+        #peptopia-klimek-guide .feedback-header {
+            padding: 0.6rem 0.85rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem;
+            font-size: 1rem;
+        }
+        #peptopia-klimek-guide .feedback-header.correct { background: #065f46; color: #34d399; border-radius: 0.5rem 0.5rem 0 0; }
+        #peptopia-klimek-guide .feedback-header.incorrect { background: #7f1d1d; color: #fca5a5; border-radius: 0.5rem 0.5rem 0 0; }
+
+        #peptopia-klimek-guide .feedback-content { padding: 0.85rem; font-size: 0.95rem; line-height: 1.6; color: #e0e7ff; }
+        #peptopia-klimek-guide .rationale-label { color: #a5b4fc; font-weight: 800; display: block; margin-bottom: 0.4rem; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+
+        /* Controls */
+        #peptopia-klimek-guide .quiz-footer {
+            margin-top: 1.25rem; display: flex; justify-content: center; align-items: center;
+            padding-bottom: env(safe-area-inset-bottom, 0.5rem);
+        }
+        #peptopia-klimek-guide .next-q-btn {
+            background: #4f46e5; color: white; border: none; padding: 0.75rem 2.5rem;
+            border-radius: 2rem; font-weight: 800; cursor: pointer;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+            font-size: 1rem;
+            -webkit-tap-highlight-color: transparent;
+            width: 100%; max-width: 320px;
+        }
+        #peptopia-klimek-guide .next-q-btn:hover { background: #4338ca; }
+        @media (hover: none) {
+            #peptopia-klimek-guide .next-q-btn:active { background: #4338ca; transform: scale(0.98); }
+        }
+
+        /* Mobile-specific quiz tuning */
+        @media (max-width: 600px) {
+            #peptopia-klimek-guide .section-header-bar { font-size: 1rem; padding: 0.5rem 0.75rem; flex-wrap: wrap; }
+            #peptopia-klimek-guide .nav-title { font-size: 1.15rem; }
+        }
+
+        /* Color Classes for JS — used on tabs & home card headers */
+        #peptopia-klimek-guide .tab-btn.bg-rose { background-color: var(--rose-100) !important; color: var(--rose-800) !important; border-color: var(--rose-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-blue { background-color: var(--blue-100) !important; color: var(--blue-800) !important; border-color: var(--blue-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-purple { background-color: var(--purple-100) !important; color: var(--purple-800) !important; border-color: var(--purple-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-emerald { background-color: var(--emerald-100) !important; color: var(--emerald-800) !important; border-color: var(--emerald-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-pink { background-color: var(--pink-100) !important; color: var(--pink-800) !important; border-color: var(--pink-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-amber { background-color: var(--amber-100) !important; color: var(--amber-800) !important; border-color: var(--amber-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-teal { background-color: var(--teal-100) !important; color: var(--teal-800) !important; border-color: var(--teal-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-indigo { background-color: var(--indigo-100) !important; color: var(--indigo-800) !important; border-color: var(--indigo-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-red { background-color: var(--red-100) !important; color: var(--red-800) !important; border-color: var(--red-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-orange { background-color: var(--orange-100) !important; color: var(--orange-800) !important; border-color: var(--orange-100) !important; }
+        #peptopia-klimek-guide .tab-btn.bg-gray { background-color: var(--gray-100) !important; color: var(--gray-800) !important; border-color: var(--gray-100) !important; }
+
+        /* Section header bar & home card header keep full saturated color + white text */
+        #peptopia-klimek-guide .bg-rose { background-color: var(--rose-500) !important; border-color: var(--rose-500) !important; }
+        #peptopia-klimek-guide .bg-blue { background-color: var(--blue-500) !important; border-color: var(--blue-500) !important; }
+        #peptopia-klimek-guide .bg-purple { background-color: var(--purple-500) !important; border-color: var(--purple-500) !important; }
+        #peptopia-klimek-guide .bg-emerald { background-color: var(--emerald-500) !important; border-color: var(--emerald-500) !important; }
+        #peptopia-klimek-guide .bg-pink { background-color: var(--pink-500) !important; border-color: var(--pink-500) !important; }
+        #peptopia-klimek-guide .bg-amber { background-color: var(--amber-500) !important; border-color: var(--amber-500) !important; }
+        #peptopia-klimek-guide .bg-teal { background-color: var(--teal-500) !important; border-color: var(--teal-500) !important; }
+        #peptopia-klimek-guide .bg-indigo { background-color: var(--indigo-500) !important; border-color: var(--indigo-500) !important; }
+        #peptopia-klimek-guide .bg-red { background-color: var(--red-600) !important; border-color: var(--red-600) !important; }
+        #peptopia-klimek-guide .bg-orange { background-color: var(--orange-600) !important; border-color: var(--orange-600) !important; }
+        #peptopia-klimek-guide .bg-gray { background-color: var(--gray-600) !important; border-color: var(--gray-600) !important; }
+
+        /* --- HOME DASHBOARD --- */
+        #peptopia-klimek-guide .home-hero {
+            text-align: center;
+            padding: 0 0 0.5rem;
+        }
+        #peptopia-klimek-guide .home-hero-banner {
+            background: linear-gradient(135deg, #0a1628 0%, #0c2461 50%, #0a1628 100%);
+            color: rgba(255,255,255,0.92);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+            box-shadow: 0 4px 16px -2px rgba(10, 22, 40, 0.5), 0 0 20px rgba(30, 100, 255, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+        }
+        html.dark #peptopia-klimek-guide .home-hero-banner {
+            background: linear-gradient(135deg, #020617 0%, #0c2461 50%, #020617 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        /* Section Cards Grid */
+        #peptopia-klimek-guide .home-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 600px) {
+            #peptopia-klimek-guide .home-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        #peptopia-klimek-guide .home-card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.18s, box-shadow 0.18s;
+            background: var(--white);
+            border: 2px solid var(--slate-200);
+            display: flex;
+            flex-direction: column;
+        }
+        html.dark #peptopia-klimek-guide .home-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        #peptopia-klimek-guide .home-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px -4px rgba(0,0,0,0.15);
+        }
+        html.dark #peptopia-klimek-guide .home-card:hover {
+            box-shadow: 0 8px 24px -4px rgba(0,0,0,0.4);
+        }
+        #peptopia-klimek-guide .home-card-header {
+            padding: 0.7rem 0.85rem;
+            font-weight: 800;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        #peptopia-klimek-guide .home-card-header .home-card-emoji {
+            font-size: 1.2rem;
+        }
+        #peptopia-klimek-guide .home-card-body {
+            padding: 0.65rem 0.85rem 0.5rem;
+            flex-grow: 1;
+        }
+        #peptopia-klimek-guide .home-card-desc {
+            font-size: 0.82rem;
+            color: #64748b;
+            line-height: 1.45;
+            margin-bottom: 0.5rem;
+        }
+        html.dark #peptopia-klimek-guide .home-card-desc { color: #94a3b8; }
+        #peptopia-klimek-guide .home-card-meta {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            font-size: 0.72rem;
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        #peptopia-klimek-guide .home-card-footer {
+            padding: 0.5rem 0.85rem 0.65rem;
+            border-top: 1px solid var(--slate-200);
+            display: flex;
+            gap: 0.4rem;
+        }
+        html.dark #peptopia-klimek-guide .home-card-footer { border-top-color: #334155; }
+        #peptopia-klimek-guide .home-card-btn {
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 0.35rem 0.7rem;
+            border-radius: 0.35rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.15s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        #peptopia-klimek-guide .home-card-btn.study-btn {
+            background: #eef2ff;
+            color: #4338ca;
+        }
+        html.dark #peptopia-klimek-guide .home-card-btn.study-btn {
+            background: #1e1b4b;
+            color: #a5b4fc;
+        }
+        #peptopia-klimek-guide .home-card-btn.study-btn:hover { background: #c7d2fe; }
+        html.dark #peptopia-klimek-guide .home-card-btn.study-btn:hover { background: #312e81; }
+        #peptopia-klimek-guide .home-card-btn.quiz-btn {
+            background: #312e81;
+            color: white;
+        }
+        #peptopia-klimek-guide .home-card-btn.quiz-btn:hover { background: #4338ca; }
+
+        /* Home button in navbar */
+        #peptopia-klimek-guide .home-nav-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.4);
+            color: rgba(255,255,255,0.9);
+            padding: 0.3rem 0.65rem;
+            border-radius: 0.35rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+            -webkit-tap-highlight-color: transparent;
+            display: none;
+        }
+        #peptopia-klimek-guide .home-nav-btn:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.7);
+        }
+
+        /* Staggered card animation */
+        @keyframes cardSlideUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #peptopia-klimek-guide .home-card {
+            animation: cardSlideUp 0.4s ease-out both;
+        }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar" style="justify-content: space-between;">
+        <div class="nav-title" onclick="showHome()" style="cursor:pointer;">
+            📖 Klimek Guide
+        </div>
+        <button class="home-nav-btn" id="home-back-btn" onclick="showHome()">&#8592; Home</button>
+    </nav>
+
+    <!-- Tabs -->
+    <div class="tabs-container">
+        <button class="tab-btn bg-rose" id="tab-cardio" onclick="switchTab('cardio')">Cardio</button>
+        <button class="tab-btn bg-blue" id="tab-resp" onclick="switchTab('resp')">Resp</button>
+        <button class="tab-btn bg-purple" id="tab-neuro" onclick="switchTab('neuro')">Neuro</button>
+        <button class="tab-btn bg-emerald" id="tab-gi" onclick="switchTab('gi')">GI & Nutr</button>
+        <button class="tab-btn bg-pink" id="tab-obpeds" onclick="switchTab('obpeds')">OB & Peds</button>
+        <button class="tab-btn bg-amber" id="tab-endo" onclick="switchTab('endo')">Endocrine</button>
+        <button class="tab-btn bg-teal" id="tab-musc" onclick="switchTab('musc')">Musculoskeletal</button>
+        <button class="tab-btn bg-indigo" id="tab-psych" onclick="switchTab('psych')">Psych</button>
+        <button class="tab-btn bg-red" id="tab-hemonc" onclick="switchTab('hemonc')">Heme/Onc</button>
+        <button class="tab-btn bg-orange" id="tab-integ" onclick="switchTab('integ')">Integ/Sensory</button>
+        <button class="tab-btn bg-gray" id="tab-pharm" onclick="switchTab('pharm')">Pharm</button>
+    </div>
+
+    <!-- Home Dashboard -->
+    <div id="home-dashboard">
+        <div class="home-hero">
+            <div class="home-hero-banner">Your comprehensive NCLEX review across 11 nursing specialties — study cards, facts &amp; 1,100 quiz questions.</div>
+        </div>
+        <div class="home-grid" id="home-grid"></div>
+    </div>
+
+    <!-- Section View (hidden by default on home) -->
+    <div id="section-view" style="display:none;">
+        <!-- Description (High Contrast) -->
+        <div id="desc-area" class="description-box"></div>
+
+        <!-- Content -->
+        <div id="content-area"></div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="quiz-overlay">
+        <div class="quiz-box">
+            <div style="display:flex; justify-content:space-between; margin-bottom:1rem;">
+                <span style="color:#818cf8; font-weight:700;" id="quiz-progress">Question 1 of ?</span>
+                <button onclick="closeQuiz()" style="background:none; border:none; color:#818cf8; font-size:1.5rem; cursor:pointer;">&times;</button>
+            </div>
+
+            <div class="quiz-header-row">
+                <div class="quiz-question-number" id="q-num-display">1</div>
+                <div class="quiz-question-text" id="q-text"></div>
+            </div>
+
+            <div id="q-options">
+                <!-- Options injected here -->
+            </div>
+
+            <div id="feedback-area" class="feedback-container">
+                <div class="feedback-header" id="feedback-header">
+                    <!-- Icon + Correct/Incorrect -->
+                </div>
+                <div class="feedback-content">
+                    <span class="rationale-label">Rationale:</span>
+                    <span id="rationale-text"></span>
+                </div>
+            </div>
+
+            <div class="quiz-footer">
+                <button class="next-q-btn" id="next-btn" style="display:none;" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Card Modal -->
+    <div id="card-modal" class="card-overlay">
+        <div class="card-modal">
+            <div class="card-modal-header" id="card-modal-header">
+                <span id="card-modal-title">Study Cards</span>
+                <button class="card-close-btn" onclick="closeCards()">&times;</button>
+            </div>
+            <div class="card-modal-body" id="card-modal-body"></div>
+            <div class="card-nav">
+                <button class="card-nav-btn" id="card-prev-btn" onclick="prevCard()">&#8592; Prev</button>
+                <span class="card-counter" id="card-counter">1 / ?</span>
+                <button class="card-nav-btn" id="card-next-btn" onclick="nextCard()">Next &#8594;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data & Logic -->
+    <script>
+    (function() {
+        // --- DATA ---
+        const contentData = {
+            cardio: {
+                title: 'Cardiovascular System',
+                color: 'bg-rose',
+                border: 'border-rose',
+                type: 'cardio',
+                description: 'Exhaustive notes from Klimek Blue Book covering all cardiovascular concepts.',
+                data: [
+                    { topic: 'Blood Pressure', fact: '<span class="highlight-term">Systole</span> = Maximal force.<br><span class="highlight-term">Diastole</span> = Lowest force.', alert: 'Cuff too small = False High.', q: 'What defines systolic blood pressure?', a: ['Maximal force on arteries', 'Lowest force on arteries', 'Average pressure', 'Venous pressure'], correct: 0, rationale: 'Systole represents the maximal force of blood exerted against the artery walls during contraction.' },
+                    { topic: 'Pulse Pressure', fact: '<span class="highlight-term">Pulse Pressure</span> = Systolic minus Diastolic.', alert: 'Widening = ICP. Narrowing = Shock.', q: 'What does a widening pulse pressure indicate?', a: ['Shock', 'Increased Intracranial Pressure', 'Hypovolemia', 'Heart Failure'], correct: 1, rationale: 'A widening pulse pressure (higher systolic, lower diastolic) is a classic sign of Increased ICP (Cushing\'s Triad).' },
+                    { topic: 'Angina vs MI', fact: '<span class="highlight-term">Angina</span> = Relieved by Rest/Nitro.<br><span class="highlight-term">MI</span> = NOT relieved.', alert: 'MI Pain: Crushing, radiating, nausea.', q: 'How do you distinguish Angina from MI?', a: ['Angina is more painful', 'MI has no EKG changes', 'Angina is relieved by rest/nitro', 'MI is relieved by sleep'], correct: 2, rationale: 'The key diagnostic difference clinically is that Angina Pectoris is relieved by Nitroglycerin and rest, whereas MI pain is not.' },
+                    { topic: 'Nitroglycerin', fact: 'Sublingual. 1 tab q5min x 3.', alert: 'SE: <span class="highlight-term">Headache</span>, <span class="highlight-term">Hypotension</span>.', q: 'What is the most common side effect of Nitroglycerin?', a: ['Hypertension', 'Bradycardia', 'Rash', 'Headache'], correct: 3, rationale: 'Nitroglycerin causes massive vasodilation, leading to cerebral vasodilation (Headache) and systemic hypotension.' },
+                    { topic: 'Digoxin', fact: 'Increases force, decreases rate.', alert: 'Check Apical Pulse. Hold if <span class="highlight-term"><60</span>.', q: 'What must be assessed before giving Digoxin?', a: ['Apical Pulse', 'Blood Pressure', 'Respirations', 'LOC'], correct: 0, rationale: 'Digoxin slows the heart rate; giving it to a bradycardic patient can cause life-threatening heart block.' },
+                    { topic: 'CHF', fact: '<span class="highlight-term">Left Sided</span> = Lungs (Crackles).<br><span class="highlight-term">Right Sided</span> = Body (Edema).', alert: 'Wt gain > 3lb/wk is bad.', q: 'What is a classic sign of Left-Sided Heart Failure?', a: ['Distended Neck Veins', 'Pulmonary Crackles/Dyspnea', 'Pedal Edema', 'Ascites'], correct: 1, rationale: 'Left-sided failure backs fluid up into the Lungs (Left = Lungs), causing crackles and dyspnea.' },
+                    { topic: 'Shock', fact: 'Hypotension, Tachycardia, Pale/Cool Skin.', alert: 'Tx: Fluids, O2, Elevate legs.', q: 'What are the early signs of hypovolemic shock?', a: ['Bradycardia and Hypertension', 'Warm dry skin', 'Tachycardia and Tachypnea', 'Increased Urine Output'], correct: 2, rationale: 'The body compensates for low volume by increasing Heart Rate and Respiratory Rate to maintain perfusion.' },
+                    { topic: 'BP Deflation', fact: 'Deflating cuff too slowly causes <span class="highlight-term">venous congestion</span>.', alert: 'Result: False High reading.', q: 'If you deflate a cuff TOO SLOWLY, the reading will be:', a: ['Accurate', 'Too Low', 'Variable', 'Too High'], correct: 3, rationale: 'Slow deflation allows venous congestion to build up, falsely increasing the resistance and the reading.' },
+                    { topic: 'Vasoconstriction', fact: '<span class="highlight-term">Vasoconstriction</span> increases peripheral resistance.', alert: 'Result: Increased Blood Pressure.', q: 'Vasoconstriction will _____ blood pressure.', a: ['Increase', 'Decrease', 'Not affect', 'Fluctuate'], correct: 0, rationale: 'Narrowing the vessels increases resistance, which directly increases blood pressure.' },
+                    { topic: 'Vasodilation', fact: '<span class="highlight-term">Vasodilation</span> decreases peripheral resistance.', alert: 'Result: Decreased Blood Pressure.', q: 'Vasodilation will _____ blood pressure.', a: ['Increase', 'Decrease', 'Stabilize', 'Spike'], correct: 1, rationale: 'Widening the vessels decreases resistance, which lowers blood pressure.' },
+                    { topic: 'Shock BP', fact: 'Shock causes a decrease in <span class="highlight-term">circulating volume</span>.', alert: 'Result: Decreased Blood Pressure.', q: 'Shock will _____ blood pressure.', a: ['Increase', 'Maintain', 'Decrease', 'Widen'], correct: 2, rationale: 'Loss of volume (hypovolemia) leads to a drop in pressure.' },
+                    { topic: 'ICP BP', fact: 'Increased <span class="highlight-term">Intracranial Pressure</span> (ICP).', alert: 'Result: Widened Pulse Pressure (Cushings Triad).', q: 'Increased intracranial pressure will _____ the pulse pressure.', a: ['Stabilize', 'Decrease or narrow', 'Eliminate', 'Increase or widen'], correct: 3, rationale: 'Cushing\'s reflex causes systolic BP to rise to overcome ICP, widening the pulse pressure.' },
+                    { topic: 'Angina Pectoris', fact: 'Chest pain caused by <span class="highlight-term">decreased blood supply</span> to myocardium (<span class="highlight-term">ischemia</span>).', alert: 'Pain is crushing, substernal, radiating.', q: 'What causes angina pectoris?', a: ['Decreased blood supply to myocardium', 'Coronary artery rupture', 'Heart failure', 'Pericarditis'], correct: 0, rationale: 'Angina is ischemic pain caused by a mismatch between oxygen supply and demand.' },
+                    { topic: 'Nitroglycerin Protocol', fact: 'Take 1 tab q 5 mins x 3. If no relief, call MD.', alert: 'Drug dilates coronary arteries, increasing O2 supply.', q: 'How many nitroglycerin tabs can you take before calling the doctor?', a: ['1', '3', '2', '4'], correct: 1, rationale: 'Standard protocol is one tab every 5 minutes up to 3 doses. If pain persists, it may be an MI.' },
+                    { topic: 'Nitro Route', fact: 'Administered under the tongue (<span class="highlight-term">sublingual</span>).', alert: 'Storage: Keep dry/cool. Replace q6mo.', q: 'By what route do you take nitro?', a: ['Oral', 'IM', 'Sublingual', 'IV'], correct: 2, rationale: 'Sublingual administration allows rapid absorption into the bloodstream, bypassing the liver.' },
+                    { topic: 'Nitro Action', fact: 'Dilates <span class="highlight-term">coronary arteries</span> to increase O2 supply.', alert: 'Also: Reduces preload.', q: 'What is the action of nitro?', a: ['Increases heart rate', 'Constricts coronary arteries', 'Decreases contractility', 'Dilates coronary arteries'], correct: 3, rationale: 'Nitro is a potent vasodilator, improving blood flow to the heart muscle.' },
+                    { topic: 'Nitro Paste', fact: 'Topical application of nitroglycerin.', alert: 'Precaution: Wear gloves!', q: 'What precaution must the nurse take when administering topical nitro paste?', a: ['Wear gloves', 'Check apical pulse', 'Massage the area', 'Apply heat'], correct: 0, rationale: 'The medication can be absorbed through the nurse\'s skin, causing a severe headache.' },
+                    { topic: 'Myocardial Infarction', fact: '<span class="highlight-term">Necrosis</span> (death) of myocardial cells due to blockage.', alert: 'Symptoms: Crushing pain, nausea, diaphoresis, cold/clammy skin.', q: 'What is the #1 symptom of an MI?', a: ['Indigestion', 'Severe chest pain unrelieved by rest/nitro', 'Shortness of breath', 'Left arm numbness'], correct: 1, rationale: 'Pain that does not go away with rest or nitro is the hallmark sign of infarction vs angina.' },
+                    { topic: 'MI: Pain Description', fact: 'Crushing, heavy, squeezing. Radiates to L arm/jaw.', alert: 'Duration: >30 minutes.', q: 'What words will the client use to describe the pain of an MI?', a: ['Sharp, stabbing', 'Burning, gnawing', 'Crushing, heavy, squeezing', 'Dull, aching'], correct: 2, rationale: 'Ischemic cardiac pain is typically described as pressure or squeezing, not sharp/stabbing.' },
+                    { topic: 'MI: Death Risk', fact: 'Death occurs within <span class="highlight-term">one hour</span> of symptom onset in 50% of pts.', alert: 'Priority: Early intervention.', q: 'Death due to MI occurs within ___ of symptom onset in 50% of all patients.', a: ['48 hours', '24 hours', 'One week', 'One hour'], correct: 3, rationale: 'The first hour is the "Golden Hour" due to the high risk of fatal arrhythmias like V-Fib.' },
+                    { topic: 'MI: Pain Meds', fact: '<span class="drug-name">Morphine</span>, <span class="drug-name">Demerol</span>, <span class="drug-name">Nitroglycerin</span>.', alert: 'MONA: Morphine, Oxygen, Nitro, Aspirin.', q: 'What pain medication is given for the pain of a MI?', a: ['Morphine', 'Tylenol', 'Codeine', 'Ibuprofen'], correct: 0, rationale: 'Morphine reduces pain and anxiety, and also decreases preload (venous return), resting the heart.' },
+                    { topic: 'MI: Aspirin', fact: 'Given to prevent <span class="highlight-term">platelet aggregation</span> (clots).', alert: 'Drug: <span class="drug-name">Plavix</span> also anti-platelet.', q: 'What is the reason for giving post MI patients ASA?', a: ['Relieve pain', 'Prevent platelets from forming clots', 'Reduce fever', 'Treat inflammation'], correct: 1, rationale: 'Aspirin inhibits platelet clumping, preventing further occlusion of the coronary arteries.' },
+                    { topic: 'MI: Complications', fact: 'Cardiogenic shock, Arrhythmias, CHF.', alert: 'Most Common Arrhythmia: PVCs.', q: 'The 3 most common complications after MI are...', a: ['Stroke, infection, renal failure', 'PE, DVT, pneumonia', 'Cardiogenic shock, arrhythmia, CHF', 'Hemorrhage, rupture, aneurysm'], correct: 2, rationale: 'Arrhythmias (electrical), CHF (pump failure), and Shock (severe failure) are direct consequences of heart muscle death.' },
+                    { topic: 'MI: PVCs', fact: 'Premature Ventricular Contractions.', alert: 'Treatment: <span class="drug-name">Lidocaine</span> or Amiodarone.', q: 'What drug is used to treat PVCs after an MI?', a: ['Atropine', 'Digoxin', 'Epinephrine', 'Lidocaine'], correct: 3, rationale: 'Lidocaine suppresses ventricular irritability (PVCs) which can lead to V-Fib.' },
+                    { topic: 'MI: Enzymes', fact: 'CPK, LDH, SGOT. <span class="highlight-term">Troponin</span> rises earliest (3 hrs).', alert: 'Post-MI: Permanent EKG change is ST wave changes.', q: 'Which cardiac enzyme rises earliest after an MI?', a: ['Troponin', 'CPK', 'LDH', 'SGOT'], correct: 0, rationale: 'Troponin is highly specific to cardiac muscle and rises within 3 hours of injury.' },
+                    { topic: 'MI: Cardiogenic Shock', fact: 'Pump failure. IV fluids do NOT help.', alert: 'Tx: Cardiac drugs (Vasopressors/Inotropes).', q: 'Will fluid resuscitation treat cardiogenic shock?', a: ['No', 'Yes'], correct: 0, rationale: 'The pump is broken; adding fluid volume overloads it further. You need drugs to strengthen the pump.' },
+                    { topic: 'MI: Signs', fact: 'Nausea, Vomiting, Diaphoresis.', alert: 'Skin: Cold, clammy.', q: 'Will the client with a MI be nauseated? Diaphoretic?', a: ['No, no', 'Yes, yes', 'Yes, no', 'No, yes'], correct: 1, rationale: 'Pain and decreased cardiac output trigger the autonomic nervous system, causing sweating and nausea.' },
+                    { topic: 'MI: EKG', fact: 'Permanent <span class="highlight-term">ST wave changes</span>.', alert: 'Q waves: Pathologic Q waves indicate necrosis.', q: 'What is the permanent EKG change seen post MI?', a: ['Inverted P waves', 'Peaked T waves', 'ST wave changes', 'Widened QRS'], correct: 2, rationale: 'ST elevation indicates acute injury; pathologic Q waves indicate permanent tissue death.' },
+                    { topic: 'CHF: Compensation', fact: 'Hypertrophy, Dilation, Tachycardia.', alert: 'Decompensation: When these fail.', q: 'When cardiac output fails, name three ways the heart will try to compensate.', a: ['Rest, Sleep, Eat', 'Atrophy, Constriction, Bradycardia', 'None of these', 'Hypertrophy, Dilation, Tachycardia'], correct: 3, rationale: 'The heart beats faster (tachycardia) and grows larger (hypertrophy/dilation) to try to pump more blood.' },
+                    { topic: 'CHF: Drugs', fact: 'Diuretics, Vasodilators, Digitalis.', alert: 'Goal: Reduce preload/afterload, increase contractility.', q: 'Name the three groups of drugs used to treat CHF?', a: ['Diuretics, Vasodilators, Digitalis', 'Antibiotics, Antivirals, Antifungals', 'Steroids, NSAIDs, Narcotic', 'Beta blockers, Ca blockers, ARBs'], correct: 0, rationale: 'Diuretics remove fluid, Vasodilators open vessels, and Digoxin strengthens the beat.' },
+                    { topic: 'CHF: TED Hose', fact: 'Decrease venous stasis.', alert: 'Apply: Before getting out of bed. Remove daily.', q: 'When during the day should TED hose be applied?', a: ['After breakfast', 'Before getting out of bed', 'Before bed', 'After shower'], correct: 1, rationale: 'Apply before legs are dependent (standing) to prevent fluid from pooling.' },
+                    { topic: 'CHF: Massage', fact: 'NEVER massage calves.', alert: 'Risk: Dislodging clot (Embolism).', q: 'Should you massage the calves of the client with CHF?', a: ['Yes, daily', 'Only if painful', 'Never', 'Only with lotion'], correct: 2, rationale: 'Massaging can dislodge a DVT (deep vein thrombosis), sending it to the lungs (PE).' },
+                    { topic: 'Digoxin Toxicity', fact: 'Anorexia, N/V, Yellow Vision, Arrhythmia.', alert: 'Risk: Hypokalemia potentiates toxicity.', q: 'Name the four most common toxic effects of digitalis.', a: ['Constipation, Dry mouth, Urinary retention, Blurred vision', 'Headache, Dizziness, Fatigue, Rash', 'Diarrhea, Cramping, Gas, Bloating', 'Anorexia, N&V, Yellow vision, Arrhythmia'], correct: 3, rationale: 'Early signs are GI (nausea), late signs are visual (haloes) and cardiac (arrhythmias).' },
+                    { topic: 'CHF: Weight', fact: 'Best indicator of <span class="highlight-term">fluid retention</span>.', alert: 'Report: Gain of 3 lbs in one week.', q: 'What daily measurement best indicates fluid retention?', a: ['Daily Weight', 'I&O', 'Abdominal Girth', 'Ankle Edema'], correct: 0, rationale: 'Weight gain is the most sensitive and reliable indicator of fluid status.' },
+                    { topic: 'CHF: Diuretics', fact: '<span class="drug-name">Lasix</span> (Furosemide). Loss of <span class="highlight-term">Potassium (K+)</span>.', alert: 'Monitor: K+ levels.', q: 'When the client is taking diuretics, what mineral is the CHF client most likely to lose?', a: ['Sodium', 'Potassium', 'Calcium', 'Magnesium'], correct: 1, rationale: 'Loop diuretics like Lasix waste potassium, leading to hypokalemia.' },
+                    { topic: 'Thrombophlebitis', fact: '<span class="highlight-term">Inflammation of vein</span> with clot.', alert: 'Prevention: Ambulation. Treatment: Anticoagulants, Bed rest. Never: Massage leg.', q: 'The best way to prevent thrombophlebitis is:', a: ['TED Hose', 'Aspirin', 'Early ambulation', 'Massage'], correct: 2, rationale: 'Walking pumps the calf muscles, aiding venous return and preventing stasis.' },
+                    { topic: 'Buergers Disease', fact: '<span class="highlight-term">Arterial</span> inflammation.', alert: 'Sign: Intermittent Claudication. Cause: Smoking.', q: 'What is the primary cause of Buerger\'s Disease?', a: ['Alcohol', 'Diabetes', 'Obesity', 'Smoking'], correct: 3, rationale: 'Buerger\'s disease (Thromboangiitis obliterans) is strongly associated with tobacco use.' },
+                    { topic: 'Raynauds Disease', fact: 'Arterial <span class="highlight-term">Spasms</span>.', alert: 'Fingers turn White-Blue-Red. Trigger: Cold/Stress.', q: 'What triggers a Raynaud\'s attack?', a: ['Cold and Stress', 'Heat and Humidity', 'Exercise', 'Eating'], correct: 0, rationale: 'Cold causes vasoconstriction, triggering the arterial spasm in fingers/toes.' },
+                    { topic: 'Peripheral Arterial Disease', fact: 'Arterial Occlusion.', alert: 'Pulse absent. Leg cool/pale/hairless.', q: 'What does a leg with PAD look like?', a: ['Warm, swollen, red', 'Cool, pale, hairless', 'Edematous with brown ulcers', 'Normal'], correct: 1, rationale: 'Lack of arterial blood flow leads to cool skin, pallor, and loss of hair follicles.' }
+                ]
+            },
+            resp: {
+                title: 'Respiratory System',
+                color: 'bg-blue',
+                border: 'border-blue',
+                type: 'resp',
+                description: 'Comprehensive Respiratory notes from Klimek Blue Book covering COPD, Pneumonia, TB, and Airway management.',
+                data: [
+                    { topic: 'COPD', fact: '<span class="highlight-term">COPD</span> = Emphysema + Bronchitis.', alert: 'Low O2 drive. Max <span class="highlight-term">2L/min</span>.', q: 'What is the maximum O2 flow for a COPD patient?', a: ['10 Liters/min', '6 Liters/min', '2 Liters/min', 'None'], correct: 2, rationale: 'COPD patients breathe based on hypoxic drive; high O2 levels can knock out their drive to breathe.' },
+                    { topic: 'Pneumonia', fact: 'Infection of alveoli. Thick sputum.', alert: 'Encourage <span class="highlight-term">fluids</span> to thin secretions.', q: 'What is a priority nursing intervention for Pneumonia?', a: ['Restrict fluids', 'Lay flat', 'Bed rest only', 'Increase fluids to 3L/day'], correct: 3, rationale: 'Hydration thins the mucus, making it easier to expectorate and clear the airway.' },
+                    { topic: 'Tuberculosis', fact: 'Mycobacterium. <span class="highlight-term">Airborne</span> precautions.', alert: 'Negative pressure room. N95 mask.', q: 'Which isolation precaution is used for TB?', a: ['Airborne', 'Droplet', 'Contact', 'Standard'], correct: 0, rationale: 'TB is transmitted via small airborne particles, requiring a negative pressure room and N95 respirators.' },
+                    { topic: 'Epiglottitis', fact: 'Emergency! H. Influenza B.', alert: '<span class="highlight-term">Never</span> examine throat (spasm risk).', q: 'What should you NEVER do for a child with Epiglottitis?', a: ['Monitor vitals', 'Examine the throat with a tongue blade', 'Keep them calm', 'Give Oxygen'], correct: 1, rationale: 'Stimulating the gag reflex can cause complete laryngospasm and airway obstruction.' },
+                    { topic: 'Chest Tubes', fact: 'Remove air/fluid. Water seal prevents backflow.', alert: 'Continuous bubbling in water seal = <span class="highlight-term">LEAK</span>.', q: 'What does continuous bubbling in the water seal chamber indicate?', a: ['Suction is too high', 'Normal functioning', 'Air Leak', 'Tube is blocked'], correct: 2, rationale: 'The water seal should only bubble intermittently (tidaling); continuous bubbling means air is leaking into the system.' },
+                    { topic: 'COPD: Signs', fact: 'SOB, Wheezing, Cough, Cyanosis.', alert: 'ABG: Hypoxemia, Hypercapnia, Resp Acidosis.', q: 'What would the ABG of a client with COPD show?', a: ['Hypoxemia, Hypocapnia, Resp Alkalosis', 'Metabolic Acidosis', 'Normal', 'Hypoxemia, Hypercapnia, Resp Acidosis'], correct: 3, rationale: 'COPD causes air trapping, leading to CO2 retention (Hypercapnia/Acidosis) and poor oxygenation (Hypoxemia).' },
+                    { topic: 'COPD: Chest', fact: '<span class="highlight-term">Barrel Chest</span> (Increased AP diameter).', alert: 'Fingers: Clubbing.', q: 'What does the chest of a client with COPD look like?', a: ['Barrel chest', 'Pigeon chest', 'Funnel chest', 'Flat chest'], correct: 0, rationale: 'Chronic air trapping expands the chest wall, creating a barrel shape.' },
+                    { topic: 'Emphysema: Alveoli', fact: 'Over-enlarged and Under-ventilated.', alert: 'Result: Air Trapping.', q: 'In emphysema, the alveoli are:', a: ['Normal', 'Over-enlarged and under-ventilated', 'Fluid filled', 'Collapsed'], correct: 1, rationale: 'The alveolar walls are destroyed, creating large air sacs that trap air and cannot exchange gas effectively.' },
+                    { topic: 'Emphysema: Breathing', fact: 'Pursed Lip Breathing.', alert: 'Type: Pink Puffer/Cyanotic.', q: 'To control SOB, what technique should be taught?', a: ['Coughing', 'Deep breathing', 'Pursed lip breathing', 'Pant blowing'], correct: 2, rationale: 'Pursed lip breathing creates back pressure to keep airways open longer during exhalation.' },
+                    { topic: 'Emphysema: Diet', fact: 'Frequent small meals.', alert: 'Fluids: 3 Liters/day (Force fluids).', q: 'What fluid order should the emphysema client have?', a: ['Restrict fluids', 'NPO', '1 liter per day', '3 liters per day'], correct: 3, rationale: 'Fluids help liquefy secretions, making them easier to clear.' },
+                    { topic: 'Pneumonia: ABG', fact: '<span class="highlight-term">Respiratory Alkalosis</span> (Hyperventilation).', alert: 'Mechanism: Blow off CO2 > Consolidation traps.', q: 'Which blood gas disorder is most common in pneumonia?', a: ['Respiratory alkalosis', 'Respiratory acidosis', 'Metabolic alkalosis', 'Metabolic acidosis'], correct: 0, rationale: 'Early pneumonia causes hyperventilation due to hypoxia and pain, blowing off CO2 (Alkalosis).' },
+                    { topic: 'Pulmonary Embolus', fact: 'Obstruction of pulmonary capillary bed.', alert: 'Source: DVT (Legs).', q: 'Where do the emboli that cause pulmonary embolus usually come from?', a: ['The brain', 'The legs', 'The arms', 'The heart'], correct: 1, rationale: 'Deep vein thromboses (DVT) in the legs break off and travel to the lungs.' },
+                    { topic: 'PE Signs', fact: 'Dyspnea, Pleuritic Pain, Tachycardia.', alert: '1st Sign: Dyspnea.', q: 'What is the first sign of pulmonary embolus?', a: ['Hemoptysis', 'Chest pain', 'Dyspnea', 'Fever'], correct: 2, rationale: 'Sudden shortness of breath is the hallmark early sign of PE.' },
+                    { topic: 'Pulmonary Edema', fact: 'Fluid in lungs from <span class="highlight-term">Left Ventricular Failure</span>.', alert: 'Sputum: Bloody and Frothy.', q: 'When pulmonary edema is severe what does the sputum look like?', a: ['Green and thick', 'Yellow', 'Clear', 'Bloody and frothy'], correct: 3, rationale: 'Fluid pushing into alveoli mixes with air to create froth; capillary rupture adds blood (pink).' },
+                    { topic: 'Pulmonary Edema Tx', fact: '<span class="drug-name">Lasix</span>, <span class="drug-name">Morphine</span>, <span class="drug-name">Aminophylline</span>.', alert: 'Immediate: Elevate HOB, O2, Call MD.', q: 'What drug is used in pulmonary edema to reduce fluid in the lungs?', a: ['A diuretic (Lasix)', 'Antibiotic', 'Beta blocker', 'Calcium channel blocker'], correct: 0, rationale: 'Lasix is a potent diuretic that rapidly removes fluid from the lungs.' },
+                    { topic: 'TB Test', fact: 'Mantoux (PPD). Positive if >10mm induration.', alert: 'Isolation: Airborne (Negative Pressure).', q: 'The Mantoux test is considered positive if the induration is greater than:', a: ['20 mm', '10 mm', '15 mm', '5 mm'], correct: 1, rationale: 'For general population, >10mm is positive. (>5mm for HIV/Immunocompromised).' },
+                    { topic: 'TB Drugs (STRIPE)', fact: 'Streptomycin, Rifampin, Isoniazid, Pyrizinamide, Ethambutol.', alert: 'Side FX: Peripheral Neuritis (B6), Red Urine (Rifampin).', q: 'What colors will Rifampin turn urine, sweat, and tears?', a: ['Brown or black', 'Blue or green', 'Red or orange', 'Yellow'], correct: 2, rationale: 'Rifampin causes harmless red-orange discoloration of body fluids.' },
+                    { topic: 'TB Teaching', fact: 'Avoid Alcohol (Hepatotoxicity).', alert: 'Non-contagious: After 3 negative sputum cultures.', q: 'How many consecutive sputum cultures need to be negative for the client to be non-contagious?', a: ['1', '5', '2', '3'], correct: 3, rationale: 'Three consecutive negative smears are the gold standard for clearance.' },
+                    { topic: 'Respiratory Distress (RDS)', fact: 'Premature infants. Lack of <span class="highlight-term">Surfactant</span>.', alert: 'Signs: Retractions, Flaring, Grunting.', q: 'The cause of RDS is a lack of:', a: ['Surfactant', 'Oxygen', 'Blood', 'Antibodies'], correct: 0, rationale: 'Surfactant keeps alveoli open; without it, they collapse (atelectasis).' },
+                    { topic: 'RDS Treatment', fact: '<span class="drug-name">Survanta</span> via ET Tube. PEEP/CPAP.', alert: 'O2 Toxicity: Retrolental Fibroplasia (Blindness).', q: 'High flow rates of O2 delivered in RDS can cause:', a: ['Liver failure', 'Retrolental fibroplasia', 'Hearing loss', 'Brain damage'], correct: 1, rationale: 'Excess oxygen causes abnormal blood vessel growth in the retina, leading to blindness.' },
+                    { topic: 'Epiglottitis Signs', fact: 'Muffled voice, Drooling, Stridor. Tripod position.', alert: 'NEVER: Put tongue blade in mouth.', q: 'If a child is suspected of having epiglottitis, should you put a tongue depressor in their mouth?', a: ['Only if doctor present', 'Yes, to see', 'No, never', 'Yes, quickly'], correct: 2, rationale: 'It triggers laryngospasm.' },
+                    { topic: 'Cystic Fibrosis', fact: 'Exocrine gland disorder. Thick mucous.', alert: 'Systems: Lungs & Pancreas.', q: 'In which two systems/organs are the most problems in CF?', a: ['Heart & Liver', 'Brain & Spine', 'Kidney & Bladder', 'Lungs & Pancreas'], correct: 3, rationale: 'Thick mucus clogs the airways (Lungs) and digestive ducts (Pancreas).' },
+                    { topic: 'CF Diagnosis', fact: 'Sweat Test (>60 mEq/L Chloride).', alert: 'Diet: High Calorie, High Protein.', q: 'What is the classic test for CF?', a: ['Sweat test', 'Blood test', 'Urine test', 'X-ray'], correct: 0, rationale: 'CF patients excrete excessive salt in their sweat.' },
+                    { topic: 'CF Meds', fact: '<span class="drug-name">Pancreatic Enzymes</span> (Viokase).', alert: 'Admin: With meals.', q: 'When should the child with CF take his pancreatic enzymes?', a: ['Once daily', 'With meals', 'Empty stomach', 'Before bed'], correct: 1, rationale: 'Enzymes must be present when food enters the GI tract to aid digestion.' },
+                    { topic: 'Asthma', fact: 'Spasms and Inflammation of bronchioles.', alert: 'Signs: Wheezing, SOB, Cough (at night).', q: 'When will the client with asthma experience the cough?', a: ['After eating', 'In morning', 'At night', 'While walking'], correct: 2, rationale: 'Nocturnal coughing is a common asthma symptom due to circadian drops in cortisol/epinephrine.' },
+                    { topic: 'Asthma Meds', fact: 'Bronchodilators & Steroids.', alert: 'Order: Give Bronchodilator FIRST.', q: 'Which should you give first-the steroid or bronchodilator?', a: ['Steroid', 'Doesn\'t matter', 'Together', 'Bronchodilator'], correct: 3, rationale: 'Bronchodilators open the airway so the steroid can reach the lungs.' },
+                    { topic: 'Suctioning', fact: 'Sterile technique. Intermittent suction.', alert: 'Time: Max 10 sec.', q: 'For how long should suction be applied during any one entry?', a: ['10 seconds', '30 seconds', '1 minute', '5 seconds'], correct: 0, rationale: 'Prolonged suctioning causes hypoxia and vagal stimulation (bradycardia).' },
+                    { topic: 'Tracheostomy', fact: 'Surgical airway.', alert: 'Safety: Obturator at bedside.', q: 'What must the nurse always have at the bedside of a trach patient?', a: ['Tape', 'An obturator', 'Hemostats', 'Scissors'], correct: 1, rationale: 'The obturator is needed to re-insert the tube if it accidentally falls out.' },
+                    { topic: 'Lung Sounds', fact: 'Crackles (Fluid), Wheezes (Musical), Stridor (Upper Airway).', alert: 'Stridor Cause: Laryngeal spasm/swelling.', q: 'What is the cause of stridor?', a: ['Bronchoconstriction', 'Fluid in lungs', 'Laryngeal spasm/swelling', 'Mucous'], correct: 2, rationale: 'Stridor is a high-pitched upper airway sound indicating obstruction/swelling.' }
+                ]
+            },
+            neuro: {
+                title: 'Neurological System',
+                color: 'bg-purple',
+                border: 'border-purple',
+                type: 'neuro',
+                description: 'Neuro content covering ICP, CVA, and Spinal injuries.',
+                data: [
+                    { topic: 'ICP', fact: 'Intracranial Pressure. Avoid straining.', alert: 'Cushing\'s Triad: <span class="highlight-term">HTN</span>, <span class="highlight-term">Bradycardia</span>, <span class="highlight-term">Wide Pulse Pressure</span>.', q: 'Which is a component of Cushing\'s Triad?', a: ['Narrow Pulse Pressure', 'Tachycardia', 'Hypotension', 'Bradycardia'], correct: 3, rationale: 'Cushing\'s Triad is the classic late sign of increased ICP: Hypertension, Bradycardia, and Irregular Respirations.' },
+                    { topic: 'Seizures', fact: 'Uncontrolled electrical discharge.', alert: 'Safety first: Side lying, protect head.', q: 'What is the priority action during a seizure?', a: ['Protect from injury', 'Insert airway', 'Restrain limbs', 'Force mouth open'], correct: 0, rationale: 'Safety is the priority. Restraining or forcing objects into the mouth causes injury.' },
+                    { topic: 'CVA (Stroke)', fact: '<span class="highlight-term">FAST</span> = Face, Arm, Speech, Time.', alert: 'Keep HOB elevated <span class="highlight-term">30 deg</span>.', q: 'What is the proper bed position for a CVA patient?', a: ['Trendelenburg', 'HOB 30 degrees', 'Flat', 'Prone'], correct: 1, rationale: 'Elevating the HOB 30 degrees promotes venous drainage and lowers ICP.' },
+                    { topic: 'Meningitis', fact: '<span class="highlight-term">Nuchal rigidity</span>, <span class="highlight-term">Photophobia</span>.', alert: 'Kernig\'s and Brudzinski\'s signs.', q: 'What is a classic sign of Meningitis?', a: ['Polyuria', 'Flaccid muscles', 'Nuchal Rigidity', 'Low fever'], correct: 2, rationale: 'Nuchal rigidity (stiff neck) is the hallmark sign of meningeal irritation.' },
+                    { topic: 'Autonomic Dysreflexia', fact: 'Spinal injury T6+. Severe HTN.', alert: 'Check <span class="highlight-term">bladder distention</span> immediately.', q: 'What is the most common cause of Autonomic Dysreflexia?', a: ['Hunger', 'Pain', 'Cold drafts', 'Distended Bladder'], correct: 3, rationale: 'A full bladder (or bowel impaction) is the noxious stimulus that triggers this life-threatening hypertensive crisis.' },
+                    { topic: 'Increased ICP', fact: 'Normal ICP 0-15 mmHg. Causes: Trauma, hemorrhage, edema.', alert: 'Earliest Sign: Change in LOC.', q: 'What is the earliest sign of increased ICP?', a: ['Change in LOC', 'Pupil dilation', 'Vomiting', 'Headache'], correct: 0, rationale: 'Brain cells are very sensitive to pressure; consciousness changes before vitals.' },
+                    { topic: 'ICP Signs (Infant)', fact: 'Bulging fontanels, high pitched cry.', alert: 'Adult: Headache, projectile vomiting.', q: 'What signs of ICP are seen in infants?', a: ['Hypotension', 'Bulging fontanels, high pitched cry', 'Headache', 'Bradycardia'], correct: 1, rationale: 'Infant skulls can expand (bulging fontanel); irritation causes the unique cry.' },
+                    { topic: 'ICP Meds', fact: '<span class="drug-name">Mannitol</span> (Osmotic diuretic).', alert: 'Steroids: Decadron to decrease edema.', q: 'What osmotic diuretic is used to reduce ICP?', a: ['Spironolactone', 'Lasix', 'Mannitol', 'HCTZ'], correct: 2, rationale: 'Mannitol pulls fluid from the brain tissue into the blood to be excreted.' },
+                    { topic: 'Meningitis Signs', fact: 'Kernig\'s (Leg pain) and Brudzinski\'s (Neck flex -> Knee flex).', alert: 'Diagnosis: Lumbar Puncture (Cloudy CSF, Low Glucose).', q: 'Positive Kernig\'s sign is:', a: ['Swaying with eyes closed', 'Neck flexion causes knee flexion', 'Fanning of toes', 'Pain in leg when knee is straightened'], correct: 3, rationale: 'Kernig\'s involves leg extension pain; Brudzinski\'s involves neck flexion.' },
+                    { topic: 'Spinal Tap (LP)', fact: 'Needle into subarachnoid space (L3-L4).', alert: 'Post-op: Lie flat 6-12 hrs (prevent HA). Force fluids.', q: 'What is the position for a lumbar puncture?', a: ['Lateral decubitus (fetal)', 'Prone', 'Supine', 'Sitting up'], correct: 0, rationale: 'Fetal position opens up the vertebrae for easier needle access.' },
+                    { topic: 'Seizure Meds', fact: '<span class="drug-name">Dilantin</span> (Phenytoin).', alert: 'Side FX: Gingival hyperplasia (gum overgrowth).', q: 'What is a common side effect of Dilantin?', a: ['Constipation', 'Gingival hyperplasia', 'Photosensitivity', 'Diarrhea'], correct: 1, rationale: 'Gum overgrowth is a specific side effect of Phenytoin (Dilantin).' },
+                    { topic: 'CVA: Aphasia', fact: 'Expressive (Broca\'s) vs Receptive (Wernicke\'s).', alert: 'Global: Both.', q: 'Which aphasia is inability to speak?', a: ['Conductive', 'Receptive', 'Expressive', 'Global'], correct: 2, rationale: 'Expressive (motor) aphasia means they know what they want to say but cannot say it.' },
+                    { topic: 'Spinal Cord Injury', fact: 'Autonomic Dysreflexia (T6 or higher).', alert: 'Signs: Severe HTN, Headache, Bradycardia, Sweating.', q: 'What causes Autonomic Dysreflexia?', a: ['Exercise', 'Stress', 'Cold', 'Full bladder or bowel impaction'], correct: 3, rationale: 'Noxious stimuli below the level of injury trigger massive sympathetic discharge.' },
+                    { topic: 'Myasthenia Gravis', fact: 'Defect in Acetylcholine transmission. Weakness worsens with activity.', alert: 'Crisis: Respiratory failure.', q: 'Does MG weakness get better or worse with exercise?', a: ['Worse', 'Better'], correct: 0, rationale: 'MG is characterized by muscle fatigue; repetitive use depletes acetylcholine.' },
+                    { topic: 'MG Test', fact: 'Tensilon Test.', alert: 'Positive: Improvement in muscle strength.', q: 'What test confirms Myasthenia Gravis?', a: ['Tensilon Test', 'EEG', 'EMG', 'MRI'], correct: 0, rationale: 'Tensilon prevents Acetylcholine breakdown; temporary strength improvement confirms MG.' },
+                    { topic: 'Multiple Sclerosis', fact: 'Demyelination of CNS. Remissions/Exacerbations.', alert: 'Signs: Charcot\'s Triad (Tremor, Scanning speech, Nystagmus).', q: 'What part of the nerve is damaged in MS?', a: ['Dendrite', 'Myelin sheath', 'Axon', 'Soma'], correct: 1, rationale: 'MS is an autoimmune destruction of the myelin sheath.' },
+                    { topic: 'Parkinson\'s', fact: 'Dopamine deficiency.', alert: 'Signs: Tremor (pill-rolling), Rigidity, Bradykinesia.', q: 'What neurotransmitter is low in Parkinson\'s?', a: ['GABA', 'Serotonin', 'Dopamine', 'Acetylcholine'], correct: 2, rationale: 'Loss of dopamine-producing cells in the substantia nigra causes symptoms.' },
+                    { topic: 'Parkinson\'s Meds', fact: '<span class="drug-name">Levodopa/Carbidopa</span> (Sinemet).', alert: 'Action: Increases Dopamine.', q: 'What is the main drug for Parkinson\'s?', a: ['Cogentin', 'Haldol', 'Valium', 'Levodopa'], correct: 3, rationale: 'Levodopa is a dopamine precursor that crosses the blood-brain barrier.' },
+                    { topic: 'Glasgow Coma Scale', fact: 'Eye, Verbal, Motor.', alert: 'Max: 15. Coma: < 8.', q: 'What is the maximum score on the Glasgow Coma Scale?', a: ['15', '10', '12', '20'], correct: 0, rationale: '15 is fully alert; 3 is the lowest score (deep coma).' },
+                    { topic: 'Cranial Nerves', fact: 'I-Olfactory, II-Optic, III-Oculomotor, VII-Facial.', alert: 'Assess: Check function (smell, sight, eye movement, smile).', q: 'Which cranial nerve is responsible for facial expression?', a: ['CN III (Oculomotor)', 'CN VII (Facial)', 'CN V (Trigeminal)', 'CN X (Vagus)'], correct: 1, rationale: 'CN VII controls facial muscles (smile/frown); Bell\'s palsy affects this nerve.' },
+                    { topic: 'Bell\'s Palsy', fact: 'Paralysis of CN VII (Facial). Unilateral.', alert: 'Care: Protect the eye (patch at night).', q: 'What nursing intervention is crucial for Bell\'s Palsy?', a: ['Monitor ICP', 'Maintain airway', 'Protect the eye on affected side', 'Prevent aspiration'], correct: 2, rationale: 'Inability to close the eye leads to corneal drying and damage.' },
+                    { topic: 'Reye\'s Syndrome', fact: 'Acute encephalopathy and fatty liver. Linked to <span class="drug-name">Aspirin</span> use in viral kids.', alert: 'Prevention: No Aspirin for children with flu/varicella.', q: 'What medication is linked to Reye\'s Syndrome in children?', a: ['Antibiotics', 'Tylenol', 'Ibuprofen', 'Aspirin'], correct: 3, rationale: 'Aspirin use during a viral illness in children is the primary cause of Reye\'s Syndrome.' },
+                    { topic: 'Neuroleptic Malignant Syndrome', fact: 'Life-threatening reaction to antipsychotics.', alert: 'Signs: Hyperpyrexia (High Fever), Rigidity. Tx: <span class="drug-name">Dantrolene</span>.', q: 'What are the hallmark signs of Neuroleptic Malignant Syndrome?', a: ['High fever and muscle rigidity', 'Hypothermia and flaccidity', 'Hypertension and tachycardia', 'Seizures and coma'], correct: 0, rationale: 'NMS presents with dangerously high temperature and severe muscle stiffness.' },
+                    { topic: 'Tardive Dyskinesia', fact: 'Irreversible side effect of antipsychotics.', alert: 'Signs: Involuntary movements of tongue/face (chewing motion).', q: 'What is a sign of Tardive Dyskinesia?', a: ['Tremors', 'Chewing motion/Tongue protrusion', 'Muscle rigidity', 'Shuffling gait'], correct: 1, rationale: 'TD involves involuntary, repetitive movements like lip smacking or tongue thrusting.' },
+                    { topic: 'Huntington\'s Disease', fact: 'Autosomal Dominant genetic disorder.', alert: 'Signs: Chorea (movements), Dementia.', q: 'What is a classic sign of Huntington\'s Disease?', a: ['Paralysis', 'Tremors', 'Chorea (jerky movements)', 'Rigidity'], correct: 2, rationale: 'Chorea refers to the rapid, jerky, involuntary movements characteristic of Huntington\'s.' }
+                ]
+            },
+            gi: {
+                title: 'GI & Nutrition',
+                color: 'bg-emerald',
+                border: 'border-emerald',
+                type: 'gi',
+                description: 'GI, Renal, and Nutrition concepts.',
+                data: [
+                    { topic: 'Appendicitis', fact: 'RLQ Pain (<span class="highlight-term">McBurney\'s</span>).', alert: 'No Heat! Risk of rupture.', q: 'Where is the pain located in Appendicitis?', a: ['Epigastric', 'LLQ', 'RUQ', 'RLQ'], correct: 3, rationale: 'The appendix is located in the Right Lower Quadrant (McBurney\'s Point).' },
+                    { topic: 'Pancreatitis', fact: 'Autodigestion. Cullen\'s/Turner\'s sign.', alert: '<span class="highlight-term">NPO</span> is critical to stop enzyme production.', q: 'Why is the Pancreatitis patient kept NPO?', a: ['To stop enzyme production', 'To prevent vomiting', 'To rest the bowel', 'To prevent aspiration'], correct: 0, rationale: 'Eating stimulates the pancreas to secrete enzymes, which digests the pancreas itself. NPO stops this process.' },
+                    { topic: 'Renal Failure', fact: 'High K+, High Creatinine.', alert: 'Oliguric phase: Limit fluids/protein.', q: 'What is the most dangerous electrolyte imbalance in renal failure?', a: ['Hyponatremia', 'Hyperkalemia', 'Hypercalcemia', 'Hypomagnesemia'], correct: 1, rationale: 'Hyperkalemia (High Potassium) can cause fatal cardiac arrhythmias.' },
+                    { topic: 'Liver Cirrhosis', fact: 'Scarring of liver. Ammonia buildup.', alert: '<span class="highlight-term">Lactulose</span> given to lower ammonia.', q: 'What drug is used to lower ammonia levels in cirrhosis?', a: ['Lisinopril', 'Lasix', 'Lactulose', 'Lithium'], correct: 2, rationale: 'Lactulose traps ammonia in the gut and expels it via stool, treating hepatic encephalopathy.' },
+                    { topic: 'Nutrition: Fiber', fact: 'High Fiber: Grains, Fruits, Veggies.', alert: 'Low Fiber: Milk, Meat.', q: 'Which food group is lowest in fiber?', a: ['Whole Grains', 'Fruits', 'Vegetables', 'Dairy/Meats'], correct: 3, rationale: 'Animal products (meat, milk, eggs) contain no dietary fiber.' },
+                    { topic: 'Nutrition: Calories', fact: 'Carb=4, Protein=4, Fat=9 cal/g.', alert: 'Alcohol=7 cal/g.', q: 'How many calories are in 1 gram of fat?', a: ['9', '4', '7', '12'], correct: 0, rationale: 'Fats are the most calorie-dense nutrient at 9 kcal/gram.' },
+                    { topic: 'Acid Ash Diet', fact: 'Meat, eggs, cheese, corn, cranberries.', alert: 'For UTI/Stones.', q: 'Which food produces Acid Ash?', a: ['Milk', 'Cranberries/Meat', 'Vegetables', 'Fruits'], correct: 1, rationale: 'Acid ash diets acidify urine to prevent certain stones and infections.' },
+                    { topic: 'Gluten Free (Celiac)', fact: 'No B.R.O.W. (Barley, Rye, Oats, Wheat).', alert: 'Rice/Corn are OK.', q: 'Which grain is allowed on a Gluten-Free diet?', a: ['Rye', 'Wheat', 'Rice', 'Barley'], correct: 2, rationale: 'Rice and Corn are gluten-free. Remember "BROW" to avoid.' },
+                    { topic: 'Acute Glomerulonephritis', fact: 'Post-Strep Infection.', alert: 'Signs: Hematuria, HTN, Edema.', q: 'What organism commonly causes Acute Glomerulonephritis?', a: ['Pseudomonas', 'E. Coli', 'Staph Aureus', 'Group A Beta Strep'], correct: 3, rationale: 'It is an immune complex reaction that occurs weeks after a Strep throat infection.' },
+                    { topic: 'Colostomy Irrigation', fact: 'Stimulate emptying.', alert: 'Only for Descending/Sigmoid colostomies.', q: 'Which colostomy can be irrigated?', a: ['Descending/Sigmoid', 'Ascending', 'Transverse', 'Ileostomy'], correct: 0, rationale: 'Only colostomies with formed stool (lower colon) can be trained via irrigation.' },
+                    { topic: 'Hepatitis', fact: 'Inflammation of liver.', alert: 'A=Fecal/Oral. B=Blood/Body Fluids.', q: 'How is Hepatitis A transmitted?', a: ['Blood', 'Fecal-Oral route', 'Sexual contact', 'Airborne'], correct: 1, rationale: 'Hep A is viral, transmitted via contaminated food/water (Fecal-Oral).' },
+                    { topic: 'Pyloric Stenosis', fact: 'Narrowing of pylorus.', alert: 'Projectile Vomiting. Olive mass.', q: 'What assessment finding is classic for Pyloric Stenosis?', a: ['Bound abdomen', 'Sausage-shaped mass', 'Olive-shaped abdominal mass', 'Distended veins'], correct: 2, rationale: 'The thickened pyloric muscle feels like an olive in the epigastrum.' },
+                    { topic: 'Intussusception', fact: 'Telescoping bowel.', alert: 'Currant Jelly Stool.', q: 'What is the classic sign of intussusception?', a: ['Clay colored stool', 'Ribbon stool', 'Steatorrhea', 'Currant jelly stool'], correct: 3, rationale: 'Stool mixed with blood and mucus looks like currant jelly.' },
+                    { topic: 'Hirschsprungs', fact: 'Megacolon (No nerves).', alert: 'Ribbon-like stool.', q: 'What type of stool is seen in Hirschsprung\'s Disease?', a: ['Ribbon-like', 'Currant jelly', 'Tarry', 'Frothy'], correct: 0, rationale: 'Stool is forced through the narrowed segment, appearing ribbon-like.' },
+                    { topic: 'Hiatal Hernia', fact: 'Gastric regurgitation into esophagus.', alert: 'Tx: High Fowler, High Fluids, High Carbs.', q: 'What is the best position for a client with Hiatal Hernia?', a: ['Low Fowlers', 'High Fowlers', 'Supine', 'Prone'], correct: 1, rationale: 'Gravity helps keep the stomach contents down. Sit up after meals.' },
+                    { topic: 'Dumping Syndrome', fact: 'Rapid gastric emptying.', alert: 'Tx: Low Fowler, Low Fluids, Low Carbs.', q: 'What diet prevents Dumping Syndrome?', a: ['High Fluid/High Fiber', 'High Carb/Low Fat', 'Low Carb/High Protein/Low Fluid', 'Clear Liquids'], correct: 2, rationale: 'Carbs and fluids speed up emptying. Protein and fat slow it down.' },
+                    { topic: 'Ascites', fact: 'Fluid in peritoneal cavity.', alert: 'Measure abdominal girth.', q: 'What is the priority assessment for a client with ascites?', a: ['Skin turgor', 'Urine output', 'LOC', 'Abdominal Girth/Respiratory Status'], correct: 3, rationale: 'Ascites puts pressure on the diaphragm, impairing breathing.' },
+                    { topic: 'Esophageal Varices', fact: 'Dilated veins in esophagus.', alert: 'Risk: Rupture/Bleeding. No Valsalva.', q: 'What is a major complication of esophageal varices?', a: ['Hemorrhage', 'Infection', 'Obstruction', 'Stricture'], correct: 0, rationale: 'These veins are fragile and can burst, causing life-threatening bleeding.' },
+                    { topic: 'Sengstaken-Blakemore', fact: 'Tube for varices.', alert: 'Keep scissors at bedside.', q: 'Why must scissors be kept at the bedside with a Blakemore tube?', a: ['To cut the tape', 'To cut the tube if airway is blocked', 'To trim the tube', 'For dressing changes'], correct: 1, rationale: 'If the balloon moves up and blocks the airway, you must cut the tube to deflate it instantly.' },
+                    { topic: 'Ulcerative Colitis', fact: 'Inflammation of colon.', alert: 'Bloody diarrhea. Low residue diet.', q: 'What type of diet is recommended for Ulcerative Colitis?', a: ['High Fat', 'High Fiber', 'Low Residue (Low Fiber)', 'Low Protein'], correct: 2, rationale: 'Low residue reduces bowel volume and irritation.' },
+                    { topic: 'Crohn\'s Disease', fact: 'Inflammation of entire GI tract.', alert: 'Skip lesions. Fistulas.', q: 'Which disease is characterized by "skip lesions"?', a: ['IBS', 'Ulcerative Colitis', 'Diverticulitis', 'Crohn\'s Disease'], correct: 3, rationale: 'Crohn\'s affects patchy areas of the GI tract, unlike UC which is continuous.' },
+                    { topic: 'Diverticulitis', fact: 'Inflamed pouches.', alert: 'Avoid seeds/nuts. NPO in acute phase.', q: 'What food should be avoided in Diverticulitis?', a: ['Seeds, nuts, popcorn', 'Dairy', 'Meat', 'Rice'], correct: 0, rationale: 'Small seeds can get trapped in the diverticula and cause inflammation.' },
+                    { topic: 'Cholecystitis', fact: 'Gallbladder inflammation.', alert: 'RUQ pain radiating to R shoulder.', q: 'Where does gallbladder pain typically radiate?', a: ['Left arm', 'Right shoulder/scapula', 'Lower back', 'Groin'], correct: 1, rationale: 'Referred pain to the right shoulder is a classic sign of cholecystitis.' },
+                    { topic: 'Peritonitis', fact: 'Infection of peritoneum.', alert: 'Rigid, board-like abdomen.', q: 'What is a cardinal sign of Peritonitis?', a: ['Hyperactive bowel sounds', 'Soft abdomen', 'Rigid, board-like abdomen', 'Hunger'], correct: 2, rationale: 'The abdomen becomes rigid due to muscle guarding against the severe inflammation.' },
+                    { topic: 'Hypokalemia', fact: 'Low Potassium.', alert: 'Muscle weakness, U waves.', q: 'What EKG change is associated with Hypokalemia?', a: ['Wide QRS', 'Peaked T waves', 'ST elevation', 'U waves'], correct: 3, rationale: 'U waves are a specific sign of low potassium.' },
+                    { topic: 'Hyperkalemia', fact: 'High Potassium.', alert: 'Peaked T waves. Cardiac arrest.', q: 'What is the first EKG sign of Hyperkalemia?', a: ['Peaked T waves', 'Inverted T waves', 'U waves', 'ST depression'], correct: 0, rationale: 'Tall, peaked T waves indicate dangerous levels of potassium.' },
+                    { topic: 'Hyponatremia', fact: 'Low Sodium.', alert: 'Confusion, Seizures.', q: 'What is a primary symptom of Hyponatremia?', a: ['Thirst', 'Confusion/Seizures', 'Dry skin', 'Constipation'], correct: 1, rationale: 'Sodium regulates fluid balance; low sodium causes brain swelling (cerebral edema).' },
+                    { topic: 'Hypernatremia', fact: 'High Sodium.', alert: 'Thirst, Dry mucous membranes.', q: 'What is a common sign of Hypernatremia?', a: ['Edema', 'Confusion', 'Thirst, dry tongue', 'Diarrhea'], correct: 2, rationale: 'High sodium draws water out of cells, causing dehydration signs.' },
+                    { topic: 'Hypocalcemia', fact: 'Low Calcium.', alert: 'Tetany, Chvostek\'s, Trousseau\'s.', q: 'What signs indicate Hypocalcemia?', a: ['Constipation', 'Bone pain', 'Kidney stones', 'Tetany, Chvostek\'s, Trousseau\'s'], correct: 3, rationale: 'Low calcium causes neuromuscular irritability and spasms.' },
+                    { topic: 'Hypercalcemia', fact: 'High Calcium.', alert: 'Muscle weakness, Kidney stones.', q: 'What is a symptom of Hypercalcemia?', a: ['Muscle weakness/Sedation', 'Tetany', 'Spasms', 'Hyperreflexia'], correct: 0, rationale: 'High calcium acts as a sedative on the muscles and nerves.' }
+                ]
+            },
+            obpeds: {
+                title: 'OB & Pediatrics',
+                color: 'bg-pink',
+                border: 'border-pink',
+                type: 'obpeds',
+                description: 'OB and Peds from Klimek.',
+                data: [
+                    { topic: 'Placenta Previa', fact: '<span class="highlight-term">Painless</span> bright red bleeding.', alert: 'No Vaginal Exams.', q: 'What is the hallmark sign of Placenta Previa?', a: ['Painful dark bleeding', 'Painless bright red bleeding', 'Rigid abdomen', 'Back pain'], correct: 1, rationale: 'Previa puts the placenta over the cervix; as the cervix stretches, it bleeds painlessly.' },
+                    { topic: 'Abruptio Placenta', fact: '<span class="highlight-term">Painful</span> dark bleeding. Rigid board-like abdomen.', alert: 'Emergency C-section.', q: 'What distinguishes Abruptio Placenta from Previa?', a: ['Amount of blood', 'Fetal heart rate', 'Pain and abdominal rigidity', 'Gestational age'], correct: 2, rationale: 'Abruption is the premature separation of the placenta, causing concealed hemorrhage and intense pain/rigidity.' },
+                    { topic: 'Fetal Heart Rate', fact: 'VEAL CHOP.', alert: 'Variable = Cord. Late = Placental Insufficiency.', q: 'What causes Variable Decelerations?', a: ['Placental Insufficiency', 'Head Compression', 'Oxygenation', 'Cord Compression'], correct: 3, rationale: 'Remember VEAL CHOP: V (Variable) = C (Cord Compression).' },
+                    { topic: 'Tetralogy of Fallot', fact: '4 Defects. "Blue Spells".', alert: '<span class="highlight-term">Knee-chest</span> position (Squatting) helps.', q: 'What position helps a child having a "Tet Spell"?', a: ['Knee-Chest (Squatting)', 'Supine', 'Prone', 'Walking'], correct: 0, rationale: 'Squatting increases systemic vascular resistance, forcing blood back into the lungs for oxygenation.' },
+                    { topic: 'Pregnancy Signs', fact: 'Presumptive (Subjective), Probable (Objective), Positive (Diagnostic).', alert: 'Hegar\'s: Softening. Chadwick\'s: Blue.', q: 'What is Chadwick\'s sign?', a: ['Softening of uterus', 'Blue tint to cervix', 'Rebound tenderness', 'Fetal movement'], correct: 1, rationale: 'Chadwick\'s sign is the bluish discoloration of the cervix due to increased blood flow.' },
+                    { topic: 'Nagel\'s Rule', fact: 'LMP + 7 days - 3 months.', alert: 'Example: June 10 -> March 17.', q: 'If LMP is June 10, when is the due date?', a: ['April 17', 'February 10', 'March 17', 'March 10'], correct: 2, rationale: 'June - 3 months = March. 10 + 7 days = 17.' },
+                    { topic: 'Preeclampsia', fact: 'HTN, Proteinuria, Edema.', alert: 'Seizure risk (Eclampsia). Tx: Mag Sulfate.', q: 'What are the three classic signs of Preeclampsia?', a: ['Fever, Rash, Pain', 'Hypotension, Low protein, Dehydration', 'Bleeding, Cramping, Nausea', 'Hypertension, Proteinuria, Edema'], correct: 3, rationale: 'The triad of high BP, protein in urine, and swelling defines preeclampsia.' },
+                    { topic: 'Magnesium Sulfate', fact: 'Anticonvulsant/Tocolytic.', alert: 'Toxicity: Low RR, Absent Reflexes. Antidote: Calcium Gluconate.', q: 'What is the antidote for Magnesium Sulfate toxicity?', a: ['Calcium Gluconate', 'Narcan', 'Vitamin K', 'Protamine Sulfate'], correct: 0, rationale: 'Calcium Gluconate reverses the respiratory depression and cardiac effects of Magnesium toxicity.' },
+                    { topic: 'Lochia', fact: 'Rubra (Red), Serosa (Pink), Alba (White).', alert: 'Excessive: Pad saturated < 15 mins.', q: 'What color is Lochia Rubra?', a: ['Pink', 'Red', 'White', 'Brown'], correct: 1, rationale: 'Rubra is the initial red bleeding (1-3 days).' },
+                    { topic: 'APGAR', fact: 'Appearance, Pulse, Grimace, Activity, Resp.', alert: 'Done at 1 & 5 mins.', q: 'When is APGAR scoring performed?', a: ['1 and 10 minutes', 'Birth and Discharge', '1 and 5 minutes', 'Every hour'], correct: 2, rationale: 'Standard protocol is assessment at 1 minute and 5 minutes of life.' },
+                    { topic: 'Cleft Lip/Palate', fact: 'Feeding issues.', alert: 'Post-op: Restraints, Logan Bow.', q: 'What position is contraindicated after cleft lip repair?', a: ['Side-lying', 'Supine', 'Upright', 'Prone (on abdomen)'], correct: 3, rationale: 'Lying prone can rub the suture line on the sheets, ruining the repair.' },
+                    { topic: 'Erikson Stages', fact: 'Trust vs Mistrust (Infant).', alert: 'Adolescent: Identity vs Role Confusion.', q: 'What is the developmental task for infancy?', a: ['Trust vs Mistrust', 'Autonomy vs Shame', 'Initiative vs Guilt', 'Industry vs Inferiority'], correct: 0, rationale: 'Infants learn to trust caregivers to meet basic needs.' },
+                    { topic: 'Hyperemesis Gravidarum', fact: 'Severe/Prolonged vomiting. Risk: Dehydration/Starvation.', alert: 'Diet: NPO first. Then small dry meals. Sit upright 45 mins after eating.', q: 'What is the initial diet order for hyperemesis gravidarum?', a: ['Clear liquids', 'NPO', 'Full liquids', 'BRAT diet'], correct: 1, rationale: 'Initial treatment requires bowel rest (NPO) and IV hydration to correct electrolyte imbalances.' },
+                    { topic: 'Ectopic Pregnancy', fact: 'Implantation outside uterus (90% Fallopian). Unilateral pain.', alert: 'Rupture: Shock, peritonitis. Emergency!', q: 'What is the most common sign of fallopian ectopic pregnancy?', a: ['Painless bleeding', 'Fever', 'Unilateral pelvic pain', 'Homan\'s sign'], correct: 2, rationale: 'Pain is localized to the side of the affected tube before rupture.' },
+                    { topic: 'Gestational Diabetes', fact: 'Diabetes during pregnancy. Risk: Large baby (Macrosomia).', alert: 'Baby Risk: Hypoglycemia after birth.', q: 'What is the #1 cause of infant illness when mother has diabetes?', a: ['Jaundice', 'Hyperglycemia', 'Sepsis', 'Hypoglycemia'], correct: 3, rationale: 'The baby\'s pancreas is hyperactive from mom\'s high sugar; after birth, sugar supply stops but insulin continues, causing hypoglycemia.' },
+                    { topic: 'PROM', fact: 'Premature Rupture of Membranes before labor.', alert: 'Risk: Infection. Test: Nitrazine paper turns Blue (Alkaline).', q: 'What color does amniotic fluid turn Nitrazine paper?', a: ['Blue (Alkaline)', 'Red (Acidic)', 'Green (Neutral)', 'Yellow'], correct: 0, rationale: 'Amniotic fluid is alkaline (pH 7.0-7.5), turning the yellow paper blue.' },
+                    { topic: 'Cleft Lip', fact: 'Lip open to nares. Repair: 10 weeks - 6 months.', alert: 'Post-op: Logan Bow. Restrain elbows. NO sucking.', q: 'What position is contraindicated after cleft lip repair?', a: ['Supine', 'Prone (on abdomen)', 'Side-lying', 'Upright'], correct: 1, rationale: 'Prone position can cause the infant to rub the face/suture line on the sheets, damaging the repair.' },
+                    { topic: 'Cleft Palate', fact: 'Roof of mouth open. Repair: 1-5 years.', alert: 'Feeding: Upright. Soft nipple/cup. Frequent burping.', q: 'Why is cleft palate repair delayed until 4-5 years?', a: ['To allow speech development', 'To prevent infection', 'To allow tooth development', 'Weight gain'], correct: 2, rationale: 'Early surgery can interfere with skeletal growth of the midface and tooth eruption.' },
+                    { topic: 'Erikson: Infant', fact: '0-18 months. Trust vs. Mistrust.', alert: 'Fear: Separation from primary caregiver.', q: 'What is the developmental task for infancy?', a: ['Initiative vs Guilt', 'Autonomy vs Shame', 'Industry vs Inferiority', 'Trust vs Mistrust'], correct: 3, rationale: 'Consistently meeting needs establishes trust.' },
+                    { topic: 'Erikson: Toddler', fact: '18mo - 3 years. Autonomy vs. Shame & Doubt.', alert: 'Word: "NO". Give choices.', q: 'Which age group is most likely to say "No"?', a: ['Toddler', 'Infant', 'Preschooler', 'School Age'], correct: 0, rationale: 'Toddlers assert independence (Autonomy) by saying no (Negativism).' },
+                    { topic: 'Erikson: Preschool', fact: '3-6 years. Initiative vs. Guilt.', alert: 'Fear: Mutilation. Loves fantasy/pretend play.', q: 'The preschooler fears separation and ___ when hospitalized?', a: ['Loss of control', 'Mutilation', 'Darkness', 'Strangers'], correct: 1, rationale: 'Preschoolers have vivid imaginations and fear bodily harm/mutilation.' },
+                    { topic: 'Erikson: School Age', fact: '6-12 years. Industry vs. Inferiority.', alert: 'Focus: Achievement, Rules, School.', q: 'What is the developmental task for school age?', a: ['Identity vs Role Confusion', 'Intimacy vs Isolation', 'Industry vs Inferiority', 'Trust vs Mistrust'], correct: 2, rationale: 'School age children focus on competence, skills, and "making things" (Industry).' },
+                    { topic: 'Erikson: Adolescent', fact: '12-20 years. Identity vs. Role Confusion.', alert: 'Focus: Peers, Independence.', q: 'Who is most important to the hospitalized adolescent?', a: ['Teachers', 'Parents', 'Siblings', 'Peers'], correct: 3, rationale: 'Peer group acceptance is critical for identity formation.' },
+                    { topic: 'Breastfeeding', fact: 'Milk comes in day 3. Feed q2-3h.', alert: 'Engorgement: Ice packs. Mastitis: Keep feeding!', q: 'Should a mother with mastitis stop breastfeeding?', a: ['No, keep feeding', 'Yes, stop immediately', 'Only pump and dump', 'Switch to formula'], correct: 0, rationale: 'Emptying the breast prevents stasis and abscess formation. The infection is in the tissue, not the milk.' },
+                    { topic: 'Contraceptives', fact: 'Stop 1 week before surgery (Clot risk).', alert: 'Contraindication: Smokers > 15 cigs/day (Thrombophlebitis).', q: 'How long before surgery must oral contraceptives be stopped?', a: ['24 hours', 'One week', 'One month', 'Do not stop'], correct: 1, rationale: 'Estrogen increases clotting factors; combined with surgical immobility, the risk for DVT/PE is high.' },
+                    { topic: 'Ovarian Cysts', fact: 'Usually benign. Torsion = twisting.', alert: 'Rupture Signs: Acute pain, abdominal distention/rigidity.', q: 'What is a common sign of ovarian cyst rupture?', a: ['Painless bleeding', 'Fever', 'Abdominal distention/rigidity', 'Hives'], correct: 2, rationale: 'Rupture releases fluid/blood into the peritoneum, causing irritation and rigidity.' },
+                    { topic: 'Menstrual Cycle', fact: '28 days. Ovulation day 14. Luteal Phase maintains pregnancy.', alert: 'Follicular: Estrogen. Luteal: Progesterone.', q: 'How many days after ovulation does menstruation begin?', a: ['21 days', '7 days', '28 days', '14 days'], correct: 3, rationale: 'The luteal phase is consistently 14 days; if no pregnancy occurs, the corpus luteum degenerates and menses begins.' },
+                    { topic: 'Cesium Implant', fact: 'Radiation source. Bed rest. Foley.', alert: 'Safety: Time, Distance, Shielding. Forceps if it falls out.', q: 'What is the activity order for a client with a cesium implant?', a: ['Absolute bed rest', 'Ad lib', 'Bathroom privileges', 'Wheelchair'], correct: 0, rationale: 'Movement can dislodge the implant. Absolute bed rest is required.' },
+                    { topic: 'Respiratory Distress (Peds)', fact: 'RDS in premature infants. Low surfactant.', alert: 'Signs: Grunting, Flaring, Retractions.', q: 'The cause of RDS in infants is a lack of?', a: ['Oxygen', 'Surfactant', 'Blood', 'Glucose'], correct: 1, rationale: 'Surfactant reduces surface tension in alveoli; without it, they collapse.' },
+                    { topic: 'Child Hospitalization', fact: 'Fears vary by age.', alert: 'Toddler: Separation. Preschool: Mutilation. School: Loss of Control.', q: 'The toddler fears ___ most when hospitalized?', a: ['Pain', 'Darkness', 'Separation from parents', 'Loss of control'], correct: 2, rationale: 'Separation anxiety is peak in toddlerhood.' }
+                ]
+            },
+            endo: {
+                title: 'Endocrine & Metabolic',
+                color: 'bg-amber',
+                border: 'border-amber',
+                type: 'endo',
+                description: 'Endocrine disorders (Cushing\'s, Addison\'s, Thyroid).',
+                data: [
+                    { topic: 'Cushing\'s', fact: '<span class="highlight-term">Cushing\'s</span> = Too much steroid.<br><span class="highlight-term">Addison\'s</span> = Too little steroid.', alert: 'Hyperglycemia, Hypernatremia.', q: 'Which electrolyte imbalance is seen in Cushing\'s?', a: ['Hyponatremia', 'Hyponatremia/Hyperkalemia', 'Hypercalcemia', 'Hypernatremia/Hypokalemia'], correct: 3, rationale: 'Excess aldosterone retains Sodium (Hypernatremia) and excretes Potassium (Hypokalemia).' },
+                    { topic: 'Addison\'s', fact: 'Too little steroid. Bronze skin.', alert: 'Addisonian Crisis: Severe <span class="highlight-term">Hypotension</span>.', q: 'What is the priority in Addisonian Crisis?', a: ['Prevent Shock (Fluids/Steroids)', 'Prevent Seizure', 'Prevent Stroke', 'Lower BP'], correct: 0, rationale: 'Lack of cortisol leads to vascular collapse and severe hypotension (Shock).' },
+                    { topic: 'Diabetes Type 1', fact: 'Insulin dependent. Ketosis prone.', alert: 'Signs: Polyuria, Polydipsia, Polyphagia.', q: 'Which diabetes type involves ketosis?', a: ['Gestational', 'Type 1', 'Insipidus', 'Type 2'], correct: 1, rationale: 'Type 1 diabetics produce no insulin, forcing the body to burn fat, producing ketones.' },
+                    { topic: 'Insulin Mixing', fact: '<span class="highlight-term">Clear</span> before <span class="highlight-term">Cloudy</span>.', alert: 'Inject air into NPH first.', q: 'What is the rule for mixing insulin?', a: ['Draw both together', 'Draw Cloudy before Clear', 'Draw Clear (Regular) before Cloudy (NPH)', 'Never mix'], correct: 2, rationale: 'You want to prevent contaminating the rapid clear insulin with the slow cloudy insulin. "Clear before Cloudy" (RN - Regular then NPH).' },
+                    { topic: 'Hyperthyroidism', fact: 'Graves Disease (High Met).', alert: 'Exophthalmos, Heat Intolerance.', q: 'What is a hallmark sign of Graves\' Disease?', a: ['Weight gain', 'Bradycardia', 'Cold intolerance', 'Exophthalmos (Bulging eyes)'], correct: 3, rationale: 'Accumulation of fluid behind the eyes causes them to bulge.' },
+                    { topic: 'Thyroid Storm', fact: 'Medical Emergency.', alert: 'High Fever, Tachycardia, Delirium.', q: 'What are signs of Thyroid Storm?', a: ['High Fever, Tachycardia', 'Low Temp, Bradycardia', 'Constipation', 'Somnolence'], correct: 0, rationale: 'A massive surge of thyroid hormone sends metabolism into overdrive.' },
+                    { topic: 'Hypothyroidism', fact: 'Myxedema (Low Met).', alert: 'Cold Intolerance, Weight Gain.', q: 'What is a sign of Hypothyroidism?', a: ['Tachycardia', 'Cold Intolerance', 'Diarrhea', 'Weight loss'], correct: 1, rationale: 'Slowed metabolism leads to decreased heat production.' },
+                    { topic: 'Diabetes Insipidus', fact: 'Low ADH. Polyuria.', alert: 'High Serum Sodium. Risk of Dehydration.', q: 'What hormone is lacking in Diabetes Insipidus?', a: ['Glucagon', 'Insulin', 'ADH (Anti-diuretic Hormone)', 'Thyroid'], correct: 2, rationale: 'Without ADH, the kidneys cannot reabsorb water, leading to massive urine output.' },
+                    { topic: 'SIADH', fact: 'High ADH. Water Retention.', alert: 'Low Serum Sodium (Dilutional).', q: 'What electrolyte imbalance is seen in SIADH?', a: ['Hypernatremia', 'Hypocalcemia', 'Hyperkalemia', 'Hyponatremia'], correct: 3, rationale: 'Excess water retention dilutes the blood sodium levels.' },
+                    { topic: 'Acromegaly', fact: 'High Growth Hormone (Adult).', alert: 'Large hands/feet/face.', q: 'High growth hormone in an adult is called?', a: ['Acromegaly', 'Gigantism', 'Dwarfism', 'Cretinism'], correct: 0, rationale: 'Gigantism is in children; Acromegaly is in adults (bones thicken, don\'t lengthen).' },
+                    { topic: 'Addison\'s Treatment', fact: 'Steroid replacement (Prednisone).', alert: 'Rule: Never stop abruptly. Take with food.', q: 'What is the primary treatment for Addison\'s Disease?', a: ['Diuretics', 'Steroid replacement', 'Insulin', 'Thyroid replacement'], correct: 1, rationale: 'The adrenal cortex is failing; you must replace the missing steroids (cortisol/aldosterone).' },
+                    { topic: 'Myxedema Coma', fact: 'Severe Hypothyroidism. Hypothermia, Bradycardia.', alert: 'Caution: Do not sedate these patients!', q: 'What is the danger of sedating a patient with Myxedema?', a: ['Seizures', 'Thyroid Storm', 'Myxedema Coma/Resp Arrest', 'Hypertension'], correct: 2, rationale: 'Their metabolism is already critically low; sedatives can stop breathing entirely.' },
+                    { topic: 'Synthroid', fact: 'Levothyroxine. Thyroid replacement.', alert: 'Admin: Empty stomach in AM. Life-long therapy.', q: 'When should Synthroid be taken?', a: ['With dinner', 'With lunch', 'At bedtime', 'Morning, empty stomach'], correct: 3, rationale: 'Absorption is best on an empty stomach; morning dosing prevents insomnia.' },
+                    { topic: 'Hypoglycemia Tx', fact: 'Awake: Juice/Candy. Unconscious: Glucagon IM or D50 IV.', alert: 'Rule: Follow sugar with a protein/carb snack.', q: 'What do you give an unconscious hypoglycemic patient?', a: ['Glucagon IM or D50 IV', 'Orange Juice', 'Insulin', 'Water'], correct: 0, rationale: 'Unconscious patients cannot swallow (aspiration risk). Glucagon releases liver glycogen.' },
+                    { topic: 'Hyperglycemia', fact: 'High Blood Sugar. "Hot and Dry".', alert: 'DKA (Type 1): Ketones, Acidosis, Kussmaul Resp. HHNK (Type 2): Dehydration.', q: 'Which condition presents with Kussmaul respirations?', a: ['Insulin Shock', 'Diabetic Ketoacidosis (DKA)', 'HHNK', 'Hypoglycemia'], correct: 1, rationale: 'Kussmaul respirations are a compensatory mechanism to blow off acid (CO2) in DKA.' },
+                    { topic: 'DKA Treatment', fact: 'Hydration and Insulin.', alert: 'Priority: IV Fluids (NS) then Regular Insulin IV.', q: 'What is the #1 treatment priority in DKA?', a: ['Bicarbonate', 'Insulin', 'IV Fluids', 'Potassium'], correct: 2, rationale: 'Severe dehydration is the immediate threat to life. Rehydrate first.' },
+                    { topic: 'Insulin: Regular', fact: 'Short Acting. Clear. IV compatible.', alert: 'Onset: 1 hr. Peak: 2 hrs. Duration: 4 hrs. (1-2-4).', q: 'Which is the only insulin that can be given IV?', a: ['NPH', 'Humalog', 'Lantus', 'Regular'], correct: 3, rationale: 'Regular insulin is the only formulation stable enough for IV administration.' },
+                    { topic: 'Insulin: NPH', fact: 'Intermediate. Cloudy.', alert: 'Onset: 6 hrs. Peak: 8-10 hrs. Duration: 12 hrs. (6-8-10-12).', q: 'When does NPH insulin peak?', a: ['8-10 hours', '2 hours', 'No peak', '24 hours'], correct: 0, rationale: 'NPH has a longer onset and peak than Regular; watch for hypoglycemia in mid-afternoon.' },
+                    { topic: 'Insulin: Humalog', fact: 'Rapid Acting (Lispro). Give WITH meals.', alert: 'Onset: 15 mins. Peak: 30 mins. Duration: 3 hrs. (15-30-3).', q: 'When should Humalog (Lispro) be given?', a: ['Daily', 'WITH meals', 'At bedtime', '30 mins before meals'], correct: 1, rationale: 'It acts so fast that food must be present or hypoglycemia will occur.' },
+                    { topic: 'Insulin: Lantus', fact: 'Long Acting (Glargine). No Peak.', alert: 'Duration: 24 hrs. Can give at bedtime safely.', q: 'Which insulin has NO peak?', a: ['NPH', 'Regular', 'Lantus (Glargine)', 'Humalog'], correct: 2, rationale: 'Lantus provides a steady baseline insulin level without a dangerous peak time.' },
+                    { topic: 'HbA1c', fact: 'Glycosylated Hemoglobin. Long term check.', alert: 'Goal: < 7%. Measures control over 3 months.', q: 'What does the HbA1c test measure?', a: ['Current blood sugar', 'Insulin level', 'Ketones', 'Glucose control over 3 months'], correct: 3, rationale: 'RBCs live 120 days; HbA1c measures how much sugar stuck to them over their lifespan.' },
+                    { topic: 'Steroids', fact: 'Glucocorticoids. End in -sone.', alert: 'SE: Cushing\'s signs. Rule: Taper off slowly! Take with food.', q: 'Should steroids be stopped abruptly?', a: ['No, taper slowly', 'Yes, immediately', 'Only if sick', 'If side effects occur'], correct: 0, rationale: 'Abrupt withdrawal causes Addisonian Crisis because the adrenals have fallen asleep.' },
+                    { topic: 'Steroid Side Effects', fact: 'High Sugar, Immunosuppression, Osteoporosis.', alert: 'GI: Ulcers (Take with food). Mental: Psychosis.', q: 'What is a common side effect of long-term steroid use?', a: ['Hypotension', 'Osteoporosis/Hyperglycemia', 'Weight loss', 'Hypoglycemia'], correct: 1, rationale: 'Steroids catabolize bone and increase blood sugar.' },
+                    { topic: 'Hypoparathyroidism', fact: 'Low Calcium. High Phosphorus.', alert: 'Signs: Tetany, Trousseau\'s, Chvostek\'s. Tx: IV Calcium.', q: 'What sign is associated with Hypoparathyroidism?', a: ['Kidney stones', 'Bone pain', 'Positive Chvostek\'s/Trousseau\'s', 'Polyuria'], correct: 2, rationale: 'Lack of PTH causes hypocalcemia, leading to neuromuscular excitability.' },
+                    { topic: 'Hyperparathyroidism', fact: 'High Calcium. Low Phosphorus.', alert: 'Signs: Bone pain, Kidney stones (Ca stones), Weakness.', q: 'What is a major complication of Hyperparathyroidism?', a: ['Seizures', 'Diarrhea', 'Tetany', 'Kidney Stones/Bone Fractures'], correct: 3, rationale: 'PTH pulls calcium out of bones (fractures) and puts it into blood/kidneys (stones).' },
+                    { topic: 'Foot Care (Diabetes)', fact: 'Inspect daily. Dry between toes.', alert: 'Do Not: Soak feet, use heating pads, cut corns.', q: 'How should a diabetic cut their toenails?', a: ['Straight across', 'Curved', 'Very short', 'File only'], correct: 0, rationale: 'Straight across prevents ingrown nails. Many sources recommend filing only to avoid injury.' },
+                    { topic: 'Sick Day Rules', fact: 'Take insulin even if not eating.', alert: 'Hydration: Drink fluids. Check sugar q4h.', q: 'Should a diabetic take insulin when sick and not eating?', a: ['Take pill instead', 'Yes, take insulin', 'Only half dose', 'No, skip dose'], correct: 1, rationale: 'Illness raises blood sugar (stress response). Insulin is needed to prevent DKA.' },
+                    { topic: 'Thyroidectomy Post-op', fact: 'Monitor airway and calcium.', alert: 'Check: Bleeding (behind neck). Hypocalcemia: Tetany.', q: 'What is a major complication of thyroidectomy?', a: ['Hyperkalemia', 'Hypercalcemia', 'Hypocalcemia (Tetany)', 'Hyponatremia'], correct: 2, rationale: 'Accidental removal or damage of parathyroid glands leads to low calcium.' },
+                    { topic: 'Diabetes Type 2', fact: 'Non-Insulin Dependent. Insulin resistance.', alert: 'Treatment: Diet, Exercise, Oral Hypoglycemics.', q: 'What is the primary treatment for Type 2 Diabetes?', a: ['Insulin only', 'Bed rest', 'Surgery', 'Diet and Exercise'], correct: 3, rationale: 'Type 2 is often managed by lifestyle changes first, then orals.' }
+                ]
+            },
+            musc: {
+                title: 'Musculoskeletal',
+                color: 'bg-teal',
+                border: 'border-teal',
+                type: 'musc',
+                description: 'Ortho, Mobility, and Skeletal Disorders.',
+                data: [
+                    { topic: 'Crutch Fit', fact: '<span class="highlight-term">2-3 fingers</span> below axilla.', alert: 'Elbow flexion <span class="highlight-term">30 degrees</span>.', q: 'How many finger widths should be between the axilla and the crutch pad?', a: ['2-3 fingers', '5 fingers', 'None (touching)', '1 finger'], correct: 0, rationale: 'This gap prevents pressure on the axillary nerve, which can cause paralysis.' },
+                    { topic: 'Crutch Handgrip', fact: 'Weight on hands, not armpits.', alert: 'Elbow flexed 30 degrees.', q: 'What is the correct elbow flexion for crutch walking?', a: ['45 degrees', '30 degrees', '15 degrees', '90 degrees'], correct: 1, rationale: '30 degrees allows for optimal leverage and weight bearing on the hands.' },
+                    { topic: '2-Point Gait', fact: '<span class="highlight-term">Move</span> = Crutch + opposite foot together.', alert: 'For mild weakness. Faster than 4-point.', q: 'Describe the 2-point crutch gait.', a: ['Move one crutch then same foot', 'Move crutch then opposite foot', 'Move crutch and opposite foot together', 'Move both crutches then both feet'], correct: 2, rationale: 'In 2-point gait, the right crutch and left foot move simultaneously, simulating normal walking arm swing.' },
+                    { topic: '3-Point Gait', fact: '<span class="highlight-term">Move</span> = 2 crutches + bad leg together.', alert: 'Non-weight bearing on one leg.', q: 'Which gait is used for a broken leg (non-weight bearing)?', a: ['Swing-to', '2-point gait', '4-point gait', '3-point gait'], correct: 3, rationale: '3-point gait takes all weight on the crutches and the "good" leg, protecting the broken one.' },
+                    { topic: '4-Point Gait', fact: 'Right crutch, Left foot, Left crutch, Right foot.', alert: 'Very slow. For severe stability issues.', q: 'Which gait provides the most stability but is slowest?', a: ['4-point gait', '2-point gait', '3-point gait', 'Swing-through'], correct: 0, rationale: '4-point gait always has 3 points of contact on the ground at any time, providing max stability.' },
+                    { topic: 'Swing-Through', fact: 'Plant crutches, swing legs past.', alert: 'For paraplegics/amputees.', q: 'Which gait is typically used by paraplegics with braces?', a: ['4-point', 'Swing-through', '2-point', '3-point'], correct: 1, rationale: 'They plant crutches and swing the paralyzed legs forward using momentum.' },
+                    { topic: 'Stairs: Up', fact: '<span class="highlight-term">Up</span> = Good leg goes first.<br><span class="highlight-term">Down</span> = Bad leg goes first.', alert: '"Up with the Good".', q: 'When going UP stairs with crutches, which moves first?', a: ['Both legs', 'The bad leg', 'The good leg', 'The crutches'], correct: 2, rationale: 'The good leg powers the lift up the step. "Up with the Good".' },
+                    { topic: 'Cane Side', fact: 'Hold on <span class="highlight-term">STRONG</span> side.', alert: 'Advance with WEAK leg.', q: 'On which side should a patient hold a cane?', a: ['Right side', 'Weak (Affected) side', 'Dominant side', 'Strong (Unaffected) side'], correct: 3, rationale: 'Holding it on the strong side widens the base of support and reduces load on the weak hip.' },
+                    { topic: 'Cane Walking', fact: '<span class="highlight-term">Cane</span> + Weak leg, then Strong leg.', alert: 'Cane moves with the bad leg.', q: 'What is the correct sequence for walking with a cane?', a: ['Cane + Weak leg, then Strong leg', 'Cane, then Strong leg, then Weak leg', 'Strong leg, then Cane, then Weak leg', 'All together'], correct: 0, rationale: 'The cane supports the weak leg as they move forward together.' },
+                    { topic: 'Walker Use', fact: 'Pick up, set down, walk to it.', alert: 'Don\'t drag. Don\'t tie to front.', q: 'What is the correct technique for a standard walker?', a: ['Walk then move walker', 'Pick up, set down, walk to it', 'Slide it along floor', 'Rock it side to side'], correct: 1, rationale: 'Standard walkers have no wheels; they must be lifted to ensure stability before stepping.' },
+                    { topic: 'Walker Belongings', fact: 'Tie to <span class="highlight-term">SIDES</span>, not front.', alert: 'Front weight causes tipping.', q: 'Where should a patient tie belongings on a walker?', a: ['Do not tie anything', 'On the front', 'On the sides', 'On the back'], correct: 2, rationale: 'Tying heavy items to the front bar shifts the center of gravity and causes the walker to tip forward.' },
+                    { topic: 'Chair to Walker', fact: 'Push off <span class="highlight-term">chair</span> armrests.', alert: 'Never pull on walker to stand.', q: 'How should a patient stand up from a chair to use a walker?', a: ['Have nurse pull them', 'Pull on the walker handles', 'Rock forward without hands', 'Push off the chair armrests'], correct: 3, rationale: 'Pulling on the walker can pull it over on top of the patient. Push off the sturdy chair.' },
+                    { topic: 'Cast Drying', fact: 'Plaster takes 24-72 hrs.', alert: 'Handle with <span class="highlight-term">PALMS</span>, not fingers.', q: 'Why handle a wet cast with palms only?', a: ['To prevent indentations/pressure points', 'To keep hands clean', 'To dry it faster', 'To warm it'], correct: 0, rationale: 'Fingertips cause indentations in wet plaster which dry into pressure points causing ulcers.' },
+                    { topic: 'Cast Temp', fact: '<span class="highlight-term">Hot spots</span> = Infection.', alert: 'Heat feeling is normal during setting.', q: 'What does a specific "hot spot" on a dry cast indicate?', a: ['Bone healing', 'Infection underneath', 'Normal drying', 'Itching'], correct: 1, rationale: 'A localized hot spot indicates inflammation/infection of the tissue beneath the cast.' },
+                    { topic: 'Cast Smell', fact: '<span class="highlight-term">Foul odor</span> = Infection.', alert: 'Musty smell is okay.', q: 'A foul odor coming from a cast suggests?', a: ['Poor hygiene', 'Sweat', 'Infection', 'Old plaster'], correct: 2, rationale: 'Foul, necrotic smells indicate anaerobic infection or skin breakdown.' },
+                    { topic: 'Petaling', fact: 'Taping rough edges.', alert: 'Prevents skin irritation.', q: 'What is "petaling" a cast?', a: ['Painting it', 'Cutting a window', 'Splitting it', 'Padding the rough edges with tape'], correct: 3, rationale: 'Petaling involves overlapping tape strips on the edge to prevent the rough plaster from cutting the skin.' },
+                    { topic: 'Compartment Syndrome', fact: 'Pain <span class="highlight-term">unrelieved</span> by meds.', alert: 'Paresthesia, Pulselessness. Emergency!', q: 'What is the earliest sign of compartment syndrome?', a: ['Pain unrelieved by analgesics', 'Pulselessness', 'Paralysis', 'Pallor'], correct: 0, rationale: 'Pain that persists despite medication is the hallmark early warning. Pulselessness is a late sign.' },
+                    { topic: 'Traction Weights', fact: 'Must hang <span class="highlight-term">FREELY</span>.', alert: 'Never on floor.', q: 'Where should traction weights be positioned?', a: ['On the bed frame', 'Hanging freely', 'On the floor', 'In the patient\'s lap'], correct: 1, rationale: 'If weights touch the floor, the traction force is lost. They must hang free to provide tension.' },
+                    { topic: 'Buck\'s Traction', fact: 'Skin traction (no pins).', alert: 'For hip fractures. Reduces spasm.', q: 'What is the purpose of Buck\'s traction?', a: ['Permanent fixation', 'Reduce the bone', 'Reduce muscle spasm', 'Pin the bone'], correct: 2, rationale: 'Buck\'s is temporary skin traction used pre-op to stop painful muscle spasms in hip fractures.' },
+                    { topic: 'Skeletal Traction', fact: 'Pins in bone.', alert: 'Pin care required. Risk for Osteomyelitis.', q: 'What is a major risk with skeletal traction?', a: ['Joint stiffness', 'Skin breakdown', 'Muscle atrophy', 'Infection (Osteomyelitis)'], correct: 3, rationale: 'The pins penetrate the bone, creating a direct pathway for bacteria to cause bone infection.' },
+                    { topic: 'Pin Care', fact: '<span class="highlight-term">Sterile</span> technique.', alert: 'Remove crusts (usually).', q: 'What technique is used for skeletal pin care?', a: ['Sterile technique', 'Clean technique', 'Soap and water', 'Alcohol only'], correct: 0, rationale: 'Because the pins enter the bone, sterile technique is required to prevent osteomyelitis.' },
+                    { topic: 'Release Traction?', fact: '<span class="highlight-term">NEVER</span> release skeletal traction.', alert: 'Nurse does not release weights.', q: 'Can the nurse release skeletal traction weights?', a: ['Yes, for bedpan', 'No, never', 'Yes, for bathing', 'Yes, to reposition'], correct: 1, rationale: 'Releasing skeletal traction can cause the bone fragments to shift, causing damage. Never release it.' },
+                    { topic: 'Hip Replacement', fact: 'Abduction pillow.', alert: 'No flexion >90. No crossing legs.', q: 'What position must be avoided after hip replacement?', a: ['Lying flat', 'Abduction', 'Crossing legs/Adduction', 'Extension'], correct: 2, rationale: 'Adduction (crossing legs) can pop the prosthetic head out of the socket (dislocation).' },
+                    { topic: 'Amputation Positioning', fact: 'Prone 20-30 min/day.', alert: 'Prevents hip flexion contracture.', q: 'Why should a BKA patient lie prone?', a: ['Comfort', 'Prevent pneumonia', 'Improve drainage', 'Prevent hip flexion contractures'], correct: 3, rationale: 'Sitting creates hip flexion; lying prone stretches the hip flexor to prevent permanent contracture.' },
+                    { topic: 'Phantom Pain', fact: 'Real pain.', alert: 'Treat with meds. Subsides over time.', q: 'How should the nurse treat phantom limb pain?', a: ['Administer pain medication', 'Tell them it isn\'t real', 'Refer to psych', 'Ignore it'], correct: 0, rationale: 'Phantom pain is neuropathic and real to the patient; it requires analgesic treatment.' },
+                    { topic: 'Rheumatoid Arthritis', fact: 'Systemic/Symmetric.', alert: 'Morning stiffness. Swan neck deformity.', q: 'Is Rheumatoid Arthritis symmetric or asymmetric?', a: ['Unilateral', 'Symmetric', 'Asymmetric', 'Localized'], correct: 1, rationale: 'RA is systemic and autoimmune, so it attacks joints bilaterally (both hands, both knees).' },
+                    { topic: 'Osteoarthritis', fact: 'Wear & Tear.', alert: 'Asymmetric. Pain with activity.', q: 'What exacerbates OA pain?', a: ['Warmth', 'Rest', 'Activity', 'Sleep'], correct: 2, rationale: 'OA is mechanical wear; using the joint (activity) causes pain, rest relieves it.' },
+                    { topic: 'Gout', fact: 'Uric Acid.', alert: 'Low Purine Diet. Meds: Allopurinol.', q: 'Which food should be avoided in Gout?', a: ['Citrus', 'Green vegetables', 'Dairy', 'Organ meats/Sardines'], correct: 3, rationale: 'Organ meats and sardines are high in purines, which break down into uric acid.' },
+                    { topic: 'Fat Embolism', fact: 'Long bone fx (Femur).', alert: 'Petechiae on chest. Confusion.', q: 'What is the classic sign of Fat Embolism?', a: ['Petechiae on chest', 'Hives', 'Leg swelling', 'Hemoptysis'], correct: 0, rationale: 'Fat globules block capillaries in the skin, causing a petechial rash on the chest/axilla.' },
+                    { topic: 'Scoliosis', fact: 'Lateral curvature.', alert: 'Brace 23hrs/day. Logan bow (for cleft lip, trick q).', q: 'How long must a scoliosis brace be worn?', a: ['Only at night', '23 hours a day', '12 hours a day', 'Only at school'], correct: 1, rationale: 'Braces are only effective if worn continuously, usually removed only for showering (1 hr).' },
+                    { topic: 'Kyphosis', fact: '<span class="highlight-term">Humpback</span> (Thoracic).', alert: 'Common in Osteoporosis.', q: 'What is Kyphosis?', a: ['Cervical curvature', 'Lumbar curvature (Swayback)', 'Thoracic curvature (Humpback)', 'Lateral curvature'], correct: 2, rationale: 'Kyphosis is the exaggerated forward rounding of the upper back.' },
+                    { topic: 'Lordosis', fact: '<span class="highlight-term">Swayback</span> (Lumbar).', alert: 'Common in pregnancy.', q: 'What is Lordosis?', a: ['Neck curvature', 'Thoracic curvature', 'Lateral curvature', 'Lumbar curvature (Swayback)'], correct: 3, rationale: 'Lordosis is the inward curve of the lumbar spine, often seen in pregnancy or obesity.' },
+                    { topic: 'Crutch Stairs Rule', fact: '<span class="highlight-term">Up</span> = Good leg.<br><span class="highlight-term">Down</span> = Bad leg.', alert: 'Safety mechanism.', q: 'Memory trick for stairs with crutches?', a: ['Up with Good, Down with Bad', 'Up with Bad, Down with Good', 'Lead with Crutches', 'Lead with Bad'], correct: 0, rationale: 'The "Good" leg powers you up against gravity; gravity helps the "Bad" leg go down.' },
+                    { topic: 'Cane Handle', fact: 'Level with <span class="highlight-term">greater trochanter</span>.', alert: 'Prevents leaning.', q: 'How high should a cane handle be?', a: ['Level with hip bone', 'Level with greater trochanter', 'Level with waist', 'Level with wrist'], correct: 1, rationale: 'The greater trochanter level allows for the necessary 30-degree elbow flexion.' },
+                    { topic: 'Walker Safety', fact: 'Tennis balls?', alert: 'Controversial (sliding vs stability).', q: 'Why are tennis balls sometimes put on walkers?', a: ['For decoration', 'To stop it', 'To help slide (controversial)', 'For grip'], correct: 2, rationale: 'They help the walker slide, but can be a safety hazard if the walker slides away.' },
+                    { topic: 'Total Knee Replacement', fact: 'CPM Machine.', alert: '<span class="highlight-term">C</span>ontinuous <span class="highlight-term">P</span>assive <span class="highlight-term">M</span>otion.', q: 'What device is used post-Total Knee Replacement?', a: ['Bucks Traction', 'Abduction Pillow', 'Halo Traction', 'CPM Machine'], correct: 3, rationale: 'CPM machines keep the knee moving to prevent scar tissue adhesion and stiffness.' },
+                    { topic: 'Osteomyelitis', fact: 'Bone infection.', alert: 'IV Antibiotics 4-6 weeks.', q: 'What is the treatment duration for Osteomyelitis?', a: ['4-6 weeks IV antibiotics', '1 week oral antibiotics', '3 days IV', 'Surgery only'], correct: 0, rationale: 'Bone is poorly vascularized, so long-term IV therapy is needed to penetrate and kill bacteria.' },
+                    { topic: 'Laminectomy', fact: 'Removal of bone.', alert: '<span class="highlight-term">Log Roll</span>.', q: 'How do you turn a laminectomy patient?', a: ['Sit up then turn', 'Log roll', 'Twist at waist', 'Pull shoulders'], correct: 1, rationale: 'Log rolling maintains spinal alignment and prevents twisting which could damage the surgical site.' },
+                    { topic: 'Laminectomy: Cervical', fact: 'Check <span class="highlight-term">Diaphragm</span> and <span class="highlight-term">Arms</span>.', alert: 'Innervates breathing.', q: 'What is the priority assessment for Cervical Laminectomy?', a: ['Digestion', 'Bowel/Bladder', 'Breathing/Arm function', 'Leg function'], correct: 2, rationale: 'Cervical nerves control the diaphragm and arms; impairment causes respiratory arrest.' },
+                    { topic: 'Laminectomy: Lumbar', fact: 'Check <span class="highlight-term">Bladder</span> and <span class="highlight-term">Legs</span>.', alert: 'Innervates lower body.', q: 'What is the priority assessment for Lumbar Laminectomy?', a: ['Arm strength', 'Breathing', 'Cough', 'Bladder retention/Legs'], correct: 3, rationale: 'Lumbar nerves control the bladder and legs; retention is a common complication.' },
+                    { topic: 'Laminectomy: Thoracic', fact: 'Check <span class="highlight-term">Cough</span> and <span class="highlight-term">Bowels</span>.', alert: 'Abdominal muscles.', q: 'What is the priority assessment for Thoracic Laminectomy?', a: ['Cough/Bowel sounds', 'Urine output', 'Arm sensation', 'Pupil response'], correct: 0, rationale: 'Thoracic nerves innervate the abdominal muscles (cough) and gut.' },
+                    { topic: 'Post-Op Laminectomy', fact: 'Do not <span class="highlight-term">dangle</span>.', alert: 'Sit only to eat (max 30m).', q: 'What activity is restricted after laminectomy?', a: ['Lying flat', 'Sitting/Dangling legs', 'Walking', 'Log rolling'], correct: 1, rationale: 'Sitting puts maximal stress on the spine. Patients should lie or walk, not sit.' },
+                    { topic: 'Non-Accidental Trauma', fact: 'Spiral fractures.', alert: 'Child abuse sign.', q: 'What type of fracture in a child suggests abuse?', a: ['Simple fracture', 'Greenstick fracture', 'Spiral fracture', 'Compound fracture'], correct: 2, rationale: 'Spiral fractures result from twisting force, which is rare in accidental falls.' },
+                    { topic: 'Greenstick Fracture', fact: 'Incomplete break.', alert: 'Common in children (soft bones).', q: 'Who typically gets Greenstick fractures?', a: ['Infants', 'Elderly', 'Athletes', 'Children'], correct: 3, rationale: 'Children\'s bones are softer and tend to bend/splinter rather than snap cleanly.' },
+                    { topic: 'Open Fracture', fact: 'Bone through skin.', alert: 'Infection risk!', q: 'What is the priority for an open fracture?', a: ['Cover with sterile dressing', 'Push bone back in', 'Apply heat', 'Cast immediately'], correct: 0, rationale: 'Infection (Osteomyelitis) is the major risk; cover to protect until surgery.' },
+                    { topic: 'Halo Traction', fact: 'Screws in skull + Vest.', alert: 'Have screwdriver nearby.', q: 'What safety item is needed for Halo Traction?', a: ['Scissors', 'Screwdriver/Wrench', 'Wire cutters', 'Pliers'], correct: 1, rationale: 'In case of CPR, the vest might need to be released quickly.' },
+                    { topic: 'Carpal Tunnel', fact: 'Median nerve compression.', alert: 'Tinel\'s/Phalen\'s signs.', q: 'What test checks for Carpal Tunnel?', a: ['Romberg', 'Homan\'s Sign', 'Phalen\'s Maneuver', 'Babinski'], correct: 2, rationale: 'Phalen\'s (flexing wrists back to back) reproduces the numbness/tingling.' },
+                    { topic: 'Paget\'s Disease', fact: 'Bone recycling error.', alert: 'Bowed legs, big head.', q: 'What is a sign of Paget\'s disease?', a: ['Brittle teeth', 'Shrinking height', 'Small hands', 'Enlarged skull/Bowed legs'], correct: 3, rationale: 'Abnormal bone remodeling leads to thick, soft, deformed bones (hat size increases).' },
+                    { topic: 'Ankylosing Spondylitis', fact: 'Spine fusion.', alert: 'Rigid spine (Bamboo).', q: 'What area is affected by Ankylosing Spondylitis?', a: ['Spine/Sacroiliac', 'Knees', 'Hands', 'Feet'], correct: 0, rationale: 'Inflammation fuses the vertebrae, causing a rigid, "bamboo" spine.' }
+                ]
+            },
+            psych: {
+                title: 'Psych & Mental Health',
+                color: 'bg-indigo',
+                border: 'border-indigo',
+                type: 'psych',
+                description: 'Klimek Psych: Suicide, Abuse, Disorders, and Communication.',
+                data: [
+                    { topic: 'Suicide Assessment', fact: 'Always ASK directly.', alert: 'Plan? Method? Availability?', q: 'What is the priority assessment for a depressed client?', a: ['Sleep patterns', 'Suicide potential (Plan/Method)', 'Appetite', 'Family history'], correct: 1, rationale: 'Safety is always #1. You must ask directly: "Do you have a plan to harm yourself?"' },
+                    { topic: 'Suicide Risk', fact: '<span class="highlight-term">giving away possessions</span>.', alert: 'Sudden mood improvement = DANGER.', q: 'What behavior indicates high suicide risk?', a: ['Sleeping all day', 'Crying', 'Giving away possessions/Sudden mood lift', 'Eating less'], correct: 2, rationale: 'Sudden peace or happiness often means the client has made the decision to end their life.' },
+                    { topic: 'Restraints', fact: 'Last resort. Check q15min.', alert: 'False Imprisonment risk.', q: 'When are restraints legally acceptable?', a: ['For punishment', 'Whenever staff is short', 'To prevent wandering', 'Only when client is a danger to self/others'], correct: 3, rationale: 'Restraints are a last resort for safety only; convenience or punishment constitutes false imprisonment.' },
+                    { topic: 'Nurse-Patient: Pre-interaction', fact: 'Explore own feelings.', alert: 'Before meeting patient.', q: 'What is the nurse\'s task in the Pre-interaction phase?', a: ['Explore own feelings/biases', 'Establish trust', 'Set goals', 'Terminate relationship'], correct: 0, rationale: 'Before seeing the patient, the nurse must identify personal biases or fears to ensure objectivity.' },
+                    { topic: 'Nurse-Patient: Orientation', fact: 'Establish trust/contract.', alert: 'Set termination date NOW.', q: 'When should the termination phase be discussed?', a: ['At discharge', 'During the Orientation phase', 'During the working phase', 'Never'], correct: 1, rationale: 'Setting the timeline early prevents dependency and prepares the client for the eventual end of the relationship.' },
+                    { topic: 'Nurse-Patient: Working', fact: 'Problem solving.', alert: 'Longest phase.', q: 'What occurs during the Working phase?', a: ['Goal setting', 'Introduction', 'Problem solving and behavioral change', 'Discharge planning'], correct: 2, rationale: 'This is where the therapeutic work happens: tackling issues, learning coping skills, and changing behavior.' },
+                    { topic: 'Nurse-Patient: Termination', fact: 'Evaluation/Goodbye.', alert: 'No new problems.', q: 'What is the goal of the Termination phase?', a: ['Exchange numbers', 'Start new goals', 'Meet family', 'Evaluate progress and say goodbye'], correct: 3, rationale: 'Termination focuses on reviewing achievements and closure. Bringing up new deep issues here is inappropriate.' },
+                    { topic: 'Communication', fact: 'No "Why" questions.', alert: 'Focus on feelings.', q: 'Why should "Why" questions be avoided?', a: ['They are judgmental/defensive', 'They are too long', 'They are confusing', 'They are rude'], correct: 0, rationale: '"Why" demands an explanation and implies criticism, often making the patient defensive. Use "Tell me about..." instead.' },
+                    { topic: 'OCD', fact: '<span class="highlight-term">Obsession</span> = Thought.<br><span class="highlight-term">Compulsion</span> = Action.', alert: 'Do NOT stop ritual (at first).', q: 'How should you handle a new OCD client\'s ritual?', a: ['Stop it immediately', 'Allow time for it, then set limits later', 'Mock it', 'Join in'], correct: 1, rationale: 'Stopping a ritual causes panic. Initially allow it to build trust, then gradually limit time/frequency.' },
+                    { topic: 'Phobia', fact: 'Irrational fear.', alert: 'Desensitization (gradual exposure).', q: 'What is the treatment for phobias?', a: ['Avoidance', 'Flooding (rarely)', 'Systematic Desensitization', 'Isolation'], correct: 2, rationale: 'Gradual exposure to the feared object (desensitization) helps the client learn to manage anxiety.' },
+                    { topic: 'Anorexia Nervosa', fact: 'Starvation. Lanugo.', alert: 'Amenorrhea. Distorted body image.', q: 'What is a classic sign of Anorexia Nervosa?', a: ['Obesity', 'Binge eating', 'Tooth decay', 'Lanugo/Amenorrhea'], correct: 3, rationale: 'Severe starvation causes the body to grow fine hair (lanugo) for warmth and stops menstruation (amenorrhea).' },
+                    { topic: 'Bulimia', fact: 'Binge/Purge.', alert: 'Tooth decay. Electrolyte imbalance.', q: 'What physical sign is common in Bulimia?', a: ['Dental erosion/caries', 'Extreme weight loss', 'Lanugo', 'Hirsutism'], correct: 0, rationale: 'Frequent vomiting bathes the teeth in stomach acid, eroding enamel.' },
+                    { topic: 'Manic Phase', fact: 'Hyperactive. Poor judgment.', alert: 'Finger foods. Reduce stimuli.', q: 'What is the best diet for a Manic client?', a: ['Steak and potatoes', 'High-calorie Finger Foods', 'Soup', 'Salad'], correct: 1, rationale: 'Manic clients won\'t sit to eat. Portable, high-energy foods (sandwiches, shakes) prevent starvation.' },
+                    { topic: 'Depression', fact: 'Hopelessness.', alert: 'Safety! Risk of suicide.', q: 'What activity is best for a severely depressed client?', a: ['Competitive games', 'Solitary reading', 'Simple tasks with staff (e.g., folding laundry)', 'Group therapy leader'], correct: 2, rationale: 'Depressed clients need low-pressure interaction. Solitary activities increase isolation; competition causes anxiety.' },
+                    { topic: 'Schizophrenia', fact: 'Psychosis.', alert: 'Delusions (False thought).<br>Hallucinations (False sense).', q: 'What is the difference between a delusion and a hallucination?', a: ['They are the same', 'Delusion is real', 'Hallucination is a belief', 'Delusion is a thought; Hallucination is sensory'], correct: 3, rationale: 'A delusion is a fixed false belief (I am Jesus). A hallucination is a false sensory perception (hearing voices).' },
+                    { topic: 'Paranoid Delusions', fact: 'Suspicion.', alert: 'Use pre-packaged food.', q: 'How do you feed a paranoid client who thinks food is poisoned?', a: ['Serve pre-packaged/sealed food', 'Taste it in front of them', 'Force feed', 'Give IVs'], correct: 0, rationale: 'Sealed food allows the client to see it hasn\'t been tampered with, building trust.' },
+                    { topic: 'Command Hallucinations', fact: 'Voices say "Hurt self".', alert: 'EMERGENCY.', q: 'Why are command hallucinations dangerous?', a: ['They are loud', 'They tell the client to harm self/others', 'They cause insomnia', 'They are annoying'], correct: 1, rationale: 'Voices commanding violence are a psychiatric emergency requiring immediate intervention.' },
+                    { topic: 'Alcohol Withdrawal', fact: 'Delirium Tremens (DTs).', alert: 'Start 24-72 hrs after stop.', q: 'When do Delirium Tremens usually start?', a: ['1 week later', 'Immediately', '24-72 hours after cessation', '1 month later'], correct: 2, rationale: 'DTs are the severe, life-threatening stage of withdrawal (seizures, hallucinations) peaking day 2-3.' },
+                    { topic: 'Wernicke-Korsakoff', fact: 'Thiamine (B1) deficiency.', alert: 'Dementia + Ataxia.', q: 'What prevents Wernicke-Korsakoff syndrome?', a: ['Iron', 'Vitamin C', 'Vitamin D', 'Thiamine (Vitamin B1)'], correct: 3, rationale: 'Chronic alcoholics lack B1, causing permanent brain damage. Thiamine is standard protocol.' },
+                    { topic: 'Lithium', fact: '0.6 - 1.2 mEq/L.', alert: 'Toxic > 2.0. Maintain Sodium.', q: 'What electrolyte interacts with Lithium?', a: ['Sodium', 'Potassium', 'Calcium', 'Magnesium'], correct: 0, rationale: 'Low sodium levels cause the kidneys to retain Lithium, leading to toxicity. Maintain normal salt intake.' },
+                    { topic: 'Defense Mechanisms', fact: 'Unconscious coping.', alert: 'Denial, Projection, Displacement.', q: 'What is Displacement?', a: ['Refusing to admit reality', 'Shifting anger to a safer target', 'Blaming others', 'Going back to child behavior'], correct: 1, rationale: 'Example: Kicking the dog because you\'re mad at your boss. Shifting emotion to a less threatening object.' },
+                    { topic: 'Projection', fact: 'Blaming others.', alert: '"It\'s your fault I drink".', q: 'What defines Projection?', a: ['Doing the opposite', 'Making excuses', 'Attributing one\'s own faults to others', 'Forgetting trauma'], correct: 2, rationale: 'Projection is taking your own unacceptable feelings (I hate him) and putting them on someone else (He hates me).' },
+                    { topic: 'Denial', fact: 'Refusal to accept.', alert: '#1 in Alcoholism/Abuse.', q: 'How do you treat Denial in substance abuse?', a: ['Distract them', 'Support it', 'Ignore it', 'Confront it with reality'], correct: 3, rationale: 'For abuse, you must point out the difference between what they say and what they do. (Note: Support denial in grief/loss).' },
+                    { topic: 'Manipulative Behavior', fact: 'Setting limits.', alert: 'Consistent staff response.', q: 'What is the key intervention for manipulation?', a: ['Set clear, consistent limits', 'Allow it', 'Isolate the client', 'Bargain with them'], correct: 0, rationale: 'Manipulative clients try to split staff. All staff must enforce the same rules firmly.' },
+                    { topic: 'Dementia vs Delirium', fact: 'Dementia = Permanent.<br>Delirium = Temporary.', alert: 'Delirium is usually reversible (UTI, fever).', q: 'Which condition is acute and reversible?', a: ['Dementia', 'Delirium', 'Alzheimer\'s', 'Schizophrenia'], correct: 1, rationale: 'Delirium has a sudden onset due to a medical cause (infection, drug) and clears when treated.' },
+                    { topic: 'Phenothiazines', fact: 'Major tranquilizers ("-zine").', alert: 'S/E: ABCDEFG (EPS, Photosensitivity).', q: 'What is a major side effect of Thorazine?', a: ['Polyuria', 'Hypertension', 'EPS (Extrapyramidal Symptoms)', 'Insomnia'], correct: 2, rationale: 'Phenothiazines cause EPS (tremors, rigidity) resembling Parkinson\'s.' },
+                    { topic: 'MAOIs', fact: 'Antidepressants (Marplan, Nardil, Parnate).', alert: 'No Tyramine (HTN Crisis).', q: 'What foods must be avoided with MAOIs?', a: ['Bread', 'Leafy greens', 'Milk', 'Aged Cheese/Wine/Cured Meats'], correct: 3, rationale: 'Tyramine causes a hypertensive crisis. Avoid BAR: Bananas, Avocados, Raisins (and organ meats).' },
+                    { topic: 'Benzodiazepines', fact: 'Minor tranquilizers ("-zep", "-lam", "-pam").', alert: 'Safety: Sedation. Do not stop abruptly.', q: 'What is the primary use for Valium/Ativan?', a: ['Anti-anxiety/Sedation', 'Antipsychotic', 'Antidepressant', 'Antibiotic'], correct: 0, rationale: 'Benzos work quickly to reduce anxiety but are addictive.' },
+                    { topic: 'Clozapine', fact: 'Atypical Antipsychotic.', alert: 'Agranulocytosis (Low WBC).', q: 'What lab must be monitored weekly for Clozaril?', a: ['Platelets', 'WBC Count', 'Liver enzymes', 'Kidney function'], correct: 1, rationale: 'It destroys white blood cells, leaving the patient defenseless against infection.' }
+                ]
+            },
+            hemonc: {
+                title: 'Hematology & Oncology',
+                color: 'bg-red',
+                border: 'border-red',
+                type: 'hemonc',
+                description: 'Blood Disorders, Cancer, Chemo, Radiation.',
+                data: [
+                    { topic: 'Cancer Warning', fact: 'CAUTION signals.', alert: 'Change in bowel, Sore not healing.', q: 'What does the "C" in CAUTION stand for?', a: ['Cancer', 'Cough', 'Change in bowel/bladder habits', 'Chemotherapy'], correct: 2, rationale: 'CAUTION is the acronym for cancer warning signs (Change, A sore, Unusual bleeding, Thickening, Indigestion, Obvious change in wart, Nagging cough).' },
+                    { topic: 'Chemo Side Effects', fact: 'N/V, Alopecia, Stomatitis.', alert: 'Bone Marrow Suppression.', q: 'What is the most dangerous side effect of chemotherapy?', a: ['Nausea', 'Alopecia', 'Fatigue', 'Bone Marrow Suppression'], correct: 3, rationale: 'Suppression leads to Neutropenia (Infection risk), Thrombocytopenia (Bleeding), and Anemia.' },
+                    { topic: 'Platelet Count', fact: 'Normal: 150k-400k.', alert: '< 20k = Spontaneous Bleeding.', q: 'What precaution is needed for a platelet count of 30,000?', a: ['Bleeding precautions', 'Isolation', 'Seizure precautions', 'Contact precautions'], correct: 0, rationale: 'Low platelets (Thrombocytopenia) means the blood cannot clot. Soft toothbrush, no razors, no IM injections.' },
+                    { topic: 'Radiation Safety', fact: 'Time, Distance, Shielding.', alert: 'No pregnant nurses.', q: 'What are the 3 rules of radiation safety?', a: ['Mask, Gown, Gloves', 'Time, Distance, Shielding', 'Wash, Rinse, Repeat', 'Isolate, Medicator, Sedate'], correct: 1, rationale: 'Limit Time, Maximize Distance, Use Shielding (Lead apron).' },
+                    { topic: 'Internal Radiation', fact: 'Sealed Source (Implant).', alert: 'Bedrest. Foley. Do not touch if falls out.', q: 'What if a radiation implant falls out?', a: ['Pick up with gloved hand', 'Kick it under bed', 'Pick up with forceps/lead container', 'Leave it'], correct: 2, rationale: 'Never touch with hands. Use long-handled forceps and place in a lead-lined container.' },
+                    { topic: 'Hemophilia', fact: 'Clotting Factor Deficiency.', alert: 'Joint Bleeding (Hemarthrosis).', q: 'What is the priority for bleeding into a joint (Hemophilia)?', a: ['Heat', 'Active Range of Motion', 'Massage', 'Immobilize and Elevate'], correct: 3, rationale: 'Movement promotes more bleeding. Immobilize to allow clot formation; ice to vasoconstrict.' },
+                    { topic: 'Sickle Cell', fact: 'HbS. Vaso-occlusive crisis.', alert: 'Hydration and Pain control.', q: 'What are the priorities in Sickle Cell Crisis?', a: ['Hydration and Pain Management', 'Antibiotics', 'Iron supplements', 'Isolation'], correct: 0, rationale: 'Hydration un-clumps the blood cells; Pain is severe due to ischemia.' },
+                    { topic: 'Pernicious Anemia', fact: 'No Intrinsic Factor.', alert: 'Red Beefy Tongue. B12 Injections for life.', q: 'What vitamin is not absorbed in Pernicious Anemia?', a: ['Iron', 'Vitamin B12', 'Vitamin C', 'Folic Acid'], correct: 1, rationale: 'Lack of intrinsic factor in the stomach prevents absorption of dietary B12.' },
+                    { topic: 'Polycythemia Vera', fact: 'Too many RBCs.', alert: 'Thick blood (Clot risk). Phlebotomy.', q: 'What is the treatment for Polycythemia Vera?', a: ['Blood transfusion', 'Iron supplements', 'Phlebotomy (remove blood)', 'Steroids'], correct: 2, rationale: 'Removing blood decreases viscosity and prevents clots/stroke.' },
+                    { topic: 'Leukemia', fact: 'Cancer of WBCs.', alert: 'Risk for Infection (Neutropenia).', q: 'What is the priority for a leukemic patient with neutropenia?', a: ['High protein diet', 'Bleeding precautions', 'Pain control', 'Infection prevention'], correct: 3, rationale: 'Neutropenia means the body cannot fight infection; minor bugs can be fatal.' },
+                    { topic: 'Breast Cancer', fact: 'Post-Mastectomy Care.', alert: 'No BP/IV on affected side.', q: 'What restriction applies to the arm on the mastectomy side?', a: ['No BP, IVs, or injections', 'No movement', 'Keep dependent', 'Apply heat'], correct: 0, rationale: 'Lymph node removal impairs drainage; constriction can cause Lymphedema.' },
+                    { topic: 'Testicular Cancer', fact: 'Young men (15-35).', alert: 'Painless lump. TSE monthly.', q: 'When should Testicular Self Exam (TSE) be performed?', a: ['Daily', 'Monthly, in warm shower', 'Yearly', 'Before bed'], correct: 1, rationale: 'Warm water relaxes the scrotum, making exams easier.' },
+                    { topic: 'Prostate Cancer', fact: 'Older men.', alert: 'PSA test. DRE (Digital Rectal Exam).', q: 'What blood test screens for Prostate Cancer?', a: ['CBC', 'BUN', 'PSA (Prostate Specific Antigen)', 'Creatinine'], correct: 2, rationale: 'Elevated PSA indicates prostate irritation or cancer.' },
+                    { topic: 'Chemo Extravasation', fact: 'Leakage of vesicant.', alert: 'Stop infusion immediately.', q: 'What is the first action if an IV chemo site looks red/swollen?', a: ['Call MD', 'Slow the rate', 'Apply ice', 'Stop the infusion'], correct: 3, rationale: 'Vesicants destroy tissue. Stopping the input is the absolute first step.' },
+                    { topic: 'Hodgkin\'s Lymphoma', fact: 'Lymph cancer.', alert: 'Reed-Sternberg cells. Painless nodes.', q: 'What cell type confirms Hodgkin\'s Lymphoma?', a: ['Reed-Sternberg cells', 'Sickle cells', 'Blast cells', 'T-cells'], correct: 0, rationale: 'The presence of these specific giant cells differentiates Hodgkin\'s from Non-Hodgkin\'s.' },
+                    { topic: 'Multiple Myeloma', fact: 'Plasma cell cancer.', alert: 'Bone pain. Hypercalcemia.', q: 'What urinary finding is seen in Multiple Myeloma?', a: ['Ketones', 'Bence-Jones proteins', 'Glucose', 'Blood'], correct: 1, rationale: 'These abnormal proteins clog the kidneys.' },
+                    { topic: 'Laryngeal Cancer', fact: 'Hoarseness.', alert: 'Laryngectomy = Stoma breather.', q: 'Can a total laryngectomy patient choke on food?', a: ['Yes, easily', 'Only liquids', 'No, the airway is separated', 'Only solids'], correct: 2, rationale: 'The trachea is disconnected from the esophagus and brought out to a stoma; aspiration is anatomically impossible (unless via fistula).' },
+                    { topic: 'Cervical Cancer', fact: 'HPV link.', alert: 'Pap Smear screening.', q: 'What is the primary risk factor for Cervical Cancer?', a: ['Alcohol', 'Smoking', 'Obesity', 'HPV Infection'], correct: 3, rationale: 'Human Papillomavirus is the cause of nearly all cervical cancers.' },
+                    { topic: 'Radiation Skin Care', fact: 'External Beam.', alert: 'No lotions, powders, or scrubbing.', q: 'How should you wash a radiation site?', a: ['Water only, pat dry', 'Soap and scrubbing', 'Alcohol', 'Lotion'], correct: 0, rationale: 'The skin is fragile and "burned"; chemicals and friction cause breakdown.' },
+                    { topic: 'Iron Deficiency', fact: 'Low Hgb/Hct.', alert: 'Take Iron with Vit C (Juice).', q: 'How should liquid iron be administered?', a: ['With milk', 'Through a straw', 'In a spoon', 'Mixed with antacid'], correct: 1, rationale: 'Iron stains teeth; a straw bypasses them. Vitamin C aids absorption.' },
+                    { topic: 'Transfusion Reaction', fact: 'Incompatible blood.', alert: 'Flank pain, Fever, Chills.', q: 'What is a sign of a Hemolytic reaction?', a: ['Itching', 'Cough', 'Flank/Back pain', 'Swelling'], correct: 2, rationale: 'The kidneys clog with destroyed RBCs, causing intense flank pain.' }
+                ]
+            },
+            integ: {
+                title: 'Integumentary & Sensory',
+                color: 'bg-orange',
+                border: 'border-orange',
+                type: 'integ',
+                description: 'Burns, Skin Disorders, Eyes, and Ears.',
+                data: [
+                    { topic: 'Burns: Rule of 9s', fact: 'Arm=9, Leg=18, Torso=36.', alert: 'Head=9 (Adult).', q: 'According to Rule of Nines, what % is one arm?', a: ['1%', '18%', '4.5%', '9%'], correct: 3, rationale: 'Each arm is 9% total (4.5 front, 4.5 back).' },
+                    { topic: 'Burn Phases', fact: 'Shock (Fluid shift). Diuretic.', alert: 'Parkland Formula: 4mL x kg x %burn.', q: 'What is the priority in the first 24hrs of a major burn?', a: ['Fluid Resuscitation', 'Infection control', 'Nutrition', 'Range of Motion'], correct: 0, rationale: 'Massive fluid shift causes hypovolemic shock. Replacing fluids prevents death.' },
+                    { topic: 'Shingles', fact: 'Herpes Zoster. Nerve pain.', alert: 'Contagious to those who haven\'t had Chickenpox.', q: 'What type of rash is Shingles?', a: ['Petechiae', 'Vesicular along a nerve dermatome', 'Macular rash on trunk', 'Generalized pustules'], correct: 1, rationale: 'The virus lies dormant in the nerve root and erupts along that specific nerve path.' },
+                    { topic: 'Acne', fact: 'Clogged sebaceous glands.', alert: 'Accutane: Teratogenic (Birth defects).', q: 'What is a major side effect of Accutane?', a: ['Hair growth', 'Weight gain', 'Birth defects', 'Hypertension'], correct: 2, rationale: 'Accutane is highly teratogenic; strict birth control is required.' },
+                    { topic: 'Cataracts', fact: 'Cloudy lens.', alert: 'Post-Op: No bending/coughing.', q: 'What activity is restricted after cataract surgery?', a: ['Walking', 'Watching TV', 'Reading', 'Bending at waist/Straining'], correct: 3, rationale: 'Bending increases intraocular pressure (IOP), risking the surgical site.' },
+                    { topic: 'Glaucoma', fact: 'High Intraocular Pressure.', alert: 'Tunnel vision. No Atropine.', q: 'Which class of drugs is contraindicated in Glaucoma?', a: ['Mydriatics (Dilators)', 'Miotics (Constrictors)', 'Beta Blockers', 'Diuretics'], correct: 0, rationale: 'Dilating the pupil (Mydriasis) blocks the outflow of aqueous humor, spiking pressure.' },
+                    { topic: 'Meniere\'s Disease', fact: 'Inner ear fluid balance.', alert: 'Vertigo, Tinnitus, Hearing Loss.', q: 'What diet helps Meniere\'s Disease?', a: ['High Carb', 'Low Sodium', 'Low Fat', 'High Protein'], correct: 1, rationale: 'Sodium retains fluid; low sodium reduces endolymph fluid pressure in the ear.' },
+                    { topic: 'Retinal Detachment', fact: 'Separation of retina.', alert: 'Flashes of light, Curtain falling.', q: 'What does a patient see with Retinal Detachment?', a: ['Cloudy vision', ' halos around lights', 'Curtain falling/Flashes of light', 'Central vision loss'], correct: 2, rationale: 'As the retina peels off, neurons fire (flashes) and vision is blocked (curtain).' },
+                    { topic: 'Ear Drops', fact: 'Adult: Up/Back. Child: Down/Back.', alert: 'Administer at room temp.', q: 'How do you pull the pinna for an adult?', a: ['Down and Back', 'Forward', 'Straight back', 'Up and Back'], correct: 3, rationale: 'Adults = UP (grown ups). Children = DOWN (grow down).' },
+                    { topic: 'Lice', fact: 'Pediculosis.', alert: 'Treat everyone. Bag linens.', q: 'What is the treatment for lice?', a: ['Kwell shampoo/Comb nits', 'Antibiotics', 'Steroid cream', 'Bleach'], correct: 0, rationale: 'Kwell kills the lice; fine-tooth combing removes the eggs (nits).' },
+                    { topic: 'Pressure Ulcers', fact: 'Stage 1: Red (Non-blanchable). Stage 2: Broken.', alert: 'Turn q2h. Keep dry.', q: 'What characterizes a Stage 1 pressure ulcer?', a: ['Bone visible', 'Non-blanchable redness', 'Subcutaneous fat visible', 'Blister/Broken skin'], correct: 1, rationale: 'Intact skin with redness that does not fade when pressed indicates Stage 1.' },
+                    { topic: 'Impetigo', fact: 'Staph/Strep infection.', alert: 'Honey-colored crusts. Contagious!', q: 'What is the hallmark sign of Impetigo?', a: ['Butterfly rash', 'Silver scales', 'Honey-colored crusts', 'Target lesion'], correct: 2, rationale: 'Bacterial infection leads to weeping sores that dry into golden/honey crusts.' },
+                    { topic: 'Scabies', fact: 'Mite infestation.', alert: 'Burrows/Lines. Treat whole family.', q: 'What does a Scabies rash look like?', a: ['Circular rings', 'Raised plaques', 'Clustered vesicles', 'Linear burrows/tracks'], correct: 3, rationale: 'Mites burrow under the skin in straight lines to lay eggs.' },
+                    { topic: 'Ringworm', fact: 'Tinea (Fungal).', alert: 'Circular patch. Wood\'s Lamp diagnosis.', q: 'What device is used to diagnose fungal infections like Ringworm?', a: ['Wood\'s Lamp (UV)', 'Doppler', 'Otoscope', 'Stethoscope'], correct: 0, rationale: 'Fungal infections fluoresce (glow) under ultraviolet light.' },
+                    { topic: 'Psoriasis', fact: 'Autoimmune. Rapid cell turnover.', alert: 'Silvery scales. UV light therapy.', q: 'What do Psoriasis lesions look like?', a: ['Open sores', 'Red patches with silvery scales', 'Black moles', 'Fluid filled blisters'], correct: 1, rationale: 'Buildup of dead skin cells creates the classic silver scaling.' },
+                    { topic: 'Melanoma', fact: 'Skin cancer.', alert: 'ABCD: Asymmetry, Border, Color, Diameter.', q: 'What is a warning sign of Melanoma?', a: ['Itching', 'Painful rash', 'Changes in a mole (ABCD)', 'Dry skin'], correct: 2, rationale: 'Melanoma often arises from existing moles that change shape, color, or size.' },
+                    { topic: 'Burns: Electrolytes', fact: 'Cell damage releases K+.', alert: 'Initial Hyperkalemia.', q: 'What electrolyte imbalance occurs immediately after a severe burn?', a: ['Hypokalemia', 'Hypomagnesemia', 'Hypercalcemia', 'Hyperkalemia'], correct: 3, rationale: 'Ruptured cells release intracellular Potassium into the bloodstream.' },
+                    { topic: 'Burns: Ulcer', fact: 'Curling\'s Ulcer.', alert: 'Stress ulcer. Give H2 blockers/PPIs.', q: 'What type of ulcer is common in burn patients?', a: ['Curling\'s Ulcer', 'Cushing\'s Ulcer', 'Venous Ulcer', 'Arterial Ulcer'], correct: 0, rationale: 'Acute physical stress reduces blood flow to the gut, causing gastric erosion.' },
+                    { topic: 'Otitis Media', fact: 'Middle ear infection.', alert: 'Prevention: Feed upright. No bottle in bed.', q: 'How can parents prevent Otitis Media?', a: ['Keep warm', 'Feed upright/No bottle propping', 'Use antibiotic drops daily', 'Clean ears with Q-tips'], correct: 1, rationale: 'Lying flat allows formula to pool in the eustachian tube, breeding bacteria.' },
+                    { topic: 'Myringotomy', fact: 'Ear tubes.', alert: 'Keep ears dry (Earplugs when swimming).', q: 'What is a key instruction for a child with ear tubes?', a: ['Flush with peroxide', 'Remove tubes daily', 'Keep water out of ears', 'No flying'], correct: 2, rationale: 'Water can enter the middle ear through the tube, causing infection.' },
+                    { topic: 'Strabismus', fact: 'Cross-eye.', alert: 'Patch the GOOD eye.', q: 'How is Strabismus treated?', a: ['Patch the weak eye', 'Glasses only', 'Surgery only', 'Patch the strong eye'], correct: 3, rationale: 'Patching the strong eye forces the weak eye muscles to work and strengthen.' },
+                    { topic: 'Blindness', fact: 'Sensory deficit.', alert: 'Safety: Clock method for food. Announce entry.', q: 'How should you orient a blind client to their meal?', a: ['Use the clock method', 'Feed them', 'Describe colors', 'Mix it all together'], correct: 0, rationale: 'Describing food locations like a clock face gives the client independence.' },
+                    { topic: 'Hearing Loss', fact: 'Communication.', alert: 'Face client. Speak clearly. Low pitch.', q: 'What is the best way to speak to a hearing-impaired client?', a: ['Use only gestures', 'Face them/Normal volume/Lower pitch', 'Speak in high pitch', 'Shout loudly'], correct: 1, rationale: 'High frequency hearing is lost first; shouting raises pitch, making it harder to hear.' },
+                    { topic: 'Eye Drop Admin', fact: 'Conjunctival sac.', alert: 'Press inner canthus (Punctal occlusion).', q: 'Why press the inner canthus after eye drops?', a: ['Reduce pain', 'Keep eye open', 'Prevent systemic absorption', 'Increase tear flow'], correct: 2, rationale: 'It blocks the tear duct so the drug stays in the eye and isn\'t absorbed into the body.' },
+                    { topic: 'Burns: Silvadene', fact: 'Topical antibiotic.', alert: 'S/E: Leukopenia (Low WBC).', q: 'What is a side effect of Silver Sulfadiazine (Silvadene)?', a: ['Hypertension', 'Staining', 'Tachycardia', 'Leukopenia'], correct: 3, rationale: 'It can suppress bone marrow; monitor WBC count.' },
+                    { topic: 'Eczema', fact: 'Atopic Dermatitis.', alert: 'Hydrate skin. Avoid triggers.', q: 'What is the priority for Eczema care?', a: ['Moisturize/Prevent itching', 'Keep dry', 'Apply heat', 'Use alcohol to clean'], correct: 0, rationale: 'Dry skin cracks and itches (pruritus), leading to infection.' },
+                    { topic: 'Parkland Formula', fact: '4mL x kg x %TBSA.', alert: 'Give 1/2 in first 8 hours.', q: 'How is the Parkland Formula calculated?', a: ['Weight x 10', '4mL x kg x %Burn', '100mL/hr', '2mL x kg x %Burn'], correct: 1, rationale: 'Standard formula for fluid resuscitation volume in first 24 hours.' },
+                    { topic: 'Burn Output', fact: 'Kidney perfusion.', alert: 'Goal: 30-50 mL/hr.', q: 'What is the minimum urine output for an adult burn patient?', a: ['100 mL/hr', '10 mL/hr', '30-50 mL/hr', '500 mL/day'], correct: 2, rationale: 'Output proves the kidneys are perfused and shock is being managed.' },
+                    { topic: 'Hearing Aid Care', fact: 'Maintenance.', alert: 'Whistling = Fit issue. Turn off when not in use.', q: 'What causes a hearing aid to whistle?', a: ['Low battery', 'Ear wax', 'Broken wire', 'Poor fit/Volume too high'], correct: 3, rationale: 'Feedback (whistling) happens when sound leaks out and goes back into the microphone.' },
+                    { topic: 'Retinoblastoma', fact: 'Eye cancer in kids.', alert: 'White pupil (Cat\'s eye reflex).', q: 'What is a classic sign of Retinoblastoma?', a: ['White pupil reflex', 'Red eye', 'Tearing', 'Crossed eyes'], correct: 0, rationale: 'Instead of a red reflex, the tumor reflects white light.' },
+                    { topic: 'Lyme Disease', fact: 'Tick bite.', alert: 'Bullseye Rash.', q: 'What is the classic sign of Lyme Disease?', a: ['Vesicles', 'Bullseye rash (Erythema Migrans)', 'Petechiae', 'Butterfly rash'], correct: 1, rationale: 'A red rash with a central clearing that looks like a target appears at the bite site.' },
+                    { topic: 'SLE (Lupus)', fact: 'Autoimmune.', alert: 'Butterfly Rash on face. Avoid sun.', q: 'What rash is associated with Systemic Lupus Erythematosus (SLE)?', a: ['Target lesions', 'Bullseye rash', 'Butterfly rash across cheeks/nose', 'Silver scales'], correct: 2, rationale: 'The malar butterfly rash is the hallmark cutaneous sign of Lupus.' },
+                    { topic: 'Frostbite', fact: 'Tissue freezing.', alert: 'Rewarm rapidly (Warm water). Do NOT rub.', q: 'How should you treat frostbitten fingers?', a: ['Rub them vigorously', 'Massage with lotion', 'Apply direct heat', 'Rapidly rewarm in warm water'], correct: 3, rationale: 'Rubbing causes tissue damage. Rapid rewarming is painful but saves tissue.' },
+                    { topic: 'Dandruff', fact: 'Seborrheic Dermatitis.', alert: 'Cradle cap in infants.', q: 'What is the medical term for Cradle Cap?', a: ['Seborrheic Dermatitis', 'Atopic Dermatitis', 'Contact Dermatitis', 'Psoriasis'], correct: 0, rationale: 'It is caused by overactive sebaceous glands.' },
+                    { topic: 'Dehiscence', fact: 'Wound separation.', alert: 'Evisceration: Organs out. Cover with sterile saline gauze.', q: 'What is the priority if a surgical wound eviscerates?', a: ['Leave open to air', 'Cover with sterile saline gauze', 'Apply dry dressing', 'Push organs back in'], correct: 1, rationale: 'Keep the organs moist and sterile to prevent necrosis and infection.' },
+                    { topic: 'Chemical Eye Burn', fact: 'Acid/Alkali.', alert: 'Irrigate immediately for 20 mins.', q: 'What is the first action for a chemical splash in the eye?', a: ['Check vision', 'Cover with patch', 'Irrigate with water immediately', 'Wait for doctor'], correct: 2, rationale: 'Time is vision. Dilute and remove the chemical instantly.' },
+                    { topic: 'Penetrating Eye Injury', fact: 'Object in eye.', alert: 'Do NOT remove. Stabilize it. Patch other eye.', q: 'What should you do for an object embedded in the eye?', a: ['Remove it carefully', 'Flush with water', 'Apply pressure', 'Stabilize object/Patch other eye'], correct: 3, rationale: 'Removing it causes more damage. Patching both eyes prevents movement.' },
+                    { topic: 'Glaucoma Pain', fact: 'Closed Angle = Emergency.', alert: 'Severe pain, halos, nausea.', q: 'Which type of Glaucoma is a medical emergency?', a: ['Closed Angle (Acute)', 'Open Angle (Chronic)', 'Congenital', 'Secondary'], correct: 0, rationale: 'Sudden blockage of aqueous humor outflow causes rapid, painful pressure rise.' },
+                    { topic: 'Hearing Aid Cleaning', fact: 'No water.', alert: 'Use soft cloth/pick.', q: 'How should a hearing aid be cleaned?', a: ['Submerge in solution', 'Soft cloth/pick (No water)', 'Alcohol', 'Soap and water'], correct: 1, rationale: 'Water damages the electronics.' },
+                    { topic: 'Ear Irrigation', fact: 'Remove wax.', alert: 'Contraindicated if vegetable/bean (swells).', q: 'When is ear irrigation contraindicated for a foreign body?', a: ['If it is wax', 'If it is a bead', 'If the object is vegetable matter (bean/corn)', 'If it is a bug'], correct: 2, rationale: 'Water makes vegetable matter swell, impacting it tighter.' }
+                ]
+            },
+            pharm: {
+                title: 'Pharm & Fundamentals',
+                color: 'bg-gray',
+                border: 'border-gray',
+                type: 'pharm',
+                description: 'Klimek Pharmacology Rules, Acid-Base, and Fundamentals.',
+                data: [
+                    { topic: 'Acid-Base', fact: 'pH 7.35-7.45. CO2 35-45. HCO3 22-26.', alert: 'As the pH goes, so goes my patient.', q: 'According to Klimek, what happens when pH goes UP (Alkalosis)?', a: ['Only BP goes down', 'Everything goes DOWN (Bradycardia)', 'Only potassium goes up', 'Everything goes UP (Tachycardia, Seizures)'], correct: 3, rationale: 'Alkalosis makes the body irritable: high HR, high reflexes, seizures. (Except Potassium goes DOWN).' },
+                    { topic: 'Acid-Base Down', fact: 'Acidosis = Down.', alert: 'Bradycardia, Lethargy, Coma, Respiratory Arrest.', q: 'What are the signs of Acidosis?', a: ['Lethargy, Bradycardia, Flaccidity', 'Seizures, Hyperreflexia', 'Hypertension', 'Tachycardia'], correct: 0, rationale: 'Acidosis depresses the CNS: lethargy, low HR, respiratory arrest. (Potassium goes UP).' },
+                    { topic: 'Kussmaul Resp', fact: 'Deep rapid breathing.', alert: 'Occurs in MAC (Metabolic Acidosis).', q: 'Which acid-base imbalance causes Kussmaul respirations?', a: ['Metabolic Alkalosis', 'Metabolic Acidosis', 'Respiratory Acidosis', 'Respiratory Alkalosis'], correct: 1, rationale: 'Remember MAC Kussmaul (Metabolic Acidosis causes Kussmaul to blow off CO2).' },
+                    { topic: 'Ventilator Alarms', fact: 'High Press = Obstruction.', alert: 'Low Press = Disconnection.', q: 'What causes a High Pressure ventilator alarm?', a: ['Cuff leak', 'Disconnection', 'Obstruction (Kinks, Mucus, Coughing)', 'Extubation'], correct: 2, rationale: 'High pressure means the machine has to push harder against resistance (kinked tube, secretions).' },
+                    { topic: 'Aminoglycosides', fact: '"Mean Old Mycins".', alert: 'Ototoxicity (Ears) & Nephrotoxicity (Kidneys).', q: 'What are the toxic effects of Aminoglycosides (Gentamicin)?', a: ['Vision loss', 'Liver failure', 'Bone marrow suppression', 'Ototoxicity and Nephrotoxicity'], correct: 3, rationale: 'Think mice (mycin) have big ears (Oto) and kidneys are shaped like ears (Nephro).' },
+                    { topic: 'Troughs & Peaks', fact: 'TAP levels.', alert: 'Trough: 30 min before dose. Peak: Depends on route.', q: 'When is a trough level drawn?', a: ['30 minutes before the next dose', '30 minutes after the dose', '1 hour after', 'Anytime'], correct: 0, rationale: 'Trough is the lowest concentration, always drawn immediately before the next dose is given.' },
+                    { topic: 'Uppers vs Downers', fact: 'Uppers: Caffeine, Cocaine, PCP/LSD, Meth, Adderall.', alert: 'S/S: High HR, BP, Seizures.', q: 'What are the symptoms of an "Upper" overdose?', a: ['Respiratory depression', 'Tachycardia, Hypertension, Seizures', 'Bradycardia, Lethargy', 'Constipation'], correct: 1, rationale: 'Uppers stimulate the CNS; everything goes UP.' },
+                    { topic: 'Downers', fact: 'Everything else.', alert: 'Overdose = Resp Arrest.', q: 'What is the priority for a "Downer" overdose?', a: ['Hypertension', 'Seizures', 'Respiratory Depression/Arrest', 'Hyperreflexia'], correct: 2, rationale: 'Downers depress the CNS; too much can stop breathing.' },
+                    { topic: 'Withdrawal', fact: 'Opposite of the drug.', alert: 'Upper Withdrawal = Down. Downer Withdrawal = Up.', q: 'What happens during withdrawal from a Downer?', a: ['Sleepiness', 'Everything goes DOWN', 'No change', 'Everything goes UP (Seizure risk)'], correct: 3, rationale: 'The body was suppressed; remove the suppressant and the body rebounds upward (seizures, tachycardia).' },
+                    { topic: 'Potassium Rules', fact: 'Never push IV.', alert: 'Max 40 mEq/L. High K+ stops heart.', q: 'How should Potassium never be administered?', a: ['IV Push', 'IV Drip', 'Oral', 'Liquid'], correct: 0, rationale: 'IV Push potassium causes instant cardiac arrest. Always dilute in a bag.' },
+                    { topic: 'Calcium Channel Blockers', fact: 'Like Valium for heart.', alert: 'Calms heart. Lowers BP.', q: 'What is the effect of Calcium Channel Blockers?', a: ['Increases contractility', 'Lowers BP and HR (Relaxes heart)', 'Increases HR', 'Causes vasoconstriction'], correct: 1, rationale: 'They are negative inotropes, chronotropes, and dromotropes (weaken, slow, and block conduction).' },
+                    { topic: 'Beta Blockers', fact: 'End in -lol.', alert: 'Lower HR/BP. Do not give to Asthmatics.', q: 'Why are Beta Blockers contraindicated in Asthma?', a: ['They lower fever', 'They increase HR', 'They cause bronchoconstriction', 'They cause coughing'], correct: 2, rationale: 'Non-selective beta blockers block beta-2 receptors in the lungs, causing constriction.' },
+                    { topic: 'Blood Thinners', fact: 'Heparin (PTT) vs Coumadin (PT/INR).', alert: 'Bleeding precautions.', q: 'Which lab monitors Coumadin (Warfarin)?', a: ['WBC', 'PTT', 'Platelets', 'PT/INR'], correct: 3, rationale: 'PT/INR is for Coumadin. PTT is for Heparin.' },
+                    { topic: 'Baclofen', fact: 'Muscle relaxant.', alert: 'S/E: Fatigue, Muscle weakness. Don\'t drink alcohol.', q: 'What patient teaching is needed for Baclofen (Lioresal)?', a: ['Causes drowsiness; don\'t drive/drink alcohol', 'Causes insomnia', 'Take on empty stomach', 'Stop abruptly'], correct: 0, rationale: 'It relaxes muscles and sedates the CNS; combining with alcohol enhances sedation.' },
+                    { topic: 'Dantrolene', fact: 'Muscle relaxant.', alert: 'For Malignant Hyperthermia.', q: 'What drug treats Malignant Hyperthermia?', a: ['Lidocaine', 'Dantrolene', 'Atropine', 'Digoxin'], correct: 1, rationale: 'Dantrolene acts directly on skeletal muscle to stop the rigidity and heat production.' },
+                    { topic: 'Kayexalate', fact: 'Lowers Potassium.', alert: '"K-Exits-Late". Gives Na, kicks out K.', q: 'How does Kayexalate work?', a: ['Dilutes blood', 'Binds phosphate', 'Exchanges Sodium for Potassium in the gut', 'Increases urine output'], correct: 2, rationale: 'It acts as a resin in the bowel, trading sodium ions for potassium ions, which are pooped out.' },
+                    { topic: 'Regular Insulin', fact: 'Rapid, Run IV.', alert: 'Clear solution.', q: 'Which insulin can be given IV drip?', a: ['Humalog', 'NPH', 'Lantus', 'Regular'], correct: 3, rationale: 'Regular insulin is the only one safe for IV administration.' },
+                    { topic: 'Peak Levels', fact: 'IV: 15-30 min after finished.', alert: 'IM: 30-60 min.', q: 'When do you draw a peak level for an IV drug?', a: ['15-30 minutes after infusion finishes', 'During infusion', '1 hour after', 'Before next dose'], correct: 0, rationale: 'This captures the highest concentration in the blood.' },
+                    { topic: 'Standard Precautions', fact: 'Handwashing, Gloves.', alert: 'For everyone.', q: 'When are Standard Precautions used?', a: ['Only for immune compromised', 'For all patients', 'Only for infections', 'During surgery'], correct: 1, rationale: 'Standard precautions apply to contact with blood, body fluids, non-intact skin, and mucous membranes for all patients.' },
+                    { topic: 'Contact Precautions', fact: 'MRS. WEE.', alert: 'Gown + Gloves.', q: 'Which diseases require Contact Precautions?', a: ['Pneumonia', 'Flu, Meningitis', 'MRSA, RSV, Staph, Wound infections, Enteric (C-diff)', 'Measles, TB'], correct: 2, rationale: 'Contact is for anything transmitted by touching skin or surfaces (MRS. WEE mnemonic).' },
+                    { topic: 'Droplet Precautions', fact: 'SPIDERMAN.', alert: 'Mask + Goggles.', q: 'Which diseases require Droplet Precautions?', a: ['Hepatitis A', 'TB, Measles', 'MRSA, C-diff', 'Sepsis, Scarlet Fever, Strep, Pertussis, Pneumonia, Flu, Meningitis'], correct: 3, rationale: 'Droplets travel 3 feet; a mask is required. (SPIDERMAN mnemonic).' },
+                    { topic: 'Airborne Precautions', fact: 'MTV.', alert: 'N95 Mask + Neg Pressure Room.', q: 'Which diseases require Airborne Precautions?', a: ['Measles, TB, Varicella (Chickenpox)', 'Flu, Strep', 'MRSA, RSV', 'E. Coli'], correct: 0, rationale: 'Tiny particles float in the air. MTV mnemonic: Measles, TB, Varicella.' },
+                    { topic: 'Donning PPE', fact: 'Gown, Mask, Goggles, Gloves.', alert: 'Up the body, then hands.', q: 'What is the correct order for putting on PPE?', a: ['Mask, Gown, Gloves', 'Gown, Mask, Goggles, Gloves', 'Gloves, Gown, Mask', 'Goggles, Mask, Gown'], correct: 1, rationale: 'Start big (Gown), move up to face (Mask/Goggles), end with hands (Gloves).' },
+                    { topic: 'Doffing PPE', fact: 'Alphabetical order.', alert: 'Gloves, Goggles, Gown, Mask.', q: 'What is the correct order for removing PPE?', a: ['All at once', 'Mask, Gown, Gloves', 'Gloves, Goggles, Gown, Mask', 'Gown, Gloves, Mask'], correct: 2, rationale: 'Remove dirtiest first (Gloves), protect face/airway last (Mask).' },
+                    { topic: 'Restraints', fact: 'Check q15m, Release q2h.', alert: 'New order q24h. MD check within 1h.', q: 'How often must a restraint order be renewed for an adult?', a: ['Indefinitely', 'Every 4 hours', 'Weekly', 'Every 24 hours'], correct: 3, rationale: 'Restraints are highly regulated; orders expire daily.' },
+                    { topic: 'Cane Walking', fact: 'COAL: Cane Opposite Affected Leg.', alert: 'Cane goes with bad leg.', q: 'What is the COAL mnemonic for canes?', a: ['Cane Opposite Affected Leg', 'Cane On Affected Leg', 'Cane Over All Legs', 'Cane On All Legs'], correct: 0, rationale: 'You hold the cane on the strong side to support the weak side.' },
+                    { topic: 'Crutch Gaits', fact: 'Even for Even, Odd for Odd.', alert: '2-point/4-point = Even weakness. 3-point = Odd (1 leg).', q: 'Use an even-numbered gait (2 or 4) when weakness is...?', a: ['Severe', 'Evenly distributed (bilateral)', 'One sided', 'None'], correct: 1, rationale: 'If both legs are weak (bilateral), use 2-point or 4-point. If one leg is broken (unilateral/odd), use 3-point.' },
+                    { topic: 'Prioritization', fact: 'Acute > Chronic.', alert: 'Unstable > Stable.', q: 'Who is the priority patient?', a: ['Ready for discharge', 'Chronic/Stable', 'Acute/Unstable/Changing', 'Post-op 12 hrs ago'], correct: 2, rationale: 'The patient with a new, changing, or unstable condition always comes first.' },
+                    { topic: 'Tie Breaker', fact: 'Vital Organ.', alert: 'Brain > Lungs > Heart > Liver > Kidney > Pancreas.', q: 'In a tie for priority, use the modifying phrase to find the...?', a: ['Gender', 'Pain level', 'Age', 'Most vital organ affected'], correct: 3, rationale: 'If two patients are unstable, prioritize the one with the more vital organ failure (Brain/Lung vs Kidney).' },
+                    { topic: 'LPN Tasks', fact: 'Stable patients only.', alert: 'No IVs, No Teaching, No Assessment (Admission).', q: 'Can an LPN perform an admission assessment?', a: ['No, RN must do admission', 'Yes, always', 'Only if busy', 'Yes, with supervision'], correct: 0, rationale: 'Admission/Discharge assessments require advanced judgment and planning; RN only.' },
+                    { topic: 'UAP Tasks', fact: 'Standard, unchanging procedures.', alert: 'Vitals, ADLs, Hygiene.', q: 'Can a UAP take vitals on a stable patient?', a: ['Only BP', 'Yes', 'No', 'Only temp'], correct: 1, rationale: 'Routine vitals on stable patients are within the UAP scope.' },
+                    { topic: 'Laminotomy', fact: 'Remove wing of vertebra.', alert: 'Relieves nerve compression.', q: 'What is the difference between Laminectomy and Laminotomy?', a: ['Ectomy is injection', 'They are the same', 'Ectomy = Removal; Otomy = Opening/Partial removal', 'Otomy is fusion'], correct: 2, rationale: 'Ectomy removes the whole lamina; Otomy removes a small part to make space.' }
+                ]
+            }
+        };
+
+        // --- Section Emojis ---
+        var sectionEmojis = {
+            cardio: '❤️', resp: '🫁', neuro: '🧠', gi: '🍽️', obpeds: '👶',
+            endo: '⚗️', musc: '🦴', psych: '🧘', hemonc: '🩸', integ: '🩹', pharm: '💊'
+        };
+
+        // --- Logic ---
+        let currentTab = 'cardio';
+        let isHome = true;
+        let quizIndex = 0;
+        let quizScore = 0;
+        let currentQuizData = [];
+
+        // Audio Context for Beeps
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playSound(type) {
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            if (type === 'correct') {
+                // High pitch ding
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(880, audioCtx.currentTime); // A5
+                osc.frequency.exponentialRampToValueAtTime(440, audioCtx.currentTime + 0.1);
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.1);
+            } else {
+                // Low pitch buzz
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.linearRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.2);
+            }
+        }
+
+        // Shuffle function (Fisher-Yates)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // --- Study Card Modal Logic ---
+        let cardIndex = 0;
+
+        function renderCardInModal(item, data, idx, total) {
+            document.getElementById('card-modal-header').className = 'card-modal-header ' + data.color;
+            document.getElementById('card-modal-title').textContent = data.title + ' — Study Cards';
+            document.getElementById('card-counter').textContent = (idx + 1) + ' / ' + total;
+            document.getElementById('card-prev-btn').disabled = (idx === 0);
+            document.getElementById('card-next-btn').disabled = (idx >= total - 1);
+            document.getElementById('card-modal-body').innerHTML =
+                '<div class="card-topic">' + item.topic + '</div>' +
+                '<div class="card-section">' +
+                    '<span class="card-label">Key Fact</span>' +
+                    '<div class="card-fact">' + item.fact + '</div>' +
+                '</div>' +
+                '<div class="card-section">' +
+                    '<div class="card-alert-box">' +
+                        '<span class="card-label" style="color:#b91c1c;">&#9888;&#65039; Clinical Alert</span>' +
+                        '<div class="card-fact">' + item.alert + '</div>' +
+                    '</div>' +
+                '</div>';
+        }
+
+        window.openCards = function(startIdx) {
+            var data = contentData[currentTab];
+            cardIndex = (typeof startIdx === 'number') ? startIdx : 0;
+            renderCardInModal(data.data[cardIndex], data, cardIndex, data.data.length);
+            document.getElementById('card-modal').style.display = 'flex';
+        };
+        window.prevCard = function() {
+            var data = contentData[currentTab];
+            if (cardIndex > 0) { cardIndex--; renderCardInModal(data.data[cardIndex], data, cardIndex, data.data.length); }
+        };
+        window.nextCard = function() {
+            var data = contentData[currentTab];
+            if (cardIndex < data.data.length - 1) { cardIndex++; renderCardInModal(data.data[cardIndex], data, cardIndex, data.data.length); }
+        };
+        window.closeCards = function() {
+            document.getElementById('card-modal').style.display = 'none';
+        };
+
+        window.switchTab = function(tabName) {
+            currentTab = tabName;
+            isHome = false;
+            document.getElementById('home-dashboard').style.display = 'none';
+            document.getElementById('section-view').style.display = 'block';
+            document.getElementById('home-back-btn').style.display = 'inline-block';
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = 'tab-btn'; // Reset
+                if(btn.id === `tab-${tabName}`) {
+                    btn.classList.add('active', contentData[tabName].color);
+                } else {
+                    var bKey = btn.id.replace('tab-','');
+                    if(contentData[bKey]) btn.classList.add(contentData[bKey].color);
+                }
+            });
+            renderContent();
+        };
+
+        // --- HOME DASHBOARD ---
+        window.showHome = function() {
+            isHome = true;
+            document.getElementById('home-dashboard').style.display = 'block';
+            document.getElementById('section-view').style.display = 'none';
+            document.getElementById('home-back-btn').style.display = 'none';
+            // Clear active tab
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.className = 'tab-btn';
+                var bKey = btn.id.replace('tab-','');
+                if(contentData[bKey]) btn.classList.add(contentData[bKey].color);
+            });
+            renderDashboard();
+        };
+
+        // Map bg-* class names to CSS variable base names for light/dark variants
+        var colorBaseMap = {
+            'bg-rose': 'rose', 'bg-blue': 'blue', 'bg-purple': 'purple',
+            'bg-emerald': 'emerald', 'bg-pink': 'pink', 'bg-amber': 'amber',
+            'bg-teal': 'teal', 'bg-indigo': 'indigo', 'bg-red': 'red',
+            'bg-orange': 'orange', 'bg-gray': 'gray'
+        };
+
+        function renderDashboard() {
+            var keys = Object.keys(contentData);
+            var cardsHTML = keys.map(function(key, idx) {
+                var sec = contentData[key];
+                var emoji = sectionEmojis[key] || '📋';
+                var cBase = colorBaseMap[sec.color] || 'gray';
+                return '<div class="home-card" style="animation-delay:' + (idx * 0.04) + 's;" onclick="switchTab(\'' + key + '\')">' +
+                    '<div class="home-card-header" style="background-color:var(--' + cBase + '-100); color:var(--' + cBase + '-800);">' +
+                        '<span class="home-card-emoji">' + emoji + '</span>' +
+                        '<span>' + sec.title + '</span>' +
+                    '</div>' +
+                    '<div class="home-card-body">' +
+                        '<div class="home-card-desc">' + sec.description + '</div>' +
+                        '<div class="home-card-meta">' +
+                            '<span>📇 ' + sec.data.length + ' cards</span>' +
+                            '<span>🧠 100 quiz Qs</span>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div class="home-card-footer">' +
+                        '<button class="home-card-btn study-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); openCards(0);">Study Cards</button>' +
+                        '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); setTimeout(startQuiz, 100);">Quiz Me</button>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+            document.getElementById('home-grid').innerHTML = cardsHTML;
+        }
+
+        function renderContent() {
+            var data = contentData[currentTab];
+            var descArea = document.getElementById('desc-area');
+            var contentArea = document.getElementById('content-area');
+
+            descArea.innerHTML = '<strong>' + data.title + ':</strong> ' + data.description;
+
+            var tableRows = data.data.map(function(item, i) {
+                return '<tr onclick="selectRow(this, ' + i + ')">' +
+                    '<td class="topic-cell ' + data.type + '">' + item.topic + '</td>' +
+                    '<td class="key-point-cell">' + item.fact + '</td>' +
+                    '<td class="alert-cell">' + item.alert + '</td>' +
+                '</tr>';
+            }).join('');
+
+            contentArea.innerHTML =
+                '<div class="section-header-bar ' + data.color + '">' +
+                    '<span>' + data.title + '</span>' +
+                    '<div class="header-btns">' +
+                        '<button class="header-btn" onclick="openCards(0)">&#128196; Study Cards</button>' +
+                        '<button class="header-btn" onclick="startQuiz()">&#129504; Quiz Me</button>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="table-container">' +
+                    '<table>' +
+                        '<thead><tr><th>Topic</th><th>Key Point</th><th>&#9888;&#65039; Alert</th></tr></thead>' +
+                        '<tbody id="table-body">' + tableRows + '</tbody>' +
+                    '</table>' +
+                '</div>';
+        }
+
+        window.selectRow = function(rowEl, index) {
+            document.querySelectorAll('#table-body tr').forEach(function(r) { r.classList.remove('selected'); });
+            rowEl.classList.add('selected');
+            openCards(index);
+        };
+
+        // --- Quiz Logic ---
+        var ghQuizCache = {};
+
+        function fetchGitHubQuiz(sectionKey) {
+            if (ghQuizCache[sectionKey]) return Promise.resolve(ghQuizCache[sectionKey]);
+            var url = 'https://peptopia-health.github.io/bluebook-questions/mnt_quiz_json_' + sectionKey + '.json?v=' + Date.now();
+            return fetch(url).then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json().then(function(j) {
+                    var qs = (j.questions || []).map(function(item) {
+                        return { q: item.q, a: item.options || item.a, correct: item.correct, rationale: item.rationale };
+                    });
+                    ghQuizCache[sectionKey] = qs;
+                    return qs;
+                });
+            }).catch(function(err) {
+                console.log('Quiz fetch failed for ' + sectionKey + ': ' + err);
+                return [];
+            });
+        }
+
+        window.startQuiz = function() {
+            var data = contentData[currentTab];
+            // Show quiz modal with loading state
+            document.getElementById('quiz-modal').style.display = 'flex';
+            document.getElementById('quiz-progress').textContent = 'Loading questions...';
+            document.getElementById('q-text').textContent = '';
+            document.getElementById('q-options').innerHTML = '';
+            document.getElementById('feedback-area').style.display = 'none';
+            document.getElementById('next-btn').style.display = 'none';
+
+            fetchGitHubQuiz(data.type).then(function(quizQs) {
+                if (quizQs.length === 0) {
+                    document.getElementById('quiz-progress').textContent = 'No questions available for this section yet.';
+                    return;
+                }
+                currentQuizData = shuffleArray(quizQs);
+                quizIndex = 0;
+                quizScore = 0;
+                showQuestion();
+            });
+        };
+
+        function showQuestion() {
+            var item = currentQuizData[quizIndex];
+            var total = currentQuizData.length;
+            document.getElementById('quiz-progress').textContent = 'Question ' + (quizIndex + 1) + ' of ' + total;
+            document.getElementById('q-num-display').textContent = quizIndex + 1;
+            document.getElementById('q-text').textContent = item.q;
+            var fb = document.getElementById('feedback-area');
+            fb.style.display = 'none';
+            fb.classList.remove('is-visible');
+            document.getElementById('next-btn').style.display = 'none';
+
+            var letters = ['A', 'B', 'C', 'D'];
+            var optionsHTML = item.a.map(function(opt, i) {
+                return '<button class="quiz-option" onclick="checkAnswer(' + i + ', ' + item.correct + ')">' +
+                    '<span class="quiz-option-letter">' + letters[i] + '</span>' +
+                    '<span>' + opt + '</span>' +
+                '</button>';
+            }).join('');
+            document.getElementById('q-options').innerHTML = optionsHTML;
+        }
+
+        window.checkAnswer = function(selected, correct) {
+            var buttons = document.querySelectorAll('.quiz-option');
+            buttons.forEach(function(btn, i) {
+                btn.disabled = true;
+                btn.style.pointerEvents = 'none';
+                if (i === correct) {
+                    btn.classList.add('correct-choice');
+                } else if (i === selected && selected !== correct) {
+                    btn.classList.add('wrong-choice');
+                }
+            });
+
+            var feedbackArea = document.getElementById('feedback-area');
+            var feedbackHeader = document.getElementById('feedback-header');
+            var rationaleText = document.getElementById('rationale-text');
+            var item = currentQuizData[quizIndex];
+
+            if (selected === correct) {
+                quizScore++;
+                feedbackHeader.className = 'feedback-header correct';
+                feedbackHeader.innerHTML = '&#10004;&#65039; Correct!';
+                playSound('correct');
+            } else {
+                feedbackHeader.className = 'feedback-header incorrect';
+                feedbackHeader.innerHTML = '&#10060; Incorrect';
+                playSound('wrong');
+            }
+
+            rationaleText.textContent = item.rationale;
+            feedbackArea.style.display = 'block';
+            feedbackArea.classList.add('is-visible');
+            document.getElementById('next-btn').style.display = 'block';
+
+            if (quizIndex >= currentQuizData.length - 1) {
+                document.getElementById('next-btn').textContent = 'Finish (' + quizScore + '/' + currentQuizData.length + ')';
+            } else {
+                document.getElementById('next-btn').textContent = 'Next Question';
+            }
+
+            // Scroll the overlay itself so feedback + next button are visible
+            setTimeout(function() {
+                var overlay = document.getElementById('quiz-modal');
+                var nextBtn = document.getElementById('next-btn');
+                if (nextBtn) {
+                    nextBtn.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }
+            }, 100);
+        };
+
+        window.nextQuestion = function() {
+            quizIndex++;
+            if (quizIndex < currentQuizData.length) {
+                showQuestion();
+                // Scroll overlay back to top for next question
+                var overlay = document.getElementById('quiz-modal');
+                overlay.scrollTop = 0;
+            } else {
+                closeQuiz();
+            }
+        };
+
+        window.closeQuiz = function() {
+            document.getElementById('quiz-modal').style.display = 'none';
+        };
+
+        // Initial Render — show home dashboard
+        showHome();
+
+    })();
+    </script>
+</div>
+
+</body>
+</html>
