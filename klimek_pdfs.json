@@ -19,8 +19,7 @@
       "icon": "\uD83D\uDCDA",
       "items": [
         { "title": "Blue Book", "file": "1. Blue Book.pdf" },
-        { "title": "Yellow Book", "file": "2. Yellow Book.pdf" },
-        { "title": "Black Book", "file": "Black Book.pdf" }
+        { "title": "Yellow Book", "file": "2. Yellow Book.pdf" }
       ]
     },
     {
