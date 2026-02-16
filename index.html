@@ -822,9 +822,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             cats.forEach(function(cat) {
                 (cat.items || []).forEach(function(item) {
                     var url = GH_CDN + 'pdfs/' + encodeURIComponent(item.file);
-                    var p = fetch(url, { method: 'HEAD' })
-                        .then(function(r) { item._exists = r.ok; })
-                        .catch(function() { item._exists = false; });
+                    var controller = new AbortController();
+                    var p = fetch(url, { signal: controller.signal })
+                        .then(function(r) { item._exists = r.ok; controller.abort(); })
+                        .catch(function(err) {
+                            if (err.name !== 'AbortError') item._exists = false;
+                        });
                     checks.push(p);
                 });
             });
