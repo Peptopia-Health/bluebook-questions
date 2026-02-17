@@ -1,0 +1,337 @@
+{
+  "section": "nutr",
+  "title": "Nutrition",
+  "questionCount": 30,
+  "questions": [
+    {
+      "q": "How many calories per gram does fat provide?",
+      "options": [
+        "4 cal/g",
+        "7 cal/g",
+        "9 cal/g",
+        "12 cal/g"
+      ],
+      "correct": 2,
+      "rationale": "Fat is the most calorie-dense macronutrient at 9 calories per gram."
+    },
+    {
+      "q": "Which food is a complete protein source?",
+      "options": [
+        "Rice",
+        "Lentils",
+        "Eggs",
+        "Corn"
+      ],
+      "correct": 2,
+      "rationale": "Eggs contain all 9 essential amino acids and are considered a complete protein."
+    },
+    {
+      "q": "Which vitamin is NOT fat-soluble?",
+      "options": [
+        "Vitamin A",
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin K"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin C is water-soluble. Fat-soluble vitamins are A, D, E, and K (remember: ADEK)."
+    },
+    {
+      "q": "Water-soluble vitamins are excreted by which organ?",
+      "options": [
+        "Liver",
+        "Kidneys",
+        "Lungs",
+        "Skin"
+      ],
+      "correct": 1,
+      "rationale": "Water-soluble vitamins are filtered and excreted by the kidneys in urine."
+    },
+    {
+      "q": "A deficiency of Vitamin A causes which condition?",
+      "options": [
+        "Scurvy",
+        "Rickets",
+        "Night blindness",
+        "Beriberi"
+      ],
+      "correct": 2,
+      "rationale": "Vitamin A is critical for rhodopsin production in the retina; deficiency leads to night blindness."
+    },
+    {
+      "q": "Vitamin D deficiency in children causes which condition?",
+      "options": [
+        "Scurvy",
+        "Rickets",
+        "Pellagra",
+        "Beriberi"
+      ],
+      "correct": 1,
+      "rationale": "Rickets is caused by Vitamin D deficiency in children, leading to soft and deformed bones."
+    },
+    {
+      "q": "A patient on Warfarin should be cautious with which food?",
+      "options": [
+        "Bananas",
+        "Kale",
+        "Chicken breast",
+        "White bread"
+      ],
+      "correct": 1,
+      "rationale": "Kale is high in Vitamin K which antagonizes Warfarin's anticoagulant effect."
+    },
+    {
+      "q": "Which enhances iron absorption?",
+      "options": [
+        "Calcium",
+        "Vitamin C",
+        "Antacids",
+        "Coffee"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin C (ascorbic acid) converts ferric iron to ferrous iron, enhancing absorption in the gut."
+    },
+    {
+      "q": "Which food is highest in potassium?",
+      "options": [
+        "White rice",
+        "Banana",
+        "White bread",
+        "Apple"
+      ],
+      "correct": 1,
+      "rationale": "Bananas are one of the most well-known high-potassium foods at ~422 mg per medium banana."
+    },
+    {
+      "q": "A patient with heart failure should follow which diet?",
+      "options": [
+        "High sodium",
+        "Low sodium",
+        "High fat",
+        "High potassium"
+      ],
+      "correct": 1,
+      "rationale": "Heart failure patients need sodium restriction (typically 2g/day) to prevent fluid retention and edema."
+    },
+    {
+      "q": "A patient on hemodialysis needs which dietary modification?",
+      "options": [
+        "Low protein",
+        "Increased protein",
+        "Unlimited fluids",
+        "High phosphorus"
+      ],
+      "correct": 1,
+      "rationale": "Dialysis patients need increased protein to replace losses during dialysis treatments."
+    },
+    {
+      "q": "The DASH diet is recommended for which condition?",
+      "options": [
+        "Diabetes",
+        "Hypertension",
+        "Renal failure",
+        "Celiac disease"
+      ],
+      "correct": 1,
+      "rationale": "DASH (Dietary Approaches to Stop Hypertension) is specifically designed to lower blood pressure."
+    },
+    {
+      "q": "Which macronutrient most affects blood glucose?",
+      "options": [
+        "Protein",
+        "Fat",
+        "Carbohydrates",
+        "Fiber"
+      ],
+      "correct": 2,
+      "rationale": "Carbohydrates are broken down into glucose and have the most direct impact on blood sugar levels."
+    },
+    {
+      "q": "A BMI of 27 falls into which category?",
+      "options": [
+        "Underweight",
+        "Normal",
+        "Overweight",
+        "Obese"
+      ],
+      "correct": 2,
+      "rationale": "A BMI of 25-29.9 is classified as overweight."
+    },
+    {
+      "q": "Before administering a tube feeding, the nurse should FIRST:",
+      "options": [
+        "Check the feeding rate",
+        "Verify tube placement",
+        "Warm the formula",
+        "Flush with water"
+      ],
+      "correct": 1,
+      "rationale": "Verifying tube placement is the priority safety measure before any tube feeding to prevent aspiration."
+    },
+    {
+      "q": "TPN is administered via which route?",
+      "options": [
+        "Peripheral IV only",
+        "Central venous line",
+        "NG tube",
+        "Subcutaneous"
+      ],
+      "correct": 1,
+      "rationale": "TPN is hypertonic and must be administered through a central venous line to prevent vein damage."
+    },
+    {
+      "q": "A patient with dysphagia should avoid which item?",
+      "options": [
+        "Pudding",
+        "Applesauce",
+        "Thin water",
+        "Mashed potatoes"
+      ],
+      "correct": 2,
+      "rationale": "Thin liquids are the most aspiration-prone consistency for patients with dysphagia."
+    },
+    {
+      "q": "Soluble fiber has which primary benefit?",
+      "options": [
+        "Increases stool bulk",
+        "Lowers cholesterol",
+        "Prevents hemorrhoids",
+        "Increases calorie intake"
+      ],
+      "correct": 1,
+      "rationale": "Soluble fiber forms a gel that binds bile acids and helps lower serum cholesterol levels."
+    },
+    {
+      "q": "Which lab is the BEST short-term indicator of nutritional status?",
+      "options": [
+        "Albumin",
+        "Prealbumin",
+        "BUN",
+        "Hemoglobin"
+      ],
+      "correct": 1,
+      "rationale": "Prealbumin has a half-life of 2-3 days, making it the most sensitive short-term marker of nutritional status."
+    },
+    {
+      "q": "Which nutrient prevents neural tube defects?",
+      "options": [
+        "Iron",
+        "Calcium",
+        "Folic acid",
+        "Vitamin B12"
+      ],
+      "correct": 2,
+      "rationale": "Folic acid is essential for neural tube closure in the first 28 days of development."
+    },
+    {
+      "q": "A neutropenic patient should avoid which food?",
+      "options": [
+        "Cooked chicken",
+        "Canned fruit",
+        "Fresh salad",
+        "Pasteurized milk"
+      ],
+      "correct": 2,
+      "rationale": "Fresh raw salads carry bacteria risk; neutropenic patients should eat only cooked or processed fruits and vegetables."
+    },
+    {
+      "q": "Which nutrient is essential for collagen formation in wound healing?",
+      "options": [
+        "Vitamin K",
+        "Vitamin C",
+        "Vitamin B12",
+        "Vitamin D"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin C is a cofactor for collagen synthesis, which is essential for wound healing and tissue repair."
+    },
+    {
+      "q": "When hypokalemia and hypomagnesemia coexist, the nurse should correct which first?",
+      "options": [
+        "Potassium",
+        "Magnesium",
+        "Calcium",
+        "Sodium"
+      ],
+      "correct": 1,
+      "rationale": "Magnesium must be corrected first because hypomagnesemia prevents potassium from being retained by the kidneys."
+    },
+    {
+      "q": "Phosphorus has an inverse relationship with which electrolyte?",
+      "options": [
+        "Sodium",
+        "Potassium",
+        "Calcium",
+        "Magnesium"
+      ],
+      "correct": 2,
+      "rationale": "Phosphorus and calcium have an inverse relationship: when one rises, the other falls."
+    },
+    {
+      "q": "Pernicious anemia results from a deficiency of:",
+      "options": [
+        "Folic acid",
+        "Intrinsic factor",
+        "Iron",
+        "Vitamin K"
+      ],
+      "correct": 1,
+      "rationale": "Pernicious anemia is caused by lack of intrinsic factor, which is needed for B12 absorption in the terminal ileum."
+    },
+    {
+      "q": "A patient with celiac disease must avoid which grain?",
+      "options": [
+        "Rice",
+        "Corn",
+        "Barley",
+        "Quinoa"
+      ],
+      "correct": 2,
+      "rationale": "Barley contains gluten, which triggers the autoimmune response in celiac disease."
+    },
+    {
+      "q": "At what age can a child begin drinking whole cow's milk?",
+      "options": [
+        "6 months",
+        "9 months",
+        "12 months",
+        "24 months"
+      ],
+      "correct": 2,
+      "rationale": "Whole cow's milk is introduced at 12 months; before that, breast milk or formula provides optimal nutrition."
+    },
+    {
+      "q": "The minimum acceptable urine output for an adult is:",
+      "options": [
+        "10 mL/hr",
+        "20 mL/hr",
+        "30 mL/hr",
+        "50 mL/hr"
+      ],
+      "correct": 2,
+      "rationale": "A minimum urine output of 30 mL/hr (or 0.5 mL/kg/hr) indicates adequate renal perfusion in adults."
+    },
+    {
+      "q": "A patient scheduled for surgery at 0800 should stop eating solids by:",
+      "options": [
+        "0200",
+        "0000 (midnight)",
+        "0400",
+        "0600"
+      ],
+      "correct": 1,
+      "rationale": "Standard NPO guidelines require stopping solid foods 6-8 hours before surgery; midnight is the traditional cutoff for an 0800 surgery."
+    },
+    {
+      "q": "Which is the primary function of Vitamin E?",
+      "options": [
+        "Blood clotting",
+        "Antioxidant protection",
+        "Calcium absorption",
+        "Vision"
+      ],
+      "correct": 1,
+      "rationale": "Vitamin E is a fat-soluble antioxidant that protects cell membranes from oxidative damage by free radicals."
+    }
+  ]
+}

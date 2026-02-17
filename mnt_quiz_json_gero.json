@@ -1,0 +1,447 @@
+{
+  "section": "gero",
+  "title": "Gerontology",
+  "questionCount": 40,
+  "questions": [
+    {
+      "q": "An age-related cardiovascular change in the elderly is:",
+      "options": [
+        "Increased cardiac output",
+        "Decreased peripheral resistance",
+        "Orthostatic hypotension",
+        "Decreased blood pressure"
+      ],
+      "correct": 2,
+      "rationale": "Aging causes vessel stiffening and baroreceptor sensitivity loss, leading to orthostatic hypotension and fall risk."
+    },
+    {
+      "q": "Which respiratory change occurs with aging?",
+      "options": [
+        "Increased vital capacity",
+        "Stronger cough reflex",
+        "Decreased lung elasticity",
+        "Lower residual volume"
+      ],
+      "correct": 2,
+      "rationale": "Aging reduces lung elasticity and chest wall compliance, decreasing vital capacity and weakening the cough reflex."
+    },
+    {
+      "q": "Why must medication doses often be reduced in the elderly?",
+      "options": [
+        "Increased liver metabolism",
+        "Decreased renal clearance",
+        "Increased GFR",
+        "Better drug absorption"
+      ],
+      "correct": 1,
+      "rationale": "Decreased GFR means drugs are cleared more slowly, increasing the risk of toxicity at standard adult doses."
+    },
+    {
+      "q": "A common GI complaint in the elderly is:",
+      "options": [
+        "Diarrhea",
+        "Hyperacidity",
+        "Constipation",
+        "Increased appetite"
+      ],
+      "correct": 2,
+      "rationale": "Decreased GI motility and peristalsis with aging leads to constipation; fluids, fiber, and activity help prevent it."
+    },
+    {
+      "q": "When communicating with an elderly patient with hearing loss, the nurse should:",
+      "options": [
+        "Speak louder",
+        "Speak in low-pitched tones",
+        "Stand behind the patient",
+        "Whisper"
+      ],
+      "correct": 1,
+      "rationale": "Age-related hearing loss (presbycusis) affects high-frequency sounds first; speaking in lower tones is more effective than shouting."
+    },
+    {
+      "q": "The primary musculoskeletal concern in aging females is:",
+      "options": [
+        "Gout",
+        "Rheumatoid arthritis",
+        "Osteoporosis",
+        "Muscular dystrophy"
+      ],
+      "correct": 2,
+      "rationale": "Postmenopausal women lose estrogen protection, accelerating bone density loss and increasing osteoporosis and fracture risk."
+    },
+    {
+      "q": "An elderly patient is at increased risk for skin tears because of:",
+      "options": [
+        "Thicker epidermis",
+        "Increased subcutaneous fat",
+        "Thinning skin and decreased elasticity",
+        "More sweat production"
+      ],
+      "correct": 2,
+      "rationale": "Aging thins the epidermis and reduces subcutaneous fat, making skin fragile and prone to tears with minimal friction."
+    },
+    {
+      "q": "A previously oriented elderly patient suddenly becomes confused. This most likely indicates:",
+      "options": [
+        "Normal aging",
+        "Dementia",
+        "Delirium",
+        "Depression"
+      ],
+      "correct": 2,
+      "rationale": "Acute onset confusion is delirium (reversible) \u2014 look for treatable causes like UTI, medications, or metabolic imbalance."
+    },
+    {
+      "q": "A patient with dementia becomes agitated every evening at 5 PM. This is called:",
+      "options": [
+        "Delirium",
+        "Sundowning",
+        "Psychosis",
+        "Anxiety disorder"
+      ],
+      "correct": 1,
+      "rationale": "Sundowning is increased confusion/agitation in late day, common in dementia; maintaining routine and lighting helps manage it."
+    },
+    {
+      "q": "The greatest risk of polypharmacy in the elderly is:",
+      "options": [
+        "Improved health outcomes",
+        "Adverse drug interactions",
+        "Faster recovery",
+        "Better compliance"
+      ],
+      "correct": 1,
+      "rationale": "Multiple medications increase the risk of dangerous drug-drug interactions, side effects, and medication errors."
+    },
+    {
+      "q": "Which medication class should generally be AVOIDED in the elderly?",
+      "options": [
+        "ACE inhibitors",
+        "Benzodiazepines",
+        "Statins",
+        "Calcium supplements"
+      ],
+      "correct": 1,
+      "rationale": "Benzodiazepines are on the Beers List because they increase fall risk, sedation, confusion, and cognitive impairment in the elderly."
+    },
+    {
+      "q": "The leading cause of injury-related death in adults over 65 is:",
+      "options": [
+        "Motor vehicle accidents",
+        "Falls",
+        "Burns",
+        "Poisoning"
+      ],
+      "correct": 1,
+      "rationale": "Falls are the number one cause of injury and injury-related death in the elderly; prevention is a nursing priority."
+    },
+    {
+      "q": "When assessing for elder abuse, the nurse should:",
+      "options": [
+        "Interview patient with the caregiver present",
+        "Interview the patient alone",
+        "Only report if patient requests it",
+        "Wait for the physician to assess"
+      ],
+      "correct": 1,
+      "rationale": "The patient must be interviewed privately to allow honest disclosure; the presence of the abuser prevents truthful answers."
+    },
+    {
+      "q": "An elderly patient is at increased risk for hypothermia because of:",
+      "options": [
+        "Increased metabolic rate",
+        "Excess subcutaneous fat",
+        "Decreased ability to shiver and less subcutaneous fat",
+        "Hyperactive thyroid"
+      ],
+      "correct": 2,
+      "rationale": "Aging reduces shivering response, subcutaneous insulation, and metabolic heat production, increasing hypothermia risk."
+    },
+    {
+      "q": "Depression in the elderly most commonly presents as:",
+      "options": [
+        "Crying and sadness",
+        "Somatic complaints like pain and fatigue",
+        "Aggressive behavior",
+        "Hallucinations"
+      ],
+      "correct": 1,
+      "rationale": "Elderly patients often express depression through physical complaints rather than emotional symptoms, making it harder to diagnose."
+    },
+    {
+      "q": "Urinary incontinence in the elderly is:",
+      "options": [
+        "A normal part of aging",
+        "Always requiring surgery",
+        "Not normal and should be evaluated",
+        "Untreatable"
+      ],
+      "correct": 2,
+      "rationale": "Incontinence is NOT a normal aging change; it has treatable causes and should always be evaluated and managed."
+    },
+    {
+      "q": "Nutritional needs that INCREASE with aging include:",
+      "options": [
+        "Calories",
+        "Carbohydrates",
+        "Calcium and Vitamin D",
+        "Sodium"
+      ],
+      "correct": 2,
+      "rationale": "While caloric needs decrease, calcium and Vitamin D requirements increase to prevent osteoporosis and fractures."
+    },
+    {
+      "q": "A Durable Power of Attorney for Healthcare allows:",
+      "options": [
+        "The physician to make all decisions",
+        "A designated person to make decisions if the patient cannot",
+        "The hospital to override patient wishes",
+        "Automatic DNR status"
+      ],
+      "correct": 1,
+      "rationale": "The DPOA designates a trusted person to make healthcare decisions only when the patient is unable to do so themselves."
+    },
+    {
+      "q": "An elderly patient with pneumonia may NOT show which typical sign?",
+      "options": [
+        "Cough",
+        "Fever",
+        "Fatigue",
+        "Confusion"
+      ],
+      "correct": 1,
+      "rationale": "The aging immune system produces a blunted febrile response; elderly patients may be afebrile even with serious infections."
+    },
+    {
+      "q": "A normal sleep change in the elderly includes:",
+      "options": [
+        "Increased REM sleep",
+        "Fewer nighttime awakenings",
+        "Decreased deep sleep stages",
+        "Sleeping 10+ hours"
+      ],
+      "correct": 2,
+      "rationale": "Aging reduces deep sleep (stages 3-4) and REM sleep, causing lighter sleep with more frequent awakenings \u2014 this is normal."
+    },
+    {
+      "q": "A 78-year-old patient is classified as:",
+      "options": [
+        "Young-old",
+        "Middle-old",
+        "Old-old",
+        "Elite-old"
+      ],
+      "correct": 1,
+      "rationale": "Middle-old is defined as ages 75-84; young-old is 65-74; old-old is 85 and over."
+    },
+    {
+      "q": "According to Erikson, the developmental task of older adults is:",
+      "options": [
+        "Generativity vs Stagnation",
+        "Identity vs Role Confusion",
+        "Integrity vs Despair",
+        "Intimacy vs Isolation"
+      ],
+      "correct": 2,
+      "rationale": "Erikson's 8th and final stage involves reflecting on life with a sense of fulfillment (integrity) or regret (despair)."
+    },
+    {
+      "q": "Which aging theory states that staying active promotes successful aging?",
+      "options": [
+        "Disengagement theory",
+        "Activity theory",
+        "Pacemaker theory",
+        "Immunity theory"
+      ],
+      "correct": 1,
+      "rationale": "Activity theory holds that continued social and physical engagement is essential for life satisfaction in older adults."
+    },
+    {
+      "q": "An elderly patient with a UTI is most likely to present with:",
+      "options": [
+        "Burning on urination",
+        "High fever and chills",
+        "Acute confusion",
+        "Flank pain"
+      ],
+      "correct": 2,
+      "rationale": "UTIs in the elderly often present atypically with confusion, falls, or lethargy rather than classic urinary symptoms."
+    },
+    {
+      "q": "An elderly patient experiencing an MI may present with:",
+      "options": [
+        "Classic crushing chest pain",
+        "GI symptoms like indigestion",
+        "High fever",
+        "Skin rash"
+      ],
+      "correct": 1,
+      "rationale": "Elderly patients often have atypical MI presentations including indigestion, nausea, dyspnea, or confusion instead of classic chest pain."
+    },
+    {
+      "q": "Bladder capacity in the elderly decreases by approximately:",
+      "options": [
+        "10%",
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "correct": 2,
+      "rationale": "Bladder capacity decreases by about half with aging, leading to urinary frequency, nocturia, and increased UTI risk from residual urine."
+    },
+    {
+      "q": "Vaginal dryness in postmenopausal women is caused by:",
+      "options": [
+        "Increased estrogen",
+        "Decreased estrogen",
+        "Bacterial infection",
+        "Excess progesterone"
+      ],
+      "correct": 1,
+      "rationale": "Estrogen decline after menopause causes vaginal mucosa to thin, dry out, and become alkaline, leading to dyspareunia."
+    },
+    {
+      "q": "The term for age-related testosterone decline in men is:",
+      "options": [
+        "Menopause",
+        "Andropause",
+        "Cryptorchidism",
+        "Hypogonadism"
+      ],
+      "correct": 1,
+      "rationale": "Andropause refers to the gradual decline in testosterone in aging males, causing changes in sexual function and prostate enlargement."
+    },
+    {
+      "q": "The most common pathologic eye condition in older adults is:",
+      "options": [
+        "Glaucoma",
+        "Cataracts",
+        "Macular degeneration",
+        "Retinal detachment"
+      ],
+      "correct": 1,
+      "rationale": "Cataracts are the most common age-related eye problem; progressive lens clouding impairs vision and is corrected surgically."
+    },
+    {
+      "q": "The principal cause of blindness in older adults is:",
+      "options": [
+        "Cataracts",
+        "Glaucoma",
+        "Macular degeneration",
+        "Diabetic retinopathy"
+      ],
+      "correct": 2,
+      "rationale": "Macular degeneration is the leading cause of irreversible blindness in older adults, affecting central vision first."
+    },
+    {
+      "q": "The 4 A's of Alzheimer's disease include all EXCEPT:",
+      "options": [
+        "Agnosia",
+        "Amnesia",
+        "Anemia",
+        "Aphasia"
+      ],
+      "correct": 2,
+      "rationale": "The 4 A's are Agnosia, Amnesia, Apraxia, and Aphasia \u2014 not Anemia, which is a blood disorder unrelated to Alzheimer's."
+    },
+    {
+      "q": "Vascular dementia develops as a result of:",
+      "options": [
+        "Amyloid plaques",
+        "Ischemic brain lesions from HTN/hyperlipidemia",
+        "Lewy body deposits",
+        "Frontal lobe atrophy"
+      ],
+      "correct": 1,
+      "rationale": "Vascular dementia results from ischemic brain damage caused by hypertension, hyperlipidemia, smoking, or obesity."
+    },
+    {
+      "q": "Which medication class is used for early-stage Alzheimer's?",
+      "options": [
+        "NMDA antagonists",
+        "Acetylcholinesterase inhibitors",
+        "SSRIs",
+        "Benzodiazepines"
+      ],
+      "correct": 1,
+      "rationale": "Acetylcholinesterase inhibitors (Donepezil, Rivastigmine, Galantamine) increase acetylcholine availability for early-moderate Alzheimer's."
+    },
+    {
+      "q": "When communicating with an older adult, the nurse should:",
+      "options": [
+        "Speak loudly and quickly",
+        "Use medical terminology for accuracy",
+        "Give adequate time to respond and face the patient",
+        "Finish sentences for the patient"
+      ],
+      "correct": 2,
+      "rationale": "Older adults need more processing time; facing them, speaking clearly in low tones, and allowing time to respond shows respect and aids comprehension."
+    },
+    {
+      "q": "Multiple losses in the elderly can lead to:",
+      "options": [
+        "Improved resilience",
+        "Bereavement overload and depression",
+        "Better coping skills",
+        "Social engagement"
+      ],
+      "correct": 1,
+      "rationale": "Compounded losses overwhelm coping ability, leading to bereavement overload, depression, substance abuse, and suicide risk."
+    },
+    {
+      "q": "The priority in end-of-life care is:",
+      "options": [
+        "Aggressive treatment",
+        "Pain management and comfort",
+        "Diagnostic testing",
+        "Nutritional support"
+      ],
+      "correct": 1,
+      "rationale": "End-of-life care prioritizes pain management and comfort; untreated pain affects quality of life, sleep, and dignity."
+    },
+    {
+      "q": "Which screening is specifically important for detecting glaucoma?",
+      "options": [
+        "ECG",
+        "Tonometry",
+        "Chest X-ray",
+        "Blood glucose"
+      ],
+      "correct": 1,
+      "rationale": "Tonometry measures intraocular pressure (IOP) and is essential for early detection of glaucoma, which increases with age."
+    },
+    {
+      "q": "Hypothyroidism in the elderly is often mistaken for:",
+      "options": [
+        "Hyperthyroidism",
+        "Normal aging changes",
+        "Diabetes",
+        "Alzheimer's disease"
+      ],
+      "correct": 1,
+      "rationale": "Hypothyroidism symptoms (fatigue, weight gain, cold intolerance, cognitive slowing) overlap with normal aging, delaying diagnosis."
+    },
+    {
+      "q": "Which statement about neurologic aging is TRUE?",
+      "options": [
+        "Intelligence declines significantly",
+        "Neurons regenerate slowly",
+        "Intelligence remains constant but processing slows",
+        "Proprioception improves"
+      ],
+      "correct": 2,
+      "rationale": "Intelligence remains intact in healthy older adults; however, central processing speed decreases and reaction time is slower."
+    },
+    {
+      "q": "Dysrhythmias in older adults are particularly dangerous because:",
+      "options": [
+        "They are always benign",
+        "Older adults cannot tolerate decreased cardiac output",
+        "They only occur during exercise",
+        "Medications easily control them"
+      ],
+      "correct": 1,
+      "rationale": "Elderly patients have less cardiac reserve; dysrhythmias that decrease cardiac output can cause syncope, falls, TIAs, and confusion."
+    }
+  ]
+}
