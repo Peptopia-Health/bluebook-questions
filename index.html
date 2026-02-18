@@ -206,7 +206,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         #peptopia-klimek-guide tr:hover td { cursor: pointer; background-color: #f8fafc; }
         html.dark #peptopia-klimek-guide tr:hover td { background-color: #1e293b; }
         #peptopia-klimek-guide .topic-cell { font-weight: 800; white-space: nowrap; color: #000; vertical-align: top; }
-        html.dark #peptopia-klimek-guide .topic-cell { color: #f1f5f9; }
+        html.dark #peptopia-klimek-guide .topic-cell { color: #f1f5f9; background-color: rgba(255,255,255,0.05); }
         #peptopia-klimek-guide .topic-cell.cardio { background-color: var(--rose-50); }
         #peptopia-klimek-guide .topic-cell.resp { background-color: var(--blue-50); }
         #peptopia-klimek-guide .topic-cell.neuro { background-color: var(--purple-50); }
@@ -487,7 +487,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         <button class="tab-btn bg-indigo" id="tab-psych" onclick="switchTab('psych')">Psych</button>
         <button class="tab-btn bg-red" id="tab-hemonc" onclick="switchTab('hemonc')">Heme/Onc</button>
         <button class="tab-btn bg-orange" id="tab-integ" onclick="switchTab('integ')">Integ/Sensory</button>
-        <button class="tab-btn bg-gray" id="tab-pharm" onclick="switchTab('pharm')">Pharm</button>
+        <button class="tab-btn bg-gray" id="tab-pharm" onclick="switchTab('pharm')">Pharmacology</button>
         <button class="tab-btn bg-cyan" id="tab-fund" onclick="switchTab('fund')">Fundamentals</button>
         <button class="tab-btn bg-lime" id="tab-gero" onclick="switchTab('gero')">Gerontology</button>
         <button class="tab-btn bg-green" id="tab-nutr" onclick="switchTab('nutr')">Nutrition</button>
@@ -624,7 +624,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             psych: 'Therapeutic communication, crisis intervention, medications, and legal considerations.',
             hemonc: 'Anemias, clotting disorders, cancer treatment, blood products, and transfusion reactions.',
             integ: 'Burns, wound staging, skin assessments, infections, and sensory deficits.',
-            pharm: 'Drug classes, interactions, side effects, nursing implications, and safe administration.',
+            pharm: 'Drug classes, interactions, side effects, nursing implications, acid-base balance, and safe administration.',
             fund: 'Delegation, prioritization, infection control, isolation precautions, and nursing leadership.',
             gero: 'Age-related changes, polypharmacy, delirium vs dementia, elder care, fall prevention, and advance directives.',
             nutr: 'Macronutrients, vitamins, minerals, therapeutic diets, tube feedings, TPN, and nutritional assessment.'

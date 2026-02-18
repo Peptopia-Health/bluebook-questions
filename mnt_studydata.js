@@ -519,11 +519,11 @@ var contentData = {
         ]
     },
     pharm: {
-        title: 'Pharm & Fundamentals',
+        title: 'Pharmacology',
         color: 'bg-gray',
         border: 'border-gray',
         type: 'pharm',
-        description: 'Klimek Pharmacology Rules, Acid-Base, and Fundamentals.',
+        description: 'Drug classes, interactions, side effects, nursing implications, acid-base balance, and safe administration.',
         data: [
             { topic: 'Acid-Base', fact: 'pH 7.35-7.45. CO2 35-45. HCO3 22-26.', alert: 'As the pH goes, so goes my patient.', q: 'According to Klimek, what happens when pH goes UP (Alkalosis)?', a: ['Only BP goes down', 'Everything goes DOWN (Bradycardia)', 'Only potassium goes up', 'Everything goes UP (Tachycardia, Seizures)'], correct: 3, rationale: 'Alkalosis makes the body irritable: high HR, high reflexes, seizures. (Except Potassium goes DOWN).' },
             { topic: 'Acid-Base Down', fact: 'Acidosis = Down.', alert: 'Bradycardia, Lethargy, Coma, Respiratory Arrest.', q: 'What are the signs of Acidosis?', a: ['Lethargy, Bradycardia, Flaccidity', 'Seizures, Hyperreflexia', 'Hypertension', 'Tachycardia'], correct: 0, rationale: 'Acidosis depresses the CNS: lethargy, low HR, respiratory arrest. (Potassium goes UP).' },
