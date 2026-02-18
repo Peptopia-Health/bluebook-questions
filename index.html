@@ -96,21 +96,25 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         }
         html.dark #peptopia-klimek-guide .navbar { background: linear-gradient(135deg, #020617 0%, #0c2461 50%, #020617 100%); border: 1px solid rgba(59, 130, 246, 0.3); }
         #peptopia-klimek-guide .nav-title { font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
-        #peptopia-klimek-guide .tabs-container {
-            display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 1rem;
-            justify-content: center; overflow-x: auto; -webkit-overflow-scrolling: touch;
-            padding-bottom: 0.35rem; scrollbar-width: thin;
+        #peptopia-klimek-guide .nav-filters {
+            display: flex; gap: 0.35rem; align-items: center;
         }
-        #peptopia-klimek-guide .tabs-container::-webkit-scrollbar { height: 4px; }
-        #peptopia-klimek-guide .tabs-container::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
-        #peptopia-klimek-guide .tab-btn {
-            padding: 0.5rem 0.65rem; border-radius: 0.5rem; font-weight: 700;
-            border: 2px solid transparent; cursor: pointer; transition: all 0.15s;
-            font-size: 0.8rem; opacity: 0.85; text-align: center; white-space: nowrap; flex-shrink: 0;
+        #peptopia-klimek-guide .nav-filter-btn {
+            background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);
+            border: 1px solid rgba(255,255,255,0.2); padding: 0.3rem 0.7rem;
+            border-radius: 2rem; font-size: 0.78rem; font-weight: 700;
+            cursor: pointer; transition: all 0.18s; white-space: nowrap;
+            -webkit-tap-highlight-color: transparent;
         }
-        #peptopia-klimek-guide .tab-btn:hover { opacity: 1; transform: translateY(-1px); }
-        #peptopia-klimek-guide .tab-btn.active { opacity: 1; box-shadow: 0 2px 8px rgba(0,0,0,0.12); transform: translateY(1px); font-weight: 800; }
-        /* Tab colors are applied dynamically via .bg-* classes in JS */
+        #peptopia-klimek-guide .nav-filter-btn:hover {
+            background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.95);
+            border-color: rgba(255,255,255,0.4);
+        }
+        #peptopia-klimek-guide .nav-filter-btn.active {
+            background: rgba(99, 102, 241, 0.6); color: #fff;
+            border-color: rgba(165, 180, 252, 0.7);
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+        }
         #peptopia-klimek-guide #section-view {
             flex-direction: column;
             height: calc(100vh - 7.5rem); height: calc(100dvh - 7.5rem);
@@ -239,7 +243,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             #peptopia-klimek-guide .key-point-cell::before { content: '\1F4CC '; }
             #peptopia-klimek-guide .alert-cell { border-left: 3px solid #f87171; margin: 0.2rem 0.3rem; border-radius: 0.25rem; padding: 0.4rem 0.6rem; font-size: 0.85rem; }
             #peptopia-klimek-guide .section-header-bar { font-size: 1rem; padding: 0.5rem 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
-            #peptopia-klimek-guide .tabs-container { gap: 0.2rem; margin-bottom: 0.5rem; }
+            #peptopia-klimek-guide .nav-filters { gap: 0.2rem; }
+            #peptopia-klimek-guide .nav-filter-btn { font-size: 0.7rem; padding: 0.25rem 0.5rem; }
             #peptopia-klimek-guide .navbar { margin-bottom: 0.5rem; padding: 0.5rem 0.75rem; }
             #peptopia-klimek-guide .nav-title { font-size: 1.15rem; }
             #peptopia-klimek-guide #section-view { height: calc(100vh - 6rem); height: calc(100dvh - 6rem); }
@@ -299,20 +304,6 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             -webkit-tap-highlight-color: transparent; width: 100%; max-width: 320px;
         }
         #peptopia-klimek-guide .next-q-btn:hover { background: #4338ca; }
-        #peptopia-klimek-guide .tab-btn.bg-rose { background-color: var(--rose-100) !important; color: var(--rose-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-blue { background-color: var(--blue-100) !important; color: var(--blue-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-purple { background-color: var(--purple-100) !important; color: var(--purple-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-emerald { background-color: var(--emerald-100) !important; color: var(--emerald-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-pink { background-color: var(--pink-100) !important; color: var(--pink-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-amber { background-color: var(--amber-100) !important; color: var(--amber-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-teal { background-color: var(--teal-100) !important; color: var(--teal-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-indigo { background-color: var(--indigo-100) !important; color: var(--indigo-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-red { background-color: var(--red-100) !important; color: var(--red-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-orange { background-color: var(--orange-100) !important; color: var(--orange-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-gray { background-color: var(--gray-100) !important; color: var(--gray-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-cyan { background-color: var(--cyan-100) !important; color: var(--cyan-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-lime { background-color: var(--lime-100) !important; color: var(--lime-800) !important; }
-        #peptopia-klimek-guide .tab-btn.bg-green { background-color: var(--green-100) !important; color: var(--green-800) !important; }
         #peptopia-klimek-guide .section-header-bar.bg-rose { background-color: #fecdd3; border: 2px solid #f43f5e; }
         #peptopia-klimek-guide .section-header-bar.bg-blue { background-color: #a5f3fc; border: 2px solid #06b6d4; }
         #peptopia-klimek-guide .section-header-bar.bg-purple { background-color: #ddd6fe; border: 2px solid #7c3aed; }
@@ -364,6 +355,21 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             box-shadow: 0 4px 16px -2px rgba(10, 22, 40, 0.5), 0 0 20px rgba(30, 100, 255, 0.15);
             border: 1px solid rgba(59, 130, 246, 0.25);
         }
+        #peptopia-klimek-guide .search-input {
+            width: 100%; padding: 0.65rem 1rem; font-size: 16px; border-radius: 8px;
+            border: 1px solid #6366f1; background: #ffffff; color: #1e293b;
+            outline: none; box-sizing: border-box;
+        }
+        html.dark #peptopia-klimek-guide .search-input { background: #1e293b; color: #f1f5f9; border-color: #6366f1; }
+        #peptopia-klimek-guide .search-input::placeholder { color: #94a3b8; }
+        html.dark #peptopia-klimek-guide .search-input::placeholder { color: #64748b; }
+        #peptopia-klimek-guide .search-result-item {
+            padding: 0.6rem 0.75rem; margin-bottom: 0.4rem; border-radius: 8px;
+            border-left: 4px solid var(--indigo-500); background: #f1f5f9; cursor: pointer;
+        }
+        #peptopia-klimek-guide .search-result-item:hover { background: #e2e8f0; }
+        html.dark #peptopia-klimek-guide .search-result-item { background: #1e293b; }
+        html.dark #peptopia-klimek-guide .search-result-item:hover { background: #334155; }
         html.dark #peptopia-klimek-guide .home-hero-banner {
             background: linear-gradient(135deg, #020617 0%, #0c2461 50%, #020617 100%);
             border: 1px solid rgba(59, 130, 246, 0.3);
@@ -470,39 +476,18 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
 
     <nav class="navbar">
         <div class="nav-title" onclick="showHome()">Klimek Guide</div>
+        <div class="nav-filters" id="nav-filters">
+            <button class="nav-filter-btn active" id="filter-all" onclick="filterDashboard('all')">All Topics</button>
+            <button class="nav-filter-btn" id="filter-systems" onclick="filterDashboard('systems')">Body Systems</button>
+            <button class="nav-filter-btn" id="filter-foundations" onclick="filterDashboard('foundations')">Foundations</button>
+        </div>
         <div style="display:flex; gap:0.4rem; align-items:center;">
             <button class="home-nav-btn" id="home-back-btn" onclick="showHome()">&#8592; Home</button>
             <button class="navbar-pdf-btn" id="pdf-nav-btn" onclick="showPDFs()">&#128196; Klimek PDFs</button>
         </div>
     </nav>
 
-    <div class="tabs-container">
-        <button class="tab-btn bg-rose" id="tab-cardio" onclick="switchTab('cardio')">Cardio</button>
-        <button class="tab-btn bg-blue" id="tab-resp" onclick="switchTab('resp')">Resp</button>
-        <button class="tab-btn bg-purple" id="tab-neuro" onclick="switchTab('neuro')">Neuro</button>
-        <button class="tab-btn bg-emerald" id="tab-gi" onclick="switchTab('gi')">GI &amp; Nutr</button>
-        <button class="tab-btn bg-pink" id="tab-obpeds" onclick="switchTab('obpeds')">OB &amp; Peds</button>
-        <button class="tab-btn bg-amber" id="tab-endo" onclick="switchTab('endo')">Endocrine</button>
-        <button class="tab-btn bg-teal" id="tab-musc" onclick="switchTab('musc')">Musculoskeletal</button>
-        <button class="tab-btn bg-indigo" id="tab-psych" onclick="switchTab('psych')">Psych</button>
-        <button class="tab-btn bg-red" id="tab-hemonc" onclick="switchTab('hemonc')">Heme/Onc</button>
-        <button class="tab-btn bg-orange" id="tab-integ" onclick="switchTab('integ')">Integ/Sensory</button>
-        <button class="tab-btn bg-gray" id="tab-pharm" onclick="switchTab('pharm')">Pharmacology</button>
-        <button class="tab-btn bg-cyan" id="tab-fund" onclick="switchTab('fund')">Fundamentals</button>
-        <button class="tab-btn bg-lime" id="tab-gero" onclick="switchTab('gero')">Gerontology</button>
-        <button class="tab-btn bg-green" id="tab-nutr" onclick="switchTab('nutr')">Nutrition</button>
-    </div>
-
-    <div id="home-dashboard">
-        <div class="home-hero">
-            <div class="home-hero-banner">Your comprehensive NCLEX review across 14 nursing specialties &mdash; study cards, facts &amp; 1,100+ quiz questions.</div>
-        </div>
-        <div style="padding: 0.5rem 1rem; max-width: 600px; margin: 0 auto;">
-            <input type="text" id="global-search" placeholder="Search all cards... (e.g. Digoxin, ABG, delegation)" oninput="doGlobalSearch(this.value)" style="width:100%; padding:0.65rem 1rem; font-size:16px; border-radius:8px; border:1px solid #6366f1; background:rgba(255,255,255,0.08); color:inherit; outline:none; box-sizing:border-box;">
-        </div>
-        <div id="search-results" style="display:none; padding:0.5rem 1rem; max-width:700px; margin:0 auto;"></div>
-        <div class="home-grid" id="home-grid"></div>
-    </div>
+    <div id="home-dashboard"></div>
 
     <div id="section-view" style="display:none;">
         <div id="content-area"></div>
@@ -603,10 +588,26 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                     '<br><small style="color:#94a3b8;font-weight:400;">' + err.message + '</small></div>';
             });
 
+        var APP_VERSION = '1.1';
+        var QUIZ_COUNTS = { cardio:100, resp:100, neuro:100, gi:100, obpeds:100, endo:100, musc:100, psych:100, hemonc:100, integ:100, pharm:100, fund:90, gero:95, nutr:95 };
+
+        function buildBannerText() {
+            var secs = Object.keys(contentData).length;
+            var cards = 0;
+            Object.keys(contentData).forEach(function(k) { cards += contentData[k].data.length; });
+            var quizQs = 0;
+            Object.keys(QUIZ_COUNTS).forEach(function(k) { quizQs += QUIZ_COUNTS[k]; });
+            return 'Your comprehensive NCLEX review across ' + secs + ' nursing specialties &mdash; ' + cards + ' study cards &amp; ' + quizQs.toLocaleString() + ' quiz questions. v' + APP_VERSION;
+        }
+
         function initApp() {
         loadingEl.innerHTML =
-            '<div class="home-hero"><div class="home-hero-banner">Your comprehensive NCLEX review across 14 nursing specialties &mdash; study cards, facts &amp; 1,100+ quiz questions.</div></div>' +
+            '<div class="home-hero"><div class="home-hero-banner" id="hero-banner"></div></div>' +
+            '<div style="padding: 0.5rem 1rem; max-width: 600px; margin: 0 auto;">' +
+            '<input type="text" id="global-search" class="search-input" placeholder="Search all cards... (e.g. Digoxin, ABG, delegation)" oninput="doGlobalSearch(this.value)"></div>' +
+            '<div id="search-results" style="display:none; padding:0.5rem 1rem; max-width:700px; margin:0 auto;"></div>' +
             '<div class="home-grid" id="home-grid"></div>';
+        document.getElementById('hero-banner').innerHTML = buildBannerText();
 
         var sectionEmojis = {
             cardio: '\u2764\uFE0F', resp: '\uD83D\uDCA8', neuro: '\uD83E\uDDE0', gi: '\uD83C\uDF7D\uFE0F', obpeds: '\uD83D\uDC76',
@@ -635,6 +636,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             'bg-teal': 'teal', 'bg-indigo': 'indigo', 'bg-red': 'red',
             'bg-orange': 'orange', 'bg-gray': 'gray', 'bg-cyan': 'cyan', 'bg-lime': 'lime', 'bg-green': 'green'
         };
+
+        var GROUPS = {
+            systems: ['cardio','resp','neuro','gi','obpeds','endo','musc','psych','hemonc','integ'],
+            foundations: ['pharm','fund','gero','nutr']
+        };
+        var activeFilter = 'all';
 
         var currentTab = 'cardio';
         var isHome = true;
@@ -681,6 +688,15 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             return array;
         }
 
+        function sentenceBreak(html) {
+            /* Insert <br> between sentences while preserving existing <br> tags and HTML spans.
+               Splits on '. ' followed by an uppercase letter or HTML tag, and on '. ' at end of common patterns. */
+            return html
+                .replace(/\.\s+(?=[A-Z<])/g, '.<br>')  /* period + space + uppercase/tag */
+                .replace(/;\s+/g, ';<br>')              /* semicolon lists */
+                .replace(/\)\.\s*/g, ').<br>')          /* closing paren + period */
+                .replace(/<br>\s*<br>/g, '<br>');        /* collapse double breaks */
+        }
         function renderCardInModal(item, data, idx, total) {
             document.getElementById('card-modal-header').className = 'card-modal-header ' + data.color;
             document.getElementById('card-modal-title').textContent = data.title + ' \u2014 Study Cards';
@@ -689,8 +705,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             document.getElementById('card-next-btn').disabled = (idx >= total - 1);
             document.getElementById('card-modal-body').innerHTML =
                 '<div class="card-topic">' + fmtText(item.topic) + '</div>' +
-                '<div class="card-section"><span class="card-label">Key Fact</span><div class="card-fact">' + fmtText(item.fact) + '</div></div>' +
-                '<div class="card-section"><div class="card-alert-box"><span class="card-label" style="color:#b91c1c;">\u26A0\uFE0F Clinical Alert</span><div class="card-fact">' + fmtText(item.alert, { noCaut: true }) + '</div></div></div>';
+                '<div class="card-section"><span class="card-label">Key Fact</span><div class="card-fact">' + sentenceBreak(fmtText(item.fact)) + '</div></div>' +
+                '<div class="card-section"><div class="card-alert-box"><span class="card-label" style="color:#b91c1c;">\u26A0\uFE0F Clinical Alert</span><div class="card-fact">' + sentenceBreak(fmtText(item.alert, { noCaut: true })) + '</div></div></div>';
         }
 
         var shuffledDeck = null;
@@ -730,16 +746,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             document.getElementById('section-view').style.display = 'flex';
             document.getElementById('pdf-view').style.display = 'none';
             document.getElementById('home-back-btn').style.display = 'inline-block';
-            var btns = document.querySelectorAll('.tab-btn');
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].className = 'tab-btn';
-                if (btns[i].id === 'tab-' + tabName) {
-                    btns[i].classList.add('active', contentData[tabName].color);
-                } else {
-                    var bKey = btns[i].id.replace('tab-','');
-                    if (contentData[bKey]) btns[i].classList.add(contentData[bKey].color);
-                }
-            }
+            document.getElementById('nav-filters').style.display = 'none';
             renderContent();
         };
 
@@ -749,20 +756,41 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             document.getElementById('section-view').style.display = 'none';
             document.getElementById('pdf-view').style.display = 'none';
             document.getElementById('home-back-btn').style.display = 'none';
+            document.getElementById('nav-filters').style.display = '';
             var srchEl = document.getElementById('global-search');
             if (srchEl) { srchEl.value = ''; }
             var srchRes = document.getElementById('search-results');
             if (srchRes) { srchRes.style.display = 'none'; }
             var hGrid = document.getElementById('home-grid');
             if (hGrid) { hGrid.style.display = ''; }
-            var btns = document.querySelectorAll('.tab-btn');
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].className = 'tab-btn';
-                var bKey = btns[i].id.replace('tab-','');
-                if (contentData[bKey]) btns[i].classList.add(contentData[bKey].color);
-            }
             renderDashboard();
         };
+
+        window.filterDashboard = function(group) {
+            activeFilter = group;
+            var filterBtns = document.querySelectorAll('.nav-filter-btn');
+            for (var i = 0; i < filterBtns.length; i++) {
+                filterBtns[i].classList.remove('active');
+            }
+            document.getElementById('filter-' + group).classList.add('active');
+            /* If we are not on home, go home first */
+            if (!isHome) { showHome(); }
+            applyFilter();
+        };
+
+        function applyFilter() {
+            var cards = document.querySelectorAll('#home-grid .home-card');
+            for (var i = 0; i < cards.length; i++) {
+                var key = cards[i].getAttribute('data-section');
+                if (activeFilter === 'all') {
+                    cards[i].style.display = '';
+                } else if (activeFilter === 'systems') {
+                    cards[i].style.display = (GROUPS.systems.indexOf(key) !== -1) ? '' : 'none';
+                } else if (activeFilter === 'foundations') {
+                    cards[i].style.display = (GROUPS.foundations.indexOf(key) !== -1) ? '' : 'none';
+                }
+            }
+        }
 
         function renderDashboard() {
             var keys = Object.keys(contentData);
@@ -772,7 +800,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                 var sec = contentData[key];
                 var emoji = sectionEmojis[key] || '\uD83D\uDCCB';
                 var cBase = colorBaseMap[sec.color] || 'gray';
-                html += '<div class="home-card" style="animation-delay:' + (i * 0.04) + 's;" onclick="switchTab(\'' + key + '\')">' +
+                html += '<div class="home-card" data-section="' + key + '" style="animation-delay:' + (i * 0.04) + 's;" onclick="switchTab(\'' + key + '\')">' +
                     '<div class="home-card-header" style="background-color:var(--' + cBase + '-100); color:var(--' + cBase + '-800);">' +
                         '<span class="home-card-emoji">' + emoji + '</span><span>' + sec.title + '</span></div>' +
                     '<div class="home-card-body"><div class="home-card-desc">' + sec.description + '</div>' +
@@ -782,6 +810,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                         '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); setTimeout(startQuiz, 100);">Quiz Me</button></div></div>';
             }
             document.getElementById('home-grid').innerHTML = html;
+            applyFilter();
         }
 
         /* Term highlighting: drugs, electrolytes, gases, icons */
@@ -1083,6 +1112,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             document.getElementById('section-view').style.display = 'none';
             document.getElementById('pdf-view').style.display = 'block';
             document.getElementById('home-back-btn').style.display = 'inline-block';
+            document.getElementById('nav-filters').style.display = 'none';
             if (!pdfConfigCache) {
                 document.getElementById('pdf-sidebar').innerHTML =
                     '<div class="pdf-loading">Loading PDF menu\u2026</div>';
@@ -1122,7 +1152,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                         var item = matches[m];
                         var plainFact = item.card.fact.replace(/<[^>]*>/g, '');
                         if (plainFact.length > 100) plainFact = plainFact.substring(0, 100) + '...';
-                        html += '<div style="padding:0.6rem 0.75rem; margin-bottom:0.4rem; border-radius:8px; border-left:4px solid var(--indigo-500); background:rgba(99,102,241,0.06); cursor:pointer;" '
+                        html += '<div class="search-result-item" '
                             + 'onclick="document.getElementById(\'global-search\').value=\'\'; doGlobalSearch(\'\'); switchTab(\'' + item.section + '\'); openCards(' + item.cardIdx + ');">'
                             + '<div style="font-weight:600; font-size:0.95rem;">' + item.emoji + ' ' + item.card.topic + '</div>'
                             + '<div style="font-size:0.82rem; opacity:0.7;">' + item.sectionTitle + ' &bull; ' + plainFact + '</div></div>';
