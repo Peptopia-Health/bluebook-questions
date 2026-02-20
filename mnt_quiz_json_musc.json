@@ -1,0 +1,1107 @@
+{
+  "section": "musc",
+  "title": "Musculoskeletal",
+  "questionCount": 100,
+  "questions": [
+    {
+      "q": "When fitting a patient for crutches, how much space should be between the axillary pad and the axilla?",
+      "options": [
+        "A. 2-3 finger widths (about 1.5-2 inches)",
+        "B. 4-5 finger widths (about 3-4 inches)",
+        "C. 1 finger width (about 0.5 inches)",
+        "D. No gap; the pad should rest firmly in the axilla"
+      ],
+      "correct": 0,
+      "rationale": "There should be a 2-3 finger width gap (approximately 1.5-2 inches) between the crutch pad and the axilla to prevent compression of the brachial plexus and axillary artery, which can cause nerve damage (crutch palsy) and impaired circulation."
+    },
+    {
+      "q": "When a patient is using crutches, the elbows should be flexed at approximately what degree?",
+      "options": [
+        "A. 15 degrees",
+        "B. 30 degrees",
+        "C. 45 degrees",
+        "D. 60 degrees"
+      ],
+      "correct": 1,
+      "rationale": "The elbows should be flexed at approximately 30 degrees when using crutches. This angle allows the arms to bear weight effectively while preventing strain on the shoulders and wrists. The patient's weight should be borne by the hands, not the axillae."
+    },
+    {
+      "q": "A 2-point crutch gait involves which movement pattern?",
+      "options": [
+        "A. Both crutches advance together, then both feet advance together",
+        "B. Right crutch and left foot advance simultaneously, then left crutch and right foot",
+        "C. One crutch advances, then the opposite foot, then the other crutch, then the other foot",
+        "D. Both crutches advance, then the patient swings both legs through"
+      ],
+      "correct": 1,
+      "rationale": "The 2-point gait requires partial weight bearing on both legs. The right crutch and left foot advance simultaneously, then the left crutch and right foot advance. This mimics a normal walking pattern and requires some coordination and balance."
+    },
+    {
+      "q": "Which crutch gait is used for patients who cannot bear weight on one leg?",
+      "options": [
+        "A. 2-point gait",
+        "B. 4-point gait",
+        "C. 3-point gait",
+        "D. Swing-to gait"
+      ],
+      "correct": 2,
+      "rationale": "The 3-point gait is used when a patient cannot bear weight on one extremity. Both crutches and the affected leg advance together, then the unaffected (strong) leg steps through. This gait requires good upper body strength and balance."
+    },
+    {
+      "q": "Which crutch gait is the most stable but slowest?",
+      "options": [
+        "A. 2-point gait",
+        "B. 3-point gait",
+        "C. Swing-through gait",
+        "D. 4-point gait"
+      ],
+      "correct": 3,
+      "rationale": "The 4-point gait is the most stable crutch gait because three points of support are on the floor at all times. The sequence is: right crutch, left foot, left crutch, right foot. It is the slowest gait but provides maximum stability. It requires weight bearing on both feet."
+    },
+    {
+      "q": "Which crutch gait is typically used by patients with paraplegia?",
+      "options": [
+        "A. 4-point gait",
+        "B. 2-point gait",
+        "C. Swing-through gait",
+        "D. 3-point gait"
+      ],
+      "correct": 2,
+      "rationale": "The swing-through gait is used by patients with paraplegia or those who have good upper body strength but cannot use their legs for walking. Both crutches are advanced, then the patient lifts and swings the body past the crutches. It is the fastest crutch gait."
+    },
+    {
+      "q": "When going up stairs with crutches, which foot leads?",
+      "options": [
+        "A. The affected (bad) foot goes up first",
+        "B. The unaffected (good) foot goes up first",
+        "C. Both feet go up simultaneously",
+        "D. The crutches go up first, then both feet"
+      ],
+      "correct": 1,
+      "rationale": "The mnemonic is 'Up with the good, down with the bad.' When ascending stairs, the strong (good/unaffected) leg goes up first, followed by the crutches and the weak (affected/bad) leg. This allows the stronger leg to lift the body weight upward."
+    },
+    {
+      "q": "On which side of the body should a cane be used?",
+      "options": [
+        "A. On the affected (weak) side",
+        "B. On the unaffected (strong) side",
+        "C. It does not matter which side",
+        "D. The cane should be held in the dominant hand"
+      ],
+      "correct": 1,
+      "rationale": "A cane is held on the strong (unaffected) side of the body. This provides a wider base of support and allows the cane to share the load with the affected leg during ambulation, reducing the forces on the weak side."
+    },
+    {
+      "q": "When walking with a cane, which is the correct sequence of movement?",
+      "options": [
+        "A. Move the cane, then the strong leg, then the weak leg",
+        "B. Move the cane and the weak leg forward together, then the strong leg",
+        "C. Move the strong leg, then the cane, then the weak leg",
+        "D. Move the weak leg, then the cane, then the strong leg"
+      ],
+      "correct": 1,
+      "rationale": "The correct sequence is to advance the cane and the affected (weak) leg simultaneously, then advance the unaffected (strong) leg. This provides support for the weaker side during the gait cycle and maintains balance."
+    },
+    {
+      "q": "What is the correct technique for using a standard walker?",
+      "options": [
+        "A. Lift the walker and move it forward, then step into the walker with both feet",
+        "B. Slide the walker forward while walking continuously",
+        "C. Move the walker and both feet at the same time",
+        "D. Step forward first, then move the walker to catch up"
+      ],
+      "correct": 0,
+      "rationale": "With a standard (pickup) walker, the patient lifts the walker and places it about one arm's length ahead, then steps into the walker, moving the weaker leg first and then the stronger leg. All four legs of the walker should touch the floor before stepping."
+    },
+    {
+      "q": "A patient using a walker asks where to place personal belongings. The nurse advises:",
+      "options": [
+        "A. Carry items in a backpack on your back",
+        "B. Hold items in your hand while gripping the walker",
+        "C. Tie a bag to the side of the walker",
+        "D. Place items in a basket attached to the front of the walker"
+      ],
+      "correct": 2,
+      "rationale": "Belongings should be tied to the sides of the walker using a bag or pouch. Carrying items in the hands interferes with gripping the walker safely. A heavy front basket can cause the walker to tip forward. Side attachment maintains balance and keeps hands free for safe ambulation."
+    },
+    {
+      "q": "A patient with a walker wants to stand from a chair. What is the correct technique?",
+      "options": [
+        "A. Pull up on the walker to stand",
+        "B. Push up from the chair armrests, then grasp the walker once standing",
+        "C. Have two people lift the patient to standing, then place the walker",
+        "D. Lean the walker against the wall and use a cane to stand"
+      ],
+      "correct": 1,
+      "rationale": "The patient should scoot to the edge of the chair, push up using the chair armrests (not the walker), and once standing and balanced, reach for the walker. Pulling up on the walker can cause it to tip forward, leading to a fall."
+    },
+    {
+      "q": "When handling a wet (newly applied) cast, the nurse should use:",
+      "options": [
+        "A. The fingertips for a firm grip",
+        "B. The palms of the hands only",
+        "C. Gloves with rubber grips",
+        "D. A towel wrapped around the cast"
+      ],
+      "correct": 1,
+      "rationale": "A wet cast should be handled with the palms of the hands only, never the fingertips. Fingertips can create pressure points or indentations in the wet plaster, which can cause skin breakdown and pressure injuries once the cast dries."
+    },
+    {
+      "q": "A patient reports a 'hot spot' felt on the outside of their cast. What does this indicate?",
+      "options": [
+        "A. Normal cast drying process",
+        "B. Possible infection underneath the cast",
+        "C. The cast is too tight",
+        "D. An allergic reaction to the casting material"
+      ],
+      "correct": 1,
+      "rationale": "A hot spot on a cast is a warning sign of possible infection underneath. The localized warmth is caused by inflammation and increased blood flow associated with an infectious process. The physician should be notified immediately for possible cast removal and assessment."
+    },
+    {
+      "q": "A foul odor is detected coming from a patient's cast. This finding suggests:",
+      "options": [
+        "A. Normal perspiration under the cast",
+        "B. The cast material is deteriorating",
+        "C. Infection under the cast",
+        "D. A skin rash from moisture"
+      ],
+      "correct": 2,
+      "rationale": "A foul odor emanating from a cast is a sign of possible infection underneath. It may indicate tissue necrosis, wound infection, or drainage of infected material. This is a concerning finding that requires prompt assessment, and the provider should be notified for possible cast window or removal."
+    },
+    {
+      "q": "The process of 'petaling' a cast involves:",
+      "options": [
+        "A. Decorating the cast with stickers for pediatric patients",
+        "B. Applying adhesive tape strips around the edges of the cast to prevent skin irritation",
+        "C. Cutting a window in the cast for wound assessment",
+        "D. Removing the cast in sections for a bivalve procedure"
+      ],
+      "correct": 1,
+      "rationale": "Petaling involves placing overlapping strips of adhesive tape (moleskin or adhesive tape) around the rough edges of a cast. This smooth border prevents the cast edges from irritating and breaking down the skin, particularly at the proximal and distal openings of the cast."
+    },
+    {
+      "q": "What is the earliest sign of compartment syndrome?",
+      "options": [
+        "A. Absence of peripheral pulses",
+        "B. Paralysis of the affected extremity",
+        "C. Pain unrelieved by analgesics, especially with passive stretch",
+        "D. Cyanosis of the affected limb"
+      ],
+      "correct": 2,
+      "rationale": "The earliest and most reliable sign of compartment syndrome is severe pain that is unrelieved by analgesics, particularly pain with passive stretch of the affected muscles. Pulselessness, paralysis, and pallor are late findings that indicate advanced compartment syndrome and possible irreversible damage."
+    },
+    {
+      "q": "Which principle is essential regarding traction weights?",
+      "options": [
+        "A. Weights should rest on the bed when the patient sleeps",
+        "B. Weights must hang freely and never rest on the floor or bed",
+        "C. Weights can be temporarily removed during bathing",
+        "D. The amount of weight can be adjusted by the nurse as needed"
+      ],
+      "correct": 1,
+      "rationale": "Traction weights must hang freely at all times and should never touch the bed, floor, or any other surface. If the weights rest on a surface, the traction is ineffective and the therapeutic pull on the bone or joint is interrupted. Weights are prescribed by the physician and should not be altered by the nurse."
+    },
+    {
+      "q": "Buck's traction (skin traction) is primarily used to:",
+      "options": [
+        "A. Immobilize a cervical spine injury",
+        "B. Reduce muscle spasms and provide temporary immobilization of a hip fracture",
+        "C. Permanently treat a femur fracture",
+        "D. Correct scoliosis in adolescents"
+      ],
+      "correct": 1,
+      "rationale": "Buck's traction is a type of skin traction applied to the lower extremity, primarily used to reduce muscle spasms and provide temporary immobilization, especially for hip fractures before surgical repair. It uses a foam boot or tape applied to the skin with a weight of 5-10 pounds."
+    },
+    {
+      "q": "A patient in skeletal traction is most at risk for which complication?",
+      "options": [
+        "A. Skin breakdown only",
+        "B. Osteomyelitis (bone infection)",
+        "C. Deep vein thrombosis only",
+        "D. Constipation only"
+      ],
+      "correct": 1,
+      "rationale": "Skeletal traction uses pins, wires, or tongs inserted directly into the bone, creating a portal of entry for microorganisms. This places the patient at significant risk for osteomyelitis (bone infection). Pin site care with sterile technique is essential to minimize infection risk."
+    },
+    {
+      "q": "Pin care for skeletal traction should be performed using:",
+      "options": [
+        "A. Clean technique with soap and water",
+        "B. Sterile technique as prescribed",
+        "C. Hydrogen peroxide without rinsing",
+        "D. No care is needed; the pin sites are self-cleaning"
+      ],
+      "correct": 1,
+      "rationale": "Skeletal pin care must be performed using sterile technique as prescribed by the healthcare provider. This typically involves cleaning pin sites with prescribed solutions (often chlorhexidine or saline) to prevent infection. Sterile technique reduces the risk of osteomyelitis."
+    },
+    {
+      "q": "A nurse is caring for a patient in skeletal traction. The patient asks to have the traction removed briefly to reposition. The nurse responds:",
+      "options": [
+        "A. 'I can remove it for 5 minutes while you get comfortable.'",
+        "B. 'Skeletal traction should never be released; let me help you reposition within the traction.'",
+        "C. 'I need a physician's order to remove it, but I will call now.'",
+        "D. 'Only skin traction can be removed; let me convert yours to skin traction first.'"
+      ],
+      "correct": 1,
+      "rationale": "Skeletal traction must never be removed or released by the nurse. The pins are surgically placed and the traction maintains bone alignment. Removal could cause displacement and further injury. Skin traction (like Buck's) may be intermittently removed per orders, but skeletal traction is continuous."
+    },
+    {
+      "q": "After a total hip replacement, the nurse should prevent which position?",
+      "options": [
+        "A. Abduction of the affected leg",
+        "B. Adduction of the affected leg past the midline",
+        "C. Elevation of the head of bed to 45 degrees",
+        "D. Slight external rotation of the affected leg"
+      ],
+      "correct": 1,
+      "rationale": "After a total hip replacement (THR), adduction past the midline must be avoided because it can cause dislocation of the prosthesis. An abduction pillow is placed between the legs to maintain the hip in an abducted position. Other restrictions include no hip flexion greater than 90 degrees and no internal rotation."
+    },
+    {
+      "q": "A patient who had a below-knee amputation (BKA) should be encouraged to lie in which position to prevent hip flexion contractures?",
+      "options": [
+        "A. Supine with the stump elevated on pillows indefinitely",
+        "B. Prone position for periods throughout the day",
+        "C. Side-lying on the affected side at all times",
+        "D. Semi-Fowler's position with the stump dependent"
+      ],
+      "correct": 1,
+      "rationale": "A BKA patient should lie in the prone position periodically to prevent hip flexion contractures. While the stump is elevated on a pillow for the first 24-48 hours to reduce edema, prolonged elevation promotes hip flexion contractures. Prone positioning stretches the hip flexors."
+    },
+    {
+      "q": "A patient reports pain in a limb that has been amputated. The nurse should:",
+      "options": [
+        "A. Explain that the limb is gone and pain cannot be real",
+        "B. Acknowledge the pain as real and treat it appropriately",
+        "C. Ignore the complaint as it is a psychological issue",
+        "D. Suggest the patient is seeking attention"
+      ],
+      "correct": 1,
+      "rationale": "Phantom limb pain is a real phenomenon caused by nerve signals from the residual limb being interpreted by the brain as coming from the missing limb. The nurse should acknowledge the pain as real and treat it with prescribed medications, mirror therapy, TENS, or other modalities. Never dismiss the patient's pain."
+    },
+    {
+      "q": "Which characteristic distinguishes rheumatoid arthritis (RA) from osteoarthritis (OA)?",
+      "options": [
+        "A. RA affects only one joint at a time",
+        "B. RA is a systemic, symmetric autoimmune disease",
+        "C. RA is caused by wear and tear on joints",
+        "D. RA never affects the hands"
+      ],
+      "correct": 1,
+      "rationale": "Rheumatoid arthritis (RA) is a systemic autoimmune disease characterized by symmetric joint involvement (both sides of the body). It involves inflammation of the synovial membrane and can affect multiple organ systems. OA is a degenerative, non-symmetric, non-systemic disease caused by joint wear and tear."
+    },
+    {
+      "q": "A patient with osteoarthritis reports that joint pain worsens at which time?",
+      "options": [
+        "A. In the morning before activity",
+        "B. After rest and inactivity",
+        "C. After activity and use of the joint",
+        "D. During sleep"
+      ],
+      "correct": 2,
+      "rationale": "Osteoarthritis (OA) pain characteristically worsens with activity and use of the affected joint and is relieved by rest. This is in contrast to RA, where morning stiffness is prominent and improves with activity. OA is a degenerative process where joint use causes increased friction and pain."
+    },
+    {
+      "q": "A patient with gout is educated to avoid which foods?",
+      "options": [
+        "A. Fresh fruits and vegetables",
+        "B. Whole grains and lean chicken",
+        "C. Organ meats, shellfish, and alcohol",
+        "D. Low-fat dairy products"
+      ],
+      "correct": 2,
+      "rationale": "Gout is caused by elevated uric acid levels and the deposition of urate crystals in joints. Foods high in purines (organ meats like liver and kidneys, shellfish, sardines, anchovies) and alcohol should be avoided as they increase uric acid production. Low-fat dairy and fresh fruits and vegetables are generally safe."
+    },
+    {
+      "q": "A patient with a long bone fracture develops sudden dyspnea, confusion, and a petechial rash on the chest. The nurse suspects:",
+      "options": [
+        "A. Pulmonary embolism",
+        "B. Fat embolism syndrome",
+        "C. Pneumothorax",
+        "D. Myocardial infarction"
+      ],
+      "correct": 1,
+      "rationale": "The classic triad of fat embolism syndrome is respiratory distress (dyspnea, tachypnea), neurological changes (confusion, restlessness), and a petechial rash (especially on the chest, axillae, and conjunctivae). Petechiae are the distinguishing sign that differentiates fat embolism from other pulmonary emergencies."
+    },
+    {
+      "q": "A patient with scoliosis is prescribed a Milwaukee brace. How many hours per day should it be worn?",
+      "options": [
+        "A. 8 hours (during sleep)",
+        "B. 12 hours per day",
+        "C. 23 hours per day",
+        "D. Only during physical activity"
+      ],
+      "correct": 2,
+      "rationale": "The Milwaukee brace for scoliosis must be worn 23 hours per day to be effective. It is removed for only 1 hour daily for bathing and skin care. Consistent wear is critical for preventing curve progression in adolescents with scoliosis. Compliance is essential for treatment success."
+    },
+    {
+      "q": "Kyphosis is characterized by:",
+      "options": [
+        "A. Lateral curvature of the spine",
+        "B. Excessive outward curvature of the thoracic spine (rounded upper back)",
+        "C. Excessive inward curvature of the lumbar spine",
+        "D. Complete straightening of the spinal curves"
+      ],
+      "correct": 1,
+      "rationale": "Kyphosis is an excessive outward curvature (convexity) of the thoracic spine, resulting in a rounded or 'hunchback' appearance. It can be caused by osteoporosis, compression fractures, poor posture, or Scheuermann's disease. It is different from scoliosis (lateral curvature) and lordosis (lumbar inward curvature)."
+    },
+    {
+      "q": "Lordosis is characterized by:",
+      "options": [
+        "A. Lateral curvature of the spine",
+        "B. Excessive outward curvature of the thoracic spine",
+        "C. Excessive inward curvature of the lumbar spine (swayback)",
+        "D. Twisting of the vertebral column"
+      ],
+      "correct": 2,
+      "rationale": "Lordosis is an excessive inward curvature (concavity) of the lumbar spine, commonly called 'swayback.' It results in a pronounced curve in the lower back. It can be seen in pregnancy, obesity, and certain neuromuscular conditions. It is distinct from kyphosis (thoracic curvature) and scoliosis (lateral curvature)."
+    },
+    {
+      "q": "The mnemonic for stair navigation with an assistive device is:",
+      "options": [
+        "A. 'Strong goes first, weak follows behind'",
+        "B. 'Up with the good, down with the bad'",
+        "C. 'Lead with the device, follow with the feet'",
+        "D. 'Bad foot up, good foot down'"
+      ],
+      "correct": 1,
+      "rationale": "'Up with the good, down with the bad' is the standard mnemonic for stair navigation. When going UP stairs, the strong (good) leg leads. When going DOWN stairs, the affected (bad) leg and the crutches or cane go first. This places the workload on the stronger extremity in both directions."
+    },
+    {
+      "q": "The handle of a cane should be at the level of the patient's:",
+      "options": [
+        "A. Iliac crest",
+        "B. Greater trochanter of the femur",
+        "C. Umbilicus",
+        "D. Anterior superior iliac spine"
+      ],
+      "correct": 1,
+      "rationale": "The handle of a cane should be at the level of the greater trochanter (hip joint), which allows approximately 30 degrees of elbow flexion when the cane is held. This height provides optimal leverage and support during ambulation. A cane that is too short or too tall leads to improper body mechanics."
+    },
+    {
+      "q": "Tennis balls are placed on walkers to:",
+      "options": [
+        "A. Make the walker more visible to others",
+        "B. Allow the walker to glide smoothly on floors and prevent catching on surfaces",
+        "C. Add extra weight for stability",
+        "D. Protect hardwood floors from damage"
+      ],
+      "correct": 1,
+      "rationale": "Tennis balls placed on the rear legs of a walker help the device glide smoothly across various floor surfaces and prevent the walker legs from catching on carpet or uneven surfaces. This makes advancing the walker easier, especially for patients with limited upper body strength."
+    },
+    {
+      "q": "A Continuous Passive Motion (CPM) machine is most commonly used after which surgery?",
+      "options": [
+        "A. Total hip replacement",
+        "B. Total knee replacement",
+        "C. Spinal fusion",
+        "D. Shoulder arthroscopy"
+      ],
+      "correct": 1,
+      "rationale": "A CPM machine is most commonly used after total knee replacement (TKR). It continuously moves the knee joint through a prescribed range of motion to prevent joint stiffness, reduce edema, promote healing, and decrease the risk of adhesion formation. The ROM is gradually increased per the surgeon's orders."
+    },
+    {
+      "q": "The standard treatment duration for IV antibiotics in osteomyelitis is:",
+      "options": [
+        "A. 7-10 days",
+        "B. 2-3 weeks",
+        "C. 4-6 weeks",
+        "D. 8-12 weeks"
+      ],
+      "correct": 2,
+      "rationale": "Osteomyelitis (bone infection) requires prolonged IV antibiotic therapy, typically 4-6 weeks, because bone has limited blood supply and antibiotics penetrate bone tissue slowly. A PICC line is often placed for long-term IV access. Inadequate treatment duration can lead to chronic osteomyelitis."
+    },
+    {
+      "q": "After a laminectomy, the nurse should use which technique to reposition the patient?",
+      "options": [
+        "A. Allow the patient to turn freely to either side",
+        "B. Log rolling to maintain spinal alignment",
+        "C. Have the patient sit up first, then turn",
+        "D. Turn using a draw sheet and pulling from the hips"
+      ],
+      "correct": 1,
+      "rationale": "After a laminectomy, the patient must be log rolled (turned as a unit) to maintain proper spinal alignment and prevent twisting or flexion of the operative site. This involves turning the shoulders and hips simultaneously with support. A pillow is placed between the legs during side-lying."
+    },
+    {
+      "q": "After a cervical laminectomy, the nurse's priority assessment is:",
+      "options": [
+        "A. Lower extremity strength and bowel function",
+        "B. Respiratory status and upper extremity neurological function",
+        "C. Urinary output and lower extremity sensation",
+        "D. Wound drainage and incision integrity"
+      ],
+      "correct": 1,
+      "rationale": "After cervical laminectomy, the priority is assessing respiratory status (because edema near the cervical spinal cord can compromise the phrenic nerve and respiratory function) and upper extremity neurological function (grip strength, sensation, movement). Airway compromise is the most life-threatening complication."
+    },
+    {
+      "q": "After a lumbar laminectomy, the nurse should prioritize assessing:",
+      "options": [
+        "A. Respiratory function and arm strength",
+        "B. Cranial nerve function",
+        "C. Bladder function and lower extremity sensation/movement",
+        "D. Swallowing ability"
+      ],
+      "correct": 2,
+      "rationale": "After a lumbar laminectomy, the priority assessment is bladder function (voiding ability, urinary retention) and lower extremity neurological function (sensation, movement, strength in legs and feet). The lumbar nerves innervate the bladder and lower extremities, and surgical edema or nerve damage can affect these functions."
+    },
+    {
+      "q": "After a thoracic laminectomy, the nurse should prioritize monitoring:",
+      "options": [
+        "A. Hand grip strength and finger movement",
+        "B. Ability to cough, deep breathe, and bowel function",
+        "C. Facial symmetry and speech",
+        "D. Swallowing and neck range of motion"
+      ],
+      "correct": 1,
+      "rationale": "After a thoracic laminectomy, the priority is monitoring the patient's ability to cough and deep breathe (because thoracic nerve involvement can affect intercostal muscles and respiratory effort) and bowel function (because thoracic nerves influence bowel motility). Pain management supports effective pulmonary hygiene."
+    },
+    {
+      "q": "After a laminectomy, the patient should be instructed to avoid:",
+      "options": [
+        "A. Lying flat on the back",
+        "B. Prolonged sitting",
+        "C. Walking short distances",
+        "D. Sleeping on the side with a pillow between the knees"
+      ],
+      "correct": 1,
+      "rationale": "After a laminectomy, prolonged sitting is discouraged because it increases pressure on the operative spinal area and can stress the surgical site. Patients should avoid sitting for more than 30 minutes at a time. Walking, lying flat, and side-lying with proper support are encouraged."
+    },
+    {
+      "q": "A spiral fracture in a child should alert the nurse to suspect:",
+      "options": [
+        "A. Osteogenesis imperfecta",
+        "B. Child abuse",
+        "C. Osteoporosis",
+        "D. Vitamin D deficiency"
+      ],
+      "correct": 1,
+      "rationale": "A spiral fracture in a child is a red flag for possible child abuse. Spiral fractures are caused by twisting forces, which are unlikely to occur from normal childhood play or accidental falls. The nurse must report suspected abuse to the appropriate authorities as mandated by law."
+    },
+    {
+      "q": "A greenstick fracture is most commonly seen in which population?",
+      "options": [
+        "A. Elderly patients with osteoporosis",
+        "B. Children, due to their softer, more flexible bones",
+        "C. Athletes with repetitive stress injuries",
+        "D. Post-menopausal women"
+      ],
+      "correct": 1,
+      "rationale": "Greenstick fractures are incomplete fractures where the bone bends and partially breaks, similar to bending a green twig. They occur primarily in children because their bones are softer, more porous, and more flexible than adult bones. The bone breaks on one side and bends on the other."
+    },
+    {
+      "q": "The priority nursing intervention for a patient with an open (compound) fracture is:",
+      "options": [
+        "A. Applying ice to the fracture site",
+        "B. Covering the wound with a sterile dressing",
+        "C. Splinting the fracture in the position found",
+        "D. Administering pain medication"
+      ],
+      "correct": 1,
+      "rationale": "An open (compound) fracture has bone protruding through the skin, creating an immediate risk for infection and contamination. The priority is covering the wound with a sterile dressing to minimize infection risk. Do not attempt to push the bone back in. Immobilization and pain management follow."
+    },
+    {
+      "q": "A patient in a halo traction device should always have which safety equipment at the bedside?",
+      "options": [
+        "A. An extra set of halo pins",
+        "B. A wrench or screwdriver to remove the vest bolts in an emergency",
+        "C. Wire cutters",
+        "D. A cervical collar as a backup"
+      ],
+      "correct": 1,
+      "rationale": "A wrench (or Allen wrench/screwdriver) must be kept at the bedside and taped to the front of the halo vest at all times. In a cardiac or respiratory emergency requiring CPR, the anterior vest must be rapidly removed to perform chest compressions. The posterior vest remains in place to maintain cervical stability."
+    },
+    {
+      "q": "Phalen's test is used to assess for:",
+      "options": [
+        "A. Rotator cuff tear",
+        "B. Carpal tunnel syndrome",
+        "C. Meniscal tear of the knee",
+        "D. Thoracic outlet syndrome"
+      ],
+      "correct": 1,
+      "rationale": "Phalen's test evaluates for carpal tunnel syndrome. The patient flexes both wrists maximally and holds the dorsal surfaces of the hands together for 60 seconds. A positive test produces numbness, tingling, or pain in the distribution of the median nerve (thumb, index, middle, and half of the ring finger)."
+    },
+    {
+      "q": "A patient with Paget's disease typically presents with:",
+      "options": [
+        "A. Small, brittle bones that fracture easily",
+        "B. An enlarged skull, bone pain, and bowed legs",
+        "C. Loss of bone density without structural changes",
+        "D. Symmetrical joint inflammation"
+      ],
+      "correct": 1,
+      "rationale": "Paget's disease is a chronic bone disorder characterized by excessive bone remodeling, leading to enlarged, deformed, and weakened bones. Classic features include an enlarged skull (may require a larger hat size), bone pain, bowed legs (tibiae), and increased risk of pathological fractures."
+    },
+    {
+      "q": "Ankylosing spondylitis primarily affects which structure?",
+      "options": [
+        "A. Peripheral joints of the hands and feet",
+        "B. The spine and sacroiliac joints",
+        "C. The hip joint only",
+        "D. Soft tissue and muscles"
+      ],
+      "correct": 1,
+      "rationale": "Ankylosing spondylitis is a chronic inflammatory disease that primarily affects the spine and sacroiliac joints, leading to progressive stiffness and eventual fusion (ankylosis) of the vertebral column. It is more common in young men and is associated with HLA-B27. A 'bamboo spine' appearance may be seen on X-ray."
+    },
+    {
+      "q": "The 5 P's of neurovascular assessment are:",
+      "options": [
+        "A. Pain, Paresthesia, Pulse, Pallor, Paralysis",
+        "B. Pulse, Pressure, Pain, Perfusion, Parasthesia",
+        "C. Pain, Pulse, Pressure, Perspiration, Pallor",
+        "D. Paralysis, Perfusion, Pulse, Pressure, Palpation"
+      ],
+      "correct": 0,
+      "rationale": "The 5 P's of neurovascular assessment are Pain, Paresthesia (numbness/tingling), Pulse (diminished or absent), Pallor (pale or cyanotic), and Paralysis (inability to move). These are critical to assess in patients with fractures, casts, or compartment syndrome. Abnormal findings should be reported promptly."
+    },
+    {
+      "q": "The definitive treatment for compartment syndrome is:",
+      "options": [
+        "A. Elevation and ice application",
+        "B. Fasciotomy (surgical release of the fascia)",
+        "C. Increased analgesic medication",
+        "D. Application of a compression bandage"
+      ],
+      "correct": 1,
+      "rationale": "A fasciotomy is the definitive treatment for compartment syndrome. This surgical procedure involves cutting open the fascia to relieve the pressure within the muscle compartment and restore blood flow. Delay in treatment can result in permanent damage to nerves and vessels, muscle necrosis, and potential limb loss. Compression bandages are contraindicated."
+    },
+    {
+      "q": "Fat embolism syndrome typically occurs within what time frame after a long bone fracture?",
+      "options": [
+        "A. Immediately at the time of injury",
+        "B. 24-72 hours after the fracture",
+        "C. 7-10 days after the fracture",
+        "D. 2-4 weeks after the fracture"
+      ],
+      "correct": 1,
+      "rationale": "Fat embolism syndrome typically develops 24-72 hours after a long bone fracture (especially the femur or pelvis). Fat globules from the bone marrow enter the bloodstream and travel to the lungs and other organs. Early signs include hypoxia, tachypnea, confusion, and the hallmark petechial rash on the chest and axillae."
+    },
+    {
+      "q": "Which nursing intervention is most important to prevent deep vein thrombosis (DVT) after orthopedic surgery?",
+      "options": [
+        "A. Keeping the patient on strict bed rest for 72 hours",
+        "B. Encouraging early ambulation, leg exercises, and applying sequential compression devices",
+        "C. Applying warm compresses to the lower extremities",
+        "D. Restricting fluid intake to prevent edema"
+      ],
+      "correct": 1,
+      "rationale": "DVT prevention after orthopedic surgery includes early ambulation, active leg exercises (ankle pumps, quadriceps sets), wearing sequential compression devices (SCDs) or antiembolism stockings, and adequate hydration. Immobility increases the risk of DVT due to venous stasis. Anticoagulant prophylaxis is also prescribed."
+    },
+    {
+      "q": "When comparing heparin and warfarin for DVT prophylaxis, which statement is correct?",
+      "options": [
+        "A. Heparin is given orally and monitored with INR",
+        "B. Warfarin takes 3-5 days to reach therapeutic levels and is monitored with INR/PT",
+        "C. Heparin and warfarin both work immediately",
+        "D. Warfarin is the preferred anticoagulant for immediate post-op use"
+      ],
+      "correct": 1,
+      "rationale": "Warfarin (Coumadin) takes 3-5 days to reach therapeutic levels and is monitored with INR (goal 2-3) and PT. Heparin acts immediately and is monitored with aPTT. Heparin is used initially post-operatively for immediate anticoagulation, while warfarin is started for long-term prophylaxis. They are often bridged together."
+    },
+    {
+      "q": "When elevating an injured extremity, it should be positioned:",
+      "options": [
+        "A. At the level of the heart",
+        "B. Above the level of the heart",
+        "C. Below the level of the heart",
+        "D. In a dependent position"
+      ],
+      "correct": 1,
+      "rationale": "An injured extremity should be elevated above the level of the heart to promote venous return and reduce swelling (edema). Gravity assists fluid drainage from the injured area back toward the central circulation. This is a key component of the RICE protocol for acute musculoskeletal injuries."
+    },
+    {
+      "q": "The RICE protocol for acute musculoskeletal injuries stands for:",
+      "options": [
+        "A. Rest, Immobilize, Compress, Evaluate",
+        "B. Rest, Ice, Compression, Elevation",
+        "C. Reduce, Ice, Cast, Elevate",
+        "D. Rest, Irrigate, Cover, Examine"
+      ],
+      "correct": 1,
+      "rationale": "RICE stands for Rest (avoid further injury), Ice (apply cold for 20 minutes on/20 minutes off to reduce swelling), Compression (apply elastic bandage to control edema), and Elevation (raise the injured extremity above the heart). This is the standard first-aid treatment for acute sprains, strains, and soft tissue injuries."
+    },
+    {
+      "q": "Which patient is at greatest risk for developing osteoporosis?",
+      "options": [
+        "A. A 25-year-old male athlete",
+        "B. A 65-year-old postmenopausal Caucasian woman with a sedentary lifestyle",
+        "C. A 40-year-old premenopausal woman who exercises daily",
+        "D. A 50-year-old man who takes calcium supplements"
+      ],
+      "correct": 1,
+      "rationale": "Risk factors for osteoporosis include advanced age, female sex, postmenopausal status (decreased estrogen), Caucasian or Asian ethnicity, sedentary lifestyle, low calcium/vitamin D intake, thin body frame, smoking, alcohol use, and family history. The postmenopausal Caucasian woman with sedentary lifestyle has the most risk factors."
+    },
+    {
+      "q": "A patient prescribed alendronate (Fosamax) for osteoporosis should be instructed to:",
+      "options": [
+        "A. Take it at bedtime with a snack",
+        "B. Take it first thing in the morning with a full glass of water and remain upright for 30 minutes",
+        "C. Take it with milk to enhance calcium absorption",
+        "D. Crush the tablet and mix with food if difficulty swallowing"
+      ],
+      "correct": 1,
+      "rationale": "Bisphosphonates like alendronate (Fosamax) must be taken first thing in the morning on an empty stomach with a full glass of plain water (no other beverages). The patient must remain upright (sitting or standing) for at least 30 minutes after taking it to prevent esophageal irritation and ulceration. Do not crush the tablet."
+    },
+    {
+      "q": "Which nutrients are most important for maintaining bone health and preventing osteoporosis?",
+      "options": [
+        "A. Iron and Vitamin B12",
+        "B. Calcium and Vitamin D",
+        "C. Potassium and Magnesium",
+        "D. Zinc and Vitamin C"
+      ],
+      "correct": 1,
+      "rationale": "Calcium and Vitamin D are essential for bone health. Calcium is the primary mineral component of bone. Vitamin D is necessary for calcium absorption from the intestines. Adults need 1000-1200 mg of calcium and 600-800 IU of Vitamin D daily. Weight-bearing exercise also promotes bone density."
+    },
+    {
+      "q": "A patient with systemic lupus erythematosus (SLE) presents with a butterfly-shaped rash across the face. The nurse educates the patient to:",
+      "options": [
+        "A. Apply warm compresses to the rash",
+        "B. Avoid sunlight exposure and use sunscreen with high SPF",
+        "C. Increase sun exposure to boost Vitamin D",
+        "D. Apply corticosteroid cream directly to the rash without physician orders"
+      ],
+      "correct": 1,
+      "rationale": "SLE (Lupus) is characterized by a butterfly (malar) rash across the cheeks and nose. Sunlight exposure can trigger flares and worsen symptoms. Patients should avoid direct sunlight, wear protective clothing, and use high-SPF sunscreen. Lupus is a chronic autoimmune disease that affects multiple organ systems."
+    },
+    {
+      "q": "Which finding is most characteristic of fibromyalgia?",
+      "options": [
+        "A. Joint inflammation with visible swelling and redness",
+        "B. Widespread musculoskeletal pain with multiple tender points, fatigue, and sleep disturbances",
+        "C. Elevated uric acid levels and tophi formation",
+        "D. Bone deformity visible on X-ray"
+      ],
+      "correct": 1,
+      "rationale": "Fibromyalgia is characterized by chronic, widespread musculoskeletal pain, multiple tender points (11 of 18 trigger points), fatigue, sleep disturbances, and cognitive difficulties ('fibro fog'). There is no joint inflammation, deformity, or abnormal lab findings. Diagnosis is clinical. Treatment includes exercise, stress management, and medications like duloxetine or pregabalin."
+    },
+    {
+      "q": "After total hip replacement (THR), which position restriction is most critical to teach the patient?",
+      "options": [
+        "A. Avoid all weight bearing for 6 months",
+        "B. Do not flex the hip beyond 90 degrees or adduct past midline",
+        "C. Keep the hip in constant internal rotation",
+        "D. Avoid any hip extension"
+      ],
+      "correct": 1,
+      "rationale": "After THR, patients must avoid flexing the hip beyond 90 degrees, adducting past midline, and internally rotating the affected leg. These movements can cause dislocation of the prosthetic hip. Patients should use an abduction pillow, a raised toilet seat, and avoid bending to pick up objects from the floor."
+    },
+    {
+      "q": "After a total hip replacement, an abduction pillow is placed between the patient's legs to:",
+      "options": [
+        "A. Reduce pain in the operative leg",
+        "B. Prevent adduction and potential dislocation of the hip prosthesis",
+        "C. Improve blood circulation to the lower extremities",
+        "D. Prevent the patient from moving in bed"
+      ],
+      "correct": 1,
+      "rationale": "An abduction pillow (wedge pillow) is placed between the legs after THR to maintain the hip in an abducted position and prevent adduction past midline, which could dislocate the new hip prosthesis. The pillow is used during rest and when repositioning the patient."
+    },
+    {
+      "q": "After a total hip replacement, the nurse should ensure the patient uses:",
+      "options": [
+        "A. A standard low toilet seat for easier transfers",
+        "B. A raised (elevated) toilet seat to prevent hip flexion beyond 90 degrees",
+        "C. A bedside commode only for the first 24 hours",
+        "D. A bedpan exclusively for the first 2 weeks"
+      ],
+      "correct": 1,
+      "rationale": "A raised toilet seat is essential after THR to prevent the hip from flexing beyond 90 degrees during toileting. Standard toilet seats are too low and would require excessive hip flexion. The raised seat should be used for 6-8 weeks post-operatively or as directed by the surgeon."
+    },
+    {
+      "q": "After a total hip replacement, how should the nurse reposition the patient in bed?",
+      "options": [
+        "A. Have the patient turn independently to the unaffected side",
+        "B. Use log rolling with an abduction pillow between the legs",
+        "C. Allow free movement in bed as tolerated",
+        "D. Keep the patient in supine position only for 72 hours"
+      ],
+      "correct": 1,
+      "rationale": "After THR, the patient should be repositioned using log rolling technique with an abduction pillow between the legs to maintain hip alignment and prevent adduction or rotation of the operative hip. Turning is typically done toward the unaffected side with the pillow in place."
+    },
+    {
+      "q": "A simple (closed) fracture is defined as:",
+      "options": [
+        "A. A fracture where the bone pierces the skin",
+        "B. A fracture where the skin remains intact over the fracture site",
+        "C. A fracture involving multiple bone fragments",
+        "D. A fracture caused by a disease process"
+      ],
+      "correct": 1,
+      "rationale": "A simple (closed) fracture means the bone is broken but the skin over the fracture site remains intact. This contrasts with a compound (open) fracture where bone protrudes through the skin. A comminuted fracture involves bone shattered into multiple fragments. A pathological fracture occurs through diseased bone."
+    },
+    {
+      "q": "The key principle of traction that ensures effectiveness is:",
+      "options": [
+        "A. Applying as much weight as possible for faster healing",
+        "B. Maintaining proper body alignment and continuous counter-traction",
+        "C. Restricting all patient movement",
+        "D. Removing traction for meals and hygiene"
+      ],
+      "correct": 1,
+      "rationale": "Effective traction requires maintaining proper body alignment, ensuring continuous counter-traction (the patient's body weight against the pull of the traction), keeping weights hanging freely, and maintaining the pull in line with the bone. The patient's body acts as counter-traction, so positioning is critical."
+    },
+    {
+      "q": "Which statement correctly differentiates skin traction from skeletal traction?",
+      "options": [
+        "A. Skin traction uses pins inserted into bone; skeletal uses wraps on skin",
+        "B. Skin traction applies pull through adhesive strips, wraps, or boots on the skin; skeletal traction uses pins or wires through bone",
+        "C. Both types use the same mechanism of pull",
+        "D. Skin traction can support heavier weights than skeletal traction"
+      ],
+      "correct": 1,
+      "rationale": "Skin traction applies pull through the skin using adhesive strips, elastic wraps, or foam boots (e.g., Buck's traction, 5-10 lbs max). Skeletal traction applies pull directly through bone using surgically inserted pins, wires, or tongs (can support greater weight). Skeletal traction carries a higher infection risk due to pin insertion sites."
+    },
+    {
+      "q": "A patient with a T4 spinal cord injury would most likely experience:",
+      "options": [
+        "A. Loss of hand function only",
+        "B. Paraplegia with loss of sensation and motor function below the injury level",
+        "C. Quadriplegia requiring mechanical ventilation",
+        "D. Loss of bowel function only"
+      ],
+      "correct": 1,
+      "rationale": "A T4 (thoracic) spinal cord injury results in paraplegia - loss of motor and sensory function in the lower extremities and trunk below the level of injury. Upper extremity function is preserved. Injuries above C4 result in quadriplegia and may require ventilatory support since C3-C5 innervates the diaphragm."
+    },
+    {
+      "q": "Autonomic dysreflexia is a life-threatening complication seen in patients with spinal cord injuries above which level?",
+      "options": [
+        "A. T10",
+        "B. T6",
+        "C. L1",
+        "D. S1"
+      ],
+      "correct": 1,
+      "rationale": "Autonomic dysreflexia occurs in patients with spinal cord injuries at T6 or above. It is triggered by a noxious stimulus below the level of injury (commonly a full bladder or impacted bowel). Symptoms include severe hypertension, pounding headache, bradycardia, flushing, and diaphoresis above the lesion level. It is a medical emergency."
+    },
+    {
+      "q": "Spinal shock is characterized by:",
+      "options": [
+        "A. Hypertension and tachycardia below the injury",
+        "B. Complete loss of all reflex, motor, sensory, and autonomic activity below the level of the lesion",
+        "C. Hyperreflexia and spasticity immediately after injury",
+        "D. Pain and paresthesia at the injury site only"
+      ],
+      "correct": 1,
+      "rationale": "Spinal shock is the complete loss of all reflex, motor, sensory, and autonomic activity below the level of the spinal cord lesion. It occurs immediately after injury and can last days to weeks. During this period, the patient has flaccid paralysis, loss of reflexes, loss of bowel/bladder function, and loss of sympathetic tone. The true extent of injury cannot be determined until spinal shock resolves."
+    },
+    {
+      "q": "A patient with a C4 spinal cord injury requires priority monitoring of which body system?",
+      "options": [
+        "A. Gastrointestinal system",
+        "B. Respiratory system, as C3-C5 innervates the diaphragm",
+        "C. Cardiovascular system only",
+        "D. Renal system"
+      ],
+      "correct": 1,
+      "rationale": "C3-C5 innervates the diaphragm via the phrenic nerve. A C4 injury can compromise diaphragmatic function and cause respiratory failure. Respiratory assessment is the top priority for patients with cervical spinal cord injuries. Mechanical ventilation may be necessary. It takes approximately one week to determine prognosis."
+    },
+    {
+      "q": "The maximum weight for Buck's traction (skin traction) is typically:",
+      "options": [
+        "A. 15-20 pounds",
+        "B. 5-10 pounds",
+        "C. 25-30 pounds",
+        "D. 1-2 pounds"
+      ],
+      "correct": 1,
+      "rationale": "Buck's traction (skin traction) typically uses 5-10 pounds of weight. Exceeding this amount can cause skin breakdown, blistering, and circulatory impairment because the pull is transmitted through the skin. Greater weights require skeletal traction, which applies force directly through the bone."
+    },
+    {
+      "q": "A patient in a halo vest asks about daily care. The nurse instructs:",
+      "options": [
+        "A. Loosen the vest daily for skin care and to clean under the vest liner",
+        "B. Clean pin sites as prescribed, check pin tightness, inspect skin under the vest, and never remove the vest",
+        "C. The vest can be removed for showering as long as a cervical collar is worn",
+        "D. Pin sites do not require any cleaning"
+      ],
+      "correct": 1,
+      "rationale": "Halo vest care includes cleaning pin sites as prescribed (to prevent infection), checking pin tightness (loosened pins should be reported), inspecting skin under the vest for breakdown (use a flashlight), and keeping the vest liner dry. The vest should never be removed. The wrench must stay attached to the vest at all times for emergency removal."
+    },
+    {
+      "q": "Using the Rule of 9s for an adult, the anterior trunk accounts for what percentage of total body surface area (TBSA)?",
+      "options": [
+        "A. 9%",
+        "B. 18%",
+        "C. 27%",
+        "D. 36%"
+      ],
+      "correct": 1,
+      "rationale": "The Rule of 9s divides the adult body into sections for burn TBSA estimation: Head/neck = 9%, each upper extremity = 9%, anterior trunk = 18%, posterior trunk = 18%, each lower extremity = 18%, and perineum = 1%. The anterior trunk includes the chest and abdomen, totaling 18% TBSA."
+    },
+    {
+      "q": "A second-degree burn involves which skin layers?",
+      "options": [
+        "A. Epidermis only",
+        "B. Epidermis and dermis (partial thickness)",
+        "C. Epidermis, dermis, and subcutaneous tissue",
+        "D. Only the outermost layer of the epidermis"
+      ],
+      "correct": 1,
+      "rationale": "A second-degree burn (deep partial thickness) involves both the epidermis and the dermis. It presents with blisters, moist and weeping surface, severe pain, and pink-to-red color. First-degree burns involve only the epidermis. Third-degree (full thickness) burns extend through the epidermis, dermis, and into the subcutaneous tissue."
+    },
+    {
+      "q": "A burn patient presents with singed nasal hair and soot around the mouth. The nurse's priority concern is:",
+      "options": [
+        "A. Facial scarring",
+        "B. Smoke inhalation injury and potential airway compromise",
+        "C. Oral cavity burns only",
+        "D. Eye damage from heat exposure"
+      ],
+      "correct": 1,
+      "rationale": "Singed nasal hair and circumoral (around the mouth) soot or burns are classic indicators of smoke inhalation injury. This can cause progressive airway edema, leading to airway obstruction. Intubation equipment should be at bedside, and the patient should be monitored for hoarseness, stridor, dyspnea, and wheezing. Airway management is the priority."
+    },
+    {
+      "q": "The primary concern in the care of a burn patient is:",
+      "options": [
+        "A. Pain management",
+        "B. Infection prevention",
+        "C. Cosmetic appearance",
+        "D. Nutritional support"
+      ],
+      "correct": 1,
+      "rationale": "Infection is the primary concern and the leading cause of death in burn patients. The loss of the skin barrier exposes underlying tissue to microorganisms. Strict aseptic technique, protective isolation, wound care, and monitoring for signs of infection (fever, increased WBC, wound changes) are essential. All other concerns are important but secondary."
+    },
+    {
+      "q": "Fluid resuscitation for major burns is calculated using the Parkland (Baxter) formula. Which fluid and calculation is used?",
+      "options": [
+        "A. Normal saline: 2 mL x body weight (kg) x %TBSA burned",
+        "B. Lactated Ringer's: 4 mL x body weight (kg) x %TBSA burned",
+        "C. D5W: 4 mL x body weight (kg) x %TBSA burned",
+        "D. Albumin: 2 mL x body weight (kg) x %TBSA burned"
+      ],
+      "correct": 1,
+      "rationale": "The Parkland formula is: 4 mL x patient's weight (kg) x %TBSA burned = total fluid for first 24 hours. Lactated Ringer's solution is used. Half is given in the first 8 hours (from time of burn, not from hospital arrival), and the remaining half over the next 16 hours. Massive IV volumes are needed because fluid shifts to interstitial spaces can cause hypovolemic shock."
+    },
+    {
+      "q": "A burn patient's lab work shows a potassium level of 6.2 mEq/L. This hyperkalemia is caused by:",
+      "options": [
+        "A. Excessive IV potassium administration",
+        "B. Massive cellular damage releasing intracellular potassium into the bloodstream",
+        "C. Renal failure unrelated to the burns",
+        "D. Metabolic alkalosis from the burn injury"
+      ],
+      "correct": 1,
+      "rationale": "Burns cause massive cellular destruction, releasing intracellular potassium into the extracellular fluid and bloodstream, resulting in hyperkalemia (HyperK+). Normal intracellular potassium concentration is much higher than extracellular. Hyperkalemia can cause life-threatening cardiac dysrhythmias and must be treated promptly with cardiac monitoring."
+    },
+    {
+      "q": "Before performing a dressing change on a burn patient, the nurse should first:",
+      "options": [
+        "A. Soak the old dressing with sterile saline",
+        "B. Administer prescribed analgesic medication and allow time for it to take effect",
+        "C. Apply topical antibiotic to the surrounding skin",
+        "D. Have the patient perform range-of-motion exercises"
+      ],
+      "correct": 1,
+      "rationale": "Burn dressing changes are extremely painful procedures. The nurse should administer prescribed pain medication 30 minutes before the dressing change (or per medication onset time) to ensure adequate pain control. This is a fundamental principle of burn care that improves patient comfort and cooperation during the procedure."
+    },
+    {
+      "q": "After a burn autograft procedure, the grafted area should be:",
+      "options": [
+        "A. Left open to air for faster healing",
+        "B. Elevated and immobilized for 3-7 days to prevent graft displacement",
+        "C. Exercised immediately to prevent contracture",
+        "D. Wrapped tightly with an elastic bandage and dependent"
+      ],
+      "correct": 1,
+      "rationale": "After a burn autograft, the grafted area must be elevated and immobilized for 3-7 days to promote graft adherence (take) and prevent shearing forces that could dislodge the graft. Movement and exercise are gradually resumed after the graft has stabilized. Graft loss due to movement or infection is a significant concern."
+    },
+    {
+      "q": "Which comparison between osteoarthritis (OA) and rheumatoid arthritis (RA) is correct?",
+      "options": [
+        "A. OA is systemic and autoimmune; RA is localized and degenerative",
+        "B. OA involves asymmetric wear-and-tear degeneration; RA involves symmetric autoimmune joint inflammation",
+        "C. Both conditions present identically and require the same treatment",
+        "D. OA has positive rheumatoid factor; RA does not"
+      ],
+      "correct": 1,
+      "rationale": "OA is a degenerative, non-inflammatory, asymmetric joint disease caused by wear and tear on cartilage. RA is a systemic, autoimmune, inflammatory disease with symmetric joint involvement. OA is worse with activity; RA has morning stiffness improved by activity. RA can have positive rheumatoid factor and ESR elevation; OA labs are typically normal."
+    },
+    {
+      "q": "Morning stiffness in rheumatoid arthritis is typically relieved by:",
+      "options": [
+        "A. Rest and immobility",
+        "B. Activity and movement after initial warm-up",
+        "C. Application of ice packs",
+        "D. Avoiding all joint movement for the day"
+      ],
+      "correct": 1,
+      "rationale": "RA morning stiffness typically lasts more than 30 minutes (often 1 hour or more) and is relieved by activity and gentle movement. Warm showers or warm compresses before activity can help. This is opposite to OA, where pain worsens with activity and improves with rest. The distinction is an important NCLEX concept."
+    },
+    {
+      "q": "Which medications are used to treat acute gout attacks?",
+      "options": [
+        "A. Acetaminophen and muscle relaxants",
+        "B. Colchicine and NSAIDs for acute attacks; Allopurinol for chronic prevention",
+        "C. Opioids and corticosteroids only",
+        "D. Methotrexate and biologics"
+      ],
+      "correct": 1,
+      "rationale": "Acute gout attacks are treated with Colchicine (reduces inflammation by inhibiting leukocyte migration), NSAIDs (indomethacin), and sometimes corticosteroids. Allopurinol (a xanthine oxidase inhibitor) reduces uric acid production and is used for chronic gout prevention but should NOT be started during an acute attack as it can worsen symptoms."
+    },
+    {
+      "q": "Gout is caused by the deposition of which substance in the joints?",
+      "options": [
+        "A. Calcium pyrophosphate crystals",
+        "B. Monosodium urate (uric acid) crystals",
+        "C. Cholesterol crystals",
+        "D. Calcium oxalate crystals"
+      ],
+      "correct": 1,
+      "rationale": "Gout is caused by hyperuricemia and the deposition of monosodium urate (uric acid) crystals in joints and surrounding tissue. The crystals trigger an intense inflammatory response. The most commonly affected joint is the great toe (podagra). Risk factors include high-purine diet, alcohol, obesity, and renal insufficiency."
+    },
+    {
+      "q": "A patient with a hip fracture typically presents with the affected leg in what position?",
+      "options": [
+        "A. Internally rotated and lengthened",
+        "B. Shortened and externally rotated",
+        "C. Extended and adducted",
+        "D. Flexed and internally rotated"
+      ],
+      "correct": 1,
+      "rationale": "Classic presentation of a hip fracture includes a shortened and externally rotated affected leg, with severe pain in the hip/groin area and inability to bear weight. The shortening occurs because muscle spasms pull the fractured bone segments together. This presentation helps differentiate hip fractures from other injuries."
+    },
+    {
+      "q": "How often should neurovascular checks be performed on an extremity with a new cast or after orthopedic surgery?",
+      "options": [
+        "A. Once per shift",
+        "B. Every 1-2 hours initially, then as prescribed",
+        "C. Every 8 hours",
+        "D. Only when the patient reports symptoms"
+      ],
+      "correct": 1,
+      "rationale": "Neurovascular checks (5 P's: Pain, Pulse, Pallor, Paresthesia, Paralysis) should be performed every 1-2 hours initially after cast application, surgery, or injury, then frequency may decrease as prescribed. Frequent monitoring allows early detection of compartment syndrome, circulatory impairment, or nerve compression before irreversible damage occurs."
+    },
+    {
+      "q": "A patient in a new cast should be taught to report which finding immediately?",
+      "options": [
+        "A. Mild itching under the cast",
+        "B. Numbness, tingling, increased pain, color change, or inability to move fingers/toes",
+        "C. The cast feeling warm during the drying process",
+        "D. Slight swelling in the morning that resolves with elevation"
+      ],
+      "correct": 1,
+      "rationale": "Patients should immediately report signs of neurovascular compromise: numbness, tingling, increased or unrelieved pain, color changes (pallor, cyanosis), coolness, inability to move digits, or swelling not relieved by elevation. These may indicate compartment syndrome or circulatory impairment requiring urgent intervention such as cast bivalving or removal."
+    },
+    {
+      "q": "Tinel's sign, used in the assessment of carpal tunnel syndrome, involves:",
+      "options": [
+        "A. Flexing the wrists in a prayer position for 60 seconds",
+        "B. Tapping over the median nerve at the wrist, producing tingling in the fingers",
+        "C. Extending the wrist against resistance",
+        "D. Squeezing the hand to assess grip strength"
+      ],
+      "correct": 1,
+      "rationale": "Tinel's sign is elicited by tapping or percussing over the median nerve at the carpal tunnel (volar wrist). A positive result produces tingling, numbness, or electric-shock-like sensations in the distribution of the median nerve (thumb, index, middle, and lateral half of ring finger). Phalen's test involves wrist flexion."
+    },
+    {
+      "q": "To prevent flexion contractures in a patient on prolonged bed rest, the nurse should:",
+      "options": [
+        "A. Place pillows under the knees for comfort",
+        "B. Perform range-of-motion exercises, use a footboard, and encourage prone positioning",
+        "C. Keep the patient in a flexed fetal position for comfort",
+        "D. Apply splints to all extremities at all times"
+      ],
+      "correct": 1,
+      "rationale": "Flexion contractures develop when joints remain in a flexed position for prolonged periods. Prevention includes performing active or passive range-of-motion exercises, using a footboard to prevent foot drop, encouraging prone positioning to stretch hip flexors, and proper body alignment. Pillows under the knees promote flexion contractures and should be avoided."
+    },
+    {
+      "q": "A positive Homan's sign (calf pain with dorsiflexion of the foot) may indicate:",
+      "options": [
+        "A. A muscle cramp in the gastrocnemius",
+        "B. Deep vein thrombosis (DVT)",
+        "C. Peripheral arterial disease",
+        "D. Compartment syndrome"
+      ],
+      "correct": 1,
+      "rationale": "A positive Homan's sign (pain in the calf with dorsiflexion of the foot) may indicate deep vein thrombosis (DVT). However, this test is not highly reliable and should not be used as the sole assessment. If DVT is suspected, the leg should NOT be massaged (risk of embolism), and diagnostic testing (Doppler ultrasound) should be obtained."
+    },
+    {
+      "q": "When applying an elastic (ACE) bandage to an extremity, the nurse should wrap:",
+      "options": [
+        "A. From proximal to distal",
+        "B. From distal to proximal",
+        "C. Only around the injured area",
+        "D. As tightly as possible for maximum compression"
+      ],
+      "correct": 1,
+      "rationale": "An elastic bandage should be applied from distal to proximal to promote venous return and prevent fluid accumulation in the distal extremity. Two fingers should fit under the bandage to ensure it is not too tight. Neurovascular checks should be performed after application. The bandage should be rewrapped if it becomes loose or wrinkled."
+    },
+    {
+      "q": "Cold therapy (cryotherapy) is most effective when applied within what time frame after an acute injury?",
+      "options": [
+        "A. 48-72 hours after injury",
+        "B. First 24-48 hours after injury",
+        "C. Only after swelling has resolved",
+        "D. One week after injury"
+      ],
+      "correct": 1,
+      "rationale": "Cold therapy is most effective during the first 24-48 hours after an acute musculoskeletal injury. Ice causes vasoconstriction, reducing blood flow, swelling, inflammation, and pain. Apply for 20 minutes on, 20 minutes off. After 48 hours, heat therapy may be used to promote blood flow and healing. Always place a barrier between ice and skin."
+    },
+    {
+      "q": "A patient with rheumatoid arthritis is prescribed methotrexate (a DMARD). Which is the most important nursing consideration?",
+      "options": [
+        "A. Monitor liver function and CBC regularly due to hepatotoxicity and immunosuppression",
+        "B. Encourage the patient to take the medication with antacids",
+        "C. Advise the patient that results will be seen immediately",
+        "D. No special monitoring is needed for this medication"
+      ],
+      "correct": 0,
+      "rationale": "Methotrexate is a disease-modifying antirheumatic drug (DMARD) that slows RA progression. It is immunosuppressive and hepatotoxic. Regular monitoring of liver function tests (LFTs) and complete blood count (CBC) is essential. Patients should avoid alcohol, report signs of infection, and not become pregnant (teratogenic). Folic acid supplementation reduces side effects."
+    },
+    {
+      "q": "After a lower extremity amputation, the stump should be wrapped in what pattern to shape it for a prosthesis?",
+      "options": [
+        "A. Circular wrapping from proximal to distal",
+        "B. Figure-8 pattern from distal to proximal",
+        "C. Spiral pattern from distal to proximal",
+        "D. No wrapping is needed; a rigid dressing is always used"
+      ],
+      "correct": 1,
+      "rationale": "The residual limb (stump) is wrapped in a figure-8 pattern from distal to proximal to shape the stump into a cone shape suitable for prosthesis fitting. This technique also controls edema and promotes healing. The wrap should be firm but not constrict circulation. It should be rewrapped several times daily and if it becomes loose."
+    },
+    {
+      "q": "After an amputation, when is a prosthetic limb typically fitted?",
+      "options": [
+        "A. Immediately in the operating room",
+        "B. When the residual limb has healed and been shaped, usually several weeks to months post-op",
+        "C. One year after surgery",
+        "D. A prosthesis is never used after amputation"
+      ],
+      "correct": 1,
+      "rationale": "Prosthetic fitting typically occurs after the residual limb has healed, edema has resolved, and the stump has been shaped through wrapping and shrinking. This usually takes several weeks to months. Early prosthetic fitting and physical therapy improve mobility outcomes. Some patients receive an immediate post-operative prosthesis for ambulation training."
+    },
+    {
+      "q": "Osteomalacia is caused by a deficiency of:",
+      "options": [
+        "A. Vitamin C",
+        "B. Vitamin D",
+        "C. Iron",
+        "D. Vitamin B12"
+      ],
+      "correct": 1,
+      "rationale": "Osteomalacia (softening of the bones in adults; rickets in children) is caused by Vitamin D deficiency, resulting in inadequate mineralization of bone. Without sufficient Vitamin D, calcium and phosphorus cannot be properly absorbed and deposited into bone matrix. Symptoms include bone pain, muscle weakness, and increased fracture risk. Treatment involves Vitamin D and calcium supplementation."
+    },
+    {
+      "q": "After a total knee replacement (TKR), the operative leg should be positioned:",
+      "options": [
+        "A. In a flexed position with pillows under the knee",
+        "B. Elevated and extended, with ice applied as prescribed",
+        "C. In a dependent position to promote circulation",
+        "D. Cross-legged for comfort"
+      ],
+      "correct": 1,
+      "rationale": "After TKR, the operative leg should be elevated and extended to reduce swelling. Ice is applied as prescribed. Pillows should NOT be placed under the knee as this promotes flexion contracture. A CPM (continuous passive motion) machine is often used to maintain range of motion. Early mobilization is encouraged per surgeon protocols."
+    },
+    {
+      "q": "When preparing a patient for discharge after a total joint replacement, the nurse should include which instruction?",
+      "options": [
+        "A. Resume all normal activities immediately upon returning home",
+        "B. Use assistive devices as prescribed, attend physical therapy, follow activity restrictions, and report signs of infection or DVT",
+        "C. Avoid all physical activity for 6 months",
+        "D. Only return for follow-up if problems arise"
+      ],
+      "correct": 1,
+      "rationale": "Discharge teaching after total joint replacement includes: use assistive devices (walker, cane) as prescribed, attend all physical therapy sessions, follow activity and positioning restrictions (especially for THR), report signs of infection (fever, redness, drainage), DVT (calf pain, swelling, warmth), or dislocation (severe pain, popping). Continue anticoagulants as prescribed and use a raised toilet seat (THR)."
+    }
+  ]
+}
