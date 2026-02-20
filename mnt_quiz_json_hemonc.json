@@ -1,7 +1,7 @@
 {
   "section": "hemonc",
   "title": "Hematology & Oncology",
-  "questionCount": 100,
+  "questionCount": 112,
   "questions": [
     {
       "q": "What does the \"C\" in CAUTION stand for?",
@@ -1102,6 +1102,138 @@
       ],
       "correct": 2,
       "rationale": "ANC < 500 is severe neutropenia with extreme infection risk. Strict neutropenic precautions are essential: private room, no fresh flowers/fruits, meticulous hand hygiene."
+    },
+    {
+      "q": "Type O blood is considered the universal donor because:",
+      "options": [
+        "It contains both A and B antigens",
+        "It contains no A or B antigens",
+        "It has no Rh factor",
+        "It has both anti-A and anti-B antibodies"
+      ],
+      "correct": 1,
+      "rationale": "Type O has NO A or B surface antigens, so the recipient's antibodies have nothing to attack. Type O is the universal donor. Note: O-negative is the true universal donor (no ABO antigens and no Rh antigen)."
+    },
+    {
+      "q": "A patient with Type AB positive blood can receive blood from:",
+      "options": [
+        "Only Type AB positive donors",
+        "Type A and Type B donors only",
+        "Any ABO and Rh type (universal recipient)",
+        "Only Rh-positive donors"
+      ],
+      "correct": 2,
+      "rationale": "Type AB has both A and B antigens and produces NO ABO antibodies, accepting all ABO types. Rh-positive can receive Rh+ or Rh-. AB+ is the universal recipient \u2014 they can receive from any donor type."
+    },
+    {
+      "q": "The MOST serious type of transfusion reaction is:",
+      "options": [
+        "Febrile non-hemolytic reaction",
+        "Mild allergic reaction",
+        "Acute hemolytic reaction",
+        "Circulatory overload"
+      ],
+      "correct": 2,
+      "rationale": "Acute hemolytic reaction (ABO incompatibility) is the most dangerous \u2014 it can cause DIC, renal failure, and death within minutes. This is why two-nurse verification of blood type and crossmatch is required before every transfusion."
+    },
+    {
+      "q": "After stopping a blood transfusion for a suspected hemolytic reaction, the nurse should:",
+      "options": [
+        "Flush the line with dextrose",
+        "Discard the blood bag in biohazard waste",
+        "Keep IV open with NS and send the blood bag to the lab",
+        "Restart the transfusion at a slower rate"
+      ],
+      "correct": 2,
+      "rationale": "After stopping the transfusion: keep IV open with normal saline (new tubing), send the blood bag AND a new patient blood sample to the blood bank for analysis. Never discard the bag \u2014 it's needed for investigation. Never restart the blood."
+    },
+    {
+      "q": "A febrile non-hemolytic transfusion reaction is characterized by:",
+      "options": [
+        "Dark urine and back pain",
+        "Fever and chills without hemolysis",
+        "Urticaria and bronchospasm",
+        "Hypertension and headache"
+      ],
+      "correct": 1,
+      "rationale": "Febrile non-hemolytic reaction is the MOST COMMON transfusion reaction. It presents with fever, chills, and headache but NO hemolysis (no dark urine, no back pain). Caused by antibodies to donor WBCs. Treated with acetaminophen."
+    },
+    {
+      "q": "For ALL types of transfusion reactions, the FIRST nursing action is always:",
+      "options": [
+        "Administer epinephrine",
+        "Notify the blood bank",
+        "Stop the transfusion",
+        "Check vital signs"
+      ],
+      "correct": 2,
+      "rationale": "For ANY transfusion reaction \u2014 hemolytic, allergic, febrile, or fluid overload \u2014 the first action is ALWAYS to stop the transfusion. Then keep the IV open with NS, assess the patient, and notify the provider and blood bank."
+    },
+    {
+      "q": "Blood must be infused within what time frame to prevent bacterial contamination?",
+      "options": [
+        "1 hour",
+        "2 hours",
+        "4 hours",
+        "8 hours"
+      ],
+      "correct": 2,
+      "rationale": "Blood products must be infused within 4 hours of removal from the blood bank refrigerator. After 4 hours at room temperature, the risk of bacterial growth increases significantly. If not started within 30 minutes, return to the blood bank."
+    },
+    {
+      "q": "During blood transfusion, the nurse should remain with the patient for at least:",
+      "options": [
+        "The first 5 minutes",
+        "The first 15 minutes",
+        "The first 30 minutes",
+        "The entire transfusion"
+      ],
+      "correct": 1,
+      "rationale": "The nurse must stay with the patient for the first 15 minutes of each unit, as most severe reactions (hemolytic, anaphylactic) occur early. Take vitals at baseline, 15 min, 30 min, 1 hour, and post-transfusion."
+    },
+    {
+      "q": "The hallmark electrolyte imbalances of tumor lysis syndrome include:",
+      "options": [
+        "Hypokalemia, hypercalcemia, and low uric acid",
+        "Hyperkalemia, hyperphosphatemia, and hyperuricemia",
+        "Hyponatremia, hypoglycemia, and metabolic alkalosis",
+        "Hypernatremia, hypokalemia, and hypophosphatemia"
+      ],
+      "correct": 1,
+      "rationale": "TLS releases intracellular contents: potassium (hyperkalemia), phosphorus (hyperphosphatemia which binds calcium \u2192 hypocalcemia), and nucleic acids \u2192 uric acid (hyperuricemia). Hyperkalemia is the most immediately dangerous (cardiac arrhythmias)."
+    },
+    {
+      "q": "Rasburicase is administered before chemotherapy to prevent:",
+      "options": [
+        "Neutropenia",
+        "Uric acid nephropathy in tumor lysis syndrome",
+        "Nausea and vomiting",
+        "Allergic reactions to chemo drugs"
+      ],
+      "correct": 1,
+      "rationale": "Rasburicase converts uric acid to allantoin (easily excreted). Given before chemo in high-risk patients (leukemia, lymphoma) to prevent uric acid crystal deposition in kidneys, which can cause acute renal failure in TLS."
+    },
+    {
+      "q": "Graft-versus-host disease (GVHD) after bone marrow transplant affects which organs in order?",
+      "options": [
+        "Lungs \u2192 heart \u2192 kidneys",
+        "Skin \u2192 GI tract \u2192 liver",
+        "Brain \u2192 spinal cord \u2192 peripheral nerves",
+        "Eyes \u2192 joints \u2192 muscles"
+      ],
+      "correct": 1,
+      "rationale": "Acute GVHD typically affects organs in this order: skin (rash, usually first sign), GI tract (diarrhea, abdominal pain), and liver (jaundice, elevated LFTs). Donor T-cells attack recipient tissues they recognize as foreign."
+    },
+    {
+      "q": "A post-BMT patient has an ANC of 300. The nurse should implement:",
+      "options": [
+        "Standard precautions only",
+        "Contact isolation",
+        "Strict protective isolation with HEPA filtration",
+        "Droplet precautions"
+      ],
+      "correct": 2,
+      "rationale": "ANC <500 = severe neutropenia = highest risk for infection. Requires strict protective (reverse) isolation: HEPA-filtered positive-pressure room, no fresh flowers/plants, low-bacteria diet, all visitors masked. Report any temp \u2265100.4F immediately."
     }
   ]
 }

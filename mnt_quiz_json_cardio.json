@@ -1,7 +1,7 @@
 {
   "section": "cardio",
   "title": "Cardiovascular System",
-  "questionCount": 100,
+  "questionCount": 116,
   "questions": [
     {
       "q": "What defines systolic blood pressure?",
@@ -1100,6 +1100,182 @@
       ],
       "correct": 2,
       "rationale": "The pericardial friction rub is a scratching, grating sound caused by inflamed pericardial layers rubbing together. It is best heard with the client leaning forward."
+    },
+    {
+      "q": "Calcium channel blockers are often described as:",
+      "options": [
+        "Stimulants for the heart",
+        "Valium for the heart",
+        "Antibiotics for the heart",
+        "Vasoconstrictors"
+      ],
+      "correct": 1,
+      "rationale": "CCBs relax and slow the heart \u2014 negative inotropic, chronotropic, and dromotropic effects. Often called 'valium for the heart.'"
+    },
+    {
+      "q": "Which calcium channel blocker is the STRONGEST vasodilator and most likely to cause headache?",
+      "options": [
+        "Verapamil (Calan)",
+        "Diltiazem (Cardizem)",
+        "Nifedipine (Procardia)",
+        "Amlodipine (Norvasc)"
+      ],
+      "correct": 2,
+      "rationale": "Nifedipine (Procardia) is the most potent vasodilator among CCBs, making it the most likely to cause the H-H side effects (Headache, Hypotension)."
+    },
+    {
+      "q": "A patient on diltiazem has a blood pressure of 86/52. The nurse should:",
+      "options": [
+        "Administer the dose as scheduled",
+        "Hold the dose and notify the provider",
+        "Give an extra dose for rapid effect",
+        "Recheck BP in 2 hours then give dose"
+      ],
+      "correct": 1,
+      "rationale": "SBP below 90 means hold the CCB. Diltiazem causes vasodilation and further BP drop would be dangerous. Notify the provider."
+    },
+    {
+      "q": "The 'A, AA, AAA' mnemonic for CCBs refers to their use as:",
+      "options": [
+        "Antianginal, Antiarrhythmic, Antihypertensive",
+        "Analgesic, Antibiotic, Antifungal",
+        "Antacid, Antiemetic, Antiviral",
+        "Antipyretic, Antihistamine, Antitussive"
+      ],
+      "correct": 0,
+      "rationale": "CCBs serve three clinical roles: A (Antianginal), AA (Antiarrhythmic), AAA (Antihypertensive)."
+    },
+    {
+      "q": "A rhythm strip shows 'bizarre' wide QRS complexes at a regular rate. This is most likely:",
+      "options": [
+        "Atrial fibrillation",
+        "Ventricular tachycardia",
+        "Normal sinus rhythm",
+        "Atrial flutter"
+      ],
+      "correct": 1,
+      "rationale": "V-Tach is characterized by 'bizarre' wide QRS complexes. The key word 'bizarre' with wide QRS = ventricular origin."
+    },
+    {
+      "q": "A flat line on the cardiac monitor with no QRS complexes indicates:",
+      "options": [
+        "Ventricular tachycardia",
+        "Atrial fibrillation",
+        "Asystole",
+        "Ventricular fibrillation"
+      ],
+      "correct": 2,
+      "rationale": "A flat line with no electrical activity is asystole. It is a lethal rhythm with no cardiac output. Treat with CPR and epinephrine \u2014 do NOT defibrillate."
+    },
+    {
+      "q": "Which rhythm has a 'sawtooth' pattern of P-waves?",
+      "options": [
+        "Atrial fibrillation",
+        "Atrial flutter",
+        "Ventricular tachycardia",
+        "Normal sinus rhythm"
+      ],
+      "correct": 1,
+      "rationale": "Atrial flutter has a characteristic 'sawtooth' or picket-fence pattern of rapid P-wave depolarization, typically at a rate of 250-350 bpm."
+    },
+    {
+      "q": "A patient in asystole should receive which treatment?",
+      "options": [
+        "Defibrillation",
+        "Synchronized cardioversion",
+        "CPR and epinephrine",
+        "Adenosine rapid IV push"
+      ],
+      "correct": 2,
+      "rationale": "Asystole = flat line = no rhythm to shock. Do NOT defibrillate. Provide CPR and administer epinephrine per ACLS protocol."
+    },
+    {
+      "q": "A patient on the monitor shows ventricular tachycardia. The nurse should FIRST:",
+      "options": [
+        "Defibrillate immediately",
+        "Check for a pulse",
+        "Administer lidocaine",
+        "Call the physician"
+      ],
+      "correct": 1,
+      "rationale": "V-Tach MAY have a pulse. Always check for a pulse first. Pulseless V-Tach = defibrillate. V-Tach WITH pulse = treat with amiodarone or lidocaine."
+    },
+    {
+      "q": "Without cardiac output, brain death begins within approximately:",
+      "options": [
+        "30 seconds",
+        "4-8 minutes",
+        "15 minutes",
+        "1 hour"
+      ],
+      "correct": 1,
+      "rationale": "Without cardiac output there is no brain perfusion. Irreversible brain damage begins within 4-8 minutes, which is why immediate CPR is critical."
+    },
+    {
+      "q": "The ABCD mnemonic for treating atrial dysrhythmias includes all EXCEPT:",
+      "options": [
+        "Adenosine",
+        "Beta-blockers",
+        "Calcium channel blockers",
+        "Dopamine"
+      ],
+      "correct": 3,
+      "rationale": "ABCD = Adenosine, Beta-blockers, CCBs, Digoxin (Lanoxin). Dopamine is not part of this mnemonic \u2014 it is a vasopressor used for hypotension/bradycardia."
+    },
+    {
+      "q": "Adenosine for SVT must be administered:",
+      "options": [
+        "Slow IV push over 5 minutes",
+        "Rapid IV push with immediate flush",
+        "Intramuscularly in the deltoid",
+        "Orally with food"
+      ],
+      "correct": 1,
+      "rationale": "Adenosine has an extremely short half-life (6-10 seconds) and must be given as a rapid IV push (6mg) followed by an immediate NS flush to reach the heart before metabolism."
+    },
+    {
+      "q": "A patient with atrial fibrillation and asthma should NOT receive which medication?",
+      "options": [
+        "Diltiazem (CCB)",
+        "Digoxin",
+        "Metoprolol (beta-blocker)",
+        "Adenosine"
+      ],
+      "correct": 2,
+      "rationale": "Beta-blockers (metoprolol) cause bronchoconstriction and are contraindicated in asthma/COPD. Use CCBs (diltiazem) as an alternative for rate control."
+    },
+    {
+      "q": "The acronym 'TAP' for drug monitoring stands for:",
+      "options": [
+        "Test, Administer, Process",
+        "Trough, Administer, Peak",
+        "Time, Amount, Potency",
+        "Titrate, Assess, Prescribe"
+      ],
+      "correct": 1,
+      "rationale": "TAP = Trough (draw before dose), Administer (give the drug), Peak (draw after dose). This sequence ensures accurate therapeutic monitoring."
+    },
+    {
+      "q": "A patient receives vancomycin IV at 0800. The peak level should be drawn at approximately:",
+      "options": [
+        "0800 (during infusion)",
+        "0815-0830 (15-30 min after)",
+        "1000 (2 hours after)",
+        "Before the next dose"
+      ],
+      "correct": 1,
+      "rationale": "IV drug peak levels are drawn 15-30 minutes after infusion completes, when the drug concentration is at its highest in the blood."
+    },
+    {
+      "q": "A patient on gentamicin has a trough level above therapeutic range. This indicates:",
+      "options": [
+        "The drug is being cleared too quickly",
+        "The drug is accumulating and toxicity risk is high",
+        "The dose needs to be increased",
+        "The drug is at optimal therapeutic levels"
+      ],
+      "correct": 1,
+      "rationale": "An elevated trough means the drug is not being cleared adequately between doses. This increases the risk of toxicity (ototoxicity, nephrotoxicity for aminoglycosides)."
     }
   ]
 }

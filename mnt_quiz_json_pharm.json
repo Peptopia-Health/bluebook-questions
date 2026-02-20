@@ -1,10 +1,10 @@
 {
   "section": "pharm",
   "title": "Pharm & Fundamentals",
-  "questionCount": 100,
+  "questionCount": 114,
   "questions": [
     {
-      "q": "According to Klimek, what happens when pH goes UP (Alkalosis)?",
+      "q": "what happens when pH goes UP (Alkalosis)?",
       "options": [
         "Only BP goes down",
         "Everything goes DOWN (Bradycardia)",
@@ -1102,6 +1102,160 @@
       ],
       "correct": 1,
       "rationale": "Maslow's: meet physiological needs first (airway, breathing, circulation, food, water), then safety, then psychosocial needs."
+    },
+    {
+      "q": "A patient is prescribed a medication ending in '-pril.' The nurse recognizes this drug class and monitors for:",
+      "options": [
+        "Bradycardia and bronchospasm",
+        "Dry cough and hyperkalemia",
+        "Gingival hyperplasia and ataxia",
+        "Tachycardia and insomnia"
+      ],
+      "correct": 1,
+      "rationale": "-pril = ACE inhibitor (lisinopril, enalapril). Key side effects: persistent dry cough (due to bradykinin accumulation), hyperkalemia, angioedema. Monitor potassium levels and assess for cough."
+    },
+    {
+      "q": "The nurse should hold a medication ending in '-olol' if the patient's:",
+      "options": [
+        "Blood glucose is 180 mg/dL",
+        "Heart rate is 52 bpm",
+        "Blood pressure is 140/90",
+        "Respiratory rate is 18"
+      ],
+      "correct": 1,
+      "rationale": "-olol = beta-blocker. Beta-blockers lower heart rate. Hold if HR <60 bpm (adult) and notify the provider. Also assess for hypotension, bronchospasm (avoid in asthma), and masked hypoglycemia in diabetics."
+    },
+    {
+      "q": "The therapeutic range for lithium is:",
+      "options": [
+        "0.5-2.0 ng/mL",
+        "0.6-1.2 mEq/L",
+        "10-20 mcg/mL",
+        "3.5-5.0 mEq/L"
+      ],
+      "correct": 1,
+      "rationale": "Lithium therapeutic range is 0.6-1.2 mEq/L. Toxicity begins at >1.5 mEq/L (tremors, confusion, seizures). Draw levels 12 hours after last dose. Ensure adequate sodium and fluid intake \u2014 dehydration increases lithium levels."
+    },
+    {
+      "q": "A patient on phenytoin (Dilantin) develops nystagmus and ataxia. The nurse suspects:",
+      "options": [
+        "Subtherapeutic drug level",
+        "Drug toxicity",
+        "Normal side effects that will resolve",
+        "Allergic reaction"
+      ],
+      "correct": 1,
+      "rationale": "Phenytoin therapeutic range is 10-20 mcg/mL. Nystagmus (involuntary eye movement) and ataxia (unsteady gait) are early signs of toxicity. Other signs include gingival hyperplasia and slurred speech. Hold dose and notify provider."
+    },
+    {
+      "q": "A child weighing 33 lbs is ordered 200 mg of a medication. The safe range is 10-20 mg/kg/day. The nurse should:",
+      "options": [
+        "Give the medication as ordered",
+        "Hold the medication \u2014 dose is below the safe range",
+        "Hold the medication \u2014 dose exceeds the safe range",
+        "Give half the dose"
+      ],
+      "correct": 0,
+      "rationale": "33 lbs / 2.2 = 15 kg. Low: 15 x 10 = 150 mg. High: 15 x 20 = 300 mg. Safe range: 150-300 mg/day. The ordered dose of 200 mg falls within the safe range, so administer as ordered."
+    },
+    {
+      "q": "When a calculated safe dose range reveals the ordered dose is ABOVE the maximum, the nurse should:",
+      "options": [
+        "Administer the dose and monitor closely",
+        "Reduce the dose to the maximum safe amount",
+        "Hold the medication and notify the provider",
+        "Divide the dose into two smaller administrations"
+      ],
+      "correct": 2,
+      "rationale": "Nurses do NOT independently adjust medication doses. If the ordered dose exceeds the safe range, hold the medication and notify the prescriber. Document the action and the provider's response."
+    },
+    {
+      "q": "When mixing Regular and NPH insulin in the same syringe, the nurse draws up Regular first because:",
+      "options": [
+        "Regular insulin is more concentrated",
+        "It prevents NPH from contaminating the Regular vial",
+        "Regular insulin expires faster once opened",
+        "NPH cannot be drawn through a needle"
+      ],
+      "correct": 1,
+      "rationale": "Drawing clear (Regular) before cloudy (NPH) prevents contamination of the Regular insulin vial with NPH particles. If NPH entered the Regular vial, it would alter the onset time of Regular insulin for all future doses from that vial."
+    },
+    {
+      "q": "Which insulin can NEVER be mixed with other insulins?",
+      "options": [
+        "Regular (Humulin R)",
+        "NPH (Humulin N)",
+        "Glargine (Lantus)",
+        "Lispro (Humalog)"
+      ],
+      "correct": 2,
+      "rationale": "Lantus (glargine) and Levemir (detemir) are long-acting basal insulins that must ALWAYS be given alone \u2014 never mixed with other insulins. Their pH formulation would be altered by mixing, changing their duration of action."
+    },
+    {
+      "q": "A patient on an MAOI should avoid ALL of the following EXCEPT:",
+      "options": [
+        "Aged cheddar cheese",
+        "Fresh chicken breast",
+        "Red wine",
+        "Sauerkraut"
+      ],
+      "correct": 1,
+      "rationale": "Fresh, unprocessed meats are safe. Tyramine builds up in aged, fermented, pickled, and smoked foods. Aged cheese, red wine, sauerkraut, smoked meats, and soy sauce are all high in tyramine and can trigger hypertensive crisis with MAOIs."
+    },
+    {
+      "q": "How long after stopping an MAOI must a patient continue dietary tyramine restrictions?",
+      "options": [
+        "24 hours",
+        "3-5 days",
+        "2-4 weeks",
+        "6 months"
+      ],
+      "correct": 2,
+      "rationale": "MAOIs irreversibly inhibit the MAO enzyme. The body must synthesize new MAO enzyme, which takes 2-4 weeks. Dietary restrictions must continue for this entire period to prevent tyramine crisis even after the drug is discontinued."
+    },
+    {
+      "q": "The nurse is about to administer a medication. Which is the BEST method for patient identification?",
+      "options": [
+        "Ask the patient to state their name and date of birth",
+        "Check the name on the door",
+        "Ask the roommate to confirm the patient's identity",
+        "Verify the room number matches the MAR"
+      ],
+      "correct": 0,
+      "rationale": "Use at least two patient identifiers (name and DOB) by asking the patient to state them. Never use room number (patients move), door signs, or third-party identification. Compare stated identifiers against the medication administration record and ID band."
+    },
+    {
+      "q": "A patient refuses a prescribed medication. The MOST appropriate nursing action is:",
+      "options": [
+        "Crush the medication and mix it in food",
+        "Document the refusal and notify the provider",
+        "Explain that the medication is mandatory",
+        "Withhold all other medications as well"
+      ],
+      "correct": 1,
+      "rationale": "Patients have the Right to Refuse medication. Document the refusal, the reason if given, any education provided, and notify the provider. Never force, hide, or coerce medication administration \u2014 this violates patient autonomy and is potentially illegal."
+    },
+    {
+      "q": "A patient on warfarin should be taught to:",
+      "options": [
+        "Eliminate all leafy green vegetables from the diet",
+        "Eat large amounts of broccoli to boost the drug effect",
+        "Maintain a consistent daily intake of vitamin K foods",
+        "Take the medication with grapefruit juice"
+      ],
+      "correct": 2,
+      "rationale": "Vitamin K is the antidote for warfarin. Patients should maintain CONSISTENT vitamin K intake \u2014 sudden changes (increasing or decreasing) alter the INR unpredictably. Grapefruit inhibits drug metabolism and should be avoided with many medications."
+    },
+    {
+      "q": "A patient is prescribed a fluoroquinolone antibiotic. The nurse should instruct the patient to avoid taking it with:",
+      "options": [
+        "Water",
+        "Dairy products or calcium-containing antacids",
+        "Protein-rich foods",
+        "Vitamin C supplements"
+      ],
+      "correct": 1,
+      "rationale": "Fluoroquinolones (ciprofloxacin, levofloxacin) and tetracyclines bind to calcium, iron, magnesium, and aluminum ions, drastically reducing absorption. Take on an empty stomach, 2 hours before or 6 hours after dairy or antacids."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "section": "psych",
   "title": "Psych & Mental Health",
-  "questionCount": 100,
+  "questionCount": 118,
   "questions": [
     {
       "q": "What is the priority assessment for a depressed client?",
@@ -1102,6 +1102,204 @@
       ],
       "correct": 1,
       "rationale": "Token economy is a behavioral modification technique where desired behaviors are rewarded with tokens that can be exchanged for privileges."
+    },
+    {
+      "q": "A family member who repeatedly bails an alcoholic out of jail is demonstrating:",
+      "options": [
+        "Tough love",
+        "Codependent behavior",
+        "Therapeutic intervention",
+        "Healthy boundaries"
+      ],
+      "correct": 1,
+      "rationale": "Bailing someone out prevents them from facing consequences of their addiction. This enabling behavior is codependency."
+    },
+    {
+      "q": "Which support group is specifically designed for family members of alcoholics?",
+      "options": [
+        "Alcoholics Anonymous",
+        "Al-Anon",
+        "Narcotics Anonymous",
+        "SMART Recovery"
+      ],
+      "correct": 1,
+      "rationale": "Al-Anon is designed for family members and friends of alcoholics (codependents). AA is for the alcoholic themselves."
+    },
+    {
+      "q": "A patient with schizophrenia states, 'The voices tell me I am a king.' This demonstrates:",
+      "options": [
+        "An illusion",
+        "Insight into illness",
+        "A psychotic symptom (hallucination with delusion)",
+        "A non-psychotic anxiety response"
+      ],
+      "correct": 2,
+      "rationale": "Hearing voices (auditory hallucination) and believing he is a king (grandiose delusion) are both psychotic symptoms indicating a break from reality."
+    },
+    {
+      "q": "Which disorder is classified as NON-psychotic?",
+      "options": [
+        "Schizophrenia",
+        "Brief psychotic disorder",
+        "Obsessive-compulsive disorder",
+        "Schizoaffective disorder"
+      ],
+      "correct": 2,
+      "rationale": "OCD is a non-psychotic disorder \u2014 the patient has insight, knows the thoughts are irrational, and maintains contact with reality. The others all involve psychosis."
+    },
+    {
+      "q": "A patient hears voices telling him to hurt himself when no one is speaking. This is:",
+      "options": [
+        "An illusion",
+        "A command hallucination",
+        "A delusion of persecution",
+        "Confabulation"
+      ],
+      "correct": 1,
+      "rationale": "Hearing voices with no external stimulus is a hallucination. When voices give orders to harm self or others, it is a command hallucination \u2014 the most dangerous type."
+    },
+    {
+      "q": "A patient firmly believes the FBI has implanted a tracking device in his tooth despite evidence to the contrary. This is:",
+      "options": [
+        "A hallucination",
+        "An illusion",
+        "A persecutory delusion",
+        "Depersonalization"
+      ],
+      "correct": 2,
+      "rationale": "A fixed false belief not based in reality that cannot be corrected by reasoning is a delusion. The specific content (being tracked/monitored) makes it persecutory."
+    },
+    {
+      "q": "A patient presents with pinpoint pupils, respiratory rate of 6, and decreased LOC. This presentation is consistent with overdose of:",
+      "options": [
+        "Cocaine (upper)",
+        "Amphetamines (upper)",
+        "Heroin (downer)",
+        "Caffeine (upper)"
+      ],
+      "correct": 2,
+      "rationale": "Pinpoint pupils, respiratory depression, and decreased LOC are classic signs of opioid (downer) overdose. Uppers cause the opposite: dilated pupils, tachycardia, agitation."
+    },
+    {
+      "q": "The antidote for benzodiazepine overdose is:",
+      "options": [
+        "Naloxone (Narcan)",
+        "Flumazenil (Romazicon)",
+        "Atropine",
+        "Epinephrine"
+      ],
+      "correct": 1,
+      "rationale": "Flumazenil reverses benzodiazepine effects. Naloxone is for opioid overdose. Remember: benzo = flumazenil, opioid = naloxone."
+    },
+    {
+      "q": "Withdrawal symptoms are the OPPOSITE of drug effects. Alcohol withdrawal would include:",
+      "options": [
+        "Sedation and calm",
+        "Tremors, agitation, and seizures",
+        "Respiratory depression",
+        "Pinpoint pupils"
+      ],
+      "correct": 1,
+      "rationale": "Alcohol is a downer (depressant). Withdrawal produces opposite effects: the nervous system is hyperactive \u2014 tremors, agitation, tachycardia, and seizures."
+    },
+    {
+      "q": "A newborn with neonatal abstinence syndrome is BEST comforted by:",
+      "options": [
+        "Bright lights and stimulation",
+        "Tight swaddling, dim lights, low noise",
+        "Cold baths to reduce fever",
+        "Frequent repositioning"
+      ],
+      "correct": 1,
+      "rationale": "NAS newborns are hypersensitive. Minimize stimulation: tight swaddling, dim lights, quiet environment, and small frequent feedings."
+    },
+    {
+      "q": "The Finnegan scale is used to assess:",
+      "options": [
+        "Pain in pediatric patients",
+        "Neonatal abstinence syndrome severity",
+        "Postpartum depression",
+        "Alcohol withdrawal in adults"
+      ],
+      "correct": 1,
+      "rationale": "The Finnegan Neonatal Abstinence Scoring Tool measures withdrawal severity in drug-exposed newborns to guide treatment decisions."
+    },
+    {
+      "q": "A patient on fluoxetine (Prozac) develops agitation, fever, muscle rigidity, and clonus. The nurse suspects:",
+      "options": [
+        "Neuroleptic malignant syndrome",
+        "Serotonin syndrome",
+        "Tardive dyskinesia",
+        "Malignant hyperthermia"
+      ],
+      "correct": 1,
+      "rationale": "The triad of mental status changes (agitation), autonomic instability (fever), and neuromuscular changes (rigidity, clonus) in a patient on an SSRI indicates serotonin syndrome."
+    },
+    {
+      "q": "The minimum washout period between stopping an SSRI and starting an MAOI is:",
+      "options": [
+        "24 hours",
+        "3 days",
+        "2 weeks",
+        "6 months"
+      ],
+      "correct": 2,
+      "rationale": "A minimum 2-week washout period is required between SSRIs and MAOIs to prevent serotonin syndrome. For fluoxetine, it is 5 weeks due to its long half-life."
+    },
+    {
+      "q": "Which herbal supplement can cause serotonin syndrome when combined with an SSRI?",
+      "options": [
+        "Echinacea",
+        "Ginkgo biloba",
+        "St. John's Wort",
+        "Valerian root"
+      ],
+      "correct": 2,
+      "rationale": "St. John's Wort has serotonergic activity and can cause serotonin syndrome when combined with SSRIs, MAOIs, or triptans."
+    },
+    {
+      "q": "A patient on amitriptyline (a TCA) reports dry mouth, constipation, and blurred vision. These are:",
+      "options": [
+        "Signs of overdose",
+        "Expected anticholinergic side effects",
+        "Allergic reactions",
+        "Signs of serotonin syndrome"
+      ],
+      "correct": 1,
+      "rationale": "TCAs have strong anticholinergic effects: dry mouth, constipation, urinary retention, blurred vision, tachycardia. These are expected side effects."
+    },
+    {
+      "q": "Why are suicidal patients prescribed only a 1-week supply of TCAs?",
+      "options": [
+        "They expire quickly",
+        "They are expensive",
+        "TCAs are lethal in overdose due to cardiac arrhythmias",
+        "They lose effectiveness after one week"
+      ],
+      "correct": 2,
+      "rationale": "TCA overdose causes fatal cardiac arrhythmias (wide QRS, ventricular tachycardia). Limiting the supply reduces the risk of intentional lethal overdose."
+    },
+    {
+      "q": "A patient on ziprasidone (Geodon) reports dizziness and palpitations. The nurse should:",
+      "options": [
+        "Reassure the patient this is normal",
+        "Obtain an ECG to check QT interval",
+        "Administer an extra dose",
+        "Discontinue all medications"
+      ],
+      "correct": 1,
+      "rationale": "Dizziness and palpitations on ziprasidone may indicate QT prolongation. An ECG should be obtained to check the QTc interval. Report QTc >500ms."
+    },
+    {
+      "q": "Which atypical antipsychotic carries the highest risk of QT prolongation?",
+      "options": [
+        "Olanzapine (Zyprexa)",
+        "Risperidone (Risperdal)",
+        "Ziprasidone (Geodon)",
+        "Quetiapine (Seroquel)"
+      ],
+      "correct": 2,
+      "rationale": "Ziprasidone (Geodon) has the highest risk of QT prolongation among atypical antipsychotics, which can lead to torsades de pointes and sudden cardiac death."
     }
   ]
 }

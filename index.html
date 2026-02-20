@@ -66,7 +66,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             --rose-800: #fda4af; --blue-800: #67e8f9; --purple-800: #c4b5fd;
             --emerald-800: #6ee7b7; --pink-800: #f9a8d4; --amber-800: #fcd34d;
             --teal-800: #5eead4; --indigo-800: #a5b4fc; --red-800: #fca5a5;
-            --orange-800: #fdba74; --gray-800: #d1d5db;
+            --orange-800: #fdba74; --gray-800: #d1d5db; --cyan-800: #67e8f9; --lime-800: #bef264; --green-800: #86efac;
             --alert-bg: #1a150a; --alert-border: #92400e; --alert-text: #f1f5f9;
             background-color: transparent; color: #f1f5f9;
         }
@@ -89,13 +89,14 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         html.dark #peptopia-klimek-guide .section-title-hl { background: rgba(255,255,255,0.15); }
         #peptopia-klimek-guide .navbar {
             background: linear-gradient(135deg, #0a1628 0%, #0c2461 50%, #0a1628 100%);
-            color: #fff; padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 0.75rem;
+            color: #fff; padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 0.4rem;
             display: flex; justify-content: space-between; align-items: center;
             box-shadow: 0 4px 16px -2px rgba(10, 22, 40, 0.5), 0 0 20px rgba(30, 100, 255, 0.15);
             border: 1px solid rgba(59, 130, 246, 0.25);
+            flex-wrap: nowrap; gap: 0.35rem; overflow: hidden;
         }
         html.dark #peptopia-klimek-guide .navbar { background: linear-gradient(135deg, #020617 0%, #0c2461 50%, #020617 100%); border: 1px solid rgba(59, 130, 246, 0.3); }
-        #peptopia-klimek-guide .nav-title { font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+        #peptopia-klimek-guide .nav-title { font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; flex-shrink: 0; }
         #peptopia-klimek-guide .nav-filters {
             display: flex; gap: 0.35rem; align-items: center;
         }
@@ -245,8 +246,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             #peptopia-klimek-guide .section-header-bar { font-size: 1rem; padding: 0.5rem 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
             #peptopia-klimek-guide .nav-filters { gap: 0.2rem; }
             #peptopia-klimek-guide .nav-filter-btn { font-size: 0.7rem; padding: 0.25rem 0.5rem; }
-            #peptopia-klimek-guide .navbar { margin-bottom: 0.5rem; padding: 0.5rem 0.75rem; }
-            #peptopia-klimek-guide .nav-title { font-size: 1.15rem; }
+            #peptopia-klimek-guide .navbar { margin-bottom: 0.3rem; padding: 0.45rem 0.6rem; flex-wrap: nowrap; }
+            #peptopia-klimek-guide .nav-title { font-size: 1rem; }
             #peptopia-klimek-guide #section-view { height: calc(100vh - 6rem); height: calc(100dvh - 6rem); }
         }
         #peptopia-klimek-guide .quiz-overlay {
@@ -347,19 +348,21 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         #peptopia-klimek-guide .card-modal-header.bg-cyan { background-color: var(--cyan-500); }
         #peptopia-klimek-guide .card-modal-header.bg-lime { background-color: var(--lime-500); }
         #peptopia-klimek-guide .card-modal-header.bg-green { background-color: var(--green-500); }
-        #peptopia-klimek-guide .home-hero { text-align: center; padding: 0 0 0.5rem; }
+        #peptopia-klimek-guide .home-hero { text-align: center; padding: 0; }
         #peptopia-klimek-guide .home-hero-banner {
             background: linear-gradient(135deg, #0a1628 0%, #0c2461 50%, #0a1628 100%);
-            color: rgba(255,255,255,0.92); padding: 0.75rem 1rem; border-radius: 0.5rem;
-            font-size: 1rem; font-weight: 600; line-height: 1.5; margin-bottom: 0.75rem;
+            color: rgba(255,255,255,0.92); padding: 0.55rem 1rem; border-radius: 0.5rem;
+            font-size: 0.92rem; font-weight: 600; line-height: 1.5; margin-bottom: 0.4rem;
             box-shadow: 0 4px 16px -2px rgba(10, 22, 40, 0.5), 0 0 20px rgba(30, 100, 255, 0.15);
             border: 1px solid rgba(59, 130, 246, 0.25);
         }
+        #peptopia-klimek-guide .version-tag { color: rgba(255,255,255,0.35); font-weight: 400; font-size: 0.85em; }
         #peptopia-klimek-guide .search-input {
-            width: 100%; padding: 0.65rem 1rem; font-size: 16px; border-radius: 8px;
+            width: 100%; padding: 0.5rem 1rem; font-size: 16px; border-radius: 8px;
             border: 1px solid #6366f1; background: #ffffff; color: #1e293b;
-            outline: none; box-sizing: border-box;
+            outline: none; box-sizing: border-box; text-align: center;
         }
+        #peptopia-klimek-guide .search-input:focus { text-align: left; }
         html.dark #peptopia-klimek-guide .search-input { background: #1e293b; color: #f1f5f9; border-color: #6366f1; }
         #peptopia-klimek-guide .search-input::placeholder { color: #94a3b8; }
         html.dark #peptopia-klimek-guide .search-input::placeholder { color: #64748b; }
@@ -375,10 +378,11 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             border: 1px solid rgba(59, 130, 246, 0.3);
         }
         #peptopia-klimek-guide .home-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            display: flex; flex-wrap: wrap; justify-content: center;
             gap: 0.75rem; margin-bottom: 2rem;
         }
-        @media (max-width: 600px) { #peptopia-klimek-guide .home-grid { grid-template-columns: 1fr; } }
+        #peptopia-klimek-guide .home-grid .home-card { flex: 0 1 calc(25% - 0.6rem); min-width: 250px; }
+        @media (max-width: 600px) { #peptopia-klimek-guide .home-grid .home-card { flex: 0 0 100%; min-width: 0; } }
         #peptopia-klimek-guide .home-card {
             border-radius: 0.75rem; overflow: hidden; cursor: pointer;
             transition: transform 0.18s, box-shadow 0.18s; background: var(--white);
@@ -388,12 +392,10 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         html.dark #peptopia-klimek-guide .home-card { background: #1e293b; border-color: #334155; }
         #peptopia-klimek-guide .home-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px -4px rgba(0,0,0,0.15); }
         html.dark #peptopia-klimek-guide .home-card:hover { box-shadow: 0 8px 24px -4px rgba(0,0,0,0.4); }
-        #peptopia-klimek-guide .home-card-header { padding: 0.7rem 0.85rem; font-weight: 800; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        #peptopia-klimek-guide .home-card-header { padding: 0.7rem 0.85rem; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; }
         #peptopia-klimek-guide .home-card-header .home-card-emoji { font-size: 1.2rem; }
-        #peptopia-klimek-guide .home-card-body { padding: 0.65rem 0.85rem 0.5rem; flex-grow: 1; }
-        #peptopia-klimek-guide .home-card-desc { font-size: 0.82rem; color: #64748b; line-height: 1.45; margin-bottom: 0.5rem; }
-        html.dark #peptopia-klimek-guide .home-card-desc { color: #94a3b8; }
-        #peptopia-klimek-guide .home-card-meta { display: flex; gap: 0.75rem; align-items: center; font-size: 0.72rem; color: #94a3b8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        #peptopia-klimek-guide .home-card-body { padding: 0.5rem 0.85rem 0.35rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start; }
+        #peptopia-klimek-guide .home-card-desc { font-size: 0.82rem; line-height: 1.45; margin-bottom: 0; }
         #peptopia-klimek-guide .home-card-footer { padding: 0.5rem 0.85rem 0.65rem; border-top: 1px solid var(--slate-200); display: flex; gap: 0.4rem; }
         html.dark #peptopia-klimek-guide .home-card-footer { border-top-color: #334155; }
         #peptopia-klimek-guide .home-card-btn { font-size: 0.78rem; font-weight: 700; padding: 0.35rem 0.7rem; border-radius: 0.35rem; border: none; cursor: pointer; transition: all 0.15s; -webkit-tap-highlight-color: transparent; }
@@ -413,7 +415,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         #peptopia-klimek-guide .navbar-pdf-btn {
             background: #312e81; color: white; border: 2px solid rgba(255,255,255,0.5);
             padding: 0.3rem 0.65rem; border-radius: 0.35rem; font-size: 0.8rem; font-weight: 700;
-            cursor: pointer; transition: all 0.15s; -webkit-tap-highlight-color: transparent; white-space: nowrap;
+            cursor: pointer; transition: all 0.15s; -webkit-tap-highlight-color: transparent; white-space: nowrap; flex-shrink: 0;
         }
         #peptopia-klimek-guide .navbar-pdf-btn:hover { background: white; color: #312e81; }
         #peptopia-klimek-guide .pdf-view {
@@ -478,12 +480,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         <div class="nav-title" onclick="showHome()">Klimek Guide</div>
         <div class="nav-filters" id="nav-filters">
             <button class="nav-filter-btn active" id="filter-all" onclick="filterDashboard('all')">All Topics</button>
-            <button class="nav-filter-btn" id="filter-systems" onclick="filterDashboard('systems')">Body Systems</button>
+            <button class="nav-filter-btn" id="filter-systems" onclick="filterDashboard('systems')">Systems</button>
             <button class="nav-filter-btn" id="filter-foundations" onclick="filterDashboard('foundations')">Foundations</button>
         </div>
         <div style="display:flex; gap:0.4rem; align-items:center;">
             <button class="home-nav-btn" id="home-back-btn" onclick="showHome()">&#8592; Home</button>
-            <button class="navbar-pdf-btn" id="pdf-nav-btn" onclick="showPDFs()">&#128196; Klimek PDFs</button>
+            <button class="navbar-pdf-btn" id="pdf-nav-btn" onclick="showPDFs()">&#128196; PDFs</button>
         </div>
     </nav>
 
@@ -588,8 +590,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                     '<br><small style="color:#94a3b8;font-weight:400;">' + err.message + '</small></div>';
             });
 
-        var APP_VERSION = '1.1';
-        var QUIZ_COUNTS = { cardio:100, resp:100, neuro:100, gi:100, obpeds:100, endo:100, musc:100, psych:100, hemonc:100, integ:100, pharm:100, fund:90, gero:95, nutr:95 };
+        var APP_VERSION = '1.2';
+        var QUIZ_COUNTS = { cardio:116, resp:112, neuro:100, gi:100, obpeds:114, endo:114, musc:100, psych:118, hemonc:112, integ:100, pharm:114, fund:120, gero:95, nutr:95 };
 
         function buildBannerText() {
             var secs = Object.keys(contentData).length;
@@ -597,13 +599,13 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             Object.keys(contentData).forEach(function(k) { cards += contentData[k].data.length; });
             var quizQs = 0;
             Object.keys(QUIZ_COUNTS).forEach(function(k) { quizQs += QUIZ_COUNTS[k]; });
-            return 'Your comprehensive NCLEX review across ' + secs + ' nursing specialties &mdash; ' + cards + ' study cards &amp; ' + quizQs.toLocaleString() + ' quiz questions. v' + APP_VERSION;
+            return 'NCLEX review &mdash; ' + secs + ' specialties, ' + cards + ' study cards &amp; ' + quizQs.toLocaleString() + ' quiz questions.&nbsp; &nbsp;<span class="version-tag">[v' + APP_VERSION + ']</span>';
         }
 
         function initApp() {
         loadingEl.innerHTML =
             '<div class="home-hero"><div class="home-hero-banner" id="hero-banner"></div></div>' +
-            '<div style="padding: 0.5rem 1rem; max-width: 600px; margin: 0 auto;">' +
+            '<div style="padding: 0.25rem 1rem 0.4rem; max-width: 600px; margin: 0 auto;">' +
             '<input type="text" id="global-search" class="search-input" placeholder="Search all cards... (e.g. Digoxin, ABG, delegation)" oninput="doGlobalSearch(this.value)"></div>' +
             '<div id="search-results" style="display:none; padding:0.5rem 1rem; max-width:700px; margin:0 auto;"></div>' +
             '<div class="home-grid" id="home-grid"></div>';
@@ -615,20 +617,20 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             fund: '\uD83D\uDCCB', gero: '\uD83E\uDDD3', nutr: '\uD83E\uDD57'
         };
         var sectionSummaries = {
-            cardio: 'Heart failure, rhythms, valves, hypertension, shock, and cardiac pharmacology.',
-            resp: 'Airway management, ventilators, ABGs, TB, pneumonia, and chest tubes.',
-            neuro: 'Stroke, seizures, ICP, spinal cord injury, cranial nerves, and neuro assessments.',
-            gi: 'Liver disease, bowel obstruction, pancreatitis, tube feedings, and fluid balance.',
-            obpeds: 'Antepartum, labor and delivery, postpartum, newborn care, and pediatric milestones.',
-            endo: 'Diabetes, thyroid disorders, adrenal crisis, pituitary function, and hormone regulation.',
-            musc: 'Fractures, traction, casts, joint replacements, compartment syndrome, and mobility.',
-            psych: 'Therapeutic communication, crisis intervention, medications, and legal considerations.',
-            hemonc: 'Anemias, clotting disorders, cancer treatment, blood products, and transfusion reactions.',
-            integ: 'Burns, wound staging, skin assessments, infections, and sensory deficits.',
-            pharm: 'Drug classes, interactions, side effects, nursing implications, acid-base balance, and safe administration.',
-            fund: 'Delegation, prioritization, infection control, isolation precautions, and nursing leadership.',
-            gero: 'Age-related changes, polypharmacy, delirium vs dementia, elder care, fall prevention, and advance directives.',
-            nutr: 'Macronutrients, vitamins, minerals, therapeutic diets, tube feedings, TPN, and nutritional assessment.'
+            cardio: 'Heart failure, rhythms, shock, vascular disorders',
+            resp: 'COPD, asthma, ventilators, oxygen therapy',
+            neuro: 'Stroke, seizures, ICP, spinal cord injuries',
+            gi: 'GI disorders, renal failure, electrolytes, tube feeding',
+            obpeds: 'Maternity, labor, newborn care, pediatric conditions',
+            endo: 'Diabetes, thyroid, adrenal, hormone regulation',
+            musc: 'Fractures, traction, mobility, joint replacements',
+            psych: 'Crisis intervention, therapeutic communication, psych meds',
+            hemonc: 'Blood types, transfusions, cancer treatment, anemias',
+            integ: 'Burns, wound care, pressure ulcers, skin conditions',
+            pharm: 'Drug safety, dosing, interactions, acid-base balance',
+            fund: 'Delegation, prioritization, infection control, leadership',
+            gero: 'Aging changes, polypharmacy, dementia, fall prevention',
+            nutr: 'Vitamins, minerals, therapeutic diets, nutritional support'
         };
         var colorBaseMap = {
             'bg-rose': 'rose', 'bg-blue': 'blue', 'bg-purple': 'purple',
@@ -803,11 +805,10 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                 html += '<div class="home-card" data-section="' + key + '" style="animation-delay:' + (i * 0.04) + 's;" onclick="switchTab(\'' + key + '\')">' +
                     '<div class="home-card-header" style="background-color:var(--' + cBase + '-100); color:var(--' + cBase + '-800);">' +
                         '<span class="home-card-emoji">' + emoji + '</span><span>' + sec.title + '</span></div>' +
-                    '<div class="home-card-body"><div class="home-card-desc">' + sec.description + '</div>' +
-                        '<div class="home-card-meta"><span>\uD83D\uDDC2 ' + sec.data.length + ' cards</span><span>\uD83E\uDDE0 Quiz</span></div></div>' +
+                    '<div class="home-card-body"><div class="home-card-desc" style="color:var(--' + cBase + '-800);">' + sec.description + '</div></div>' +
                     '<div class="home-card-footer">' +
-                        '<button class="home-card-btn study-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); openCards(0);">Study Cards</button>' +
-                        '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); setTimeout(startQuiz, 100);">Quiz Me</button></div></div>';
+                        '<button class="home-card-btn study-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); openCards(0);">' + sec.data.length + ' Study Cards</button>' +
+                        '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); switchTab(\'' + key + '\'); setTimeout(startQuiz, 100);">\uD83E\uDDE0 Quiz Me</button></div></div>';
             }
             document.getElementById('home-grid').innerHTML = html;
             applyFilter();

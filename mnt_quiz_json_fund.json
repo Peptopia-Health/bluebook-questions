@@ -1,7 +1,7 @@
 {
   "section": "fund",
   "title": "Fundamentals & Leadership",
-  "questionCount": 90,
+  "questionCount": 120,
   "questions": [
     {
       "q": "Which task can ONLY be performed by the RN?",
@@ -992,6 +992,336 @@
       ],
       "correct": 1,
       "rationale": "The ventrogluteal site is preferred for IM injections in adults because it has the least risk of hitting nerves or blood vessels."
+    },
+    {
+      "q": "Normal serum potassium range is:",
+      "options": [
+        "1.5-3.0 mEq/L",
+        "3.5-5.0 mEq/L",
+        "5.5-7.0 mEq/L",
+        "8.0-10.0 mEq/L"
+      ],
+      "correct": 1,
+      "rationale": "Normal serum potassium is 3.5-5.0 mEq/L. This is one of the most tested lab values on NCLEX."
+    },
+    {
+      "q": "A patient's serum sodium is 128 mEq/L. This indicates:",
+      "options": [
+        "Hypernatremia",
+        "Normal sodium",
+        "Hyponatremia",
+        "Hyperkalemia"
+      ],
+      "correct": 2,
+      "rationale": "Normal Na+ is 136-145. A value of 128 is hyponatremia (low sodium)."
+    },
+    {
+      "q": "Normal fasting blood glucose range is:",
+      "options": [
+        "40-60 mg/dL",
+        "70-100 mg/dL",
+        "120-180 mg/dL",
+        "200-300 mg/dL"
+      ],
+      "correct": 1,
+      "rationale": "Normal fasting glucose is 70-100 mg/dL. Values below 70 indicate hypoglycemia; above 126 on two occasions suggests diabetes."
+    },
+    {
+      "q": "A serum creatinine of 3.2 mg/dL suggests:",
+      "options": [
+        "Normal kidney function",
+        "Impaired kidney function",
+        "Liver disease",
+        "Dehydration only"
+      ],
+      "correct": 1,
+      "rationale": "Normal creatinine is 0.7-1.3 mg/dL. Elevated creatinine (3.2) indicates impaired renal function and reduced GFR."
+    },
+    {
+      "q": "Which lab value should be checked before administering digoxin?",
+      "options": [
+        "Sodium",
+        "Potassium",
+        "Calcium",
+        "Magnesium"
+      ],
+      "correct": 1,
+      "rationale": "Potassium must be checked before giving digoxin. Hypokalemia potentiates digoxin toxicity and can cause fatal arrhythmias."
+    },
+    {
+      "q": "Using the ABCD lab priority system, a 'C' (Critical) value requires the nurse to:",
+      "options": [
+        "Continue monitoring",
+        "Document and reassess next shift",
+        "Hold the related medication and call the provider",
+        "Call a code blue"
+      ],
+      "correct": 2,
+      "rationale": "Critical values require holding the causative medication, assessing the patient, and notifying the provider for orders."
+    },
+    {
+      "q": "A patient on warfarin has an INR of 5.0. The nurse should FIRST:",
+      "options": [
+        "Give the next dose as scheduled",
+        "Hold warfarin and notify the provider",
+        "Administer vitamin K stat",
+        "Increase the warfarin dose"
+      ],
+      "correct": 1,
+      "rationale": "INR of 5.0 is supratherapeutic (normal therapeutic 2-3). Hold the warfarin and notify the provider before giving an antidote."
+    },
+    {
+      "q": "Which task is OUTSIDE the LPN scope of practice?",
+      "options": [
+        "Administering oral medications",
+        "Performing wound care on a stable patient",
+        "Creating the nursing care plan",
+        "Taking vital signs"
+      ],
+      "correct": 2,
+      "rationale": "Creating the care plan requires RN-level assessment and clinical judgment. LPNs can contribute data but cannot independently develop the plan."
+    },
+    {
+      "q": "The RN can delegate which task to the LPN?",
+      "options": [
+        "Initial patient assessment",
+        "Administering IV push morphine",
+        "Reinforcing previously taught diabetic teaching",
+        "Hanging the first unit of blood"
+      ],
+      "correct": 2,
+      "rationale": "LPNs can reinforce teaching that was initially provided by the RN. They cannot do initial assessments, IV push meds, or first-time blood administration."
+    },
+    {
+      "q": "An LPN asks to administer an IV push medication. The RN should:",
+      "options": [
+        "Allow it \u2014 LPNs can push all IV meds",
+        "Decline \u2014 IV push medications are outside LPN scope",
+        "Allow it if the LPN has been trained",
+        "Allow it for saline flushes only"
+      ],
+      "correct": 1,
+      "rationale": "IV push medications are outside LPN scope of practice in most states. This requires RN assessment of the IV site and knowledge of rapid drug effects."
+    },
+    {
+      "q": "Which task is appropriate for the UAP?",
+      "options": [
+        "Assessing a patient's lung sounds",
+        "Ambulating a stable postoperative patient",
+        "Administering a scheduled eye drop",
+        "Evaluating a patient's response to pain medication"
+      ],
+      "correct": 1,
+      "rationale": "Ambulating stable patients is within UAP scope. Assessment, medication administration, and evaluation are RN responsibilities."
+    },
+    {
+      "q": "The UAP reports a patient's blood pressure is 80/50. The nurse should:",
+      "options": [
+        "Ask the UAP to recheck it in 30 minutes",
+        "Tell the UAP to document it",
+        "Assess the patient personally and immediately",
+        "Delegate further assessment to the LPN"
+      ],
+      "correct": 2,
+      "rationale": "Abnormal vital signs require RN assessment. The nurse must personally evaluate the patient when values are outside normal ranges."
+    },
+    {
+      "q": "A nurse observes a coworker taking narcotics from the medication cart without scanning a patient. The FIRST action is:",
+      "options": [
+        "Confront the coworker privately",
+        "Report to the charge nurse or supervisor",
+        "Ignore it \u2014 it may be for a legitimate reason",
+        "Document it in the patient's chart"
+      ],
+      "correct": 1,
+      "rationale": "Suspected drug diversion must be reported to the supervisor immediately. This is a patient safety issue that requires the chain of command."
+    },
+    {
+      "q": "A new graduate nurse should be assigned which patient?",
+      "options": [
+        "Patient returning from cardiac catheterization 1 hour ago",
+        "Patient with chronic heart failure on stable medications",
+        "Patient with a chest tube and fluctuating drainage",
+        "Patient requiring titration of a vasopressor drip"
+      ],
+      "correct": 1,
+      "rationale": "Stable, predictable patients with chronic conditions are appropriate for new graduates. The others require experienced assessment and intervention skills."
+    },
+    {
+      "q": "The correct order for DONNING PPE is:",
+      "options": [
+        "Gloves, gown, mask, goggles",
+        "Gown, mask, goggles, gloves",
+        "Mask, goggles, gown, gloves",
+        "Goggles, mask, gown, gloves"
+      ],
+      "correct": 1,
+      "rationale": "Donning order: gown first, then mask, then goggles/face shield, then gloves last (covering gown cuffs)."
+    },
+    {
+      "q": "When removing (doffing) PPE, which item is removed FIRST?",
+      "options": [
+        "Mask",
+        "Gown",
+        "Gloves",
+        "Goggles"
+      ],
+      "correct": 2,
+      "rationale": "Gloves are the most contaminated and are removed first during doffing. The mask is removed last, outside the room."
+    },
+    {
+      "q": "After removing gloves during doffing, the nurse should IMMEDIATELY:",
+      "options": [
+        "Remove the gown",
+        "Perform hand hygiene",
+        "Remove the mask",
+        "Exit the room"
+      ],
+      "correct": 1,
+      "rationale": "Hand hygiene must be performed between each step of PPE removal to prevent cross-contamination."
+    },
+    {
+      "q": "Which disease requires AIRBORNE precautions?",
+      "options": [
+        "MRSA",
+        "Influenza",
+        "Tuberculosis",
+        "C. difficile"
+      ],
+      "correct": 2,
+      "rationale": "TB requires airborne precautions (N95 respirator + negative pressure room). Remember: Measles, Chickenpox, Herpes zoster (disseminated), TB = airborne."
+    },
+    {
+      "q": "A patient with C. difficile requires which type of precautions?",
+      "options": [
+        "Airborne",
+        "Droplet",
+        "Contact",
+        "Reverse isolation"
+      ],
+      "correct": 2,
+      "rationale": "C. difficile is spread by contact. Gown and gloves are required. Use soap and water for hand hygiene (alcohol-based sanitizer does NOT kill C. diff spores)."
+    },
+    {
+      "q": "The mnemonic 'My Chicken Hez TB' helps remember which type of precautions?",
+      "options": [
+        "Contact precautions",
+        "Droplet precautions",
+        "Airborne precautions",
+        "Standard precautions"
+      ],
+      "correct": 2,
+      "rationale": "My Chicken Hez TB = Measles, Chickenpox, Herpes zoster (disseminated), TB \u2014 all require airborne precautions with N95 and negative pressure room."
+    },
+    {
+      "q": "The mnemonic 'APE To Man' helps the nurse remember:",
+      "options": [
+        "Lab value priorities",
+        "Heart valve auscultation sites",
+        "Stages of grief",
+        "Developmental milestones"
+      ],
+      "correct": 1,
+      "rationale": "APE To Man = Aortic (2nd R ICS), Pulmonic (2nd L ICS), Erb's (3rd L ICS), Tricuspid (4th L ICS), Mitral (5th L ICS MCL)."
+    },
+    {
+      "q": "The aortic valve is auscultated at which location?",
+      "options": [
+        "2nd right intercostal space, sternal border",
+        "2nd left intercostal space",
+        "5th left intercostal space, midclavicular",
+        "4th left intercostal space"
+      ],
+      "correct": 0,
+      "rationale": "The aortic valve is auscultated at the 2nd right intercostal space at the sternal border \u2014 the first point in the APE To Man sequence."
+    },
+    {
+      "q": "An S3 heart sound in an adult most likely indicates:",
+      "options": [
+        "Normal finding",
+        "Heart failure",
+        "Aortic stenosis",
+        "Pericarditis"
+      ],
+      "correct": 1,
+      "rationale": "S3 (ventricular gallop) in adults is an abnormal finding associated with heart failure due to fluid overload causing rapid ventricular filling."
+    },
+    {
+      "q": "Before administering digoxin, the nurse counts which pulse for a FULL 60 seconds?",
+      "options": [
+        "Radial pulse",
+        "Carotid pulse",
+        "Apical pulse",
+        "Pedal pulse"
+      ],
+      "correct": 2,
+      "rationale": "Always count the apical pulse for a full 60 seconds before digoxin. Hold if HR <60 in adults or <100 in infants."
+    },
+    {
+      "q": "After a cardiac catheterization via the femoral artery, the nurse should assess:",
+      "options": [
+        "Radial and ulnar pulses",
+        "Carotid pulse",
+        "Pedal pulses (dorsalis pedis and posterior tibial)",
+        "Brachial pulse"
+      ],
+      "correct": 2,
+      "rationale": "After femoral access cardiac catheterization, check distal pulses (dorsalis pedis, posterior tibial) to ensure adequate circulation below the insertion site."
+    },
+    {
+      "q": "When two patients seem equally urgent, the Breaker Rule states to prioritize by:",
+      "options": [
+        "Which patient is closest",
+        "Which organ system is more vital",
+        "Which patient was admitted first",
+        "Alphabetical order of diagnosis"
+      ],
+      "correct": 1,
+      "rationale": "The Breaker Rule prioritizes by organ vitality: Brain > Heart > Lungs > Liver > Kidneys. The more vital organ takes priority."
+    },
+    {
+      "q": "Which prioritization principle is MOST important on NCLEX?",
+      "options": [
+        "Treat chronic conditions first",
+        "See the most stable patient first",
+        "Airway, Breathing, Circulation (ABCs)",
+        "Alphabetical triage"
+      ],
+      "correct": 2,
+      "rationale": "ABCs (Airway, Breathing, Circulation) is the gold standard for prioritization. Always address life-threatening airway and breathing issues first."
+    },
+    {
+      "q": "A patient says, 'I'm scared about my surgery tomorrow.' The BEST therapeutic response is:",
+      "options": [
+        "\"Don't worry, the surgeon is excellent.\"",
+        "\"Tell me more about what's worrying you.\"",
+        "\"Everyone feels that way before surgery.\"",
+        "\"Would you like me to call your family?\""
+      ],
+      "correct": 1,
+      "rationale": "Exploring the patient's feelings with an open-ended question is therapeutic. Avoid false reassurance, generalizing, or deflecting."
+    },
+    {
+      "q": "Which statement is an example of false reassurance?",
+      "options": [
+        "\"Tell me what concerns you most.\"",
+        "\"I can see this is difficult for you.\"",
+        "\"Everything will be just fine.\"",
+        "\"Let's talk about what to expect.\""
+      ],
+      "correct": 2,
+      "rationale": "'Everything will be just fine' is false reassurance \u2014 the nurse cannot guarantee outcomes. Therapeutic responses acknowledge feelings and explore concerns."
+    },
+    {
+      "q": "For NCLEX Select All That Apply questions, the BEST approach is:",
+      "options": [
+        "Select the minimum number of answers",
+        "Evaluate each option independently as true/false",
+        "Always pick 3 answers",
+        "Look for a pattern in correct options"
+      ],
+      "correct": 1,
+      "rationale": "Each SATA option should be evaluated on its own merit as true or false. There is no set number of correct answers and no reliable pattern."
     }
   ]
 }

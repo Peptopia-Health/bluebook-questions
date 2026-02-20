@@ -1,7 +1,7 @@
 {
   "section": "resp",
   "title": "Respiratory System",
-  "questionCount": 100,
+  "questionCount": 112,
   "questions": [
     {
       "q": "What is the maximum O2 flow for a COPD patient?",
@@ -1102,6 +1102,138 @@
       ],
       "correct": 2,
       "rationale": "INH depletes Vitamin B6, which can cause peripheral neuropathy (numbness/tingling in hands and feet). Supplementing B6 prevents this complication."
+    },
+    {
+      "q": "A nurse is assessing ventilator weaning readiness. Which parameter value supports weaning?",
+      "options": [
+        "PaO2 50 mmHg on FiO2 60%",
+        "Respiratory rate of 28",
+        "NIF of -30 cmH2O",
+        "Tidal volume of 3 mL/kg"
+      ],
+      "correct": 2,
+      "rationale": "NIF (negative inspiratory force) stronger than -20 cmH2O indicates adequate respiratory muscle strength for weaning. -30 is stronger than -20. The other values (PaO2 too low on too-high FiO2, RR too high, TV too low) do NOT meet weaning criteria."
+    },
+    {
+      "q": "When should ventilator weaning trials be scheduled?",
+      "options": [
+        "At night when the unit is quieter",
+        "During the day when the patient is rested",
+        "Immediately after suctioning",
+        "Only on weekends when staffing is lower"
+      ],
+      "correct": 1,
+      "rationale": "Weaning trials should be conducted during the day when the patient is well-rested and alert, and when full staffing is available to monitor closely. Night trials increase risk because the patient may be fatigued and monitoring may be reduced."
+    },
+    {
+      "q": "The hallmark sign that differentiates tension pneumothorax from simple pneumothorax is:",
+      "options": [
+        "Chest pain on the affected side",
+        "Decreased breath sounds",
+        "Tracheal deviation away from the affected side",
+        "Subcutaneous emphysema"
+      ],
+      "correct": 2,
+      "rationale": "Tracheal deviation AWAY from the affected side is the hallmark of tension pneumothorax. It indicates mediastinal shift from pressure buildup. Simple pneumothorax has decreased breath sounds and chest pain but NO tracheal deviation or hemodynamic instability."
+    },
+    {
+      "q": "Emergency needle decompression for tension pneumothorax is performed at which anatomical site?",
+      "options": [
+        "4th intercostal space, anterior axillary line",
+        "2nd intercostal space, midclavicular line",
+        "6th intercostal space, midaxillary line",
+        "Suprasternal notch"
+      ],
+      "correct": 1,
+      "rationale": "Needle decompression is performed at the 2nd intercostal space, midclavicular line on the affected side. A large-bore needle is inserted to release trapped air. This is followed by chest tube placement for definitive management."
+    },
+    {
+      "q": "A nurse is caring for a patient with a total laryngectomy. Which activity is permanently contraindicated?",
+      "options": [
+        "Showering with a stoma cover",
+        "Swimming in a pool",
+        "Speaking with an electrolarynx",
+        "Walking outdoors"
+      ],
+      "correct": 1,
+      "rationale": "After total laryngectomy, the patient breathes exclusively through the stoma. Swimming is PERMANENTLY contraindicated because water would enter directly into the lungs through the stoma, causing drowning. Showering is safe with a protective stoma cover."
+    },
+    {
+      "q": "When suctioning a patient with a total laryngectomy, the nurse should insert the catheter through the:",
+      "options": [
+        "Nose",
+        "Mouth",
+        "Stoma",
+        "Oropharynx"
+      ],
+      "correct": 2,
+      "rationale": "After total laryngectomy, there is no connection between the upper airway (nose/mouth) and the lungs. All suctioning must be performed through the stoma, which is the only airway. Suctioning via nose or mouth would not reach the lower airway."
+    },
+    {
+      "q": "A patient has pH 7.50, PaCO2 30, HCO3 24. Using ROME, this indicates:",
+      "options": [
+        "Metabolic alkalosis",
+        "Respiratory alkalosis",
+        "Respiratory acidosis",
+        "Metabolic acidosis"
+      ],
+      "correct": 1,
+      "rationale": "pH 7.50 = alkalosis. Using ROME: RO (Respiratory Opposite) \u2014 CO2 30 is low (opposite direction from high pH) = respiratory cause. HCO3 24 is normal = no metabolic component. Diagnosis: uncompensated respiratory alkalosis (hyperventilation)."
+    },
+    {
+      "q": "pH 7.32, PaCO2 40, HCO3 18. This ABG reflects:",
+      "options": [
+        "Respiratory acidosis",
+        "Metabolic acidosis",
+        "Respiratory alkalosis with compensation",
+        "Normal ABG values"
+      ],
+      "correct": 1,
+      "rationale": "pH 7.32 = acidosis. CO2 40 = normal (not the cause). Using ROME: ME (Metabolic Equal) \u2014 HCO3 18 is low (same direction as low pH) = metabolic cause. Diagnosis: uncompensated metabolic acidosis. Look for causes: DKA, renal failure, diarrhea, lactic acidosis."
+    },
+    {
+      "q": "Early signs of oxygen toxicity include:",
+      "options": [
+        "Bradycardia and hypertension",
+        "Substernal chest pain and dry cough",
+        "Peripheral edema and weight gain",
+        "Fever and productive cough"
+      ],
+      "correct": 1,
+      "rationale": "Early O2 toxicity presents with substernal (behind the sternum) chest pain, dry non-productive cough, dyspnea, and fatigue. These occur when FiO2 >50% is administered for >24-48 hours. Late signs progress to ARDS-like symptoms with crackles and respiratory failure."
+    },
+    {
+      "q": "For a patient with COPD, the nurse should set the oxygen flow rate at:",
+      "options": [
+        "6-10 L/min via simple face mask",
+        "1-2 L/min via nasal cannula",
+        "15 L/min via non-rebreather mask",
+        "100% FiO2 via mechanical ventilation"
+      ],
+      "correct": 1,
+      "rationale": "COPD patients rely on hypoxic drive (low O2 triggers breathing). High-flow O2 removes this drive, potentially causing respiratory depression or arrest. Use low-flow O2 at 1-2 L/min via nasal cannula to maintain SpO2 88-92%."
+    },
+    {
+      "q": "A patient in the yellow zone (50-79% of personal best peak flow) should:",
+      "options": [
+        "Continue normal activities without changes",
+        "Use the rescue inhaler and consider contacting the provider",
+        "Call 911 immediately",
+        "Discontinue all asthma medications"
+      ],
+      "correct": 1,
+      "rationale": "Yellow zone (50-79% personal best) = caution. Airways are beginning to narrow. Use short-acting rescue inhaler (albuterol), and contact the provider if symptoms persist. The action plan may call for a temporary increase in controller medications."
+    },
+    {
+      "q": "The nurse teaches a patient using inhaled corticosteroids to rinse the mouth after each use to prevent:",
+      "options": [
+        "Dental erosion",
+        "Oral candidiasis (thrush)",
+        "Dry mouth syndrome",
+        "Gingival hyperplasia"
+      ],
+      "correct": 1,
+      "rationale": "Inhaled corticosteroids deposit medication in the oropharynx, creating an environment for fungal overgrowth (oral candidiasis/thrush). Rinsing and spitting after use removes residual medication. Using a spacer also reduces oropharyngeal deposition."
     }
   ]
 }
