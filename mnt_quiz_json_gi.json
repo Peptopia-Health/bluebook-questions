@@ -1,0 +1,607 @@
+{
+  "section": "gi",
+  "title": "GI & Nutrition",
+  "questionCount": 100,
+  "questions": [
+    {
+      "q": "Where is the pain located in Appendicitis?",
+      "options": ["Epigastric", "LLQ", "RUQ", "RLQ"],
+      "correct": 3,
+      "rationale": "The appendix is located in the Right Lower Quadrant (McBurney's Point)."
+    },
+    {
+      "q": "Why is the Pancreatitis patient kept NPO?",
+      "options": ["To stop enzyme production", "To prevent vomiting", "To rest the bowel", "To prevent aspiration"],
+      "correct": 0,
+      "rationale": "Eating stimulates the pancreas to secrete enzymes, which digests the pancreas itself. NPO stops this process."
+    },
+    {
+      "q": "What is the most dangerous electrolyte imbalance in renal failure?",
+      "options": ["Hyponatremia", "Hyperkalemia", "Hypercalcemia", "Hypomagnesemia"],
+      "correct": 1,
+      "rationale": "Hyperkalemia (High Potassium) can cause fatal cardiac arrhythmias."
+    },
+    {
+      "q": "What drug is used to lower ammonia levels in cirrhosis?",
+      "options": ["Lisinopril", "Lasix", "Lactulose", "Lithium"],
+      "correct": 2,
+      "rationale": "Lactulose traps ammonia in the gut and expels it via stool, treating hepatic encephalopathy."
+    },
+    {
+      "q": "Which food group is lowest in fiber?",
+      "options": ["Whole Grains", "Fruits", "Vegetables", "Dairy/Meats"],
+      "correct": 3,
+      "rationale": "Animal products (meat, milk, eggs) contain no dietary fiber."
+    },
+    {
+      "q": "How many calories are in 1 gram of fat?",
+      "options": ["9", "4", "7", "12"],
+      "correct": 0,
+      "rationale": "Fats are the most calorie-dense nutrient at 9 kcal/gram."
+    },
+    {
+      "q": "Which food produces Acid Ash?",
+      "options": ["Milk", "Cranberries/Meat", "Vegetables", "Fruits"],
+      "correct": 1,
+      "rationale": "Acid ash diets acidify urine to prevent certain stones and infections."
+    },
+    {
+      "q": "Which grain is allowed on a Gluten-Free diet?",
+      "options": ["Rye", "Wheat", "Rice", "Barley"],
+      "correct": 2,
+      "rationale": "Rice and Corn are gluten-free. Remember 'BROW' to avoid: Barley, Rye, Oats, Wheat."
+    },
+    {
+      "q": "What organism commonly causes Acute Glomerulonephritis?",
+      "options": ["Pseudomonas", "E. Coli", "Staph Aureus", "Group A Beta Strep"],
+      "correct": 3,
+      "rationale": "It is an immune complex reaction that occurs weeks after a Strep throat infection."
+    },
+    {
+      "q": "Which colostomy can be irrigated?",
+      "options": ["Descending/Sigmoid", "Ascending", "Transverse", "Ileostomy"],
+      "correct": 0,
+      "rationale": "Only colostomies with formed stool (lower colon) can be trained via irrigation."
+    },
+    {
+      "q": "How is Hepatitis A transmitted?",
+      "options": ["Blood", "Fecal-Oral route", "Sexual contact", "Airborne"],
+      "correct": 1,
+      "rationale": "Hep A is viral, transmitted via contaminated food/water (Fecal-Oral)."
+    },
+    {
+      "q": "What assessment finding is classic for Pyloric Stenosis?",
+      "options": ["Bound abdomen", "Sausage-shaped mass", "Olive-shaped abdominal mass", "Distended veins"],
+      "correct": 2,
+      "rationale": "The thickened pyloric muscle feels like an olive in the epigastrum."
+    },
+    {
+      "q": "What is the classic sign of intussusception?",
+      "options": ["Clay colored stool", "Ribbon stool", "Steatorrhea", "Currant jelly stool"],
+      "correct": 3,
+      "rationale": "Stool mixed with blood and mucus looks like currant jelly."
+    },
+    {
+      "q": "What type of stool is seen in Hirschsprung's Disease?",
+      "options": ["Ribbon-like", "Currant jelly", "Tarry", "Frothy"],
+      "correct": 0,
+      "rationale": "Stool is forced through the narrowed segment, appearing ribbon-like."
+    },
+    {
+      "q": "What is the best position for a client with Hiatal Hernia?",
+      "options": ["Low Fowlers", "High Fowlers", "Supine", "Prone"],
+      "correct": 1,
+      "rationale": "Gravity helps keep the stomach contents down. Sit up after meals."
+    },
+    {
+      "q": "What diet prevents Dumping Syndrome?",
+      "options": ["High Fluid/High Fiber", "High Carb/Low Fat", "Low Carb/High Protein/Low Fluid", "Clear Liquids"],
+      "correct": 2,
+      "rationale": "Carbs and fluids speed up emptying. Protein and fat slow it down."
+    },
+    {
+      "q": "What is the priority assessment for a client with ascites?",
+      "options": ["Skin turgor", "Urine output", "LOC", "Abdominal Girth/Respiratory Status"],
+      "correct": 3,
+      "rationale": "Ascites puts pressure on the diaphragm, impairing breathing."
+    },
+    {
+      "q": "What is a major complication of esophageal varices?",
+      "options": ["Hemorrhage", "Infection", "Obstruction", "Stricture"],
+      "correct": 0,
+      "rationale": "These veins are fragile and can burst, causing life-threatening bleeding."
+    },
+    {
+      "q": "Why must scissors be kept at the bedside with a Blakemore tube?",
+      "options": ["To cut the tape", "To cut the tube if airway is blocked", "To trim the tube", "For dressing changes"],
+      "correct": 1,
+      "rationale": "If the balloon moves up and blocks the airway, you must cut the tube to deflate it instantly."
+    },
+    {
+      "q": "What type of diet is recommended for Ulcerative Colitis?",
+      "options": ["High Fat", "High Fiber", "Low Residue (Low Fiber)", "Low Protein"],
+      "correct": 2,
+      "rationale": "Low residue reduces bowel volume and irritation."
+    },
+    {
+      "q": "Which disease is characterized by 'skip lesions'?",
+      "options": ["IBS", "Ulcerative Colitis", "Diverticulitis", "Crohn's Disease"],
+      "correct": 3,
+      "rationale": "Crohn's affects patchy areas of the GI tract, unlike UC which is continuous."
+    },
+    {
+      "q": "What food should be avoided in Diverticulitis?",
+      "options": ["Seeds, nuts, popcorn", "Dairy", "Meat", "Rice"],
+      "correct": 0,
+      "rationale": "Small seeds can get trapped in the diverticula and cause inflammation."
+    },
+    {
+      "q": "Where does gallbladder pain typically radiate?",
+      "options": ["Left arm", "Right shoulder/scapula", "Lower back", "Groin"],
+      "correct": 1,
+      "rationale": "Referred pain to the right shoulder is a classic sign of cholecystitis."
+    },
+    {
+      "q": "What is a cardinal sign of Peritonitis?",
+      "options": ["Hyperactive bowel sounds", "Soft abdomen", "Rigid, board-like abdomen", "Hunger"],
+      "correct": 2,
+      "rationale": "The abdomen becomes rigid due to muscle guarding against the severe inflammation."
+    },
+    {
+      "q": "What EKG change is associated with Hypokalemia?",
+      "options": ["Wide QRS", "Peaked T waves", "ST elevation", "U waves"],
+      "correct": 3,
+      "rationale": "U waves are a specific sign of low potassium."
+    },
+    {
+      "q": "What is the first EKG sign of Hyperkalemia?",
+      "options": ["Peaked T waves", "Inverted T waves", "U waves", "ST depression"],
+      "correct": 0,
+      "rationale": "Tall, peaked T waves indicate dangerous levels of potassium."
+    },
+    {
+      "q": "What is a primary symptom of Hyponatremia?",
+      "options": ["Thirst", "Confusion/Seizures", "Dry skin", "Constipation"],
+      "correct": 1,
+      "rationale": "Sodium regulates fluid balance; low sodium causes brain swelling (cerebral edema)."
+    },
+    {
+      "q": "What is a common sign of Hypernatremia?",
+      "options": ["Edema", "Confusion", "Thirst, dry tongue", "Diarrhea"],
+      "correct": 2,
+      "rationale": "High sodium draws water out of cells, causing dehydration signs."
+    },
+    {
+      "q": "What signs indicate Hypocalcemia?",
+      "options": ["Constipation", "Bone pain", "Kidney stones", "Tetany, Chvostek's, Trousseau's"],
+      "correct": 3,
+      "rationale": "Low calcium causes neuromuscular irritability and spasms."
+    },
+    {
+      "q": "What is a symptom of Hypercalcemia?",
+      "options": ["Muscle weakness/Sedation", "Tetany", "Spasms", "Hyperreflexia"],
+      "correct": 0,
+      "rationale": "High calcium acts as a sedative on the muscles and nerves."
+    },
+    {
+      "q": "What is the difference between a Duodenal Ulcer and a Gastric Ulcer in relation to food?",
+      "options": ["Duodenal pain is relieved by food; Gastric pain is worsened by food", "Both are relieved by food", "Both are worsened by food", "There is no difference"],
+      "correct": 0,
+      "rationale": "Feed a Duodenal Ulcer (food buffers acid), Starve a Gastric Ulcer (food stimulates acid secretion and worsens pain)."
+    },
+    {
+      "q": "What position should a client with Acute Pancreatitis assume for pain relief?",
+      "options": ["Supine with legs extended", "Fetal position (side-lying with knees drawn up)", "Prone", "High Fowler's"],
+      "correct": 1,
+      "rationale": "The fetal position reduces tension on the abdomen and decreases the pain of pancreatitis."
+    },
+    {
+      "q": "What is Turner's Sign and what does it indicate?",
+      "options": ["Bluish discoloration of the flanks; acute pancreatitis", "Yellowing of the skin; liver failure", "Distended neck veins; heart failure", "Red streaking on the skin; cellulitis"],
+      "correct": 0,
+      "rationale": "Turner's Sign (bluish discoloration of the flanks) indicates retroperitoneal hemorrhage, commonly seen in acute pancreatitis."
+    },
+    {
+      "q": "What is Cullen's Sign and what does it indicate?",
+      "options": ["Jaundice of the eyes", "Bluish discoloration around the umbilicus; acute pancreatitis", "Facial flushing; carcinoid syndrome", "Spider angiomas; cirrhosis"],
+      "correct": 1,
+      "rationale": "Cullen's Sign (bluish/purplish discoloration around the periumbilical region) indicates intra-abdominal hemorrhage, commonly seen with acute pancreatitis."
+    },
+    {
+      "q": "What enzyme causes the pancreas to digest itself in pancreatitis?",
+      "options": ["Amylase", "Lipase", "Trypsin", "Pepsin"],
+      "correct": 2,
+      "rationale": "Trypsin is the proteolytic enzyme responsible for autodigestion (self-digestion) of the pancreas in acute pancreatitis."
+    },
+    {
+      "q": "What is Murphy's Sign?",
+      "options": ["Pain when palpating the right costal margin during inspiration; gallbladder or liver disease", "Rebound tenderness in the RLQ; appendicitis", "Rigid abdomen; peritonitis", "Shifting dullness; ascites"],
+      "correct": 0,
+      "rationale": "Murphy's Sign is pain on palpation of the right costal margin during deep inspiration. It is positive in cholecystitis (gallbladder inflammation) or liver disease."
+    },
+    {
+      "q": "What is the hallmark stool finding in Ulcerative Colitis?",
+      "options": ["Clay-colored stool", "Ribbon-like stool", "Bloody diarrhea", "Steatorrhea"],
+      "correct": 2,
+      "rationale": "Ulcerative Colitis causes bloody diarrhea (blood and mucus) due to continuous inflammation of the colonic mucosa."
+    },
+    {
+      "q": "What additional finding is seen with Pyloric Stenosis besides an olive-shaped mass?",
+      "options": ["Bloody diarrhea", "Projectile vomiting", "Currant jelly stool", "Ribbon-like stool"],
+      "correct": 1,
+      "rationale": "Pyloric Stenosis presents with an olive-shaped epigastric mass AND projectile vomiting in infants, typically at 2-4 weeks of age."
+    },
+    {
+      "q": "What additional finding is seen with Intussusception besides currant jelly stool?",
+      "options": ["Olive-shaped mass", "Sausage-shaped mass in RUQ", "Ribbon-like stool", "Projectile vomiting"],
+      "correct": 1,
+      "rationale": "Intussusception presents with currant jelly stool (blood and mucus) AND a sausage-shaped mass in the right upper quadrant, along with episodic severe abdominal pain."
+    },
+    {
+      "q": "What is Hirschsprung's Disease?",
+      "options": ["Telescoping of the intestine", "Absence of ganglionic cells in the colon causing lack of peristalsis", "Inflammation of the appendix", "Twisting of the bowel"],
+      "correct": 1,
+      "rationale": "Hirschsprung's Disease (congenital megacolon) is caused by the absence of ganglionic (nerve) cells in a segment of the colon, resulting in no peristalsis. Suspect if no meconium within 24 hours or ribbon-like foul-smelling stool."
+    },
+    {
+      "q": "When should the nurse hold a tube feeding?",
+      "options": ["If the client is hungry", "If residual volume is greater than 100 mL", "If the formula is cold", "If the client is awake"],
+      "correct": 1,
+      "rationale": "A residual greater than 100 mL indicates the stomach has not emptied properly, increasing aspiration risk. Hold the feeding, return the aspirate, and notify the provider."
+    },
+    {
+      "q": "What should the nurse do during NG tube insertion if the patient coughs and gags?",
+      "options": ["Remove the tube immediately", "Force the tube forward quickly", "Back off a little, let the patient calm, have them sip water, and advance again", "Switch to a larger tube"],
+      "correct": 2,
+      "rationale": "Coughing and gagging during insertion may mean the tube is entering the trachea. Stop, pull back slightly, allow the patient to calm down, offer sips of water through a straw, and advance again."
+    },
+    {
+      "q": "How is the length of an NG tube measured before insertion?",
+      "options": ["From the mouth to the stomach", "From the end of the nose, to the ear lobe, to the xyphoid process", "From the chin to the umbilicus", "Standard 24 inches for all adults"],
+      "correct": 1,
+      "rationale": "The NEX measurement (Nose to Ear to Xyphoid) estimates the distance to the stomach, approximately 22-26 inches in adults."
+    },
+    {
+      "q": "How do you confirm NG tube placement?",
+      "options": ["Listen for air bubbles over the stomach only", "Aspirate stomach contents and test pH (should be less than 4)", "Ask the patient if they feel it in their stomach", "Check for coughing"],
+      "correct": 1,
+      "rationale": "Aspirating gastric contents and testing pH (should be <4, acidic) is the best bedside confirmation of gastric placement. X-ray is the gold standard."
+    },
+    {
+      "q": "What should the nurse do when removing an NG tube?",
+      "options": ["Have the patient take a deep breath and hold it, then remove quickly", "Remove slowly while the patient exhales", "Suction first, then remove", "Clamp and wait 24 hours"],
+      "correct": 0,
+      "rationale": "Having the patient take a deep breath and hold it closes the epiglottis, preventing aspiration of any residual contents as the tube is withdrawn in one smooth motion."
+    },
+    {
+      "q": "What should the nurse do after administering medications through an NG tube?",
+      "options": ["Clamp the tube for 1 hour", "Turn off NG suction for 30 minutes", "Immediately restart suction", "Nothing special is needed"],
+      "correct": 1,
+      "rationale": "Turn off NG suction for at least 30 minutes after giving PO medications through the tube to allow adequate absorption before suctioning resumes."
+    },
+    {
+      "q": "What is the purpose of a Miller Abbott tube?",
+      "options": ["Gastric decompression only", "Advancement into the small intestine for decompression", "Feeding tube placement", "Esophageal tamponade"],
+      "correct": 1,
+      "rationale": "The Miller Abbott tube is a long intestinal tube advanced (via the right side) into the small intestine for decompression of intestinal obstruction."
+    },
+    {
+      "q": "In which position should the patient be placed for an enema?",
+      "options": ["Right lateral (Sims)", "Left lateral (Sims)", "Supine", "Prone"],
+      "correct": 1,
+      "rationale": "Left Sims position allows the solution to flow by gravity into the sigmoid colon, following the natural anatomy of the descending colon."
+    },
+    {
+      "q": "What IV fluid should ALWAYS be used with blood products?",
+      "options": ["D5W", "Lactated Ringer's", "Normal Saline (0.9% NaCl)", "D5 1/2 NS"],
+      "correct": 2,
+      "rationale": "Normal Saline is the ONLY solution compatible with blood products. Dextrose solutions cause hemolysis, and Lactated Ringer's contains calcium which causes clotting."
+    },
+    {
+      "q": "What gauge needle is used for blood transfusion?",
+      "options": ["22-24 gauge", "18-19 gauge", "14-16 gauge", "25-27 gauge"],
+      "correct": 1,
+      "rationale": "An 18-19 gauge needle is used for blood transfusions. The tubing must have a filter, and blood must be administered within 30 minutes of hanging."
+    },
+    {
+      "q": "What is the first action if a transfusion reaction is suspected?",
+      "options": ["Administer Benadryl", "Increase the IV rate", "Stop the transfusion and keep the vein open with NS", "Notify the physician first"],
+      "correct": 2,
+      "rationale": "Stop the blood immediately to prevent further reaction. Keep the IV patent with Normal Saline, then notify the provider, save the blood bag, and send labs."
+    },
+    {
+      "q": "How many RNs must check blood products before administration?",
+      "options": ["1", "2", "3", "Any nurse can verify alone"],
+      "correct": 1,
+      "rationale": "Two RNs must independently verify the blood product against the patient's ID, including blood type, Rh factor, expiration date, and unit number to prevent transfusion errors."
+    },
+    {
+      "q": "What is the monitoring schedule during a blood transfusion?",
+      "options": ["Vitals every 4 hours only", "Vitals before, 15 min after start, then 30 min, then hourly up to 1 hour after", "Vitals before and after only", "No monitoring needed"],
+      "correct": 1,
+      "rationale": "Monitor vitals: before, during (15 min after start, then every 30 min), and after infusion (up to 1 hour). Stay with the patient for the first 15 minutes when reactions are most likely."
+    },
+    {
+      "q": "What should be checked on a blood product before administration?",
+      "options": ["Temperature only", "Expiration date, clots, color, air bubbles, leaks", "Name and date of birth only", "Blood type only"],
+      "correct": 1,
+      "rationale": "Inspect the blood product for expiration date, clots, abnormal color, air bubbles, and leaks. Do not use if any abnormalities are found."
+    },
+    {
+      "q": "Which solutions are considered isotonic?",
+      "options": ["D10W, 3% NaCl, D5 1/2 NS", "D5W, Normal Saline (0.9% NaCl), Lactated Ringer's", "0.45% NaCl, 0.33% NaCl", "D5 LR, D5NS, 3% NaCl"],
+      "correct": 1,
+      "rationale": "Isotonic solutions (D5W, NS, LR) have the same osmolality as blood and do not cause fluid shifts. NS is the only solution used with blood products and Dilantin."
+    },
+    {
+      "q": "What foods are high in Potassium (K+)?",
+      "options": ["White bread and pasta", "Bananas, dried fruits, citrus, potatoes, legumes, tea, peanut butter", "Dairy products and eggs", "Red meat and poultry"],
+      "correct": 1,
+      "rationale": "Potassium-rich foods include bananas, oranges, potatoes, dried fruits, legumes, tomatoes, avocados, and peanut butter."
+    },
+    {
+      "q": "What foods are high in Calcium (Ca++)?",
+      "options": ["Red meat and poultry", "Milk, cheese, green leafy vegetables, legumes", "Bananas and oranges", "Whole grains and cereals"],
+      "correct": 1,
+      "rationale": "Calcium-rich foods include dairy products (milk, cheese, yogurt), green leafy vegetables, legumes, and fortified foods."
+    },
+    {
+      "q": "What foods are high in Iron (Fe++)?",
+      "options": ["Dairy products", "Green leafy vegetables, red meat, organ meat, eggs, whole wheat, carrots", "White bread and rice", "Fruits and juices"],
+      "correct": 1,
+      "rationale": "Iron-rich foods include red meat, organ meats, green leafy vegetables, eggs, whole wheat, and carrots. Use Z-track for iron injections to avoid skin staining."
+    },
+    {
+      "q": "What technique should be used for Iron injections to prevent skin staining?",
+      "options": ["Subcutaneous injection", "Z-track technique", "Intradermal injection", "Standard IM technique"],
+      "correct": 1,
+      "rationale": "Z-track injection displaces the skin before injecting to seal the medication in the muscle and prevent iron from leaking back through the tissue, which causes permanent brown staining."
+    },
+    {
+      "q": "What is Chvostek's Sign?",
+      "options": ["Carpal spasm with BP cuff inflation; hypocalcemia", "Facial spasm after tapping the facial nerve; hypocalcemia", "Fanning of toes; upper motor neuron lesion", "Neck stiffness; meningitis"],
+      "correct": 1,
+      "rationale": "Chvostek's Sign is facial muscle twitching/spasm when the facial nerve (in front of the ear) is tapped. It indicates hypocalcemia (hypoparathyroidism)."
+    },
+    {
+      "q": "What is Trousseau's Sign?",
+      "options": ["Facial spasm after facial nerve tap", "Carpal spasm induced by BP cuff inflation; hypocalcemia", "Positive Babinski response", "Knee jerk reflex"],
+      "correct": 1,
+      "rationale": "Trousseau's Sign is carpal spasm (hand/wrist contraction) when a BP cuff is inflated on the arm for 3 minutes. It indicates hypocalcemia (hypoparathyroidism)."
+    },
+    {
+      "q": "What EKG changes are seen with Hypokalemia?",
+      "options": ["Peaked T waves, prolonged PR, wide QRS", "Prominent U waves, depressed ST segment, flat T waves", "ST elevation", "Shortened QT interval"],
+      "correct": 1,
+      "rationale": "Hypokalemia causes prominent U waves, depressed ST segment, and flat T waves on EKG. It can lead to dangerous arrhythmias."
+    },
+    {
+      "q": "What EKG changes are seen with Hyperkalemia?",
+      "options": ["U waves and flat T waves", "Tall peaked T waves, prolonged PR interval, wide QRS", "ST elevation only", "Normal EKG"],
+      "correct": 1,
+      "rationale": "Hyperkalemia causes tall peaked T waves, prolonged PR interval, and widened QRS complex. Severe hyperkalemia can progress to ventricular fibrillation and cardiac arrest."
+    },
+    {
+      "q": "What is the normal range for serum Potassium (K+)?",
+      "options": ["1.5-2.5 mEq/L", "3.5-5.0 mEq/L", "8-10 mEq/L", "136-145 mEq/L"],
+      "correct": 1,
+      "rationale": "Normal K+ is 3.5-5.0 mEq/L. Below 3.5 is hypokalemia; above 5.0 is hyperkalemia. Both extremes are dangerous for the heart."
+    },
+    {
+      "q": "What is the normal range for serum Sodium (Na+)?",
+      "options": ["3.5-5.0 mEq/L", "96-106 mEq/L", "136-145 mEq/L", "9-10.5 mg/dL"],
+      "correct": 2,
+      "rationale": "Normal Na+ is 136-145 mEq/L. Sodium is the major extracellular cation and regulates fluid balance."
+    },
+    {
+      "q": "What is the normal range for serum Calcium (Ca++)?",
+      "options": ["3.5-5.0 mEq/L", "9-10.5 mg/dL", "1.5-2.5 mEq/L", "136-145 mEq/L"],
+      "correct": 1,
+      "rationale": "Normal Ca++ is 9-10.5 mg/dL. Hypocalcemia causes tetany and spasms; hypercalcemia causes sedation and kidney stones."
+    },
+    {
+      "q": "What is the normal range for serum Magnesium (Mg+)?",
+      "options": ["1.5-2.5 mEq/L", "3.5-5.0 mEq/L", "96-106 mEq/L", "9-10.5 mg/dL"],
+      "correct": 0,
+      "rationale": "Normal Mg+ is 1.5-2.5 mEq/L. Magnesium is important for neuromuscular function. Low Mg causes symptoms similar to hypocalcemia."
+    },
+    {
+      "q": "What is the normal BUN range?",
+      "options": ["0.5-1.2 mg/dL", "10-20 mg/dL", "70-110 mg/dL", "3.5-5 g/dL"],
+      "correct": 1,
+      "rationale": "Normal BUN is 10-20 mg/dL. Elevated BUN indicates impaired renal function, dehydration, or high protein intake."
+    },
+    {
+      "q": "What is the normal Creatinine range?",
+      "options": ["10-20 mg/dL", "0.5-1.2 mg/dL", "3.5-5.0 mEq/L", "70-110 mg/dL"],
+      "correct": 1,
+      "rationale": "Normal Creatinine is 0.5-1.2 mg/dL. It is the most reliable indicator of renal function because it is not affected by diet or hydration."
+    },
+    {
+      "q": "What dietary restriction is important for a client with renal failure?",
+      "options": ["Restrict carbohydrates", "Restrict protein intake", "Increase sodium intake", "Restrict fiber"],
+      "correct": 1,
+      "rationale": "Protein restriction reduces the workload on the kidneys by decreasing nitrogenous waste (BUN) production. Also restrict potassium, sodium, and phosphorus."
+    },
+    {
+      "q": "What are the three phases of acute renal failure?",
+      "options": ["Onset, Peak, Recovery", "Oliguric, Diuretic, Recovery", "Acute, Chronic, End-stage", "Pre-renal, Intra-renal, Post-renal"],
+      "correct": 1,
+      "rationale": "The three phases are: Oliguric (decreased urine output, fluid overload), Diuretic (massive urine output, risk of dehydration), and Recovery (gradual return of renal function)."
+    },
+    {
+      "q": "What is the difference between pre-renal, intra-renal, and post-renal failure?",
+      "options": ["They are all the same", "Pre-renal = perfusion problem; Intra-renal = kidney damage; Post-renal = obstruction", "Pre-renal = infection; Intra-renal = toxins; Post-renal = dehydration", "Only intra-renal causes permanent damage"],
+      "correct": 1,
+      "rationale": "Pre-renal: interference with renal perfusion (shock, dehydration). Intra-renal: damage to renal parenchyma (nephrotoxic drugs, glomerulonephritis). Post-renal: obstruction from tubules to urethral meatus (stones, tumors, BPH)."
+    },
+    {
+      "q": "What is the minimum urine output that indicates adequate kidney function?",
+      "options": ["10 mL/hr", "30 mL/hr", "60 mL/hr", "100 mL/hr"],
+      "correct": 1,
+      "rationale": "A urine output of 30 mL/hr indicates minimal competency of heart and kidney function. Below this level, notify the provider."
+    },
+    {
+      "q": "Where is flank pain located and what does it indicate?",
+      "options": ["Lower abdomen; bladder infection", "Side/back between ribs and hip; kidney stone in upper ureter", "Groin; hernia", "Chest; pleurisy"],
+      "correct": 1,
+      "rationale": "Flank pain indicates a stone in the kidney or upper ureter. Abdominal/scrotal pain suggests a stone in the mid/lower ureter or bladder."
+    },
+    {
+      "q": "What type of solution is used for bladder irrigation?",
+      "options": ["D5W", "Normal Saline only", "Sterile water", "Isotonic sterile saline"],
+      "correct": 3,
+      "rationale": "Only isotonic sterile saline is used for bladder irrigation to prevent fluid and electrolyte imbalances."
+    },
+    {
+      "q": "How is Hepatitis B primarily transmitted?",
+      "options": ["Fecal-oral route", "Blood and body fluids", "Airborne", "Contaminated food"],
+      "correct": 1,
+      "rationale": "Hepatitis B is transmitted through blood, sexual contact, and perinatal exposure. It is more infectious than HIV. Healthcare workers should be vaccinated."
+    },
+    {
+      "q": "What is the most common cause of cirrhosis in the US?",
+      "options": ["Hepatitis A", "Hepatitis C and chronic alcohol use", "Gallstones", "Pancreatic cancer"],
+      "correct": 1,
+      "rationale": "Chronic alcohol abuse and Hepatitis C are the leading causes of cirrhosis, which causes irreversible scarring and impaired liver function."
+    },
+    {
+      "q": "What is hepatic encephalopathy?",
+      "options": ["Liver infection", "Brain dysfunction caused by elevated ammonia from liver failure", "Inflammation of the hepatic veins", "Gallbladder obstruction"],
+      "correct": 1,
+      "rationale": "When the liver cannot convert ammonia to urea, ammonia accumulates in the blood and crosses the blood-brain barrier, causing confusion, asterixis (liver flap), and eventual coma."
+    },
+    {
+      "q": "What diet modification is essential in hepatic encephalopathy?",
+      "options": ["High protein", "Low protein", "Low carbohydrate", "High fat"],
+      "correct": 1,
+      "rationale": "Protein restriction reduces ammonia production from protein metabolism. Lactulose and Neomycin are used to reduce ammonia levels."
+    },
+    {
+      "q": "What is asterixis and what does it indicate?",
+      "options": ["Star-shaped rash; lupus", "Flapping hand tremor; hepatic encephalopathy (liver failure)", "Pill-rolling tremor; Parkinson's", "Intention tremor; cerebellar damage"],
+      "correct": 1,
+      "rationale": "Asterixis (liver flap) is an involuntary flapping tremor of the hands when wrists are dorsiflexed. It is a classic sign of hepatic encephalopathy from elevated ammonia."
+    },
+    {
+      "q": "What lab value is most specific to liver damage?",
+      "options": ["BUN", "Creatinine", "ALT (Alanine Aminotransferase)", "Hemoglobin"],
+      "correct": 2,
+      "rationale": "ALT is the most liver-specific enzyme. Elevated ALT and AST indicate hepatocellular damage. Also monitor bilirubin, albumin, PT/INR, and ammonia."
+    },
+    {
+      "q": "What causes clay-colored (acholic) stools?",
+      "options": ["Iron supplements", "Absence of bile in the stool (biliary obstruction)", "High fiber diet", "Blood in the stool"],
+      "correct": 1,
+      "rationale": "Bile gives stool its normal brown color. When bile flow is obstructed (gallstones, pancreatic head tumor), stool becomes pale/clay-colored and urine becomes dark (tea-colored)."
+    },
+    {
+      "q": "What is the difference between Crohn's Disease and Ulcerative Colitis?",
+      "options": ["They are the same disease", "Crohn's = skip lesions, full wall thickness, any part of GI; UC = continuous, mucosal only, colon only", "Crohn's is limited to the colon; UC affects the whole GI tract", "Crohn's causes bloody diarrhea; UC does not"],
+      "correct": 1,
+      "rationale": "Crohn's: skip lesions, transmural (full wall thickness), can affect mouth to anus, cobblestone appearance, fistulas. UC: continuous inflammation, mucosal layer only, limited to colon/rectum, bloody diarrhea."
+    },
+    {
+      "q": "What are the complications of Crohn's Disease?",
+      "options": ["Toxic megacolon only", "Fistulas, abscesses, strictures, malabsorption, bowel obstruction", "Bloody diarrhea only", "Polyp formation"],
+      "correct": 1,
+      "rationale": "Crohn's causes transmural inflammation leading to fistulas (abnormal connections between organs), abscesses, strictures, malabsorption (especially B12 and fat-soluble vitamins), and bowel obstruction."
+    },
+    {
+      "q": "What complication of Ulcerative Colitis is a medical emergency?",
+      "options": ["Hemorrhoids", "Toxic megacolon", "Constipation", "Fistula formation"],
+      "correct": 1,
+      "rationale": "Toxic megacolon is a life-threatening dilation of the colon that can lead to perforation, sepsis, and death. Signs: fever, tachycardia, abdominal distension, absent bowel sounds."
+    },
+    {
+      "q": "What is the nurse's priority when a client has a new colostomy?",
+      "options": ["Teaching irrigation", "Assessing stoma color (should be beefy red and moist)", "Encouraging solid foods immediately", "Removing the pouch daily"],
+      "correct": 1,
+      "rationale": "The stoma should be beefy red, moist, and slightly edematous initially. A pale, dusky, or black stoma indicates ischemia and must be reported immediately."
+    },
+    {
+      "q": "What is the consistency of output from an ileostomy vs. a sigmoid colostomy?",
+      "options": ["Both produce formed stool", "Ileostomy = liquid/loose; Sigmoid = formed", "Ileostomy = formed; Sigmoid = liquid", "Both produce liquid stool"],
+      "correct": 1,
+      "rationale": "The higher in the GI tract the ostomy, the more liquid the output. Ileostomy output is liquid to loose (risk of dehydration/electrolyte loss). Sigmoid colostomy output is formed."
+    },
+    {
+      "q": "What position should the client be in for a liver biopsy?",
+      "options": ["Left lateral with right arm above head", "Right side-lying with pillow/towel against puncture site", "Prone", "High Fowler's"],
+      "correct": 1,
+      "rationale": "After a liver biopsy, position on the RIGHT side with a pillow/towel against the puncture site. This applies pressure to prevent hemorrhage from the highly vascular liver."
+    },
+    {
+      "q": "What electrolyte imbalances should the nurse monitor for in a patient on diuretics?",
+      "options": ["Hyperkalemia and hypernatremia", "Hypokalemia, hyponatremia, and hypomagnesemia", "Hypercalcemia only", "No electrolyte changes expected"],
+      "correct": 1,
+      "rationale": "Loop diuretics (Lasix) waste potassium, sodium, and magnesium. Monitor labs and replace as needed. Potassium-sparing diuretics (Aldactone/Spironolactone) can cause hyperkalemia."
+    },
+    {
+      "q": "What is the potassium-sparing diuretic and what must you watch for?",
+      "options": ["Lasix; watch for hypokalemia", "Aldactone (Spironolactone); watch for hyperkalemia", "HCTZ; watch for hypercalcemia", "Mannitol; watch for hyponatremia"],
+      "correct": 1,
+      "rationale": "Spironolactone (Aldactone) is a potassium-sparing diuretic. Watch for hyperkalemia. Also used with ACE inhibitors, which also retain potassium—double risk."
+    },
+    {
+      "q": "What are the signs and symptoms of a bowel obstruction?",
+      "options": ["Diarrhea and increased appetite", "Abdominal distension, vomiting, absent bowel sounds, cramping pain", "Fever and bloody stool only", "Constipation only"],
+      "correct": 1,
+      "rationale": "Bowel obstruction causes: vomiting (may be fecal), abdominal distension, high-pitched bowel sounds initially progressing to absent bowel sounds, cramping pain, and inability to pass stool or gas."
+    },
+    {
+      "q": "What is the difference between a small bowel and large bowel obstruction?",
+      "options": ["No clinical difference", "Small bowel = early vomiting, rapid dehydration; Large bowel = gradual distension, constipation", "Large bowel = early vomiting; Small bowel = constipation", "Both present identically"],
+      "correct": 1,
+      "rationale": "Small bowel obstructions cause early, frequent vomiting and rapid dehydration. Large bowel obstructions cause gradual abdominal distension and constipation with later vomiting."
+    },
+    {
+      "q": "What nursing action is priority for suspected appendicitis?",
+      "options": ["Apply a heating pad to the abdomen", "Administer an enema", "Keep NPO, do NOT apply heat, do NOT give enemas or laxatives", "Encourage high fiber diet"],
+      "correct": 2,
+      "rationale": "With suspected appendicitis: keep NPO (prep for surgery), NO heat (increases risk of rupture), NO enemas/laxatives (increase peristalsis and risk of perforation). Monitor for peritonitis signs."
+    },
+    {
+      "q": "What is GERD (Gastroesophageal Reflux Disease)?",
+      "options": ["Stomach ulcer", "Backward flow of stomach acid into the esophagus", "Inflammation of the gallbladder", "Obstruction of the pylorus"],
+      "correct": 1,
+      "rationale": "GERD occurs when the lower esophageal sphincter (LES) is weakened, allowing gastric acid to reflux into the esophagus causing heartburn, regurgitation, and esophageal damage."
+    },
+    {
+      "q": "What lifestyle modifications should be taught for GERD?",
+      "options": ["Eat large meals and lie down after eating", "Elevate HOB 30 degrees, small frequent meals, avoid eating 2-3 hours before bed", "Increase caffeine and alcohol intake", "Sleep on the right side"],
+      "correct": 1,
+      "rationale": "GERD management: elevate HOB, small frequent meals, avoid trigger foods (caffeine, chocolate, spicy, fatty), no eating before bed, maintain healthy weight, avoid tight clothing."
+    },
+    {
+      "q": "What does a positive Guaiac (occult blood) test indicate?",
+      "options": ["Normal finding", "Hidden (occult) blood in the stool", "Infection in the stool", "Parasite in the stool"],
+      "correct": 1,
+      "rationale": "A positive guaiac test indicates occult (hidden) blood in the stool, which may indicate GI bleeding from ulcers, polyps, or colorectal cancer. Further evaluation (colonoscopy) is needed."
+    },
+    {
+      "q": "What is the Albumin level used to assess?",
+      "options": ["Kidney function", "Liver function and nutritional status", "Pancreatic function", "Cardiac function"],
+      "correct": 1,
+      "rationale": "Albumin (normal 3.5-5 g/dL) is produced by the liver and reflects both liver function and nutritional status. Low albumin indicates malnutrition or liver disease and causes edema (decreased oncotic pressure)."
+    },
+    {
+      "q": "How many calories are in 1 gram of protein and 1 gram of carbohydrate?",
+      "options": ["9 kcal each", "4 kcal each", "7 kcal each", "Protein = 4 kcal, Carbs = 9 kcal"],
+      "correct": 1,
+      "rationale": "Both protein and carbohydrates provide 4 kcal/gram. Fat provides 9 kcal/gram. Alcohol provides 7 kcal/gram."
+    },
+    {
+      "q": "A client with cirrhosis develops esophageal varices. Which intervention is the HIGHEST priority?",
+      "options": ["Administer lactulose", "Prepare for balloon tamponade or banding", "Restrict sodium intake", "Encourage high-protein diet"],
+      "correct": 1,
+      "rationale": "Bleeding esophageal varices are a life-threatening emergency. Balloon tamponade (Sengstaken-Blakemore tube) or endoscopic banding/sclerotherapy is the priority to control hemorrhage. Lactulose is for hepatic encephalopathy, not acute variceal bleeding."
+    },
+    {
+      "q": "Which assessment finding is MOST concerning after a client undergoes a paracentesis?",
+      "options": ["Mild abdominal discomfort", "Decreased abdominal girth", "Signs of hypovolemic shock (tachycardia, hypotension)", "Clear straw-colored fluid drained"],
+      "correct": 2,
+      "rationale": "Paracentesis removes large volumes of ascitic fluid. Rapid fluid shifts can cause hypovolemia leading to shock (tachycardia, hypotension, dizziness). Monitor VS closely and administer IV albumin as ordered to maintain intravascular volume."
+    }
+  ]
+}
