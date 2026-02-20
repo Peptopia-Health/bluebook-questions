@@ -1,0 +1,1655 @@
+<!DOCTYPE html><html lang="en"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        :root {
+            /* Light Mode (Notion-esque) */
+            --bg-body: #FFFFFF;
+            --bg-sidebar: #F7F7F5;
+            --bg-card: #FFFFFF;
+            --bg-hover: #F0F0F0;
+            --bg-code: #F7F6F3;
+
+            --text-main: #37352F;
+            --text-muted: #787774;
+            --text-accent: #0F0F0F;
+
+            --border-subtle: #E3E2E0;
+            --border-focus: #D3D1CB;
+
+            --accent-color: #2EAADC;
+            --accent-bg: rgba(46, 170, 220, 0.1);
+
+            --success-text: #2D7D48;
+            --success-bg: #EBF9EB;
+            --error-text: #D44C47;
+            --error-bg: #FDECEB;
+
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+            --radius: 6px;
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        body.dark {
+            /* Dark Mode */
+            --bg-body: #191919;
+            --bg-sidebar: #202020;
+            --bg-card: #252525;
+            --bg-hover: #2C2C2C;
+            --bg-code: #2C2C2C;
+
+            --text-main: #D4D4D4;
+            --text-muted: #9B9B9B;
+            --text-accent: #FFFFFF;
+
+            --border-subtle: #373737;
+            --border-focus: #4D4D4D;
+
+            --accent-color: #4DABCF;
+            --accent-bg: rgba(77, 171, 207, 0.2);
+
+            --success-text: #7BC68F;
+            --success-bg: rgba(45, 125, 72, 0.2);
+            --error-text: #FF8F8B;
+            --error-bg: rgba(212, 76, 71, 0.2);
+
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-main);
+            background: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            transition: background 0.3s ease, color 0.3s ease;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 60px;
+        }
+
+        /* Layout & Header */
+        .app-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 0 12px 0;
+            background: var(--bg-body);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .header.scrolled {
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .header-title-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: sticky;
+            top: 73px;
+            background: var(--bg-body);
+            z-index: 90;
+            padding: 8px 0 24px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: 32px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-btn {
+            background: none;
+            border: none;
+            font-family: var(--font-main);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 8px 0;
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .nav-btn:hover { color: var(--text-main); }
+
+        .nav-btn.active {
+            color: var(--text-main);
+        }
+
+        .nav-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--text-main);
+        }
+
+        /* Buttons & Inputs */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border-subtle);
+            background: var(--bg-card);
+            color: var(--text-main);
+            gap: 6px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn:hover {
+            background: var(--bg-hover);
+        }
+
+        .btn-primary {
+            background: var(--text-main);
+            color: var(--bg-body);
+            border-color: var(--text-main);
+        }
+
+        .btn-primary:hover {
+            background: var(--text-muted);
+            border-color: var(--text-muted);
+            color: var(--bg-body);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            color: var(--text-muted);
+        }
+        .btn-ghost:hover {
+            background: var(--bg-hover);
+            color: var(--text-main);
+        }
+
+        /* Toggle Switch */
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+        }
+        .theme-toggle:hover { background: var(--bg-hover); color: var(--text-main); }
+
+        /* Views */
+        .view { display: none; animation: fadeIn 0.3s ease; }
+        .view.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Home Dashboard */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            padding: 20px;
+            transition: box-shadow 0.2s, transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-focus);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            background: var(--bg-hover);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .card-preview {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            flex-grow: 1;
+            margin-bottom: 16px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        /* Notes View */
+        .document-container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .markdown-body {
+            color: var(--text-main);
+        }
+
+        .markdown-body h1 { font-size: 30px; font-weight: 700; margin: 40px 0 24px; letter-spacing: -0.03em; }
+        .markdown-body h2 { font-size: 24px; font-weight: 600; margin: 32px 0 16px; letter-spacing: -0.02em; border-bottom: 1px solid var(--border-subtle); padding-bottom: 8px; }
+        .markdown-body h3 { font-size: 20px; font-weight: 600; margin: 24px 0 12px; }
+        .markdown-body p { margin-bottom: 16px; font-size: 16px; }
+
+        .markdown-body ul, .markdown-body ol { margin-bottom: 16px; padding-left: 24px; }
+        .markdown-body li { margin-bottom: 6px; }
+
+        .markdown-body strong { font-weight: 600; color: var(--accent-color); }
+
+        /* Notion-style Callout/Blockquote */
+        .markdown-body blockquote {
+            background: var(--bg-code);
+            border-left: 3px solid var(--text-main);
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 15px;
+        }
+
+        .markdown-body code {
+            background: var(--bg-code);
+            color: var(--error-text);
+            font-family: var(--font-mono);
+            font-size: 0.85em;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .markdown-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .markdown-body th {
+            text-align: left;
+            background: var(--bg-sidebar);
+            font-weight: 600;
+            color: var(--text-muted);
+            padding: 10px 12px;
+            border: 1px solid var(--border-subtle);
+        }
+        .markdown-body td {
+            padding: 10px 12px;
+            border: 1px solid var(--border-subtle);
+        }
+        /* Flashcards */
+        .fc-wrapper {
+            max-width: 600px;
+            margin: 40px auto;
+            perspective: 1000px;
+        }
+
+        .fc-status {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .fc-card-container {
+            position: relative;
+            width: 100%;
+            height: 360px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+        }
+
+        .fc-card-container.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .fc-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .fc-back {
+            transform: rotateY(180deg);
+            background: var(--bg-sidebar);
+            color: var(--text-main);
+            font-size: 18px;
+        }
+
+        .fc-controls {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        /* Quiz */
+        .quiz-container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .quiz-question-text {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+
+        .quiz-option {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            margin-bottom: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 15px;
+        }
+
+        .quiz-option:hover:not(.disabled) {
+            background: var(--bg-hover);
+            border-color: var(--text-muted);
+        }
+
+        .quiz-option.selected {
+            border-color: var(--text-main);
+            background: var(--bg-hover);
+        }
+
+        .quiz-option.correct {
+            background: var(--success-bg);
+            border-color: var(--success-text);
+            color: var(--success-text);
+        }
+
+        .quiz-option.incorrect {
+            background: var(--error-bg);
+            border-color: var(--error-text);
+            color: var(--error-text);
+        }
+
+        .quiz-option.disabled { cursor: default; }
+
+        .quiz-feedback {
+            margin-top: 24px;
+            padding: 12px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 600;
+            display: none;
+        }
+        .quiz-feedback.visible { display: block; }
+        .quiz-feedback.correct { color: var(--success-text); background: var(--success-bg); }
+        .quiz-feedback.incorrect { color: var(--error-text); background: var(--error-bg); }
+
+        /* Results */
+        .result-summary {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: 32px;
+        }
+        .result-score-big {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .result-item {
+            padding: 20px;
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            margin-bottom: 16px;
+            background: var(--bg-card);
+        }
+        .result-item.correct { border-left: 4px solid var(--success-text); }
+        .result-item.incorrect { border-left: 4px solid var(--error-text); }
+
+        .result-q { font-weight: 600; margin-bottom: 8px; }
+        .result-a { font-size: 14px; color: var(--text-muted); }
+
+        /* Utilities */
+        .hidden { display: none; }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 20px; }
+            .nav { gap: 16px; overflow-x: auto; padding-bottom: 4px; }
+            .nav::-webkit-scrollbar { display: none; }
+            .card { min-height: auto; }
+            .fc-card-container { height: 300px; }
+            .fc-face { font-size: 16px; padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <!-- Header -->
+    <header class="header" id="main-header">
+        <div class="header-title-group">
+            <span style="font-size: 24px;">📚</span>
+            <h1 id="study-title">Study Space</h1>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-ghost" onclick="downloadPDF()" title="Export as PDF">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span style="margin-left: 6px;">Export</span>
+            </button>
+            <button class="theme-toggle" onclick="toggleDarkMode()" title="Toggle Theme">
+                <svg id="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav class="nav">
+            <button class="nav-btn active" onclick="showView('home')">Dashboard</button>
+            <button class="nav-btn" onclick="showView('notes')">Notes</button>
+            <button class="nav-btn" onclick="showView('flashcards')">Flashcards</button>
+            <button class="nav-btn" onclick="showView('quiz')">Quiz</button>
+        </nav>
+    </div>
+
+    <!-- Views -->
+
+    <!-- HOME VIEW -->
+    <div id="home-view" class="view active">
+        <div class="dashboard-grid">
+            <!-- Notes Card -->
+            <div class="card" onclick="showView('notes')" style="cursor: pointer;">
+                <div class="card-header">
+                    <div class="card-title">📄 Study Notes</div>
+                    <div class="card-meta">Read</div>
+                </div>
+                <div class="card-preview" id="notes-preview-text">
+                    Loading notes preview...
+                </div>
+                <button class="btn btn-ghost" style="margin-top: auto; align-self: flex-start; padding-left: 0;">Open Notes →</button>
+            </div>
+
+            <!-- Flashcards Card -->
+            <div class="card" onclick="showView('flashcards')" style="cursor: pointer;">
+                <div class="card-header">
+                    <div class="card-title">🎴 Flashcards</div>
+                    <div class="card-meta" id="fc-count-badge">0 Cards</div>
+                </div>
+                <div class="card-preview">
+                    Review key concepts and definitions using active recall.
+                </div>
+                <button class="btn btn-ghost" style="margin-top: auto; align-self: flex-start; padding-left: 0;">Start Review →</button>
+            </div>
+
+            <!-- Quiz Card -->
+            <div class="card" onclick="showView('quiz')" style="cursor: pointer;">
+                <div class="card-header">
+                    <div class="card-title">❓ Practice Quiz</div>
+                    <div class="card-meta" id="quiz-count-badge">0 Qs</div>
+                </div>
+                <div class="card-preview">
+                    Test your knowledge with multiple choice questions.
+                </div>
+                <button class="btn btn-ghost" style="margin-top: auto; align-self: flex-start; padding-left: 0;">Take Quiz →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTES VIEW -->
+    <div id="notes-view" class="view">
+        <div class="document-container">
+            <div class="markdown-body" id="notes-content"></div>
+        </div>
+    </div>
+
+    <!-- FLASHCARDS VIEW -->
+    <div id="flashcards-view" class="view">
+        <div class="fc-wrapper">
+            <div class="fc-status">Card <span id="fc-current">1</span> of <span id="fc-total">0</span></div>
+
+            <div class="fc-card-container" id="fc-card" onclick="flipCard()">
+                <div class="fc-face">
+                    <div id="fc-question"></div>
+                </div>
+                <div class="fc-face fc-back">
+                    <div id="fc-answer"></div>
+                </div>
+            </div>
+
+            <div class="fc-controls">
+                <button class="btn" onclick="prevCard()" id="fc-prev">Prev</button>
+                <button class="btn" onclick="shuffleFlashcards()">Shuffle</button>
+                <button class="btn btn-primary" onclick="nextCard()" id="fc-next">Next</button>
+            </div>
+            <div style="text-align: center; margin-top: 12px; font-size: 12px; color: var(--text-muted);">
+                Spacebar to flip • Arrows to navigate
+            </div>
+        </div>
+    </div>
+
+    <!-- QUIZ VIEW -->
+    <div id="quiz-view" class="view">
+        <div class="quiz-container">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 24px; font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                <span>Question <span id="q-current">1</span>/<span id="q-total">0</span></span>
+                <span id="q-score">Score: 0</span>
+            </div>
+
+            <div class="quiz-question-text" id="q-question"></div>
+
+            <div id="q-options"></div>
+
+            <div class="quiz-feedback" id="q-feedback"></div>
+
+            <div class="fc-controls" style="justify-content: flex-end; margin-top: 32px;">
+                <button class="btn" onclick="prevQuestion()" id="q-prev">Previous</button>
+                <button class="btn btn-primary" onclick="nextQuestion()" id="q-next" style="display:none;">Next Question</button>
+                <button class="btn btn-primary" onclick="showResults()" id="q-finish" style="display:none;">Finish Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESULTS VIEW -->
+    <div id="results-view" class="view">
+        <div class="quiz-container">
+            <div class="result-summary">
+                <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Final Score</div>
+                <div class="result-score-big" id="r-score">0/0</div>
+            </div>
+
+            <div id="r-list"></div>
+
+            <div class="fc-controls">
+                <button class="btn" onclick="showView('home')">Back to Dashboard</button>
+                <button class="btn btn-primary" onclick="resetQuiz()">Retake Quiz</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <script>
+        // Decode base64 data
+        const flashcards = JSON.parse(atob('W3sicXVlc3Rpb24iOiAiV2hhdCBpcyB0aGUgc2NpZW50aWZpYyBuYW1lIG9mIHRoZSBiYWN0ZXJpdW0gdGhhdCBjYXVzZXMgdHViZXJjdWxvc2lzPyIsICJhbnN3ZXIiOiAiTXljb2JhY3Rlcml1bSB0dWJlcmN1bG9zaXMifSwgeyJxdWVzdGlvbiI6ICJIb3cgYXJlIFRCIGJhY3RlcmlhIHR5cGljYWxseSB0cmFuc21pdHRlZD8iLCAiYW5zd2VyIjogIlRCIGJhY3RlcmlhIGFyZSBhaXJib3JuZSBhbmQgdHJhdmVsIGludG8gdGhlIGFpcndheXMgdG8gaW5mZWN0IHRoZSBsdW5ncyJ9LCB7InF1ZXN0aW9uIjogIldoYXQgdHlwZSBvZiBpbW11bmUgY2VsbHMgaW5pdGlhbGx5IHJlc3BvbmQgdG8gVEIgaW5mZWN0aW9uIGluIHRoZSBsdW5ncz8iLCAiYW5zd2VyIjogIk1hY3JvcGhhZ2VzIC0gdGhleSBydXNoIHRvIHRoZSBpbmZlY3Rpb24gc2l0ZSBhbmQgYXR0ZW1wdCB0byBhYnNvcmIgYW5kIGJyZWFrIGRvd24gdGhlIGJhY3RlcmlhbCBpbnZhZGVycyJ9LCB7InF1ZXN0aW9uIjogIldoYXQgY29uZGl0aW9ucyBjYW4gd2Vha2VuIHRoZSBpbW11bmUgcmVzcG9uc2UgdG8gVEIsIG1ha2luZyBpbmZlY3Rpb24gbW9yZSBsaWtlbHk/IiwgImFuc3dlciI6ICJNYWxudXRyaXRpb24sIEhJViwgZGlhYmV0ZXMsIGFuZCBwcmVnbmFuY3kgY2FuIGFsbCB3ZWFrZW4gdGhlIGltbXVuZSByZXNwb25zZSB0byBUQiJ9LCB7InF1ZXN0aW9uIjogIkhvdyBkbyBUQiBiYWN0ZXJpYSBzdXJ2aXZlIGFuZCByZXByb2R1Y2UgaW4gdGhlIGJvZHk/IiwgImFuc3dlciI6ICJJZiB0aGUgaW1tdW5lIHJlc3BvbnNlIGlzbid0IHN0cm9uZyBlbm91Z2gsIE15Y29iYWN0ZXJpdW0gdHViZXJjdWxvc2lzIHJlcHJvZHVjZXMgaW5zaWRlIG1hY3JvcGhhZ2VzIGFuZCBmb3JtcyBjb2xvbmllcyBpbiBzdXJyb3VuZGluZyBsdW5nIHRpc3N1ZSJ9LCB7InF1ZXN0aW9uIjogIldoYXQgYXJlIHRoZSBjbGFzc2ljIHN5bXB0b21zIG9mIGFjdGl2ZSB0dWJlcmN1bG9zaXM/IiwgImFuc3dlciI6ICJXZWlnaHQgbG9zcywgYSBoYWNraW5nIGJsb29keSBjb3VnaCwgYW5kIGFzaGVuIChwYWxlKSBza2luIn0sIHsicXVlc3Rpb24iOiAiQmVzaWRlcyB0aGUgbHVuZ3MsIHdoYXQgb3RoZXIgYm9keSBzeXN0ZW1zIGNhbiBUQiBzcHJlYWQgdG8/IiwgImFuc3dlciI6ICJUQiBjYW4gc3ByZWFkIHRvIHRoZSBza2VsZXRhbCBzeXN0ZW0gKGNhdXNpbmcgYmFjayBwYWluKSwga2lkbmV5cyBhbmQgaW50ZXN0aW5lcyAoY2F1c2luZyBhYmRvbWluYWwgcGFpbiksIGFuZCBicmFpbiAoY2F1c2luZyBoZWFkYWNoZXMgYW5kIGltcGFpcmVkIGNvbnNjaW91c25lc3MpIn0sIHsicXVlc3Rpb24iOiAiV2hvIGlkZW50aWZpZWQgdGhlIGJhY3RlcmlhbCBvcmlnaW5zIG9mIFRCIGFuZCBpbiB3aGF0IHllYXI/IiwgImFuc3dlciI6ICJHZXJtYW4gcGh5c2ljaWFuIFJvYmVydCBLb2NoIGlkZW50aWZpZWQgVEIncyBiYWN0ZXJpYWwgb3JpZ2lucyBpbiAxODgyIn0sIHsicXVlc3Rpb24iOiAiV2hlbiB3YXMgdGhlIEJDRyB2YWNjaW5lIGZvciB0dWJlcmN1bG9zaXMgZGV2ZWxvcGVkPyIsICJhbnN3ZXIiOiAiVGhlIEJDRyB2YWNjaW5lIHdhcyBkZXZlbG9wZWQgaW4gMTkyMSJ9LCB7InF1ZXN0aW9uIjogIldoYXQgcGVyY2VudGFnZSBvZiBwZW9wbGUgaW5mZWN0ZWQgd2l0aCBUQiBzaG93IG5vIHN5bXB0b21zPyIsICJhbnN3ZXIiOiAiQWJvdXQgOTAlIG9mIHBlb3BsZSBpbmZlY3RlZCB3aXRoIFRCIGRvbid0IHNob3cgYW55IHN5bXB0b21zIChsYXRlbnQgaW5mZWN0aW9ucykifSwgeyJxdWVzdGlvbiI6ICJXaGF0IGlzIGEgbGF0ZW50IFRCIGluZmVjdGlvbj8iLCAiYW5zd2VyIjogIkEgbGF0ZW50IFRCIGluZmVjdGlvbiBvY2N1cnMgd2hlbiB0aGUgVEIgYmFjdGVyaXVtIGlzIGRvcm1hbnQgaW4gdGhlIGJvZHksIG9ubHkgYWN0aXZhdGluZyB3aGVuIHNvbWVvbmUncyBpbW11bmUgc3lzdGVtIGJlY29tZXMgdG9vIHdlYWsgdG8gbW91bnQgYSBkZWZlbnNlIn0sIHsicXVlc3Rpb24iOiAiSG93IGxvbmcgY2FuIHRyYWRpdGlvbmFsIFRCIHRyZWF0bWVudCB0YWtlPyIsICJhbnN3ZXIiOiAiVHJhZGl0aW9uYWwgVEIgdHJlYXRtZW50cyBjYW4gdGFrZSB1cCB0byBuaW5lIG1vbnRocywgcmVxdWlyaW5nIG11bHRpcGxlIGRydWdzIn0sIHsicXVlc3Rpb24iOiAiV2hhdCBwcm9ibGVtIGFyaXNlcyB3aGVuIHBhdGllbnRzIGRvbid0IGNvbXBsZXRlIHRoZSBmdWxsIGNvdXJzZSBvZiBUQiB0cmVhdG1lbnQ/IiwgImFuc3dlciI6ICJQYXJ0aWFsIHRyZWF0bWVudCBlbmFibGVzIGJhY3RlcmlhIHRvIGRldmVsb3AgcmVzaXN0YW5jZSB0byB0aGUgZHJ1Z3MgKGRydWctcmVzaXN0YW50IFRCKSJ9LCB7InF1ZXN0aW9uIjogIldoeSB3YXMgVEIgY2FsbGVkIHRoZSAnV2hpdGUgUGxhZ3VlJyBkdXJpbmcgdGhlIFZpY3RvcmlhbiBlcmE/IiwgImFuc3dlciI6ICJUQiB3YXMgY2FsbGVkIHRoZSBXaGl0ZSBQbGFndWUgYmVjYXVzZSBvZiB0aGUgZ2hvc3RseSwgYXNoZW4gc2tpbiBhcHBlYXJhbmNlIGl0IGNhdXNlZCBpbiBwYXRpZW50cyJ9LCB7InF1ZXN0aW9uIjogIldoYXQgdGVjaG5vbG9naWNhbCBhZHZhbmNlbWVudCBieSBXaWxoZWxtIFJcdTAwZjZudGdlbiBoZWxwZWQgZGlhZ25vc2UgVEI/IiwgImFuc3dlciI6ICJXaWxoZWxtIFJcdTAwZjZudGdlbiBkaXNjb3ZlcmVkIHRoZSBYLXJheSBpbiAxODk1LCB3aGljaCBlbmFibGVkIHBoeXNpY2lhbnMgdG8gZGlhZ25vc2UgYW5kIHRyYWNrIFRCJ3MgcHJvZ3Jlc3Npb24gdGhyb3VnaCB0aGUgYm9keSJ9LCB7InF1ZXN0aW9uIjogIkhvdyBtYW55IGNvdW50cmllcyBpcyBUQiBzdGlsbCBwcmV2YWxlbnQgaW4gdG9kYXk/IiwgImFuc3dlciI6ICJUQiBpcyBzdGlsbCBwcmV2YWxlbnQgaW4gMzAgY291bnRyaWVzLCBtb3N0IG9mIHdoaWNoIGZhY2Ugb3RoZXIgaGVhbHRoIGNyaXNlcyB0aGF0IGV4YWNlcmJhdGUgdGhlIGRpc2Vhc2UifSwgeyJxdWVzdGlvbiI6ICJXaGF0IHJlY2VudCBkaWFnbm9zdGljIGFkdmFuY2VtZW50IGhhcyBiZWVuIGRldmVsb3BlZCBmb3IgVEI/IiwgImFuc3dlciI6ICJSZXNlYXJjaGVycyBoYXZlIGRldmVsb3BlZCBhIHVyaW5lIHRlc3QgdGhhdCB5aWVsZHMgcmVzdWx0cyBpbiAxMiBob3VycyJ9LCB7InF1ZXN0aW9uIjogIkhvdyBtdWNoIGNvdWxkIG5ldyBvcmFsIFRCIHRyZWF0bWVudHMgcmVkdWNlIHRyZWF0bWVudCB0aW1lPyIsICJhbnN3ZXIiOiAiTmV3IG9yYWwgdHJlYXRtZW50cyBjb3VsZCBjdXQgdHJlYXRtZW50IHRpbWUgYnkgNzUlIn1d'));
+        const mcqs = JSON.parse(atob('W3sicXVlc3Rpb24iOiAiSG93IG9sZCB3ZXJlIHRoZSBza2VsZXRvbnMgZGlzY292ZXJlZCBpbiAyMDA4IHRoYXQgc2hvd2VkIGV2aWRlbmNlIG9mIHR1YmVyY3Vsb3NpcyBpbmZlY3Rpb24/IiwgIm9wdGlvbnMiOiBbIjUsMDAwIHllYXJzIG9sZCIsICI3LDAwMCB5ZWFycyBvbGQiLCAiOSwwMDAgeWVhcnMgb2xkIiwgIjExLDAwMCB5ZWFycyBvbGQiXSwgImNvcnJlY3QiOiAiQyJ9LCB7InF1ZXN0aW9uIjogIldoYXQgaXMgdGhlIHNjaWVudGlmaWMgbmFtZSBvZiB0aGUgYmFjdGVyaXVtIHRoYXQgY2F1c2VzIHR1YmVyY3Vsb3Npcz8iLCAib3B0aW9ucyI6IFsiU3RyZXB0b2NvY2N1cyB0dWJlcmN1bG9zaXMiLCAiTXljb2JhY3Rlcml1bSB0dWJlcmN1bG9zaXMiLCAiU3RhcGh5bG9jb2NjdXMgdHViZXJjdWxvc2lzIiwgIkJhY2lsbHVzIHR1YmVyY3Vsb3NpcyJdLCAiY29ycmVjdCI6ICJCIn0sIHsicXVlc3Rpb24iOiAiV2hpY2ggaW1tdW5lIGNlbGxzIGFyZSB0aGUgZmlyc3QgdG8gcmVzcG9uZCB0byBUQiBpbmZlY3Rpb24gaW4gdGhlIGx1bmdzPyIsICJvcHRpb25zIjogWyJULWNlbGxzIiwgIkItY2VsbHMiLCAiTWFjcm9waGFnZXMiLCAiTmV1dHJvcGhpbHMiXSwgImNvcnJlY3QiOiAiQyJ9LCB7InF1ZXN0aW9uIjogIldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgY29uZGl0aW9ucyBjYW4gd2Vha2VuIHRoZSBpbW11bmUgcmVzcG9uc2UgdG8gVEI/IiwgIm9wdGlvbnMiOiBbIk1hbG51dHJpdGlvbiwgSElWLCBkaWFiZXRlcywgYW5kIHByZWduYW5jeSIsICJPbmx5IEhJViBhbmQgZGlhYmV0ZXMiLCAiT25seSBtYWxudXRyaXRpb24iLCAiT25seSBwcmVnbmFuY3kiXSwgImNvcnJlY3QiOiAiQSJ9LCB7InF1ZXN0aW9uIjogIldoYXQgcGVyY2VudGFnZSBvZiBwZW9wbGUgaW5mZWN0ZWQgd2l0aCBUQiBkbyBOT1Qgc2hvdyBhbnkgc3ltcHRvbXM/IiwgIm9wdGlvbnMiOiBbIjUwJSIsICI3MCUiLCAiODAlIiwgIjkwJSJdLCAiY29ycmVjdCI6ICJEIn0sIHsicXVlc3Rpb24iOiAiV2hvIGlkZW50aWZpZWQgdGhlIGJhY3RlcmlhbCBvcmlnaW5zIG9mIHR1YmVyY3Vsb3NpcyBpbiAxODgyPyIsICJvcHRpb25zIjogWyJXaWxoZWxtIFJcdTAwZjZudGdlbiIsICJMb3VpcyBQYXN0ZXVyIiwgIlJvYmVydCBLb2NoIiwgIkFsZXhhbmRlciBGbGVtaW5nIl0sICJjb3JyZWN0IjogIkMifSwgeyJxdWVzdGlvbiI6ICJJbiB3aGF0IHllYXIgd2FzIHRoZSBCQ0cgdmFjY2luZSBkZXZlbG9wZWQgdG8gYmF0dGxlIHR1YmVyY3Vsb3Npcz8iLCAib3B0aW9ucyI6IFsiMTg5NSIsICIxOTA1IiwgIjE5MjEiLCAiMTk0NSJdLCAiY29ycmVjdCI6ICJDIn0sIHsicXVlc3Rpb24iOiAiSG93IGxvbmcgY2FuIHRyYWRpdGlvbmFsIFRCIHRyZWF0bWVudCB0YWtlIHRvIGNvbXBsZXRlPyIsICJvcHRpb25zIjogWyJVcCB0byAzIG1vbnRocyIsICJVcCB0byA2IG1vbnRocyIsICJVcCB0byA5IG1vbnRocyIsICJVcCB0byAxMiBtb250aHMiXSwgImNvcnJlY3QiOiAiQyJ9LCB7InF1ZXN0aW9uIjogIldoYXQgd2FzIHR1YmVyY3Vsb3NpcyBjYWxsZWQgZHVyaW5nIHRoZSBWaWN0b3JpYW4gZXJhPyIsICJvcHRpb25zIjogWyJUaGUgQmxhY2sgRGVhdGgiLCAiVGhlIFdoaXRlIFBsYWd1ZSIsICJUaGUgUmVkIEZldmVyIiwgIlRoZSBHcmF5IFNpY2tuZXNzIl0sICJjb3JyZWN0IjogIkIifSwgeyJxdWVzdGlvbiI6ICJXaGF0IGFkdmFuY2VtZW50IGFsbG93cyByZXNlYXJjaGVycyB0byB5aWVsZCBUQiB0ZXN0IHJlc3VsdHMgaW4ganVzdCAxMiBob3Vycz8iLCAib3B0aW9ucyI6IFsiQSBibG9vZCB0ZXN0IiwgIkEgdXJpbmUgdGVzdCIsICJBIHNhbGl2YSB0ZXN0IiwgIkEgYnJlYXRoIHRlc3QiXSwgImNvcnJlY3QiOiAiQiJ9XQ=='));
+        const notesMarkdown = JSON.parse(atob('IiMjIE92ZXJ2aWV3IG9mIFR1YmVyY3Vsb3NpcyAoVEIpXG5cblRCIGlzIG9uZSBvZiB0aGUgd29ybGQncyBiaWdnZXN0IGluZmVjdGlvdXMga2lsbGVycywgY2F1c2luZyBtb3JlIGRlYXRocyB0aGFuIG1hbGFyaWEgb3IgSElWL0FJRFMuIFRoZSBkaXNlYXNlIGhhcyBwbGFndWVkIGh1bWFuaXR5IGZvciBhdCBsZWFzdCA5LDAwMCB5ZWFycywgd2l0aCBpbmZlY3RlZCBza2VsZXRvbnMgZGlzY292ZXJlZCBmcm9tIHRoaXMgcGVyaW9kLlxuXG4+ICoqVHViZXJjdWxvc2lzKio6IEEgZGlzZWFzZSBjYXVzZWQgYnkgdGhlIGJhY3Rlcml1bSAqTXljb2JhY3Rlcml1bSB0dWJlcmN1bG9zaXMqIHRoYXQgcHJpbWFyaWx5IGluZmVjdHMgdGhlIGx1bmdzIGFuZCBoYXMgcGVyc2lzdGVkIHRocm91Z2hvdXQgaHVtYW4gaGlzdG9yeS5cblxuIyMjIEhpc3RvcmljYWwgTmFtZXNcbi0gQW5jaWVudCBHcmVla3M6ICoqdGh5c2lzKiogKHJlZmVycmluZyB0byBpdHMgY29uc3VtcHRpdmUgZWZmZWN0cylcbi0gSW5jYW5zOiAqKmNoYWtpb25rZSoqXG4tIEVuZ2xpc2g6ICoqdHViZXJjdWxvc2lzKipcbi0gVmljdG9yaWFuIGVyYTogKipXaGl0ZSBQbGFndWUqKlxuXG4jIyBIb3cgVEIgSW5mZWN0cyB0aGUgQm9keVxuXG5UQiBiYWN0ZXJpYSBhcmUgKiphaXJib3JuZSoqIGFuZCB0cmF2ZWwgdGhyb3VnaCBhaXJ3YXlzIHRvIGluZmVjdCB0aGUgbHVuZ3MuIFRoZSBpbmZlY3Rpb24gcHJvY2VzcyBmb2xsb3dzIHRoZXNlIHN0YWdlczpcblxuMS4gVEIgYmFjdGVyaWEgZW50ZXIgdGhlIGFpcndheXMgYW5kIHJlYWNoIHRoZSBsdW5nc1xuMi4gKipNYWNyb3BoYWdlcyoqIChpbW11bmUgY2VsbHMpIHJ1c2ggdG8gdGhlIGluZmVjdGlvbiBzaXRlIHRvIGFic29yYiBhbmQgZGVzdHJveSBiYWN0ZXJpYVxuMy4gSW4gaGVhbHRoeSBpbmRpdmlkdWFscywgdGhpcyBpbW11bmUgcmVzcG9uc2Ugb2Z0ZW4gcmVtb3ZlcyB0aGUgYmFjdGVyaWFcbjQuIEluIGltbXVub2NvbXByb21pc2VkIGluZGl2aWR1YWxzLCBiYWN0ZXJpYSBzdXJ2aXZlIGFuZCByZXByb2R1Y2UgaW5zaWRlIG1hY3JvcGhhZ2VzXG41LiBCYWN0ZXJpYSBmb3JtIGNvbG9uaWVzIGluIGx1bmcgdGlzc3VlIGFuZCBlbXBsb3kgKipjZWxsLWRlZ3JhZGluZyBlbnp5bWVzKipcblxuIyMjIFJpc2sgRmFjdG9ycyBmb3IgQWN0aXZlIEluZmVjdGlvblxuXG5JbmRpdmlkdWFscyB3aXRoIHdlYWtlbmVkIGltbXVuZSBzeXN0ZW1zIGFyZSBtb3JlIHZ1bG5lcmFibGUgdG8gVEIsIGluY2x1ZGluZyB0aG9zZSB3aXRoOlxuLSBNYWxudXRyaXRpb25cbi0gSElWXG4tIERpYWJldGVzXG4tIFByZWduYW5jeVxuXG4jIyBTeW1wdG9tcyBhbmQgUHJvZ3Jlc3Npb25cblxuIyMjIEx1bmcgRGFtYWdlIGFuZCBJbml0aWFsIFN5bXB0b21zXG4tIERlc3Ryb3llZCBsdW5nIHRpc3N1ZSB0cmlnZ2VycyAqKmNoZXN0IHBhaW4qKlxuLSBQYXRpZW50cyAqKmNvdWdoIHVwIGJsb29kKipcbi0gKipPeHlnZW4gZGVwcml2YXRpb24qKiBjYXVzZXMgaG9ybW9uYWwgY2hhbmdlc1xuLSBEZWNyZWFzZWQgYXBwZXRpdGUgYW5kIGlyb24gcHJvZHVjdGlvblxuXG4jIyMgU3lzdGVtaWMgU3ByZWFkXG5cbnwgQm9keSBTeXN0ZW0gfCBTeW1wdG9tcyB8XG58LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tfFxufCBTa2VsZXRhbCBzeXN0ZW0gfCBCYWNrIHBhaW4sIGRpZmZpY3VsdHkgbW92aW5nIHxcbnwgS2lkbmV5cyBhbmQgaW50ZXN0aW5lcyB8IEFiZG9taW5hbCBwYWluIHxcbnwgQnJhaW4gfCBIZWFkYWNoZXMsIGltcGFpcmVkIGNvbnNjaW91c25lc3MgfFxuXG4jIyMgQ2xhc3NpYyBUQiBBcHBlYXJhbmNlXG4tIFdlaWdodCBsb3NzXG4tIEhhY2tpbmcgYmxvb2R5IGNvdWdoXG4tIEFzaGVuIHNraW4gKGdob3N0bHkgYXBwZWFyYW5jZSlcblxuPiBUaGUgZ2hvc3RseSBhcHBlYXJhbmNlIG9mIFRCIHBhdGllbnRzIGluIFZpY3RvcmlhbiB0aW1lcyBlYXJuZWQgaXQgdGhlIG5hbWUgXCJXaGl0ZSBQbGFndWVcIiBhbmQgZXZlbiBoZWxwZWQgZnVlbCB0aGUgcG9wdWxhciBteXRoIG9mIHZhbXBpcmlzbS5cblxuIyMgSGlzdG9yaWNhbCBCcmVha3Rocm91Z2hzIGluIFRCIFRyZWF0bWVudFxuXG4jIyMgTWFqb3IgTWlsZXN0b25lc1xuXG58IFllYXIgfCBEaXNjb3ZlcnkgfCBDb250cmlidXRvciB8IEltcGFjdCB8XG58LS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS18XG58IDE4ODIgfCBCYWN0ZXJpYWwgb3JpZ2lucyBvZiBUQiB8IFJvYmVydCBLb2NoIHwgSWRlbnRpZmllZCB0aGUgZGlzZWFzZSdzIGNhdXNlIHxcbnwgMTg5NSB8IFgtcmF5IHRlY2hub2xvZ3kgfCBXaWxoZWxtIFJcdTAwZjZudGdlbiB8IEVuYWJsZWQgZGlhZ25vc2lzIGFuZCB0cmFja2luZyBvZiBwcm9ncmVzc2lvbiB8XG58IDE5MjEgfCBCQ0cgdmFjY2luZSB8IFNjaWVudGlzdHMgfCBGaXJzdCBlZmZlY3RpdmUgVEIgdmFjY2luZSB8XG5cblRoZXNlIGRldmVsb3BtZW50cyBsYWlkIHRoZSBncm91bmR3b3JrIGZvciBtb2Rlcm4gYW50aWJpb3RpY3MsIHdoaWNoIHJlbWFpbiBvdXIgbW9zdCBlZmZlY3RpdmUgVEIgdHJlYXRtZW50cyB0b2RheS5cblxuIyMgRGlhZ25vc3RpYyBDaGFsbGVuZ2VzXG5cbiMjIyBMYXRlbnQgVEIgSW5mZWN0aW9uc1xuXG5BcHByb3hpbWF0ZWx5ICoqOTAlIG9mIHBlb3BsZSBpbmZlY3RlZCB3aXRoIFRCIHNob3cgbm8gc3ltcHRvbXMqKi4gSW4gdGhlc2UgbGF0ZW50IGluZmVjdGlvbnMsIHRoZSBiYWN0ZXJpdW0gcmVtYWlucyBkb3JtYW50IGFuZCBvbmx5IGFjdGl2YXRlcyB3aGVuIHRoZSBpbW11bmUgc3lzdGVtIGlzIHdlYWtlbmVkLCBtYWtpbmcgZGlhZ25vc2lzIGV4dHJlbWVseSBkaWZmaWN1bHQuXG5cbiMjIyBUcmVhdG1lbnQgQ29tcGxpY2F0aW9uc1xuLSBUcmFkaXRpb25hbCB0cmVhdG1lbnRzIHJlcXVpcmUgKip1cCB0byA5IG1vbnRocyoqXG4tIE11bHRpcGxlIGRydWdzIG5lZWRlZCB3aXRoICoqaGlnaCBwb3RlbnRpYWwgZm9yIHNpZGUgZWZmZWN0cyoqXG4tIExvbmcgdHJlYXRtZW50IGR1cmF0aW9uIGRpc2NvdXJhZ2VzIGNvbXBsZXRpb25cbi0gKipQYXJ0aWFsIHRyZWF0bWVudCBlbmFibGVzIGRydWcgcmVzaXN0YW5jZSoqIGluIGJhY3RlcmlhXG5cbiMjIEN1cnJlbnQgVEIgQ3Jpc2lzXG5cbiMjIyBHZW9ncmFwaGljIERpc3RyaWJ1dGlvblxuVEIgcmVtYWlucyBwcmV2YWxlbnQgaW4gKiozMCBjb3VudHJpZXMqKiwgbW9zdCBmYWNpbmcgb3RoZXIgaGVhbHRoIGNyaXNlcyB0aGF0IGV4YWNlcmJhdGUgdGhlIGRpc2Vhc2UgYW5kIHRyaWdnZXIgbGF0ZW50IGNhc2VzLlxuXG4jIyMgQmFycmllcnMgdG8gVHJlYXRtZW50XG4tIERpZmZpY3VsdCBhY2Nlc3MgdG8gdHJlYXRtZW50IGluIGFmZmVjdGVkIGNvdW50cmllc1xuLSAqKlN0aWdtYSoqIGRpc2NvdXJhZ2VzIHBlb3BsZSBmcm9tIHNlZWtpbmcgaGVscFxuLSBMb25nIHRyZWF0bWVudCB0aW1lcyByZWR1Y2UgY29tcGxpYW5jZVxuXG4jIyBGdXR1cmUgU29sdXRpb25zXG5cbiMjIyBBcmVhcyBOZWVkaW5nIERldmVsb3BtZW50XG4xLiBCZXR0ZXIgZGlhZ25vc3RpY3NcbjIuIEZhc3Rlci1hY3RpbmcgYW50aWJpb3RpY3NcbjMuIE1vcmUgZWZmZWN0aXZlIHZhY2NpbmVzXG5cbiMjIyBSZWNlbnQgQWR2YW5jZW1lbnRzXG4tICoqVXJpbmUgdGVzdCoqIHRoYXQgeWllbGRzIHJlc3VsdHMgaW4gMTIgaG91cnNcbi0gTmV3ICoqb3JhbCB0cmVhdG1lbnQqKiB0aGF0IGNvdWxkIGN1dCB0cmVhdG1lbnQgdGltZSBieSA3NSVcblxuPiBXaXRoIGNvbnRpbnVlZCByZXNlYXJjaCBhbmQgZGV2ZWxvcG1lbnQsIGV4cGVydHMgaG9wZSB0byBtYWtlIFRCIGV4Y2x1c2l2ZWx5IGEgZGlzZWFzZSBvZiB0aGUgcGFzdC4i'));
+        const studyTitle = atob('VHViZXJjdWxvc2lzOiBXb3JsZCdzIEluZmVjdGlvdXMgS2lsbGVy');
+
+        // --- STATE ---
+        let fcIndex = 0, qIndex = 0, qAnswers = [], qScore = 0, isFlipped = false;
+
+        // --- INIT ---
+        document.getElementById('study-title').textContent = studyTitle;
+        document.title = studyTitle;
+        document.getElementById('notes-preview-text').textContent = notesMarkdown.substring(0, 150) + '...';
+        document.getElementById('fc-count-badge').textContent = flashcards.length + ' Cards';
+        document.getElementById('quiz-count-badge').textContent = mcqs.length + ' Qs';
+
+        initDarkMode();
+
+        // Scroll listener for header shadow
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 10) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+
+        // Simple markdown to HTML converter
+        function markdownToHTML(md) {
+            let html = md;
+
+            // Headers
+            html = html.replace(/^#### (.*$)/gim, '<h4>$1</h4>');
+            html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+
+            // Bold
+            html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
+
+            // Italic
+            html = html.replace(/\*(.*?)\*/gim, '<em>$1</em>');
+
+            // Links
+            html = html.replace(/\[(.*?)\]\((.*?)\)/gim, '<a href="$2">$1</a>');
+
+            // Horizontal rule
+            html = html.replace(/^---$/gim, '<hr>');
+
+            // Process lists, blockquotes, and tables
+            const lines = html.split('\n');
+            const processed = [];
+            let inUnorderedList = false;
+            let inOrderedList = false;
+            let inBlockquote = false;
+            let inTable = false;
+            let tableRows = [];
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                const nextLine = lines[i + 1] || '';
+
+                // Table rows
+                if (line.match(/^\|.*\|$/)) {
+                    if (!inTable) {
+                        inTable = true;
+                        tableRows = [];
+                    }
+                    tableRows.push(line);
+
+                    // Check if next line is not a table row
+                    if (!nextLine.match(/^\|.*\|$/)) {
+                        // Process table
+                        const table = processTable(tableRows);
+                        processed.push(table);
+                        inTable = false;
+                        tableRows = [];
+                    }
+                    continue;
+                }
+
+                // Blockquotes
+                if (line.match(/^> /)) {
+                    if (!inBlockquote) {
+                        processed.push('<blockquote>');
+                        inBlockquote = true;
+                    }
+                    processed.push('<p>' + line.replace(/^> /, '') + '</p>');
+
+                    // Close blockquote if next line is not a blockquote
+                    if (!nextLine.match(/^> /)) {
+                        processed.push('</blockquote>');
+                        inBlockquote = false;
+                    }
+                }
+                // Unordered list items
+                else if (line.match(/^[\-\*] /)) {
+                    if (!inUnorderedList) {
+                        processed.push('<ul>');
+                        inUnorderedList = true;
+                    }
+                    processed.push('<li>' + line.replace(/^[\-\*] /, '') + '</li>');
+
+                    // Close list if next line is not a list item
+                    if (!nextLine.match(/^[\-\*] /)) {
+                        processed.push('</ul>');
+                        inUnorderedList = false;
+                    }
+                }
+                // Ordered list items
+                else if (line.match(/^\d+\. /)) {
+                    if (!inOrderedList) {
+                        processed.push('<ol>');
+                        inOrderedList = true;
+                    }
+                    processed.push('<li>' + line.replace(/^\d+\. /, '') + '</li>');
+
+                    // Close list if next line is not a list item
+                    if (!nextLine.match(/^\d+\. /)) {
+                        processed.push('</ol>');
+                        inOrderedList = false;
+                    }
+                }
+                else {
+                    processed.push(line);
+                }
+            }
+
+            html = processed.join('\n');
+
+            // Helper function to process table
+            function processTable(rows) {
+                if (rows.length === 0) return '';
+
+                let tableHtml = '<table>';
+
+                for (let i = 0; i < rows.length; i++) {
+                    const row = rows[i];
+                    const cells = row.split('|').filter((cell, idx, arr) => idx !== 0 && idx !== arr.length - 1);
+
+                    // Skip separator row - check if all cells contain only dashes, colons, and spaces
+                    const isSeparator = cells.every(cell => cell.trim().match(/^[\-: ]+$/));
+                    if (isSeparator) {
+                        continue;
+                    }
+
+                    // First row is header
+                    if (i === 0) {
+                        tableHtml += '<tr>';
+                        cells.forEach(cell => {
+                            tableHtml += '<th>' + cell.trim() + '</th>';
+                        });
+                        tableHtml += '</tr>';
+                    } else {
+                        tableHtml += '<tr>';
+                        cells.forEach(cell => {
+                            tableHtml += '<td>' + cell.trim() + '</td>';
+                        });
+                        tableHtml += '</tr>';
+                    }
+                }
+
+                tableHtml += '</table>';
+                return tableHtml;
+            }
+
+            // Line breaks and paragraphs
+            html = html.split('\n\n').map(para => {
+                if (para.match(/^<h[1-6]>/) || para.match(/^<hr>/) || para.match(/^<ul>/) || para.match(/^<ol>/) || para.match(/^<blockquote>/) || para.match(/^<table>/)) {
+                    return para;
+                }
+                return '<p>' + para.replace(/\n/g, '<br>') + '</p>';
+            }).join('\n');
+
+            return html;
+        }
+
+        // Initialize dark mode based on system preference
+        function initDarkMode() {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (prefersDark) {
+                document.body.classList.add('dark');
+            }
+
+            // Listen for system preference changes
+            if (window.matchMedia) {
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                    if (event.matches) {
+                        document.body.classList.add('dark');
+                    } else {
+                        document.body.classList.remove('dark');
+                    }
+                });
+            }
+        }
+
+        // Dark mode toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+        }
+
+        function showView(view) {
+            document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(view + '-view').classList.add('active');
+
+            // Only activate nav button if it exists (results view doesn't have a nav button)
+            const navBtn = document.querySelector(`[onclick="showView('${view}')"]`);
+            if (navBtn) {
+                navBtn.classList.add('active');
+            }
+
+            if (view === 'notes') loadNotes();
+            if (view === 'flashcards') loadFlashcard();
+            if (view === 'quiz') loadQuestion();
+            if (view === 'home') loadHome();
+        }
+
+        function loadNotes() {
+            const container = document.getElementById('notes-content');
+            container.innerHTML = markdownToHTML(notesMarkdown);
+        }
+
+        function loadHome() {
+            // Dashboard doesn't need dynamic updates beyond initialization
+            // All counts are set during init
+        }
+
+        function loadFlashcard() {
+            if (!flashcards.length) return;
+            document.getElementById('fc-question').textContent = flashcards[fcIndex].question;
+            document.getElementById('fc-answer').textContent = flashcards[fcIndex].answer;
+            document.getElementById('fc-current').textContent = fcIndex + 1;
+            document.getElementById('fc-total').textContent = flashcards.length;
+            document.getElementById('fc-prev').disabled = fcIndex === 0;
+            document.getElementById('fc-next').disabled = fcIndex === flashcards.length - 1;
+            if (isFlipped) flipCard();
+        }
+
+        function flipCard() {
+            document.getElementById('fc-card').classList.toggle('flipped');
+            isFlipped = !isFlipped;
+        }
+
+        function nextCard() { if (fcIndex < flashcards.length - 1) { fcIndex++; loadFlashcard(); } }
+        function prevCard() { if (fcIndex > 0) { fcIndex--; loadFlashcard(); } }
+        function shuffleFlashcards() { flashcards.sort(() => Math.random() - 0.5); fcIndex = 0; loadFlashcard(); }
+
+        function goToFlashcard(index) {
+            fcIndex = index;
+            showView('flashcards');
+        }
+
+        function loadQuestion() {
+            if (!mcqs.length) return;
+            const q = mcqs[qIndex];
+            document.getElementById('q-question').textContent = q.question;
+            document.getElementById('q-current').textContent = qIndex + 1;
+            document.getElementById('q-total').textContent = mcqs.length;
+            document.getElementById('q-feedback').textContent = '';
+            updateQuizScore();
+
+            const opts = document.getElementById('q-options');
+            opts.innerHTML = '';
+            const labels = ['A', 'B', 'C', 'D'];
+            q.options.forEach((opt, i) => {
+                const div = document.createElement('div');
+                div.className = 'quiz-option';
+                div.textContent = labels[i] + ') ' + opt;
+
+                if (qAnswers[qIndex] !== undefined) {
+                    div.classList.add('disabled');
+                    if (i === qAnswers[qIndex]) div.classList.add(i === labels.indexOf(q.correct) ? 'correct' : 'incorrect');
+                    if (i === labels.indexOf(q.correct)) div.classList.add('correct');
+                } else {
+                    div.onclick = () => selectAnswer(i);
+                }
+                opts.appendChild(div);
+            });
+
+            if (qAnswers[qIndex] !== undefined) {
+                const correct = qAnswers[qIndex] === labels.indexOf(q.correct);
+                document.getElementById('q-feedback').textContent = correct ? '✓ Correct!' : '✗ Incorrect';
+                document.getElementById('q-feedback').className = 'quiz-feedback ' + (correct ? 'correct' : 'incorrect');
+            }
+
+            document.getElementById('q-prev').disabled = qIndex === 0;
+            document.getElementById('q-next').style.display = (qAnswers[qIndex] !== undefined && qIndex < mcqs.length - 1) ? 'block' : 'none';
+            document.getElementById('q-finish').style.display = (qAnswers.filter(a => a !== undefined).length === mcqs.length) ? 'block' : 'none';
+        }
+
+        function selectAnswer(i) {
+            if (qAnswers[qIndex] !== undefined) return;
+            const q = mcqs[qIndex];
+            const labels = ['A', 'B', 'C', 'D'];
+            const correct = i === labels.indexOf(q.correct);
+            qAnswers[qIndex] = i;
+            if (correct) qScore++;
+            loadQuestion();
+        }
+
+        function updateQuizScore() {
+            const answered = qAnswers.filter(a => a !== undefined).length;
+            document.getElementById('q-score').textContent = `Score: ${qScore} / ${answered}`;
+        }
+
+        function nextQuestion() { if (qIndex < mcqs.length - 1) { qIndex++; loadQuestion(); } }
+        function prevQuestion() { if (qIndex > 0) { qIndex--; loadQuestion(); } }
+
+        function goToQuestion(index) {
+            qIndex = index;
+            showView('quiz');
+        }
+
+        function showResults() {
+            showView('results');
+            document.getElementById('r-score').textContent = qScore + '/' + mcqs.length;
+
+            const list = document.getElementById('r-list');
+            list.innerHTML = '';
+            const labels = ['A', 'B', 'C', 'D'];
+            mcqs.forEach((q, i) => {
+                const userAns = qAnswers[i];
+                const correctIdx = labels.indexOf(q.correct);
+                const isCorrect = userAns === correctIdx;
+
+                list.innerHTML += `
+                    <div class="result-item ${isCorrect ? 'correct' : 'incorrect'}">
+                        <div class="result-question">${i + 1}. ${q.question}</div>
+                        <div class="result-answer your-answer">Your answer: ${labels[userAns]}) ${q.options[userAns]}</div>
+                        ${!isCorrect ? `<div class="result-answer correct-answer">Correct answer: ${q.correct}) ${q.options[correctIdx]}</div>` : ''}
+                    </div>
+                `;
+            });
+        }
+
+        function resetQuiz() {
+            qIndex = 0;
+            qAnswers = [];
+            qScore = 0;
+            showView('quiz');
+        }
+
+        document.addEventListener('keydown', e => {
+            if (document.getElementById('flashcards-view').classList.contains('active')) {
+                if (e.key === 'ArrowLeft') prevCard();
+                if (e.key === 'ArrowRight') nextCard();
+                if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipCard(); }
+            }
+        });
+
+        // PDF Download Function
+        function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // PDF settings (always light mode)
+            const pageWidth = doc.internal.pageSize.getWidth();
+            const pageHeight = doc.internal.pageSize.getHeight();
+            const margin = 20;
+            const maxWidth = pageWidth - (margin * 2);
+            let yPosition = margin;
+
+            // Color scheme matching the app's light mode
+            const colors = {
+                primary: [66, 85, 255],           // #4255ff - Accent blue
+                text: [46, 56, 86],               // #2e3856 - Primary text
+                secondary: [88, 99, 128],         // #586380 - Secondary text
+                border: [230, 230, 230],          // #e6e6e6 - Border color
+                bgSecondary: [246, 247, 251]      // #f6f7fb - Light background
+            };
+
+            // Helper functions to avoid spread operator
+            function setTextColor(colorArray) {
+                doc.setTextColor(colorArray[0], colorArray[1], colorArray[2]);
+            }
+            function setFillColor(colorArray) {
+                doc.setFillColor(colorArray[0], colorArray[1], colorArray[2]);
+            }
+            function setDrawColor(colorArray) {
+                doc.setDrawColor(colorArray[0], colorArray[1], colorArray[2]);
+            }
+
+            // Helper function to add new page if needed
+            function checkAddPage(requiredSpace) {
+                if (yPosition + requiredSpace > pageHeight - margin) {
+                    doc.addPage();
+                    yPosition = margin;
+                    return true;
+                }
+                return false;
+            }
+
+            // Helper function to wrap text
+            function wrapText(text, maxWidth, fontSize) {
+                doc.setFontSize(fontSize);
+                return doc.splitTextToSize(text, maxWidth);
+            }
+
+            // Parse markdown into structured elements
+            function parseMarkdown(md) {
+                const lines = md.split('\n');
+                const elements = [];
+                let inList = false;
+                let listItems = [];
+                let inTable = false;
+                let tableRows = [];
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i];
+
+                    // Empty line
+                    if (!line.trim()) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        if (inTable) {
+                            elements.push({ type: 'table', rows: tableRows });
+                            tableRows = [];
+                            inTable = false;
+                        }
+                        elements.push({ type: 'space' });
+                        continue;
+                    }
+
+                    // Horizontal rule
+                    if (line.match(/^---+$/)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        if (inTable) {
+                            elements.push({ type: 'table', rows: tableRows });
+                            tableRows = [];
+                            inTable = false;
+                        }
+                        elements.push({ type: 'hr' });
+                        continue;
+                    }
+
+                    // Table rows
+                    if (line.match(/^\|.*\|$/)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        // Check if it's a separator row - skip it completely
+                        if (line.match(/^\|[\s:|-]+\|$/)) {
+                            // Skip separator rows - don't add to table
+                            continue;
+                        }
+                        inTable = true;
+                        // Parse table cells
+                        const cells = line.split('|').filter((cell, idx, arr) => idx !== 0 && idx !== arr.length - 1).map(c => c.trim());
+                        tableRows.push(cells);
+                        continue;
+                    } else if (inTable) {
+                        // End of table
+                        elements.push({ type: 'table', rows: tableRows });
+                        tableRows = [];
+                        inTable = false;
+                    }
+
+                    // Headers
+                    if (line.match(/^#### /)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        elements.push({ type: 'h4', text: line.replace(/^#### /, '').trim() });
+                        continue;
+                    }
+                    if (line.match(/^### /)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        elements.push({ type: 'h3', text: line.replace(/^### /, '').trim() });
+                        continue;
+                    }
+                    if (line.match(/^## /)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        elements.push({ type: 'h2', text: line.replace(/^## /, '').trim() });
+                        continue;
+                    }
+                    if (line.match(/^# /)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        elements.push({ type: 'h1', text: line.replace(/^# /, '').trim() });
+                        continue;
+                    }
+
+                    // Blockquote
+                    if (line.match(/^> /)) {
+                        if (inList) {
+                            elements.push({ type: 'list', items: listItems });
+                            listItems = [];
+                            inList = false;
+                        }
+                        elements.push({ type: 'blockquote', text: line.replace(/^> /, '').trim() });
+                        continue;
+                    }
+
+                    // List items
+                    if (line.match(/^[-*] /)) {
+                        inList = true;
+                        listItems.push(line.replace(/^[-*] /, '').trim());
+                        continue;
+                    }
+
+                    // Numbered list
+                    if (line.match(/^\d+\. /)) {
+                        inList = true;
+                        listItems.push(line.replace(/^\d+\. /, '').trim());
+                        continue;
+                    }
+
+                    // Regular paragraph
+                    if (inList) {
+                        elements.push({ type: 'list', items: listItems });
+                        listItems = [];
+                        inList = false;
+                    }
+                    elements.push({ type: 'p', text: line.trim() });
+                }
+
+                // Close any remaining list or table
+                if (inList) {
+                    elements.push({ type: 'list', items: listItems });
+                }
+                if (inTable) {
+                    elements.push({ type: 'table', rows: tableRows });
+                }
+
+                return elements;
+            }
+
+            // Process text with bold markers
+            function processTextFormatting(text) {
+                // Return array of segments with formatting info
+                const segments = [];
+                const boldRegex = /\*\*(.+?)\*\*/g;
+                let lastIndex = 0;
+                let match;
+
+                while ((match = boldRegex.exec(text)) !== null) {
+                    // Add normal text before bold
+                    if (match.index > lastIndex) {
+                        segments.push({ text: text.substring(lastIndex, match.index), bold: false });
+                    }
+                    // Add bold text
+                    segments.push({ text: match[1], bold: true });
+                    lastIndex = match.index + match[0].length;
+                }
+
+                // Add remaining text
+                if (lastIndex < text.length) {
+                    segments.push({ text: text.substring(lastIndex), bold: false });
+                }
+
+                // If no segments, return the whole text as normal
+                if (segments.length === 0) {
+                    segments.push({ text: text, bold: false });
+                }
+
+                return segments;
+            }
+
+            // Render formatted text
+            function renderFormattedText(segments, x, y, maxWidth, fontSize) {
+                doc.setFontSize(fontSize);
+                let currentX = x;
+                let currentY = y;
+                const spaceWidth = doc.getTextWidth(' ');
+
+                segments.forEach(segment => {
+                    const words = segment.text.split(' ');
+
+                    words.forEach((word, idx) => {
+                        doc.setFont('helvetica', segment.bold ? 'bold' : 'normal');
+                        if (segment.bold) {
+                            setTextColor(colors.primary);
+                        } else {
+                            setTextColor(colors.text);
+                        }
+
+                        const wordWidth = doc.getTextWidth(word);
+
+                        // Check if word fits on current line
+                        if (currentX + wordWidth > x + maxWidth && currentX > x) {
+                            currentY += fontSize / 2 + 2;
+                            currentX = x;
+                            checkAddPage(fontSize / 2 + 2);
+                        }
+
+                        doc.text(word, currentX, currentY);
+                        currentX += wordWidth + spaceWidth;
+                    });
+                });
+
+                return currentY;
+            }
+
+            // Title Page
+            doc.setFontSize(28);
+            setTextColor(colors.primary);
+            doc.setFont('helvetica', 'bold');
+            const titleLines = wrapText(studyTitle, maxWidth, 28);
+            titleLines.forEach(line => {
+                doc.text(line, pageWidth / 2, yPosition, { align: 'center' });
+                yPosition += 14;
+            });
+
+            yPosition += 5;
+            doc.setFontSize(14);
+            setTextColor(colors.secondary);
+            doc.setFont('helvetica', 'normal');
+            doc.text('Study Materials', pageWidth / 2, yPosition, { align: 'center' });
+
+            // Section 1: Study Notes
+            yPosition += 25;
+            doc.setFontSize(20);
+            setTextColor(colors.primary);
+            doc.setFont('helvetica', 'bold');
+            doc.text('Study Notes', margin, yPosition);
+            yPosition += 12;
+
+            // Draw section separator
+            setDrawColor(colors.border);
+            doc.setLineWidth(0.5);
+            doc.line(margin, yPosition, pageWidth - margin, yPosition);
+            yPosition += 10;
+
+            // Parse and render markdown
+            const elements = parseMarkdown(notesMarkdown);
+
+            elements.forEach(element => {
+                if (element.type === 'space') {
+                    yPosition += 4;
+                    checkAddPage(4);
+                    return;
+                }
+
+                if (element.type === 'hr') {
+                    checkAddPage(8);
+                    yPosition += 3;
+                    setDrawColor(colors.border);
+                    doc.setLineWidth(0.5);
+                    doc.line(margin, yPosition, pageWidth - margin, yPosition);
+                    yPosition += 5;
+                    return;
+                }
+
+                if (element.type === 'h1') {
+                    checkAddPage(12);
+                    yPosition += 2;
+                    doc.setFontSize(16);
+                    setTextColor(colors.text);
+                    doc.setFont('helvetica', 'bold');
+                    const lines = wrapText(element.text, maxWidth, 16);
+                    lines.forEach(line => {
+                        doc.text(line, margin, yPosition);
+                        yPosition += 10;
+                    });
+                    yPosition -= 3;
+                    return;
+                }
+
+                if (element.type === 'h2') {
+                    checkAddPage(10);
+                    yPosition += 2;
+                    doc.setFontSize(14);
+                    setTextColor(colors.text);
+                    doc.setFont('helvetica', 'bold');
+                    const lines = wrapText(element.text, maxWidth, 14);
+                    lines.forEach(line => {
+                        doc.text(line, margin, yPosition);
+                        yPosition += 9;
+                    });
+                    yPosition -= 3;
+                    return;
+                }
+
+                if (element.type === 'h3') {
+                    checkAddPage(9);
+                    yPosition += 2;
+                    doc.setFontSize(12);
+                    setTextColor(colors.text);
+                    doc.setFont('helvetica', 'bold');
+                    const lines = wrapText(element.text, maxWidth, 12);
+                    lines.forEach(line => {
+                        doc.text(line, margin, yPosition);
+                        yPosition += 8;
+                    });
+                    yPosition -= 3;
+                    return;
+                }
+
+                if (element.type === 'h4') {
+                    checkAddPage(8);
+                    yPosition += 2;
+                    doc.setFontSize(11);
+                    setTextColor(colors.text);
+                    doc.setFont('helvetica', 'bold');
+                    const lines = wrapText(element.text, maxWidth, 11);
+                    lines.forEach(line => {
+                        doc.text(line, margin, yPosition);
+                        yPosition += 7;
+                    });
+                    yPosition -= 3;
+                    return;
+                }
+
+                if (element.type === 'blockquote') {
+                    checkAddPage(15);
+                    // Draw blockquote background
+                    const lines = wrapText(element.text, maxWidth - 16, 10);
+                    const blockHeight = lines.length * 6 + 10;
+
+                    setFillColor(colors.bgSecondary);
+                    doc.rect(margin, yPosition, maxWidth, blockHeight, 'F');
+
+                    // Draw left border
+                    setFillColor(colors.primary);
+                    doc.rect(margin, yPosition, 3, blockHeight, 'F');
+
+                    yPosition += 7;
+
+                    doc.setFontSize(10);
+                    setTextColor(colors.text);
+                    doc.setFont('helvetica', 'normal');
+                    lines.forEach(line => {
+                        doc.text(line, margin + 8, yPosition);
+                        yPosition += 6;
+                    });
+                    yPosition += 3;
+                    return;
+                }
+
+                if (element.type === 'table') {
+                    const rows = element.rows;
+                    if (rows.length === 0) return;
+
+                    checkAddPage(20);
+
+                    const colCount = rows[0].length;
+                    const colWidth = maxWidth / colCount;
+
+                    // Helper to process bold text in table cells
+                    function processCellText(text) {
+                        const segments = processTextFormatting(text);
+                        return segments;
+                    }
+
+                    // Draw table
+                    rows.forEach((row, rowIdx) => {
+                        const isHeader = rowIdx === 0;
+                        const rowHeight = 9;
+
+                        checkAddPage(rowHeight + 2);
+
+                        // Draw row background for header
+                        if (isHeader) {
+                            setFillColor(colors.bgSecondary);
+                            doc.rect(margin, yPosition, maxWidth, rowHeight, 'F');
+                        }
+
+                        // Draw cells
+                        row.forEach((cell, colIdx) => {
+                            const xPos = margin + (colIdx * colWidth);
+                            const textY = yPosition + 6; // Vertically center text
+
+                            doc.setFontSize(9);
+
+                            // Process text with bold formatting
+                            const segments = processCellText(cell);
+
+                            // Render text with formatting
+                            let currentX = xPos + 2;
+                            segments.forEach(segment => {
+                                if (isHeader) {
+                                    doc.setFont('helvetica', 'bold');
+                                    setTextColor(colors.text);
+                                } else {
+                                    doc.setFont('helvetica', segment.bold ? 'bold' : 'normal');
+                                    setTextColor(segment.bold ? colors.primary : colors.text);
+                                }
+
+                                // Simple rendering - just first line if too long
+                                const words = segment.text.split(' ');
+                                const availableWidth = colWidth - 4;
+                                let displayText = '';
+                                let testText = '';
+
+                                for (let word of words) {
+                                    testText = displayText ? displayText + ' ' + word : word;
+                                    if (doc.getTextWidth(testText) <= availableWidth) {
+                                        displayText = testText;
+                                    } else {
+                                        break;
+                                    }
+                                }
+
+                                doc.text(displayText || segment.text.substring(0, 20), currentX, textY);
+                                currentX += doc.getTextWidth(displayText) + doc.getTextWidth(' ');
+                            });
+
+                            // Draw cell border
+                            setDrawColor(colors.border);
+                            doc.setLineWidth(0.3);
+                            doc.rect(xPos, yPosition, colWidth, rowHeight, 'S');
+                        });
+
+                        yPosition += rowHeight;
+                    });
+
+                    yPosition += 4;
+                    return;
+                }
+
+                if (element.type === 'list') {
+                    element.items.forEach(item => {
+                        checkAddPage(10);
+                        doc.setFontSize(10);
+                        setTextColor(colors.primary);
+                        doc.setFont('helvetica', 'normal');
+                        doc.text('•', margin + 2, yPosition);
+
+                        // Process formatting in list items
+                        const segments = processTextFormatting(item);
+                        yPosition = renderFormattedText(segments, margin + 8, yPosition, maxWidth - 8, 10);
+                        yPosition += 6;
+                    });
+                    yPosition += 2;
+                    return;
+                }
+
+                if (element.type === 'p') {
+                    checkAddPage(10);
+                    const segments = processTextFormatting(element.text);
+                    yPosition = renderFormattedText(segments, margin, yPosition, maxWidth, 10);
+                    yPosition += 8;
+                    return;
+                }
+            });
+
+            // Section 2: Flashcards
+            yPosition += 10;
+            checkAddPage(30);
+            doc.setFontSize(20);
+            setTextColor(colors.primary);
+            doc.setFont('helvetica', 'bold');
+            doc.text('Flashcards', margin, yPosition);
+            yPosition += 12;
+
+            // Draw section separator
+            setDrawColor(colors.border);
+            doc.setLineWidth(0.5);
+            doc.line(margin, yPosition, pageWidth - margin, yPosition);
+            yPosition += 12;
+
+            flashcards.forEach((card, index) => {
+                checkAddPage(45);
+
+                const cardStartY = yPosition;
+                yPosition += 7; // Top padding
+
+                // Question
+                doc.setFontSize(11);
+                setTextColor(colors.text);
+                doc.setFont('helvetica', 'bold');
+                doc.text(`Card ${index + 1}`, margin + 5, yPosition);
+                yPosition += 8;
+
+                doc.setFontSize(10);
+                const questionLines = wrapText(card.question, maxWidth - 10, 10);
+                questionLines.forEach(line => {
+                    doc.text(line, margin + 5, yPosition);
+                    yPosition += 6;
+                });
+
+                yPosition += 4;
+
+                // Answer
+                doc.setFont('helvetica', 'normal');
+                setTextColor(colors.secondary);
+                const answerLines = wrapText(card.answer, maxWidth - 10, 10);
+                answerLines.forEach(line => {
+                    doc.text(line, margin + 5, yPosition);
+                    yPosition += 6;
+                });
+
+                yPosition += 7; // Bottom padding
+
+                // Draw card border
+                const cardHeight = yPosition - cardStartY;
+                setDrawColor(colors.border);
+                doc.setLineWidth(0.8);
+                doc.rect(margin, cardStartY, maxWidth, cardHeight, 'S');
+
+                yPosition += 5;
+            });
+
+            // Section 3: Quiz Questions
+            yPosition += 10;
+            checkAddPage(30);
+            doc.setFontSize(20);
+            setTextColor(colors.primary);
+            doc.setFont('helvetica', 'bold');
+            doc.text('Quiz Questions', margin, yPosition);
+            yPosition += 12;
+
+            // Draw section separator
+            setDrawColor(colors.border);
+            doc.setLineWidth(0.5);
+            doc.line(margin, yPosition, pageWidth - margin, yPosition);
+            yPosition += 12;
+
+            mcqs.forEach((q, index) => {
+                checkAddPage(55);
+
+                const questionStartY = yPosition;
+                yPosition += 7; // Top padding
+
+                // Question number and text
+                doc.setFontSize(11);
+                setTextColor(colors.text);
+                doc.setFont('helvetica', 'bold');
+                doc.text(`Question ${index + 1}`, margin + 5, yPosition);
+                yPosition += 8;
+
+                doc.setFontSize(10);
+                const questionLines = wrapText(q.question, maxWidth - 10, 10);
+                questionLines.forEach(line => {
+                    doc.text(line, margin + 5, yPosition);
+                    yPosition += 6;
+                });
+
+                yPosition += 5;
+
+                // Options
+                const labels = ['A', 'B', 'C', 'D'];
+                q.options.forEach((opt, i) => {
+                    const isCorrect = labels[i] === q.correct;
+
+                    doc.setFontSize(10);
+                    if (isCorrect) {
+                        setTextColor(colors.primary);
+                        doc.setFont('helvetica', 'bold');
+                    } else {
+                        setTextColor(colors.text);
+                        doc.setFont('helvetica', 'normal');
+                    }
+
+                    const optionText = `${labels[i]}) ${opt}`;
+                    const optionLines = wrapText(optionText, maxWidth - 15, 10);
+                    optionLines.forEach(line => {
+                        doc.text(line, margin + 10, yPosition);
+                        yPosition += 6;
+                    });
+
+                    yPosition += 1;
+                });
+
+                yPosition += 7; // Bottom padding
+
+                // Draw question border
+                const questionHeight = yPosition - questionStartY;
+                setDrawColor(colors.border);
+                doc.setLineWidth(0.8);
+                doc.rect(margin, questionStartY, maxWidth, questionHeight, 'S');
+
+                yPosition += 5;
+            });
+
+            // Save the PDF
+            const fileName = studyTitle.replace(/[^a-z0-9]/gi, '_').toLowerCase() + '_study_materials.pdf';
+            doc.save(fileName);
+        }
+
+        // Initialize on page load
+        initDarkMode();
+        loadHome();
+    </script>
+
+
+</body></html>
