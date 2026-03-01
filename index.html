@@ -795,7 +795,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         #peptopia-klimek-guide .home-card-btn.study-btn:hover { background: #4338ca; }
         #peptopia-klimek-guide .card-count-badge {
             display: inline-flex; align-items: center; justify-content: center;
-            background: #fbbf24; color: #312e81; font-weight: 800;
+            background: #22c55e; color: white; font-weight: 800;
             border-radius: 50%; min-width: 24px; height: 24px;
             font-size: 0.7rem; line-height: 1;
         }
@@ -1103,7 +1103,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
 
         var GH_CDN = 'https://cdn.jsdelivr.net/gh/Peptopia-Health/bluebook-questions@main/';
         var GH_PAGES = 'https://peptopia-health.github.io/bluebook-questions/';
-        var CACHE_BUST = '?v=3.0';
+        var CACHE_BUST = '?v=3.1';
 
         fetch(GH_CDN + 'mnt_studydata.json' + CACHE_BUST)
             .then(function(r) {
@@ -1121,8 +1121,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                     '<br><small style="color:#94a3b8;font-weight:400;">' + err.message + '</small></div>';
             });
 
-        var APP_VERSION = '3.0';
-        var QUIZ_COUNTS = { cardio:116, resp:112, neuro:100, gi:105, obpeds:136, endo:114, musc:103, psych:124, hemonc:112, integ:100, pharm:119, fund:120, gero:95, nutr:95, fullexam:341 };
+        var APP_VERSION = '3.1';
+        var QUIZ_COUNTS = { cardio:116, resp:112, neuro:100, gi:105, obpeds:136, endo:114, musc:103, psych:124, hemonc:112, integ:100, pharm:170, fund:120, gero:95, nutr:95, fullexam:341 };
 
         /* ===== PROGRESS TRACKING ENGINE (v3.0) =====
          * PERMANENT: Leitner spaced repetition with localStorage persistence.
@@ -1346,7 +1346,26 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             'Tacrolimus': 'tah-KROL-ih-mus',
             'Tiotropium': 'TY-oh-TRO-pee-um',
             'Venlafaxine': 'ven-lah-FAX-een',
-            'Warfarin': 'WAR-far-in'
+            'Warfarin': 'WAR-far-in',
+            'Clonidine': 'KLON-ih-deen',
+            'Lispro': 'LIS-pro',
+            'Aspart': 'AS-part',
+            'Glargine': 'GLAR-jeen',
+            'Salmeterol': 'sal-MEH-ter-ol',
+            'Sulfamethoxazole': 'SUL-fah-meth-OX-ah-zole',
+            'Trimethoprim': 'try-METH-oh-prim',
+            'Andexanet Alfa': 'an-DEX-ah-net AL-fah',
+            'Acetylcysteine': 'ah-SEE-til-SIS-teen',
+            'Kayexalate': 'KAY-ex-ah-late',
+            'Montelukast': 'mon-teh-LOO-kast',
+            'Atorvastatin': 'ah-TOR-vah-STAT-in',
+            'Simvastatin': 'sim-vah-STAT-in',
+            'Alprazolam': 'al-PRAY-zoh-lam',
+            'Citalopram': 'sih-TAL-oh-pram',
+            'Escitalopram': 'es-sih-TAL-oh-pram',
+            'Doxycycline': 'DOX-ee-SY-kleen',
+            'Methimazole': 'meth-IM-ah-zole',
+            'Glipizide': 'GLIP-ih-zide'
         };
 
         var _speechSynth = window.speechSynthesis || null;
@@ -1682,7 +1701,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         var _termMap = {}, _termCanon = {}, _termPats = [];
         (function() {
             var lists = {
-                'hl-drug': 'Magnesium Sulfate|Calcium Gluconate|Valproic Acid|Carbon Dioxide|Vitamin K|Digoxin|Nitroglycerin|Warfarin|Coumadin|Heparin|Enoxaparin|Lovenox|Morphine|Meperidine|Demerol|Fentanyl|Hydrocodone|Oxycodone|Codeine|Tramadol|Epinephrine|Norepinephrine|Dopamine|Dobutamine|Atropine|Adenosine|Amiodarone|Lidocaine|Metoprolol|Propranolol|Atenolol|Carvedilol|Lisinopril|Enalapril|Captopril|Losartan|Amlodipine|Nifedipine|Diltiazem|Verapamil|Furosemide|Lasix|Hydrochlorothiazide|HCTZ|Spironolactone|Aldactone|Mannitol|Phenytoin|Dilantin|Carbamazepine|Tegretol|Depakote|Levodopa|Sinemet|Lithium|Haloperidol|Haldol|Chlorpromazine|Thorazine|Clozapine|Risperidone|Olanzapine|Quetiapine|Diazepam|Valium|Lorazepam|Ativan|Midazolam|Flumazenil|Naloxone|Narcan|Insulin|Metformin|Glucagon|Levothyroxine|Synthroid|PTU|Propylthiouracil|Methimazole|Prednisone|Dexamethasone|Methylprednisolone|Solumedrol|Hydrocortisone|Aspirin|Acetaminophen|Tylenol|Ibuprofen|Ketorolac|Toradol|Gentamicin|Vancomycin|Penicillin|Amoxicillin|Ampicillin|Cephalosporin|Ciprofloxacin|Rifampin|Isoniazid|INH|Ethambutol|Pyrazinamide|Streptomycin|Methotrexate|Cyclophosphamide|Cisplatin|Doxorubicin|Vincristine|Tamoxifen|Protamine|Phytonadione|Propofol|Nitroprusside|Theophylline|Aminophylline|Albuterol|Ipratropium|Omeprazole|Pantoprazole|Ranitidine|Famotidine|Sucralfate|Metoclopramide|Ondansetron|Zofran|Lactulose|Docusate|Clopidogrel|Plavix|Alteplase|tPA|Streptokinase|Oxytocin|Pitocin|MgSO4|Terbutaline|Methylergonovine|Methergine|RhoGAM|Betamethasone|Surfactant|Acyclovir|Zidovudine|AZT|Fluoxetine|Sertraline|Paroxetine|Venlafaxine|Bupropion|Trazodone|Phenelzine|Disulfiram|Antabuse|Methadone|Donepezil|Aricept|Tacrine|Gabapentin|Succinylcholine|Epoetin|Filgrastim|Doxycycline|Azithromycin|Zithromax|Erythromycin|Tetracycline|Clindamycin|Metronidazole|Flagyl|Nitrofurantoin|Macrobid|Ceftriaxone|Rocephin|Cefazolin|Meropenem|Aztreonam|Fluconazole|Diflucan|Nystatin|Amphotericin B|Silver Sulfadiazine|Silvadene|Bacitracin|Mupirocin|Bactroban|Isotretinoin|Accutane|Colchicine|Allopurinol|Zyloprim|Tacrolimus|Cyclosporine|Mycophenolate|Azathioprine|Phenobarbital|Lamotrigine|Topiramate|Diphenhydramine|Benadryl|Promethazine|Phenergan|Hydroxyzine|Buspirone|Naltrexone|Vivitrol|Sumatriptan|Imitrex|Sildenafil|Tamsulosin|Finasteride|Misoprostol|Cytotec|Dinoprostone|Cervidil|Folic Acid|Ferrous Sulfate|Ticagrelor|Dabigatran|Pradaxa|Rivaroxaban|Xarelto|Apixaban|Eliquis|Benzoyl Peroxide|Tretinoin|Permethrin|Lindane|Crotamiton|Mafenide|Sulfasalazine|Mesalamine|Infliximab|Remicade|Rituximab|Interferon|Peginterferon|Rivastigmine|Exelon|Galantamine|Razadyne|Memantine|Namenda|Aripiprazole|Abilify|Ziprasidone|Geodon|Fluphenazine|Benztropine|Cogentin|Trihexyphenidyl|Artane|Levetiracetam|Keppra|Pregabalin|Lyrica|Baclofen|Dantrolene|Tizanidine|Loperamide|Imodium|Polyethylene Glycol|Psyllium|Senna|Bisacodyl|Glipizide|Glyburide|Pioglitazone|Acarbose|Liraglutide|Semaglutide|Desmopressin|Vasopressin|Alendronate|Fosamax|Risedronate|Raloxifene|Evista|Calcitonin|Teriparatide|Montelukast|Singulair|Fluticasone|Budesonide|Tiotropium|Spiriva|Guaifenesin|Cephalexin|Keflex|Dicloxacillin|Levofloxacin|Piperacillin|Tazobactam|Naproxen|Celecoxib|Celebrex|Indomethacin|Carboprost|Hemabate|Citalopram|Escitalopram|Duloxetine|Cymbalta|Mirtazapine|Amitriptyline|Nortriptyline|Doxepin|Imipramine|Clomipramine|Alprazolam|Xanax|Clonazepam|Klonopin|Chlordiazepoxide|Zolpidem|Ambien|Melatonin|Ramelteon|Rozerem|Methylphenidate|Ritalin|Amphetamine|Adderall|Atomoxetine|Strattera|Pancrelipase|Creon|Ursodiol|Cholestyramine|Atorvastatin|Lipitor|Simvastatin|Rosuvastatin|Crestor|Niacin|Gemfibrozil|Ezetimibe|Nitroglycerin Patch|Isosorbide|Hydralazine|Milrinone|Bivalirudin|Fondaparinux|Tenecteplase|Reteplase|Eptifibatide|Abciximab|Erythropoietin|Darbepoetin|Hydroxyurea|Leucovorin|Bevacizumab|Avastin|Trastuzumab|Herceptin|Imatinib|Gleevec|Bortezomib|Bleomycin|Paclitaxel|Carboplatin|Etoposide|Fluorouracil|Mercaptopurine|Thioguanine|Cytarabine|Neostigmine|Pyridostigmine|Mestinon|Edrophonium|Acetazolamide|Timolol|Latanoprost|Pilocarpine|Tropicamide|Ciprofloxacin Ophthalmic|Erythromycin Ophthalmic|Viokase|Pyrizinamide',
+                'hl-drug': 'Magnesium Sulfate|Calcium Gluconate|Valproic Acid|Carbon Dioxide|Vitamin K|Digoxin|Nitroglycerin|Warfarin|Coumadin|Heparin|Enoxaparin|Lovenox|Morphine|Meperidine|Demerol|Fentanyl|Hydrocodone|Oxycodone|Codeine|Tramadol|Epinephrine|Norepinephrine|Dopamine|Dobutamine|Atropine|Adenosine|Amiodarone|Lidocaine|Metoprolol|Propranolol|Atenolol|Carvedilol|Lisinopril|Enalapril|Captopril|Losartan|Amlodipine|Nifedipine|Diltiazem|Verapamil|Furosemide|Lasix|Hydrochlorothiazide|HCTZ|Spironolactone|Aldactone|Mannitol|Phenytoin|Dilantin|Carbamazepine|Tegretol|Depakote|Levodopa|Sinemet|Lithium|Haloperidol|Haldol|Chlorpromazine|Thorazine|Clozapine|Risperidone|Olanzapine|Quetiapine|Diazepam|Valium|Lorazepam|Ativan|Midazolam|Flumazenil|Naloxone|Narcan|Insulin|Metformin|Glucagon|Levothyroxine|Synthroid|PTU|Propylthiouracil|Methimazole|Prednisone|Dexamethasone|Methylprednisolone|Solumedrol|Hydrocortisone|Aspirin|Acetaminophen|Tylenol|Ibuprofen|Ketorolac|Toradol|Gentamicin|Vancomycin|Penicillin|Amoxicillin|Ampicillin|Cephalosporin|Ciprofloxacin|Rifampin|Isoniazid|INH|Ethambutol|Pyrazinamide|Streptomycin|Methotrexate|Cyclophosphamide|Cisplatin|Doxorubicin|Vincristine|Tamoxifen|Protamine|Phytonadione|Propofol|Nitroprusside|Theophylline|Aminophylline|Albuterol|Ipratropium|Omeprazole|Pantoprazole|Ranitidine|Famotidine|Sucralfate|Metoclopramide|Ondansetron|Zofran|Lactulose|Docusate|Clopidogrel|Plavix|Alteplase|tPA|Streptokinase|Oxytocin|Pitocin|MgSO4|Terbutaline|Methylergonovine|Methergine|RhoGAM|Betamethasone|Surfactant|Acyclovir|Zidovudine|AZT|Fluoxetine|Sertraline|Paroxetine|Venlafaxine|Bupropion|Trazodone|Phenelzine|Disulfiram|Antabuse|Methadone|Donepezil|Aricept|Tacrine|Gabapentin|Succinylcholine|Epoetin|Filgrastim|Doxycycline|Azithromycin|Zithromax|Erythromycin|Tetracycline|Clindamycin|Metronidazole|Flagyl|Nitrofurantoin|Macrobid|Ceftriaxone|Rocephin|Cefazolin|Meropenem|Aztreonam|Fluconazole|Diflucan|Nystatin|Amphotericin B|Silver Sulfadiazine|Silvadene|Bacitracin|Mupirocin|Bactroban|Isotretinoin|Accutane|Colchicine|Allopurinol|Zyloprim|Tacrolimus|Cyclosporine|Mycophenolate|Azathioprine|Phenobarbital|Lamotrigine|Topiramate|Diphenhydramine|Benadryl|Promethazine|Phenergan|Hydroxyzine|Buspirone|Naltrexone|Vivitrol|Sumatriptan|Imitrex|Sildenafil|Tamsulosin|Finasteride|Misoprostol|Cytotec|Dinoprostone|Cervidil|Folic Acid|Ferrous Sulfate|Ticagrelor|Dabigatran|Pradaxa|Rivaroxaban|Xarelto|Apixaban|Eliquis|Benzoyl Peroxide|Tretinoin|Permethrin|Lindane|Crotamiton|Mafenide|Sulfasalazine|Mesalamine|Infliximab|Remicade|Rituximab|Interferon|Peginterferon|Rivastigmine|Exelon|Galantamine|Razadyne|Memantine|Namenda|Aripiprazole|Abilify|Ziprasidone|Geodon|Fluphenazine|Benztropine|Cogentin|Trihexyphenidyl|Artane|Levetiracetam|Keppra|Pregabalin|Lyrica|Baclofen|Dantrolene|Tizanidine|Loperamide|Imodium|Polyethylene Glycol|Psyllium|Senna|Bisacodyl|Glipizide|Glyburide|Pioglitazone|Acarbose|Liraglutide|Semaglutide|Desmopressin|Vasopressin|Alendronate|Fosamax|Risedronate|Raloxifene|Evista|Calcitonin|Teriparatide|Montelukast|Singulair|Fluticasone|Budesonide|Tiotropium|Spiriva|Guaifenesin|Cephalexin|Keflex|Dicloxacillin|Levofloxacin|Piperacillin|Tazobactam|Naproxen|Celecoxib|Celebrex|Indomethacin|Carboprost|Hemabate|Citalopram|Escitalopram|Duloxetine|Cymbalta|Mirtazapine|Amitriptyline|Nortriptyline|Doxepin|Imipramine|Clomipramine|Alprazolam|Xanax|Clonazepam|Klonopin|Chlordiazepoxide|Zolpidem|Ambien|Melatonin|Ramelteon|Rozerem|Methylphenidate|Ritalin|Amphetamine|Adderall|Atomoxetine|Strattera|Pancrelipase|Creon|Ursodiol|Cholestyramine|Atorvastatin|Lipitor|Simvastatin|Rosuvastatin|Crestor|Niacin|Gemfibrozil|Ezetimibe|Nitroglycerin Patch|Isosorbide|Hydralazine|Milrinone|Bivalirudin|Fondaparinux|Tenecteplase|Reteplase|Eptifibatide|Abciximab|Erythropoietin|Darbepoetin|Hydroxyurea|Leucovorin|Bevacizumab|Avastin|Trastuzumab|Herceptin|Imatinib|Gleevec|Bortezomib|Bleomycin|Paclitaxel|Carboplatin|Etoposide|Fluorouracil|Mercaptopurine|Thioguanine|Cytarabine|Neostigmine|Pyridostigmine|Mestinon|Edrophonium|Acetazolamide|Timolol|Latanoprost|Pilocarpine|Tropicamide|Ciprofloxacin Ophthalmic|Erythromycin Ophthalmic|Viokase|Pyrizinamide|Clonidine|Lispro|Aspart|Glargine|Salmeterol|Advair|Sulfamethoxazole|Trimethoprim|Bactrim|Kayexalate|Sodium Polystyrene Sulfonate|Andexanet Alfa|Digoxin Immune Fab|Digibind|Acetylcysteine|Mucomyst|N-acetylcysteine|Regular Insulin',
                 'hl-lyte': 'Potassium|Sodium|Calcium|Magnesium|Phosphorus|Phosphate|Chloride|Bicarbonate',
                 'hl-gas': 'Oxygen|O2|CO2',
                 /* PERMANENT: hl-dx — Diseases, disorders, conditions, syndromes (neon fuchsia) */
