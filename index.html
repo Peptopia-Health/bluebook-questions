@@ -1385,7 +1385,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             <span class="lecture-header-title" id="lecture-title"></span>
             <button class="lecture-close-btn" onclick="closeLecture()">&times;</button>
         </div>
-        <div id="lecture-content" style="flex:1 1 0; overflow-y:auto; background:#fff; padding:0; min-height:0; border:2px solid var(--slate-200);">Loading...</div>
+        <iframe id="lecture-iframe" class="lecture-iframe" style="border:none;"></iframe>
     </div>
 
     <div id="quiz-modal" class="quiz-overlay">
@@ -2573,8 +2573,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             document.getElementById('section-view').style.display = 'flex';
             document.getElementById('pdf-view').style.display = 'none';
             document.getElementById('lecture-view').style.display = 'none';
-            var lc = document.getElementById('lecture-content');
-            if (lc) lc.innerHTML = '';
+            var ifrm = document.getElementById('lecture-iframe');
+            if (ifrm) ifrm.src = 'about:blank';
             document.getElementById('back-to-index').classList.add('visible');
             document.getElementById('nav-filters').style.display = 'none';
             document.getElementById('nav-main-btns').style.display = 'none';
@@ -2589,8 +2589,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             document.getElementById('section-view').style.display = 'none';
             document.getElementById('pdf-view').style.display = 'none';
             document.getElementById('lecture-view').style.display = 'none';
-            var lc = document.getElementById('lecture-content');
-            if (lc) lc.innerHTML = '';
+            var ifrm = document.getElementById('lecture-iframe');
+            if (ifrm) ifrm.src = 'about:blank';
             document.getElementById('back-to-index').classList.remove('visible');
             document.getElementById('nav-filters').style.display = '';
             document.getElementById('nav-main-btns').style.display = '';
@@ -2780,30 +2780,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             var lv = document.getElementById('lecture-view');
             lv.style.display = 'flex';
             document.getElementById('lecture-title').textContent = lec.emoji + ' ' + lec.title;
-            var content = document.getElementById('lecture-content');
-            content.style.background = '#fff';
-            content.innerHTML = '';
-            var url = GH_PAGES + lec.file;
-            fetch(url).then(function(r) {
-                if (!r.ok) throw new Error(r.status);
-                return r.text();
-            }).then(function(html) {
-                var s = '<style>' + KLIMEK_QUIZ_CSS + '</style>';
-                var fullHtml = html.replace('</head>', s + '</head>').replace('</HEAD>', s + '</HEAD>');
-                if (!fullHtml.includes('</head') && !fullHtml.includes('</HEAD')) {
-                    fullHtml = s + fullHtml;
-                }
-                content.innerHTML = fullHtml;
-                var scripts = content.querySelectorAll('script');
-                scripts.forEach(function(old) {
-                    var neu = document.createElement('script');
-                    neu.textContent = old.textContent;
-                    old.parentNode.replaceChild(neu, old);
-                });
-            }).catch(function(err) {
-                content.style.background = '#f0f0f0';
-                content.innerHTML = '<div style="padding:2rem;color:#999;text-align:center;">Unable to load lecture</div>';
-            });
+            var iframe = document.getElementById('lecture-iframe');
+            iframe.src = GH_PAGES + lec.file;
             document.getElementById('back-to-index').classList.add('visible');
             document.getElementById('nav-filters').style.display = 'none';
             document.getElementById('nav-main-btns').style.display = 'none';
@@ -2811,8 +2789,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         };
 
         window.closeLecture = function() {
-            var content = document.getElementById('lecture-content');
-            if (content) content.innerHTML = '';
+            var iframe = document.getElementById('lecture-iframe');
+            if (iframe) iframe.src = 'about:blank';
             document.getElementById('lecture-view').style.display = 'none';
             showHome();
         };
