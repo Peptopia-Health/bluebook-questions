@@ -2781,6 +2781,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
             lv.style.display = 'flex';
             document.getElementById('lecture-title').textContent = lec.emoji + ' ' + lec.title;
             var content = document.getElementById('lecture-content');
+            content.style.background = '#fff';
+            content.innerHTML = '';
             var url = GH_PAGES + lec.file;
             fetch(url).then(function(r) {
                 if (!r.ok) throw new Error(r.status);
@@ -2799,7 +2801,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
                     old.parentNode.replaceChild(neu, old);
                 });
             }).catch(function(err) {
-                content.innerHTML = '';
+                content.style.background = '#f0f0f0';
+                content.innerHTML = '<div style="padding:2rem;color:#999;text-align:center;">Unable to load lecture</div>';
             });
             document.getElementById('back-to-index').classList.add('visible');
             document.getElementById('nav-filters').style.display = 'none';
