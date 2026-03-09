@@ -42,7 +42,7 @@ loadingEl.innerHTML =
 '<br><small style="color:#94a3b8;font-weight:400;">' + err.message + '</small></div>';
 });
 var APP_VERSION = '10.0';
-var QUIZ_COUNTS = { cardio:116, resp:124, neuro:100, gi:113, obpeds:148, endo:114, musc:115, psych:124, hemonc:123, integ:100, pharm:182, fund:130, gero:95, nutr:103, workpharm:341, yellowfever:38, fullexam:341 };
+var QUIZ_COUNTS = { cardio:116, resp:124, neuro:100, gi:113, obpeds:148, endo:114, musc:115, psych:124, hemonc:123, integ:100, pharm:182, fund:130, gero:95, nutr:103, workpharm:341, yellowfever:39, fullexam:341 };
 var GH_AUDIO = 'https://github.com/Peptopia/NCLEX/releases/download/audio-v1/';
 var PDF_AUDIO_MAP = {
 'Cardiovascular.pdf':  [{ title: 'Cardiovascular', src: GH_AUDIO + 'Cardiovascular.mp3' }],
@@ -1037,7 +1037,7 @@ var yfCard = '<div class="home-card" data-section="yellowfever" style="animation
 '<span class="home-card-emoji">\uD83E\uDDA0</span><span>Yellow Fever</span></div>' +
 '<div class="home-card-body"><div class="home-card-desc" style="color:var(--amber-800);">Flavivirus transmission, Faget sign, toxic phase management, vaccination &amp; global prevention.</div></div>' +
 '<div class="home-card-footer">' +
-'<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchYellowFeverQuiz();"><span class="quiz-icon">\uD83E\uDDE0</span> 38 Questions</button></div></div>';
+'<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchYellowFeverQuiz();"><span class="quiz-icon">\uD83E\uDDE0</span> 39 Questions</button></div></div>';
 foundationsHtml += yfCard;
 document.getElementById('home-grid-foundations').innerHTML = '<div class="klimek-banner">\uD83D\uDCD6 Foundations</div>' + foundationsHtml;
 document.getElementById('home-grid-workpharm').innerHTML = '';
