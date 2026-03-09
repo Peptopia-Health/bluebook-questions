@@ -42,7 +42,7 @@ loadingEl.innerHTML =
 '<br><small style="color:#94a3b8;font-weight:400;">' + err.message + '</small></div>';
 });
 var APP_VERSION = '10.0';
-var QUIZ_COUNTS = { cardio:116, resp:124, neuro:100, gi:113, obpeds:148, endo:114, musc:115, psych:124, hemonc:123, integ:100, pharm:182, fund:130, gero:95, nutr:103, workpharm:341, yellowfever:39, comprehensive:171, fullexam:341 };
+var QUIZ_COUNTS = { cardio:116, resp:124, neuro:100, gi:113, obpeds:148, endo:114, musc:115, psych:124, hemonc:123, integ:100, pharm:182, fund:130, gero:95, nutr:103, workpharm:341, yellowfever:39, comprehensive:171, comprehensive2:72, fullexam:341 };
 var GH_AUDIO = 'https://github.com/Peptopia/NCLEX/releases/download/audio-v1/';
 var PDF_AUDIO_MAP = {
 'Cardiovascular.pdf':  [{ title: 'Cardiovascular', src: GH_AUDIO + 'Cardiovascular.mp3' }],
@@ -233,7 +233,7 @@ document.getElementById('home-footer').textContent = buildBannerText();
 var sectionEmojis = {
 cardio: '\u2764\uFE0F', resp: '\uD83D\uDCA8', neuro: '\uD83E\uDDE0', gi: '\uD83C\uDF7D\uFE0F', obpeds: '\uD83D\uDC76',
 endo: '\u2697\uFE0F', musc: '\uD83E\uDDB4', psych: '\uD83E\uDDD8', hemonc: '\uD83E\uDE78', integ: '\uD83E\uDE79', pharm: '\uD83D\uDC8A',
-fund: '\uD83D\uDCCB', gero: '\uD83E\uDDD3', nutr: '\uD83E\uDD57', workpharm: '\uD83E\uDDEC', yellowfever: '\uD83E\uDDA0', comprehensive: '\uD83C\uDF93'
+fund: '\uD83D\uDCCB', gero: '\uD83E\uDDD3', nutr: '\uD83E\uDD57', workpharm: '\uD83E\uDDEC', yellowfever: '\uD83E\uDDA0', comprehensive: '\uD83C\uDF93', comprehensive2: '\uD83D\uDCDA'
 };
 var sectionSummaries = {
 cardio: 'Heart failure, rhythms, shock, vascular disorders.',
@@ -261,7 +261,7 @@ var colorBaseMap = {
 };
 var GROUPS = {
 systems: ['cardio','resp','neuro','gi','endo','musc','psych','hemonc','integ'],
-foundations: ['workpharm','pharm','fund','gero','nutr','obpeds','yellowfever','comprehensive'],
+foundations: ['workpharm','pharm','fund','gero','nutr','obpeds','yellowfever','comprehensive','comprehensive2'],
 workpharm: []
 };
 var activeFilter = 'all';
@@ -1046,6 +1046,13 @@ var compCard = '<div class="home-card" data-section="comprehensive" style="anima
 '<div class="home-card-footer">' +
 '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchComprehensiveQuiz();"><span class="quiz-icon">\uD83E\uDDE0</span> 171 Questions</button></div></div>';
 foundationsHtml += compCard;
+var comp2Card = '<div class="home-card" data-section="comprehensive2" style="animation-delay:' + ((idx + 2) * 0.04) + 's; border-color:var(--purple-800);" onclick="launchComprehensive2Quiz()">' +
+'<div class="home-card-header" style="background-color:var(--purple-100); color:var(--purple-800);">' +
+'<span class="home-card-emoji">\uD83D\uDCDA</span><span>Comprehensive II</span></div>' +
+'<div class="home-card-body"><div class="home-card-desc" style="color:var(--purple-800);">72 supplemental questions covering gaps from all 13 Klimek lectures — gaits, psych drugs, fetal monitoring, delegation &amp; more.</div></div>' +
+'<div class="home-card-footer">' +
+'<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchComprehensive2Quiz();"><span class="quiz-icon">\uD83E\uDDE0</span> 72 Questions</button></div></div>';
+foundationsHtml += comp2Card;
 document.getElementById('home-grid-foundations').innerHTML = '<div class="klimek-banner">\uD83D\uDCD6 Foundations</div>' + foundationsHtml;
 document.getElementById('home-grid-workpharm').innerHTML = '';
 renderLectureCards();
@@ -1336,10 +1343,14 @@ initQuizUI('Yellow Fever Quiz', 'yellowfever');
 window.launchComprehensiveQuiz = function() {
 initQuizUI('Comprehensive Quiz', 'comprehensive');
 };
+window.launchComprehensive2Quiz = function() {
+initQuizUI('Comprehensive II Quiz', 'comprehensive2');
+};
 window.launchSection = function(key) {
 if (key === 'fullexam') { showFullExam(); return; }
 if (key === 'yellowfever') { launchYellowFeverQuiz(); return; }
 if (key === 'comprehensive') { launchComprehensiveQuiz(); return; }
+if (key === 'comprehensive2') { launchComprehensive2Quiz(); return; }
 if (contentData[key]) { switchTab(key); setTimeout(startQuiz, 120); }
 };
 function showQuestion() {
@@ -2222,6 +2233,7 @@ SECTION_LABELS[allKeys[si]] = contentData[allKeys[si]].title;
 SECTION_LABELS.fullexam = 'Full Exam';
 SECTION_LABELS.yellowfever = 'Yellow Fever';
 SECTION_LABELS.comprehensive = 'Comprehensive';
+SECTION_LABELS.comprehensive2 = 'Comprehensive II';
 window.showProgress = function() {
 renderProgressDashboard();
 document.getElementById('progress-modal').style.display = 'block';
@@ -2232,7 +2244,7 @@ document.getElementById('progress-modal').style.display = 'none';
 function renderProgressDashboard() {
 var d = loadProgress();
 var now = Date.now();
-var EXCLUDED_FROM_PCT = { workpharm: 1, yellowfever: 1, comprehensive: 1 };
+var EXCLUDED_FROM_PCT = { workpharm: 1, yellowfever: 1, comprehensive: 1, comprehensive2: 1 };
 var totalQ = 0, totalSeen = 0, totalMastered = 0;
 var sectionKeys = Object.keys(QUIZ_COUNTS);
 for (var i = 0; i < sectionKeys.length; i++) {
@@ -2440,7 +2452,7 @@ var d = loadProgress();
 var now = Date.now();
 var today = new Date();
 var studyKeys = Object.keys(QUIZ_COUNTS);
-var EXCLUDED_SP = { workpharm: 1, yellowfever: 1, comprehensive: 1 };
+var EXCLUDED_SP = { workpharm: 1, yellowfever: 1, comprehensive: 1, comprehensive2: 1 };
 var totalQ = 0;
 var sections = [];
 for (var i = 0; i < studyKeys.length; i++) {
