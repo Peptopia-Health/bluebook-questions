@@ -1871,7 +1871,7 @@ window.wpSearchDrugs = function(query) {
 clearTimeout(_wpSearchTimeout);
 var clearBtn = document.getElementById('wp-search-clear');
 var resultsDiv = document.getElementById('wp-search-results');
-var accordion = document.getElementById('wp-accordion');
+var accordion = document.getElementById('wp-cat-grid') || document.getElementById('wp-accordion');
 if (!query || query.trim().length < 2) {
 if (clearBtn) clearBtn.style.display = 'none';
 if (resultsDiv) resultsDiv.style.display = 'none';
@@ -1926,7 +1926,7 @@ window.wpSearchNavigate = function(drugIdx) {
 var drugData = contentData.workpharm && contentData.workpharm.data ? contentData.workpharm.data[drugIdx] : null;
 var category = drugData ? (drugData.drugClass || '') : '';
 var resultsDiv = document.getElementById('wp-search-results');
-var accordion = document.getElementById('wp-accordion');
+var accordion = document.getElementById('wp-cat-grid') || document.getElementById('wp-accordion');
 var input = document.getElementById('wp-search-input');
 var clearBtn = document.getElementById('wp-search-clear');
 if (resultsDiv) resultsDiv.style.display = 'none';
@@ -1978,7 +1978,7 @@ openCards(drugIdx);
 window.wpClearSearch = function() {
 var input = document.getElementById('wp-search-input');
 var resultsDiv = document.getElementById('wp-search-results');
-var accordion = document.getElementById('wp-accordion');
+var accordion = document.getElementById('wp-cat-grid') || document.getElementById('wp-accordion');
 if (resultsDiv) resultsDiv.style.display = 'none';
 if (accordion) accordion.style.display = '';
 if (input) { input.value = ''; input.focus(); }
@@ -1998,7 +1998,7 @@ var results = document.getElementById('wp-search-results');
 if (wrap && results && results.style.display === 'block') {
 if (!wrap.contains(e.target) && !results.contains(e.target)) {
 results.style.display = 'none';
-var accordion = document.getElementById('wp-accordion');
+var accordion = document.getElementById('wp-cat-grid') || document.getElementById('wp-accordion');
 if (accordion) accordion.style.display = '';
 }
 }
