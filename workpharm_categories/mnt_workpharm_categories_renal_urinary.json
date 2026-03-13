@@ -1,0 +1,17 @@
+{
+  "category": "Renal / Urinary",
+  "emoji": "🫀",
+  "color": "teal",
+  "description": "Diuretics, urinary antispasmodics, and kidney-related medications.",
+  "drugCount": 8,
+  "drugs": [
+    "Avodart (Dutasteride)",
+    "Ditropan (Oxybutynin)",
+    "Flomax (Tamsulosin)",
+    "Fosamax (Alendronate)",
+    "Proscar (Finasteride)",
+    "Saline (Sodium Chloride)",
+    "Urecholine (Bethanechol)",
+    "Vesicare (Solifenacin)"
+  ]
+}

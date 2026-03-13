@@ -1,0 +1,25 @@
+{
+  "category": "Sensory / Ophthalmic",
+  "emoji": "👁️",
+  "color": "cyan",
+  "description": "Eye drops, ophthalmic preparations, and sensory medications.",
+  "drugCount": 16,
+  "drugs": [
+    "Alphagan (Brimonidine)",
+    "Clear Eyes (Naphazoline)",
+    "Durezol (Difluprednate)",
+    "GenTeal (Hypromellose / Polyvinyl Alcohol)",
+    "Isopto Carpine (Pilocarpine)",
+    "Maxitrol (Neomycin / Polymyxin B / Dexamethasone)",
+    "Neosporin Ophthalmic (Neomycin / Polymyxin B / Gramicidin)",
+    "Omnipred (Prednisolone)",
+    "Opcon-A (Naphazoline / Pheniramine)",
+    "Pataday (Olopatadine)",
+    "Refresh (Polyvinyl Alcohol / Povidone)",
+    "Tobrex (Tobramycin)",
+    "Trusopt (Dorzolamide)",
+    "Visine-A (Naphazoline / Pheniramine)",
+    "Xalatan (Latanoprost)",
+    "Zaditor (Ketotifen)"
+  ]
+}

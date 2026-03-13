@@ -1,0 +1,20 @@
+{
+  "category": "Immune / Lymphatic",
+  "emoji": "🛡️",
+  "color": "indigo",
+  "description": "Immunosuppressants, biologics, and immune-modulating agents.",
+  "drugCount": 11,
+  "drugs": [
+    "Benlysta (Belimumab)",
+    "CellCept (Mycophenolic Acid)",
+    "Cytoxan (Cyclophosphamide)",
+    "Dupixent (Dupilumab)",
+    "Enbrel (Etanercept)",
+    "Hydrea (Hydroxyurea)",
+    "Imuran (Azathioprine)",
+    "Plaquenil (Hydroxychloroquine)",
+    "Sprycel (Dasatinib)",
+    "Trexall (Methotrexate)",
+    "Xeljanz (Tofacitinib)"
+  ]
+}

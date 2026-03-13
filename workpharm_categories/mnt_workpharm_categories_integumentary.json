@@ -1,0 +1,31 @@
+{
+  "category": "Integumentary",
+  "emoji": "🩹",
+  "color": "orange",
+  "description": "Topical agents, wound care, and dermatological treatments.",
+  "drugCount": 22,
+  "drugs": [
+    "A+D Ointment (Petrolatum / Lanolin / Zinc Oxide)",
+    "Bacitracin (Bacitracin)",
+    "Bactroban (Mupirocin)",
+    "Benzoyl Peroxide (Benzoyl Peroxide)",
+    "Calamine (Calamine)",
+    "Cepacol (Benzocaine / Menthol)",
+    "Clobex (Clobetasol)",
+    "Compound W (Salicylic Acid)",
+    "Cortisporin (Neomycin / Bacitracin / Polymyxin B / Hydrocortisone)",
+    "Cortizone (Hydrocortisone)",
+    "Diprolene (Betamethasone)",
+    "Head & Shoulders (Pyrithione Zinc)",
+    "Mycolog II (Nystatin / Triamcinolone)",
+    "Neosporin (Bacitracin / Neomycin / Polymyxin B)",
+    "Nix (Permethrin)",
+    "Orajel (Benzocaine)",
+    "Peridex (Chlorhexidine)",
+    "Rogaine (Minoxidil)",
+    "Sebulex (Salicylic Acid / Sulfur)",
+    "Selsun Blue (Selenium Sulfide)",
+    "Silvadene (Silver Sulfadiazine)",
+    "Xylocaine (Lidocaine)"
+  ]
+}

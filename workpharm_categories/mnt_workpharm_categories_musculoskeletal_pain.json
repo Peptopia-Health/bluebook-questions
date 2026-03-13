@@ -1,0 +1,27 @@
+{
+  "category": "Musculoskeletal / Pain",
+  "emoji": "🦴",
+  "color": "rose",
+  "description": "Pain management, anti-inflammatory drugs, and musculoskeletal agents.",
+  "drugCount": 18,
+  "drugs": [
+    "Bayer (Aspirin)",
+    "Brixadi (Buprenorphine)",
+    "Celebrex (Celecoxib)",
+    "Clinoril (Sulindac)",
+    "Dolophine (Methadone)",
+    "Excedrin (Acetaminophen / Aspirin / Caffeine)",
+    "Mobic (Meloxicam)",
+    "Naprosyn (Naproxen)",
+    "Narcan (Naloxone)",
+    "Suboxone (Buprenorphine / Naloxone)",
+    "Subutex (Buprenorphine)",
+    "Toradol (Ketorolac)",
+    "Tylenol (Acetaminophen)",
+    "Tylenol with Codeine (Acetaminophen / Codeine)",
+    "Uloric (Febuxostat)",
+    "Vivitrol (Naltrexone)",
+    "Voltaren (Diclofenac)",
+    "Zyloprim (Allopurinol)"
+  ]
+}

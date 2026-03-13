@@ -1,0 +1,17 @@
+{
+  "category": "Nutritional Support",
+  "emoji": "🥗",
+  "color": "green",
+  "description": "Vitamins, minerals, and nutritional supplements.",
+  "drugCount": 8,
+  "drugs": [
+    "Calcium (Calcium Carbonate)",
+    "Carnitor (Levocarnitine)",
+    "Feosol (Ferrous Sulfate)",
+    "K-Dur (Potassium Chloride)",
+    "Mag-Ox (Magnesium Oxide)",
+    "Melatonin (Melatonin)",
+    "Rocaltrol (Calcitriol)",
+    "Vitamin B1 (Thiamine)"
+  ]
+}
