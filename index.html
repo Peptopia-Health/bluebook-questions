@@ -1176,19 +1176,6 @@ var comp2Card = '<div class="home-card" data-section="comprehensive2" style="ani
 '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchComprehensive2Quiz();"><span class="quiz-icon">\uD83E\uDDE0</span> 72 Questions</button></div></div>';
 foundationsHtml += comp2Card;
 document.getElementById('home-grid-foundations').innerHTML = '<div class="klimek-banner">\uD83D\uDCD6 Foundations</div>' + foundationsHtml;
-var wpCatHtml = '';
-if (contentData.workpharm && contentData.workpharm.data) {
-var _wData = contentData.workpharm;
-var _wGrp = {};
-var _wOrd = [];
-for (var _wi3 = 0; _wi3 < _wData.data.length; _wi3++) {
-var _wIt = _wData.data[_wi3];
-var _wCl = _wIt.drugClass;
-if (!_wCl) continue;
-if (!_wGrp[_wCl]) { _wGrp[_wCl] = []; _wOrd.push(_wCl); }
-_wGrp[_wCl].push(_wIt);
-}
-}
 document.getElementById('home-grid-workpharm').innerHTML = '';
 renderLectureCards();
 applyFilter();
@@ -1701,6 +1688,10 @@ if (callback) callback();
 }
 
 function _scrollToCategory(category) {
+if (WP_CATEGORIES && WP_CATEGORIES[category]) {
+showWpCategory(category);
+return;
+}
 var items = document.querySelectorAll('.wp-acc-item');
 for (var i = 0; i < items.length; i++) {
 var nameEl = items[i].querySelector('.wp-acc-name');
@@ -1876,15 +1867,6 @@ if (!query || query.trim().length < 2) {
 if (clearBtn) clearBtn.style.display = 'none';
 if (resultsDiv) resultsDiv.style.display = 'none';
 if (accordion) accordion.style.display = '';
-var items = document.querySelectorAll('.wp-acc-item');
-for (var i = 0; i < items.length; i++) {
-items[i].style.display = '';
-items[i].classList.remove('wp-acc-open');
-var rows = items[i].querySelectorAll('.wp-acc-body tbody tr');
-for (var r = 0; r < rows.length; r++) rows[r].style.display = '';
-var countEl = items[i].querySelector('.wp-acc-count');
-if (countEl) countEl.textContent = rows.length;
-}
 return;
 }
 if (clearBtn) clearBtn.style.display = 'inline-flex';
@@ -1933,25 +1915,11 @@ if (resultsDiv) resultsDiv.style.display = 'none';
 if (accordion) accordion.style.display = '';
 if (input) input.value = '';
 if (clearBtn) clearBtn.style.display = 'none';
-var items = document.querySelectorAll('.wp-acc-item');
-for (var i = 0; i < items.length; i++) {
-items[i].style.display = '';
-items[i].classList.remove('wp-acc-open');
-var rows = items[i].querySelectorAll('.wp-acc-body tbody tr');
-for (var r = 0; r < rows.length; r++) rows[r].style.display = '';
-var countEl = items[i].querySelector('.wp-acc-count');
-if (countEl) countEl.textContent = rows.length;
-}
-if (category) {
-for (var j = 0; j < items.length; j++) {
-var nameEl = items[j].querySelector('.wp-acc-name');
-if (nameEl && nameEl.textContent.trim() === category) {
-items[j].classList.add('wp-acc-open');
-items[j].scrollIntoView({ behavior: 'smooth', block: 'start' });
-(function(accItem, dIdx) {
+if (category && WP_CATEGORIES && WP_CATEGORIES[category]) {
+showWpCategory(category);
 setTimeout(function() {
-var trs = accItem.querySelectorAll('.wp-acc-body tbody tr');
-var dData = contentData.workpharm.data[dIdx];
+var trs = document.querySelectorAll('.wp-cat-table tbody tr');
+var dData = contentData.workpharm.data[drugIdx];
 var dTopic = (dData && dData.topic) ? dData.topic.replace(/<[^>]*>/g, '').trim() : '';
 for (var t = 0; t < trs.length; t++) {
 var cellText = trs[t].querySelector('.topic-cell');
@@ -1967,30 +1935,19 @@ break;
 }
 }
 }
-}, 400);
-})(items[j], drugIdx);
-break;
-}
-}
+}, 200);
 }
 openCards(drugIdx);
 };
 window.wpClearSearch = function() {
 var input = document.getElementById('wp-search-input');
 var resultsDiv = document.getElementById('wp-search-results');
-var accordion = document.getElementById('wp-cat-grid') || document.getElementById('wp-accordion');
+var clearBtn = document.getElementById('wp-search-clear');
+var catGrid = document.getElementById('wp-cat-grid') || document.getElementById('wp-accordion');
 if (resultsDiv) resultsDiv.style.display = 'none';
-if (accordion) accordion.style.display = '';
+if (catGrid) catGrid.style.display = '';
+if (clearBtn) clearBtn.style.display = 'none';
 if (input) { input.value = ''; input.focus(); }
-var items = document.querySelectorAll('.wp-acc-item');
-for (var i = 0; i < items.length; i++) {
-items[i].style.display = '';
-items[i].classList.remove('wp-acc-open');
-var rows = items[i].querySelectorAll('.wp-acc-body tbody tr');
-for (var r = 0; r < rows.length; r++) rows[r].style.display = '';
-var countEl = items[i].querySelector('.wp-acc-count');
-if (countEl) countEl.textContent = rows.length;
-}
 };
 document.addEventListener('click', function(e) {
 var wrap = document.querySelector('.wp-search-wrap');
