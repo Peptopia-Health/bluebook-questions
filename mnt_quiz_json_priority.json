@@ -1,0 +1,1102 @@
+[
+  {
+    "q": "A nurse is caring for four patients. Which patient should the nurse assess FIRST?",
+    "options": [
+      "A patient with COPD and baseline <span class=\"hl-lyte\">SpO\u2082 90%</span> on <span class=\"hl-lyte\">2L nasal cannula</span>",
+      "A diabetic patient requesting <span class=\"hl-drug\">insulin</span> before lunch",
+      "A heart failure patient with <span class=\"hl-lyte\">3+ pitting edema</span> in bilateral lower extremities",
+      "A post-thyroidectomy patient reporting throat tightness and new stridor"
+    ],
+    "correct": 3,
+    "rationale": "Post-thyroidectomy stridor indicates potential airway compromise from laryngeal edema or hemorrhage. Airway always takes priority in ABC assessment. The COPD patient is at baseline, the heart failure patient's edema is chronic, and the insulin request can wait briefly."
+  },
+  {
+    "q": "Using Maslow's hierarchy, which nursing intervention takes HIGHEST priority?",
+    "options": [
+      "Teaching a newly diagnosed diabetic about glucose monitoring",
+      "Arranging a family conference for a patient with a new cancer diagnosis",
+      "Administering <span class=\"hl-drug\">morphine</span> to a post-surgical patient rating pain at <span class=\"hl-lyte\">9/10</span>",
+      "Encouraging a stroke patient to participate in self-care activities"
+    ],
+    "correct": 2,
+    "rationale": "Pain management is a physiological need (Maslow's base level). Teaching addresses self-actualization, family conferences address love/belonging, and encouraging self-care addresses esteem. Physiological needs always take priority."
+  },
+  {
+    "q": "A nurse arrives at the scene of an unresponsive adult who collapsed. What is the FIRST action?",
+    "options": [
+      "Call for help and activate the emergency response system",
+      "Open the airway using the head-tilt chin-lift maneuver",
+      "Check for a pulse for no more than 10 seconds",
+      "Begin chest compressions at a rate of 100-120 per minute"
+    ],
+    "correct": 0,
+    "rationale": "For a witnessed collapse, the first action is to call for help and activate the emergency response system (call a code). Then check for pulse, begin CPR if pulseless, and request a defibrillator. Early activation ensures help is on the way."
+  },
+  {
+    "q": "A patient with a complete airway obstruction from a food bolus is conscious and coughing forcefully. What is the nurse's FIRST action?",
+    "options": [
+      "Encourage the patient to continue coughing and stay with them",
+      "Perform abdominal thrusts (Heimlich maneuver) immediately",
+      "Administer <span class=\"hl-drug\">epinephrine</span> for potential anaphylaxis",
+      "Call a Code Blue and begin CPR"
+    ],
+    "correct": 0,
+    "rationale": "A patient who is coughing forcefully has a PARTIAL obstruction and is still moving air. The nurse should encourage continued coughing (the body's natural defense) and stay with the patient. Abdominal thrusts are for COMPLETE obstruction (no air movement, no coughing). CPR is for unresponsive patients."
+  },
+  {
+    "q": "A nurse is prioritizing care for four patients. According to Maslow's hierarchy, which need should be addressed FIRST?",
+    "options": [
+      "A patient needing education about new medication side effects",
+      "A fall-risk patient who needs bed alarm activation",
+      "A patient requesting a visit from the hospital chaplain",
+      "A patient with <span class=\"hl-lyte\">O\u2082 sat 85%</span> who needs suctioning"
+    ],
+    "correct": 3,
+    "rationale": "Oxygenation (<span class=\"hl-lyte\">O\u2082 sat 85%</span>) is a physiological need \u2014 the foundation of Maslow's hierarchy. Suctioning addresses the airway/breathing priority. Fall prevention is safety (level 2), chaplain visit is love/belonging (level 3), and medication education is self-actualization (level 5)."
+  },
+  {
+    "q": "A nurse receives report on four patients. Which patient requires assessment FIRST based on ABC priority?",
+    "options": [
+      "A patient 1-day post-appendectomy with <span class=\"hl-lyte\">T 100.2\u00b0F (37.9\u00b0C)</span>",
+      "A patient with a new tracheostomy who is restless with audible gurgling",
+      "A patient 2 hours post-cardiac catheterization with a firm, intact pressure dressing",
+      "A patient with chest tube drainage of <span class=\"hl-lyte\">75 mL/hr</span> that is dark red"
+    ],
+    "correct": 1,
+    "rationale": "Gurgling in a patient with a new tracheostomy indicates secretions obstructing the airway \u2014 this is an AIRWAY priority (A in ABC). The chest tube drainage should be monitored but is not immediately life-threatening. The low-grade fever and intact cath site are expected findings."
+  },
+  {
+    "q": "When should a nurse act WITHOUT performing an assessment first?",
+    "options": [
+      "A patient found in bed with no pulse and no respirations",
+      "A patient reports new-onset dizziness when standing up",
+      "A patient complains of chest pain rated <span class=\"hl-lyte\">7/10</span>",
+      "A patient has a new rash after starting an antibiotic"
+    ],
+    "correct": 0,
+    "rationale": "The 'assess before you act' rule has exceptions for life-threatening emergencies. A pulseless, apneic patient requires IMMEDIATE CPR \u2014 there is no time for further assessment. Dizziness, chest pain, and rash all warrant assessment before intervention."
+  },
+  {
+    "q": "A nurse is using Maslow's hierarchy to plan care. Which intervention addresses a SAFETY need?",
+    "options": [
+      "Administering <span class=\"hl-drug\">IV normal saline</span> for dehydration",
+      "Repositioning a patient and providing pain management",
+      "Encouraging a patient to discuss feelings about a new amputation",
+      "Implementing seizure precautions for a patient with a seizure history"
+    ],
+    "correct": 3,
+    "rationale": "Seizure precautions address SAFETY \u2014 Maslow's second level. IV fluids for dehydration and repositioning/pain management address physiological needs (level 1). Discussing feelings addresses esteem/psychosocial needs (level 4)."
+  },
+  {
+    "q": "A nursing student asks about the order of the nursing process. Which response by the nurse is CORRECT?",
+    "options": [
+      "Plan, Implement, Assess, Diagnose, Evaluate",
+      "Assess, Plan, Diagnose, Implement, Evaluate",
+      "Diagnose, Assess, Plan, Evaluate, Implement",
+      "Assess, Diagnose, Plan, Implement, Evaluate"
+    ],
+    "correct": 3,
+    "rationale": "The nursing process follows the sequence: Assessment (gather data), Diagnosis (identify the problem), Planning (set goals), Implementation (carry out interventions), and Evaluation (determine outcomes). ADPIE is the correct mnemonic."
+  },
+  {
+    "q": "A patient post-craniotomy develops sudden unilateral pupil dilation with <span class=\"hl-lyte\">BP 190/100</span> and <span class=\"hl-lyte\">HR 48</span>. What is the nurse's FIRST action?",
+    "options": [
+      "Document the findings and continue monitoring",
+      "Administer <span class=\"hl-drug\">mannitol</span> as ordered",
+      "Elevate the head of bed to <span class=\"hl-lyte\">30 degrees</span> and notify the provider STAT",
+      "Prepare for an emergency CT scan"
+    ],
+    "correct": 2,
+    "rationale": "These are classic signs of increased intracranial pressure (Cushing's triad: hypertension, bradycardia, and unilateral pupil dilation). The first action is to elevate the HOB to promote venous drainage and notify the provider immediately. <span class=\"hl-drug\">Mannitol</span> requires an order, and CT scan is important but the nurse's first action is positioning and notification."
+  },
+  {
+    "q": "According to the ABC framework, which patient should the nurse see FIRST during morning rounds?",
+    "options": [
+      "A COPD patient with a productive cough and baseline <span class=\"hl-lyte\">SpO\u2082 91%</span>",
+      "A patient post-bronchoscopy with absent breath sounds on the left side",
+      "A heart failure patient who gained <span class=\"hl-lyte\">2 lbs</span> overnight",
+      "A patient with a <span class=\"hl-lyte\">BG of 180 mg/dL</span> before breakfast"
+    ],
+    "correct": 1,
+    "rationale": "Absent breath sounds on one side post-bronchoscopy could indicate pneumothorax \u2014 a breathing emergency. The COPD patient is at baseline, the weight gain in CHF is expected to be assessed but not emergent, and the blood glucose is mildly elevated but not urgent."
+  },
+  {
+    "q": "A nurse is caring for a patient with severe burns. Using the ABC priority framework, which assessment finding requires IMMEDIATE intervention?",
+    "options": [
+      "Third-degree burns covering <span class=\"hl-lyte\">30%</span> of total body surface area",
+      "Urine output of <span class=\"hl-lyte\">25 mL/hr</span>",
+      "Singed nasal hairs and carbonaceous sputum",
+      "Pain rated <span class=\"hl-lyte\">10/10</span> at burn sites"
+    ],
+    "correct": 2,
+    "rationale": "Singed nasal hairs and carbonaceous (black/sooty) sputum indicate INHALATION INJURY \u2014 a direct threat to the airway. This takes priority over burn surface area assessment, low urine output (circulation concern), and pain management. Airway always comes first."
+  },
+  {
+    "q": "A patient is receiving a blood transfusion and develops sudden chills, <span class=\"hl-lyte\">T 102.4\u00b0F</span>, and low back pain. What is the FIRST nursing action?",
+    "options": [
+      "Slow the transfusion rate and notify the provider",
+      "Administer prescribed {d('diphenhydramine')} and {d('acetaminophen')}",
+      "Obtain a blood sample from the opposite arm and send to the lab",
+      "Stop the transfusion immediately and keep the IV line open with normal saline"
+    ],
+    "correct": 3,
+    "rationale": "These are signs of a hemolytic transfusion reaction \u2014 a life-threatening emergency. The FIRST action is to STOP the transfusion immediately to prevent further antigen-antibody reaction. Keep the IV patent with <span class=\"hl-drug\">NS</span> (not through blood tubing). Then notify the provider and collect specimens. Never slow the rate \u2014 STOP it entirely."
+  },
+  {
+    "q": "A nurse is assessing a patient who had abdominal surgery 6 hours ago. Which finding is the HIGHEST priority?",
+    "options": [
+      "Absent bowel sounds in all four quadrants",
+      "Incisional pain rated <span class=\"hl-lyte\">6/10</span>",
+      "Temperature <span class=\"hl-lyte\">99.8\u00b0F (37.7\u00b0C)</span>",
+      "Blood pressure <span class=\"hl-lyte\">86/54 mmHg</span> with <span class=\"hl-lyte\">HR 118 bpm</span>"
+    ],
+    "correct": 3,
+    "rationale": "Hypotension (<span class=\"hl-lyte\">BP 86/54</span>) with tachycardia (<span class=\"hl-lyte\">HR 118</span>) 6 hours post-op suggests hemorrhage or hypovolemic shock \u2014 a circulation (C) priority. Absent bowel sounds are expected post-op, pain is manageable, and low-grade fever is common in the early post-op period."
+  },
+  {
+    "q": "Which concept BEST describes why airway management takes precedence over all other nursing priorities?",
+    "options": [
+      "Maslow's hierarchy places safety needs above all others",
+      "The nursing process mandates that airway assessment occurs during the planning phase",
+      "Hospital policy requires airway assessment before any other intervention",
+      "Without a patent airway, oxygen exchange cannot occur and death follows within minutes"
+    ],
+    "correct": 3,
+    "rationale": "Airway patency is the foundation of ABCs because without a patent airway, oxygen cannot reach the lungs, gas exchange cannot occur, and cellular death begins within 4-6 minutes. This is a physiological reality, not just a policy or process requirement."
+  },
+  {
+    "q": "A nurse receives report on four patients. Which patient should be seen FIRST?",
+    "options": [
+      "A post-op hip replacement patient with sudden onset of dyspnea and chest pain",
+      "A patient with type 2 diabetes requesting insulin education",
+      "A patient with chronic kidney disease and a baseline <span class=\"hl-lyte\">creatinine 3.2 mg/dL</span>",
+      "A heart failure patient with chronic <span class=\"hl-lyte\">2+ bilateral pedal edema</span>"
+    ],
+    "correct": 0,
+    "rationale": "Sudden dyspnea and chest pain in a post-op hip replacement patient suggests pulmonary embolism \u2014 an acute, life-threatening event requiring immediate intervention. The other patients have chronic, stable conditions at baseline."
+  },
+  {
+    "q": "Which patient assessment finding represents an UNEXPECTED change requiring immediate attention?",
+    "options": [
+      "A cirrhosis patient with chronic ascites",
+      "A post-operative patient with <span class=\"hl-lyte\">T 101.8\u00b0F (38.8\u00b0C)</span> on day 3",
+      "A COPD patient using accessory muscles with <span class=\"hl-lyte\">SpO\u2082 89%</span> on <span class=\"hl-lyte\">2L O\u2082</span>",
+      "A type 1 diabetic with <span class=\"hl-lyte\">fasting BG 134 mg/dL</span>"
+    ],
+    "correct": 1,
+    "rationale": "A fever of <span class=\"hl-lyte\">101.8\u00b0F</span> on post-op day 3 is unexpected and may indicate infection (surgical site infection, pneumonia, or UTI). The 'W's of post-op fever' place wound infection at days 3-5. The other findings are chronic/expected: ascites in cirrhosis, accessory muscle use in COPD, and mildly elevated fasting glucose in diabetes."
+  },
+  {
+    "q": "A charge nurse is making patient assignments. Which patient is MOST appropriate to assign to the LPN?",
+    "options": [
+      "A newly admitted patient requiring a full head-to-toe assessment",
+      "A patient returning from the PACU after general anesthesia",
+      "A patient receiving a first unit of <span class=\"hl-drug\">packed red blood cells</span>",
+      "A stable patient with a chronic wound requiring dressing changes per protocol"
+    ],
+    "correct": 3,
+    "rationale": "The LPN can care for stable patients with predictable, routine tasks like protocol-based dressing changes. New admissions require RN assessment, <span class=\"hl-drug\">blood product</span> administration requires two RNs, and PACU returns need RN assessment for post-anesthesia complications."
+  },
+  {
+    "q": "A nurse is triaging phone calls. Which patient should the nurse advise to come to the ED IMMEDIATELY?",
+    "options": [
+      "A patient with a sprained ankle and swelling for 2 days",
+      "A patient with chronic low back pain rated <span class=\"hl-lyte\">5/10</span>",
+      "A patient with a sore throat and <span class=\"hl-lyte\">T 100.4\u00b0F</span> for 1 day",
+      "A patient on <span class=\"hl-drug\">warfarin</span> reporting dark, tarry stools since this morning"
+    ],
+    "correct": 3,
+    "rationale": "Dark, tarry stools (melena) in a patient taking <span class=\"hl-drug\">warfarin</span> indicates GI bleeding \u2014 a potentially life-threatening complication of anticoagulant therapy. This requires immediate evaluation. The sprained ankle, sore throat, and chronic back pain can be managed on a routine basis."
+  },
+  {
+    "q": "After receiving morning report, which patient does the nurse see FIRST?",
+    "options": [
+      "A patient with a history of seizures who is due for <span class=\"hl-drug\">phenytoin</span> level check",
+      "A patient scheduled for discharge who needs teaching about <span class=\"hl-drug\">metformin</span>",
+      "A patient with pneumonia whose <span class=\"hl-lyte\">SpO\u2082</span> dropped from <span class=\"hl-lyte\">95%</span> to <span class=\"hl-lyte\">88%</span> in the last hour",
+      "A patient complaining of constipation for 2 days"
+    ],
+    "correct": 2,
+    "rationale": "A drop in <span class=\"hl-lyte\">SpO\u2082</span> from <span class=\"hl-lyte\">95%</span> to <span class=\"hl-lyte\">88%</span> represents an acute CHANGE from the patient's known status \u2014 this is a breathing priority. The other patients have non-urgent needs: discharge teaching, routine lab, and constipation can all wait."
+  },
+  {
+    "q": "A nurse assesses four post-operative patients. Which patient should the nurse report to the provider FIRST?",
+    "options": [
+      "Post-op day 1 cholecystectomy with <span class=\"hl-lyte\">T 99.4\u00b0F</span> and incisional pain",
+      "Post-op day 2 knee replacement ambulating with assistance",
+      "Post-op day 1 colectomy with absent bowel sounds",
+      "Post-op day 1 mastectomy with <span class=\"hl-lyte\">200 mL</span> bloody drainage in the Jackson-Pratt drain in 1 hour"
+    ],
+    "correct": 3,
+    "rationale": "<span class=\"hl-lyte\">200 mL</span> of bloody drainage in 1 hour post-mastectomy is excessive and may indicate hemorrhage. This is an UNEXPECTED finding requiring immediate provider notification. Low-grade fever on post-op day 1, ambulation progress, and absent bowel sounds post-colectomy are all expected findings."
+  },
+  {
+    "q": "A nurse is caring for four patients on a medical-surgical unit. Which patient is the HIGHEST priority?",
+    "options": [
+      "A patient with GERD taking prescribed <span class=\"hl-drug\">omeprazole</span> who reports heartburn",
+      "A patient with a new onset of slurred speech and right-sided facial droop",
+      "A patient with osteoarthritis requesting <span class=\"hl-drug\">acetaminophen</span> for joint pain",
+      "A patient with anxiety disorder requesting to speak with the nurse about coping strategies"
+    ],
+    "correct": 1,
+    "rationale": "New-onset slurred speech and facial droop are signs of an acute stroke \u2014 a neurological emergency. 'Time is brain' \u2014 immediate assessment and activation of the stroke protocol are critical. The other patients have stable, non-emergency needs."
+  },
+  {
+    "q": "A nurse is reviewing lab results. Which finding requires the nurse to notify the provider IMMEDIATELY?",
+    "options": [
+      "<span class=\"hl-lyte\">BUN 22 mg/dL</span> in a patient with chronic kidney disease",
+      "<span class=\"hl-lyte\">Potassium 6.8 mEq/L</span> in a patient post-dialysis",
+      "<span class=\"hl-lyte\">Hemoglobin A1C 7.2%</span> in a patient with type 2 diabetes",
+      "<span class=\"hl-lyte\">WBC 11,200/mm\u00b3</span> in a patient on day 2 of antibiotic therapy"
+    ],
+    "correct": 1,
+    "rationale": "A <span class=\"hl-lyte\">potassium of 6.8 mEq/L</span> is critically elevated and poses an immediate risk for lethal cardiac dysrhythmias. This is a life-threatening critical value requiring immediate notification. The other values are mildly abnormal or within acceptable ranges for their conditions."
+  },
+  {
+    "q": "The nurse is prioritizing care at the start of the shift. Which patient should the nurse see FIRST?",
+    "options": [
+      "A patient with chronic atrial fibrillation who is hemodynamically stable",
+      "A patient who is 2 hours post-cardiac catheterization with a hematoma at the insertion site and <span class=\"hl-lyte\">pedal pulse 1+</span>",
+      "A patient with stable angina requesting their morning <span class=\"hl-drug\">atenolol</span>",
+      "A patient with a history of DVT on therapeutic <span class=\"hl-drug\">warfarin</span> with <span class=\"hl-lyte\">INR 2.5</span>"
+    ],
+    "correct": 1,
+    "rationale": "A hematoma at the catheterization site with a diminished pedal pulse (1+) suggests vascular compromise \u2014 the hematoma may be compressing the artery. This is an ACUTE change requiring immediate assessment. The other patients are stable with expected findings."
+  },
+  {
+    "q": "A nurse is caring for four patients. Which assessment finding is the MOST concerning?",
+    "options": [
+      "A chronic renal failure patient with baseline <span class=\"hl-lyte\">BUN 40 mg/dL</span> and <span class=\"hl-lyte\">creatinine 4.1 mg/dL</span>",
+      "A patient with controlled hypertension with <span class=\"hl-lyte\">BP 142/88 mmHg</span>",
+      "A patient 4 hours post-splenectomy with rigid, board-like abdomen and <span class=\"hl-lyte\">HR 126 bpm</span>",
+      "A post-op patient with incisional pain rated <span class=\"hl-lyte\">5/10</span>"
+    ],
+    "correct": 2,
+    "rationale": "A rigid, board-like abdomen with tachycardia 4 hours post-splenectomy indicates potential internal hemorrhage or peritonitis \u2014 an acute surgical emergency. The other findings are chronic/expected: baseline renal labs, slightly elevated BP in controlled HTN, and expected post-op pain."
+  },
+  {
+    "q": "A nurse receives report that a patient with no cardiac history has new-onset palpitations and a rhythm showing irregular, narrow-complex tachycardia. Which action is the FIRST priority?",
+    "options": [
+      "Administer <span class=\"hl-drug\">adenosine</span> as a rapid IV push",
+      "Prepare for immediate synchronized cardioversion",
+      "Assess the patient, check vital signs, and obtain a 12-lead ECG",
+      "Document the rhythm and continue to monitor"
+    ],
+    "correct": 2,
+    "rationale": "The first action is always to ASSESS the patient \u2014 check hemodynamic stability (vital signs, level of consciousness) and obtain a 12-lead ECG. The treatment depends on whether the patient is stable or unstable. Medications and cardioversion decisions come AFTER assessment."
+  },
+  {
+    "q": "A patient with chronic liver disease is admitted with <span class=\"hl-lyte\">ammonia 88 mcg/dL</span>. The nurse notes the patient is confused but at baseline per the family. Which action is MOST appropriate?",
+    "options": [
+      "Notify the provider of the critically elevated ammonia level STAT",
+      "Administer <span class=\"hl-drug\">lactulose</span> as ordered and continue routine monitoring",
+      "Place the patient in restraints due to confusion",
+      "Prepare for an emergent CT scan of the head"
+    ],
+    "correct": 1,
+    "rationale": "Elevated ammonia with hepatic encephalopathy at the patient's BASELINE is an expected finding in chronic liver disease. The appropriate action is to administer <span class=\"hl-drug\">lactulose</span> (which reduces ammonia) as ordered and monitor. This is not a NEW change \u2014 the confusion is at baseline. Restraints and emergent CT are not indicated."
+  },
+  {
+    "q": "A nurse is discharging four patients. Which patient should the nurse provide discharge teaching to FIRST?",
+    "options": [
+      "A patient with a stable chronic condition being discharged to home health",
+      "A patient prescribed new <span class=\"hl-drug\">warfarin</span> who will need INR monitoring",
+      "A patient being transferred to a rehabilitation facility with medical records prepared",
+      "A patient being picked up by family in 3 hours who has completed teaching"
+    ],
+    "correct": 1,
+    "rationale": "A patient starting new <span class=\"hl-drug\">warfarin</span> therapy needs teaching about dietary restrictions (<span class=\"hl-lyte\">vitamin K</span>), bleeding precautions, and <span class=\"hl-lyte\">INR</span> monitoring \u2014 this is critical safety information. The rehab transfer has records ready, the home health patient will receive continued education, and the last patient has completed teaching."
+  },
+  {
+    "q": "A nurse is assessing patients after a shift change. Which finding should the nurse address FIRST?",
+    "options": [
+      "A patient requesting a bedpan",
+      "A patient on continuous <span class=\"hl-drug\">heparin</span> drip whose IV pump is alarming 'occlusion'",
+      "A patient who wants to know the results of their morning blood work",
+      "A patient with stable vital signs requesting <span class=\"hl-drug\">acetaminophen</span> for a headache"
+    ],
+    "correct": 1,
+    "rationale": "An occluded <span class=\"hl-drug\">heparin</span> drip means the patient is not receiving their anticoagulation therapy \u2014 this could lead to clot formation, especially in a patient who requires continuous anticoagulation. This is an acute medication delivery issue that must be resolved immediately."
+  },
+  {
+    "q": "A nurse receives four patient call lights simultaneously. Which patient should the nurse respond to FIRST?",
+    "options": [
+      "A patient requesting a warm blanket",
+      "A patient requesting a television channel change",
+      "A patient asking when their lunch tray will arrive",
+      "A patient reporting sudden severe headache described as 'the worst of my life'"
+    ],
+    "correct": 3,
+    "rationale": "A 'worst headache of my life' (thunderclap headache) is a classic presentation of subarachnoid hemorrhage \u2014 a neurological emergency requiring immediate assessment. This is an unexpected, acute finding. The other requests are comfort measures that can wait."
+  },
+  {
+    "q": "A registered nurse is delegating tasks to a UAP. Which task is APPROPRIATE to delegate?",
+    "options": [
+      "Performing a focused respiratory assessment on a COPD patient",
+      "Administering a scheduled <span class=\"hl-drug\">metoprolol</span> to a cardiac patient",
+      "Recording vital signs on a stable post-operative patient",
+      "Teaching a newly diagnosed diabetic how to use a glucometer"
+    ],
+    "correct": 2,
+    "rationale": "UAPs can take vital signs on STABLE patients. Assessment (respiratory evaluation), medication administration, and patient teaching are ALL outside the UAP's scope and must be performed by a licensed nurse (RN or LPN)."
+  },
+  {
+    "q": "Which task can the RN delegate to an LPN/LVN?",
+    "options": [
+      "Performing the initial admission assessment on a new patient",
+      "Administering oral <span class=\"hl-drug\">metformin</span> to a stable diabetic patient",
+      "Initiating a <span class=\"hl-drug\">blood transfusion</span> for a patient with anemia",
+      "Developing the nursing care plan for a post-operative patient"
+    ],
+    "correct": 1,
+    "rationale": "LPN/LVNs can administer oral medications to stable patients. Initial assessments, <span class=\"hl-drug\">blood product</span> administration, and care plan development are RN-only responsibilities. LPNs collect data but do not perform initial assessments or develop care plans."
+  },
+  {
+    "q": "A charge nurse is making assignments for the shift. Which patient is BEST assigned to a new graduate RN in orientation?",
+    "options": [
+      "A patient in DKA with continuous <span class=\"hl-drug\">insulin</span> drip and <span class=\"hl-lyte\">BG</span> checks every hour",
+      "A stable patient post-op day 2 ambulating independently and scheduled for discharge",
+      "A patient receiving <span class=\"hl-drug\">chemotherapy</span> for the first time",
+      "A patient with a tracheostomy requiring frequent suctioning and ventilator management"
+    ],
+    "correct": 1,
+    "rationale": "A stable post-op patient scheduled for discharge is predictable and low-acuity \u2014 ideal for a new graduate. DKA management, first-time <span class=\"hl-drug\">chemotherapy</span>, and ventilator care are complex and require experienced nursing judgment."
+  },
+  {
+    "q": "An RN asks a UAP to ambulate a patient who had a hip replacement 2 days ago. Which instruction demonstrates the Right Direction?",
+    "options": [
+      "'Walk the patient when you have time today.'",
+      "'Walk that patient \u2014 they need exercise.'",
+      "'Ambulate the patient in the hallway twice this shift using the walker. Keep hip precautions \u2014 no flexion past 90 degrees. Report any dizziness, pain, or unsteadiness to me immediately.'",
+      "'Do whatever the patient wants regarding ambulation.'"
+    ],
+    "correct": 2,
+    "rationale": "Right Direction means giving CLEAR, SPECIFIC instructions including: what to do (ambulate twice with walker), precautions (hip flexion < 90\u00b0), and what to report (dizziness, pain, unsteadiness). Vague instructions like 'when you have time' or 'do whatever they want' violate this principle."
+  },
+  {
+    "q": "A nurse delegates vital signs to a UAP. The UAP reports the results. Which finding requires the RN to perform follow-up assessment?",
+    "options": [
+      "<span class=\"hl-lyte\">T 98.6\u00b0F</span>, <span class=\"hl-lyte\">HR 76</span>, <span class=\"hl-lyte\">BP 122/78</span>, <span class=\"hl-lyte\">RR 16</span>, <span class=\"hl-lyte\">SpO\u2082 97%</span>",
+      "<span class=\"hl-lyte\">T 101.4\u00b0F</span>, <span class=\"hl-lyte\">HR 112</span>, <span class=\"hl-lyte\">BP 88/56</span>, <span class=\"hl-lyte\">RR 24</span>, <span class=\"hl-lyte\">SpO\u2082 91%</span>",
+      "<span class=\"hl-lyte\">T 99.0\u00b0F</span>, <span class=\"hl-lyte\">HR 80</span>, <span class=\"hl-lyte\">BP 130/84</span>, <span class=\"hl-lyte\">RR 18</span>, <span class=\"hl-lyte\">SpO\u2082 96%</span>",
+      "<span class=\"hl-lyte\">T 98.2\u00b0F</span>, <span class=\"hl-lyte\">HR 68</span>, <span class=\"hl-lyte\">BP 118/72</span>, <span class=\"hl-lyte\">RR 14</span>, <span class=\"hl-lyte\">SpO\u2082 98%</span>"
+    ],
+    "correct": 1,
+    "rationale": "These vitals show fever (<span class=\"hl-lyte\">101.4\u00b0F</span>), tachycardia (<span class=\"hl-lyte\">HR 112</span>), hypotension (<span class=\"hl-lyte\">BP 88/56</span>), tachypnea (<span class=\"hl-lyte\">RR 24</span>), and low oxygen (<span class=\"hl-lyte\">SpO\u2082 91%</span>) \u2014 multiple abnormal findings suggestive of sepsis or shock. The RN must immediately assess this patient. The other vital signs are within normal limits."
+  },
+  {
+    "q": "A nurse is delegating tasks. Which task is OUTSIDE the LPN/LVN scope of practice?",
+    "options": [
+      "Developing and modifying the nursing care plan based on evaluation data",
+      "Performing tracheostomy suctioning on a stable patient",
+      "Administering a subcutaneous <span class=\"hl-drug\">enoxaparin</span> injection",
+      "Reinforcing previously taught information about wound care to a patient"
+    ],
+    "correct": 0,
+    "rationale": "Developing and modifying the care plan involves EVALUATION \u2014 a component of the nursing process that requires RN-level judgment. LPNs can administer subcutaneous injections, perform suctioning on stable patients, and reinforce (not initiate) teaching."
+  },
+  {
+    "q": "A charge nurse receives a call that a float nurse from the orthopedic unit will be working on the cardiac step-down unit tonight. Which assignment is MOST appropriate for the float nurse?",
+    "options": [
+      "A patient with new-onset atrial fibrillation requiring <span class=\"hl-drug\">amiodarone</span> loading",
+      "A patient post-CABG on day 1 with chest tubes and temporary pacing wires",
+      "A patient 1 day post-total knee replacement with stable vital signs",
+      "A patient in acute heart failure receiving continuous <span class=\"hl-drug\">nitroglycerin</span> drip"
+    ],
+    "correct": 2,
+    "rationale": "Float nurses should be assigned patients that do NOT require specialized unit knowledge. A post-knee replacement patient is orthopedic (the float nurse's specialty) and stable \u2014 the best match. The cardiac patients require specialized cardiac monitoring knowledge."
+  },
+  {
+    "q": "A UAP reports to the RN: 'The patient in Room 302 seems confused and doesn't know where he is.' What is the BEST response by the RN?",
+    "options": [
+      "'Thank you. I will assess the patient right away.'",
+      "'Just reorient the patient and put the call light within reach.'",
+      "'Continue your other tasks. Confusion is normal in elderly patients.'",
+      "'Please take a full set of vital signs and I'll check on them later.'"
+    ],
+    "correct": 0,
+    "rationale": "A report of new confusion requires immediate RN ASSESSMENT \u2014 confusion can indicate stroke, hypoglycemia, hypoxia, infection, or medication adverse effect. The RN must assess personally; it cannot be further delegated. Dismissing confusion as 'normal' or delaying assessment is unsafe."
+  },
+  {
+    "q": "Which patient assignment is MOST appropriate for the LPN/LVN?",
+    "options": [
+      "A patient receiving the first dose of <span class=\"hl-drug\">vancomycin</span> IV",
+      "A stable patient on day 3 of <span class=\"hl-drug\">IV antibiotics</span> with improving vital signs",
+      "A newly admitted patient requiring a comprehensive health history",
+      "A patient being prepared for emergency surgery"
+    ],
+    "correct": 1,
+    "rationale": "A stable patient on day 3 of antibiotics with improving status is predictable \u2014 appropriate for the LPN. First-dose IV medications carry risk of anaphylaxis (needs RN monitoring), new admissions require RN assessment, and emergency surgical prep requires RN judgment."
+  },
+  {
+    "q": "An RN asks a UAP to measure intake and output on a patient with heart failure. Which statement by the UAP indicates a need for further education?",
+    "options": [
+      "'I will assess the patient's fluid balance and adjust the IV rate accordingly.'",
+      "'I will measure urinary output using the graduated container.'",
+      "'I will document whether the output looks concentrated or dilute.'",
+      "'I will measure and record all oral fluid intake.'"
+    ],
+    "correct": 0,
+    "rationale": "Assessing fluid balance and adjusting IV rates are NURSING functions requiring clinical judgment \u2014 this is far outside UAP scope. UAPs can measure and record I&O, but interpreting the data and making treatment adjustments is the RN's responsibility."
+  },
+  {
+    "q": "The RN observes an LPN preparing to administer medications. Which action by the LPN requires the RN to intervene?",
+    "options": [
+      "The LPN administers oral <span class=\"hl-drug\">lisinopril</span> to a stable hypertensive patient",
+      "The LPN gives a subcutaneous <span class=\"hl-drug\">insulin lispro</span> injection before a meal",
+      "The LPN initiates the first unit of <span class=\"hl-drug\">packed red blood cells</span> on a patient with anemia",
+      "The LPN applies a topical <span class=\"hl-drug\">nitroglycerin</span> patch to a patient with angina"
+    ],
+    "correct": 2,
+    "rationale": "Blood product administration must be initiated by an RN \u2014 this is an RN-only task in ALL states. The RN must verify the product with another RN at bedside. LPNs can administer oral medications, subcutaneous injections, and topical medications to stable patients."
+  },
+  {
+    "q": "A charge nurse needs to send one nurse to assist in the emergency department. Which nurse is the BEST choice?",
+    "options": [
+      "The nurse with two unstable patients on vasopressor drips",
+      "The nurse with a full assignment of four complex post-surgical patients",
+      "The nurse caring for a patient receiving end-of-life comfort care and two stable patients",
+      "The nurse who just admitted two new patients and hasn't completed assessments"
+    ],
+    "correct": 2,
+    "rationale": "The nurse with one comfort care patient and two stable patients has the most manageable assignment that can be redistributed. Nurses with unstable patients, complex post-surgical patients, or incomplete admission assessments cannot safely leave their assignments."
+  },
+  {
+    "q": "An RN delegates wound care to an LPN. After the LPN completes the dressing change, what is the RN's NEXT responsibility?",
+    "options": [
+      "Ask the LPN to document the wound assessment findings independently",
+      "Assign additional wound care tasks to the LPN without follow-up",
+      "Assume the care was appropriate since the LPN is licensed",
+      "Evaluate the wound and assess the effectiveness of the intervention"
+    ],
+    "correct": 3,
+    "rationale": "Right Supervision \u2014 the fifth Right of Delegation \u2014 requires the RN to follow up and EVALUATE the outcome. The RN retains accountability for all delegated tasks and must assess the wound personally. Assuming competence without verification violates delegation principles."
+  },
+  {
+    "q": "A nursing student asks which tasks can NEVER be delegated to any other healthcare team member. The nurse's BEST response includes which list?",
+    "options": [
+      "Vital signs, ambulation, hygiene, and specimen collection",
+      "Medication administration, wound care, and suctioning",
+      "Assessment, teaching, evaluation, and nursing judgment",
+      "Documentation, blood glucose checks, and catheter care"
+    ],
+    "correct": 2,
+    "rationale": "ATEN \u2014 Assessment, Teaching, Evaluation, and Nursing judgment \u2014 can NEVER be delegated. These require the RN's professional judgment and clinical expertise. Vital signs, ambulation, and hygiene can be delegated to UAPs. Medication administration and wound care can be delegated to LPNs for stable patients."
+  },
+  {
+    "q": "A charge nurse receives report that a patient on the unit is deteriorating. The patient's assigned RN is at lunch. What is the charge nurse's FIRST action?",
+    "options": [
+      "Wait for the assigned nurse to return from lunch to assess the patient",
+      "Delegate the assessment to the LPN and request they report back",
+      "Go assess the patient immediately and initiate appropriate interventions",
+      "Call the healthcare provider and request new orders without assessing first"
+    ],
+    "correct": 2,
+    "rationale": "A deteriorating patient requires IMMEDIATE RN assessment. The charge nurse is an RN and must step in when the assigned nurse is unavailable. Patient safety cannot wait for lunch breaks. Assessment cannot be delegated to the LPN, and calling the provider without assessment data is premature."
+  },
+  {
+    "q": "Which statement about LPN/LVN scope of practice is CORRECT?",
+    "options": [
+      "LPNs can initiate patient teaching for a newly diagnosed condition",
+      "LPNs can reinforce teaching that was previously initiated by the RN",
+      "LPNs can perform initial admission assessments independently",
+      "LPNs can independently modify the nursing care plan"
+    ],
+    "correct": 1,
+    "rationale": "LPNs can REINFORCE teaching that has already been initiated by the RN \u2014 they cannot initiate new teaching. LPNs collect data but cannot perform initial assessments or modify care plans independently. These are RN-level functions requiring professional nursing judgment."
+  },
+  {
+    "q": "A new UAP asks the RN what tasks are within their scope. Which response by the RN is MOST accurate?",
+    "options": [
+      "'You can give oral medications to stable patients after checking the chart.'",
+      "'You can change complex wound dressings if you've been trained.'",
+      "'You can assess patients and report any changes you find.'",
+      "'You can perform blood glucose checks, take vital signs, measure I&O, help with bathing, and collect specimens.'"
+    ],
+    "correct": 3,
+    "rationale": "UAPs can perform routine, non-invasive tasks: blood glucose checks (fingerstick), vital signs, I&O, bathing/hygiene, and specimen collection. They CANNOT administer medications, perform assessments, or change complex wound dressings \u2014 these require licensed nurse scope."
+  },
+  {
+    "q": "Which scenario represents an INAPPROPRIATE delegation by the RN?",
+    "options": [
+      "Asking the UAP to ambulate a stable patient with a walker",
+      "Asking the UAP to perform a focused neurological assessment on a stroke patient",
+      "Asking the LPN to administer oral medications to a stable patient",
+      "Asking the LPN to perform tracheostomy suctioning on a stable patient"
+    ],
+    "correct": 1,
+    "rationale": "A focused neurological assessment is ASSESSMENT \u2014 an RN-only function that can NEVER be delegated, especially not to a UAP. Assessment requires clinical judgment to interpret findings. Ambulation, oral medication administration (to LPN), and tracheostomy suctioning (by LPN for stable patients) are all appropriate delegations."
+  },
+  {
+    "q": "A charge nurse is assigning patients. A travel nurse from an agency is available. Which assignment is MOST appropriate?",
+    "options": [
+      "A patient on a specialized cardiac protocol unique to this hospital",
+      "A patient requiring emergency intubation preparation",
+      "A stable medical patient on standard medications with clear orders",
+      "A new admission requiring a comprehensive assessment with complex documentation"
+    ],
+    "correct": 2,
+    "rationale": "Travel/agency nurses should receive stable patients with standard orders that don't require specialized hospital-specific knowledge. Specialized protocols, emergencies, and complex new admissions are better assigned to permanent staff who are familiar with the unit's systems and protocols."
+  },
+  {
+    "q": "An RN is working with an experienced LPN. Which task requires the RN to intervene if the LPN performs it?",
+    "options": [
+      "Administering a scheduled oral <span class=\"hl-drug\">digoxin</span> after checking the apical pulse",
+      "Calling the healthcare provider to report a change in the patient's condition and requesting new orders",
+      "Performing wound irrigation and applying a new dressing per protocol",
+      "Inserting a Foley catheter on a stable patient"
+    ],
+    "correct": 1,
+    "rationale": "Reporting clinical changes to the provider and requesting new orders requires NURSING JUDGMENT and ASSESSMENT interpretation \u2014 this is an RN responsibility. The LPN should collect the data and report to the RN, who then communicates with the provider. LPNs can administer oral medications, perform wound care, and insert catheters for stable patients."
+  },
+  {
+    "q": "During a mass casualty event, a nurse encounters a victim who is not breathing even after repositioning the airway. How should this victim be triaged?",
+    "options": [
+      "BLACK tag \u2014 Expectant: injuries incompatible with survival given available resources",
+      "YELLOW tag \u2014 Delayed: can wait for airway support",
+      "GREEN tag \u2014 Minor: walking wounded",
+      "RED tag \u2014 Immediate: needs emergency airway management"
+    ],
+    "correct": 0,
+    "rationale": "In DISASTER triage (START system), if a victim is not breathing after one attempt to open the airway, they receive a BLACK tag (expectant). Resources are limited in mass casualty events \u2014 spending time on patients who aren't breathing after repositioning means other salvageable patients may die. This differs from EMERGENCY triage where CPR would be initiated."
+  },
+  {
+    "q": "In the Emergency Severity Index (ESI) triage system, which patient is classified as ESI Level 1?",
+    "options": [
+      "A patient with a laceration requiring sutures and a tetanus shot",
+      "A patient with abdominal pain needing labs, imaging, and pain management",
+      "A patient in cardiac arrest being brought in by EMS with CPR in progress",
+      "A patient with a medication refill request"
+    ],
+    "correct": 2,
+    "rationale": "ESI Level 1 is RESUSCITATION \u2014 the patient requires immediate life-saving intervention. Cardiac arrest with ongoing CPR is the classic Level 1. The laceration is Level 4 (one resource), abdominal pain is Level 3 (multiple resources), and the refill request is Level 5 (no resources)."
+  },
+  {
+    "q": "What is the FUNDAMENTAL difference between emergency department triage and disaster triage?",
+    "options": [
+      "Emergency triage uses color-coded tags while disaster triage uses numbered levels",
+      "There is no fundamental difference \u2014 both use the same priority system",
+      "Disaster triage treats the sickest patients first while emergency triage prioritizes walking wounded",
+      "Emergency triage focuses on saving the individual; disaster triage focuses on saving the greatest number"
+    ],
+    "correct": 3,
+    "rationale": "The key distinction: Emergency triage = save the INDIVIDUAL (sickest first, unlimited resources assumed). Disaster triage = save the MOST PEOPLE (greatest good for greatest number, limited resources). In disaster triage, a patient who would require all available resources to save one life may receive a BLACK tag so those resources can save multiple other patients."
+  },
+  {
+    "q": "During START triage, a nurse assesses a victim who is breathing with a respiratory rate of <span class=\"hl-lyte\">34/min</span> and has a capillary refill of <span class=\"hl-lyte\">4 seconds</span>. The victim follows simple commands. What is the correct triage tag?",
+    "options": [
+      "GREEN \u2014 Minor",
+      "YELLOW \u2014 Delayed",
+      "RED \u2014 Immediate",
+      "BLACK \u2014 Expectant"
+    ],
+    "correct": 2,
+    "rationale": "START triage: Step 1 \u2014 Can they walk? (not stated, assume no). Step 2 \u2014 Respirations: <span class=\"hl-lyte\">RR 34</span> (> 30 = RED). Once any parameter triggers RED, the victim is tagged RED \u2014 Immediate. Even though mental status is intact, the tachypnea and delayed capillary refill indicate the victim needs immediate intervention."
+  },
+  {
+    "q": "A nurse is triaging in the ED. Four patients arrive simultaneously. Which patient should be seen FIRST?",
+    "options": [
+      "A 60-year-old with sudden onset aphasia, right arm weakness, last known well <span class=\"hl-lyte\">45 minutes ago</span>",
+      "A 30-year-old with a 3-cm forehead laceration that is actively bleeding",
+      "A 45-year-old with a displaced wrist fracture and <span class=\"hl-lyte\">pain rated 8/10</span>",
+      "A 25-year-old with a twisted ankle and mild swelling"
+    ],
+    "correct": 0,
+    "rationale": "The 60-year-old is presenting with acute stroke symptoms (aphasia, arm weakness) with last known well <span class=\"hl-lyte\">45 minutes ago</span> \u2014 within the thrombolytic window. This is ESI Level 2 (emergent) requiring immediate intervention. 'Time is brain' \u2014 every minute of delay results in further brain tissue death. The fracture and laceration are urgent but not life-threatening."
+  },
+  {
+    "q": "During disaster triage, a victim is ambulatory and reports a <span class=\"hl-lyte\">2-inch</span> laceration on their forearm with controlled bleeding. What triage category should they receive?",
+    "options": [
+      "RED \u2014 Immediate",
+      "YELLOW \u2014 Delayed",
+      "GREEN \u2014 Minor (walking wounded)",
+      "BLACK \u2014 Expectant"
+    ],
+    "correct": 2,
+    "rationale": "In START triage, the FIRST question is 'Can they walk?' If YES \u2192 GREEN tag (Minor/Walking Wounded). This victim is ambulatory with a minor, controlled laceration. They can wait for treatment or self-treat. No further assessment is needed for triage categorization."
+  },
+  {
+    "q": "An ED nurse is triaging patients. Which patient is ESI Level 2 (Emergent)?",
+    "options": [
+      "A patient with chest pain, diaphoresis, and <span class=\"hl-lyte\">BP 82/54 mmHg</span>",
+      "A patient with a sore throat and mild fever requesting a strep test",
+      "A patient with a urinary tract infection and <span class=\"hl-lyte\">T 100.8\u00b0F</span>",
+      "A patient requesting a prescription refill for a blood pressure medication"
+    ],
+    "correct": 0,
+    "rationale": "ESI Level 2 (Emergent) includes patients at high risk: chest pain with hemodynamic instability (<span class=\"hl-lyte\">BP 82/54</span>) suggests acute MI or cardiogenic shock. This patient needs immediate intervention but is not yet in cardiac arrest (Level 1). The sore throat is Level 4-5, UTI is Level 3-4, and the refill is Level 5."
+  },
+  {
+    "q": "During a mass casualty event, the nurse encounters a conscious victim with an open femur fracture and controlled bleeding. The victim is not ambulatory. Respirations are 22, capillary refill is 2 seconds, and the victim follows commands. What is the correct triage tag?",
+    "options": [
+      "RED \u2014 Immediate",
+      "BLACK \u2014 Expectant",
+      "GREEN \u2014 Minor",
+      "YELLOW \u2014 Delayed"
+    ],
+    "correct": 3,
+    "rationale": "START triage: Not walking \u2192 continue. Respirations <span class=\"hl-lyte\">22/min</span> (normal < 30) \u2192 continue. Capillary refill <span class=\"hl-lyte\">2 seconds</span> (normal \u2264 2) \u2192 continue. Follows commands (intact mental status) \u2192 YELLOW tag. The victim has a serious injury (open femur fracture) but is hemodynamically stable and can wait 30-60 minutes for treatment."
+  },
+  {
+    "q": "A hospital activates its mass casualty incident plan. Which principle guides the re-allocation of resources?",
+    "options": [
+      "All patients currently in the hospital should be immediately discharged to make room",
+      "Emergency department operations should stop to focus solely on incoming victims",
+      "Patients who can be safely discharged or transferred should be moved to free critical care beds for incoming casualties",
+      "All surgeries should be canceled regardless of urgency"
+    ],
+    "correct": 2,
+    "rationale": "During an MCI, the hospital works to free resources (beds, staff, equipment) by safely discharging or transferring stable patients. This does NOT mean discharging everyone or stopping all operations \u2014 urgent surgeries in progress continue. The goal is to create capacity for the expected surge of casualties."
+  },
+  {
+    "q": "An ED triage nurse assesses a patient who is confused, has <span class=\"hl-lyte\">BP 70/40</span>, <span class=\"hl-lyte\">HR 134</span>, and a distended abdomen after a motor vehicle accident. What ESI level should be assigned?",
+    "options": [
+      "ESI Level 1 \u2014 Resuscitation",
+      "ESI Level 2 \u2014 Emergent",
+      "ESI Level 3 \u2014 Urgent",
+      "ESI Level 4 \u2014 Less Urgent"
+    ],
+    "correct": 0,
+    "rationale": "This patient shows signs of hemorrhagic shock (hypotension, tachycardia, distended abdomen, confusion) after trauma \u2014 this is ESI Level 1 (Resuscitation) requiring IMMEDIATE life-saving intervention. The patient needs emergent surgical evaluation, IV fluid resuscitation, and likely blood products."
+  },
+  {
+    "q": "During a disaster triage drill, a nursing student asks why a victim with severe traumatic brain injury and no spontaneous respirations receives a BLACK tag instead of RED. What is the BEST explanation?",
+    "options": [
+      "In a disaster with limited resources, treating this victim would divert resources from multiple patients who have survivable injuries",
+      "The victim is already deceased and cannot be saved",
+      "BLACK tags are used for all head injuries in disaster triage",
+      "The triage officer made an error \u2014 this victim should be RED"
+    ],
+    "correct": 0,
+    "rationale": "In disaster triage, the BLACK tag reflects the reality of limited resources. A victim requiring extensive, resource-intensive care with a low probability of survival receives a BLACK tag so those resources can be used to save multiple patients with survivable injuries. This is the ethical principle of UTILITARIANISM \u2014 greatest good for the greatest number."
+  },
+  {
+    "q": "A triage nurse in the ED must prioritize four patients who arrived simultaneously. Using ESI triage, which patient should be seen LAST?",
+    "options": [
+      "A patient requesting a tetanus booster after a minor dog bite with no active bleeding",
+      "A child with a <span class=\"hl-lyte\">T 103.2\u00b0F</span> and petechial rash",
+      "A patient with chest pain and a history of <span class=\"hl-lyte\">MI</span> 2 years ago",
+      "A patient with severe abdominal pain, nausea, and guarding"
+    ],
+    "correct": 0,
+    "rationale": "A minor dog bite with no active bleeding needing only a tetanus booster is ESI Level 4-5 (1 resource needed). Chest pain with cardiac history is Level 2, a child with high fever and petechiae suggests possible meningococcemia (Level 1-2), and severe abdominal pain with guarding is Level 2-3. The dog bite is the least urgent."
+  },
+  {
+    "q": "In START triage, what is the FIRST assessment the nurse performs on each victim?",
+    "options": [
+      "Check for a radial pulse to assess perfusion",
+      "Assess mental status by giving a simple command",
+      "Determine if the victim can walk",
+      "Count respiratory rate for 15 seconds"
+    ],
+    "correct": 2,
+    "rationale": "START triage begins with: 'Can they walk?' If YES \u2192 GREEN tag immediately, no further assessment needed for triage. If NO \u2192 proceed to check respirations, then perfusion (capillary refill/radial pulse), then mental status. This rapid screening quickly identifies the walking wounded."
+  },
+  {
+    "q": "During a mass casualty incident, a RED-tagged victim deteriorates and becomes pulseless. What should the triage nurse do?",
+    "options": [
+      "Immediately begin CPR and call for a defibrillator",
+      "Upgrade the victim to a new category above RED for highest priority",
+      "Continue treating the victim as RED \u2014 they were already designated as immediate priority",
+      "Re-triage the victim to BLACK and move on to the next patient"
+    ],
+    "correct": 3,
+    "rationale": "In disaster triage, if a RED-tagged victim becomes pulseless, they are re-triaged to BLACK (expectant). CPR in a mass casualty event would consume resources (2+ rescuers, equipment) that could save multiple other patients. This is one of the hardest but most critical concepts in disaster nursing."
+  },
+  {
+    "q": "A nurse working in the ED is triaging patients during a busy shift. Which patient demonstrates the CORRECT application of ESI Level 3?",
+    "options": [
+      "A patient requesting a work note for a cold they had last week",
+      "A patient with a simple nosebleed that stops with direct pressure",
+      "A patient with acute appendicitis symptoms requiring labs, CT scan, and <span class=\"hl-drug\">IV antibiotics</span>",
+      "A patient in respiratory arrest"
+    ],
+    "correct": 2,
+    "rationale": "ESI Level 3 (Urgent) is defined by the need for 2 or more resources (labs, imaging, medications, procedures) with stable vital signs. Acute appendicitis requiring labs, CT, and antibiotics fits this perfectly. The work note is Level 5, the nosebleed is Level 4-5, and respiratory arrest is Level 1."
+  },
+  {
+    "q": "A fire breaks out in a patient room on the medical-surgical unit. What is the nurse's FIRST action?",
+    "options": [
+      "Pull the fire alarm to notify the fire department",
+      "Grab the nearest fire extinguisher",
+      "Remove the patient from the room",
+      "Close the door to the room to contain the fire"
+    ],
+    "correct": 2,
+    "rationale": "RACE: R = RESCUE first. The nurse's immediate priority is to remove the patient from immediate danger. After rescue, the nurse activates the Alarm, Contains the fire (close doors), and Extinguishes or evacuates. Patient safety always comes first."
+  },
+  {
+    "q": "A nurse discovers smoke coming from under a supply room door. After rescuing nearby patients, what is the NEXT action?",
+    "options": [
+      "Open the door to assess the source of the smoke",
+      "Attempt to extinguish the fire with a fire extinguisher",
+      "Begin evacuating the entire floor",
+      "Pull the fire alarm and call the fire code number"
+    ],
+    "correct": 3,
+    "rationale": "RACE: After Rescue \u2192 Alarm. Pull the nearest fire alarm and call the fire code. Do NOT open the door to a room with smoke (oxygen feeds fire). Contain comes next (keep doors closed), then Extinguish/Evacuate. Never open a door that may have fire behind it."
+  },
+  {
+    "q": "When using a fire extinguisher, the nurse should aim the nozzle at which part of the fire?",
+    "options": [
+      "The top of the flames to smother them",
+      "The middle of the flames for maximum coverage",
+      "In a circular motion around the perimeter of the fire",
+      "The base of the fire where the fuel source is burning"
+    ],
+    "correct": 3,
+    "rationale": "PASS: Pull pin, AIM at the BASE of the fire, Squeeze the handle, Sweep side to side. The base is where the fuel source is burning \u2014 aiming at flames above the base will not extinguish the fire effectively."
+  },
+  {
+    "q": "During a Code Blue, a nurse is performing CPR. The monitor shows ventricular fibrillation. What is the PRIORITY intervention?",
+    "options": [
+      "Defibrillate immediately",
+      "Administer <span class=\"hl-drug\">amiodarone 300 mg IV</span>",
+      "Administer <span class=\"hl-drug\">epinephrine 1 mg IV</span> push",
+      "Intubate the patient for a secure airway"
+    ],
+    "correct": 0,
+    "rationale": "For ventricular fibrillation (VF) or pulseless ventricular tachycardia (pVT), the priority is DEFIBRILLATION as soon as possible. Early defibrillation has the highest success rate for converting VF. <span class=\"hl-drug\">Epinephrine</span> is given after the first shock if VF persists, and <span class=\"hl-drug\">amiodarone</span> is considered after the second shock."
+  },
+  {
+    "q": "A nurse notes that a patient who was talking normally 5 minutes ago is now only responsive to painful stimuli. The patient's <span class=\"hl-lyte\">SpO\u2082</span> has dropped to <span class=\"hl-lyte\">88%</span>. What is the FIRST action?",
+    "options": [
+      "Notify the healthcare provider of the change in status",
+      "Document the neurological change and continue monitoring",
+      "Administer <span class=\"hl-drug\">naloxone</span> for possible opioid overdose",
+      "Open the airway, assess breathing, and call the Rapid Response Team"
+    ],
+    "correct": 3,
+    "rationale": "Acute deterioration in mental status with dropping oxygen saturation is a LIFE-THREATENING emergency. The first actions are ABCs (open airway, assess breathing) and activate the Rapid Response Team. Notification of the provider, documentation, and targeted interventions like <span class=\"hl-drug\">naloxone</span> come AFTER initial stabilization and help is summoned."
+  },
+  {
+    "q": "A nurse is monitoring a patient who suddenly becomes unresponsive. After confirming no pulse, what is the correct compression-to-ventilation ratio for a single rescuer performing adult CPR?",
+    "options": [
+      "<span class=\"hl-lyte\">30:2</span> compressions to ventilations",
+      "<span class=\"hl-lyte\">15:2</span> compressions to ventilations",
+      "Continuous compressions without ventilations until help arrives",
+      "<span class=\"hl-lyte\">15:1</span> compressions to ventilations"
+    ],
+    "correct": 0,
+    "rationale": "The AHA-recommended adult CPR ratio is <span class=\"hl-lyte\">30:2</span> \u2014 30 chest compressions followed by 2 rescue breaths. Compressions should be <span class=\"hl-lyte\">2 to 2.4 inches</span> deep at a rate of <span class=\"hl-lyte\">100-120/min</span>. Allow full chest recoil between compressions. This ratio applies to one-rescuer and two-rescuer adult CPR."
+  },
+  {
+    "q": "A patient on a medical unit triggers the Rapid Response Team criteria. The primary nurse calls the RRT. Which information is MOST important to communicate?",
+    "options": [
+      "The patient's full medical history and social background",
+      "The time the patient last ate and their medication allergies",
+      "The patient's insurance information and code status",
+      "The patient's current vital signs, mental status change, and what interventions have been attempted"
+    ],
+    "correct": 3,
+    "rationale": "When calling the RRT, use SBAR to communicate the SITUATION (what's happening now), including current vital signs, mental status changes, and interventions already attempted. This gives the responding team the critical information needed to act. Full history, insurance, and diet information are not the priority in this acute situation."
+  },
+  {
+    "q": "A nurse witnesses a patient fall out of bed. After ensuring the patient is safe, what is the NEXT priority action?",
+    "options": [
+      "Perform a focused assessment including neurological status, vital signs, and injury evaluation",
+      "Call the patient's family to inform them of the fall",
+      "Complete an incident report immediately",
+      "Place the patient back in bed and apply bilateral wrist restraints"
+    ],
+    "correct": 0,
+    "rationale": "After ensuring immediate safety, the nurse must ASSESS the patient for injuries \u2014 check neurological status, vital signs, and evaluate for fractures or head injury. Assessment drives the next interventions. An incident report is completed after the patient is assessed and stabilized. Restraints are not appropriate as a response to falls."
+  },
+  {
+    "q": "A nurse discovers that a patient is missing from the unit. The patient is confused and a known elopement risk. What is the FIRST action?",
+    "options": [
+      "Notify hospital security and activate the elopement protocol",
+      "Search the unit thoroughly before notifying anyone",
+      "Document the time the patient was last seen and continue routine care",
+      "Call the patient's emergency contact to see if they picked up the patient"
+    ],
+    "correct": 0,
+    "rationale": "When a confused patient who is an elopement risk is missing, IMMEDIATELY activate the elopement protocol and notify security. Time is critical \u2014 a confused patient can quickly be in danger. Do not waste time searching alone or documenting before acting. Security has the resources and protocols to conduct an organized search."
+  },
+  {
+    "q": "During a Code Blue, the patient has been in pulseless electrical activity (PEA) for 6 minutes. <span class=\"hl-drug\">Epinephrine</span> has been administered. What should the team focus on?",
+    "options": [
+      "Preparing for immediate defibrillation",
+      "Switching to <span class=\"hl-drug\">amiodarone</span> as the primary medication",
+      "Terminating resuscitation efforts after 5 minutes of PEA",
+      "Identifying and treating reversible causes (H's and T's)"
+    ],
+    "correct": 3,
+    "rationale": "PEA is NOT a shockable rhythm \u2014 defibrillation will not help. The team should continue CPR, administer <span class=\"hl-drug\">epinephrine</span> q3-5 min, and aggressively search for and treat reversible causes: the H's (Hypovolemia, Hypoxia, Hydrogen ion/acidosis, Hypo/Hyperkalemia, Hypothermia) and T's (Tension pneumothorax, Tamponade, Toxins, Thrombosis). <span class=\"hl-drug\">Amiodarone</span> is only for VF/pVT."
+  },
+  {
+    "q": "A nurse is evacuating patients during a fire. Which patient should be evacuated FIRST?",
+    "options": [
+      "A non-ambulatory patient in the room closest to the fire",
+      "An ambulatory patient in a room farthest from the fire",
+      "A patient on a ventilator in a room adjacent to the fire",
+      "An ambulatory patient in a room adjacent to the fire"
+    ],
+    "correct": 0,
+    "rationale": "Evacuate patients CLOSEST to the fire first, and non-ambulatory patients before ambulatory ones (ambulatory patients can begin self-evacuating). The non-ambulatory patient closest to the fire is at greatest risk and most dependent on nursing assistance for escape."
+  },
+  {
+    "q": "A patient who is a DNR (Do Not Resuscitate) begins choking on food during a meal. What should the nurse do?",
+    "options": [
+      "Do nothing \u2014 the patient is DNR and should not receive life-saving interventions",
+      "Administer oxygen and monitor the patient",
+      "Call a Code Blue and begin CPR",
+      "Perform abdominal thrusts to clear the airway obstruction"
+    ],
+    "correct": 3,
+    "rationale": "DNR means do not perform CPR in the event of cardiac or respiratory ARREST. Choking on food is NOT a natural dying process \u2014 it is a reversible, mechanical obstruction. The nurse should perform abdominal thrusts (Heimlich). DNR does NOT mean 'do not treat' \u2014 it specifically addresses cardiopulmonary resuscitation."
+  },
+  {
+    "q": "A nurse identifies that a patient's condition is worsening, but the primary provider dismisses the concern after being notified. What is the APPROPRIATE next action?",
+    "options": [
+      "Accept the provider's assessment and document the interaction",
+      "Activate the chain of command by notifying the charge nurse and nursing supervisor",
+      "Wait to see if the patient's condition improves before escalating",
+      "Ask the UAP to continue monitoring and report any further changes"
+    ],
+    "correct": 1,
+    "rationale": "The nurse is a PATIENT ADVOCATE. If the primary provider dismisses a legitimate safety concern, the nurse must escalate using the chain of command: charge nurse \u2192 nursing supervisor \u2192 chief of medical staff. Accepting the dismissal or waiting endangers the patient. The nurse retains professional accountability for patient safety."
+  },
+  {
+    "q": "A patient has been receiving CPR for 2 minutes when the defibrillator becomes available. The rhythm shows ventricular tachycardia with no pulse. What is the NEXT action?",
+    "options": [
+      "Continue CPR for another 3 minutes before attempting defibrillation",
+      "Administer <span class=\"hl-drug\">epinephrine 1 mg IV</span> before the first shock",
+      "Deliver a defibrillation shock at <span class=\"hl-lyte\">200 joules</span> (biphasic)",
+      "Administer <span class=\"hl-drug\">amiodarone 300 mg IV</span> and then defibrillate"
+    ],
+    "correct": 2,
+    "rationale": "Pulseless VT is a SHOCKABLE rhythm. When the defibrillator is available, the first action is to defibrillate immediately. Do not delay for medications. Resume CPR immediately after the shock for 2 minutes, then reassess. <span class=\"hl-drug\">Epinephrine</span> is given after the first unsuccessful shock, and <span class=\"hl-drug\">amiodarone</span> after the second."
+  },
+  {
+    "q": "A nurse finds an unresponsive patient and suspects opioid overdose based on pinpoint pupils and <span class=\"hl-lyte\">RR 6/min</span>. After calling for help, what is the PRIORITY action?",
+    "options": [
+      "Administer <span class=\"hl-drug\">naloxone (Narcan) 0.4 mg IV/IM</span>",
+      "Begin CPR with chest compressions",
+      "Open the airway and provide rescue breathing with bag-valve-mask",
+      "Start an IV and administer <span class=\"hl-drug\">IV fluids</span>"
+    ],
+    "correct": 2,
+    "rationale": "The patient is breathing (though slowly at <span class=\"hl-lyte\">RR 6/min</span>) \u2014 this is NOT cardiac arrest, so CPR is not indicated. The FIRST priority is AIRWAY and BREATHING: open the airway and support ventilation with bag-valve-mask. Then administer <span class=\"hl-drug\">naloxone</span> to reverse the opioid effect. ABCs always come first \u2014 secure the airway, ensure oxygenation, then give the antidote."
+  },
+  {
+    "q": "A nurse needs to call the healthcare provider about a patient's deteriorating condition. Using SBAR, which information is communicated FIRST?",
+    "options": [
+      "Background \u2014 the patient's medical history and reason for admission",
+      "Recommendation \u2014 what the nurse thinks the provider should order",
+      "Situation \u2014 what is currently happening with the patient right now",
+      "Assessment \u2014 the nurse's interpretation of the clinical data"
+    ],
+    "correct": 2,
+    "rationale": "SBAR begins with Situation \u2014 a concise statement of what is happening RIGHT NOW. This immediately focuses the provider's attention. 'Dr. Smith, I'm calling about Mr. Jones in 412. He is having acute respiratory distress.' Then Background, Assessment, and Recommendation follow in order."
+  },
+  {
+    "q": "A nurse receives a telephone order from a healthcare provider. Which action is ESSENTIAL for patient safety?",
+    "options": [
+      "Thank the provider and implement the order immediately",
+      "Have the charge nurse listen in on the call as a witness",
+      "Ask the provider to enter the order electronically instead",
+      "Write down the order, read it back to the provider, and receive verbal confirmation"
+    ],
+    "correct": 3,
+    "rationale": "The READ-BACK protocol is the gold standard for telephone and verbal orders: Write it down \u2192 Read it back verbatim \u2192 Receive confirmation ('That's correct'). This prevents miscommunication errors. While electronic orders are preferred when possible, there are situations where verbal orders are necessary and the read-back is essential."
+  },
+  {
+    "q": "A nurse is providing shift handoff using I-SBAR-R. The nurse says: 'Mrs. Chen is a 72-year-old with heart failure. She was admitted 2 days ago for acute exacerbation.' Which component of I-SBAR-R does this represent?",
+    "options": [
+      "Background",
+      "Situation",
+      "Introduction",
+      "Assessment"
+    ],
+    "correct": 0,
+    "rationale": "This statement provides the patient's diagnosis and reason for admission \u2014 this is BACKGROUND information. Background includes relevant medical history, diagnosis, and admission details. Situation would describe what is happening RIGHT NOW. Introduction would identify the nurse and patient."
+  },
+  {
+    "q": "A nurse calls the provider using SBAR. Which statement represents the ASSESSMENT component?",
+    "options": [
+      "'The patient's blood pressure has dropped to <span class=\"hl-lyte\">82/50</span> and heart rate is <span class=\"hl-lyte\">124</span>.'",
+      "'Based on the vital sign changes and decreased urine output, I believe the patient may be going into hypovolemic shock.'",
+      "'The patient was admitted yesterday for a GI bleed and has a history of cirrhosis.'",
+      "'I would like to request a <span class=\"hl-drug\">normal saline</span> bolus and a stat CBC.'"
+    ],
+    "correct": 1,
+    "rationale": "Assessment is the nurse's CLINICAL INTERPRETATION of the data \u2014 'I believe the patient may be going into hypovolemic shock.' The vital signs are part of the Situation (what's happening now). The admission info is Background. The request for NS bolus and CBC is the Recommendation."
+  },
+  {
+    "q": "During a handoff report, the receiving nurse asks, 'What should I watch for tonight?' This question relates to which component of I-SBAR-R?",
+    "options": [
+      "Recommendation",
+      "Assessment",
+      "Situation",
+      "Read-back"
+    ],
+    "correct": 0,
+    "rationale": "Recommendation includes what needs to be done going forward \u2014 pending tasks, what to watch for, and anticipated needs. 'Watch for signs of respiratory distress, check the 2100 potassium level, and call the provider if systolic BP drops below 100' are all Recommendations."
+  },
+  {
+    "q": "A nurse receives a critical lab value from the laboratory. What is the FIRST action?",
+    "options": [
+      "Document the value in the patient's chart",
+      "Notify the healthcare provider immediately and read back the value",
+      "Verify the result with a repeat order",
+      "Inform the charge nurse during the next staff meeting"
+    ],
+    "correct": 1,
+    "rationale": "Critical lab values require IMMEDIATE provider notification \u2014 these are time-sensitive results that may require urgent intervention. The nurse must notify the provider, read back the value for verification, and receive confirmation. Documentation follows notification. Waiting for a meeting or ordering a repeat first delays critical care."
+  },
+  {
+    "q": "A new nurse asks why SBAR is preferred over a narrative handoff. Which response BEST explains the advantage?",
+    "options": [
+      "SBAR is faster because it eliminates all unnecessary details",
+      "SBAR is required by law in all healthcare settings",
+      "SBAR provides a standardized, organized structure that reduces errors from miscommunication and ensures critical information is not omitted",
+      "SBAR allows the nurse to skip the assessment component when time is limited"
+    ],
+    "correct": 2,
+    "rationale": "SBAR's primary advantage is STANDARDIZATION \u2014 it provides a consistent framework that both sender and receiver understand, reducing the risk of important information being lost in an unstructured narrative. It improves communication clarity, is supported by The Joint Commission, and reduces sentinel events related to miscommunication."
+  },
+  {
+    "q": "A nurse is calling the rapid response team. Using SBAR, which opening statement is MOST effective?",
+    "options": [
+      "'Hi, I have a patient who doesn't look right.'",
+      "'This is Nurse Taylor on 4 South. I'm calling about Mr. Rivera in Room 418 who has become acutely short of breath with <span class=\"hl-lyte\">SpO\u2082 84%</span> and is becoming confused.'",
+      "'I'm calling about a patient who had surgery last week and has been doing well overall.'",
+      "'I'd like to discuss a patient's care plan when you have a chance.'"
+    ],
+    "correct": 1,
+    "rationale": "This statement includes Introduction (Nurse Taylor, 4 South) AND Situation (acute SOB, low O\u2082 sat, confusion) \u2014 immediately communicating who is calling, about whom, and what the emergency is. Vague statements like 'doesn't look right' or non-urgent requests waste critical time in an emergency."
+  },
+  {
+    "q": "A nurse receives a verbal order that seems unclear. The provider says 'give the patient some fluids.' What is the MOST appropriate nursing action?",
+    "options": [
+      "Clarify the order by asking: 'Which fluid, what volume, and at what rate?'",
+      "Hang a bag of <span class=\"hl-drug\">D5W</span> at 125 mL/hr as this is a common rate",
+      "Ask the charge nurse to interpret the order",
+      "Document 'provider ordered fluids' and administer normal saline at a KVO rate"
+    ],
+    "correct": 0,
+    "rationale": "An unclear or incomplete order MUST be clarified directly with the prescribing provider. The nurse should ask for specific details: type of fluid, volume, and infusion rate. Never assume, interpret, or ask someone else to guess what the provider meant. This prevents medication errors and ensures patient safety."
+  },
+  {
+    "q": "Which scenario demonstrates the CORRECT use of the read-back protocol?",
+    "options": [
+      "The nurse writes '<span class=\"hl-drug\">furosemide 40 mg IV push once</span>,' reads it back to the provider, and the provider says 'that's correct'",
+      "The nurse writes 'give Lasix' and tells the provider 'I'll give the Lasix'",
+      "The nurse memorizes the order and repeats it to the charge nurse",
+      "The nurse enters the order in the computer and verifies it the next day"
+    ],
+    "correct": 0,
+    "rationale": "Correct read-back: (1) WRITE the complete order including drug name, dose, route, and frequency \u2014 '<span class=\"hl-drug\">furosemide 40 mg IV push once</span>.' (2) READ BACK the entire order verbatim. (3) Receive CONFIRMATION from the provider ('that's correct'). Using the generic name (furosemide vs. Lasix) is also best practice to avoid sound-alike errors."
+  },
+  {
+    "q": "A patient presents to the ED with acute ischemic stroke symptoms. The onset was <span class=\"hl-lyte\">2 hours ago</span>. Which medication is TIME-CRITICAL?",
+    "options": [
+      "<span class=\"hl-drug\">Aspirin 325 mg PO</span>",
+      "<span class=\"hl-drug\">Clopidogrel 75 mg PO</span>",
+      "<span class=\"hl-drug\">Atorvastatin 80 mg PO</span>",
+      "<span class=\"hl-drug\">Alteplase (tPA) IV</span> within the <span class=\"hl-lyte\">4.5-hour</span> window"
+    ],
+    "correct": 3,
+    "rationale": "For acute ischemic stroke, <span class=\"hl-drug\">alteplase (tPA)</span> must be administered within <span class=\"hl-lyte\">4.5 hours</span> of symptom onset \u2014 'Time is Brain.' This patient is at <span class=\"hl-lyte\">2 hours</span>, well within the window. Every 15-minute delay reduces the chance of a good outcome. <span class=\"hl-drug\">Aspirin</span> is given but is not the priority time-critical intervention."
+  },
+  {
+    "q": "A nurse is caring for a patient with suspected sepsis. The provider orders <span class=\"hl-drug\">IV antibiotics</span>. What is the CORRECT sequence of actions?",
+    "options": [
+      "Administer the antibiotic immediately, then draw blood cultures",
+      "Give the <span class=\"hl-drug\">antibiotic</span> only after the patient's <span class=\"hl-lyte\">temperature</span> exceeds <span class=\"hl-lyte\">101.5\u00b0F</span>",
+      "Wait for culture results before starting <span class=\"hl-drug\">antibiotics</span>",
+      "Draw blood cultures first, then administer the first dose of <span class=\"hl-drug\">antibiotics</span> within <span class=\"hl-lyte\">1 hour</span> of the order"
+    ],
+    "correct": 3,
+    "rationale": "For suspected sepsis: draw blood cultures FIRST (to identify the organism before antibiotics alter results), then administer the first dose of <span class=\"hl-drug\">antibiotics</span> within <span class=\"hl-lyte\">1 hour</span>. The Surviving Sepsis Campaign emphasizes that every hour of delay in antibiotics increases mortality. Never wait for culture results to start treatment."
+  },
+  {
+    "q": "A nurse is prioritizing morning medications. Which medication should be administered FIRST?",
+    "options": [
+      "<span class=\"hl-drug\">Phenytoin</span> 300 mg PO (seizure patient who missed the evening dose)",
+      "<span class=\"hl-drug\">Levothyroxine</span> 100 mcg PO on an empty stomach",
+      "<span class=\"hl-drug\">Atorvastatin</span> 40 mg PO at bedtime (given late at 0900)",
+      "<span class=\"hl-drug\">Docusate sodium</span> 100 mg PO twice daily"
+    ],
+    "correct": 0,
+    "rationale": "A missed dose of <span class=\"hl-drug\">phenytoin</span> in a seizure patient creates an immediate risk for breakthrough seizures \u2014 this is a TIME-CRITICAL medication that should never be skipped or delayed. <span class=\"hl-drug\">Levothyroxine</span> is important but a few hours' delay is not emergent. <span class=\"hl-drug\">Atorvastatin</span> timing is flexible, and <span class=\"hl-drug\">docusate</span> is a stool softener with no urgency."
+  },
+  {
+    "q": "A patient's lab results show <span class=\"hl-lyte\">K\u207a 7.1 mEq/L</span> with peaked T waves on the monitor. Which medication should the nurse expect to administer FIRST?",
+    "options": [
+      "<span class=\"hl-drug\">Sodium polystyrene sulfonate (Kayexalate)</span> PO",
+      "<span class=\"hl-drug\">Calcium gluconate</span> IV",
+      "<span class=\"hl-drug\">Regular insulin</span> IV with <span class=\"hl-drug\">dextrose</span>",
+      "<span class=\"hl-drug\">Furosemide</span> IV push"
+    ],
+    "correct": 1,
+    "rationale": "With critical hyperkalemia (<span class=\"hl-lyte\">K\u207a 7.1</span>) and ECG changes (peaked T waves), the FIRST medication is <span class=\"hl-drug\">calcium gluconate</span> IV \u2014 it stabilizes the cardiac membrane to prevent lethal dysrhythmias. It does NOT lower potassium but buys time. Then <span class=\"hl-drug\">insulin + dextrose</span> shifts K\u207a intracellularly, and <span class=\"hl-drug\">Kayexalate</span> or dialysis removes it from the body."
+  },
+  {
+    "q": "A nurse is caring for a patient on <span class=\"hl-drug\">warfarin</span> who has an <span class=\"hl-lyte\">INR of 9.2</span> with no active bleeding. What is the priority action?",
+    "options": [
+      "Hold the <span class=\"hl-drug\">warfarin</span> and recheck the <span class=\"hl-lyte\">INR</span> in 1 week",
+      "Administer <span class=\"hl-drug\">vitamin K (phytonadione)</span> as ordered and notify the provider",
+      "Administer fresh frozen plasma immediately",
+      "Continue the <span class=\"hl-drug\">warfarin</span> at the current dose and monitor"
+    ],
+    "correct": 1,
+    "rationale": "An <span class=\"hl-lyte\">INR of 9.2</span> is critically elevated with high bleeding risk. The priority is to administer <span class=\"hl-drug\">vitamin K</span> to reverse the anticoagulation effect. Fresh frozen plasma is reserved for active, life-threatening bleeding. Continuing <span class=\"hl-drug\">warfarin</span> or simply holding it without treatment would leave the patient at high risk for spontaneous hemorrhage."
+  },
+  {
+    "q": "A patient with diabetes has a <span class=\"hl-lyte\">blood glucose of 48 mg/dL</span> and is lethargic but responsive. What is the FIRST intervention?",
+    "options": [
+      "Give 4 oz of orange juice with sugar orally",
+      "Administer <span class=\"hl-drug\">dextrose 50% (D50) IV push</span>",
+      "Administer <span class=\"hl-drug\">glucagon 1 mg IM</span>",
+      "Start a <span class=\"hl-drug\">D10W</span> IV infusion and recheck glucose in 15 minutes"
+    ],
+    "correct": 0,
+    "rationale": "The patient is lethargic but RESPONSIVE \u2014 meaning they can swallow safely. The first intervention for a conscious patient who can swallow is oral fast-acting glucose (15-20g): 4 oz juice with sugar. <span class=\"hl-drug\">D50 IV</span> and <span class=\"hl-drug\">glucagon IM</span> are reserved for patients who CANNOT take oral intake (unconscious, unable to swallow, or NPO). Always try the least invasive approach first."
+  },
+  {
+    "q": "A nurse is monitoring a patient receiving a continuous <span class=\"hl-drug\">heparin</span> drip. The latest <span class=\"hl-lyte\">aPTT is 120 seconds</span> (therapeutic range <span class=\"hl-lyte\">60-80 seconds</span>). What is the FIRST action?",
+    "options": [
+      "Continue the infusion and recheck the <span class=\"hl-lyte\">aPTT</span> in 6 hours",
+      "Stop the <span class=\"hl-drug\">heparin</span> infusion and notify the provider immediately",
+      "Administer <span class=\"hl-drug\">protamine sulfate</span> to reverse the heparin",
+      "Decrease the <span class=\"hl-drug\">heparin</span> rate by 50% and document"
+    ],
+    "correct": 1,
+    "rationale": "An <span class=\"hl-lyte\">aPTT of 120 seconds</span> is significantly above the therapeutic range (<span class=\"hl-lyte\">60-80 seconds</span>), indicating excessive anticoagulation with high bleeding risk. The FIRST action is to STOP the infusion and notify the provider for new orders. <span class=\"hl-drug\">Protamine sulfate</span> is the antidote but requires a provider order. Never independently adjust the rate of a high-alert medication."
+  },
+  {
+    "q": "A patient is receiving their first dose of <span class=\"hl-drug\">vancomycin</span> IV. The nurse notes the patient's face and neck becoming flushed with a red rash. What is the FIRST action?",
+    "options": [
+      "Stop the infusion, slow the rate, and notify the provider \u2014 this is likely Red Man Syndrome",
+      "Stop the infusion immediately and administer <span class=\"hl-drug\">epinephrine</span> for anaphylaxis",
+      "Continue the infusion as this is a normal reaction to the medication",
+      "Administer <span class=\"hl-drug\">diphenhydramine</span> and increase the infusion rate to complete the dose"
+    ],
+    "correct": 0,
+    "rationale": "Flushing and red rash on the face, neck, and upper body during <span class=\"hl-drug\">vancomycin</span> infusion is RED MAN SYNDROME \u2014 caused by too-rapid infusion. It is NOT anaphylaxis (no bronchospasm, hypotension, or angioedema). Stop the infusion, notify the provider, and the rate will be slowed. The infusion is typically restarted at a slower rate, often with pre-medication of <span class=\"hl-drug\">diphenhydramine</span>."
+  },
+  {
+    "q": "A nurse is caring for a patient who had a total thyroidectomy 6 hours ago. The patient reports tingling around the mouth and fingers. <span class=\"hl-lyte\">Calcium level is 7.2 mg/dL</span>. Which medication should the nurse anticipate?",
+    "options": [
+      "<span class=\"hl-drug\">Potassium chloride</span> IV",
+      "<span class=\"hl-drug\">Calcium gluconate</span> IV",
+      "<span class=\"hl-drug\">Magnesium sulfate</span> IV",
+      "<span class=\"hl-drug\">Calcitonin</span> subcutaneous"
+    ],
+    "correct": 1,
+    "rationale": "Post-thyroidectomy tingling (paresthesias) with <span class=\"hl-lyte\">calcium 7.2 mg/dL</span> (normal <span class=\"hl-lyte\">8.5-10.5</span>) indicates hypocalcemia from accidental parathyroid removal/damage. <span class=\"hl-drug\">Calcium gluconate</span> IV is the priority treatment to prevent tetany and cardiac arrest. This is a time-critical post-surgical complication."
+  },
+  {
+    "q": "A nurse is administering <span class=\"hl-drug\">potassium chloride (KCl) 40 mEq IV</span>. Which safety measure is MOST critical?",
+    "options": [
+      "Administer by IV push for faster correction",
+      "Infuse via peripheral IV at a rate not to exceed <span class=\"hl-lyte\">10 mEq/hour</span>, always on an infusion pump, and never administer IV push",
+      "Mix with <span class=\"hl-drug\">dextrose 5%</span> and infuse as a bolus",
+      "Administer undiluted through a central line"
+    ],
+    "correct": 1,
+    "rationale": "<span class=\"hl-drug\">KCl</span> IV is a HIGH-ALERT medication. It must NEVER be given IV push \u2014 this causes lethal cardiac arrest. Always dilute, always use an infusion pump, and do not exceed <span class=\"hl-lyte\">10 mEq/hour</span> via peripheral IV (<span class=\"hl-lyte\">20 mEq/hour</span> via central line with cardiac monitoring). This is one of the most critical medication safety rules in nursing."
+  }
+]
