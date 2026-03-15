@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preeclampsia vs Eclampsia vs HELLP — NCLEX 85 &amp; Done</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#0a0a1a;
+  color:#e2e8f0;
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  padding:0;
+  font-size:1.05rem;
+}
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(90,138,173,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 90%, rgba(168,85,247,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(100,150,185,0.04) 0%, transparent 70%);
+  pointer-events:none;
+}
+.guide-container{max-width:920px;margin:0 auto;padding:1.5rem 1.4rem 4rem}
+
+/* === HERO === */
+.hero{
+  position:relative;
+  background:linear-gradient(135deg,#1a2840 0%,#263a55 40%,#3d5e80 100%);
+  border-radius:1.25rem;padding:2rem 1.75rem 1.75rem;margin-bottom:2rem;
+  border:2px solid #5a8aad;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-50%;right:-20%;width:300px;height:300px;
+  background:radial-gradient(circle,rgba(90,138,173,0.2),transparent 70%);pointer-events:none;
+}
+.hero::after{
+  content:'🤰';position:absolute;top:1rem;right:1.25rem;font-size:3rem;opacity:0.15;pointer-events:none;
+}
+.hero h1{font-size:1.85rem;font-weight:900;color:#fff;letter-spacing:-0.02em;margin-bottom:0.5rem;text-shadow:0 2px 12px rgba(90,138,173,0.4)}
+.hero .subtitle{font-size:1rem;color:#d0e4f0;line-height:1.65;font-weight:400}
+.hero .badge-row{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.85rem}
+.hero .badge-row .badge{
+  display:inline-flex;align-items:center;gap:0.3rem;
+  padding:0.25rem 0.65rem;border-radius:2rem;font-size:0.78rem;font-weight:700;
+  letter-spacing:0.03em;text-transform:uppercase;backdrop-filter:blur(4px);
+}
+.badge-pre{background:rgba(251,191,36,0.2);color:#fde68a;border:1px solid rgba(251,191,36,0.4)}
+.badge-ecl{background:rgba(248,113,113,0.2);color:#fca5a5;border:1px solid rgba(248,113,113,0.4)}
+.badge-hellp{background:rgba(168,85,247,0.2);color:#d8b4fe;border:1px solid rgba(168,85,247,0.4)}
+.badge-gest{background:rgba(34,211,238,0.2);color:#67e8f9;border:1px solid rgba(34,211,238,0.4)}
+
+/* === STICKY NAV === */
+.nav-bar{
+  position:sticky;top:0;z-index:100;display:flex;gap:0.35rem;padding:0.5rem 0;margin-bottom:0.5rem;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  background:linear-gradient(180deg,#0a0a1a 60%,transparent);scrollbar-width:none;
+}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-pill{
+  display:inline-flex;align-items:center;gap:0.25rem;padding:0.35rem 0.7rem;border-radius:2rem;
+  font-size:0.75rem;font-weight:700;white-space:nowrap;text-decoration:none;
+  border:1.5px solid #334155;background:rgba(15,23,42,0.8);color:#94a3b8;
+  transition:all 0.2s;cursor:pointer;backdrop-filter:blur(8px);
+}
+.nav-pill:hover{border-color:#5a8aad;color:#a8c8dc;background:rgba(90,138,173,0.12)}
+
+/* === SECTION HEADERS === */
+.section-hdr{
+  position:relative;margin:2.5rem 0 1.25rem;padding:1rem 1.25rem;border-radius:1rem;
+  font-size:1.45rem;font-weight:800;letter-spacing:-0.01em;overflow:hidden;
+}
+.section-hdr::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;opacity:0.92;border-radius:1rem;z-index:0}
+.section-hdr span{position:relative;z-index:1}
+.section-hdr .sec-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;font-size:0.85rem;font-weight:900;
+  margin-right:0.5rem;vertical-align:middle;box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+.sh-spectrum{border:2px solid #5a8aad;background:linear-gradient(135deg,#1a2840,#263a55,#2f4d6a)}
+.sh-spectrum::before{background:linear-gradient(135deg,rgba(90,138,173,0.1),transparent)}
+.sh-spectrum .sec-num{background:#5a8aad;color:#1a2840}
+.sh-spectrum span{color:#d0e4f0}
+
+.sh-pre{border:2px solid #f59e0b;background:linear-gradient(135deg,#451a03,#78350f,#92400e)}
+.sh-pre::before{background:linear-gradient(135deg,rgba(245,158,11,0.1),transparent)}
+.sh-pre .sec-num{background:#f59e0b;color:#451a03}
+.sh-pre span{color:#fef3c7}
+
+.sh-ecl{border:2px solid #ef4444;background:linear-gradient(135deg,#450a0a,#7f1d1d,#991b1b)}
+.sh-ecl::before{background:linear-gradient(135deg,rgba(239,68,68,0.1),transparent)}
+.sh-ecl .sec-num{background:#ef4444;color:#450a0a}
+.sh-ecl span{color:#fecaca}
+
+.sh-hellp{border:2px solid #a855f7;background:linear-gradient(135deg,#3b0764,#581c87,#6b21a8)}
+.sh-hellp::before{background:linear-gradient(135deg,rgba(168,85,247,0.1),transparent)}
+.sh-hellp .sec-num{background:#a855f7;color:#3b0764}
+.sh-hellp span{color:#e9d5ff}
+
+.sh-mgso4{border:2px solid #06b6d4;background:linear-gradient(135deg,#083344,#155e75,#0e7490)}
+.sh-mgso4::before{background:linear-gradient(135deg,rgba(6,182,212,0.1),transparent)}
+.sh-mgso4 .sec-num{background:#06b6d4;color:#083344}
+.sh-mgso4 span{color:#a5f3fc}
+
+.sh-ref{border:2px solid #8b5cf6;background:linear-gradient(135deg,#2e1065,#4c1d95,#5b21b6)}
+.sh-ref::before{background:linear-gradient(135deg,rgba(139,92,246,0.1),transparent)}
+.sh-ref .sec-num{background:#8b5cf6;color:#2e1065}
+.sh-ref span{color:#ddd6fe}
+
+.sh-mem{border:2px solid #7ba3c0;background:linear-gradient(135deg,#1a2840,#263a55,#2f4d6a)}
+.sh-mem::before{background:linear-gradient(135deg,rgba(123,163,192,0.1),transparent)}
+.sh-mem .sec-num{background:#7ba3c0;color:#1a2840}
+.sh-mem span{color:#d0e4f0}
+
+/* === VS BANNER === */
+.vs-banner{
+  display:flex;align-items:center;gap:0.75rem;margin:1.25rem 0;padding:0.6rem 1rem;
+  background:linear-gradient(90deg,rgba(26,40,64,0.4),rgba(15,23,42,0.8),rgba(26,40,64,0.4));
+  border-radius:0.75rem;border:1px solid #334155;
+}
+.vs-banner .vs-cond{font-size:1.08rem;font-weight:700}
+.vs-banner .vs-circle{
+  flex-shrink:0;width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'JetBrains Mono',monospace;font-size:0.75rem;font-weight:900;
+  background:linear-gradient(135deg,#3d5e80,#5a8aad);color:#fff;
+  box-shadow:0 0 16px rgba(90,138,173,0.3);letter-spacing:0.05em;
+}
+.vs-left{color:#fbbf24}
+.vs-mid{color:#f87171}
+.vs-right{color:#c084fc}
+
+/* === TABLES === */
+h3{font-size:1.18rem;color:#a8c8dc;margin:1.6rem 0 0.6rem;font-weight:700}
+h4{font-size:1.06rem;color:#b0c4d8;margin:1rem 0 0.4rem;font-weight:700}
+p,li{color:#e2e8f0;margin:0.3rem 0;font-size:1.02rem}
+ul,ol{padding-left:1.5rem}
+li{margin:0.25rem 0}
+li::marker{color:#7ba3c0}
+strong,b{color:#f1f5f9}
+em{color:#cbd5e1}
+
+.compare-table{
+  width:100%;border-collapse:separate;border-spacing:0;margin:0.85rem 0 1.5rem;font-size:1.05rem;
+  border:2px solid #334155;border-radius:0.85rem;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.3);
+}
+.compare-table th{
+  background:linear-gradient(180deg,#1a2840,#263a55);color:#d0e4f0;font-weight:800;
+  padding:0.7rem 0.75rem;text-align:left;border-bottom:2px solid #5a8aad;
+  font-size:0.95rem;text-transform:uppercase;letter-spacing:0.05em;position:sticky;top:0;z-index:2;
+}
+.compare-table th:first-child{border-right:2px solid #1e3550}
+.compare-table td{
+  background:#0f172a;color:#e2e8f0;padding:0.65rem 0.75rem;
+  border-bottom:1px solid #1e293b;vertical-align:top;line-height:1.6;
+}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tr:hover td{background:rgba(90,138,173,0.06)}
+.compare-table .cat-label{
+  font-weight:700;background:linear-gradient(90deg,#111d2e,#0f172a);
+  color:#a8c8dc;white-space:nowrap;min-width:115px;font-size:1.02rem;border-right:2px solid #334155;
+}
+.compare-table td:nth-child(2){border-right:1px solid #1e293b}
+.compare-table .up{color:#f87171;font-weight:700}
+.compare-table .down{color:#67e8f9;font-weight:700}
+.compare-table .normal{color:#94a3b8}
+
+.arr-up::before{content:"↑ ";color:#f87171;font-weight:900}
+.arr-down::before{content:"↓ ";color:#67e8f9;font-weight:900}
+
+.danger{color:#f87171;font-weight:700}
+.warn{color:#fbbf24;font-weight:700}
+.safe{color:#4ade80;font-weight:700}
+.drug{color:#93c5fd;font-weight:700}
+.lyte{color:#ffa040;font-weight:700}
+.dx{color:#a8c8dc;font-weight:600}
+
+/* === DX CARDS === */
+.dx-card{
+  position:relative;background:linear-gradient(135deg,rgba(26,40,64,0.3),rgba(15,15,35,0.95));
+  border:2px solid #4a7090;border-radius:1.1rem;padding:1.25rem;margin:1.25rem 0;overflow:hidden;
+}
+.dx-card::before{content:'';position:absolute;top:0;left:0;width:6px;height:100%;border-radius:1.1rem 0 0 1.1rem}
+.dx-card.card-warn::before{background:linear-gradient(180deg,#f59e0b,#d97706)}
+.dx-card.card-danger::before{background:linear-gradient(180deg,#ef4444,#dc2626)}
+.dx-card.card-purple::before{background:linear-gradient(180deg,#a855f7,#7c3aed)}
+.dx-card.card-teal::before{background:linear-gradient(180deg,#06b6d4,#0891b2)}
+.dx-card h3{margin-top:0;color:#d0e4f0;font-size:1.18rem}
+.dx-card .tag-row{display:flex;flex-wrap:wrap;gap:0.35rem;margin:0.4rem 0 0.65rem}
+.tag{
+  display:inline-flex;align-items:center;gap:0.25rem;padding:0.2rem 0.6rem;border-radius:2rem;
+  font-size:0.78rem;font-weight:700;letter-spacing:0.03em;text-transform:uppercase;
+}
+.tag-warn{background:rgba(251,191,36,0.15);color:#fde68a;border:1px solid rgba(251,191,36,0.4)}
+.tag-danger{background:rgba(248,113,113,0.25);color:#fca5a5;border:1px solid rgba(248,113,113,0.5)}
+.tag-purple{background:rgba(168,85,247,0.15);color:#d8b4fe;border:1px solid rgba(168,85,247,0.4)}
+.tag-teal{background:rgba(6,182,212,0.15);color:#67e8f9;border:1px solid rgba(6,182,212,0.4)}
+.tag-ob{background:rgba(90,138,173,0.15);color:#a8c8dc;border:1px solid rgba(90,138,173,0.4)}
+
+/* === MNEMONIC === */
+.mnemonic{
+  position:relative;background:linear-gradient(135deg,#263a55,#2f4d6a);
+  border:2px solid #5a8aad;border-radius:0.85rem;padding:1rem 1.15rem 1rem 3rem;
+  margin:1rem 0;font-size:1.02rem;line-height:1.7;box-shadow:0 4px 16px rgba(90,138,173,0.15);
+}
+.mnemonic::before{content:'💡';position:absolute;left:0.85rem;top:0.9rem;font-size:1.35rem}
+.mnemonic strong{color:#d0e4f0;font-size:1.06rem}
+.mnemonic em{color:#a8c8dc}
+
+/* === NCLEX TIP === */
+.nclex-tip{
+  position:relative;background:linear-gradient(135deg,rgba(90,138,173,0.1),rgba(60,90,120,0.05));
+  border:1.5px solid #5a8aad;border-left:5px solid #5a8aad;border-radius:0.75rem;
+  padding:1rem 1.15rem 1rem 3rem;margin:1rem 0;font-size:1.02rem;line-height:1.65;
+}
+.nclex-tip::before{content:'🎯';position:absolute;left:0.85rem;top:0.9rem;font-size:1.25rem}
+.nclex-tip strong{color:#a8c8dc;font-size:1.04rem}
+
+/* === LETHAL === */
+.lethal{
+  position:relative;background:linear-gradient(135deg,rgba(248,113,113,0.12),rgba(220,38,38,0.06));
+  border:2px solid #dc2626;border-left:6px solid #ef4444;border-radius:0.75rem;
+  padding:1rem 1.15rem 1rem 3.25rem;margin:1rem 0;font-size:1.05rem;line-height:1.65;
+  box-shadow:0 0 20px rgba(239,68,68,0.08);
+}
+.lethal::before{content:'☠️';position:absolute;left:0.85rem;top:0.85rem;font-size:1.35rem}
+.lethal strong{color:#fca5a5;font-size:1.08rem}
+
+/* === QUICK REF === */
+.qref{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:0.85rem;margin:0.85rem 0}
+.qref-box{
+  background:linear-gradient(135deg,rgba(26,40,64,0.3),rgba(15,23,42,0.8));
+  border:1.5px solid #475569;border-radius:0.85rem;padding:0.85rem 1rem;
+  transition:border-color 0.2s,transform 0.2s;
+}
+.qref-box:hover{border-color:#7ba3c0;transform:translateY(-2px)}
+.qref-box h4{margin-top:0;font-size:1.05rem;color:#d0e4f0;font-weight:800}
+.qref-box ul{margin:0.25rem 0 0;padding-left:1.2rem}
+.qref-box li{font-size:0.98rem;margin:0.2rem 0;color:#cbd5e1}
+
+/* === DIVIDER === */
+.section-divider{border:none;height:2px;margin:2rem 0;background:linear-gradient(90deg,transparent,#3d5e80,#5a8aad,#3d5e80,transparent)}
+
+/* === TX STEPS === */
+.tx-steps{counter-reset:tx;padding-left:0}
+.tx-steps li{list-style:none;position:relative;padding-left:0.3rem;margin:0.35rem 0}
+.tx-steps li::before{
+  counter-increment:tx;content:counter(tx);
+  display:inline-flex;align-items:center;justify-content:center;
+  width:22px;height:22px;border-radius:50%;background:#3d5e80;color:#d0e4f0;
+  font-size:0.72rem;font-weight:800;margin-right:0.45rem;vertical-align:middle;
+}
+
+/* === CRITERIA BOX === */
+.criteria-box{
+  background:linear-gradient(135deg,rgba(26,40,64,0.25),rgba(15,23,42,0.9));
+  border:2px solid #4a7090;border-radius:1rem;padding:1.1rem 1.25rem;margin:1rem 0;
+}
+.criteria-box h4{color:#d0e4f0;margin-top:0;font-size:1.1rem}
+.criteria-box .or-badge{
+  display:inline-block;background:#3d5e80;color:#fff;padding:0.15rem 0.6rem;
+  border-radius:2rem;font-size:0.72rem;font-weight:800;letter-spacing:0.08em;margin:0.35rem 0;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:fadeUp 0.5s ease-out both}
+.d1{animation-delay:0.05s}.d2{animation-delay:0.1s}.d3{animation-delay:0.15s}.d4{animation-delay:0.2s}
+
+/* === RESPONSIVE === */
+@media(max-width:640px){
+  .guide-container{padding:1rem 0.75rem 3rem}
+  .hero{padding:1.5rem 1.15rem;border-radius:1rem}
+  .hero h1{font-size:1.45rem}
+  .hero::after{display:none}
+  .section-hdr{font-size:1.2rem;padding:0.85rem 1rem}
+  .section-hdr .sec-num{width:26px;height:26px;font-size:0.75rem}
+  .compare-table{font-size:1rem}
+  .compare-table th,.compare-table td{padding:0.5rem 0.55rem}
+  .compare-table .cat-label{white-space:normal;min-width:80px;font-size:0.92rem}
+  .compare-table th{font-size:0.88rem}
+  .vs-banner{flex-direction:column;text-align:center;gap:0.35rem;padding:0.5rem 0.75rem}
+  .vs-banner .vs-circle{width:32px;height:32px;font-size:0.65rem}
+  .qref{grid-template-columns:1fr}
+  .dx-card{padding:1rem 1rem 1rem 1.15rem}
+  .mnemonic{padding-left:2.75rem}.mnemonic::before{left:0.65rem}
+  .nclex-tip{padding-left:2.75rem}.nclex-tip::before{left:0.65rem}
+  .lethal{padding-left:2.75rem}.lethal::before{left:0.65rem}
+  .nav-pill{font-size:0.68rem;padding:0.3rem 0.55rem}
+}
+</style>
+</head>
+<body>
+
+<div class="guide-container">
+
+<!-- HERO -->
+<div class="hero anim">
+<h1>🤰 OB Hypertensive Disorders</h1>
+<p class="subtitle">A high-yield comparison of the most dangerous and commonly tested hypertensive disorders of pregnancy. Master the diagnostic criteria, labs, complications, and emergency management for NCLEX success.</p>
+<div class="badge-row">
+<span class="badge badge-gest">🩺 Gestational HTN</span>
+<span class="badge badge-pre">⚠️ Preeclampsia</span>
+<span class="badge badge-ecl">🚨 Eclampsia</span>
+<span class="badge badge-hellp">💜 HELLP</span>
+</div>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="nav-bar anim d1">
+<a class="nav-pill" href="#sec-spectrum">🩺 Spectrum</a>
+<a class="nav-pill" href="#sec-pre">⚠️ Preeclampsia</a>
+<a class="nav-pill" href="#sec-ecl">🚨 Eclampsia</a>
+<a class="nav-pill" href="#sec-hellp">💜 HELLP</a>
+<a class="nav-pill" href="#sec-mgso4">💊 MgSO4</a>
+<a class="nav-pill" href="#sec-ref">📊 Quick Ref</a>
+<a class="nav-pill" href="#sec-mem">🧠 Memory</a>
+</nav>
+
+<!-- ====================================================== -->
+<div id="sec-spectrum" class="section-hdr sh-spectrum anim d2">
+<span><span class="sec-num">1</span> 🩺 The Hypertensive Spectrum of Pregnancy</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="mnemonic anim d3">
+<strong>Memory Aid — The Escalation Ladder:</strong><br>
+Gestational HTN → Preeclampsia (without severe features) → Preeclampsia (with severe features) → <strong>Eclampsia</strong> (seizures) and/or <strong>HELLP</strong> (liver/blood crisis)<br>
+<em>Each step up = more danger for mom &amp; baby. HELLP can appear at any stage.</em>
+</div>
+
+<table class="compare-table anim d4">
+<thead><tr>
+<th>Feature</th>
+<th>🩺 Gestational HTN</th>
+<th>⚠️ Preeclampsia</th>
+<th>🚨 Eclampsia</th>
+<th>💜 HELLP</th>
+</tr></thead>
+<tbody>
+<tr><td class="cat-label">Definition</td>
+<td>New-onset HTN after 20 weeks gestation <strong>without</strong> <span class="lyte">proteinuria</span> or end-organ damage</td>
+<td>HTN after 20 weeks <strong>WITH</strong> <span class="lyte">proteinuria</span> and/or end-organ dysfunction</td>
+<td>Preeclampsia <strong>+ new-onset seizures</strong> not explained by other causes</td>
+<td>Variant of severe preeclampsia with <strong>H</strong>emolysis, <strong>E</strong>levated <strong>L</strong>iver enzymes, <strong>L</strong>ow <strong>P</strong>latelets</td></tr>
+
+<tr><td class="cat-label"><span class="lyte">BP</span> Criteria</td>
+<td>≥140/90 on 2 readings, 4+ hours apart</td>
+<td>≥140/90 (without severe features)<br><strong>≥160/110</strong> (with severe features)</td>
+<td>Can occur with any degree of HTN — <strong>seizure is the defining event</strong></td>
+<td>May have normal or only mildly elevated <span class="lyte">BP</span> in some cases</td></tr>
+
+<tr><td class="cat-label"><span class="lyte">Proteinuria</span></td>
+<td><strong>Absent</strong></td>
+<td><strong>≥300 mg/24h</strong> (or protein/<span class="lyte">creatinine</span> ratio ≥0.3, or dipstick ≥1+)</td>
+<td>Usually present</td>
+<td>May or may not be present</td></tr>
+
+<tr><td class="cat-label">Onset</td>
+<td>After 20 weeks; resolves by 12 weeks postpartum</td>
+<td>After 20 weeks (or postpartum — up to 6 weeks after delivery)</td>
+<td>Antepartum (most common), intrapartum, or <strong>up to 48 hours postpartum</strong></td>
+<td>Usually 3rd trimester; can occur postpartum. May appear <strong>without prior preeclampsia diagnosis</strong></td></tr>
+
+<tr><td class="cat-label">Mortality Risk</td>
+<td class="normal">Low — if monitored</td>
+<td class="up">Moderate to high with severe features</td>
+<td class="up"><strong>1-2% maternal mortality</strong></td>
+<td class="up"><strong>1-3% maternal mortality; 7-60% perinatal mortality</strong></td></tr>
+
+<tr><td class="cat-label">Key Risk</td>
+<td>~50% progress to preeclampsia</td>
+<td>Organ damage, placental abruption, IUGR, preterm delivery</td>
+<td>Seizure complications: aspiration, DIC, brain hemorrhage, maternal/fetal death</td>
+<td>Hepatic rupture, DIC, placental abruption, renal failure</td></tr>
+
+<tr><td class="cat-label">💊 Treatment</td>
+<td>Monitor closely; delivery at 37+ weeks if stable</td>
+<td><strong>Without severe:</strong> deliver at 37 weeks<br><strong>With severe:</strong> deliver at 34 weeks (or immediately if unstable)<br><span class="drug">MgSO4</span> for seizure prophylaxis if severe</td>
+<td><span class="drug">MgSO4</span> to stop seizures (first-line)<br><strong>Emergent delivery</strong> after maternal stabilization</td>
+<td><span class="drug">MgSO4</span> + <strong>emergent delivery</strong><br>Correct coagulopathy; transfuse <span class="lyte">platelets</span> if &lt;20,000 or before C-section if &lt;50,000</td></tr>
+</tbody></table>
+
+<div class="nclex-tip">
+<strong>NCLEX Key:</strong> The <strong>only cure</strong> for preeclampsia, eclampsia, and HELLP is <strong>delivery of the placenta</strong>. All other interventions are temporizing measures to stabilize the mother and buy time for fetal lung maturity. Symptoms can persist or even <strong>worsen up to 48 hours after delivery</strong>.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-pre" class="section-hdr sh-pre">
+<span><span class="sec-num">2</span> ⚠️ Preeclampsia — Deep Dive</span>
+</div>
+<!-- ====================================================== -->
+
+<h3>Pathophysiology</h3>
+<p><strong>Abnormal placentation</strong> → inadequate trophoblast invasion of spiral arteries → placental ischemia → release of anti-angiogenic factors → <strong>widespread endothelial dysfunction</strong> → vasospasm, increased permeability, and activation of coagulation cascade. This is a <strong>systemic disease</strong> — the placenta is the cause, but the entire maternal vascular system is the target.</p>
+
+<div class="criteria-box">
+<h4>⚠️ Diagnostic Criteria — Preeclampsia WITHOUT Severe Features</h4>
+<ul>
+<li><span class="lyte">BP</span> ≥ <strong>140/90</strong> on 2 occasions, at least 4 hours apart, after 20 weeks</li>
+<li><span class="lyte">Proteinuria</span> ≥ 300 mg/24h (or protein:<span class="lyte">creatinine</span> ≥ 0.3, or dipstick ≥ 1+)</li>
+</ul>
+<span class="or-badge">OR — IF NO PROTEINURIA</span>
+<ul>
+<li>New-onset HTN <strong>plus</strong> any of: thrombocytopenia, renal insufficiency, elevated LFTs, pulmonary edema, or cerebral/visual symptoms</li>
+</ul>
+</div>
+
+<div class="criteria-box">
+<h4>🚨 Diagnostic Criteria — Preeclampsia WITH Severe Features</h4>
+<p>Any <strong>ONE</strong> of the following:</p>
+<ul>
+<li><span class="lyte">BP</span> ≥ <strong>160/110</strong> on 2 readings, minutes apart (while at rest)</li>
+<li><span class="lyte">Platelets</span> <strong>&lt; 100,000</strong></li>
+<li>Liver transaminases (AST/<span class="lyte">ALT</span>) <strong>≥ 2× upper normal</strong></li>
+<li>Serum <span class="lyte">creatinine</span> <strong>&gt; 1.1</strong> (or doubling of baseline)</li>
+<li>Pulmonary edema</li>
+<li>New-onset <strong>persistent headache</strong> (not responsive to meds)</li>
+<li><strong>Visual disturbances</strong> (scotomata, blurred vision, blindness)</li>
+<li><strong>RUQ or epigastric pain</strong> (hepatic capsule distension)</li>
+</ul>
+</div>
+
+<h3>Risk Factors</h3>
+<table class="compare-table">
+<thead><tr><th>High Risk (1 factor = start low-dose aspirin)</th><th>Moderate Risk (2+ factors = start low-dose aspirin)</th></tr></thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li>Prior preeclampsia</li>
+<li>Multifetal gestation (twins+)</li>
+<li>Chronic HTN</li>
+<li>Type 1 or 2 diabetes</li>
+<li>Renal disease</li>
+<li>Autoimmune disease (SLE, APS)</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Nulliparity (first pregnancy)</li>
+<li>Obesity (BMI &gt; 30)</li>
+<li>Family history of preeclampsia</li>
+<li>Age ≥ 35</li>
+<li>African American race</li>
+<li>Low socioeconomic status</li>
+<li>Previous poor obstetric outcome</li>
+<li>IVF pregnancy</li>
+</ul>
+</td></tr>
+</tbody></table>
+
+<div class="nclex-tip">
+<strong>NCLEX Key — Aspirin Prophylaxis:</strong> <span class="drug">Low-dose aspirin (81 mg daily)</span> starting at <strong>12-16 weeks gestation</strong> for high-risk women. This is a <strong>primary prevention</strong> measure — once preeclampsia develops, aspirin is NOT the treatment.
+</div>
+
+<h3>Signs &amp; Symptoms to Watch</h3>
+<div class="dx-card card-warn">
+<h3>⚠️ Warning Signs of Worsening Preeclampsia</h3>
+<div class="tag-row"><span class="tag tag-warn">TEACH PATIENTS THESE</span></div>
+<ul>
+<li><strong>Persistent severe headache</strong> — frontal, not relieved by Tylenol (cerebral edema/vasospasm)</li>
+<li><strong>Visual changes</strong> — scotomata (spots), photophobia, blurred/double vision, temporary blindness</li>
+<li><strong>Epigastric / RUQ pain</strong> — liver capsule stretching from hepatic edema (sign of HELLP too)</li>
+<li><strong>Sudden edema</strong> — face, hands (not just ankles), rapid weight gain (&gt;2 lb/week)</li>
+<li><strong>Decreased <span class="lyte">urine output</span></strong> — &lt;30 mL/hr (renal vasospasm)</li>
+<li><strong>Hyperreflexia</strong> — brisk <span class="lyte">DTRs</span>, especially with clonus (CNS irritability — seizure warning)</li>
+<li><strong>Nausea/vomiting</strong> — in the 3rd trimester with HTN = red flag</li>
+</ul>
+</div>
+
+<h3>Labs to Monitor</h3>
+<table class="compare-table">
+<thead><tr><th>Lab</th><th>Expected in Preeclampsia</th><th>Clinical Significance</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">CBC / <span class="lyte">Platelets</span></td><td><span class="lyte">Platelets</span> ↓ (may be &lt;100K in severe)</td><td>Consumption from endothelial damage; &lt;100K = severe feature</td></tr>
+<tr><td class="cat-label"><span class="lyte">AST</span> / <span class="lyte">ALT</span></td><td class="up">↑ Elevated</td><td>Hepatocellular damage; ≥2× normal = severe feature</td></tr>
+<tr><td class="cat-label"><span class="lyte">LDH</span></td><td class="up">↑ Elevated (especially in HELLP)</td><td>Hemolysis marker; &gt;600 = hemolysis occurring</td></tr>
+<tr><td class="cat-label"><span class="lyte">Creatinine</span></td><td class="up">↑ &gt;1.1 mg/dL</td><td>Renal impairment from vasospasm</td></tr>
+<tr><td class="cat-label">Uric Acid</td><td class="up">↑ Elevated (&gt;6 mg/dL)</td><td>Correlates with disease severity (renal clearance ↓)</td></tr>
+<tr><td class="cat-label">Urine Protein</td><td class="up">≥300 mg/24h or ≥1+ dipstick</td><td>Glomerular endothelial damage; but severity does NOT correlate with protein amount</td></tr>
+<tr><td class="cat-label">Peripheral Smear</td><td>Schistocytes, burr cells</td><td>Microangiopathic hemolytic anemia (fragmented RBCs from vasospasm)</td></tr>
+<tr><td class="cat-label">Haptoglobin</td><td class="down">↓ Low</td><td>Consumed by hemolysis (key HELLP marker)</td></tr>
+<tr><td class="cat-label">Bilirubin</td><td class="up">↑ Indirect (unconjugated)</td><td>From hemolysis of RBCs</td></tr>
+</tbody></table>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-ecl" class="section-hdr sh-ecl">
+<span><span class="sec-num">3</span> 🚨 Eclampsia — When Seizures Strike</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="dx-card card-danger">
+<h3>🚨 Eclampsia</h3>
+<div class="tag-row"><span class="tag tag-danger">OBSTETRIC EMERGENCY</span> <span class="tag tag-ob">SEIZURES</span></div>
+<p><strong>Definition:</strong> New-onset <strong>tonic-clonic seizures</strong> in a woman with preeclampsia (or gestational HTN with <span class="lyte">proteinuria</span>) that cannot be attributed to other causes (epilepsy, brain tumor, etc.).</p>
+
+<h4>Critical Facts:</h4>
+<ul>
+<li>Can occur <strong>antepartum</strong> (most common — ~53%), <strong>intrapartum</strong> (~19%), or <strong>postpartum</strong> (~28%)</li>
+<li>Postpartum eclampsia typically occurs <strong>within 48 hours</strong> of delivery but can occur up to <strong>6 weeks postpartum</strong></li>
+<li><span class="danger">~20% of eclamptic women have <span class="lyte">BP</span>s &lt;140/90 BEFORE their seizure</span> — eclampsia can occur without severe HTN!</li>
+<li>Prodromal symptoms: severe headache, visual changes, RUQ pain, hyperreflexia + clonus</li>
+</ul>
+
+<h4>Emergency Seizure Management:</h4>
+<ol class="tx-steps">
+<li><strong>Call for help</strong> — this is an emergency requiring a team response</li>
+<li><strong>Position on LEFT SIDE</strong> (left lateral) — protect airway, prevent aspiration, maximize placental perfusion</li>
+<li><strong>Protect from injury</strong> — padded side rails up, do NOT restrain, do NOT insert anything in mouth</li>
+<li><span class="drug">Magnesium sulfate 4-6g IV loading dose</span> over 15-20 minutes, then <strong>1-2g/hr maintenance infusion</strong></li>
+<li><strong>Supplemental O2</strong> at 8-10 L via non-rebreather — maintain SpO2 &gt;94%</li>
+<li><strong>Continuous fetal monitoring</strong> — expect transient fetal bradycardia during seizure (usually recovers in 3-5 min)</li>
+<li>If seizure recurs: additional <span class="drug">MgSO4 2g IV bolus</span> over 5 min</li>
+<li>If MgSO4 fails: <span class="drug">Lorazepam 4mg IV</span> or <span class="drug">Diazepam 5-10mg IV</span> — prepare for intubation</li>
+<li><strong>Plan for delivery</strong> after maternal stabilization (do NOT rush to C-section DURING seizure)</li>
+</ol>
+</div>
+
+<div class="lethal">
+<strong>NEVER give Dilantin (phenytoin) for eclamptic seizures!</strong> MgSO4 is superior to phenytoin for both treating and preventing eclamptic seizures. Phenytoin is an outdated practice. MgSO4 is always the correct NCLEX answer for eclampsia.
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key:</strong> During an eclamptic seizure, the <strong>priority nursing action</strong> is to ensure <strong>airway patency</strong> and <strong>maternal safety</strong>. Do NOT attempt delivery until the mother is stabilized. The fetus typically has transient bradycardia that resolves within 3-5 minutes post-seizure. Rushing to the OR during an active seizure increases maternal risk.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-hellp" class="section-hdr sh-hellp">
+<span><span class="sec-num">4</span> 💜 HELLP Syndrome — Deep Dive</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="vs-banner">
+<span class="vs-cond vs-left">⚠️ Severe Preeclampsia</span>
+<span class="vs-circle">VS</span>
+<span class="vs-cond vs-right">💜 HELLP Syndrome</span>
+</div>
+
+<div class="dx-card card-purple">
+<h3>💜 HELLP Syndrome</h3>
+<div class="tag-row"><span class="tag tag-purple">MULTI-ORGAN CRISIS</span> <span class="tag tag-danger">LIFE-THREATENING</span></div>
+<p><strong>Pathophysiology:</strong> A severe variant of preeclampsia characterized by a triad of <strong>microangiopathic hemolytic anemia</strong>, <strong>hepatocellular injury</strong>, and <strong>consumptive thrombocytopenia</strong>. The endothelial damage causes fibrin deposition in hepatic sinusoids → liver ischemia, necrosis, and swelling → capsular distension → RUQ pain → risk of hepatic rupture.</p>
+</div>
+
+<div class="criteria-box">
+<h4>💜 Diagnostic Criteria — HELLP</h4>
+<p>ALL three must be present:</p>
+<ul>
+<li><strong>H</strong>emolysis: <span class="lyte">LDH</span> <strong>≥ 600</strong>, <span class="lyte">schistocytes</span> on smear, ↓ haptoglobin, ↑ indirect <span class="lyte">bilirubin</span></li>
+<li><strong>E</strong>levated <strong>L</strong>iver Enzymes: <span class="lyte">AST</span> <strong>≥ 70</strong> (or ≥2× upper normal)</li>
+<li><strong>L</strong>ow <strong>P</strong>latelets: <strong>&lt; 100,000</strong></li>
+</ul>
+</div>
+
+<h3>Key Distinguishing Features</h3>
+<table class="compare-table">
+<thead><tr>
+<th>Feature</th>
+<th>⚠️ Severe Preeclampsia (without HELLP)</th>
+<th>💜 HELLP Syndrome</th>
+</tr></thead>
+<tbody>
+<tr><td class="cat-label">Hallmark</td>
+<td>Severe HTN (≥160/110) with end-organ damage</td>
+<td>Hemolysis + liver damage + low <span class="lyte">platelets</span> <strong>(may have normal <span class="lyte">BP</span>!)</strong></td></tr>
+
+<tr><td class="cat-label">Presentation</td>
+<td>Headache, visual changes, <span class="lyte">proteinuria</span>, edema, hyperreflexia</td>
+<td><strong>RUQ/epigastric pain</strong> (90%), malaise, N/V — often <strong>misdiagnosed</strong> as gastritis, gallbladder disease, or hepatitis</td></tr>
+
+<tr><td class="cat-label">Blood Pressure</td>
+<td>Always ≥160/110</td>
+<td>May be only mildly elevated or even <strong>normotensive</strong> in ~15% of cases</td></tr>
+
+<tr><td class="cat-label"><span class="lyte">Proteinuria</span></td>
+<td>Usually significant</td>
+<td>Absent in up to <strong>13%</strong> of cases</td></tr>
+
+<tr><td class="cat-label">🧪 <span class="lyte">Platelets</span></td>
+<td>May be low (&lt;100K = severe feature)</td>
+<td class="up"><strong>Always &lt;100K</strong> (often &lt;50K) — required for diagnosis</td></tr>
+
+<tr><td class="cat-label">🧪 <span class="lyte">LDH</span></td>
+<td>Normal or mildly ↑</td>
+<td class="up"><strong>≥600</strong> (hemolysis marker)</td></tr>
+
+<tr><td class="cat-label">🧪 AST/<span class="lyte">ALT</span></td>
+<td>May be elevated</td>
+<td class="up"><strong>Markedly elevated</strong> (<span class="lyte">AST</span> ≥70)</td></tr>
+
+<tr><td class="cat-label">Peripheral Smear</td>
+<td>May be normal</td>
+<td><strong>Schistocytes</strong> (fragmented RBCs) — hallmark of microangiopathic hemolysis</td></tr>
+
+<tr><td class="cat-label">DIC Risk</td>
+<td>Uncommon unless abruption</td>
+<td class="up"><strong>21-40%</strong> develop DIC (check <span class="lyte">fibrinogen</span>, PT/PTT, <span class="lyte">D-dimer</span>)</td></tr>
+
+<tr><td class="cat-label">Greatest Danger</td>
+<td>Stroke (from severe HTN), pulmonary edema, renal failure</td>
+<td><span class="danger">Hepatic rupture</span>, DIC with hemorrhage, placental abruption, renal failure</td></tr>
+
+<tr><td class="cat-label">💊 Treatment</td>
+<td><span class="drug">MgSO4</span> + antihypertensives + deliver at 34+ weeks (or sooner if unstable)</td>
+<td><strong>Emergent delivery regardless of gestational age</strong><br><span class="drug">MgSO4</span> + blood products + close monitoring<br><span class="lyte">Platelets</span> if &lt;20K (or &lt;50K for C-section)<br><span class="drug">Betamethasone</span> if &lt;34 weeks (but do NOT delay delivery for steroids)</td></tr>
+</tbody></table>
+
+<div class="lethal">
+<strong>HELLP can masquerade as common GI illness!</strong> Any pregnant woman in the 3rd trimester presenting with RUQ pain, nausea/vomiting, and malaise must have a CBC and LFTs checked. Misdiagnosis delays treatment and increases mortality.
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key — HELLP Red Flag:</strong> A patient at 35 weeks with "stomach flu symptoms" (nausea, vomiting, epigastric pain) and a <span class="lyte">BP</span> of 148/94 — think HELLP, NOT gastritis. Order <strong>CBC with <span class="lyte">platelets</span>, <span class="lyte">LDH</span>, AST/<span class="lyte">ALT</span>, peripheral smear</strong> immediately. The classic triad of RUQ pain + low <span class="lyte">platelets</span> + elevated LFTs = HELLP until proven otherwise.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-mgso4" class="section-hdr sh-mgso4">
+<span><span class="sec-num">5</span> 💊 Magnesium Sulfate — The Cornerstone Drug</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="dx-card card-teal">
+<h3>💊 Magnesium Sulfate (MgSO4) — Master Reference</h3>
+<div class="tag-row"><span class="tag tag-teal">SEIZURE PROPHYLAXIS</span> <span class="tag tag-ob">FIRST-LINE FOR ECLAMPSIA</span></div>
+<p><strong>Mechanism:</strong> CNS depressant that raises the seizure threshold by blocking NMDA receptors and reducing cerebral vasospasm. Also causes smooth muscle relaxation (vasodilation → ↓ <span class="lyte">BP</span>, tocolysis → may slow labor).</p>
+
+<h4>Dosing Protocol:</h4>
+<ul>
+<li><strong>Loading dose:</strong> <span class="drug">4-6g IV over 15-20 minutes</span></li>
+<li><strong>Maintenance:</strong> <span class="drug">1-2g/hr continuous IV infusion</span></li>
+<li>Continue for <strong>24-48 hours postpartum</strong> (eclampsia risk persists)</li>
+<li><strong>Therapeutic serum level:</strong> 4-7 mEq/L</li>
+</ul>
+
+<h4>Monitoring — The Mag Tox Cascade:</h4>
+<table class="compare-table">
+<thead><tr><th>Serum Mg Level (mEq/L)</th><th>Effect</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">4-7</td><td class="safe"><strong>Therapeutic range</strong></td><td>Continue infusion; monitor</td></tr>
+<tr><td class="cat-label">8-10</td><td class="warn"><strong>Loss of deep tendon reflexes (<span class="lyte">DTRs</span>)</strong></td><td><span class="danger">STOP infusion!</span> DTR loss = first sign of toxicity</td></tr>
+<tr><td class="cat-label">10-12</td><td class="warn"><strong>Respiratory depression</strong> (RR &lt;12)</td><td>Stop infusion, <span class="drug">Calcium gluconate</span>, prepare for intubation</td></tr>
+<tr><td class="cat-label">12-15</td><td class="danger"><strong>Respiratory arrest</strong></td><td>Emergency intubation, <span class="drug">Calcium gluconate 1g IV</span> STAT</td></tr>
+<tr><td class="cat-label">&gt;15</td><td class="danger"><strong>Cardiac arrest</strong></td><td>Full code, <span class="drug">Calcium gluconate</span>, CPR</td></tr>
+</tbody></table>
+</div>
+
+<div class="mnemonic">
+<strong>MgSO4 Monitoring — "BURP" before every assessment:</strong><br>
+<strong>B</strong>P — check for hypotension<br>
+<strong>U</strong>rine output — must be ≥30 mL/hr (Mg is renally excreted; ↓ UO = ↑ toxicity risk)<br>
+<strong>R</strong>eflexes — check <span class="lyte">DTRs</span> (patellar). Absent <span class="lyte">DTRs</span> = <span class="danger">HOLD the infusion!</span><br>
+<strong>P</strong>ulmonary — RR must be ≥12/min. &lt;12 = HOLD and notify
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key — Antidote:</strong> <span class="drug">Calcium gluconate 1g IV</span> is the <strong>antidote for MgSO4 toxicity</strong>. It must be kept <strong>at the bedside</strong> at all times during MgSO4 infusion. If <span class="lyte">DTRs</span> disappear, RR drops below 12, or UO falls below 30 mL/hr → <strong>STOP the infusion first</strong>, then notify the provider. Do NOT wait for orders to stop it — this is a nursing judgment call.
+</div>
+
+<h3>Antihypertensive Medications in Preeclampsia</h3>
+<table class="compare-table">
+<thead><tr><th>Drug</th><th>Route / Dose</th><th>Key Notes</th></tr></thead>
+<tbody>
+<tr><td class="cat-label"><span class="drug">Labetalol</span></td>
+<td>20mg IV, then escalate (40mg, 80mg) q10min; max 300mg</td>
+<td><strong>First-line for acute severe HTN in pregnancy</strong>. Combined alpha/beta-blocker. Avoid in asthma, heart block, HF.</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Hydralazine</span></td>
+<td>5-10mg IV q15-20min; max 30mg</td>
+<td>Direct vasodilator. Second-line. More tachycardia and hypotension than labetalol. Headache is a common side effect (can mimic worsening preeclampsia).</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Nifedipine</span></td>
+<td>10-20mg PO q30min; max 50mg</td>
+<td>Calcium channel blocker. Oral alternative when IV access is limited. <strong>Avoid sublingual (unpredictable absorption)</strong>. Can use with MgSO4 cautiously.</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Nicardipine</span></td>
+<td>5mg/hr IV, titrate up q5-15min</td>
+<td>IV calcium channel blocker. Used when labetalol is contraindicated. Predictable dose-response.</td></tr>
+</tbody></table>
+
+<div class="lethal">
+<strong>NEVER use ACE inhibitors (lisinopril, enalapril) or ARBs (losartan, valsartan) in pregnancy!</strong> These cause fatal fetal renal agenesis, oligohydramnios, skull defects, and neonatal death. They are <strong>absolutely contraindicated</strong> in ALL trimesters. This is an automatic wrong answer on NCLEX.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-ref" class="section-hdr sh-ref">
+<span><span class="sec-num">6</span> 📊 Quick-Reference Comparison Tables</span>
+</div>
+<!-- ====================================================== -->
+
+<h3>Lab Values — All Conditions at a Glance</h3>
+
+<table class="compare-table">
+<thead><tr>
+<th>Lab</th>
+<th>Gestational HTN</th>
+<th>Preeclampsia</th>
+<th>Eclampsia</th>
+<th>HELLP</th>
+</tr></thead>
+<tbody>
+<tr><td class="cat-label"><span class="lyte">BP</span></td><td>≥140/90</td><td>≥140/90 or ≥160/110</td><td>Variable</td><td>Variable</td></tr>
+<tr><td class="cat-label"><span class="lyte">Proteinuria</span></td><td>Absent</td><td class="up">≥300 mg/24h</td><td>Usually present</td><td>May be absent</td></tr>
+<tr><td class="cat-label"><span class="lyte">Platelets</span></td><td>Normal</td><td>↓ if severe (&lt;100K)</td><td>May be ↓</td><td class="up"><strong>&lt;100K (required)</strong></td></tr>
+<tr><td class="cat-label">AST/<span class="lyte">ALT</span></td><td>Normal</td><td>↑ if severe</td><td>May be ↑</td><td class="up"><strong>≥2× normal (required)</strong></td></tr>
+<tr><td class="cat-label"><span class="lyte">LDH</span></td><td>Normal</td><td>Normal to mildly ↑</td><td>May be ↑</td><td class="up"><strong>≥600 (required)</strong></td></tr>
+<tr><td class="cat-label"><span class="lyte">Creatinine</span></td><td>Normal</td><td>↑ if severe (&gt;1.1)</td><td>May be ↑</td><td>Often ↑</td></tr>
+<tr><td class="cat-label">Haptoglobin</td><td>Normal</td><td>Normal</td><td>May be ↓</td><td class="down"><strong>↓ Low (hemolysis)</strong></td></tr>
+<tr><td class="cat-label">Smear</td><td>Normal</td><td>Normal</td><td>May have <span class="lyte">schistocytes</span></td><td><strong>Schistocytes present</strong></td></tr>
+<tr><td class="cat-label">Uric Acid</td><td>Normal</td><td class="up">↑ (&gt;6)</td><td class="up">↑</td><td class="up">↑</td></tr>
+</tbody></table>
+
+<h3>Treatment Decision Matrix</h3>
+
+<table class="compare-table">
+<thead><tr><th>Condition</th><th>MgSO4?</th><th>Antihypertensives?</th><th>Delivery Timing</th><th>Steroids for Lungs?</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">Gestational HTN</td><td>No</td><td>If <span class="lyte">BP</span> ≥160/110</td><td>37 weeks</td><td>If &lt;37 weeks and delivery planned</td></tr>
+<tr><td class="cat-label">Preeclampsia (not severe)</td><td>No (but prep at bedside)</td><td>If <span class="lyte">BP</span> ≥160/110</td><td>37 weeks</td><td>If &lt;37 weeks</td></tr>
+<tr><td class="cat-label">Preeclampsia (severe)</td><td class="safe"><strong>YES</strong></td><td><strong>YES</strong> — acute control</td><td>34 weeks (or sooner if unstable)</td><td><span class="drug">Betamethasone</span> if &lt;34 weeks (give, but don't delay delivery)</td></tr>
+<tr><td class="cat-label">Eclampsia</td><td class="safe"><strong>YES — FIRST LINE</strong></td><td><strong>YES</strong> — after seizure control</td><td><strong>ASAP after stabilization</strong></td><td>If &lt;34 weeks (do NOT delay delivery)</td></tr>
+<tr><td class="cat-label">HELLP</td><td class="safe"><strong>YES</strong></td><td>If <span class="lyte">BP</span> ≥160/110</td><td><strong>EMERGENT — regardless of GA</strong></td><td>If &lt;34 weeks (do NOT delay delivery)</td></tr>
+</tbody></table>
+
+<h3>Nursing Priority Actions</h3>
+
+<table class="compare-table">
+<thead><tr><th>Condition</th><th>Priority Nursing Actions</th><th>Critical Assessments</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">Preeclampsia</td>
+<td>Seizure precautions, bed rest (left lateral), dim lights, reduce stimuli, strict I&amp;O, daily weights, fetal surveillance</td>
+<td><span class="lyte">BP</span> q15min during acute phase, <span class="lyte">DTRs</span> q1-4h, UO hourly, daily labs (CBC, LFTs, <span class="lyte">creatinine</span>), fetal kick counts, NST</td></tr>
+
+<tr><td class="cat-label">Eclampsia</td>
+<td><strong>Protect airway (left lateral), protect from injury, MgSO4 STAT, O2, continuous fetal monitoring</strong></td>
+<td>Seizure duration/characteristics, level of consciousness, VS q5min during acute phase, fetal heart tones, uterine activity</td></tr>
+
+<tr><td class="cat-label">HELLP</td>
+<td>Prepare for emergent delivery, blood products on standby, frequent neuro checks, assess for bleeding from all sites</td>
+<td><span class="lyte">Platelets</span> q6h, <span class="lyte">LDH</span> and LFTs q12h, <span class="lyte">fibrinogen</span>/PT/PTT (DIC screen), RUQ pain assessment, signs of abruption</td></tr>
+
+<tr><td class="cat-label">On MgSO4</td>
+<td><strong>Calcium gluconate at bedside</strong>, continuous pulse ox, Foley catheter for strict UO, limit visitors/stimuli</td>
+<td><strong><span class="lyte">DTRs</span>, RR, UO</strong> before each assessment. Hold if <span class="lyte">DTRs</span> absent, RR&lt;12, or UO&lt;30 mL/hr. Mg levels per protocol.</td></tr>
+</tbody></table>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-mem" class="section-hdr sh-mem">
+<span><span class="sec-num">7</span> 🧠 High-Yield NCLEX Memory Anchors</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="qref">
+<div class="qref-box">
+<h4>⚠️ "PIH → Pre → E → HELLP"</h4>
+<ul>
+<li>It's a <strong>spectrum</strong>, not separate diseases</li>
+<li>Gestational HTN can progress at any time</li>
+<li>Only cure = <strong>delivery of placenta</strong></li>
+<li>Symptoms can worsen 48h <em>after</em> delivery</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>💊 "BURP" — MgSO4 Checks</h4>
+<ul>
+<li><strong>B</strong>P (hypotension?)</li>
+<li><strong>U</strong>rine output (≥30 mL/hr)</li>
+<li><strong>R</strong>eflexes (<span class="lyte">DTRs</span> present?)</li>
+<li><strong>P</strong>ulmonary (RR ≥12?)</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🧪 "HELLP = HELLish Labs"</h4>
+<ul>
+<li><strong>H</strong>emolysis (<span class="lyte">LDH</span> ≥600, <span class="lyte">schistocytes</span>)</li>
+<li><strong>E</strong>levated <strong>L</strong>iver (<span class="lyte">AST</span> ≥70)</li>
+<li><strong>L</strong>ow <strong>P</strong>latelets (&lt;100K)</li>
+<li>RUQ pain = hepatic capsule stretching</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🚨 Eclampsia Priorities</h4>
+<ul>
+<li><strong>#1:</strong> Protect airway — left lateral position</li>
+<li><strong>#2:</strong> MgSO4 (NOT Dilantin!)</li>
+<li><strong>#3:</strong> O2, fetal monitoring</li>
+<li><strong>#4:</strong> Deliver after mom is stable</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🔴 Severe Features = "CHEAP"</h4>
+<ul>
+<li><strong>C</strong>NS symptoms (headache, vision)</li>
+<li><strong>H</strong>epatorenal (RUQ, ↑Cr, ↑LFTs)</li>
+<li><strong>E</strong>dema (pulmonary)</li>
+<li><strong>A</strong>bnormal labs (plts &lt;100K)</li>
+<li><strong>P</strong>ressure ≥160/110</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>💉 Antidote Alert</h4>
+<ul>
+<li>MgSO4 toxicity → <span class="drug">Calcium gluconate 1g IV</span></li>
+<li>Keep at bedside <strong>always</strong></li>
+<li>First sign of toxicity = <strong>absent <span class="lyte">DTRs</span></strong></li>
+<li>ACE/ARBs = <strong>NEVER in pregnancy</strong></li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>👶 Fetal Concerns</h4>
+<ul>
+<li>IUGR (chronic placental insufficiency)</li>
+<li>Oligohydramnios (decreased renal perfusion)</li>
+<li>Preterm delivery (#1 complication)</li>
+<li>Placental abruption</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🕐 Timing Is Everything</h4>
+<ul>
+<li>Aspirin prophylaxis: start 12-16 wks</li>
+<li>Betamethasone: 24-34 wks (lung maturity)</li>
+<li>MgSO4: continue 24-48h postpartum</li>
+<li>Postpartum eclampsia: up to 6 weeks!</li>
+</ul>
+</div>
+</div>
+
+<div class="nclex-tip" style="margin-top:1.25rem">
+<strong>Final NCLEX Tip:</strong> When any pregnant or recently postpartum woman presents with <strong>headache + visual changes + elevated <span class="lyte">BP</span></strong>, think preeclampsia/eclampsia FIRST. When she presents with <strong>RUQ pain + nausea + malaise</strong>, think HELLP. Always check <strong><span class="lyte">platelets</span>, LFTs, and <span class="lyte">LDH</span></strong>. And remember: <strong>MgSO4 is your best friend</strong> — know the dosing, the monitoring, and the antidote. It will be on your NCLEX.
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OB Maternal-Newborn Complications — NCLEX 85 &amp; Done</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#0a0a1a;
+  color:#e2e8f0;
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  padding:0;
+  font-size:1.05rem;
+}
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(56,128,100,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 90%, rgba(168,85,247,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(70,140,115,0.04) 0%, transparent 70%);
+  pointer-events:none;
+}
+.guide-container{max-width:960px;margin:0 auto;padding:1.5rem 1.4rem 4rem}
+
+/* === HERO === */
+.hero{
+  position:relative;
+  background:linear-gradient(135deg,#0f2e24 0%,#1a4a3a 40%,#2d6b55 100%);
+  border-radius:1.25rem;padding:2rem 1.75rem 1.75rem;margin-bottom:2rem;
+  border:2px solid #4a9a7d;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-50%;right:-20%;width:300px;height:300px;
+  background:radial-gradient(circle,rgba(74,154,125,0.2),transparent 70%);pointer-events:none;
+}
+.hero::after{
+  content:'👶';position:absolute;top:1rem;right:1.25rem;font-size:3rem;opacity:0.15;pointer-events:none;
+}
+.hero h1{font-size:1.85rem;font-weight:900;color:#fff;letter-spacing:-0.02em;margin-bottom:0.5rem;text-shadow:0 2px 12px rgba(74,154,125,0.4)}
+.hero .subtitle{font-size:1rem;color:#c8e6d8;line-height:1.65;font-weight:400}
+.hero .badge-row{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.85rem}
+.hero .badge-row .badge{
+  display:inline-flex;align-items:center;gap:0.3rem;
+  padding:0.25rem 0.65rem;border-radius:2rem;font-size:0.78rem;font-weight:700;
+  letter-spacing:0.03em;text-transform:uppercase;backdrop-filter:blur(4px);
+}
+.badge-ante{background:rgba(251,191,36,0.2);color:#fde68a;border:1px solid rgba(251,191,36,0.4)}
+.badge-labor{background:rgba(248,113,113,0.2);color:#fca5a5;border:1px solid rgba(248,113,113,0.4)}
+.badge-pp{background:rgba(168,85,247,0.2);color:#d8b4fe;border:1px solid rgba(168,85,247,0.4)}
+.badge-nb{background:rgba(56,189,248,0.2);color:#7dd3fc;border:1px solid rgba(56,189,248,0.4)}
+
+/* === STICKY NAV === */
+.nav-bar{
+  position:sticky;top:0;z-index:100;display:flex;gap:0.35rem;padding:0.5rem 0;margin-bottom:0.5rem;
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  background:linear-gradient(180deg,#0a0a1a 60%,transparent);scrollbar-width:none;
+}
+.nav-bar::-webkit-scrollbar{display:none}
+.nav-pill{
+  display:inline-flex;align-items:center;gap:0.25rem;padding:0.35rem 0.7rem;border-radius:2rem;
+  font-size:0.75rem;font-weight:700;white-space:nowrap;text-decoration:none;
+  border:1.5px solid #334155;background:rgba(15,23,42,0.8);color:#94a3b8;
+  transition:all 0.2s;cursor:pointer;backdrop-filter:blur(8px);
+}
+.nav-pill:hover{border-color:#4a9a7d;color:#86d4b4;background:rgba(74,154,125,0.12)}
+
+/* === SECTION HEADERS === */
+.section-hdr{
+  position:relative;margin:2.5rem 0 1.25rem;padding:1rem 1.25rem;border-radius:1rem;
+  font-size:1.45rem;font-weight:800;letter-spacing:-0.01em;overflow:hidden;
+}
+.section-hdr::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;opacity:0.92;border-radius:1rem;z-index:0}
+.section-hdr span{position:relative;z-index:1}
+.section-hdr .sec-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;font-size:0.85rem;font-weight:900;
+  margin-right:0.5rem;vertical-align:middle;box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+.sh-ante{border:2px solid #f59e0b;background:linear-gradient(135deg,#451a03,#78350f,#92400e)}
+.sh-ante::before{background:linear-gradient(135deg,rgba(245,158,11,0.1),transparent)}
+.sh-ante .sec-num{background:#f59e0b;color:#451a03}
+.sh-ante span{color:#fef3c7}
+
+.sh-labor{border:2px solid #ef4444;background:linear-gradient(135deg,#450a0a,#7f1d1d,#991b1b)}
+.sh-labor::before{background:linear-gradient(135deg,rgba(239,68,68,0.1),transparent)}
+.sh-labor .sec-num{background:#ef4444;color:#450a0a}
+.sh-labor span{color:#fecaca}
+
+.sh-fhr{border:2px solid #06b6d4;background:linear-gradient(135deg,#083344,#155e75,#0e7490)}
+.sh-fhr::before{background:linear-gradient(135deg,rgba(6,182,212,0.1),transparent)}
+.sh-fhr .sec-num{background:#06b6d4;color:#083344}
+.sh-fhr span{color:#a5f3fc}
+
+.sh-pp{border:2px solid #a855f7;background:linear-gradient(135deg,#3b0764,#581c87,#6b21a8)}
+.sh-pp::before{background:linear-gradient(135deg,rgba(168,85,247,0.1),transparent)}
+.sh-pp .sec-num{background:#a855f7;color:#3b0764}
+.sh-pp span{color:#e9d5ff}
+
+.sh-nb{border:2px solid #38bdf8;background:linear-gradient(135deg,#082f49,#0c4a6e,#0369a1)}
+.sh-nb::before{background:linear-gradient(135deg,rgba(56,189,248,0.1),transparent)}
+.sh-nb .sec-num{background:#38bdf8;color:#082f49}
+.sh-nb span{color:#bae6fd}
+
+.sh-nbc{border:2px solid #22d3ee;background:linear-gradient(135deg,#083344,#155e75,#0e7490)}
+.sh-nbc::before{background:linear-gradient(135deg,rgba(34,211,238,0.1),transparent)}
+.sh-nbc .sec-num{background:#22d3ee;color:#083344}
+.sh-nbc span{color:#a5f3fc}
+
+.sh-meds{border:2px solid #4a9a7d;background:linear-gradient(135deg,#0f2e24,#1a4a3a,#2d6b55)}
+.sh-meds::before{background:linear-gradient(135deg,rgba(74,154,125,0.1),transparent)}
+.sh-meds .sec-num{background:#4a9a7d;color:#0f2e24}
+.sh-meds span{color:#c8e6d8}
+
+.sh-mem{border:2px solid #4a9a7d;background:linear-gradient(135deg,#0f2e24,#1a4a3a,#2d6b55)}
+.sh-mem::before{background:linear-gradient(135deg,rgba(74,154,125,0.1),transparent)}
+.sh-mem .sec-num{background:#4a9a7d;color:#0f2e24}
+.sh-mem span{color:#c8e6d8}
+
+/* === TABLES === */
+h3{font-size:1.18rem;color:#86d4b4;margin:1.6rem 0 0.6rem;font-weight:700}
+h4{font-size:1.06rem;color:#a3d8c2;margin:1rem 0 0.4rem;font-weight:700}
+p,li{color:#e2e8f0;margin:0.3rem 0;font-size:1.02rem}
+ul,ol{padding-left:1.5rem}
+li{margin:0.25rem 0}
+li::marker{color:#4a9a7d}
+strong,b{color:#f1f5f9}
+em{color:#cbd5e1}
+
+.compare-table{
+  width:100%;border-collapse:separate;border-spacing:0;margin:0.85rem 0 1.5rem;font-size:1.05rem;
+  border:2px solid #334155;border-radius:0.85rem;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.3);
+}
+.compare-table th{
+  background:linear-gradient(180deg,#0f2e24,#1a4a3a);color:#c8e6d8;font-weight:800;
+  padding:0.7rem 0.75rem;text-align:left;border-bottom:2px solid #4a9a7d;
+  font-size:0.95rem;text-transform:uppercase;letter-spacing:0.05em;position:sticky;top:0;z-index:2;
+}
+.compare-table th:first-child{border-right:2px solid #1a3a30}
+.compare-table td{
+  background:#0f172a;color:#e2e8f0;padding:0.65rem 0.75rem;
+  border-bottom:1px solid #1e293b;vertical-align:top;line-height:1.6;
+}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tr:hover td{background:rgba(74,154,125,0.06)}
+.compare-table .cat-label{
+  font-weight:700;background:linear-gradient(90deg,#0f1e1a,#0f172a);
+  color:#86d4b4;white-space:nowrap;min-width:115px;font-size:1.02rem;border-right:2px solid #334155;
+}
+.compare-table td:nth-child(2){border-right:1px solid #1e293b}
+.compare-table .up{color:#f87171;font-weight:700}
+.compare-table .down{color:#67e8f9;font-weight:700}
+.compare-table .normal{color:#94a3b8}
+
+.danger{color:#f87171;font-weight:700}
+.warn{color:#fbbf24;font-weight:700}
+.safe{color:#4ade80;font-weight:700}
+.drug{color:#93c5fd;font-weight:700}
+.lyte{color:#ffa040;font-weight:700}
+.dx{color:#86d4b4;font-weight:600}
+
+/* === DX CARDS === */
+.dx-card{
+  position:relative;background:linear-gradient(135deg,rgba(15,46,36,0.3),rgba(15,15,35,0.95));
+  border:2px solid #3d7a62;border-radius:1.1rem;padding:1.25rem;margin:1.25rem 0;overflow:hidden;
+}
+.dx-card::before{content:'';position:absolute;top:0;left:0;width:6px;height:100%;border-radius:1.1rem 0 0 1.1rem}
+.dx-card.card-warn::before{background:linear-gradient(180deg,#f59e0b,#d97706)}
+.dx-card.card-danger::before{background:linear-gradient(180deg,#ef4444,#dc2626)}
+.dx-card.card-purple::before{background:linear-gradient(180deg,#a855f7,#7c3aed)}
+.dx-card.card-teal::before{background:linear-gradient(180deg,#06b6d4,#0891b2)}
+.dx-card.card-green::before{background:linear-gradient(180deg,#4a9a7d,#2d6b55)}
+.dx-card.card-blue::before{background:linear-gradient(180deg,#38bdf8,#0284c7)}
+.dx-card h3{margin-top:0;color:#c8e6d8;font-size:1.18rem}
+.dx-card .tag-row{display:flex;flex-wrap:wrap;gap:0.35rem;margin:0.4rem 0 0.65rem}
+.tag{
+  display:inline-flex;align-items:center;gap:0.25rem;padding:0.2rem 0.6rem;border-radius:2rem;
+  font-size:0.78rem;font-weight:700;letter-spacing:0.03em;text-transform:uppercase;
+}
+.tag-warn{background:rgba(251,191,36,0.15);color:#fde68a;border:1px solid rgba(251,191,36,0.4)}
+.tag-danger{background:rgba(248,113,113,0.25);color:#fca5a5;border:1px solid rgba(248,113,113,0.5)}
+.tag-purple{background:rgba(168,85,247,0.15);color:#d8b4fe;border:1px solid rgba(168,85,247,0.4)}
+.tag-teal{background:rgba(6,182,212,0.15);color:#67e8f9;border:1px solid rgba(6,182,212,0.4)}
+.tag-ob{background:rgba(74,154,125,0.15);color:#86d4b4;border:1px solid rgba(74,154,125,0.4)}
+.tag-blue{background:rgba(56,189,248,0.15);color:#7dd3fc;border:1px solid rgba(56,189,248,0.4)}
+
+/* === MNEMONIC === */
+.mnemonic{
+  position:relative;background:linear-gradient(135deg,#1a4a3a,#2d6b55);
+  border:2px solid #4a9a7d;border-radius:0.85rem;padding:1rem 1.15rem 1rem 3rem;
+  margin:1rem 0;font-size:1.02rem;line-height:1.7;box-shadow:0 4px 16px rgba(74,154,125,0.15);
+}
+.mnemonic::before{content:'💡';position:absolute;left:0.85rem;top:0.9rem;font-size:1.35rem}
+.mnemonic strong{color:#c8e6d8;font-size:1.06rem}
+.mnemonic em{color:#86d4b4}
+
+/* === NCLEX TIP === */
+.nclex-tip{
+  position:relative;background:linear-gradient(135deg,rgba(74,154,125,0.1),rgba(45,107,85,0.05));
+  border:1.5px solid #4a9a7d;border-left:5px solid #4a9a7d;border-radius:0.75rem;
+  padding:1rem 1.15rem 1rem 3rem;margin:1rem 0;font-size:1.02rem;line-height:1.65;
+}
+.nclex-tip::before{content:'🎯';position:absolute;left:0.85rem;top:0.9rem;font-size:1.25rem}
+.nclex-tip strong{color:#86d4b4;font-size:1.04rem}
+
+/* === LETHAL === */
+.lethal{
+  position:relative;background:linear-gradient(135deg,rgba(248,113,113,0.12),rgba(220,38,38,0.06));
+  border:2px solid #dc2626;border-left:6px solid #ef4444;border-radius:0.75rem;
+  padding:1rem 1.15rem 1rem 3.25rem;margin:1rem 0;font-size:1.05rem;line-height:1.65;
+  box-shadow:0 0 20px rgba(239,68,68,0.08);
+}
+.lethal::before{content:'☠️';position:absolute;left:0.85rem;top:0.85rem;font-size:1.35rem}
+.lethal strong{color:#fca5a5;font-size:1.08rem}
+
+/* === QUICK REF === */
+.qref{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:0.85rem;margin:0.85rem 0}
+.qref-box{
+  background:linear-gradient(135deg,rgba(15,46,36,0.3),rgba(15,23,42,0.8));
+  border:1.5px solid #475569;border-radius:0.85rem;padding:0.85rem 1rem;
+  transition:border-color 0.2s,transform 0.2s;
+}
+.qref-box:hover{border-color:#4a9a7d;transform:translateY(-2px)}
+.qref-box h4{margin-top:0;font-size:1.05rem;color:#c8e6d8;font-weight:800}
+.qref-box ul{margin:0.25rem 0 0;padding-left:1.2rem}
+.qref-box li{font-size:0.98rem;margin:0.2rem 0;color:#cbd5e1}
+
+/* === VS BANNER === */
+.vs-banner{
+  display:flex;align-items:center;gap:0.75rem;margin:1.25rem 0;padding:0.6rem 1rem;
+  background:linear-gradient(90deg,rgba(15,46,36,0.4),rgba(15,23,42,0.8),rgba(15,46,36,0.4));
+  border-radius:0.75rem;border:1px solid #334155;
+}
+.vs-banner .vs-cond{font-size:1.08rem;font-weight:700}
+.vs-banner .vs-circle{
+  flex-shrink:0;width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'JetBrains Mono',monospace;font-size:0.75rem;font-weight:900;
+  background:linear-gradient(135deg,#2d6b55,#4a9a7d);color:#fff;
+  box-shadow:0 0 16px rgba(74,154,125,0.3);letter-spacing:0.05em;
+}
+.vs-left{color:#fbbf24}
+.vs-right{color:#c084fc}
+
+/* === DIVIDER === */
+.section-divider{border:none;height:2px;margin:2rem 0;background:linear-gradient(90deg,transparent,#2d6b55,#4a9a7d,#2d6b55,transparent)}
+
+/* === TX STEPS === */
+.tx-steps{counter-reset:tx;padding-left:0}
+.tx-steps li{list-style:none;position:relative;padding-left:0.3rem;margin:0.35rem 0}
+.tx-steps li::before{
+  counter-increment:tx;content:counter(tx);
+  display:inline-flex;align-items:center;justify-content:center;
+  width:22px;height:22px;border-radius:50%;background:#2d6b55;color:#c8e6d8;
+  font-size:0.72rem;font-weight:800;margin-right:0.45rem;vertical-align:middle;
+}
+
+/* === CRITERIA BOX === */
+.criteria-box{
+  background:linear-gradient(135deg,rgba(15,46,36,0.25),rgba(15,23,42,0.9));
+  border:2px solid #3d7a62;border-radius:1rem;padding:1.1rem 1.25rem;margin:1rem 0;
+}
+.criteria-box h4{color:#c8e6d8;margin-top:0;font-size:1.1rem}
+.criteria-box .or-badge{
+  display:inline-block;background:#2d6b55;color:#fff;padding:0.15rem 0.6rem;
+  border-radius:2rem;font-size:0.72rem;font-weight:800;letter-spacing:0.08em;margin:0.35rem 0;
+}
+
+/* === SCORE TABLE (for APGAR etc) === */
+.score-table{width:100%;border-collapse:separate;border-spacing:0;margin:0.85rem 0 1.5rem;font-size:1.02rem;border:2px solid #334155;border-radius:0.85rem;overflow:hidden}
+.score-table th{background:linear-gradient(180deg,#082f49,#0c4a6e);color:#bae6fd;font-weight:800;padding:0.6rem 0.7rem;text-align:center;border-bottom:2px solid #38bdf8;font-size:0.92rem}
+.score-table td{background:#0f172a;color:#e2e8f0;padding:0.55rem 0.7rem;border-bottom:1px solid #1e293b;text-align:center;line-height:1.5}
+.score-table tr:last-child td{border-bottom:none}
+.score-table .row-label{text-align:left;font-weight:700;color:#7dd3fc;background:linear-gradient(90deg,#0c1e2e,#0f172a)}
+
+/* === ANIMATIONS === */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:fadeUp 0.5s ease-out both}
+.d1{animation-delay:0.05s}.d2{animation-delay:0.1s}.d3{animation-delay:0.15s}.d4{animation-delay:0.2s}
+
+/* === RESPONSIVE === */
+@media(max-width:640px){
+  .guide-container{padding:1rem 0.75rem 3rem}
+  .hero{padding:1.5rem 1.15rem;border-radius:1rem}
+  .hero h1{font-size:1.45rem}
+  .hero::after{display:none}
+  .section-hdr{font-size:1.2rem;padding:0.85rem 1rem}
+  .section-hdr .sec-num{width:26px;height:26px;font-size:0.75rem}
+  .compare-table{font-size:1rem}
+  .compare-table th,.compare-table td{padding:0.5rem 0.55rem}
+  .compare-table .cat-label{white-space:normal;min-width:80px;font-size:0.92rem}
+  .compare-table th{font-size:0.88rem}
+  .score-table{font-size:0.95rem}
+  .score-table th,.score-table td{padding:0.4rem 0.45rem}
+  .vs-banner{flex-direction:column;text-align:center;gap:0.35rem;padding:0.5rem 0.75rem}
+  .vs-banner .vs-circle{width:32px;height:32px;font-size:0.65rem}
+  .qref{grid-template-columns:1fr}
+  .dx-card{padding:1rem 1rem 1rem 1.15rem}
+  .mnemonic{padding-left:2.75rem}.mnemonic::before{left:0.65rem}
+  .nclex-tip{padding-left:2.75rem}.nclex-tip::before{left:0.65rem}
+  .lethal{padding-left:2.75rem}.lethal::before{left:0.65rem}
+  .nav-pill{font-size:0.68rem;padding:0.3rem 0.55rem}
+}
+</style>
+</head>
+<body>
+
+<div class="guide-container">
+
+<!-- HERO -->
+<div class="hero anim">
+<h1>👶 OB Maternal-Newborn Complications</h1>
+<p class="subtitle">Master the highest-yield OB complications tested on the NCLEX — from antepartum hemorrhage through postpartum emergencies and critical newborn assessment. Every section targets confirmed test content.</p>
+<div class="badge-row">
+<span class="badge badge-ante">🩸 Antepartum</span>
+<span class="badge badge-labor">🚨 Labor &amp; Delivery</span>
+<span class="badge badge-pp">💜 Postpartum</span>
+<span class="badge badge-nb">👶 Newborn</span>
+</div>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="nav-bar anim d1">
+<a class="nav-pill" href="#sec-ante">🩸 Antepartum</a>
+<a class="nav-pill" href="#sec-labor">🚨 L&amp;D Emergencies</a>
+<a class="nav-pill" href="#sec-fhr">📊 Fetal Monitoring</a>
+<a class="nav-pill" href="#sec-pp">💜 Postpartum</a>
+<a class="nav-pill" href="#sec-nb">👶 Newborn</a>
+<a class="nav-pill" href="#sec-nbc">⚠️ NB Complications</a>
+<a class="nav-pill" href="#sec-meds">💊 High-Risk Meds</a>
+<a class="nav-pill" href="#sec-mem">🧠 Memory</a>
+</nav>
+
+<!-- ====================================================== -->
+<div id="sec-ante" class="section-hdr sh-ante anim d2">
+<span><span class="sec-num">1</span> 🩸 Antepartum Hemorrhage</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="vs-banner anim d3">
+<span class="vs-cond vs-left">⚠️ Placenta Previa</span>
+<span class="vs-circle">VS</span>
+<span class="vs-cond vs-right">🚨 Placental Abruption</span>
+</div>
+
+<table class="compare-table anim d4">
+<thead><tr>
+<th>Feature</th>
+<th>⚠️ Placenta Previa</th>
+<th>🚨 Placental Abruption</th>
+</tr></thead>
+<tbody>
+<tr><td class="cat-label">Definition</td>
+<td>Placenta implants over or near the internal cervical os — partially or completely covering it</td>
+<td>Premature <strong>separation</strong> of a normally implanted placenta from the uterine wall before delivery</td></tr>
+
+<tr><td class="cat-label">Hallmark Sign</td>
+<td class="warn"><strong>Painless, bright red vaginal bleeding</strong> — typically in 2nd or 3rd trimester</td>
+<td class="danger"><strong>Painful, dark red bleeding</strong> with rigid "board-like" abdomen. May be concealed (no visible bleeding)</td></tr>
+
+<tr><td class="cat-label">Uterine Tone</td>
+<td>Soft, relaxed, non-tender</td>
+<td class="danger"><strong>Rigid, board-like, tender</strong> (tetanic contractions)</td></tr>
+
+<tr><td class="cat-label">Bleeding</td>
+<td>Bright red, episodic, painless. Amount does NOT correlate with degree of previa</td>
+<td>Dark red. May be <strong>concealed</strong> (20% of abruptions) — no visible bleeding but fundal height increases and shock develops</td></tr>
+
+<tr><td class="cat-label">Fetal Status</td>
+<td>Usually normal unless maternal hemorrhage is severe</td>
+<td class="danger">Often compromised — fetal distress, IUGR, or fetal death depending on severity</td></tr>
+
+<tr><td class="cat-label">Risk Factors</td>
+<td>Prior C-section, prior previa, multiparity, advanced maternal age, smoking, uterine surgery</td>
+<td><strong>Hypertension</strong> (#1 risk), cocaine use, trauma (MVA, abuse), prior abruption, polyhydramnios, short cord</td></tr>
+
+<tr><td class="cat-label">Diagnosis</td>
+<td><strong>Transabdominal ultrasound</strong> — confirms placental location. <span class="danger">NEVER perform digital cervical exam!</span></td>
+<td><strong>Clinical diagnosis</strong> (painful bleeding + rigid uterus). Ultrasound may show retroplacental clot but is unreliable — a normal US does NOT rule out abruption</td></tr>
+
+<tr><td class="cat-label">💊 Management</td>
+<td><strong>Stable, preterm:</strong> bed rest, no vaginal exams, monitor for bleeding, <span class="drug">betamethasone</span> if &lt;34 wks<br><strong>Active bleeding or ≥36 wks:</strong> cesarean delivery</td>
+<td><strong>Mild:</strong> close monitoring, bed rest, fetal surveillance<br><strong>Moderate-severe:</strong> <span class="danger">emergent delivery</span> (vaginal if stable, C-section if fetal distress)<br>Treat for DIC if develops</td></tr>
+
+<tr><td class="cat-label">Delivery</td>
+<td><strong>Cesarean section</strong> — vaginal delivery is contraindicated for complete previa</td>
+<td>Depends on severity and fetal status — may be vaginal or cesarean. Emergent delivery if fetal distress.</td></tr>
+</tbody></table>
+
+<div class="lethal">
+<strong>NEVER perform a digital vaginal exam on a patient with suspected placenta previa!</strong> Palpating through the cervix can rupture placental vessels and cause catastrophic hemorrhage. Always confirm placental location by <strong>ultrasound first</strong>. This is a classic NCLEX question.
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key — The #1 Differentiator:</strong> <strong>Painless</strong> bright red bleeding = think Placenta <strong>P</strong>revia (<strong>P</strong> = <strong>P</strong>ainless). <strong>Painful</strong> dark red bleeding with a rigid abdomen = think Placental <strong>A</strong>bruption (<strong>A</strong> = <strong>A</strong>gonizing). This mnemonic alone answers most NCLEX questions on antepartum hemorrhage.
+</div>
+
+<h3>Vasa Previa</h3>
+<div class="dx-card card-danger">
+<h3>🩸 Vasa Previa — Rare but Lethal</h3>
+<div class="tag-row"><span class="tag tag-danger">FETAL EMERGENCY</span></div>
+<p><strong>Definition:</strong> Fetal blood vessels run through the membranes across the internal cervical os, unprotected by placental tissue or the umbilical cord.</p>
+<ul>
+<li><strong>Classic presentation:</strong> Rupture of membranes → <span class="danger">painless vaginal bleeding</span> + <span class="danger">sudden fetal bradycardia/death</span></li>
+<li>The blood is <strong>fetal</strong> (not maternal) — even small amounts can be lethal to the fetus</li>
+<li><strong>Diagnosis:</strong> Prenatal ultrasound with color Doppler. <strong>Apt test</strong> (alkali denaturation test) differentiates fetal from maternal blood</li>
+<li><strong>Management:</strong> Planned cesarean at <strong>35-36 weeks</strong> before labor begins. If membranes rupture → <strong>immediate emergency C-section</strong></li>
+<li><strong>Fetal mortality:</strong> <span class="danger">&gt;60% if undiagnosed</span>, but <strong>&lt;5% if diagnosed prenatally</strong></li>
+</ul>
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-labor" class="section-hdr sh-labor">
+<span><span class="sec-num">2</span> 🚨 Labor &amp; Delivery Emergencies</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="dx-card card-danger">
+<h3>🔴 Umbilical Cord Prolapse</h3>
+<div class="tag-row"><span class="tag tag-danger">OBSTETRIC EMERGENCY</span></div>
+<p><strong>Definition:</strong> Umbilical cord descends ahead of or alongside the fetal presenting part after rupture of membranes, causing <strong>cord compression</strong> and <strong>fetal hypoxia</strong>.</p>
+<h4>Immediate Nursing Actions:</h4>
+<ol class="tx-steps">
+<li><strong>Call for help</strong> — this requires an emergency team response</li>
+<li><strong>Insert gloved hand into vagina</strong> and <strong>lift the presenting part OFF the cord</strong> — maintain continuous manual pressure</li>
+<li>Place patient in <strong>knee-chest position</strong> or <strong>steep Trendelenburg</strong> — uses gravity to relieve cord compression</li>
+<li><strong>Do NOT attempt to replace the cord</strong> into the uterus</li>
+<li>If cord is protruding, keep it <strong>warm and moist</strong> with sterile saline-soaked towels — do NOT handle it</li>
+<li>Administer <strong>O2</strong> at 8-10 L/min via non-rebreather</li>
+<li>Prepare for <strong>immediate emergency cesarean section</strong></li>
+<li>Continuous <strong>fetal heart rate monitoring</strong> — expect variable decelerations</li>
+</ol>
+<p><strong>Risk factors:</strong> Polyhydramnios, breech/transverse lie, premature rupture of membranes, multiparity, unengaged presenting part, long umbilical cord</p>
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key:</strong> The priority for cord prolapse is to <strong>relieve pressure on the cord</strong>. The nurse's hand stays in the vagina lifting the presenting part until the baby is delivered by emergency C-section. This is one of the few situations where the nurse maintains direct contact with the patient continuously until surgery.
+</div>
+
+<div class="dx-card card-warn">
+<h3>⚠️ Shoulder Dystocia</h3>
+<div class="tag-row"><span class="tag tag-danger">EMERGENCY</span> <span class="tag tag-ob">DELIVERY COMPLICATION</span></div>
+<p><strong>Definition:</strong> The fetal head delivers but the <strong>anterior shoulder becomes impacted</strong> behind the maternal pubic symphysis. Creates a "turtle sign" — head retracts against the perineum.</p>
+<h4>McRoberts Maneuver — First-Line Intervention:</h4>
+<ul>
+<li><strong>Hyperflex maternal thighs</strong> sharply against the abdomen — this straightens the sacrum and increases the pelvic outlet</li>
+<li>Apply <strong>suprapubic pressure</strong> (NOT fundal pressure!) — firm downward pressure above the pubic bone to dislodge the anterior shoulder</li>
+<li>If unsuccessful: <strong>Wood's screw maneuver</strong> (rotate the posterior shoulder), deliver posterior arm, or move to all-fours (Gaskin maneuver)</li>
+</ul>
+<p><strong>Risk factors:</strong> Fetal macrosomia (&gt;4000g), gestational diabetes, maternal obesity, prolonged 2nd stage, prior shoulder dystocia</p>
+<p><strong>Complications:</strong> Brachial plexus injury (Erb's palsy), clavicle fracture, fetal hypoxia, maternal lacerations, postpartum hemorrhage</p>
+</div>
+
+<div class="lethal">
+<strong>NEVER apply fundal pressure during shoulder dystocia!</strong> Fundal pressure further impacts the shoulder against the pubic bone and can cause uterine rupture. Only <strong>suprapubic</strong> pressure is safe. This is an absolute NCLEX rule.
+</div>
+
+<div class="dx-card card-danger">
+<h3>🔴 Uterine Rupture</h3>
+<div class="tag-row"><span class="tag tag-danger">LIFE-THREATENING</span></div>
+<p><strong>Definition:</strong> Complete tear through the uterine wall, often at a previous cesarean scar site. The fetus may be partially or completely extruded into the abdominal cavity.</p>
+<h4>Classic Signs:</h4>
+<ul>
+<li><span class="danger">Sudden, severe "tearing" abdominal pain</span> — often described as "something ripped"</li>
+<li><strong>Cessation of contractions</strong> — labor abruptly stops</li>
+<li><span class="danger">Fetal parts palpable through abdomen</span> (Bandl's ring sign before rupture)</li>
+<li><strong>Signs of hemorrhagic shock</strong> — tachycardia, hypotension, decreased LOC</li>
+<li><strong>Fetal heart rate:</strong> Prolonged bradycardia or absent FHR</li>
+<li><strong>Change in uterine shape</strong> and loss of fetal station</li>
+</ul>
+<p><strong>Management:</strong> <span class="danger">Immediate laparotomy</span> — deliver the baby, repair or remove the uterus (hysterectomy may be necessary). Massive transfusion protocol.</p>
+<p><strong>Risk factors:</strong> Prior classical (vertical) uterine incision (#1), VBAC trial, <span class="drug">oxytocin</span> augmentation, grand multiparity, uterine anomalies</p>
+</div>
+
+<div class="dx-card card-danger">
+<h3>🔴 Amniotic Fluid Embolism (AFE)</h3>
+<div class="tag-row"><span class="tag tag-danger">CATASTROPHIC</span> <span class="tag tag-danger">HIGH MORTALITY</span></div>
+<p><strong>Definition:</strong> Amniotic fluid, fetal cells, or debris enter the maternal circulation, triggering a massive <strong>anaphylactoid reaction</strong> with cardiovascular collapse and DIC.</p>
+<h4>Classic Presentation — Sudden Triad:</h4>
+<ul>
+<li><span class="danger">Acute respiratory distress / dyspnea</span></li>
+<li><span class="danger">Cardiovascular collapse / hypotension</span></li>
+<li><span class="danger">DIC with massive hemorrhage</span></li>
+</ul>
+<p><strong>Onset:</strong> Typically during labor, delivery, or immediately postpartum. Often preceded by <strong>intense shivering and anxiety</strong>.</p>
+<p><strong>Mortality:</strong> <span class="danger">60-80% mortality rate</span> — one of the most lethal obstetric complications. Survivors often have neurological deficits.</p>
+<p><strong>Treatment:</strong> Supportive care only — intubation, vasopressors, blood products for DIC, immediate delivery if undelivered. <strong>No specific treatment exists.</strong></p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-fhr" class="section-hdr sh-fhr">
+<span><span class="sec-num">3</span> 📊 Fetal Heart Rate Monitoring</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="mnemonic">
+<strong>Normal FHR Baseline:</strong> <span class="lyte">110-160 bpm</span> with <strong>moderate variability</strong> (6-25 bpm fluctuation). This is a <strong>Category I tracing</strong> — reassuring and requires no intervention.
+</div>
+
+<h3>Accelerations &amp; Decelerations</h3>
+<table class="compare-table">
+<thead><tr>
+<th>Pattern</th>
+<th>Shape / Timing</th>
+<th>Cause</th>
+<th>Significance</th>
+</tr></thead>
+<tbody>
+<tr><td class="cat-label">Accelerations</td>
+<td>↑ 15 bpm above baseline for ≥15 seconds</td>
+<td>Fetal movement, stimulation</td>
+<td class="safe"><strong>Reassuring</strong> — indicates intact CNS. Required for a reactive NST (2 accels in 20 min)</td></tr>
+
+<tr><td class="cat-label">Early Decels</td>
+<td>Gradual ↓ that <strong>mirrors contractions</strong> (onset, nadir, and recovery match contraction timing)</td>
+<td><strong>Head compression</strong> during contractions (vagal response)</td>
+<td class="safe"><strong>Benign</strong> — normal labor finding. No intervention needed. <strong>E</strong>arly = h<strong>E</strong>ad</td></tr>
+
+<tr><td class="cat-label">Late Decels</td>
+<td>Gradual ↓ that starts <strong>AFTER</strong> contraction peak and <strong>recovers AFTER</strong> contraction ends (offset from contraction)</td>
+<td><strong>Uteroplacental insufficiency</strong> — decreased O2 transfer to fetus</td>
+<td class="danger"><strong>Ominous!</strong> Indicates fetal hypoxia. <strong>L</strong>ate = p<strong>L</strong>acenta. Intervene immediately!</td></tr>
+
+<tr><td class="cat-label">Variable Decels</td>
+<td>Abrupt ↓ (onset to nadir &lt;30 sec), variable shape and timing — look like "V", "W", or "U"</td>
+<td><strong>Cord compression</strong></td>
+<td class="warn"><strong>Most common decel type.</strong> Mild = monitor. Severe/recurrent with poor variability = concerning. <strong>V</strong>ariable = <strong>C</strong>ord (VC)</td></tr>
+
+<tr><td class="cat-label">Prolonged Decels</td>
+<td>↓ ≥15 bpm lasting <strong>2-10 minutes</strong></td>
+<td>Cord prolapse, uterine rupture, maternal hypotension, tachysystole</td>
+<td class="danger"><strong>Emergency if &gt;3 min.</strong> Requires immediate assessment and intervention</td></tr>
+</tbody></table>
+
+<div class="mnemonic">
+<strong>Memory Aid — "VEAL CHOP":</strong><br>
+<strong>V</strong>ariable decels = <strong>C</strong>ord compression<br>
+<strong>E</strong>arly decels = <strong>H</strong>ead compression<br>
+<strong>A</strong>ccelerations = <strong>O</strong>K (reassuring)<br>
+<strong>L</strong>ate decels = <strong>P</strong>lacental insufficiency
+</div>
+
+<h3>Category Classification System</h3>
+<table class="compare-table">
+<thead><tr><th>Category</th><th>Characteristics</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td class="cat-label safe">Category I</td>
+<td>Baseline 110-160, moderate variability, no late/variable decels, accelerations present or absent</td>
+<td class="safe">Normal — continue routine monitoring</td></tr>
+
+<tr><td class="cat-label warn">Category II</td>
+<td>Anything NOT Cat I or Cat III — includes: minimal variability, recurrent variable decels, prolonged decels, tachycardia/bradycardia</td>
+<td class="warn">Indeterminate — requires evaluation, continued monitoring, possible intervention. <strong>Most tracings fall here.</strong></td></tr>
+
+<tr><td class="cat-label danger">Category III</td>
+<td>Absent variability WITH recurrent late decels, recurrent variable decels, or bradycardia. OR sinusoidal pattern</td>
+<td class="danger"><strong>Abnormal — requires IMMEDIATE intervention.</strong> Prepare for emergent delivery</td></tr>
+</tbody></table>
+
+<h3>Intrauterine Resuscitation — Interventions for Non-Reassuring FHR</h3>
+<div class="dx-card card-teal">
+<h3>📊 Intrauterine Resuscitation Steps</h3>
+<div class="tag-row"><span class="tag tag-teal">KNOW THIS SEQUENCE</span></div>
+<ol class="tx-steps">
+<li><strong>Reposition</strong> maternal patient — left lateral, then right lateral, then hands-and-knees. Avoid supine (vena cava compression)</li>
+<li><strong>Administer O2</strong> at 8-10 L/min via non-rebreather mask</li>
+<li><strong>IV fluid bolus</strong> — <span class="drug">lactated Ringer's</span> or <span class="drug">normal saline</span> to increase maternal blood volume and placental perfusion</li>
+<li><strong>Discontinue <span class="drug">oxytocin</span></strong> if infusing — eliminates drug-induced tachysystole</li>
+<li>If tachysystole: administer <span class="drug">terbutaline 0.25 mg SQ</span> to relax the uterus</li>
+<li><strong>Amnioinfusion</strong> for recurrent variable decelerations (instill warm saline into uterus to cushion cord)</li>
+<li><strong>Notify provider</strong> and prepare for possible operative delivery if pattern does not improve</li>
+</ol>
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key:</strong> When you see late decelerations on the monitor, your <strong>first action is to reposition the mother</strong> (left lateral). Then give O2, IV fluids, and <strong>stop <span class="drug">oxytocin</span></strong>. If the question asks "which action is MOST important?" — position change is usually the answer because it's immediately actionable and addresses the root cause (placental perfusion).
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-pp" class="section-hdr sh-pp">
+<span><span class="sec-num">4</span> 💜 Postpartum Complications</span>
+</div>
+<!-- ====================================================== -->
+
+<h3>Postpartum Hemorrhage (PPH)</h3>
+<div class="dx-card card-danger">
+<h3>🩸 Postpartum Hemorrhage</h3>
+<div class="tag-row"><span class="tag tag-danger">LEADING CAUSE OF MATERNAL DEATH</span></div>
+<p><strong>Definition:</strong> Blood loss ≥<strong>1000 mL</strong> or bleeding with signs of hypovolemia within 24 hours of delivery (early PPH) or 24 hours–12 weeks postpartum (late PPH).</p>
+</div>
+
+<div class="mnemonic">
+<strong>The "4 T's" of PPH Causes:</strong><br>
+<strong>T</strong>one — Uterine atony (<strong>#1 cause — 80% of PPH</strong>)<br>
+<strong>T</strong>rauma — Lacerations, hematomas, uterine inversion/rupture<br>
+<strong>T</strong>issue — Retained placenta or placental fragments<br>
+<strong>T</strong>hrombin — Coagulopathy (DIC, von Willebrand's, anticoagulant use)
+</div>
+
+<table class="compare-table">
+<thead><tr><th>Cause</th><th>Assessment Findings</th><th>Interventions</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">Uterine Atony</td>
+<td>Boggy, soft, <strong>non-contracted uterus</strong>. Fundus above expected level. Steady flow of dark blood. May not appear dramatic until significant volume lost.</td>
+<td><strong>Bimanual uterine massage</strong> (first-line)<br><span class="drug">Oxytocin</span> 20-40 units in 1L NS IV<br><span class="drug">Methylergonovine (Methergine)</span> 0.2mg IM<br><span class="drug">Carboprost (Hemabate)</span> 0.25mg IM<br><span class="drug">Misoprostol</span> 800-1000mcg rectally<br>Bakri balloon tamponade if meds fail</td></tr>
+
+<tr><td class="cat-label">Trauma</td>
+<td><strong>Firm uterus</strong> with continued bright red bleeding. Inspect for lacerations, hematomas. Signs of uterine inversion (fundus not palpable, mass in vagina)</td>
+<td>Surgical repair of lacerations<br>Uterine inversion: <strong>do NOT remove placenta</strong> until repositioned; manual repositioning or surgical correction</td></tr>
+
+<tr><td class="cat-label">Tissue</td>
+<td><strong>Incomplete placenta</strong> on inspection, uterus cannot fully contract. May present as late PPH (days-weeks later)</td>
+<td>Manual removal of retained fragments<br>Uterine curettage (D&amp;C)<br>Ultrasound to confirm retained products</td></tr>
+
+<tr><td class="cat-label">Thrombin</td>
+<td>Bleeding from multiple sites (IV sites, gums), oozing from incisions, blood does not clot. Low <span class="lyte">fibrinogen</span>, elevated <span class="lyte">PT/PTT</span>, elevated <span class="lyte">D-dimer</span></td>
+<td>Treat underlying cause<br>Blood product replacement: <span class="lyte">FFP, cryoprecipitate, platelets</span><br>Massive transfusion protocol if needed</td></tr>
+</tbody></table>
+
+<div class="lethal">
+<strong><span class="drug">Methylergonovine (Methergine)</span> is CONTRAINDICATED in hypertension!</strong> It causes intense vasoconstriction and can trigger stroke, MI, or hypertensive crisis. Always check BP before administering. If the patient is preeclamptic or hypertensive → use <span class="drug">carboprost</span> or <span class="drug">misoprostol</span> instead. This is a guaranteed NCLEX question.
+</div>
+
+<div class="lethal">
+<strong><span class="drug">Carboprost (Hemabate)</span> is CONTRAINDICATED in asthma!</strong> It causes bronchospasm. Remember: <span class="drug">Methergine</span> = no hypertension, <span class="drug">Hemabate</span> = no asthma.
+</div>
+
+<h3>Other Postpartum Complications</h3>
+<table class="compare-table">
+<thead><tr><th>Complication</th><th>Key Features</th><th>Management</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">Endometritis</td>
+<td>Fever (&gt;100.4°F/38°C), foul-smelling lochia, uterine tenderness, tachycardia. Usually 2-5 days postpartum. Risk: C-section, prolonged ROM, multiple vaginal exams</td>
+<td>IV <span class="drug">clindamycin + gentamicin</span> (gold standard). Continue until afebrile 24-48h</td></tr>
+
+<tr><td class="cat-label">DVT / PE</td>
+<td><strong>DVT:</strong> Unilateral leg swelling, warmth, redness, positive Homans sign (unreliable). <strong>PE:</strong> Sudden dyspnea, chest pain, tachycardia, hypoxia, anxiety</td>
+<td><span class="drug">Heparin</span> anticoagulation (safe for breastfeeding). <strong>PE:</strong> Supplemental O2, CT angiography for diagnosis, <span class="drug">heparin</span> → <span class="drug">warfarin</span> transition</td></tr>
+
+<tr><td class="cat-label">PP Depression</td>
+<td>Persistent sadness, hopelessness, sleep/appetite changes, withdrawal from baby, loss of interest. Onset: typically 2 weeks–6 months postpartum</td>
+<td>Screening: Edinburgh Postnatal Depression Scale. Treatment: therapy, <span class="drug">SSRIs</span> (safe in breastfeeding: <span class="drug">sertraline</span>, <span class="drug">paroxetine</span>)</td></tr>
+
+<tr><td class="cat-label danger">PP Psychosis</td>
+<td class="danger"><strong>Psychiatric emergency.</strong> Hallucinations, delusions, severe confusion, disorganized behavior. Onset: first 2 weeks. Risk of infanticide/suicide</td>
+<td><span class="danger">Psychiatric admission. Never leave mother alone with infant.</span> Antipsychotics, mood stabilizers. Report if safety risk to infant.</td></tr>
+</tbody></table>
+
+<div class="nclex-tip">
+<strong>NCLEX Key — PP Depression vs PP Psychosis:</strong> PP depression = sad, withdrawn, may have trouble bonding. PP psychosis = <strong>hallucinations, delusions, risk of harm</strong> to self/infant. PP psychosis is a <strong>psychiatric emergency</strong> requiring immediate intervention and separation of mother and infant when unsupervised.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-nb" class="section-hdr sh-nb">
+<span><span class="sec-num">5</span> 👶 Newborn Assessment</span>
+</div>
+<!-- ====================================================== -->
+
+<h3>APGAR Scoring</h3>
+<table class="score-table">
+<thead><tr>
+<th>Sign</th>
+<th>0 Points</th>
+<th>1 Point</th>
+<th>2 Points</th>
+</tr></thead>
+<tbody>
+<tr><td class="row-label"><strong>A</strong>ppearance (color)</td><td>Blue/pale all over</td><td>Pink body, blue extremities (acrocyanosis)</td><td>Completely pink</td></tr>
+<tr><td class="row-label"><strong>P</strong>ulse (heart rate)</td><td>Absent</td><td>&lt;100 bpm</td><td>≥100 bpm</td></tr>
+<tr><td class="row-label"><strong>G</strong>rimace (reflex)</td><td>No response</td><td>Grimace/weak cry</td><td>Vigorous cry, cough, sneeze</td></tr>
+<tr><td class="row-label"><strong>A</strong>ctivity (muscle tone)</td><td>Limp, flaccid</td><td>Some flexion</td><td>Active motion, good flexion</td></tr>
+<tr><td class="row-label"><strong>R</strong>espiration</td><td>Absent</td><td>Slow, irregular, weak cry</td><td>Good cry, regular respirations</td></tr>
+</tbody></table>
+
+<div class="mnemonic">
+<strong>APGAR Interpretation:</strong><br>
+<strong>7-10</strong> = Normal (most newborns score 8-9 at 1 minute due to acrocyanosis)<br>
+<strong>4-6</strong> = Moderately depressed — stimulate, suction, possible O2<br>
+<strong>0-3</strong> = Severely depressed — <strong>immediate resuscitation</strong> (PPV, intubation, chest compressions)
+</div>
+
+<div class="nclex-tip">
+<strong>NCLEX Key:</strong> APGAR is assessed at <strong>1 minute</strong> (overall status) and <strong>5 minutes</strong> (response to resuscitation). If the 5-minute score is &lt;7, continue scoring every 5 minutes up to 20 minutes. APGAR does NOT guide resuscitation decisions — resuscitation begins immediately at birth if needed, NOT after waiting 1 minute for an APGAR score.
+</div>
+
+<h3>Normal vs Abnormal Newborn Findings</h3>
+<table class="compare-table">
+<thead><tr><th>Finding</th><th>Normal</th><th>Abnormal — Notify Provider</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">Respirations</td><td>30-60 breaths/min, may be irregular. Periodic breathing is normal.</td><td class="danger">&gt;60/min (tachypnea), grunting, nasal flaring, retractions, central cyanosis</td></tr>
+
+<tr><td class="cat-label">Heart Rate</td><td><span class="lyte">120-160 bpm</span> (sleeping: may be 100). Murmur in first 24h may be normal (PDA closing)</td><td class="danger">&lt;100 or &gt;180, persistent murmur after 24h, absent femoral pulses</td></tr>
+
+<tr><td class="cat-label">Temperature</td><td><span class="lyte">97.5-99.3°F (36.4-37.4°C)</span> axillary</td><td class="danger">&lt;97.5°F (hypothermia) or &gt;99.5°F (fever — may indicate sepsis)</td></tr>
+
+<tr><td class="cat-label">Skin</td><td>Acrocyanosis (blue hands/feet), milia, erythema toxicum, Mongolian spots, stork bites, vernix</td><td class="danger">Central cyanosis, jaundice &lt;24h, pallor, petechiae, pustules</td></tr>
+
+<tr><td class="cat-label">Head</td><td>Caput succedaneum (crosses suture lines, resolves 1-3 days), molding</td><td class="warn">Cephalohematoma (does NOT cross sutures, may cause jaundice). Bulging or sunken fontanels</td></tr>
+
+<tr><td class="cat-label">Reflexes</td><td>Moro (startle), rooting, sucking, palmar/plantar grasp, Babinski (toes fan — normal in newborns), stepping, tonic neck</td><td class="danger">Absent or asymmetric reflexes, persistent tremors/jitteriness, seizure activity</td></tr>
+
+<tr><td class="cat-label">Cord</td><td>3 vessels (2 arteries, 1 vein). Clamp secure. Dries and falls off 7-14 days</td><td class="danger">2-vessel cord (single umbilical artery — screen for renal/cardiac anomalies). Redness, drainage, foul smell (omphalitis)</td></tr>
+
+<tr><td class="cat-label">Stool</td><td>Meconium (dark green-black) in first 24-48h → transitional → yellow seedy (breastfed)</td><td class="danger">No meconium by 48h (possible obstruction), white/clay-colored (biliary atresia), bloody stool</td></tr>
+</tbody></table>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-nbc" class="section-hdr sh-nbc">
+<span><span class="sec-num">6</span> ⚠️ Newborn Complications</span>
+</div>
+<!-- ====================================================== -->
+
+<table class="compare-table">
+<thead><tr><th>Complication</th><th>Key Features</th><th>Management</th></tr></thead>
+<tbody>
+<tr><td class="cat-label">Hypoglycemia</td>
+<td><span class="lyte">Blood glucose</span> <strong>&lt;40 mg/dL</strong> in first 4h, &lt;45 after 4h. Signs: jitteriness, tremors, poor feeding, lethargy, seizures, hypothermia, weak cry.<br><strong>At risk:</strong> LGA, SGA, IDM (infant of diabetic mother), preterm, cold stress</td>
+<td><strong>Feed immediately</strong> if alert and able to suck (breast or formula). Recheck glucose 30 min after feeding. If unable to feed or glucose &lt;25: <span class="drug">D10W IV bolus 2 mL/kg</span> then continuous infusion. <strong>Never use D25W or D50W</strong> in neonates (causes rebound hypoglycemia and vein sclerosis)</td></tr>
+
+<tr><td class="cat-label">Jaundice</td>
+<td>Yellow skin/sclera from elevated <span class="lyte">bilirubin</span>. <strong>Physiologic:</strong> appears after 24h, peaks day 3-5, resolves by 2 wks. <strong>Pathologic:</strong> <span class="danger">appears within 24 hours</span> — always abnormal!<br>Risk: ABO/Rh incompatibility, prematurity, bruising, polycythemia, breastfeeding insufficiency</td>
+<td><strong>Phototherapy</strong> (bili lights) — expose maximum skin area, protect eyes with opaque mask, monitor temperature, increase feedings. <strong>Exchange transfusion</strong> if <span class="lyte">bilirubin</span> levels are critically high or rising rapidly despite phototherapy</td></tr>
+
+<tr><td class="cat-label danger">Kernicterus</td>
+<td class="danger">Unconjugated <span class="lyte">bilirubin</span> crosses the blood-brain barrier → permanent brain damage. Signs: high-pitched cry, opisthotonos (arched back), absent Moro reflex, seizures, lethargy</td>
+<td class="danger"><strong>Prevention is key</strong> — aggressive phototherapy and exchange transfusion before critical levels. Kernicterus is <strong>irreversible</strong> once established.</td></tr>
+
+<tr><td class="cat-label">Respiratory Distress Syndrome</td>
+<td>Preterm infants lacking <strong>surfactant</strong>. Signs: tachypnea, grunting, nasal flaring, intercostal/substernal retractions, cyanosis. Classic "ground glass" appearance on chest X-ray. Onset within first 6 hours</td>
+<td><span class="drug">Exogenous surfactant</span> via endotracheal tube<br>CPAP or mechanical ventilation<br><strong>Prevention:</strong> <span class="drug">Betamethasone</span> to mother 24-48h before preterm delivery</td></tr>
+
+<tr><td class="cat-label">NAS (Neonatal Abstinence Syndrome)</td>
+<td>Withdrawal from maternal opioid use. Onset: 24-72h after birth. Signs: high-pitched cry, tremors, irritability, sneezing, poor feeding, diarrhea, sweating, seizures. Score with <strong>Finnegan Scale</strong></td>
+<td>Swaddling, dim quiet environment, small frequent feedings. Pharmacologic: <span class="drug">morphine</span> or <span class="drug">methadone</span> taper if Finnegan score ≥8 on 3 consecutive assessments. <strong>Breastfeeding encouraged</strong> if mother is in treatment and HIV-negative</td></tr>
+
+<tr><td class="cat-label">Cold Stress</td>
+<td>Hypothermia triggers <strong>increased metabolic rate</strong> → ↑O2 consumption, ↑glucose utilization → hypoglycemia, metabolic acidosis, respiratory distress. Neonates lose heat via: <strong>evaporation</strong> (wet skin), <strong>conduction</strong> (cold surfaces), <strong>convection</strong> (drafts), <strong>radiation</strong> (cold nearby surfaces)</td>
+<td>Skin-to-skin (kangaroo care), radiant warmer, knit cap, warm blankets, dry thoroughly at birth. <strong>Prevention is the priority</strong> — warm and dry immediately after delivery</td></tr>
+</tbody></table>
+
+<div class="nclex-tip">
+<strong>NCLEX Key — Jaundice Timing:</strong> Jaundice within <strong>&lt;24 hours</strong> of birth = <span class="danger">ALWAYS pathologic</span> (Rh/ABO incompatibility, sepsis, TORCH). Jaundice after 24 hours = likely physiologic but still monitor. This timing distinction is tested repeatedly.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-meds" class="section-hdr sh-meds">
+<span><span class="sec-num">7</span> 💊 High-Risk OB Medications</span>
+</div>
+<!-- ====================================================== -->
+
+<table class="compare-table">
+<thead><tr><th>Drug</th><th>Use</th><th>Key Nursing Considerations</th></tr></thead>
+<tbody>
+<tr><td class="cat-label"><span class="drug">Oxytocin (Pitocin)</span></td>
+<td>Induction/augmentation of labor; PPH prevention and treatment</td>
+<td><strong>Always via IV pump</strong> — never bolus during labor. Monitor for tachysystole (&gt;5 contractions in 10 min). <strong>Water intoxication</strong> is possible (antidiuretic effect) — monitor I&amp;O, Na levels. <span class="danger">Stop immediately</span> if fetal distress or tachysystole. Antidote for tachysystole: <span class="drug">terbutaline</span></td></tr>
+
+<tr><td class="cat-label"><span class="drug">Terbutaline</span></td>
+<td>Tocolytic (stops preterm labor); treats uterine tachysystole</td>
+<td>Beta-2 agonist → uterine relaxation. Side effects: tachycardia, tremor, hyperglycemia, hypokalemia. <strong>Dose:</strong> 0.25 mg SQ. Monitor maternal HR (hold if &gt;120), <span class="lyte">glucose</span>, <span class="lyte">K+</span>. <span class="danger">Contraindicated if maternal HR &gt;120 bpm</span></td></tr>
+
+<tr><td class="cat-label"><span class="drug">Betamethasone</span></td>
+<td>Fetal lung maturity acceleration (24-34 weeks gestation)</td>
+<td><strong>2 doses of 12mg IM, 24 hours apart.</strong> Optimal effect at 48 hours after first dose. Crosses placenta → stimulates fetal surfactant production. Monitor maternal <span class="lyte">blood glucose</span> (causes hyperglycemia). Can be given with other OB drugs.</td></tr>
+
+<tr><td class="cat-label"><span class="drug">RhoGAM (Rh Immunoglobulin)</span></td>
+<td>Prevents Rh sensitization in Rh-negative mothers</td>
+<td><strong>Given at 28 weeks</strong> and <strong>within 72 hours of delivery</strong> of an Rh-positive infant. Also given after: miscarriage, ectopic pregnancy, amniocentesis, abdominal trauma, placental abruption. <strong>IM injection only.</strong> Indirect Coombs test must be negative before administration.</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Methylergonovine (Methergine)</span></td>
+<td>PPH treatment — sustained uterine contraction</td>
+<td><strong>0.2mg IM</strong> (can give PO for ongoing management). Causes intense uterine contraction AND vasoconstriction. <span class="danger">CONTRAINDICATED in hypertension</span> — check BP before giving. Never use to induce labor. Store in refrigerator.</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Carboprost (Hemabate)</span></td>
+<td>PPH treatment — prostaglandin F2-alpha</td>
+<td><strong>0.25mg IM</strong> into muscle (can give intramyometrial). Causes intense uterine contraction + bronchospasm. <span class="danger">CONTRAINDICATED in asthma</span>. Side effects: diarrhea, N/V, fever. Max 8 doses.</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Misoprostol (Cytotec)</span></td>
+<td>PPH (rectal), cervical ripening (vaginal/oral), medical abortion</td>
+<td><strong>PPH dose:</strong> 800-1000 mcg rectally. Prostaglandin E1 analog. Cervical ripening: 25 mcg vaginal q4-6h. <span class="danger">Remove before starting oxytocin</span> — risk of uterine hyperstimulation. <span class="danger">Contraindicated if prior C-section</span> (cervical ripening use).</td></tr>
+
+<tr><td class="cat-label"><span class="drug">Magnesium Sulfate</span></td>
+<td>Seizure prophylaxis (preeclampsia/eclampsia), fetal neuroprotection (&lt;32 wks), tocolysis</td>
+<td>See our <strong>OB Hypertensive Disorders guide</strong> for complete MgSO4 reference. Antidote: <span class="drug">calcium gluconate</span>. Monitor: <span class="lyte">DTRs</span>, RR ≥12, UO ≥30 mL/hr. Therapeutic level: <span class="lyte">4-7 mEq/L</span>.</td></tr>
+</tbody></table>
+
+<div class="nclex-tip">
+<strong>NCLEX Medication Safety Rules:</strong><br>
+• <span class="drug">Methergine</span> = NO hypertension (vasoconstriction → stroke risk)<br>
+• <span class="drug">Hemabate</span> = NO asthma (bronchospasm)<br>
+• <span class="drug">Misoprostol</span> for cervical ripening = NO prior C-section (uterine rupture risk)<br>
+• <span class="drug">Oxytocin</span> = ALWAYS via pump, NEVER bolus during labor<br>
+• <span class="drug">RhoGAM</span> = within 72 hours (IM only, Coombs negative first)<br>
+These contraindications are tested on virtually every NCLEX exam.
+</div>
+
+<hr class="section-divider">
+
+<!-- ====================================================== -->
+<div id="sec-mem" class="section-hdr sh-mem">
+<span><span class="sec-num">8</span> 🧠 High-Yield NCLEX Memory Anchors</span>
+</div>
+<!-- ====================================================== -->
+
+<div class="qref">
+<div class="qref-box">
+<h4>🩸 Previa vs Abruption</h4>
+<ul>
+<li><strong>P</strong>revia = <strong>P</strong>ainless, bright red</li>
+<li><strong>A</strong>bruption = <strong>A</strong>gonizing, dark red, rigid</li>
+<li>Previa: NO vaginal exam — US only</li>
+<li>Abruption: #1 risk = hypertension</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>📊 VEAL CHOP</h4>
+<ul>
+<li><strong>V</strong>ariable = <strong>C</strong>ord</li>
+<li><strong>E</strong>arly = <strong>H</strong>ead (benign)</li>
+<li><strong>A</strong>ccelerations = <strong>O</strong>K</li>
+<li><strong>L</strong>ate = <strong>P</strong>lacenta (ominous)</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🩸 4 T's of PPH</h4>
+<ul>
+<li><strong>T</strong>one (atony — #1 cause, 80%)</li>
+<li><strong>T</strong>rauma (lacerations)</li>
+<li><strong>T</strong>issue (retained placenta)</li>
+<li><strong>T</strong>hrombin (coagulopathy)</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>💊 PPH Med Contraindications</h4>
+<ul>
+<li><span class="drug">Methergine</span> → NO hypertension</li>
+<li><span class="drug">Hemabate</span> → NO asthma</li>
+<li><span class="drug">Misoprostol</span> ripening → NO prior C/S</li>
+<li><span class="drug">Oxytocin</span> → ALWAYS via pump</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🔴 Cord Prolapse</h4>
+<ul>
+<li>Hand in vagina → lift presenting part</li>
+<li>Knee-chest or Trendelenburg</li>
+<li>Keep cord warm &amp; moist</li>
+<li>Emergency C-section</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>👶 Newborn Red Flags</h4>
+<ul>
+<li>Jaundice &lt;24h = ALWAYS pathologic</li>
+<li>Grunting + flaring + retractions = RDS</li>
+<li>High-pitched cry + tremors = NAS or hypoglycemia</li>
+<li>No meconium by 48h = obstruction</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>💉 RhoGAM Timing</h4>
+<ul>
+<li>28 weeks (routine)</li>
+<li>Within 72 hours postpartum</li>
+<li>After any bleeding event</li>
+<li>IM only, Coombs negative first</li>
+</ul>
+</div>
+<div class="qref-box">
+<h4>🏥 PP Warning Signs</h4>
+<ul>
+<li>Boggy uterus = atony → massage</li>
+<li>Foul lochia + fever = endometritis</li>
+<li>Unilateral leg swelling = DVT</li>
+<li>Hallucinations = PP psychosis (emergency!)</li>
+</ul>
+</div>
+</div>
+
+<div class="nclex-tip" style="margin-top:1.25rem">
+<strong>Final NCLEX Tip:</strong> OB questions test your ability to <strong>prioritize</strong> in emergencies. When in doubt: <strong>airway/safety first</strong> (maternal AND fetal), then <strong>identify the complication</strong> (use your comparison knowledge), then <strong>intervene</strong> (know your meds and their contraindications). Fetal monitoring interpretation and PPH management appear on nearly every NCLEX exam — master VEAL CHOP and the 4 T's and you'll have a strong foundation.
+</div>
+
+</div>
+</body>
+</html>
