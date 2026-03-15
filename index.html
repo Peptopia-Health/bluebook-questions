@@ -63,6 +63,7 @@ html:not(.dark) #peptopia-klimek-guide .home-card[data-section="endocompare"] .h
 html:not(.dark) #peptopia-klimek-guide .home-card[data-section="infctrl"] .home-card-desc{color:#3d2200 !important}
 html:not(.dark) #peptopia-klimek-guide .home-card[data-section="priority"] .home-card-desc{color:#7f1d1d !important}
 html:not(.dark) #peptopia-klimek-guide .home-card[data-section="fluids"] .home-card-desc{color:#164e63 !important}
+html:not(.dark) #peptopia-klimek-guide .home-card[data-section="cardiac"] .home-card-desc{color:#4c0519 !important}
 /* Hide quiz button label text on narrow cards */
 @media(max-width:540px){#peptopia-klimek-guide .quiz-btn .q-label{display:none}}
 /* Enforce 2-line max on card descriptors */
@@ -106,6 +107,7 @@ obmatnb:       {bg:'#ecf7f2',accent:'#2d6b55',dk:'#0f2e24',lt:'#c8e6d8',hf:'#d5e
 infctrl:       {bg:'#fdf8ef',accent:'#8b5e0f',dk:'#3d2200',lt:'#fdf0d5',hf:'#f8e8c8',ht:'#f0d8a8'},
 priority:      {bg:'#fef2f2',accent:'#dc2626',dk:'#7f1d1d',lt:'#fecaca',hf:'#fecdd3',ht:'#fda4af'},
 fluids:        {bg:'#ecfeff',accent:'#0891b2',dk:'#164e63',lt:'#a5f3fc',hf:'#cffafe',ht:'#67e8f9'},
+cardiac:       {bg:'#fff1f2',accent:'#e11d48',dk:'#4c0519',lt:'#fecdd3',hf:'#ffe4e6',ht:'#fda4af'},
 yellowfever:   {bg:'#fffbeb',accent:'#b45309',dk:'#78350f',lt:'#fef3c7',hf:'#fef3c7',ht:'#fde68a'},
 comprehensive: {bg:'#f5f3ff',accent:'#6d28d9',dk:'#4c1d95',lt:'#ede9fe',hf:'#ede9fe',ht:'#ddd6fe'},
 comprehensive2:{bg:'#faf5ff',accent:'#7e22ce',dk:'#581c87',lt:'#f3e8ff',hf:'#f3e8ff',ht:'#e9d5ff'},
@@ -1307,11 +1309,18 @@ var fluidsCard = '<div class="home-card" data-section="fluids" style="animation-
 '<div class="home-card-footer">' +
 '<button class="home-card-btn study-btn" style="background:#166534;color:#fff;" onclick="event.stopPropagation(); openFluidsGuide();"><span class="quiz-icon">\uD83D\uDCD6</span> Go</button>' +
 '<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchFluidsQuiz();"><span class="quiz-icon">\uD83E\uDDE0</span><span class="q-label"> 100 Questions</span></button></div></div>';
+var cardiacCard = '<div class="home-card" data-section="cardiac" style="animation-delay:' + ((idx + 3.5) * 0.04) + 's; border-color:#e11d48;" onclick="openCardiacGuide()">' +
+'<div class="home-card-header" style="background-color:#fecdd3; color:#4c0519;">' +
+'<span class="home-card-emoji">\u2764\uFE0F</span><span>Cardiac &amp; Hemodynamics</span></div>' +
+'<div class="home-card-body"><div class="home-card-desc" style="color:#fecdd3;">HF, CAD, MI, dysrhythmias, hemodynamic monitoring &amp; cardiac pharmacology.</div></div>' +
+'<div class="home-card-footer">' +
+'<button class="home-card-btn study-btn" style="background:#166534;color:#fff;" onclick="event.stopPropagation(); openCardiacGuide();"><span class="quiz-icon">\uD83D\uDCD6</span> Go</button>' +
+'<button class="home-card-btn quiz-btn" onclick="event.stopPropagation(); launchCardiacQuiz();"><span class="quiz-icon">\uD83E\uDDE0</span><span class="q-label"> 100 Questions</span></button></div></div>';
 var foundationsHtml = '';
 for (var fi = 0; fi < GROUPS.foundations.length; fi++) {
 var fkey = GROUPS.foundations[fi];
 if (foundCards[fkey]) foundationsHtml += foundCards[fkey];
-if (fkey === 'workpharm') foundationsHtml += infCtrlCard + priorityCard + fluidsCard;
+if (fkey === 'workpharm') foundationsHtml += infCtrlCard + priorityCard + fluidsCard + cardiacCard;
 }
 document.getElementById('home-grid-systems').innerHTML = '<div class="klimek-banner">\uD83C\uDFE5 Systems</div>' + systemsHtml;
 var yfCard = '<div class="home-card" data-section="yellowfever" style="animation-delay:' + (idx * 0.04) + 's; border-color:var(--amber-800);" onclick="launchYellowFeverQuiz()">' +
@@ -2289,6 +2298,12 @@ initQuizUI('Fluid & Electrolytes Quiz', 'fluids');
 window.openFluidsGuide = function() {
 openGuideHtml('Guides/Fluid-Electrolytes.html');
 };
+window.launchCardiacQuiz = function() {
+initQuizUI('Cardiac & Hemodynamics Quiz', 'cardiac');
+};
+window.openCardiacGuide = function() {
+openGuideHtml('Guides/Cardiac-Hemodynamics.html');
+};
 window.launchSection = function(key) {
 if (key === 'fullexam') { showFullExam(); return; }
 if (key === 'yellowfever') { launchYellowFeverQuiz(); return; }
@@ -2300,6 +2315,7 @@ if (key === 'obmatnb') { launchObMatNbQuiz(); return; }
 if (key === 'infctrl') { launchInfCtrlQuiz(); return; }
 if (key === 'priority') { launchPriorityQuiz(); return; }
 if (key === 'fluids') { launchFluidsQuiz(); return; }
+if (key === 'cardiac') { launchCardiacQuiz(); return; }
 if (contentData[key]) { switchTab(key); setTimeout(startQuiz, 120); }
 };
 function showQuestion() {
@@ -2597,7 +2613,8 @@ categories: [
 { title: 'OB Mat-Newborn', file: 'Guides/OB-Maternal-Newborn.html', emoji: '\uD83D\uDC76', isHtml: true },
 { title: 'Infection Control', file: 'Guides/Infection-Control-Safety.html', emoji: '\uD83E\uDDA0', isHtml: true },
 { title: 'Prioritization', file: 'Guides/Prioritization.html', emoji: '\uD83D\uDEA8', isHtml: true },
-{ title: 'Fluid & Electrolytes', file: 'Guides/Fluid-Electrolytes.html', emoji: '\uD83D\uDCA7', isHtml: true }
+{ title: 'Fluid & Electrolytes', file: 'Guides/Fluid-Electrolytes.html', emoji: '\uD83D\uDCA7', isHtml: true },
+{ title: 'Cardiac & Hemodynamics', file: 'Guides/Cardiac-Hemodynamics.html', emoji: '\u2764\uFE0F', isHtml: true }
 ]},
 { name: 'Quick Reference', icon: '\uD83D\uDCCC', items: [
 { title: 'Eponymns', file: 'Eponymns.pdf', emoji: '\uD83C\uDFF7\uFE0F' },

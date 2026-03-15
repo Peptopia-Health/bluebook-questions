@@ -1,0 +1,1102 @@
+[
+  {
+    "q": "The SA node fires at a rate of 60\u2013100 bpm. If it fails, which structure takes over as the secondary pacemaker?",
+    "options": [
+      "Bundle of His",
+      "Purkinje fibers (20\u201340 bpm)",
+      "AV node (40\u201360 bpm)",
+      "Right bundle branch"
+    ],
+    "correct": 2,
+    "rationale": "The AV node is the backup pacemaker with an intrinsic rate of 40\u201360 bpm. If both SA and AV nodes fail, the ventricles (Bundle of His/Purkinje fibers) can generate an escape rhythm at 20\u201340 bpm, often too slow to maintain adequate cardiac output."
+  },
+  {
+    "q": "A nurse interprets an ECG and notes a PR interval of 0.28 seconds with regular rhythm. This finding indicates:",
+    "options": [
+      "Normal sinus rhythm",
+      "First-degree AV block",
+      "Second-degree Type I (Wenckebach)",
+      "Third-degree heart block"
+    ],
+    "correct": 1,
+    "rationale": "Normal PR interval is <span class=\"hl-lyte\">0.12\u20130.20 sec</span>. A PR of <span class=\"hl-lyte\">0.28 sec</span> is prolonged but constant, which defines first-degree AV block. It is usually benign and requires monitoring only. Wenckebach shows progressively lengthening PR before a dropped beat."
+  },
+  {
+    "q": "Which ECG finding is MOST specific for an acute ST-elevation myocardial infarction (STEMI)?",
+    "options": [
+      "ST segment elevation in contiguous leads",
+      "Flattened T waves",
+      "Prolonged QT interval",
+      "Sinus tachycardia"
+    ],
+    "correct": 0,
+    "rationale": "ST elevation in two or more contiguous leads is the hallmark of acute STEMI \u2014 it indicates transmural (full-thickness) myocardial injury. Flattened T waves suggest hypokalemia. Prolonged QT suggests hypocalcemia or drug effect. Tachycardia is nonspecific."
+  },
+  {
+    "q": "A patient's ECG shows no identifiable P waves and an irregularly irregular rhythm. The nurse recognizes this as:",
+    "options": [
+      "Atrial flutter",
+      "Atrial fibrillation",
+      "Ventricular tachycardia",
+      "Third-degree heart block"
+    ],
+    "correct": 1,
+    "rationale": "Atrial fibrillation (A-fib) is characterized by absent P waves (chaotic atrial activity) and an irregularly irregular ventricular response. Flutter shows sawtooth P waves. V-tach has wide QRS. Third-degree has P waves marching independently of QRS."
+  },
+  {
+    "q": "Which component of cardiac output represents the resistance the left ventricle must overcome to eject blood?",
+    "options": [
+      "Preload",
+      "Stroke volume",
+      "Contractility",
+      "Afterload"
+    ],
+    "correct": 3,
+    "rationale": "Afterload is the resistance (pressure) the ventricles pump against to eject blood \u2014 primarily determined by systemic vascular resistance (SVR) and aortic pressure. Preload is volume/stretch. Contractility is force of contraction. Stroke volume is the result."
+  },
+  {
+    "q": "According to the Frank-Starling law, increased venous return initially causes:",
+    "options": [
+      "Decreased heart rate",
+      "Decreased cardiac output",
+      "Increased stroke volume due to greater myocardial fiber stretch",
+      "Immediate heart failure"
+    ],
+    "correct": 2,
+    "rationale": "Frank-Starling: increased preload (venous return) stretches myocardial fibers, producing a stronger contraction and increased stroke volume \u2014 up to a physiological limit. Beyond that point (severe HF), overstretched fibers weaken and CO decreases."
+  },
+  {
+    "q": "A nurse notes tall, peaked T waves on a patient's ECG. Which lab value should be checked FIRST?",
+    "options": [
+      "<span class=\"hl-lyte\">Calcium</span> level",
+      "<span class=\"hl-lyte\">Sodium</span> level",
+      "<span class=\"hl-lyte\">Potassium</span> level",
+      "Troponin level"
+    ],
+    "correct": 2,
+    "rationale": "Tall, peaked T waves are the earliest ECG change of hyperkalemia. The nurse should check <span class=\"hl-lyte\">K+</span> immediately. Progression: peaked T \u2192 flattened P \u2192 widened QRS \u2192 sine wave \u2192 V-fib/asystole. Hypercalcemia shortens QT. Hypokalemia shows flat T and U waves."
+  },
+  {
+    "q": "A patient is on continuous telemetry. The rhythm shows a regular rate of <span class=\"hl-lyte\">180 bpm</span> with narrow QRS complexes and sudden onset. The nurse anticipates:",
+    "options": [
+      "Administering <span class=\"hl-drug\">amiodarone</span> IV",
+      "Administering <span class=\"hl-drug\">atropine</span> IV",
+      "Immediate defibrillation",
+      "Attempting vagal maneuvers followed by <span class=\"hl-drug\">adenosine</span> rapid IV push"
+    ],
+    "correct": 3,
+    "rationale": "Narrow-complex tachycardia at <span class=\"hl-lyte\">180 bpm</span> with sudden onset is supraventricular tachycardia (SVT). First-line: vagal maneuvers (Valsalva, carotid massage). If unsuccessful: <span class=\"hl-drug\">adenosine</span> 6 mg rapid IV push (1\u20132 seconds) with rapid NS flush. <span class=\"hl-drug\">Amiodarone</span> is for V-tach."
+  },
+  {
+    "q": "The QT interval on an ECG represents:",
+    "options": [
+      "Atrial depolarization and repolarization",
+      "Total ventricular depolarization and repolarization",
+      "AV conduction delay time",
+      "Atrial contraction only"
+    ],
+    "correct": 1,
+    "rationale": "The QT interval measures the total time for ventricular depolarization AND repolarization \u2014 from the start of the QRS to the end of the T wave. Normal: <span class=\"hl-lyte\">0.36\u20130.44 sec</span>. Prolonged QT increases risk of torsades de pointes. The PR interval reflects AV conduction."
+  },
+  {
+    "q": "A patient's ECG shows P waves with no relationship to QRS complexes, and the ventricular rate is 32 bpm. This rhythm is:",
+    "options": [
+      "Second-degree Type I (Wenckebach)",
+      "Second-degree Type II",
+      "Sinus bradycardia",
+      "Third-degree (complete) heart block"
+    ],
+    "correct": 3,
+    "rationale": "In third-degree (complete) heart block, the atria and ventricles beat independently \u2014 P waves march at their own rate, QRS complexes at theirs, with NO relationship between them. The slow ventricular rate (32 bpm) indicates a ventricular escape rhythm. Requires immediate pacing."
+  },
+  {
+    "q": "A nurse is educating a patient about cardiac output. Which formula is CORRECT?",
+    "options": [
+      "CO = Blood Pressure \u00d7 Heart Rate",
+      "CO = Heart Rate \u00d7 Stroke Volume",
+      "CO = Preload \u00d7 Afterload",
+      "CO = MAP \u00f7 SVR"
+    ],
+    "correct": 1,
+    "rationale": "Cardiac Output = Heart Rate \u00d7 Stroke Volume (CO = HR \u00d7 SV). Normal CO is 4\u20138 L/min. SV is influenced by preload, afterload, and contractility. MAP = CO \u00d7 SVR (not the formula for CO itself)."
+  },
+  {
+    "q": "ST segment depression on an ECG indicates:",
+    "options": [
+      "Acute transmural MI",
+      "Normal variant",
+      "Pericarditis",
+      "Myocardial ischemia (subendocardial injury)"
+    ],
+    "correct": 3,
+    "rationale": "ST depression indicates myocardial ischemia \u2014 the subendocardial layer is not receiving adequate oxygen. ST ELEVATION indicates acute transmural (full-thickness) injury/infarction. Pericarditis shows diffuse ST elevation with PR depression. Ischemia is reversible; infarction is not."
+  },
+  {
+    "q": "A patient with left-sided heart failure is MOST likely to present with:",
+    "options": [
+      "JVD and peripheral edema",
+      "Ascites and hepatomegaly",
+      "Crackles, dyspnea, and orthopnea",
+      "Right upper quadrant pain"
+    ],
+    "correct": 2,
+    "rationale": "Left-sided HF \u2192 blood backs up into the LUNGS \u2192 pulmonary congestion: crackles/rales, dyspnea, orthopnea (can't breathe lying flat), cough (frothy, possibly pink-tinged), fatigue. Remember: Left = Lung. JVD, edema, ascites, and hepatomegaly are RIGHT-sided HF signs."
+  },
+  {
+    "q": "The nurse hears an S3 heart sound in a patient with heart failure. This indicates:",
+    "options": [
+      "Volume overload \u2014 blood rushing into a dilated ventricle",
+      "Valvular stenosis",
+      "Normal finding in all adults",
+      "Pericardial friction rub"
+    ],
+    "correct": 0,
+    "rationale": "S3 gallop (ventricular gallop) occurs when blood rushes into an overfilled, dilated ventricle during early diastole. It is pathological in adults and indicates volume overload/HF. S3 sounds like 'Ken-TUCK-y' (S1-S2-S3). S4 indicates a stiff ventricle (HTN, LVH)."
+  },
+  {
+    "q": "A patient with HF reports gaining 4 pounds in 2 days. The nurse should:",
+    "options": [
+      "Encourage increased physical activity",
+      "Reassure the patient that weight fluctuations are normal",
+      "Notify the provider \u2014 this indicates fluid retention requiring intervention",
+      "Increase sodium intake to improve appetite"
+    ],
+    "correct": 2,
+    "rationale": "Weight gain of >2 lbs/day or >5 lbs/week in HF indicates fluid retention requiring intervention (diuretic adjustment, fluid restriction). 1 L fluid \u2248 2.2 lbs. The provider must be notified for medication adjustment. Sodium should be RESTRICTED in HF."
+  },
+  {
+    "q": "A patient's BNP level is <span class=\"hl-lyte\">850 pg/mL</span>. The nurse interprets this as:",
+    "options": [
+      "Significantly elevated \u2014 consistent with heart failure",
+      "Normal \u2014 no cardiac dysfunction",
+      "Indicative of acute MI rather than HF",
+      "A sign of dehydration"
+    ],
+    "correct": 0,
+    "rationale": "BNP (B-type natriuretic peptide) > <span class=\"hl-lyte\">100 pg/mL</span> suggests HF. A level of <span class=\"hl-lyte\">850</span> is significantly elevated, indicating moderate-to-severe heart failure. BNP is released when ventricular walls are stretched. Higher values = worse HF. BNP helps differentiate cardiac from pulmonary causes of dyspnea."
+  },
+  {
+    "q": "Which medication combination is standard first-line therapy for HFrEF (systolic heart failure)?",
+    "options": [
+      "ACE inhibitor (<span class=\"hl-drug\">lisinopril</span>) + beta-blocker (<span class=\"hl-drug\">carvedilol</span>) + diuretic (<span class=\"hl-drug\">furosemide</span>)",
+      "<span class=\"hl-drug\">Digoxin</span> + <span class=\"hl-drug\">nifedipine</span>",
+      "<span class=\"hl-drug\">Aspirin</span> + <span class=\"hl-drug\">clopidogrel</span>",
+      "<span class=\"hl-drug\">Amiodarone</span> + <span class=\"hl-drug\">verapamil</span>"
+    ],
+    "correct": 0,
+    "rationale": "Guideline-directed medical therapy for HFrEF includes: (1) ACE-I or ARB (\u2193 afterload, prevent remodeling), (2) Beta-blocker (<span class=\"hl-drug\">carvedilol</span> or <span class=\"hl-drug\">metoprolol succinate</span> \u2014 \u2193 HR, prevent remodeling), (3) Diuretic (manage fluid). <span class=\"hl-drug\">Spironolactone</span> and SGLT2 inhibitors are also recommended."
+  },
+  {
+    "q": "The nurse positions a patient with acute pulmonary edema in which position?",
+    "options": [
+      "High Fowler's (upright, legs dangling over bedside)",
+      "Supine with legs elevated",
+      "Prone position",
+      "Left lateral Trendelenburg"
+    ],
+    "correct": 0,
+    "rationale": "High Fowler's with legs dangling reduces venous return (preload), decreases pulmonary congestion, and maximizes lung expansion. This is the priority position for acute pulmonary edema. Supine worsens congestion. Trendelenburg increases preload."
+  },
+  {
+    "q": "A nurse is teaching about sodium restriction in HF. Which patient statement indicates understanding?",
+    "options": [
+      "'I should limit my sodium to less than 2 grams per day and read food labels carefully'",
+      "'I can use salt substitutes freely since they don't contain sodium'",
+      "'I only need to restrict sodium when I feel short of breath'",
+      "'Canned soups are fine as long as I choose low-fat varieties'"
+    ],
+    "correct": 0,
+    "rationale": "HF patients should restrict sodium to <2 g/day (or as ordered). They must read ALL food labels \u2014 many processed, canned, and restaurant foods are high in sodium regardless of fat content. Salt substitutes contain potassium chloride and should be used cautiously (hyperkalemia risk with ACE-I/ARBs)."
+  },
+  {
+    "q": "Right-sided heart failure is MOST commonly caused by:",
+    "options": [
+      "Hypertension",
+      "Aortic stenosis",
+      "Pulmonary embolism",
+      "Left-sided heart failure"
+    ],
+    "correct": 3,
+    "rationale": "Left-sided HF \u2192 blood backs up into pulmonary vasculature \u2192 \u2191 pulmonary pressure \u2192 right ventricle must pump against higher resistance \u2192 right-sided HF. While PE and pulmonary HTN can cause isolated right HF, the MOST common cause is pre-existing left-sided failure."
+  },
+  {
+    "q": "A patient with HF is taking <span class=\"hl-drug\">furosemide</span> daily. Which lab value requires the nurse's IMMEDIATE attention?",
+    "options": [
+      "<span class=\"hl-lyte\">BUN 18 mg/dL</span>",
+      "<span class=\"hl-lyte\">Na+ 140 mEq/L</span>",
+      "<span class=\"hl-lyte\">K+ 2.9 mEq/L</span>",
+      "<span class=\"hl-lyte\">Creatinine 1.0 mg/dL</span>"
+    ],
+    "correct": 2,
+    "rationale": "A <span class=\"hl-lyte\">K+ of 2.9</span> is critically low (hypokalemia) \u2014 <span class=\"hl-drug\">furosemide</span> (loop diuretic) depletes potassium. Severe hypokalemia causes fatal dysrhythmias and potentiates <span class=\"hl-drug\">digoxin</span> toxicity. The nurse must notify the provider immediately for potassium replacement. The other values are normal."
+  },
+  {
+    "q": "Which assessment finding differentiates left-sided from right-sided heart failure?",
+    "options": [
+      "Tachycardia",
+      "Weight gain",
+      "Fatigue",
+      "Crackles on lung auscultation (left) vs. JVD and peripheral edema (right)"
+    ],
+    "correct": 3,
+    "rationale": "Crackles indicate pulmonary congestion (LEFT-sided backup). JVD and peripheral edema indicate systemic venous congestion (RIGHT-sided backup). Tachycardia, fatigue, and weight gain occur in both types. Distinguishing the two guides treatment priorities."
+  },
+  {
+    "q": "HFpEF (diastolic heart failure) is characterized by:",
+    "options": [
+      "Ejection fraction <40% with a weakened, dilated ventricle",
+      "Ejection fraction \u226550% with a stiff ventricle that cannot fill properly",
+      "Complete absence of cardiac contraction",
+      "Chronic atrial fibrillation only"
+    ],
+    "correct": 1,
+    "rationale": "HFpEF (Heart Failure with Preserved Ejection Fraction) = the ventricle contracts normally (EF \u226550%) but is STIFF and cannot relax/fill properly during diastole. Common in elderly patients with HTN, LVH, or diabetes. Treatment focuses on controlling HR, BP, and fluid volume."
+  },
+  {
+    "q": "A nurse is caring for a patient with acute decompensated HF. Which assessment takes HIGHEST priority?",
+    "options": [
+      "Measuring abdominal girth for ascites",
+      "Auscultating lung sounds and assessing respiratory status",
+      "Checking pedal pulses bilaterally",
+      "Obtaining a dietary history"
+    ],
+    "correct": 1,
+    "rationale": "In acute decompensated HF, the primary threat is pulmonary edema \u2192 respiratory failure. ABCs take priority: assess respiratory status (crackles, SpO\u2082, respiratory rate, work of breathing), position upright, prepare for oxygen and diuretics. Ascites and pedal pulses are important but not immediately life-threatening."
+  },
+  {
+    "q": "A patient with HF is prescribed <span class=\"hl-drug\">spironolactone</span>. The nurse should monitor closely for:",
+    "options": [
+      "Hypokalemia",
+      "Hypocalcemia",
+      "Hyperkalemia",
+      "Hypernatremia"
+    ],
+    "correct": 2,
+    "rationale": "<span class=\"hl-drug\">Spironolactone</span> is a potassium-SPARING diuretic (aldosterone antagonist). It retains K\u207a \u2192 hyperkalemia risk. This risk is compounded if the patient also takes an ACE-I or ARB. Monitor K\u207a regularly and teach patient to avoid salt substitutes (contain KCl) and potassium supplements."
+  },
+  {
+    "q": "A patient presents with substernal chest pain that began 30 minutes ago, is not relieved by rest, and is accompanied by diaphoresis and nausea. The nurse suspects:",
+    "options": [
+      "Unstable angina or acute MI",
+      "Stable angina",
+      "GERD (gastroesophageal reflux)",
+      "Musculoskeletal chest pain"
+    ],
+    "correct": 0,
+    "rationale": "Chest pain >15 minutes, not relieved by rest or NTG, with diaphoresis and nausea = classic acute coronary syndrome (unstable angina or MI). Stable angina resolves with rest/NTG in <5 minutes. GERD and musculoskeletal pain don't typically cause diaphoresis or nausea with exertional characteristics."
+  },
+  {
+    "q": "In acute MI management, <span class=\"hl-drug\">aspirin</span> should be administered how?",
+    "options": [
+      "Swallowed whole with a full glass of water",
+      "Chewed immediately (162\u2013325 mg) for rapid absorption",
+      "Given IV for fastest onset",
+      "Crushed and mixed with food"
+    ],
+    "correct": 1,
+    "rationale": "In acute MI, <span class=\"hl-drug\">aspirin</span> 162\u2013325 mg should be CHEWED (not swallowed whole) for rapid buccal absorption. Chewing releases the drug faster than waiting for GI absorption. Aspirin inhibits platelet aggregation, reducing thrombus extension. This is one of the first interventions \u2014 even before the ECG in some protocols."
+  },
+  {
+    "q": "Which cardiac biomarker is the GOLD STANDARD for diagnosing acute myocardial infarction?",
+    "options": [
+      "CK-MB",
+      "BNP",
+      "Myoglobin",
+      "Troponin I or T"
+    ],
+    "correct": 3,
+    "rationale": "Troponin (I or T) is the most specific and sensitive marker for myocardial injury. It rises within 3\u20136 hours, peaks at 12\u201324 hours, and remains elevated for 7\u201314 days. Serial troponins (0h, 3h, 6h) confirm or rule out MI. CK-MB helps detect reinfarction. BNP diagnoses HF, not MI."
+  },
+  {
+    "q": "A nurse administers <span class=\"hl-drug\">nitroglycerin</span> SL to a patient with chest pain. After 3 doses at 5-minute intervals, the pain persists. What is the NEXT action?",
+    "options": [
+      "Notify the provider and prepare for cardiac catheterization or further intervention",
+      "Administer a 4th dose and wait",
+      "Have the patient perform deep breathing exercises",
+      "Administer an antacid to rule out GERD"
+    ],
+    "correct": 0,
+    "rationale": "If chest pain is not relieved after 3 <span class=\"hl-drug\">NTG</span> doses at 5-minute intervals, this suggests more than simple angina \u2014 likely acute MI. Notify the provider immediately for further intervention (morphine, cardiac cath, thrombolytics). Current AHA guidelines recommend calling 911 if pain persists after the FIRST NTG dose."
+  },
+  {
+    "q": "<span class=\"hl-drug\">Nitroglycerin</span> is contraindicated if the patient has taken which medication within the past 24\u201348 hours?",
+    "options": [
+      "<span class=\"hl-drug\">Aspirin</span>",
+      "<span class=\"hl-drug\">Metoprolol</span>",
+      "<span class=\"hl-drug\">Sildenafil</span> (Viagra) or other PDE5 inhibitors",
+      "<span class=\"hl-drug\">Lisinopril</span>"
+    ],
+    "correct": 2,
+    "rationale": "PDE5 inhibitors (<span class=\"hl-drug\">sildenafil</span>, <span class=\"hl-drug\">tadalafil</span>) cause vasodilation. Combined with <span class=\"hl-drug\">NTG</span> (also a vasodilator), severe life-threatening hypotension can occur. Wait at least 24 hours after <span class=\"hl-drug\">sildenafil</span> or 48 hours after <span class=\"hl-drug\">tadalafil</span>. Always ask about PDE5 use before administering NTG."
+  },
+  {
+    "q": "The door-to-balloon time goal for PCI in a STEMI patient is:",
+    "options": [
+      "\u226430 minutes",
+      "\u226490 minutes",
+      "\u226460 minutes",
+      "\u2264120 minutes"
+    ],
+    "correct": 1,
+    "rationale": "For STEMI, the goal is door-to-balloon time \u226490 minutes for PCI (percutaneous coronary intervention). If PCI is not available, the door-to-needle time for fibrinolytics (tPA) should be \u226430 minutes. 'Time is muscle' \u2014 every minute of delay increases myocardial damage."
+  },
+  {
+    "q": "A patient develops a new systolic murmur 3 days after an MI. The nurse is MOST concerned about:",
+    "options": [
+      "Mitral valve prolapse",
+      "Aortic stenosis progression",
+      "Ventricular septal rupture or papillary muscle rupture",
+      "Pericardial effusion"
+    ],
+    "correct": 2,
+    "rationale": "A NEW murmur after MI is a red flag for mechanical complications: ventricular septal rupture (blood shunts L\u2192R through damaged septum) or papillary muscle rupture (acute mitral regurgitation). Both cause sudden hemodynamic deterioration and require urgent surgical intervention. This is a life-threatening emergency."
+  },
+  {
+    "q": "Dressler syndrome (post-MI pericarditis) typically presents with:",
+    "options": [
+      "Chest pain relieved by lying flat, with a pericardial friction rub",
+      "Chest pain relieved by leaning forward, with a pericardial friction rub",
+      "Bilateral leg edema and JVD",
+      "Hemoptysis and pleuritic pain"
+    ],
+    "correct": 1,
+    "rationale": "Dressler syndrome occurs 1\u20138 weeks post-MI: autoimmune pericarditis with chest pain RELIEVED by leaning FORWARD (worse lying flat), pericardial friction rub (scratchy, leathery sound), fever, and elevated ESR. Treatment: NSAIDs, colchicine. Not to be confused with recurrent MI."
+  },
+  {
+    "q": "Which is the #1 cause of death in the first 48 hours after acute MI?",
+    "options": [
+      "Dysrhythmias (especially ventricular fibrillation)",
+      "Cardiogenic shock",
+      "Heart failure",
+      "Pulmonary embolism"
+    ],
+    "correct": 0,
+    "rationale": "Lethal dysrhythmias (especially V-fib) are the leading cause of death in the first 48 hours post-MI. This is why all MI patients require continuous cardiac monitoring (telemetry) and why defibrillators must be immediately available. Cardiogenic shock is the leading in-hospital cause of death."
+  },
+  {
+    "q": "Troponin levels typically begin to rise within what timeframe after myocardial injury?",
+    "options": [
+      "Immediately (within minutes)",
+      "24\u201348 hours",
+      "3\u20136 hours",
+      "5\u20137 days"
+    ],
+    "correct": 2,
+    "rationale": "Troponin begins rising 3\u20136 hours after myocardial injury, peaks at 12\u201324 hours, and stays elevated for 7\u201314 days. A negative troponin at presentation does NOT rule out MI \u2014 serial measurements at 0, 3, and 6 hours are needed. High-sensitivity troponin assays can detect earlier."
+  },
+  {
+    "q": "A nurse is preparing to administer <span class=\"hl-drug\">alteplase</span> (tPA) for acute STEMI. Which is a CONTRAINDICATION?",
+    "options": [
+      "Chest pain onset 2 hours ago",
+      "Blood pressure <span class=\"hl-lyte\">150/95 mmHg</span>",
+      "History of stable angina",
+      "Active internal bleeding or recent hemorrhagic stroke"
+    ],
+    "correct": 3,
+    "rationale": "Absolute contraindications for thrombolytics include: active internal bleeding, recent hemorrhagic stroke, intracranial neoplasm, and aortic dissection. A BP of <span class=\"hl-lyte\">150/95</span> is a relative concern (severe uncontrolled HTN > <span class=\"hl-lyte\">180/110</span> is contraindicated). Recent onset and prior angina are not contraindications."
+  },
+  {
+    "q": "A patient 6 hours post-cardiac catheterization reports numbness and tingling in the affected leg. The nurse should FIRST:",
+    "options": [
+      "Elevate the leg above heart level",
+      "Apply warm compresses to the leg",
+      "Assess the insertion site and distal pulses (5 P's: pain, pallor, pulselessness, paresthesia, poikilothermia)",
+      "Encourage ambulation to improve circulation"
+    ],
+    "correct": 2,
+    "rationale": "Post-cath numbness/tingling (paresthesia) may indicate arterial occlusion at the puncture site. Assess the 5 P's: Pain, Pallor, Pulselessness, Paresthesia, Poikilothermia (coolness). Check distal pulses and compare to the unaffected extremity. Notify provider immediately if compromised. Keep leg straight and flat."
+  },
+  {
+    "q": "Women experiencing an acute MI are MOST likely to present with which atypical symptoms?",
+    "options": [
+      "Fatigue, indigestion, shortness of breath, or back/jaw pain without classic chest pain",
+      "Crushing substernal chest pain radiating to the left arm",
+      "Sudden onset of unilateral weakness",
+      "Sharp pleuritic chest pain that worsens with inspiration"
+    ],
+    "correct": 0,
+    "rationale": "Women (and diabetics) often present atypically: fatigue, shortness of breath, indigestion/nausea, back pain, jaw pain, or general malaise WITHOUT classic crushing chest pain. This leads to delayed diagnosis and treatment. Nurses must recognize atypical presentations \u2014 don't dismiss vague symptoms."
+  },
+  {
+    "q": "A patient in the ICU develops ventricular fibrillation. What is the FIRST action?",
+    "options": [
+      "Administer <span class=\"hl-drug\">epinephrine</span> 1 mg IV",
+      "Administer <span class=\"hl-drug\">amiodarone</span> 300 mg IV",
+      "Administer <span class=\"hl-drug\">atropine</span> 0.5 mg IV",
+      "Begin CPR and defibrillate as soon as possible"
+    ],
+    "correct": 3,
+    "rationale": "V-fib is a SHOCKABLE rhythm. The priority: (1) Call for help, (2) Start CPR immediately, (3) Defibrillate ASAP. Medications (epinephrine, amiodarone) are given AFTER initial defibrillation and CPR cycles. Atropine is for bradycardia, not V-fib. Early defibrillation is the single most important intervention for V-fib survival."
+  },
+  {
+    "q": "Which rhythm should NEVER be defibrillated?",
+    "options": [
+      "Ventricular fibrillation",
+      "Asystole",
+      "Pulseless ventricular tachycardia",
+      "Unstable SVT"
+    ],
+    "correct": 1,
+    "rationale": "Asystole (flatline) is NOT a shockable rhythm \u2014 there is no electrical activity to 'reset.' Shocking asystole is futile and wastes time. Treatment: high-quality CPR + epinephrine q3-5min + identify and treat reversible causes (H's and T's). Always confirm true asystole in multiple leads."
+  },
+  {
+    "q": "A patient with symptomatic bradycardia (HR 38, hypotensive, dizzy) is ordered atropine. The nurse knows atropine works by:",
+    "options": [
+      "Stimulating the sympathetic nervous system directly",
+      "Dilating coronary arteries to increase blood flow",
+      "Directly stimulating cardiac muscle contraction",
+      "Blocking the vagus nerve (parasympathetic), allowing heart rate to increase"
+    ],
+    "correct": 3,
+    "rationale": "<span class=\"hl-drug\">Atropine</span> is an anticholinergic/parasympatholytic \u2014 it blocks the vagus nerve's slowing effect on the heart, allowing the sympathetic system to increase heart rate. Dose: 0.5\u20131 mg IV q3-5 min (max 3 mg). Note: <span class=\"hl-drug\">atropine</span> is NOT effective for Type II second-degree or third-degree heart block \u2014 these need pacing."
+  },
+  {
+    "q": "A nurse is administering <span class=\"hl-drug\">adenosine</span> for SVT. Which technique is CRITICAL for proper administration?",
+    "options": [
+      "Rapid IV push over 1\u20132 seconds followed by immediate 20 mL NS flush",
+      "Infuse slowly over 10 minutes via IV pump",
+      "Administer IM in the deltoid for sustained effect",
+      "Mix with D5W and infuse over 30 minutes"
+    ],
+    "correct": 0,
+    "rationale": "<span class=\"hl-drug\">Adenosine</span> has an ultra-short half-life (~6 seconds). It MUST be given as a rapid IV push (1\u20132 seconds) through the port CLOSEST to the heart, immediately followed by a rapid NS flush. Use a two-syringe technique with a stopcock. Warn the patient: they may experience brief asystole ('feeling of doom')."
+  },
+  {
+    "q": "The PRIMARY reason for anticoagulating patients with atrial fibrillation is:",
+    "options": [
+      "To prevent ventricular tachycardia",
+      "To prevent thrombus formation in the atria \u2192 stroke prevention",
+      "To control the ventricular rate",
+      "To convert the rhythm back to normal sinus"
+    ],
+    "correct": 1,
+    "rationale": "In A-fib, the atria quiver ineffectively \u2192 blood pools and stagnates \u2192 clots form (especially in the left atrial appendage). If a clot dislodges, it travels to the brain \u2192 ischemic stroke. Anticoagulation prevents clot formation. Rate control and rhythm conversion are separate goals."
+  },
+  {
+    "q": "A patient with A-fib is scheduled for elective cardioversion. The nurse knows that anticoagulation therapy should have been maintained for at least:",
+    "options": [
+      "24 hours",
+      "1 week",
+      "3 weeks before cardioversion",
+      "There is no anticoagulation requirement"
+    ],
+    "correct": 2,
+    "rationale": "Before elective cardioversion for A-fib lasting >48 hours, the patient must be anticoagulated for at least 3 weeks to dissolve any existing atrial clots. Alternative: perform a transesophageal echocardiogram (TEE) to rule out clots first. Cardioverting with a clot present \u2192 stroke."
+  },
+  {
+    "q": "Second-degree AV block Type II is differentiated from Type I (Wenckebach) by:",
+    "options": [
+      "A constant PR interval with sudden, unexpected dropped QRS complexes",
+      "A gradually lengthening PR interval before the dropped beat",
+      "An irregularly irregular rhythm with no P waves",
+      "Complete dissociation of P waves and QRS complexes"
+    ],
+    "correct": 0,
+    "rationale": "Type II: PR interval is CONSTANT, then suddenly a QRS is dropped without warning. This is more dangerous than Type I because it can progress to complete heart block without warning. Type I (Wenckebach) shows progressive PR lengthening ('longer, longer, longer, DROP'). Type II always needs a pacemaker."
+  },
+  {
+    "q": "A nurse is caring for a patient with a new permanent pacemaker. Which teaching is MOST important?",
+    "options": [
+      "'Avoid MRI scans (unless pacemaker is MRI-conditional), and carry your pacemaker ID card at all times'",
+      "'You can use microwave ovens normally; they do not interfere with pacemakers'",
+      "'You should avoid all physical activity permanently'",
+      "'The pacemaker battery never needs to be replaced'"
+    ],
+    "correct": 0,
+    "rationale": "Pacemaker patients should: carry ID card, avoid strong electromagnetic fields (some MRIs, arc welding), notify TSA at airports, report signs of malfunction (dizziness, syncope, hiccups). Modern pacemakers are NOT affected by microwaves. Moderate activity is encouraged. Batteries last 5\u201315 years and do require replacement."
+  },
+  {
+    "q": "A patient with unstable tachycardia (wide-complex, with a pulse, BP dropping) requires:",
+    "options": [
+      "Vagal maneuvers and observation",
+      "<span class=\"hl-drug\">Adenosine</span> 6 mg rapid IV push",
+      "Synchronized cardioversion",
+      "Immediate defibrillation"
+    ],
+    "correct": 2,
+    "rationale": "Unstable tachycardia (hemodynamic compromise: hypotension, altered LOC, chest pain, acute HF) requires SYNCHRONIZED cardioversion regardless of whether the rhythm is narrow or wide complex. Synchronization avoids delivering a shock during the vulnerable T wave period. Sedate the patient first if conscious."
+  },
+  {
+    "q": "PEA (pulseless electrical activity) is treated with:",
+    "options": [
+      "Defibrillation immediately",
+      "CPR + epinephrine q3-5min + identify and treat reversible causes",
+      "Vagal maneuvers",
+      "Observation and reassessment"
+    ],
+    "correct": 1,
+    "rationale": "PEA shows organized electrical activity on the monitor but produces NO pulse. It is NOT shockable. Treatment: CPR + epinephrine q3-5 min + aggressively search for and treat reversible causes (H's and T's: Hypovolemia, Hypoxia, Hydrogen ions, Hypo/Hyperkalemia, Hypothermia, Tension pneumo, Tamponade, Toxins, Thrombosis)."
+  },
+  {
+    "q": "Which dysrhythmia is described as 'irregularly irregular with no discernible P waves'?",
+    "options": [
+      "Atrial fibrillation",
+      "Sinus arrhythmia",
+      "Atrial flutter",
+      "Second-degree AV block Type I"
+    ],
+    "correct": 0,
+    "rationale": "Atrial fibrillation is THE 'irregularly irregular' rhythm with no distinct P waves \u2014 the atria fire chaotically (350\u2013600 impulses/min) producing a fibrillatory baseline. Flutter has regular 'sawtooth' P waves. Sinus arrhythmia varies with respiration. Wenckebach is grouped beating pattern."
+  },
+  {
+    "q": "For a patient in pulseless V-tach, after the second defibrillation attempt, the nurse should anticipate administering:",
+    "options": [
+      "<span class=\"hl-drug\">Atropine</span> 1 mg IV",
+      "<span class=\"hl-drug\">Diltiazem</span> 20 mg IV",
+      "<span class=\"hl-drug\">Adenosine</span> 6 mg rapid IV push",
+      "<span class=\"hl-drug\">Epinephrine</span> 1 mg IV + continue CPR"
+    ],
+    "correct": 3,
+    "rationale": "ACLS for pulseless V-tach/V-fib: Shock \u2192 CPR 2 min \u2192 Shock \u2192 CPR 2 min + <span class=\"hl-drug\">Epinephrine</span> 1 mg IV \u2192 Shock \u2192 CPR 2 min + <span class=\"hl-drug\">Amiodarone</span> 300 mg IV. <span class=\"hl-drug\">Epinephrine</span> is given after the second shock during CPR. <span class=\"hl-drug\">Atropine</span> is for bradycardia. <span class=\"hl-drug\">Adenosine</span> is for SVT."
+  },
+  {
+    "q": "A nurse identifies a rhythm with 'sawtooth' flutter waves at a rate of 300/min with a ventricular response of 150/min. This is:",
+    "options": [
+      "Atrial fibrillation",
+      "Ventricular tachycardia",
+      "Atrial flutter with 2:1 conduction",
+      "SVT"
+    ],
+    "correct": 2,
+    "rationale": "Sawtooth waves at ~300/min with a ventricular rate of 150/min = atrial flutter with 2:1 block (every other flutter wave conducts). Atrial flutter commonly conducts at 2:1, 3:1, or 4:1 ratios. A regular tachycardia at exactly 150 bpm should always raise suspicion for flutter with 2:1 block."
+  },
+  {
+    "q": "Torsades de pointes is MOST associated with which electrolyte abnormality?",
+    "options": [
+      "Hyperkalemia",
+      "Hypercalcemia",
+      "Hypernatremia",
+      "Hypomagnesemia and/or hypokalemia (prolonged QT)"
+    ],
+    "correct": 3,
+    "rationale": "Torsades de pointes ('twisting of the points') is a polymorphic V-tach associated with prolonged QT interval, most commonly caused by hypomagnesemia and/or hypokalemia. Treatment: IV <span class=\"hl-drug\">magnesium sulfate</span> bolus. Other causes of prolonged QT: medications (<span class=\"hl-drug\">amiodarone</span>, <span class=\"hl-drug\">haloperidol</span>, certain antibiotics), hypocalcemia."
+  },
+  {
+    "q": "A patient's hemodynamic readings show: CVP 14, PAWP 22, CO 2.8, SVR 2100. This is MOST consistent with:",
+    "options": [
+      "Hypovolemic shock",
+      "Cardiogenic shock",
+      "Septic shock (early/warm)",
+      "Neurogenic shock"
+    ],
+    "correct": 1,
+    "rationale": "\u2191 CVP (14) + \u2191 PAWP (22) + \u2193 CO (2.8) + \u2191 SVR (2100) = pump failure \u2192 cardiogenic shock. The heart can't eject blood effectively \u2192 backup pressures rise, output drops, and the body compensates with vasoconstriction (\u2191 SVR). Treatment: inotropes, IABP, treat cause."
+  },
+  {
+    "q": "In early (warm) septic shock, which hemodynamic finding is UNIQUE compared to other shock types?",
+    "options": [
+      "Decreased cardiac output",
+      "Increased cardiac output with decreased SVR (vasodilation)",
+      "Increased SVR (vasoconstriction)",
+      "Increased PAWP with pulmonary edema"
+    ],
+    "correct": 1,
+    "rationale": "Early/warm septic shock is unique: massive vasodilation (\u2193 SVR) causes the heart to compensate with \u2191 CO (hyperdynamic state). Patient is warm, flushed, with bounding pulses. This contrasts with all other shock types where CO is low. Late/cold sepsis \u2192 CO eventually drops as the heart fails."
+  },
+  {
+    "q": "CVP (Central Venous Pressure) primarily reflects:",
+    "options": [
+      "Left ventricular preload",
+      "Afterload (systemic vascular resistance)",
+      "Right ventricular preload (volume status)",
+      "Cardiac contractility"
+    ],
+    "correct": 2,
+    "rationale": "CVP measures pressure in the superior vena cava/right atrium, reflecting RIGHT heart preload (volume returning to the heart). Normal: 2\u20136 mmHg. \u2191 CVP = fluid overload or right HF. \u2193 CVP = hypovolemia. PAWP (wedge pressure) reflects LEFT heart preload."
+  },
+  {
+    "q": "PAWP (pulmonary artery wedge pressure) reflects:",
+    "options": [
+      "Right atrial pressure",
+      "Systemic vascular resistance",
+      "Pulmonary vascular resistance",
+      "Left atrial/left ventricular end-diastolic pressure (left preload)"
+    ],
+    "correct": 3,
+    "rationale": "PAWP (or PCWP) is measured by inflating the balloon on a PA catheter, 'wedging' it in a small pulmonary artery. This occludes forward flow, allowing the catheter to 'see through' to left atrial pressure. Normal: 8\u201312 mmHg. \u2191 PAWP = left HF, fluid overload. \u2193 PAWP = hypovolemia."
+  },
+  {
+    "q": "A patient's MAP is calculated at <span class=\"hl-lyte\">58 mmHg</span>. The nurse should:",
+    "options": [
+      "Notify the provider immediately \u2014 MAP <65 indicates inadequate organ perfusion",
+      "Continue routine monitoring \u2014 this is within normal limits",
+      "Increase the IV rate without a provider order",
+      "Elevate the head of bed to 90 degrees"
+    ],
+    "correct": 0,
+    "rationale": "MAP < <span class=\"hl-lyte\">65 mmHg</span> = inadequate perfusion pressure for vital organs (kidneys, brain, heart). A MAP of <span class=\"hl-lyte\">58</span> requires immediate intervention: notify provider, anticipate fluid bolus or vasopressors, and assess for the cause of hypotension. Normal MAP: <span class=\"hl-lyte\">70\u2013105 mmHg</span>."
+  },
+  {
+    "q": "The formula for calculating Mean Arterial Pressure (MAP) is:",
+    "options": [
+      "MAP = (SBP + DBP) \u00f7 2",
+      "MAP = (SBP + 2 \u00d7 DBP) \u00f7 3",
+      "MAP = CO \u00d7 SVR",
+      "MAP = SBP \u2212 DBP"
+    ],
+    "correct": 1,
+    "rationale": "MAP = (SBP + 2\u00d7DBP) \u00f7 3. The diastolic pressure is weighted because the heart spends approximately 2/3 of the cardiac cycle in diastole. Example: BP <span class=\"hl-lyte\">120/60</span> \u2192 MAP = (120 + 120) \u00f7 3 = <span class=\"hl-lyte\">80 mmHg</span>. MAP = CO \u00d7 SVR is the hemodynamic formula but not the bedside calculation."
+  },
+  {
+    "q": "A patient in hypovolemic shock would be expected to have which hemodynamic profile?",
+    "options": [
+      "\u2191 CVP, \u2191 PAWP, \u2193 CO, \u2191 SVR",
+      "\u2191 CVP, \u2191 PAWP, \u2191 CO, \u2193 SVR",
+      "\u2193 CVP, \u2193 PAWP, \u2191 CO, \u2193 SVR",
+      "\u2193 CVP, \u2193 PAWP, \u2193 CO, \u2191 SVR"
+    ],
+    "correct": 3,
+    "rationale": "Hypovolemic shock = 'empty tank.' \u2193 CVP and \u2193 PAWP (low volume/preload), \u2193 CO (not enough volume to pump), \u2191 SVR (body compensates with vasoconstriction to maintain BP). Treatment: aggressive volume replacement (NS, LR, blood products)."
+  },
+  {
+    "q": "A nurse is zeroing and leveling a hemodynamic monitoring system. The transducer should be leveled at:",
+    "options": [
+      "The phlebostatic axis (4th intercostal space, mid-axillary line)",
+      "The top of the patient's sternum",
+      "The level of the patient's ear",
+      "Any comfortable position for the nurse"
+    ],
+    "correct": 0,
+    "rationale": "The phlebostatic axis (4th ICS at the mid-axillary line) approximates the level of the right atrium. All hemodynamic readings must reference this point. The transducer must be leveled and zeroed to atmospheric pressure before each reading to ensure accuracy. Patient should be supine with HOB \u226445\u00b0."
+  },
+  {
+    "q": "A patient receiving <span class=\"hl-drug\">dobutamine</span> for cardiogenic shock. The nurse understands this drug works by:",
+    "options": [
+      "Causing vasodilation to decrease afterload only",
+      "Blocking beta receptors to decrease heart rate",
+      "Increasing myocardial contractility (positive inotrope) \u2192 increasing cardiac output",
+      "Promoting diuresis to reduce preload"
+    ],
+    "correct": 2,
+    "rationale": "<span class=\"hl-drug\">Dobutamine</span> is a positive inotrope (stimulates beta-1 receptors) \u2192 increases myocardial contractility and CO. It is the drug of choice for cardiogenic shock because it improves pump function. Unlike <span class=\"hl-drug\">dopamine</span> at high doses, <span class=\"hl-drug\">dobutamine</span> does not significantly increase SVR."
+  },
+  {
+    "q": "A patient in septic shock is started on <span class=\"hl-drug\">norepinephrine</span>. The nurse monitors for:",
+    "options": [
+      "Severe hypotension",
+      "Hypertension and tissue ischemia (especially digits and extremities)",
+      "Bradycardia only",
+      "Hyperglycemia"
+    ],
+    "correct": 1,
+    "rationale": "<span class=\"hl-drug\">Norepinephrine</span> is a potent vasopressor (alpha-1 agonist) \u2014 it increases SVR and BP. Monitor for: excessive hypertension, decreased peripheral perfusion (cold/pale extremities, decreased pulses), tissue necrosis at IV site (give via central line). Also monitor urine output as a marker of perfusion."
+  },
+  {
+    "q": "Aortic stenosis produces which type of murmur?",
+    "options": [
+      "Harsh systolic crescendo-decrescendo murmur",
+      "Blowing diastolic murmur",
+      "Rumbling diastolic murmur",
+      "Mid-systolic click"
+    ],
+    "correct": 0,
+    "rationale": "Aortic stenosis = valve narrows \u2192 blood forced through narrowed opening during systole \u2192 harsh crescendo-decrescendo (diamond-shaped) systolic murmur best heard at the right upper sternal border, radiating to the carotids. Diastolic murmurs = regurgitation of aortic or stenosis of mitral."
+  },
+  {
+    "q": "A patient with aortic stenosis reports syncope with exertion, chest pain, and progressive dyspnea. The nurse recognizes this as:",
+    "options": [
+      "A benign finding requiring no intervention",
+      "Symptoms of a panic attack",
+      "The classic symptomatic triad indicating need for valve replacement",
+      "Medication side effects"
+    ],
+    "correct": 2,
+    "rationale": "The classic triad of aortic stenosis: Syncope (inadequate cerebral perfusion during exertion), Angina (increased myocardial O\u2082 demand), and Heart Failure symptoms (dyspnea, fatigue). Once symptomatic, prognosis is poor without surgical or TAVR valve replacement. Sudden death risk."
+  },
+  {
+    "q": "A patient with a mechanical heart valve must take which medication for life?",
+    "options": [
+      "<span class=\"hl-drug\">Aspirin</span> only",
+      "No anticoagulation is needed",
+      "<span class=\"hl-drug\">Clopidogrel</span> only",
+      "<span class=\"hl-drug\">Warfarin</span> with target INR 2.5\u20133.5"
+    ],
+    "correct": 3,
+    "rationale": "Mechanical valves create turbulent blood flow \u2192 high clot risk. Lifelong <span class=\"hl-drug\">warfarin</span> (INR 2.5\u20133.5, higher than A-fib goal) is required. DOACs (<span class=\"hl-drug\">apixaban</span>, <span class=\"hl-drug\">rivaroxaban</span>) are NOT approved for mechanical valves. Bioprosthetic valves need only short-term anticoagulation (3\u20136 months)."
+  },
+  {
+    "q": "Mitral regurgitation produces a murmur heard BEST at which location?",
+    "options": [
+      "Apex (5th ICS, MCL), radiating to the axilla",
+      "Right upper sternal border, radiating to carotids",
+      "Erb's point (3rd ICS, left sternal border)",
+      "Right lower sternal border"
+    ],
+    "correct": 0,
+    "rationale": "Mitral regurgitation = blood leaks back through the mitral valve during systole \u2192 blowing holosystolic (pansystolic) murmur heard best at the APEX (left 5th ICS, MCL), radiating to the left axilla. Aortic stenosis radiates to the carotids. Location helps differentiate murmurs."
+  },
+  {
+    "q": "The mnemonic 'MR. AS' helps remember which murmurs are systolic. What does it represent?",
+    "options": [
+      "Mitral Regurgitation and Aortic Stenosis are systolic murmurs",
+      "Mitral Regurgitation and Aortic Stenosis are diastolic murmurs",
+      "Mitral Stenosis and Aortic Regurgitation are systolic murmurs",
+      "It refers to medication timing"
+    ],
+    "correct": 0,
+    "rationale": "MR. AS = Mitral Regurgitation + Aortic Stenosis = SYSTOLIC murmurs. The opposites (Mitral Stenosis + Aortic Regurgitation) are DIASTOLIC murmurs. Systolic murmurs occur between S1 and S2 (during ventricular contraction). Diastolic murmurs occur between S2 and S1 (during ventricular filling)."
+  },
+  {
+    "q": "All patients with prosthetic heart valves require antibiotic prophylaxis before:",
+    "options": [
+      "Every blood draw",
+      "Annual flu vaccination",
+      "Dental procedures involving gingival manipulation or perforation",
+      "Routine physical examinations"
+    ],
+    "correct": 2,
+    "rationale": "Prosthetic valve patients are at HIGH risk for infective endocarditis. Antibiotic prophylaxis (typically amoxicillin 2g PO 1 hour before) is required before dental procedures involving gingival tissue manipulation or perforation of oral mucosa. Not required for routine blood draws, vaccinations, or physicals."
+  },
+  {
+    "q": "Mitral stenosis is MOST commonly caused by:",
+    "options": [
+      "Congenital heart disease",
+      "Rheumatic heart disease (post-streptococcal)",
+      "Atherosclerosis",
+      "Hypertension"
+    ],
+    "correct": 1,
+    "rationale": "Rheumatic heart disease (late sequela of rheumatic fever from untreated Group A Strep) is the most common cause of mitral stenosis worldwide. The inflammatory process causes scarring, thickening, and calcification of the mitral valve leaflets, progressively narrowing the opening."
+  },
+  {
+    "q": "A patient with mitral stenosis is at HIGH risk for developing which dysrhythmia?",
+    "options": [
+      "Ventricular tachycardia",
+      "Third-degree heart block",
+      "Atrial fibrillation",
+      "Sinus bradycardia"
+    ],
+    "correct": 2,
+    "rationale": "Mitral stenosis \u2192 blood can't flow freely from LA to LV \u2192 LA pressure rises \u2192 LA enlarges/dilates \u2192 stretched atrial tissue disrupts normal electrical conduction \u2192 atrial fibrillation. A-fib further worsens mitral stenosis hemodynamics and increases stroke risk."
+  },
+  {
+    "q": "A nurse is about to administer <span class=\"hl-drug\">metoprolol</span>. The patient's heart rate is 54 bpm. The nurse should:",
+    "options": [
+      "Administer the medication as ordered",
+      "Administer and recheck HR in 1 hour",
+      "Give half the ordered dose",
+      "Hold the medication and notify the provider"
+    ],
+    "correct": 3,
+    "rationale": "Beta-blockers (<span class=\"hl-drug\">metoprolol</span>) decrease HR. Hold parameters: HR <60 bpm or SBP <90 mmHg. At HR 54, the drug could cause dangerous bradycardia, hypotension, or heart block. Hold the dose and notify the provider. NEVER abruptly discontinue beta-blockers \u2014 this causes rebound tachycardia and angina."
+  },
+  {
+    "q": "A patient on <span class=\"hl-drug\">lisinopril</span> develops a persistent dry cough. The nurse anticipates the provider will:",
+    "options": [
+      "Increase the dosage to overcome tolerance",
+      "Switch to an ARB such as {d('losartan')}",
+      "Add a cough suppressant and continue the ACE inhibitor",
+      "Discontinue all antihypertensives"
+    ],
+    "correct": 1,
+    "rationale": "ACE inhibitors cause dry cough in ~10-15% of patients due to bradykinin accumulation. ARBs (<span class=\"hl-drug\">losartan</span>, <span class=\"hl-drug\">valsartan</span>) block angiotensin II receptors without affecting bradykinin \u2014 same benefits, no cough. Switching to an ARB is the standard approach when ACE-I cough is intolerable."
+  },
+  {
+    "q": "A nurse is monitoring a patient on <span class=\"hl-drug\">amiodarone</span> long-term. Which assessment is ESSENTIAL?",
+    "options": [
+      "Annual eye exam for cataracts only",
+      "Baseline and annual chest X-ray, pulmonary function tests, thyroid function, and liver function tests",
+      "Monthly renal function tests",
+      "Weekly ECG only"
+    ],
+    "correct": 1,
+    "rationale": "<span class=\"hl-drug\">Amiodarone</span> causes multiple organ toxicities: pulmonary fibrosis (CXR + PFTs), thyroid dysfunction (hypo or hyper \u2014 contains iodine), hepatotoxicity (LFTs), corneal microdeposits (ophthalmologic exam), photosensitivity (wear sunscreen/protective clothing). Mnemonic: 'Amio does everything bad.'"
+  },
+  {
+    "q": "A patient on <span class=\"hl-drug\">warfarin</span> has an INR of <span class=\"hl-lyte\">5.2</span>. The nurse anticipates:",
+    "options": [
+      "Continuing the current dose \u2014 this is therapeutic for mechanical valves",
+      "Increasing the dose since the INR is not high enough",
+      "Holding <span class=\"hl-drug\">warfarin</span> and possibly administering <span class=\"hl-drug\">vitamin K</span> depending on bleeding",
+      "Switching to heparin immediately"
+    ],
+    "correct": 2,
+    "rationale": "Therapeutic INR for most indications: <span class=\"hl-lyte\">2\u20133</span> (mechanical valves: <span class=\"hl-lyte\">2.5\u20133.5</span>). An INR of <span class=\"hl-lyte\">5.2</span> is supratherapeutic \u2192 HIGH bleeding risk. Hold <span class=\"hl-drug\">warfarin</span>; administer <span class=\"hl-drug\">vitamin K</span> if actively bleeding or at high risk. For life-threatening hemorrhage: IV <span class=\"hl-drug\">vitamin K</span> + fresh frozen plasma or prothrombin complex concentrate."
+  },
+  {
+    "q": "The antidote for <span class=\"hl-drug\">heparin</span> overdose is:",
+    "options": [
+      "<span class=\"hl-drug\">Vitamin K</span>",
+      "<span class=\"hl-drug\">Protamine sulfate</span>",
+      "<span class=\"hl-drug\">Naloxone</span>",
+      "<span class=\"hl-drug\">Flumazenil</span>"
+    ],
+    "correct": 1,
+    "rationale": "<span class=\"hl-drug\">Protamine sulfate</span> binds to and neutralizes <span class=\"hl-drug\">heparin</span>. It can cause hypotension and bradycardia \u2014 administer slowly. Caution: patients allergic to fish or who have had a vasectomy may be at higher risk for protamine reactions. <span class=\"hl-drug\">Vitamin K</span> is for <span class=\"hl-drug\">warfarin</span>, <span class=\"hl-drug\">naloxone</span> for opioids, <span class=\"hl-drug\">flumazenil</span> for benzodiazepines."
+  },
+  {
+    "q": "A nurse is administering <span class=\"hl-drug\">digoxin</span>. Before giving the dose, which assessment is MOST important?",
+    "options": [
+      "Respiratory rate",
+      "Temperature",
+      "Blood pressure",
+      "Apical heart rate for a full 60 seconds"
+    ],
+    "correct": 3,
+    "rationale": "Always check the APICAL heart rate for a full 60 seconds before giving <span class=\"hl-drug\">digoxin</span>. Hold if: <60 bpm (adults), <70 bpm (children), or <90 bpm (infants). Also check K\u207a level \u2014 hypokalemia potentiates dig toxicity. Report any new dysrhythmias, visual changes, or GI symptoms."
+  },
+  {
+    "q": "A patient on <span class=\"hl-drug\">digoxin</span> reports seeing yellow-green halos around lights, nausea, and a heart rate of 48 bpm. The nurse suspects:",
+    "options": [
+      "Normal therapeutic effects",
+      "Stroke symptoms",
+      "Hypertensive crisis",
+      "Digoxin toxicity"
+    ],
+    "correct": 3,
+    "rationale": "<span class=\"hl-drug\">Digoxin</span> toxicity signs: visual disturbances (yellow/green halos, blurred vision), GI (N/V/anorexia), cardiac (bradycardia, heart block, new dysrhythmias). Therapeutic range: <span class=\"hl-lyte\">0.5\u20132.0 ng/mL</span>. Treatment: hold dig, check levels and K\u207a, administer <span class=\"hl-drug\">Digibind</span> (digoxin immune Fab) for severe toxicity."
+  },
+  {
+    "q": "Which teaching is MOST important for a patient prescribed <span class=\"hl-drug\">nitroglycerin</span> SL tablets?",
+    "options": [
+      "'Store the tablets in a clear plastic container in direct sunlight for easy access'",
+      "'NTG works better on a full stomach'",
+      "'Take all 3 tablets at once for faster pain relief'",
+      "'Keep tablets in the original dark glass container, replace every 6 months, and sit or lie down before taking to prevent falls from hypotension'"
+    ],
+    "correct": 3,
+    "rationale": "<span class=\"hl-drug\">NTG</span> is light-sensitive \u2014 store in original dark glass container. Replace q6 months (potency decreases). Remove cotton from bottle (absorbs medication). Sit/lie down before taking (vasodilation \u2192 orthostatic hypotension). Take 1 tab q5min \u00d7 3 max. If no relief after first dose, call 911."
+  },
+  {
+    "q": "<span class=\"hl-drug\">Enoxaparin</span> is administered by which route?",
+    "options": [
+      "Intravenous push",
+      "Subcutaneous injection in the abdomen",
+      "Intramuscular injection in the deltoid",
+      "Oral tablet"
+    ],
+    "correct": 1,
+    "rationale": "<span class=\"hl-drug\">Enoxaparin</span> (Lovenox) is a low-molecular-weight heparin given SubQ in the abdomen. Do NOT aspirate before injection. Do NOT rub the site after (causes bruising). Rotate injection sites. No routine aPTT monitoring needed (unlike unfractionated heparin). Anti-Xa levels may be monitored in obesity or renal impairment."
+  },
+  {
+    "q": "A patient is transitioning from <span class=\"hl-drug\">heparin</span> IV to <span class=\"hl-drug\">warfarin</span> PO. The nurse understands that:",
+    "options": [
+      "<span class=\"hl-drug\">Heparin</span> should be stopped immediately when <span class=\"hl-drug\">warfarin</span> is started",
+      "<span class=\"hl-drug\">Heparin</span> is continued for 2 weeks after <span class=\"hl-drug\">warfarin</span> begins",
+      "<span class=\"hl-drug\">Warfarin</span> works within hours, so no overlap is needed",
+      "<span class=\"hl-drug\">Heparin</span> and <span class=\"hl-drug\">warfarin</span> must overlap for 3\u20135 days until INR is therapeutic"
+    ],
+    "correct": 3,
+    "rationale": "<span class=\"hl-drug\">Warfarin</span> takes 3\u20135 days to reach therapeutic effect (it inhibits production of NEW clotting factors, but existing factors must be depleted). <span class=\"hl-drug\">Heparin</span> provides immediate anticoagulation during this transition. Overlap continues until INR is therapeutic (<span class=\"hl-lyte\">2\u20133</span>) for at least 24 hours."
+  },
+  {
+    "q": "Which food interactions should a nurse teach a patient taking <span class=\"hl-drug\">warfarin</span>?",
+    "options": [
+      "Avoid all dairy products",
+      "Eat as much broccoli and spinach as desired",
+      "Maintain CONSISTENT intake of vitamin K-rich foods (dark leafy greens); avoid sudden changes",
+      "Avoid all fruits and vegetables"
+    ],
+    "correct": 2,
+    "rationale": "Vitamin K is the antidote for <span class=\"hl-drug\">warfarin</span> \u2014 it promotes clotting. Patients should not eliminate vitamin K foods but keep intake CONSISTENT. Sudden increases \u2192 \u2193 INR (clot risk). Sudden decreases \u2192 \u2191 INR (bleed risk). High-K foods: kale, spinach, broccoli, Brussels sprouts, green tea."
+  },
+  {
+    "q": "A patient experiencing an acute MI is given <span class=\"hl-drug\">morphine</span> IV. The PRIMARY cardiac benefit is:",
+    "options": [
+      "Vasodilation \u2192 decreased preload \u2192 decreased myocardial oxygen demand",
+      "Pain relief only \u2014 no cardiac effects",
+      "Increasing heart rate to improve cardiac output",
+      "Direct coronary artery dilation"
+    ],
+    "correct": 0,
+    "rationale": "<span class=\"hl-drug\">Morphine</span> provides pain relief AND reduces preload through venous dilation \u2192 decreased venous return \u2192 decreased cardiac workload \u2192 decreased myocardial O\u2082 demand. Monitor for respiratory depression (have <span class=\"hl-drug\">naloxone</span> available) and hypotension. Current guidelines recommend cautious use."
+  },
+  {
+    "q": "A patient on <span class=\"hl-drug\">carvedilol</span> for HF asks why a 'heart-slowing drug' is used for a weak heart. The BEST explanation is:",
+    "options": [
+      "'It is a mistake \u2014 beta-blockers are never used in heart failure'",
+      "'Beta-blockers slow the heart rate, reducing myocardial oxygen demand and preventing harmful remodeling, which improves long-term survival'",
+      "'Beta-blockers increase contractility directly'",
+      "'It is only used temporarily until the heart recovers'"
+    ],
+    "correct": 1,
+    "rationale": "Beta-blockers (<span class=\"hl-drug\">carvedilol</span>, <span class=\"hl-drug\">metoprolol succinate</span>) are proven to improve survival in stable HFrEF by: \u2193 HR (less O\u2082 demand), blocking harmful catecholamine effects, and preventing adverse ventricular remodeling. Key: start LOW and go SLOW. Never initiate during acute decompensation."
+  },
+  {
+    "q": "A patient's aPTT is <span class=\"hl-lyte\">95 seconds</span> while on <span class=\"hl-drug\">heparin</span> drip (therapeutic goal: <span class=\"hl-lyte\">60\u201380 sec</span>). The nurse should:",
+    "options": [
+      "Hold or decrease the infusion per protocol and notify the provider \u2014 aPTT is supratherapeutic",
+      "Increase the infusion rate \u2014 the aPTT is not high enough",
+      "Continue the infusion at the current rate",
+      "Administer vitamin K"
+    ],
+    "correct": 0,
+    "rationale": "An aPTT of <span class=\"hl-lyte\">95 sec</span> exceeds the therapeutic range (<span class=\"hl-lyte\">60\u201380 sec</span>), indicating excessive anticoagulation \u2192 bleeding risk. Follow institutional heparin protocol: typically hold or reduce the infusion, recheck aPTT in 4\u20136 hours. <span class=\"hl-drug\">Vitamin K</span> is for <span class=\"hl-drug\">warfarin</span>, not <span class=\"hl-drug\">heparin</span>. <span class=\"hl-drug\">Protamine sulfate</span> is the heparin antidote if bleeding occurs."
+  },
+  {
+    "q": "Which type of shock is characterized by 'warm, flushed skin' in the early phase?",
+    "options": [
+      "Hypovolemic shock",
+      "Cardiogenic shock",
+      "Obstructive shock",
+      "Septic shock (early/distributive)"
+    ],
+    "correct": 3,
+    "rationale": "Early (warm) septic shock: massive vasodilation \u2192 warm, flushed, dry skin, bounding pulses, \u2193 SVR, \u2191 CO. This is a HYPERDYNAMIC state. Late (cold) sepsis: cardiovascular decompensation \u2192 cool, mottled skin, weak pulses, \u2193 CO. Hypovolemic and cardiogenic shock present with cool, clammy skin from the start."
+  },
+  {
+    "q": "The H's and T's are used to identify reversible causes of which cardiac emergency?",
+    "options": [
+      "Stable angina",
+      "Atrial fibrillation",
+      "Cardiac arrest (PEA/asystole)",
+      "Heart failure exacerbation"
+    ],
+    "correct": 2,
+    "rationale": "The H's (Hypovolemia, Hypoxia, Hydrogen ions, Hypo/hyperkalemia, Hypothermia) and T's (Tension pneumothorax, Tamponade, Toxins, Thrombosis) are systematically reviewed during cardiac arrest to identify and treat reversible causes \u2014 especially for non-shockable rhythms (PEA, asystole) where defibrillation won't help."
+  },
+  {
+    "q": "The antidote for beta-blocker overdose is:",
+    "options": [
+      "<span class=\"hl-drug\">Glucagon</span>",
+      "<span class=\"hl-drug\">Flumazenil</span>",
+      "<span class=\"hl-drug\">Protamine sulfate</span>",
+      "<span class=\"hl-drug\">Naloxone</span>"
+    ],
+    "correct": 0,
+    "rationale": "<span class=\"hl-drug\">Glucagon</span> is the antidote for beta-blocker overdose \u2014 it bypasses beta receptors and directly stimulates cAMP production in cardiac cells, increasing HR and contractility. <span class=\"hl-drug\">Protamine</span> = heparin, <span class=\"hl-drug\">flumazenil</span> = benzodiazepines, <span class=\"hl-drug\">naloxone</span> = opioids."
+  },
+  {
+    "q": "A nurse is caring for a patient experiencing cardiac tamponade. Which finding is expected?",
+    "options": [
+      "Beck's triad: hypotension, muffled heart sounds, and JVD",
+      "Hypertension and bradycardia",
+      "Bounding pulses with wide pulse pressure",
+      "Crackles and orthopnea"
+    ],
+    "correct": 0,
+    "rationale": "Beck's triad of cardiac tamponade: (1) Hypotension (\u2193 CO from compressed heart), (2) Muffled/distant heart sounds (fluid around heart), (3) JVD (blood can't enter compressed heart \u2192 backs up). Pulsus paradoxus (>10 mmHg drop in SBP during inspiration) is also characteristic. Emergency: pericardiocentesis."
+  },
+  {
+    "q": "The nurse understands that defibrillation differs from synchronized cardioversion in that:",
+    "options": [
+      "Defibrillation delivers a shock timed to the R wave",
+      "Defibrillation delivers an UNSYNCHRONIZED shock at any point in the cardiac cycle, used for pulseless V-tach/V-fib",
+      "Cardioversion is used for pulseless rhythms only",
+      "There is no difference between the two procedures"
+    ],
+    "correct": 1,
+    "rationale": "Defibrillation = unsynchronized shock (random timing) \u2192 used for V-fib and pulseless V-tach (chaotic rhythms with no reliable R wave to sync to). Cardioversion = synchronized (timed to R wave to avoid the vulnerable T wave period) \u2192 used for UNSTABLE tachycardia WITH a pulse (A-fib, flutter, V-tach with pulse)."
+  },
+  {
+    "q": "A patient in neurogenic shock after spinal cord injury presents with hypotension AND bradycardia. The nurse anticipates:",
+    "options": [
+      "Fluid restriction and <span class=\"hl-drug\">furosemide</span>",
+      "Trendelenburg position only",
+      "Immediate defibrillation",
+      "IV fluids, <span class=\"hl-drug\">atropine</span> for bradycardia, and vasopressors as needed"
+    ],
+    "correct": 3,
+    "rationale": "Neurogenic shock = loss of sympathetic tone \u2192 vasodilation (hypotension) + unopposed vagal tone (bradycardia). Unique: the patient is warm and dry (unlike other shocks). Treatment: IV fluids to restore volume, <span class=\"hl-drug\">atropine</span> for bradycardia, vasopressors (<span class=\"hl-drug\">norepinephrine</span>, <span class=\"hl-drug\">phenylephrine</span>) for refractory hypotension."
+  },
+  {
+    "q": "A patient post-MI is started on <span class=\"hl-drug\">atorvastatin</span>. The PRIMARY reason is:",
+    "options": [
+      "To lower blood glucose",
+      "To increase HDL exclusively",
+      "To dissolve the existing blood clot",
+      "To stabilize atherosclerotic plaques and reduce LDL cholesterol, lowering future cardiac event risk"
+    ],
+    "correct": 3,
+    "rationale": "Statins (<span class=\"hl-drug\">atorvastatin</span>, <span class=\"hl-drug\">rosuvastatin</span>) are cornerstone post-MI therapy: they stabilize vulnerable plaques, reduce LDL, lower inflammation, and significantly reduce future cardiac events and mortality. Monitor liver function (hepatotoxicity) and report muscle pain (rhabdomyolysis). Take at bedtime (cholesterol synthesis peaks at night)."
+  },
+  {
+    "q": "A patient with a temporary transvenous pacemaker reports hiccups. The nurse suspects:",
+    "options": [
+      "Anxiety response to the pacemaker",
+      "Pacemaker lead has migrated and is stimulating the diaphragm",
+      "Normal side effect of all pacemakers",
+      "Medication side effect"
+    ],
+    "correct": 1,
+    "rationale": "Hiccups with a temporary pacemaker suggest lead displacement \u2014 the pacing wire has migrated and is stimulating the diaphragm instead of the myocardium. Other signs: failure to capture (pacemaker spikes without QRS), loss of sensing. Notify provider immediately; reposition lead needed."
+  },
+  {
+    "q": "During CPR, the compression-to-ventilation ratio for a single adult rescuer is:",
+    "options": [
+      "15:2",
+      "15:1",
+      "30:2",
+      "Continuous compressions with no ventilations"
+    ],
+    "correct": 2,
+    "rationale": "For adult CPR with a single rescuer: 30 compressions to 2 ventilations. Rate: 100\u2013120 compressions/min. Depth: at least 2 inches (5 cm) but not exceeding 2.4 inches. Allow full chest recoil. Minimize interruptions. With an advanced airway in place: continuous compressions with 1 breath every 6 seconds."
+  },
+  {
+    "q": "Cardiac tamponade develops when fluid accumulates in the:",
+    "options": [
+      "Pleural space",
+      "Pericardial space, compressing the heart and reducing filling",
+      "Peritoneal cavity",
+      "Myocardial wall"
+    ],
+    "correct": 1,
+    "rationale": "Cardiac tamponade = fluid (blood, effusion) accumulates in the PERICARDIAL space \u2192 compresses the heart \u2192 ventricles cannot fill \u2192 \u2193 CO \u2192 cardiogenic shock. Rapid accumulation (trauma) is more dangerous than gradual (chronic effusion). Emergency treatment: pericardiocentesis (needle drainage)."
+  },
+  {
+    "q": "A patient with pulmonary embolism is prescribed <span class=\"hl-drug\">heparin</span> IV. The nurse monitors which lab?",
+    "options": [
+      "aPTT (activated partial thromboplastin time)",
+      "PT/INR",
+      "CBC with differential",
+      "Serum troponin"
+    ],
+    "correct": 0,
+    "rationale": "<span class=\"hl-drug\">Heparin</span> (unfractionated) is monitored by aPTT \u2014 therapeutic goal is 1.5\u20132.5\u00d7 the control value (typically <span class=\"hl-lyte\">60\u201380 seconds</span>). Check aPTT 6 hours after initiation or dose change. PT/INR monitors <span class=\"hl-drug\">warfarin</span>. Once transitioning to <span class=\"hl-drug\">warfarin</span>, overlap both drugs for 3\u20135 days."
+  },
+  {
+    "q": "An intra-aortic balloon pump (IABP) works by:",
+    "options": [
+      "Continuously pumping blood in place of the heart",
+      "Delivering electrical shocks to pace the heart",
+      "Inflating during diastole (\u2191 coronary perfusion) and deflating during systole (\u2193 afterload)",
+      "Filtering blood clots from the aorta"
+    ],
+    "correct": 2,
+    "rationale": "IABP counterpulsation: balloon inflates during DIASTOLE \u2192 pushes blood backward into coronary arteries (\u2191 coronary perfusion/oxygen supply). Deflates during SYSTOLE \u2192 creates a vacuum effect that reduces afterload (\u2193 workload). Used for cardiogenic shock, refractory angina, and as a bridge to surgery."
+  },
+  {
+    "q": "A patient on telemetry develops a rhythm with wide, bizarre QRS complexes at 180 bpm and a palpable pulse. The nurse identifies this as:",
+    "options": [
+      "Supraventricular tachycardia",
+      "Atrial fibrillation with rapid ventricular response",
+      "Ventricular tachycardia with a pulse",
+      "Sinus tachycardia"
+    ],
+    "correct": 2,
+    "rationale": "Wide QRS (>0.12 sec) + bizarre morphology + rate ~180 = ventricular tachycardia. The presence of a pulse differentiates treatment: V-tach WITH pulse \u2192 antiarrhythmics (amiodarone) or synchronized cardioversion if unstable. V-tach WITHOUT pulse \u2192 defibrillation + CPR. Narrow QRS tachycardia = supraventricular origin."
+  },
+  {
+    "q": "Pulsus paradoxus (>10 mmHg SBP drop during inspiration) is a hallmark finding of:",
+    "options": [
+      "Cardiac tamponade",
+      "Aortic stenosis",
+      "Myocardial infarction",
+      "Atrial fibrillation"
+    ],
+    "correct": 0,
+    "rationale": "Pulsus paradoxus = exaggerated drop in SBP (>10 mmHg) during inspiration. In tamponade, fluid in the pericardial sac compresses the heart; during inspiration, the right heart fills more, pushing the septum leftward and further compromising left heart filling \u2192 SBP drops. Also seen in severe asthma and COPD."
+  },
+  {
+    "q": "A nurse is caring for a patient with angina who is prescribed <span class=\"hl-drug\">isosorbide mononitrate</span>. The nurse teaches:",
+    "options": [
+      "'Take the medication only when you have chest pain'",
+      "'This medication replaces the need for nitroglycerin SL tablets'",
+      "'Double the dose if the first tablet doesn't relieve pain'",
+      "'A nitrate-free interval of 10\u201314 hours (usually overnight) is needed to prevent tolerance'"
+    ],
+    "correct": 3,
+    "rationale": "Long-acting nitrates (<span class=\"hl-drug\">isosorbide mononitrate</span>) require a daily nitrate-free interval (10\u201314 hours, typically overnight) to prevent tolerance. If taken continuously, the body adapts and the drug loses effectiveness. Patients should still carry SL NTG for breakthrough angina episodes."
+  },
+  {
+    "q": "Which nursing intervention is MOST important for a patient after cardiac catheterization via the femoral artery?",
+    "options": [
+      "Encourage immediate ambulation to prevent DVT",
+      "Restrict all oral fluids",
+      "Apply ice to the insertion site for 24 hours",
+      "Keep the affected leg straight and immobile; monitor the groin site and distal pulses frequently"
+    ],
+    "correct": 3,
+    "rationale": "Post-femoral cath: keep affected leg straight (no bending at hip) for 2\u20136 hours to prevent bleeding/hematoma. Assess: insertion site (bleeding, hematoma), distal pulses (dorsalis pedis, posterior tibial), skin color/temp, sensation. Encourage fluids (PO) to flush contrast dye and prevent nephropathy."
+  }
+]
