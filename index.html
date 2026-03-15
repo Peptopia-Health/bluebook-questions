@@ -71,10 +71,10 @@ html:not(.dark) #peptopia-klimek-guide .home-card[data-section="cardiac"] .home-
 /* Enforce 2-line max on card descriptors */
 #peptopia-klimek-guide .home-card-desc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
 /* Collection group containers (Comprehensive, Maternal-Pediatric) */
-#peptopia-klimek-guide .coll-group{flex:0 0 100%;width:100%;background:linear-gradient(135deg,#f5f0e8 0%,#ede6d8 50%,#f5f0e8 100%);border:1px solid rgba(180,155,110,0.25);border-radius:0.6rem;padding:0.8rem 0.75rem 0.75rem;margin-top:0.25rem}
-html.dark #peptopia-klimek-guide .coll-group{background:linear-gradient(135deg,#1a1610 0%,#201b14 50%,#1a1610 100%);border-color:rgba(200,170,120,0.2)}
-#peptopia-klimek-guide .coll-label{color:#92702a;font-weight:700;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.55rem;padding-left:0.25rem;opacity:0.85}
-html.dark #peptopia-klimek-guide .coll-label{color:#d4a855}
+#peptopia-klimek-guide .coll-group{flex:0 1 auto;width:auto;max-width:100%;background:linear-gradient(135deg,#a292be 0%,#9886b4 50%,#a292be 100%);border:1px solid rgba(80,50,130,0.25);border-radius:0.6rem;padding:0.8rem 0.75rem 0.75rem;margin-top:0.25rem}
+html.dark #peptopia-klimek-guide .coll-group{background:linear-gradient(135deg,#161228 0%,#1a1530 50%,#161228 100%);border-color:rgba(140,110,200,0.25)}
+#peptopia-klimek-guide .coll-label{color:#f0e6ff;font-weight:700;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.55rem;padding-left:0.25rem;opacity:0.9}
+html.dark #peptopia-klimek-guide .coll-label{color:#c4b5fd}
 #peptopia-klimek-guide .coll-cards{display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center}
 #peptopia-klimek-guide .coll-cards .home-card{flex:0 1 calc(33.333% - 0.5rem);min-width:250px}
 @media(max-width:600px){#peptopia-klimek-guide .coll-cards .home-card{flex:0 0 100%;min-width:0}}
@@ -213,7 +213,7 @@ loadingEl.innerHTML =
 '<br><small style="color:#94a3b8;font-weight:400;">' + err.message + '</small></div>';
 });
 var APP_VERSION = '10.0';
-var QUIZ_COUNTS = { cardio:116, resp:124, neuro:100, gi:113, obpeds:148, endo:114, musc:115, psych:124, hemonc:123, integ:100, pharm:182, fund:130, gero:95, nutr:103, workpharm:341, yellowfever:39, comprehensive:171, comprehensive2:72, fullexam:341 };
+var QUIZ_COUNTS = { cardio:116, resp:124, neuro:100, gi:113, obpeds:148, endo:114, musc:115, psych:124, hemonc:123, integ:100, pharm:182, fund:130, gero:95, nutr:103, workpharm:341, yellowfever:39, comprehensive:171, comprehensive2:72, fullexam:341, endocompare:100, infctrl:100, priority:100, fluids:100, cardiac:100, obhtn:100, obmatnb:100 };
 var EXCLUDED_FROM_PCT = { workpharm: 1, yellowfever: 1, comprehensive: 1, comprehensive2: 1 };
 var GH_AUDIO = 'https://github.com/Peptopia/NCLEX/releases/download/audio-v1/';
 var PDF_AUDIO_MAP = {
@@ -494,7 +494,8 @@ document.getElementById('home-footer').textContent = buildBannerText();
 var sectionEmojis = {
 cardio: '\u2764\uFE0F', resp: '\uD83D\uDCA8', neuro: '\uD83E\uDDE0', gi: '\uD83C\uDF7D\uFE0F', obpeds: '\uD83D\uDC76',
 endo: '\u2697\uFE0F', musc: '\uD83E\uDDB4', psych: '\uD83E\uDDD8', hemonc: '\uD83E\uDE78', integ: '\uD83E\uDE79', pharm: '\uD83D\uDC8A',
-fund: '\uD83D\uDCCB', gero: '\uD83E\uDDD3', nutr: '\uD83E\uDD57', workpharm: '\uD83E\uDDEC', yellowfever: '\uD83E\uDDA0', comprehensive: '\uD83C\uDF93', comprehensive2: '\uD83D\uDCDA'
+fund: '\uD83D\uDCCB', gero: '\uD83E\uDDD3', nutr: '\uD83E\uDD57', workpharm: '\uD83E\uDDEC', yellowfever: '\uD83E\uDDA0', comprehensive: '\uD83C\uDF93', comprehensive2: '\uD83D\uDCDA',
+endocompare: '\u2697\uFE0F', infctrl: '\uD83E\uDDA0', priority: '\uD83D\uDEA8', fluids: '\uD83D\uDCA7', cardiac: '\u2764\uFE0F', obhtn: '\uD83E\uDD30', obmatnb: '\uD83D\uDC76'
 };
 var sectionSummaries = {
 cardio: 'Heart failure, rhythms, shock, vascular disorders.',
@@ -3301,6 +3302,13 @@ SECTION_LABELS.fullexam = 'Full Exam';
 SECTION_LABELS.yellowfever = 'Yellow Fever';
 SECTION_LABELS.comprehensive = 'Comprehensive';
 SECTION_LABELS.comprehensive2 = 'Comprehensive II';
+SECTION_LABELS.endocompare = 'Endo Comparisons';
+SECTION_LABELS.infctrl = 'Infection Control';
+SECTION_LABELS.priority = 'Prioritization';
+SECTION_LABELS.fluids = 'Fluid & Electrolytes';
+SECTION_LABELS.cardiac = 'Cardiac';
+SECTION_LABELS.obhtn = 'OB Hypertensive';
+SECTION_LABELS.obmatnb = 'OB Mat-Newborn';
 window.showProgress = function() {
 renderProgressDashboard();
 document.getElementById('progress-modal').style.display = 'block';
@@ -3397,9 +3405,10 @@ html += '<div style="font-size:0.72rem; font-weight:700; color:#fca5a5; text-tra
 html += '<div class="pd-weak-banner">';
 for (var w = 0; w < weak3.length; w++) {
 var ws = weak3[w];
-html += '<div class="pd-weak-chip" onclick="closeProgress(); launchSection(\'' + ws.key + '\')">' +
-'<div class="pd-weak-chip-name">' + ws.emoji + ' ' + ws.label + '</div>' +
-'<div class="pd-weak-chip-stat">' + ws.pctMastered + '% mastered</div></div>';
+var _tw = _spTheme(ws.key);
+html += '<div class="pd-weak-chip" style="background:' + _tw.bg + '; border-color:' + _tw.border + ';" onclick="closeProgress(); launchSection(\'' + ws.key + '\')">' +
+'<div class="pd-weak-chip-name" style="color:' + _tw.label + ';">' + ws.emoji + ' ' + ws.label + '</div>' +
+'<div class="pd-weak-chip-stat" style="color:' + _tw.accent + ';">' + ws.pctMastered + '% mastered</div></div>';
 }
 html += '</div>';
 }
@@ -3431,10 +3440,11 @@ sparkHtml += '<div class="pd-spark-dot" style="height:' + h + 'px; background:' 
 sparkHtml += '</div>';
 }
 var isOptional = !!EXCLUDED_FROM_PCT[ps.key];
-var optStyle = isOptional ? ' style="background:rgba(22,101,52,0.18); border-color:rgba(57,255,20,0.4);"' : '';
+var _tp = _spTheme(ps.key);
+var pdStyle = ' style="background:' + _tp.bg + '; border-color:' + _tp.border + ';"';
 var optBadge = isOptional ? ' <span style="font-size:0.55rem; background:rgba(57,255,20,0.2); color:#39ff14; padding:0.1rem 0.4rem; border-radius:0.75rem; font-weight:700; letter-spacing:0.5px; vertical-align:middle; margin-left:0.3rem;">OPTIONAL</span>' : '';
-html += '<div class="pd-card' + (isOptional ? ' pd-optional' : '') + '"' + optStyle + ' onclick="closeProgress(); launchSection(\'' + ps.key + '\')">' +
-'<div class="pd-card-hdr">' + ps.emoji + ' ' + ps.label + optBadge + '</div>' +
+html += '<div class="pd-card' + (isOptional ? ' pd-optional' : '') + '"' + pdStyle + ' onclick="closeProgress(); launchSection(\'' + ps.key + '\')">' +
+'<div class="pd-card-hdr" style="color:' + _tp.label + ';">' + ps.emoji + ' ' + ps.label + optBadge + '</div>' +
 '<div class="pd-card-body">' +
 '<div style="display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:0.25rem; color:#e0e7ff;">' +
 '<span>' + ps.seen + '/' + ps.total + ' seen</span>' +
@@ -3538,6 +3548,35 @@ document.getElementById('studyplan-modal').style.display = 'block';
 window.closeStudyPlan = function() {
 document.getElementById('studyplan-modal').style.display = 'none';
 };
+var SP_THEME = {
+cardio:{bg:'rgba(220,38,38,0.12)',border:'rgba(220,38,38,0.35)',accent:'#fca5a5',label:'#fecaca'},
+resp:{bg:'rgba(37,99,235,0.12)',border:'rgba(37,99,235,0.35)',accent:'#93c5fd',label:'#bfdbfe'},
+neuro:{bg:'rgba(124,58,237,0.12)',border:'rgba(124,58,237,0.35)',accent:'#c4b5fd',label:'#ddd6fe'},
+gi:{bg:'rgba(5,150,105,0.12)',border:'rgba(5,150,105,0.35)',accent:'#6ee7b7',label:'#a7f3d0'},
+obpeds:{bg:'rgba(236,72,153,0.12)',border:'rgba(236,72,153,0.35)',accent:'#f9a8d4',label:'#fbcfe8'},
+endo:{bg:'rgba(217,119,6,0.12)',border:'rgba(217,119,6,0.35)',accent:'#fcd34d',label:'#fde68a'},
+musc:{bg:'rgba(234,88,12,0.12)',border:'rgba(234,88,12,0.35)',accent:'#fdba74',label:'#fed7aa'},
+psych:{bg:'rgba(13,148,136,0.12)',border:'rgba(13,148,136,0.35)',accent:'#5eead4',label:'#99f6e4'},
+hemonc:{bg:'rgba(225,29,72,0.12)',border:'rgba(225,29,72,0.35)',accent:'#fda4af',label:'#fecdd3'},
+integ:{bg:'rgba(219,39,119,0.12)',border:'rgba(219,39,119,0.35)',accent:'#f9a8d4',label:'#fce7f3'},
+pharm:{bg:'rgba(99,102,241,0.12)',border:'rgba(99,102,241,0.35)',accent:'#a5b4fc',label:'#c7d2fe'},
+fund:{bg:'rgba(100,116,139,0.12)',border:'rgba(100,116,139,0.35)',accent:'#94a3b8',label:'#cbd5e1'},
+gero:{bg:'rgba(168,85,247,0.12)',border:'rgba(168,85,247,0.35)',accent:'#c084fc',label:'#d8b4fe'},
+nutr:{bg:'rgba(34,197,94,0.12)',border:'rgba(34,197,94,0.35)',accent:'#86efac',label:'#bbf7d0'},
+workpharm:{bg:'rgba(109,40,217,0.12)',border:'rgba(109,40,217,0.35)',accent:'#c4b5fd',label:'#ddd6fe'},
+yellowfever:{bg:'rgba(180,83,9,0.12)',border:'rgba(180,83,9,0.35)',accent:'#fbbf24',label:'#fde68a'},
+comprehensive:{bg:'rgba(109,40,217,0.12)',border:'rgba(109,40,217,0.35)',accent:'#a78bfa',label:'#ddd6fe'},
+comprehensive2:{bg:'rgba(126,34,206,0.12)',border:'rgba(126,34,206,0.35)',accent:'#c084fc',label:'#e9d5ff'},
+fullexam:{bg:'rgba(79,70,229,0.12)',border:'rgba(79,70,229,0.35)',accent:'#818cf8',label:'#c7d2fe'},
+endocompare:{bg:'rgba(194,65,12,0.12)',border:'rgba(194,65,12,0.35)',accent:'#fb923c',label:'#fed7aa'},
+infctrl:{bg:'rgba(139,94,15,0.12)',border:'rgba(139,94,15,0.35)',accent:'#fbbf24',label:'#fdf0d5'},
+priority:{bg:'rgba(220,38,38,0.12)',border:'rgba(220,38,38,0.35)',accent:'#fca5a5',label:'#fecaca'},
+fluids:{bg:'rgba(8,145,178,0.12)',border:'rgba(8,145,178,0.35)',accent:'#67e8f9',label:'#a5f3fc'},
+cardiac:{bg:'rgba(225,29,72,0.12)',border:'rgba(225,29,72,0.35)',accent:'#fb7185',label:'#fecdd3'},
+obhtn:{bg:'rgba(61,94,128,0.12)',border:'rgba(61,94,128,0.35)',accent:'#7ca3c4',label:'#d0e4f0'},
+obmatnb:{bg:'rgba(45,107,85,0.12)',border:'rgba(45,107,85,0.35)',accent:'#6bb89a',label:'#c8e6d8'}
+};
+function _spTheme(key){return SP_THEME[key]||{bg:'rgba(99,102,241,0.1)',border:'rgba(99,102,241,0.3)',accent:'#a5b4fc',label:'#e0e7ff'};}
 function renderStudyPlan() {
 var d = loadProgress();
 var now = Date.now();
@@ -3650,7 +3689,8 @@ for (var ct = 0; ct < todaySections.length; ct++) {
 if (todaySections[ct].lastRun !== todayISO) { ctaTarget = todaySections[ct]; break; }
 }
 if (!ctaTarget) ctaTarget = todaySections[0];
-html += '<button class="sp-cta-start" onclick="closeStudyPlan(); launchSection(\'' + ctaTarget.key + '\')">' +
+var _ctaT = _spTheme(ctaTarget.key);
+html += '<button class="sp-cta-start" style="background:' + _ctaT.border.replace('0.35','0.6') + '; color:' + _ctaT.label + '; border:1px solid ' + _ctaT.border + ';" onclick="closeStudyPlan(); launchSection(\'' + ctaTarget.key + '\')">' +
 '\u26A1 Start Today\u2019s Session \u2014 ' + ctaTarget.emoji + ' ' + ctaTarget.label + '</button>';
 html += '<div class="sp-day"><div class="sp-day-hdr">' +
 '<span class="sp-day-label">' + formatDate(today) + '</span>' +
@@ -3673,10 +3713,11 @@ mcToday = '<div class="mc-confirm-wrap" onclick="event.stopPropagation();">' +
 '<div class="mc-confirm-btns"><button class="mc-yes" onclick="event.stopPropagation(); markSectionComplete(\'' + ts.key + '\', null);">\u2705 Yes</button>' +
 '<button class="mc-no" onclick="event.stopPropagation(); cancelMarkComplete(this);">Cancel</button></div></div>';
 }
-html += '<div class="sp-task' + (doneToday ? ' sp-task-done' : '') + '" onclick="closeStudyPlan(); launchSection(\'' + ts.key + '\')">' +
-'<div class="sp-task-name"><span class="sp-task-go">' + (doneToday ? '\u2705' : 'Quiz \u25B6') + '</span>' + ts.emoji + ' ' + ts.label + '</div>' +
+var _tt = _spTheme(ts.key);
+html += '<div class="sp-task' + (doneToday ? ' sp-task-done' : '') + '" style="background:' + _tt.bg + ';border-color:' + _tt.border + ';" onclick="closeStudyPlan(); launchSection(\'' + ts.key + '\')">' +
+'<div class="sp-task-name" style="color:' + _tt.label + ';"><span class="sp-task-go" style="color:' + _tt.accent + ';">' + (doneToday ? '\u2705' : 'Quiz \u25B6') + '</span>' + ts.emoji + ' ' + ts.label + '</div>' +
 '<div style="display:flex;justify-content:space-between;align-items:center;">' +
-'<div class="sp-task-detail" style="margin:0;">' + (doneToday ? '\u2714 Completed today \u2022 ' : '') + taskDetail + '</div>' +
+'<div class="sp-task-detail" style="margin:0;color:' + _tt.accent + ';opacity:0.8;">' + (doneToday ? '\u2714 Completed today \u2022 ' : '') + taskDetail + '</div>' +
 mcToday + '</div></div>';
 }
 html += '</div></div>';
@@ -3719,10 +3760,11 @@ mc7 = '<div class="mc-confirm-wrap" onclick="event.stopPropagation();">' +
 '<div class="mc-confirm-btns"><button class="mc-yes" onclick="event.stopPropagation(); markSectionComplete(\'' + ds2.key + '\', null);">\u2705 Yes</button>' +
 '<button class="mc-no" onclick="event.stopPropagation(); cancelMarkComplete(this);">Cancel</button></div></div>';
 }
-html += '<div class="sp-task' + (done7 ? ' sp-task-done' : '') + '" onclick="closeStudyPlan(); launchSection(\'' + ds2.key + '\')">' +
-'<div class="sp-task-name"><span class="sp-task-go">' + (done7 ? '\u2705' : 'Quiz \u25B6') + '</span>' + ds2.emoji + ' ' + ds2.label + '</div>' +
+var _t7 = _spTheme(ds2.key);
+html += '<div class="sp-task' + (done7 ? ' sp-task-done' : '') + '" style="background:' + _t7.bg + ';border-color:' + _t7.border + ';" onclick="closeStudyPlan(); launchSection(\'' + ds2.key + '\')">' +
+'<div class="sp-task-name" style="color:' + _t7.label + ';"><span class="sp-task-go" style="color:' + _t7.accent + ';">' + (done7 ? '\u2705' : 'Quiz \u25B6') + '</span>' + ds2.emoji + ' ' + ds2.label + '</div>' +
 '<div style="display:flex;justify-content:space-between;align-items:center;">' +
-'<div class="sp-task-detail" style="margin:0;">' + (done7 ? '\u2714 Done \u2022 ' : '') + shortDetail + '</div>' +
+'<div class="sp-task-detail" style="margin:0;color:' + _t7.accent + ';opacity:0.8;">' + (done7 ? '\u2714 Done \u2022 ' : '') + shortDetail + '</div>' +
 mc7 + '</div></div>';
 }
 html += '</div></div>';
@@ -3740,11 +3782,12 @@ mcRank = '<div class="mc-confirm-wrap" onclick="event.stopPropagation();" style=
 '<div class="mc-confirm-btns"><button class="mc-yes" onclick="event.stopPropagation(); markSectionComplete(\'' + rs.key + '\', null);">\u2705</button>' +
 '<button class="mc-no" onclick="event.stopPropagation(); cancelMarkComplete(this);">\u2716</button></div></div>';
 }
-html += '<div class="sp-day" style="padding:0.5rem 0.75rem; margin-bottom:0.3rem; cursor:pointer;" onclick="closeStudyPlan(); launchSection(\'' + rs.key + '\')">' +
+var _tr = _spTheme(rs.key);
+html += '<div class="sp-day" style="padding:0.5rem 0.75rem; margin-bottom:0.3rem; cursor:pointer; background:' + _tr.bg + '; border-color:' + _tr.border + ';" onclick="closeStudyPlan(); launchSection(\'' + rs.key + '\')">' +
 '<div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem;">' +
-'<span style="font-weight:700; color:#e0e7ff; font-size:0.85rem;">' + urgency + ' ' + rs.emoji + ' ' + rs.label + '</span>' +
+'<span style="font-weight:700; color:' + _tr.label + '; font-size:0.85rem;">' + urgency + ' ' + rs.emoji + ' ' + rs.label + '</span>' +
 '<div style="display:flex;align-items:center;gap:0.3rem;">' +
-'<span style="font-size:0.75rem; color:#b4bcd8;">' + rs.pctSeen + '% seen \u2022 ' + rs.pctMastered + '% mastered \u25B6</span>' +
+'<span style="font-size:0.75rem; color:' + _tr.accent + '; opacity:0.8;">' + rs.pctSeen + '% seen \u2022 ' + rs.pctMastered + '% mastered \u25B6</span>' +
 mcRank + '</div></div></div>';
 }
 if (optionalSections.length > 0) {
@@ -3753,10 +3796,11 @@ html += '<div style="font-size:0.75rem; color:#8b8fa8; margin-bottom:0.5rem; fon
 for (var op = 0; op < optionalSections.length; op++) {
 var os = optionalSections[op];
 var oUrgency = os.pctMastered >= 80 ? '\u2705' : os.pctMastered >= 40 ? '\uD83D\uDFE1' : os.pctSeen > 0 ? '\uD83D\uDFE0' : '\u2B55';
-html += '<div class="sp-day" style="padding:0.5rem 0.75rem; margin-bottom:0.3rem; cursor:pointer; background:rgba(22,101,52,0.2); border-color:rgba(74,222,128,0.25);" onclick="closeStudyPlan(); launchSection(\'' + os.key + '\')">' +
+var _to = _spTheme(os.key);
+html += '<div class="sp-day" style="padding:0.5rem 0.75rem; margin-bottom:0.3rem; cursor:pointer; background:' + _to.bg + '; border-color:' + _to.border + ';" onclick="closeStudyPlan(); launchSection(\'' + os.key + '\')">' +
 '<div style="display:flex; justify-content:space-between; align-items:center;">' +
-'<span style="font-weight:700; color:#86efac; font-size:0.85rem;">' + oUrgency + ' ' + os.emoji + ' ' + os.label + '</span>' +
-'<span style="font-size:0.75rem; color:#b4bcd8;">' + os.pctSeen + '% seen \u2022 ' + os.pctMastered + '% mastered \u25B6</span>' +
+'<span style="font-weight:700; color:' + _to.label + '; font-size:0.85rem;">' + oUrgency + ' ' + os.emoji + ' ' + os.label + '</span>' +
+'<span style="font-size:0.75rem; color:' + _to.accent + '; opacity:0.8;">' + os.pctSeen + '% seen \u2022 ' + os.pctMastered + '% mastered \u25B6</span>' +
 '</div></div>';
 }
 }
